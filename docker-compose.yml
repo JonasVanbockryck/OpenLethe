@@ -22,17 +22,33 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    # Discord OAuth / captcha / translation config lives in .env (see .env.example).
+    # Optional: the server runs fine without it, those features just stay dormant.
+    # `environment:` below wins over anything here, so a .env pointing at a local
+    # Postgres cannot override the compose-internal `db` host.
+    env_file:
+      - path: .env
+        required: false
     environment:
       # Npgsql connection string the server reads (ConnectionStrings:Postgres).
       ConnectionStrings__Postgres: "Host=db;Port=5432;Database=openlethe;Username=openlethe;Password=openlethe"
       ASPNETCORE_URLS: "http://+:8080"
       ASPNETCORE_ENVIRONMENT: "Development"
-      Auth__DevAcceptAnyToken: "true"
+      # Dev backdoor: accepts any JWT without verifying its signature, so the game
+      # client can sign in with a token from anywhere. On by default for local
+      # testing. Override per-machine in .env (Auth__DevAcceptAnyToken=false)
+      # rather than editing this file; turn it off for anything reachable.
+      Auth__DevAcceptAnyToken: "${Auth__DevAcceptAnyToken:-true}"
       Logging__LogLevel__Microsoft.AspNetCore: "Information"
       Logging__LogLevel__Microsoft.AspNetCore.HttpLogging: "Information"
       # Optional: set a fixed secret so login tokens survive server restarts.
       # Without it a random secret is generated each boot (fine for local testing).
       # Auth__JwtSecret: "replace-with-a-long-random-string"
+    volumes:
+      # Files LetheLauncher downloads (Lethe.dll, ModularSkillScripts.dll,
+      # motions.dll, limbus-manifest.txt, noticeMeta.json). Drop them in ./modfiles
+      # on the host; missing files just 404.
+      - ./modfiles:/app/modfiles
     ports:
       - "8080:8080"   # server reachable at http://localhost:8080 (health: /health)
     restart: unless-stopped

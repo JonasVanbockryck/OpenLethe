@@ -106,8 +106,37 @@ curl http://localhost:5055/health   # -> ok
 | --- | --- | --- | --- |
 | `ConnectionStrings:Postgres` | `ConnectionStrings__Postgres` | *(none)* | Postgres connection string; migrations run on startup when set |
 | `Auth:JwtSecret` | `Auth__JwtSecret` | ephemeral random (per boot) | HS256 signing secret; leave unset for localhost (tokens just don't survive a restart) |
+| `Auth:EnableLocalLogin` | `Auth__EnableLocalLogin` | `true` | The passwordless `/auth/login` dev login. **Set `false` on any public deployment** - it hands out a token for any non-Discord username, no proof required |
+| `Auth:DevAcceptAnyToken` | `Auth__DevAcceptAnyToken` | `false` (but `true` in `docker-compose.yml`) | Dev backdoor: `SignInAsSteam` accepts any JWT **without verifying its signature**, then mints a real token for whatever subject it names - including Discord-linked accounts. **Must be `false` on anything reachable**; a forged subject is full account takeover |
+| `Auth:RateLimitPerMinute` | `Auth__RateLimitPerMinute` | `60` | Per-IP fixed-window rate limit on the unauthenticated `/auth/*` routes; exceeding it returns 429 |
 | — | `ASPNETCORE_URLS` | `http://localhost:5055` (launch profile) | Host/port to bind. `.env` value applies only without a launch profile (see note above) |
 | — | `ASPNETCORE_ENVIRONMENT` | `Development` (launch profile) | `Development` or `Production`. `.env` value applies only without a launch profile |
+
+#### Optional: Discord login and skill translation
+
+Neither group is needed to play - the game routes and the `/auth/login` dev login work
+without them. Leave them unset and the features stay dormant.
+
+| Env var | Default | Purpose |
+| --- | --- | --- |
+| `CLIENT_ID`, `CLIENT_SECRET` | *(none)* | Discord OAuth app credentials; required by `/auth/discord` and `/auth/authorized` |
+| `FRONTEND_URL` | *(none)* | Where the non-launcher flow redirects back to; required by every `/auth` route |
+| `REDIRECT_URL` | `http://localhost:8080/auth/authorized` | OAuth callback registered with Discord. Must match the portal entry exactly and point at the port you actually reach the server on (8080 via Docker, 5055 under `dotnet run`) |
+| `AUTH_URL`, `TOKEN_URL` | Discord's endpoints | Override to point at a different OAuth provider |
+| `DISCORD_GUILD_ID` | *(none)* | Set to require membership of that server to log in. **Unset means no whitelist** - upstream always gates on a guild |
+| `DISCORD_TOKEN` | *(none)* | Bot token used for the membership check and avatar lookup |
+| `DISCORD_WHITELIST_IDS` | *(none)* | Comma-separated user snowflakes that bypass the guild check (upstream hard-codes these in source) |
+| `CAPTCHA_SECRET_KEY` | *(none)* | Cloudflare Turnstile secret for `/auth/captcha`, which issues the cookie `/misc/locale` requires |
+| `REQUEST_TIMEOUT_SECONDS` | `15` | Per-request timeout; exceeding it returns 504. The `/Lethe.dll`-style routes are exempt (they stream large files) |
+| `MAX_REQUEST_BODY_BYTES` | `2097152` (2 MB) | Request body cap; exceeding it returns 413. Kestrel's own default is 30 MB |
+| `MOD_FILES_DIR` | `modfiles` | Directory served at the server root as `/Lethe.dll`, `/ModularSkillScripts.dll`, `/motions.dll`, `/limbus-manifest.txt`, `/noticeMeta.json` — what LetheLauncher downloads before launching. Docker mounts `./modfiles` here |
+| `RELEASE_CHANNEL_ID` | *(none)* | Discord channel to source `Lethe.dll` from when there is no local file (needs `DISCORD_TOKEN`) |
+| `MODULAR_RELEASE_CHANNEL_ID` | *(none)* | Same, for `ModularSkillScripts.dll` |
+| `MOTIONS_RELEASE_CHANNEL_ID` | falls back to `RELEASE_CHANNEL_ID` | Same, for `motions.dll` — set it to publish motions separately |
+| `LIMBUS_MANIFEST_URL` | `https://files.lethelc.site/limbus-manifest.txt` | Where `/limbus-manifest.txt` redirects when no local file is present |
+| `OPENAI_API_KEY` | *(none)* | Required by `/misc/locale*`; any OpenAI-compatible chat-completions endpoint |
+| `OPENAI_BASE_URL` | `https://api.openai.com/v1` | Point at a proxy or a local model server |
+| `OPENAI_MODEL` | `gpt-3.5-turbo` | Model used for skill-text generation |
 
 All keys can go in `.env` (loaded on startup); real environment variables override `.env`.
 
