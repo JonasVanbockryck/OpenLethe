@@ -1,0 +1,3 @@
+﻿SELECT "RailwaySaveInfo"::text
+FROM public.accounts
+WHERE "Id" = 'b4764405-3878-4607-896d-d95fcbfe4e2a';
