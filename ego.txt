@@ -1,0 +1,11 @@
+UPDATE public.accounts
+SET "Egos" = (
+    SELECT jsonb_agg(
+        CASE
+            WHEN ego->>'ego_id' = '21003'
+            THEN jsonb_set(ego, '{gacksung}', '5'::jsonb)
+            ELSE ego
+        END
+    )
+    FROM jsonb_array_elements("Egos") AS ego
+);
