@@ -29,6 +29,7 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
             nameof(Account.MdSaveInfo), nameof(Account.StorySaveInfo), nameof(Account.StoryMdSaveInfo),
             nameof(Account.RailwaySaveInfo),
             nameof(Account.ChapterState), nameof(Account.BossRaidSaveInfo),
+            nameof(Account.Chapter10RpgSaveInfo),
         })
         {
             a.Property(name).HasColumnType("jsonb");

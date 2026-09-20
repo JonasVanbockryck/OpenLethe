@@ -163,6 +163,7 @@ app.MapMirrorDungeonEvents();
 app.MapMirrorDungeonRewards();
 app.MapStoryMirrorDungeon();
 app.MapStoryMirrorDungeonShop();
+app.MapChapter10Rpg();
 
 app.Run();
 

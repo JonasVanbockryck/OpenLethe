@@ -9,10 +9,10 @@ using OpenLethe.Data;
 using OpenLethe.Server.Auth;
 
 // HandlerContext.ResolveAsync(ctx, SaveColumn) reads Id + one jsonb column instead of
-// the whole fourteen-column row, which is what the MD/Railway packet storms pay for on
+// the whole fifteen-column row, which is what the MD/Railway packet storms pay for on
 // every request. Two things have to hold for that to be safe:
 //   - the SELECT really is narrow (otherwise the change bought nothing), and
-//   - saving through a scoped account leaves the thirteen unloaded columns alone.
+//   - saving through a scoped account leaves the fourteen unloaded columns alone.
 // The scope-to-handler pairings are pinned by the existing per-handler suites: get one
 // wrong and SaveAsync's guard throws, which turns their 200 assertions red.
 [Collection("postgres")]
@@ -78,7 +78,7 @@ public class ScopedAccountReadTests(PostgresFixture db)
 
         var select = Assert.Single(f.Sql, s => s.Contains("FROM accounts", StringComparison.Ordinal));
         Assert.Contains("\"MdSaveInfo\"", select);
-        // The thirteen columns this handler never reads must not be in the projection -
+        // The fourteen columns this handler never reads must not be in the projection -
         // they are jsonb documents Postgres would detoast and ship for nothing.
         Assert.DoesNotContain("\"StoryMdSaveInfo\"", select);
         Assert.DoesNotContain("\"RailwaySaveInfo\"", select);

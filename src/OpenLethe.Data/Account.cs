@@ -32,5 +32,8 @@ public sealed class Account
     // railway state is per dungeon and every handler reads and writes it as a unit.
     public string RailwaySaveInfo { get; set; } = "{}";
     public string ChapterState { get; set; } = "{}";
+    // Chapter 10's RPG-mode save: { lastSeq, tables }. The client owns every row and
+    // streams them as a keyed log - see OpenLethe.Server.Chapter10Rpg.
+    public string Chapter10RpgSaveInfo { get; set; } = "{}";
     public string BossRaidSaveInfo { get; set; } = "{}";
 }

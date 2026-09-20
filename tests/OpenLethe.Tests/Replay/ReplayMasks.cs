@@ -64,6 +64,22 @@ public static class ReplayMasks
             "result.railwaySaveInfo.firstcleardate",
             "result.logDatas[*].date",
         },
+        // ---- Chapter 10 RPG mode (docs/flows(4) (1)) ----
+        // ORDER ONLY, and only for these two of the eighteen tables. The upstream store
+        // returns each table in a fixed order that the capture pins exactly - by key for
+        // quests/qgoals/cutscenes/stationaryObjs/stationaryEvts/shops/deadScenes/
+        // visitedFloors/endings/player/egoStocks, in insertion order for items/npcKills -
+        // and all sixteen of those byte-verify. `dialogues` and `events` are insertion
+        // order too, except the capture catches the real server reshuffling them once:
+        // `events` comes back rotated (every row written at seq >= 141 first, then the
+        // thirteen rows from seq 17-123 that were written before it), and `dialogues`
+        // carries one adjacent pair returned in the opposite order to the seqs that wrote
+        // them. Both survive every later getter unchanged, so they are one-off artifacts of
+        // an internal compaction, not a rule the request stream can reproduce. The test
+        // asserts the CONTENTS of both tables against the capture as multisets, so nothing
+        // here is hidden but the row order.
+        ["/api/Chapter10RPGGetSaveData"] = new[] { "result.dialogues", "result.events" },
+
         // startdate is a server-set wall-clock timestamp - inherently non-deterministic.
         ["/api/EnterMirrorDungeon"] = new[] { "result.saveInfo.startdate" },
         // SelectFormation builds the run's roster from the request. startdate is the same

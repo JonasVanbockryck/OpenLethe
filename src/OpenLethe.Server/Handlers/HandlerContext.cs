@@ -7,7 +7,7 @@ using OpenLethe.Data;
 namespace OpenLethe.Server.Handlers;
 
 /// The one jsonb document a scoped handler reads and writes. See ResolveAsync(ctx, column).
-internal enum SaveColumn { Md, StoryMd, Railway, Story, Chapter }
+internal enum SaveColumn { Md, StoryMd, Railway, Story, Chapter, Chapter10Rpg }
 
 /// Shared boilerplate for stateful handlers: resolve the authed account, read the
 /// request parameters, and persist. Mirrors the pattern in LoadUserDataAll.
@@ -18,9 +18,9 @@ internal static class HandlerContext
 
     private const string ScopeItemKey = "account.scope";
 
-    /// Narrow SELECTs for the packet-storm routes. `accounts` carries fourteen jsonb
+    /// Narrow SELECTs for the packet-storm routes. `accounts` carries fifteen jsonb
     /// documents; an MD or Railway handler reads exactly one of them, so the unscoped
-    /// ResolveAsync below makes Postgres detoast and ship the other thirteen on every
+    /// ResolveAsync below makes Postgres detoast and ship the other fourteen on every
     /// single packet of a run. Each entry names its column twice - once for the
     /// projection EF turns into `SELECT "Id", "<col>"`, once for SaveAsync's guard.
     private static readonly Dictionary<SaveColumn, (string Name, Expression<Func<Account, Account>> Project)> Scopes = new()
@@ -30,6 +30,7 @@ internal static class HandlerContext
         [SaveColumn.Railway] = (nameof(Account.RailwaySaveInfo), a => new Account { Id = a.Id, RailwaySaveInfo = a.RailwaySaveInfo }),
         [SaveColumn.Story] = (nameof(Account.StorySaveInfo), a => new Account { Id = a.Id, StorySaveInfo = a.StorySaveInfo }),
         [SaveColumn.Chapter] = (nameof(Account.ChapterState), a => new Account { Id = a.Id, ChapterState = a.ChapterState }),
+        [SaveColumn.Chapter10Rpg] = (nameof(Account.Chapter10RpgSaveInfo), a => new Account { Id = a.Id, Chapter10RpgSaveInfo = a.Chapter10RpgSaveInfo }),
     };
 
     /// Account's writable string columns. See the blanking loop in ResolveAsync.
@@ -102,7 +103,7 @@ internal static class HandlerContext
     {
         var db = ctx.RequestServices.GetRequiredService<AppDbContext>();
 
-        // A scoped account never loaded the other thirteen columns, so writing one would
+        // A scoped account never loaded the other fourteen columns, so writing one would
         // persist nothing while looking like it worked. Fail loudly instead. This catches
         // writes only - a scoped handler READING an unloaded column just sees null, which
         // no guard here can see. (Entries<T>() runs DetectChanges for us.)
