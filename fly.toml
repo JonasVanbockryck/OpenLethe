@@ -1,4 +1,4 @@
-app = 'openlethe'
+app = 'lethe-server'
 primary_region = 'iad'
 
 [build]
