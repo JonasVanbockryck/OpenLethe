@@ -1,0 +1,12 @@
+{
+  "list": [
+    { "id": 100001, "unlockcodeType": "RAILWAY_CLEAR", "desc": "1호선 클리어" },
+    { "id": 100002, "unlockcodeType": "RAILWAY_CLEAR", "desc": "2호선 클리어" },
+    { "id": 100003, "unlockcodeType": "RAILWAY_CLEAR", "desc": "3호선 클리어" },
+    { "id": 100004, "unlockcodeType": "RAILWAY_CLEAR", "desc": "4호선 클리어" },
+    { "id": 100005, "unlockcodeType": "RAILWAY_CLEAR", "desc": "5호선 클리어" },
+    { "id": 100006, "unlockcodeType": "RAILWAY_CLEAR", "desc": "6호선 클리어" },
+    { "id": 101001, "unlockcodeType": "RAILWAY_CLEAR", "desc": "1호선 복각 클리어" },
+    { "id": 101002, "unlockcodeType": "RAILWAY_CLEAR", "desc": "2호선 복각 클리어" }
+  ]
+}
