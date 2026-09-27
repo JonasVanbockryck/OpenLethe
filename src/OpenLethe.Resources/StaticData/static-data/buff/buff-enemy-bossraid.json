@@ -428,6 +428,261 @@
     {
       "id": "FavorBuff5001HardForUI",
       "iconId": "FavorBuffTwthHard"
+    },
+    {
+      "id": "HugeIrritationReflectrial",
+      "iconId": "HugeIrritation",
+      "subIdList": [ "HugeIrritation" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundStartPerLostHpRatio",
+          "buffData": {
+            "buffKeyword": "AttackDmgUp",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 0,
+            "value": 0.15,
+            "limit": 5
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundStartPerLostHpRatio",
+          "buffData": {
+            "buffKeyword": "ResultEnhancement",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 0,
+            "value": 0.15,
+            "limit": 5
+          }
+        },
+        {
+          "ability": "IrritationDiffSpeedAtkDmgMul",
+          "value": 0.4
+        },
+        {
+          "ability": "IrritationSuperCoin",
+          "value": 501903
+        },
+        {
+          "ability": "IrritationSuperCoin",
+          "value": 501904
+        },
+        {
+          "ability": "IrritationVibrationAdder",
+          "buffData": {
+            "buffKeyword": "Vibration",
+            "stack": 3,
+            "turn": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "Prey_leiheng",
+      "iconId": "Prey",
+      "subIdList": [ "Prey" ],
+      "buffClass": "VolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "list": [
+        {
+          "ability": "PreyLeiheng",
+          "value": -5
+        }
+      ]
+    },
+    {
+      "id": "FavorBuffLeiheng",
+      "iconId": "FavorBuffTwth",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "RemoveFirstBSLeiheng"
+        },
+        {
+          "ability": "DefaultLevelAdder",
+          "value": 8
+        },
+        {
+          "ability": "EgoResourceAdderIfResonanceStatic_2",
+          "value": 1
+        },
+        {
+          "ability": "AtkDamageMultiplierIfEGO",
+          "value": 0.5
+        },
+        {
+          "ability": "FavorKeywordAndAttribute_BURST_SHAMROCK_-1_100",
+          "value": 0.25
+        },
+        {
+          "ability": "ParryingResultAdderAgainstEnemyViaBuffCheckDivideByStack",
+          "buffData": {
+            "buffKeyword": "Binding",
+            "buffOwner": "Target",
+            "stack": 2,
+            "turn": 0,
+            "activeRound": 0,
+            "value": 1,
+            "limit": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "FavorBuffLeihengTwo",
+      "iconId": "FavorBuffTwth",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "RemoveFirstBSLeiheng"
+        },
+        {
+          "ability": "DefaultLevelAdder",
+          "value": 15
+        },
+        {
+          "ability": "EgoResourceAdderIfResonanceStatic_2",
+          "value": 2
+        },
+        {
+          "ability": "AtkDamageMultiplierIfEGO",
+          "value": 0.5
+        },
+        {
+          "ability": "FavorKeywordAndAttribute_COMBUSTION_CRIMSON_-1_100",
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "FavorBuffLeihengHard",
+      "iconId": "FavorBuffTwthHard",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "DefaultMaxHpMultiplier",
+          "value": 0.8
+        },
+        {
+          "ability": "FixMentalLowerLimit",
+          "value": 0
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoDmgMulNotDefense",
+          "value": 0.5
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoTakeDmgMul",
+          "value": -0.5
+        },
+        {
+          "ability": "AttackDmgMultiplierOnSTSpecificSkillViaBuffCheck",
+          "value": 501905,
+          "buffData": {
+            "buffKeyword": "BulletPropellant",
+            "buffOwner": "Self",
+            "stack": 3,
+            "turn": 0,
+            "activeRound": 0,
+            "value": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "FavorBuffLeihengHardTwo",
+      "iconId": "FavorBuffTwthHard",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "DefaultMaxHpMultiplier",
+          "value": 0.8
+        },
+        {
+          "ability": "FixMentalLowerLimit",
+          "value": 0
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoDmgMulNotDefense",
+          "value": 0.5
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoTakeDmgMul",
+          "value": -0.5
+        },
+        {
+          "ability": "AttackDmgMultiplierOnSTSpecificSkillViaBuffCheck",
+          "value": 501905,
+          "buffData": {
+            "buffKeyword": "BulletPropellant",
+            "buffOwner": "Self",
+            "stack": 3,
+            "turn": 0,
+            "activeRound": 0,
+            "value": 1
+          }
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoSuperCoin"
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoSkillPowerAdder",
+          "value": 5
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoDmgMul",
+          "value": 2
+        },
+        {
+          "ability": "FavorBuffLeihengHardTwoBuffOnLoseDuel",
+          "buffData": {
+            "buffKeyword": "Bothersome",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "FavorBuffLeiheng1stPhaseForUI",
+      "iconId": "FavorBuffTwth"
+    },
+    {
+      "id": "FavorBuffLeiheng2ndPhaseForUI",
+      "iconId": "FavorBuffTwth"
+    },
+    {
+      "id": "FavorBuffLeihengHardForUI",
+      "iconId": "FavorBuffTwthHard"
     }
   ]
 }

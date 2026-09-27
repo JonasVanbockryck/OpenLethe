@@ -2,6 +2,7 @@
   "list": [
     {
       "id": 3,
+      "unlockCodeFirstClearReward": { "type": "UNLOCK_CODE", "id": 100003, "num": 1 },
       "requiredModule": 25,
       "openChapterData": {
         "mainChapterId": 1,

@@ -1,0 +1,3689 @@
+{
+  "list": [
+    {
+      "objectKey": "THB_001",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1001",
+      "floorKey": "F1001B",
+      "startPosX": 67,
+      "startPosY": 40,
+      "routeKey": "B",
+      "stagePartyIds": [
+        13
+      ]
+    },
+    {
+      "objectKey": "THB_002",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1011",
+      "floorKey": "F1001B",
+      "startPosX": 67,
+      "startPosY": 50,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C1011"
+        },
+        {
+          "cutsceneKey": "C1012"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N101031",
+          "actorName": "guest1",
+          "tileX": 76,
+          "tileY": 58,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101032",
+          "actorName": "guest2",
+          "tileX": 80,
+          "tileY": 58,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101033",
+          "actorName": "guest3",
+          "tileX": 84,
+          "tileY": 50,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101031",
+          "actorName": "guest1",
+          "tileX": 76,
+          "tileY": 54,
+          "stepIndex": 1
+        },
+        {
+          "npcKey": "N101032",
+          "actorName": "guest2",
+          "tileX": 71,
+          "tileY": 53,
+          "stepIndex": 1
+        },
+        {
+          "npcKey": "N101033",
+          "actorName": "guest3",
+          "tileX": 76,
+          "tileY": 52,
+          "stepIndex": 1
+        }
+      ],
+      "stagePartyIds": [
+        13
+      ]
+    },
+    {
+      "objectKey": "THB_003",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1020",
+      "floorKey": "F1001B",
+      "startPosX": 165,
+      "startPosY": 126,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10103102
+        },
+        {
+          "spawnId": 10103202
+        },
+        {
+          "spawnId": 10103302
+        }
+      ],
+      "stagePartyIds": [
+        13
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1012S"
+      ]
+    },
+    {
+      "objectKey": "THB_005",
+      "stageLeaderId": 13,
+      "dialogueKey": "D1021",
+      "stageTargetNpcKey": "N101004",
+      "floorKey": "F1001B",
+      "startPosX": 167,
+      "startPosY": 119,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D1021"
+        },
+        {
+          "cutsceneKey": "C1021"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 10103102
+        },
+        {
+          "spawnId": 10103202
+        },
+        {
+          "spawnId": 10103302
+        }
+      ],
+      "stagePartyIds": [
+        13,
+        9,
+        8
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1012S"
+      ]
+    },
+    {
+      "objectKey": "THB_006",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1914",
+      "floorKey": "F1001B",
+      "startPosX": 136,
+      "startPosY": 66,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10103102
+        },
+        {
+          "spawnId": 10103202
+        },
+        {
+          "spawnId": 10103302
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1012S"
+      ]
+    },
+    {
+      "objectKey": "THB_007",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1915",
+      "floorKey": "F1001B",
+      "startPosX": 127,
+      "startPosY": 65,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10101101,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 10103102
+        },
+        {
+          "spawnId": 10103202
+        },
+        {
+          "spawnId": 10103302
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1012S"
+      ]
+    },
+    {
+      "objectKey": "THB_008",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1023",
+      "stageTargetNpcKey": "N101004",
+      "floorKey": "F1001B",
+      "startPosX": 167,
+      "startPosY": 119,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D1023"
+        },
+        {
+          "cutsceneKey": "C1023"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 10103102
+        },
+        {
+          "spawnId": 10103202
+        },
+        {
+          "spawnId": 10103302
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1012S"
+      ]
+    },
+    {
+      "objectKey": "THB_009",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1031",
+      "floorKey": "F1001B",
+      "startPosX": 171,
+      "startPosY": 9,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10103102
+        },
+        {
+          "spawnId": 10103202
+        },
+        {
+          "spawnId": 10103302
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1012S"
+      ]
+    },
+    {
+      "objectKey": "THB_010",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2001",
+      "floorKey": "F1002B",
+      "startPosX": 71,
+      "startPosY": 60,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7
+      ]
+    },
+    {
+      "objectKey": "THB_011",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2002",
+      "floorKey": "F1002B",
+      "startPosX": 69,
+      "startPosY": 66,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7
+      ]
+    },
+    {
+      "objectKey": "THB_012",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3010",
+      "floorKey": "F1003B",
+      "startPosX": 54,
+      "startPosY": 61,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THB_015A",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "larouge",
+      "cutsceneKey": "C3041",
+      "floorKey": "F1003B",
+      "startPosX": -23,
+      "startPosY": 73,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N103001"
+      ]
+    },
+    {
+      "objectKey": "THB_014",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3218",
+      "stageTargetNpcKey": "N103018",
+      "floorKey": "F1003B",
+      "startPosX": 61,
+      "startPosY": 104,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THB_015",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3301",
+      "stageTargetNpcKey": "N103003",
+      "floorKey": "F1003B",
+      "startPosX": 71,
+      "startPosY": 59,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N103003",
+          "tileX": 72,
+          "tileY": 59
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THB_016",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3200",
+      "floorKey": "F1003B",
+      "startPosX": -29,
+      "startPosY": 73,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N103001"
+      ]
+    },
+    {
+      "objectKey": "THB_017",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3302",
+      "stageTargetNpcKey": "N103003",
+      "floorKey": "F1003B",
+      "startPosX": 59,
+      "startPosY": 59,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N103003",
+          "tileX": 60,
+          "tileY": 59
+        },
+        {
+          "spawnId": 63
+        },
+        {
+          "spawnId": 34
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3005"
+      ]
+    },
+    {
+      "objectKey": "THB_018",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3201",
+      "floorKey": "F1003B",
+      "startPosX": 134,
+      "startPosY": 45,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 63
+        },
+        {
+          "spawnId": 34
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3005"
+      ]
+    },
+    {
+      "objectKey": "THB_019",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3205",
+      "floorKey": "F1003B",
+      "startPosX": 134,
+      "startPosY": 47,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 66,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 67,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 68,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 69,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 63
+        },
+        {
+          "spawnId": 34
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3021",
+        "Q3005"
+      ]
+    },
+    {
+      "objectKey": "THB_020",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3202",
+      "floorKey": "F1003B",
+      "startPosX": 61,
+      "startPosY": 103,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 63
+        },
+        {
+          "spawnId": 34
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3021",
+        "Q3005"
+      ]
+    },
+    {
+      "objectKey": "THB_021",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3207",
+      "floorKey": "F1003B",
+      "startPosX": 61,
+      "startPosY": 104,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 34
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3021"
+      ],
+      "stageCompletedEventKeys": [
+        "E3222"
+      ]
+    },
+    {
+      "objectKey": "THB_021A",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3208",
+      "floorKey": "F1003B",
+      "startPosX": -29,
+      "startPosY": 73,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 31
+        },
+        {
+          "spawnId": 34
+        }
+      ],
+      "stageAliveNpcKeys": [
+        "N103001"
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3021",
+        "Q3023"
+      ],
+      "stageCompletedEventKeys": [
+        "E3222"
+      ]
+    },
+    {
+      "objectKey": "THB_022",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2009",
+      "floorKey": "F1002B",
+      "startPosX": 68,
+      "startPosY": 52,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 2012
+        },
+        {
+          "spawnId": 2013
+        },
+        {
+          "spawnId": 2014
+        },
+        {
+          "spawnId": 2015
+        },
+        {
+          "spawnId": 2016
+        },
+        {
+          "spawnId": 2017
+        },
+        {
+          "spawnId": 2018
+        },
+        {
+          "spawnId": 2019
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3024"
+      ]
+    },
+    {
+      "objectKey": "THB_023",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2003",
+      "floorKey": "F1002B",
+      "startPosX": 69,
+      "startPosY": 69,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 2012
+        },
+        {
+          "spawnId": 2013
+        },
+        {
+          "spawnId": 2014
+        },
+        {
+          "spawnId": 2015
+        },
+        {
+          "spawnId": 2016
+        },
+        {
+          "spawnId": 2017
+        },
+        {
+          "spawnId": 2018
+        },
+        {
+          "spawnId": 2019
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3024"
+      ]
+    },
+    {
+      "objectKey": "THB_024",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2008",
+      "floorKey": "F1002B",
+      "startPosX": 69,
+      "startPosY": 224,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N102021"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3024"
+      ]
+    },
+    {
+      "objectKey": "THB_025",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2004",
+      "floorKey": "F1002B",
+      "startPosX": 69,
+      "startPosY": 232,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C2004"
+        },
+        {
+          "cutsceneKey": "C2014"
+        },
+        {
+          "cutsceneKey": "C2015"
+        },
+        {
+          "cutsceneKey": "C2005"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 2012
+        },
+        {
+          "spawnId": 2013
+        },
+        {
+          "spawnId": 2014
+        },
+        {
+          "spawnId": 2015
+        },
+        {
+          "spawnId": 2016
+        },
+        {
+          "spawnId": 2017
+        },
+        {
+          "spawnId": 2018
+        },
+        {
+          "spawnId": 2019
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N102014",
+        "N102021"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3024"
+      ]
+    },
+    {
+      "objectKey": "THB_026",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2005D",
+      "floorKey": "F1002B",
+      "startPosX": 67,
+      "startPosY": 230,
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C2005D"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 2012
+        },
+        {
+          "spawnId": 2013
+        },
+        {
+          "spawnId": 2014
+        },
+        {
+          "spawnId": 2015
+        },
+        {
+          "spawnId": 2016
+        },
+        {
+          "spawnId": 2017
+        },
+        {
+          "spawnId": 2018
+        },
+        {
+          "spawnId": 2019
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N102021"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3024"
+      ]
+    },
+    {
+      "objectKey": "THB_027",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2007",
+      "floorKey": "F1002B",
+      "startPosX": 69,
+      "startPosY": 69,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 2012
+        },
+        {
+          "spawnId": 2013
+        },
+        {
+          "spawnId": 2014
+        },
+        {
+          "spawnId": 2015
+        },
+        {
+          "spawnId": 2016
+        },
+        {
+          "spawnId": 2017
+        },
+        {
+          "spawnId": 2018
+        },
+        {
+          "spawnId": 2019
+        },
+        {
+          "spawnId": 2192
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3024"
+      ]
+    },
+    {
+      "objectKey": "THB_028",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3026",
+      "floorKey": "F1003B",
+      "startPosX": 55,
+      "startPosY": 61,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 63,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 34
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3005"
+      ]
+    },
+    {
+      "objectKey": "THB_029",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3203",
+      "floorKey": "F1003B",
+      "startPosX": -26,
+      "startPosY": 74,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 63
+        },
+        {
+          "spawnId": 34
+        }
+      ],
+      "stageAliveNpcKeys": [
+        "N103001"
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3005"
+      ]
+    },
+    {
+      "objectKey": "THB_030",
+      "stageLeaderId": 5,
+      "dialogueKey": "D41610",
+      "stageTargetObjectKey": "SO304100",
+      "floorKey": "F1003B",
+      "startPosX": -30,
+      "startPosY": 74,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 63
+        },
+        {
+          "spawnId": 34
+        },
+        {
+          "spawnId": 31,
+          "asCorpse": true
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3005"
+      ]
+    },
+    {
+      "objectKey": "THB_031",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4003",
+      "floorKey": "F1004B",
+      "startPosX": 56,
+      "startPosY": -60,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ]
+    },
+    {
+      "objectKey": "THB_032",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4002",
+      "floorKey": "F1004B",
+      "startPosX": 136,
+      "startPosY": -62,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ]
+    },
+    {
+      "objectKey": "THB_033",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4007",
+      "floorKey": "F1004B",
+      "startPosX": 139,
+      "startPosY": -55,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N104012",
+          "actorName": "poreleg",
+          "tileX": 139,
+          "tileY": -54,
+          "stepIndex": -1,
+          "dieAfterDialogueKey": "D40211"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ]
+    },
+    {
+      "objectKey": "THB_034",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4015",
+      "floorKey": "F1004B",
+      "startPosX": 137,
+      "startPosY": -54,
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C4015"
+        },
+        {
+          "cutsceneKey": "C4008"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedEventKeys": [
+        "E40208"
+      ]
+    },
+    {
+      "objectKey": "THB_035",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4032",
+      "floorKey": "F1004B",
+      "startPosX": 139,
+      "startPosY": -88,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N104009",
+          "actorName": "dorothea",
+          "tileX": 139,
+          "tileY": -87,
+          "stepIndex": -1
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104009"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_036",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4011",
+      "floorKey": "F1004B",
+      "startPosX": 59,
+      "startPosY": -122,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104003"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ],
+      "stageCompletedEventKeys": [
+        "E40208"
+      ]
+    },
+    {
+      "objectKey": "THB_037",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4012",
+      "floorKey": "F1004B",
+      "startPosX": 47,
+      "startPosY": -132,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104006"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_038",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4034",
+      "stageTargetNpcKey": "N104003",
+      "floorKey": "F1004B",
+      "startPosX": 63,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104003"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_039",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4013",
+      "floorKey": "F1004B",
+      "startPosX": 46,
+      "startPosY": -131,
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104006"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_040",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40710",
+      "stageTargetNpcKey": "N104002",
+      "floorKey": "F1004B",
+      "startPosX": 59,
+      "startPosY": -140,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_041",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40711",
+      "stageTargetNpcKey": "N104017",
+      "floorKey": "F1004B",
+      "startPosX": 32,
+      "startPosY": -142,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_042",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40712",
+      "stageTargetNpcKey": "N104004",
+      "floorKey": "F1004B",
+      "startPosX": 55,
+      "startPosY": -139,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_043",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40713",
+      "stageTargetNpcKey": "N104016",
+      "floorKey": "F1004B",
+      "startPosX": 49,
+      "startPosY": -139,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_044",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40714",
+      "stageTargetNpcKey": "N104023",
+      "floorKey": "F1004B",
+      "startPosX": 54,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_045",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40715",
+      "stageTargetNpcKey": "N104015",
+      "floorKey": "F1004B",
+      "startPosX": 35,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_046",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4014",
+      "floorKey": "F1004B",
+      "startPosX": 46,
+      "startPosY": -131,
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C4014"
+        },
+        {
+          "cutsceneKey": "C4009"
+        }
+      ],
+      "stageNpcs": [],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104006", "N104003"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002"
+      ]
+    },
+    {
+      "objectKey": "THB_047",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4010",
+      "floorKey": "F1004B",
+      "startPosX": 46,
+      "startPosY": -131,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10400601,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008"
+      ]
+    },
+    {
+      "objectKey": "THB_048",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4035",
+      "floorKey": "F1004B",
+      "startPosX": 139,
+      "startPosY": -88,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C4035"
+        },
+        {
+          "cutsceneKey": "C4020"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N104009",
+          "actorName": "dorothea",
+          "tileX": 139,
+          "tileY": -87,
+          "stepIndex": -1
+        },
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104009"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008"
+      ]
+    },
+    {
+      "objectKey": "THB_049",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4040",
+      "floorKey": "F1004B",
+      "startPosX": 64,
+      "startPosY": -60,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C4040"
+        },
+        {
+          "cutsceneKey": "C4036",
+          "completedEventKeys": [
+            "E42060"
+          ],
+          "completedQuestKeys": [
+            "Q4023"
+          ]
+        }
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N104009",
+          "actorName": "dorothea",
+          "tileX": 64,
+          "tileY": -59,
+          "stepIndex": -1
+        },
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104009"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008"
+      ]
+    },
+    {
+      "objectKey": "THB_050",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4021",
+      "floorKey": "F1004B",
+      "startPosX": 36,
+      "startPosY": 35,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ],
+      "stageCompletedEventKeys": [
+        "E42060"
+      ]
+    },
+    {
+      "objectKey": "THB_051",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4026",
+      "floorKey": "F1004B",
+      "startPosX": 122,
+      "startPosY": 66,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N104029",
+          "actorName": "aliune",
+          "tileX": 122,
+          "tileY": 90,
+          "stepIndex": -1
+        },
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104039"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ]
+    },
+    {
+      "objectKey": "THB_052",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4022",
+      "floorKey": "F1004B",
+      "startPosX": 122,
+      "startPosY": 67,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D42064"
+        },
+        {
+          "cutsceneKey": "C4022"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N104039",
+          "actorName": "npcA",
+          "tileX": 124,
+          "tileY": 69,
+          "stepIndex": -1,
+          "motionId": "HalfFlower"
+        },
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400041
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ]
+    },
+    {
+      "objectKey": "THB_053",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4039",
+      "floorKey": "F1004B",
+      "startPosX": -40,
+      "startPosY": -45,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ]
+    },
+    {
+      "objectKey": "THB_054",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4037",
+      "floorKey": "F1004B",
+      "startPosX": -47,
+      "startPosY": -45,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ]
+    },
+    {
+      "objectKey": "THB_055",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4030",
+      "floorKey": "F1004B",
+      "startPosX": -37,
+      "startPosY": -44,
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D42072"
+        },
+        {
+          "cutsceneKey": "C4030"
+        },
+        {
+          "cutsceneKey": "C4033"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ]
+    },
+    {
+      "objectKey": "THB_056",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4041",
+      "floorKey": "F1004B",
+      "startPosX": -49,
+      "startPosY": -94,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104031",
+        "N104032",
+        "N104033"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ]
+    },
+    {
+      "objectKey": "THB_057",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4023",
+      "floorKey": "F1004B",
+      "startPosX": -46,
+      "startPosY": -96,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D42081"
+        },
+        {
+          "cutsceneKey": "C4023"
+        },
+        {
+          "dialogueKey": "D420811"
+        },
+        {
+          "dialogueKey": "D42082"
+        },
+        {
+          "dialogueKey": "D42083"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104031",
+        "N104032",
+        "N104033"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ]
+    },
+    {
+      "objectKey": "THB_058",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4031",
+      "floorKey": "F1004B",
+      "startPosX": -48,
+      "startPosY": -95,
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N104031",
+        "N104032",
+        "N104033"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4023E",
+        "Q4013",
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q4023"
+      ],
+      "stageCompletedEventKeys": [
+        "E42060"
+      ]
+    },
+    {
+      "objectKey": "THB_060",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5013",
+      "floorKey": "F1005B",
+      "startPosX": -195,
+      "startPosY": 48,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_061",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5014",
+      "floorKey": "F1005B",
+      "startPosX": -114,
+      "startPosY": 126,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_062",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1001",
+      "floorKey": "FB1001B",
+      "startPosX": -35,
+      "startPosY": -11,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_063",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1001A",
+      "stageTargetObjectKey": "SO-1025",
+      "floorKey": "FB1001B",
+      "startPosX": -47,
+      "startPosY": -24,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D-1250"
+        },
+        {
+          "cutsceneKey": "C-1001A"
+        },
+        {
+          "cutsceneKey": "C-1004"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1001"
+      ]
+    },
+    {
+      "objectKey": "THB_064",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1005",
+      "floorKey": "FB1001B",
+      "startPosX": -36,
+      "startPosY": -56,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N201003A",
+          "actorName": "chef",
+          "tileX": -36,
+          "tileY": -55,
+          "stepIndex": -1
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_065",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1006",
+      "floorKey": "FB1001B",
+      "startPosX": -36,
+      "startPosY": -56,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D-1230"
+        },
+        {
+          "cutsceneKey": "C-1006"
+        },
+        {
+          "cutsceneKey": "C-1014"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1001"
+      ],
+      "stageCompletedEventKeys": [
+        "EM-1005"
+      ]
+    },
+    {
+      "objectKey": "THB_067",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1082",
+      "floorKey": "FB1001B",
+      "startPosX": 74,
+      "startPosY": -115,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1003"
+      ]
+    },
+    {
+      "objectKey": "THB_068",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1008",
+      "stageTargetNpcKey": "N201030",
+      "floorKey": "FB1001B",
+      "startPosX": 81,
+      "startPosY": -114,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D-1207"
+        },
+        {
+          "cutsceneKey": "C-1008"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 201246
+        },
+        {
+          "spawnId": 201247
+        },
+        {
+          "spawnId": 201248
+        },
+        {
+          "spawnId": 201249
+        },
+        {
+          "spawnId": 201250
+        },
+        {
+          "spawnId": 201251
+        },
+        {
+          "spawnId": 201252
+        },
+        {
+          "spawnId": 201253
+        },
+        {
+          "spawnId": 201254
+        },
+        {
+          "spawnId": 201255
+        },
+        {
+          "spawnId": 201275
+        },
+        {
+          "spawnId": 201276
+        },
+        {
+          "spawnId": 201277
+        },
+        {
+          "spawnId": 201278
+        },
+        {
+          "spawnId": 201279
+        },
+        {
+          "spawnId": 201280
+        },
+        {
+          "spawnId": 201281
+        },
+        {
+          "spawnId": 201282
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_070",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1010",
+      "floorKey": "FB1001B",
+      "startPosX": 63,
+      "startPosY": -60,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 201246
+        },
+        {
+          "spawnId": 201247
+        },
+        {
+          "spawnId": 201248
+        },
+        {
+          "spawnId": 201249
+        },
+        {
+          "spawnId": 201250
+        },
+        {
+          "spawnId": 201251
+        },
+        {
+          "spawnId": 201252
+        },
+        {
+          "spawnId": 201253
+        },
+        {
+          "spawnId": 201254
+        },
+        {
+          "spawnId": 201255
+        },
+        {
+          "spawnId": 201275
+        },
+        {
+          "spawnId": 201276
+        },
+        {
+          "spawnId": 201277
+        },
+        {
+          "spawnId": 201278
+        },
+        {
+          "spawnId": 201279
+        },
+        {
+          "spawnId": 201280
+        },
+        {
+          "spawnId": 201281
+        },
+        {
+          "spawnId": 201282
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1003",
+        "Q-1005"
+      ]
+    },
+    {
+      "objectKey": "THB_070A",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-1231",
+      "floorKey": "FB1001B",
+      "startPosX": -36,
+      "startPosY": -56,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D-1231"
+        },
+        {
+          "cutsceneKey": "C-1011"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N201003B",
+          "actorName": "chef",
+          "tileX": -36,
+          "tileY": -55,
+          "stepIndex": -1
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1003",
+        "Q-1005"
+      ]
+    },
+    {
+      "objectKey": "THB_071",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1015",
+      "floorKey": "FB1001B",
+      "startPosX": -20,
+      "startPosY": -227,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 201246
+        },
+        {
+          "spawnId": 201247
+        },
+        {
+          "spawnId": 201248
+        },
+        {
+          "spawnId": 201249
+        },
+        {
+          "spawnId": 201250
+        },
+        {
+          "spawnId": 201251
+        },
+        {
+          "spawnId": 201252
+        },
+        {
+          "spawnId": 201253
+        },
+        {
+          "spawnId": 201254
+        },
+        {
+          "spawnId": 201255
+        },
+        {
+          "spawnId": 201275
+        },
+        {
+          "spawnId": 201276
+        },
+        {
+          "spawnId": 201277
+        },
+        {
+          "spawnId": 201278
+        },
+        {
+          "spawnId": 201279
+        },
+        {
+          "spawnId": 201280
+        },
+        {
+          "spawnId": 201281
+        },
+        {
+          "spawnId": 201282
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1003",
+        "Q-1005"
+      ]
+    },
+    {
+      "objectKey": "THB_072",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1016",
+      "floorKey": "FB1001B",
+      "startPosX": -26,
+      "startPosY": -228,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C-1016"
+        },
+        {
+          "cutsceneKey": "C-1013"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 201246
+        },
+        {
+          "spawnId": 201247
+        },
+        {
+          "spawnId": 201248
+        },
+        {
+          "spawnId": 201249
+        },
+        {
+          "spawnId": 201250
+        },
+        {
+          "spawnId": 201251
+        },
+        {
+          "spawnId": 201252
+        },
+        {
+          "spawnId": 201253
+        },
+        {
+          "spawnId": 201254
+        },
+        {
+          "spawnId": 201255
+        },
+        {
+          "spawnId": 201275
+        },
+        {
+          "spawnId": 201276
+        },
+        {
+          "spawnId": 201277
+        },
+        {
+          "spawnId": 201278
+        },
+        {
+          "spawnId": 201279
+        },
+        {
+          "spawnId": 201280
+        },
+        {
+          "spawnId": 201281
+        },
+        {
+          "spawnId": 201282
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1005"
+      ]
+    },
+    {
+      "objectKey": "THB_073",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2101",
+      "floorKey": "FB1002B",
+      "startPosX": 5,
+      "startPosY": 62,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_074",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2102",
+      "floorKey": "FB1002B",
+      "startPosX": 54,
+      "startPosY": 48,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N202117",
+          "actorName": "naked",
+          "tileX": 53,
+          "tileY": 48,
+          "stepIndex": -1
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_075",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2103",
+      "floorKey": "FB1002B",
+      "startPosX": 52,
+      "startPosY": 51,
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 202111,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 202112,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 202113,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 202114,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 202115,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 202116,
+          "asCorpse": true
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageCompletedEventKeys": [
+        "EL-2102N"
+      ]
+    },
+    {
+      "objectKey": "THB_076",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2104",
+      "floorKey": "FB1002B",
+      "startPosX": 21,
+      "startPosY": 103,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N202101"
+      ]
+    },
+    {
+      "objectKey": "THB_077",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2114",
+      "floorKey": "FB1002B",
+      "startPosX": 156,
+      "startPosY": 75,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N202117",
+          "actorName": "naked",
+          "tileX": 158,
+          "tileY": 75,
+          "stepIndex": -1
+        },
+        {
+          "spawnId": 202131
+        },
+        {
+          "spawnId": 202132
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_078",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2106",
+      "floorKey": "FB1002B",
+      "startPosX": 89,
+      "startPosY": 50,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C-2106"
+        },
+        {
+          "cutsceneKey": "C202290"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N202103"
+      ]
+    },
+    {
+      "objectKey": "THB_079",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C202291",
+      "floorKey": "FB1002B",
+      "startPosX": 205,
+      "startPosY": 40,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C202291"
+        },
+        {
+          "cutsceneKey": "C-2107"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_080",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2108",
+      "floorKey": "FB1002B",
+      "startPosX": 21,
+      "startPosY": 103,
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N202101"
+      ]
+    },
+    {
+      "objectKey": "THB_081",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3100",
+      "floorKey": "FB1003B",
+      "groupKey": "RANGE1",
+      "startPosX": 38,
+      "startPosY": 92,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_082",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3107",
+      "floorKey": "FB1003B",
+      "groupKey": "RANGE1",
+      "startPosX": -157,
+      "startPosY": 85,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N203007",
+          "actorName": "master",
+          "tileX": -157,
+          "tileY": 86,
+          "stepIndex": -1
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_083",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2117",
+      "floorKey": "FB1002B",
+      "groupKey": "RANGE1",
+      "startPosX": 138,
+      "startPosY": 104,
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 202151
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N202101"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-2009",
+        "Q-2010A"
+      ]
+    },
+    {
+      "objectKey": "THB_084",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2111",
+      "floorKey": "FB1002B",
+      "groupKey": "RANGE1",
+      "startPosX": 129,
+      "startPosY": 102,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 202151
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N202101"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-2010A"
+      ]
+    },
+    {
+      "objectKey": "THB_085",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2115",
+      "floorKey": "FB1002B",
+      "groupKey": "RANGE1",
+      "startPosX": 21,
+      "startPosY": 103,
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N202101"
+      ],
+      "stageExcludedActorNames": [
+        "guard"
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-2010A"
+      ]
+    },
+    {
+      "objectKey": "THB_086",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2116",
+      "floorKey": "FB1002B",
+      "groupKey": "RANGE1",
+      "startPosX": 21,
+      "startPosY": 103,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-2009"
+      ]
+    },
+    {
+      "objectKey": "THB_087",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1193",
+      "floorKey": "FB1001B",
+      "groupKey": "RANGE1",
+      "startPosX": -35,
+      "startPosY": -55,
+      "routeKey": "B",
+      "steps": [
+        {
+          "dialogueKey": "D-1296"
+        },
+        {
+          "cutsceneKey": "C-1193"
+        },
+        {
+          "cutsceneKey": "C-1193A",
+          "requiredPreviousChoiceKey": "DC-1294A"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 201246
+        },
+        {
+          "spawnId": 201247
+        },
+        {
+          "spawnId": 201248
+        },
+        {
+          "spawnId": 201249
+        },
+        {
+          "spawnId": 201250
+        },
+        {
+          "spawnId": 201251
+        },
+        {
+          "spawnId": 201252
+        },
+        {
+          "spawnId": 201253
+        },
+        {
+          "spawnId": 201254
+        },
+        {
+          "spawnId": 201255
+        },
+        {
+          "spawnId": 201275
+        },
+        {
+          "spawnId": 201276
+        },
+        {
+          "spawnId": 201277
+        },
+        {
+          "spawnId": 201278
+        },
+        {
+          "spawnId": 201279
+        },
+        {
+          "spawnId": 201280
+        },
+        {
+          "spawnId": 201281
+        },
+        {
+          "spawnId": 201282
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1005"
+      ]
+    },
+    {
+      "objectKey": "THB_089",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1194",
+      "floorKey": "FB1001B",
+      "groupKey": "RANGE1",
+      "startPosX": -37,
+      "startPosY": -60,
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C-1194"
+        },
+        {
+          "cutsceneKey": "C-1192"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "spawnId": 201001,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 201246
+        },
+        {
+          "spawnId": 201247
+        },
+        {
+          "spawnId": 201248
+        },
+        {
+          "spawnId": 201249
+        },
+        {
+          "spawnId": 201250
+        },
+        {
+          "spawnId": 201251
+        },
+        {
+          "spawnId": 201252
+        },
+        {
+          "spawnId": 201253
+        },
+        {
+          "spawnId": 201254
+        },
+        {
+          "spawnId": 201255
+        },
+        {
+          "spawnId": 201275
+        },
+        {
+          "spawnId": 201276
+        },
+        {
+          "spawnId": 201277
+        },
+        {
+          "spawnId": 201278
+        },
+        {
+          "spawnId": 201279
+        },
+        {
+          "spawnId": 201280
+        },
+        {
+          "spawnId": 201281
+        },
+        {
+          "spawnId": 201282
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q-1005"
+      ]
+    },
+    {
+      "objectKey": "THB_090",
+      "stageLeaderId": 5,
+      "dialogueKey": "D10991",
+      "stageTargetNpcKey": "N101191",
+      "floorKey": "F1001B",
+      "groupKey": "RANGE1",
+      "startPosX": 76,
+      "startPosY": 53,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10109101
+        },
+        {
+          "spawnId": 10103102
+        },
+        {
+          "spawnId": 10103202
+        },
+        {
+          "spawnId": 10103302
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1012S",
+        "Q-2010A"
+      ],
+      "stageSpawnObjectKeys": [
+        "SO201916"
+      ]
+    },
+    {
+      "objectKey": "THB_091",
+      "stageLeaderId": 5,
+      "dialogueKey": "D2091",
+      "stageTargetNpcKey": "N102091",
+      "floorKey": "F1002B",
+      "groupKey": "RANGE1",
+      "startPosX": 69,
+      "startPosY": 233,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 2191
+        },
+        {
+          "spawnId": 2012
+        },
+        {
+          "spawnId": 2013
+        },
+        {
+          "spawnId": 2014
+        },
+        {
+          "spawnId": 2015
+        },
+        {
+          "spawnId": 2016
+        },
+        {
+          "spawnId": 2017
+        },
+        {
+          "spawnId": 2018
+        },
+        {
+          "spawnId": 2019
+        },
+        {
+          "spawnId": 2192
+        },
+        {
+          "spawnId": 2009,
+          "asCorpse": true
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        7,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3024"
+      ]
+    },
+    {
+      "objectKey": "THB_092",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3922",
+      "floorKey": "F1003B",
+      "groupKey": "RANGE1",
+      "startPosX": 66,
+      "startPosY": -41,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 61
+        },
+        {
+          "spawnId": 63
+        },
+        {
+          "spawnId": 34
+        },
+        {
+          "spawnId": 31,
+          "asCorpse": true
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3005",
+        "Q-2010A"
+      ]
+    },
+    {
+      "objectKey": "THB_093",
+      "stageLeaderId": 5,
+      "dialogueKey": "D41991",
+      "stageTargetNpcKey": "N104191",
+      "floorKey": "F1004B",
+      "startPosX": -38,
+      "startPosY": -44,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 10409101
+        },
+        {
+          "spawnId": 10400601
+        },
+        {
+          "spawnId": 10404101
+        },
+        {
+          "spawnId": 10404201
+        },
+        {
+          "spawnId": 10404301
+        },
+        {
+          "spawnId": 10404401
+        },
+        {
+          "spawnId": 10404501
+        },
+        {
+          "spawnId": 10404601
+        },
+        {
+          "spawnId": 10400903
+        },
+        {
+          "spawnId": 10403101,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 10403201,
+          "asCorpse": true
+        },
+        {
+          "spawnId": 10403301,
+          "asCorpse": true
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6,
+        400042
+      ],
+      "stageCompletedQuestKeys": [
+        "Q4002",
+        "Q4008",
+        "Q4022",
+        "Q-2010A",
+        "Q4023",
+        "Q4025C",
+        "Q4024B"
+      ]
+    },
+    {
+      "objectKey": "THB_094",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3109",
+      "stageTargetNpcKey": "N203007",
+      "floorKey": "FB1003B",
+      "startPosX": -154,
+      "startPosY": 86,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N203007",
+          "tileX": -157,
+          "tileY": 86
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_095",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3110",
+      "floorKey": "FB1003B",
+      "startPosX": 256,
+      "startPosY": 89,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_096",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-3216",
+      "stageTargetNpcKey": "N203015",
+      "floorKey": "FB1003B",
+      "startPosX": 265,
+      "startPosY": 28,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_097",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3108",
+      "floorKey": "FB1003B",
+      "startPosX": 35,
+      "startPosY": 67,
+      "startDirection": "Right",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C-3106"
+        },
+        {
+          "cutsceneKey": "C-3108"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_097A",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3101",
+      "floorKey": "FB1003B",
+      "startPosX": 40,
+      "startPosY": 66,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N203007",
+          "actorName": "master",
+          "tileX": 37,
+          "tileY": 66,
+          "stepIndex": -1
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400042
+      ]
+    },
+    {
+      "objectKey": "THB_098",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3104",
+      "floorKey": "FB1003B",
+      "startPosX": 40,
+      "startPosY": 66,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 20301701
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400043
+      ]
+    },
+    {
+      "objectKey": "THB_099",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-3105",
+      "floorKey": "FB1003B",
+      "startPosX": 40,
+      "startPosY": 66,
+      "startDirection": "Left",
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "spawnId": 20301701,
+          "asCorpse": true
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        1,
+        8,
+        400043
+      ]
+    },
+    {
+      "objectKey": "THB_100",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5005",
+      "floorKey": "F1005B",
+      "startPosX": -195,
+      "startPosY": -187,
+      "startDirection": "Down",
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400043
+      ]
+    },
+    {
+      "objectKey": "THB_101",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5007",
+      "floorKey": "F1005B",
+      "startPosX": -178,
+      "startPosY": -171,
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400043
+      ]
+    },
+    {
+      "objectKey": "THB_102",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5006",
+      "floorKey": "F1005B",
+      "startPosX": -142,
+      "startPosY": -135,
+      "routeKey": "B",
+      "stageNpcs": [
+        {
+          "npcKey": "N105117",
+          "actorName": "w1",
+          "tileX": -137,
+          "tileY": -124,
+          "stepIndex": -1
+        },
+        {
+          "spawnId": 105101
+        },
+        {
+          "spawnId": 105102
+        },
+        {
+          "spawnId": 105103
+        },
+        {
+          "spawnId": 105104
+        },
+        {
+          "spawnId": 105105
+        },
+        {
+          "spawnId": 105106,
+          "spawnAlongsideActor": true
+        },
+        {
+          "spawnId": 105107
+        },
+        {
+          "spawnId": 105108
+        },
+        {
+          "spawnId": 105109,
+          "spawnAlongsideActor": true
+        },
+        {
+          "spawnId": 105110
+        },
+        {
+          "spawnId": 105111
+        },
+        {
+          "spawnId": 105112
+        },
+        {
+          "spawnId": 105113,
+          "spawnAlongsideActor": true
+        },
+        {
+          "spawnId": 105114
+        },
+        {
+          "spawnId": 105115
+        },
+        {
+          "spawnId": 105116,
+          "spawnAlongsideActor": true
+        },
+        {
+          "spawnId": 105117
+        },
+        {
+          "spawnId": 105125
+        },
+        {
+          "spawnId": 105126
+        },
+        {
+          "spawnId": 105127,
+          "spawnAlongsideActor": true
+        },
+        {
+          "spawnId": 105134
+        },
+        {
+          "spawnId": 105140,
+          "spawnAlongsideActor": true
+        },
+        {
+          "spawnId": 105145
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400043
+      ]
+    },
+    {
+      "objectKey": "THB_103",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5001",
+      "floorKey": "F1005B",
+      "startPosX": -114,
+      "startPosY": -109,
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400043
+      ],
+      "stageCompletedQuestKeys": [
+        "Q5006",
+        "Q-3002"
+      ]
+    },
+    {
+      "objectKey": "THB_104",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5015",
+      "floorKey": "F1005B",
+      "startPosX": -97,
+      "startPosY": -89,
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400043
+      ]
+    },
+    {
+      "objectKey": "THB_105",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5004",
+      "floorKey": "F1005B",
+      "startPosX": -86,
+      "startPosY": -75,
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1,
+        400043
+      ]
+    },
+    {
+      "objectKey": "THB_106",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5010",
+      "floorKey": "F1005B",
+      "startPosX": -313,
+      "startPosY": -75,
+      "routeKey": "B",
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1
+      ]
+    },
+    {
+      "objectKey": "THB_107",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5003",
+      "floorKey": "F1005B",
+      "startPosX": -321,
+      "startPosY": -83,
+      "startDirection": "Up",
+      "routeKey": "B",
+      "steps": [
+        {
+          "cutsceneKey": "C5003"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        12,
+        1
+      ]
+    },
+    {
+      "objectKey": "THB_108",
+      "endingKey": "B",
+      "floorKey": "F1005B",
+      "startPosX": -339,
+      "startPosY": -93,
+      "routeKey": "B"
+    }
+  ]
+}

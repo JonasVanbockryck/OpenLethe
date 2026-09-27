@@ -1,4 +1,3 @@
-
 {
   "list": [
     {
@@ -10,103 +9,120 @@
           "id": 1,
           "storyId": "E901B",
           "nodeId": 912501,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_Mortuary room"
         },
         {
           "id": 2,
           "storyId": "E902B",
           "nodeId": 912502,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_Patient room"
         },
         {
           "id": 3,
           "storyId": "E903B",
           "nodeId": 912503,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E901"
         },
         {
           "id": 4,
           "storyId": "E903A",
           "nodeId": 912503,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_ring_finger_clrear"
         },
         {
           "id": 5,
           "storyId": "E904B",
           "nodeId": 912504,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_spiderhouse_outpost"
         },
         {
           "id": 6,
           "storyId": "E905B",
           "nodeId": 912505,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_spiderhouse_outpost"
         },
         {
           "id": 7,
           "storyId": "E906B",
           "nodeId": 912506,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E902"
         },
         {
           "id": 8,
           "storyId": "E906A",
           "nodeId": 912506,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_ring_finger_clrear"
         },
         {
           "id": 9,
           "storyId": "E907B",
           "nodeId": 912507,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_Giant Stingray Harbor"
         },
         {
           "id": 10,
           "storyId": "E908B",
           "nodeId": 912508,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_thumb corridor"
         },
         {
           "id": 11,
           "storyId": "E909B",
           "nodeId": 912509,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_office_gregor"
         },
         {
           "id": 12,
           "storyId": "E910B",
           "nodeId": 912510,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_index_finger"
         },
         {
           "id": 13,
           "storyId": "E910A",
           "nodeId": 912510,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_basement_rien"
         },
         {
           "id": 14,
           "storyId": "E911A",
           "nodeId": 912511,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_room_rien"
         },
         {
           "id": 15,
           "storyId": "E912B",
           "nodeId": 912512,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E904"
         },
         {
           "id": 16,
           "storyId": "E913B",
           "nodeId": 912513,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E905_2"
         },
         {
           "id": 17,
           "storyId": "E914B",
           "nodeId": 912514,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_spiderhouse_outpost"
         }
       ]
     }

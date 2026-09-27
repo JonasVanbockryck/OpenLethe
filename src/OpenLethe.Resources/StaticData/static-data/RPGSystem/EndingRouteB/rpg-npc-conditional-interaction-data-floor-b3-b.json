@@ -1,0 +1,141 @@
+{
+  "list": [
+    {
+      "npcKey": "N203007",
+      "order": 50,
+      "conditionType": "Cutscene",
+      "conditionValue": "C-3101",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-3102",
+      "skipIfComplete": false,
+      "interactEffect": "InteractSparkle"
+    },
+    {
+      "npcKey": "N203007",
+      "order": 20,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3000",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-3109",
+      "interactEffect": "InteractSparkle"
+    },
+    {
+      "npcKey": "N203007",
+      "order": 30,
+      "conditionType": "Cutscene",
+      "conditionValue": "C-3109",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-3288",
+      "skipIfComplete": false
+    },
+    {
+      "npcKey": "N203007",
+      "order": 60,
+      "conditionType": "Cutscene",
+      "conditionValue": "C-3102",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-3288",
+      "skipIfComplete": false
+    },
+    {
+      "npcKey": "N203007",
+      "order": 70,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3001",
+      "interactionType": "Event",
+      "interactionKey": "EL-3005S",
+      "skipIfComplete": false,
+      "showQuestMark": true,
+      "interactEffect": "InteractSparkle"
+    },
+    {
+      "npcKey": "N203007",
+      "order": 10,
+      "conditionType": "Cutscene",
+      "conditionValue": "C-3107",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-3288",
+      "skipIfComplete": false
+    },
+    {
+      "npcKey": "N203004",
+      "order": 5,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3006",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-3110",
+      "interactEffect": "InteractSparkle"
+    },
+    {
+      "npcKey": "N203004",
+      "order": 7,
+      "conditionType": "Cutscene",
+      "conditionValue": "C-3110",
+      "interactionType": "Event",
+      "interactionKey": "EW-3003A"
+    },
+    {
+      "npcKey": "N203004",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3003A",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-32151",
+      "skipIfComplete": false,
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N203015",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3003B",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-3223",
+      "skipIfComplete": false
+    },
+    {
+      "npcKey": "N203015",
+      "order": 5,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3003",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-3216",
+      "skipIfComplete": false
+    },
+    {
+      "npcKey": "N203005",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3003C",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-3213",
+      "skipIfComplete": false
+    },
+    {
+      "npcKey": "N203005",
+      "order": 5,
+      "conditionType": "Quest",
+      "conditionValue": "Q-3004",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-3106",
+      "skipIfComplete": false
+    },
+    {
+      "npcKey": "N203005",
+      "order": 7,
+      "conditionType": "Cutscene",
+      "conditionValue": "C-3106",
+      "interactionType": "Event",
+      "interactionKey": "EW-3003C"
+    },
+    {
+      "npcKey": "N203004",
+      "order": 15,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-32151",
+      "interactionType": "Shop",
+      "interactionKey": "SH110001",
+      "skipIfComplete": false
+    }
+  ]
+}

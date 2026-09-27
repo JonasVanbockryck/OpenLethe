@@ -1,0 +1,46 @@
+{
+  "list": [
+    {
+      "key": "E999999",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C999999"
+    },
+    {
+      "key": "E999998",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D999998"
+    },
+    {
+      "key": "EPI-CLEAR-A1",
+      "canRepeat": true,
+      "action1": "RemoveItem",
+      "actionValue1": "I990008, 1",
+      "action2": "RemoveItem",
+      "actionValue2": "I990009, 1",
+      "action3": "RemoveItem",
+      "actionValue3": "I990010, 1",
+      "action4": "RemoveItem",
+      "actionValue4": "I990011, 1",
+      "action5": "RemoveItem",
+      "actionValue5": "I990012, 1",
+      "action6": "RemoveItem",
+      "actionValue6": "I990013, 1"
+    },
+    {
+      "key": "EPI-CLEAR-A2",
+      "canRepeat": true,
+      "action1": "RemoveItem",
+      "actionValue1": "I990014, 1",
+      "action2": "RemoveItem",
+      "actionValue2": "I990015, 1",
+      "action3": "RemoveItem",
+      "actionValue3": "I990016, 1",
+      "action4": "RemoveItem",
+      "actionValue4": "I990017, 1",
+      "action5": "RemoveItem",
+      "actionValue5": "I990018, 1"
+    }
+  ]
+}

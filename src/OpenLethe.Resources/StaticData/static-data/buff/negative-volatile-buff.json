@@ -700,6 +700,9 @@
       "list": [
         {
           "ability": "CanNotAction"
+        },
+        {
+          "ability": "StartDmgMotionForPersonality"
         }
       ]
     },

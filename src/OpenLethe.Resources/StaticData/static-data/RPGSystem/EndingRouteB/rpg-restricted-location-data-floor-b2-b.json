@@ -1,0 +1,28 @@
+{
+  "list": [
+    {
+      "key": "Lock_Q-2000A_Filature",
+      "locationId": 220102,
+      "requiredQuestKey": "Q-2000",
+      "dialogueKey": "D-2219"
+    },
+    {
+      "key": "Lock_Q-2002_DyeingPath",
+      "locationId": 220402,
+      "requiredQuestKey": "Q-2002",
+      "dialogueKey": "D-2205"
+    },
+    {
+      "key": "Lock_Q-2004_NestCorridor",
+      "locationId": 221502,
+      "requiredQuestKey": "Q-2004",
+      "dialogueKey": "D-2209"
+    },
+    {
+      "key": "Lock_Q-2009_Escalator",
+      "locationId": 221402,
+      "requiredQuestKey": "Q-2009",
+      "dialogueKey": "D-2207"
+    }
+  ]
+}

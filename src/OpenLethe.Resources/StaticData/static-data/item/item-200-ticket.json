@@ -235,6 +235,33 @@
     },
 
 
+    {
+      "id": 237,
+      "desc": "도약 모듈 - E.G.O 해석 [TETH]",
+
+      "itemUseFuncs":[
+        {
+          "itemUseFuncType":"EGO_GACKSUNG_TO",
+          "itemUseFuncValue":4
+        },
+        {
+          "itemUseFuncType":"CHECK_IS_NOT_EGO_TYPE",
+          "itemUseFuncString":"ALEPH"
+        },
+        {
+          "itemUseFuncType":"CHECK_IS_NOT_EGO_TYPE",
+          "itemUseFuncString":"WAW"
+        },
+        {
+          "itemUseFuncType":"CHECK_IS_NOT_EGO_TYPE",
+          "itemUseFuncString":"HE"
+        }
+      ],
+
+      "category": "CONSUMABLE",
+      "spriteStr": "jumping_ticket_9",
+      "itemUseType":"LEAPUP_TICKET"
+    },
 
     {
       "id": 238,

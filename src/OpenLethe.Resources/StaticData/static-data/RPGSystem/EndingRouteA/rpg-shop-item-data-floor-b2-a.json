@@ -1,0 +1,64 @@
+{
+  "list": [
+    {
+      "shopKey" : "SH109001",
+      "itemKey" : "I990901",
+      "price" : 60,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109001",
+      "itemKey" : "I990902",
+      "price" : 100,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109002",
+      "itemKey" : "I990904",
+      "price" : 100,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109002",
+      "itemKey" : "I990905",
+      "price" : 140,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109003",
+      "itemKey" : "I990906",
+      "price" : 100,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109003",
+      "itemKey" : "I990907",
+      "price" : 100,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109003",
+      "itemKey" : "I990908",
+      "price" : 160,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109003",
+      "itemKey" : "I990934",
+      "price" : 120,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109004",
+      "itemKey" : "I990909",
+      "price" : 70,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH109004",
+      "itemKey" : "I990910",
+      "price" : 60,
+      "stock" : 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "list": [
+    {
+      "key": "crowd-config-b2-b",
+      "scaleMin": 0.7,
+      "scaleMax": 0.85,
+      "alpha": 0.8,
+      "maxWalkers": 0,
+      "walkersPer100Tiles": 2.0
+    }
+  ]
+}

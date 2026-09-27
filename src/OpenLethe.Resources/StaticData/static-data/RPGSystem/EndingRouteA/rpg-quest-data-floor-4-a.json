@@ -1,0 +1,82 @@
+{
+  "list": [
+    {
+      "key": "Q4001",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q3013",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q4002",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4001",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4003",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4002",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q4004",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4003",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4005",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4004",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 200
+    },
+    {
+      "key": "Q4006",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4005",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 200
+    },
+    {
+      "key": "Q4007",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4006",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 200
+    },
+    {
+      "key": "Q4008",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4007",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 200
+    },
+    {
+      "key": "Q4013",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4008",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 200
+    },
+    {
+      "key": "Q4009",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4014",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    }
+  ]
+}

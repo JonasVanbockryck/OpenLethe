@@ -1,0 +1,45 @@
+{
+  "list": [
+    {
+      "waveIndex": 0,
+      "startSeconds": 0,
+      "spawnIntervalSeconds": 7.0,
+      "mobsPerSpawn": 2,
+      "totalSpawnLimit": 50,
+      "mobKeys": [
+        "swarm_resident",
+        "swarm_resident_b"
+      ]
+    },
+    {
+      "waveIndex": 1,
+      "startSeconds": 30,
+      "spawnIntervalSeconds": 10,
+      "mobsPerSpawn": 3,
+      "mobKeys": [
+        "swarm_resident",
+        "swarm_resident_b"
+      ]
+    },
+    {
+      "waveIndex": 2,
+      "startSeconds": 70,
+      "spawnIntervalSeconds": 9.5,
+      "mobsPerSpawn": 4,
+      "mobKeys": [
+        "swarm_resident",
+        "swarm_resident_b"
+      ]
+    },
+    {
+      "waveIndex": 3,
+      "startSeconds": 120,
+      "spawnIntervalSeconds": 15.0,
+      "mobsPerSpawn": 5,
+      "mobKeys": [
+        "swarm_resident",
+        "swarm_resident_b"
+      ]
+    }
+  ]
+}

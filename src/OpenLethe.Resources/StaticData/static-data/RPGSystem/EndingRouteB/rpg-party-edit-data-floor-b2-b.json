@@ -1,0 +1,37 @@
+{
+  "list": [
+    {
+      "triggerQuestKey": "Q2008B",
+      "targetFloorList": [
+        {
+          "floor": "B2",
+          "leaderId": 5,
+          "followerList": [ 13, 11, 4, 400041 ],
+          "order": 1
+        }
+      ]
+    },
+    {
+      "triggerQuestKey": "Q4023E",
+      "targetFloorList": [
+        {
+          "floor": "B2",
+          "leaderId": 5,
+          "followerList": [ 13, 11, 4, 400042 ],
+          "order": 2
+        }
+      ]
+    },
+    {
+      "triggerQuestKey": "Q-3005",
+      "targetFloorList": [
+        {
+          "floor": "B2",
+          "leaderId": 5,
+          "followerList": [ 13, 11, 4, 400043 ],
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

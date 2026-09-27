@@ -1,0 +1,198 @@
+﻿{
+  "list": [
+    {
+      "id": "GourmandiseAlly",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 3,
+      "list": [
+        {
+          "ability": "SkillPowerAdder",
+          "value": 1
+        },
+        {
+          "ability": "ChangeToSuperCoin"
+        },
+        {
+          "ability": "AtkDamageMultiplierViaBuffCheckDevideByStack",
+          "value": 0.05,
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "buffOwner": "Self",
+            "stack": 3,
+            "turn": 0,
+            "limit": 30
+          }
+        },
+        {
+          "ability": "GourmandiseAlly",
+          "value": 0.1,
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "buffOwner": "Self",
+            "stack": 3,
+            "turn": 0,
+            "limit": 100
+          }
+        },
+        {
+          "ability": "IgnoreBreakExceptForcedCase"
+        },
+        {
+          "ability": "TakeSinBuffDamageMultiplier",
+          "value": -0.90,
+          "buffData": {
+            "buffKeyword": "Laceration"
+          }
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "BloodyMucusAlly",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 3,
+      "list": [
+        {
+          "ability": "GiveBuffOnUseAttackSkill",
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "target": "Self",
+            "stack": 0,
+            "turn": -1,
+            "activeRound": 0,
+            "value": 1
+          }
+        },
+        {
+          "ability": "LoseStackOnUseDefenceSkill",
+          "value": 1
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "BuffetField",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnZero": false,
+      "maxStack": 3,
+      "list": [],
+      "categoryKeywordList": []
+    },
+    {
+      "id": "BuffetField_0",
+      "iconId": "BuffetField_0",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "BuffetField_1",
+      "iconId": "BuffetField_1",
+      "subIdList": [
+        "BuffetField_0"
+      ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "BuffetField_2",
+      "iconId": "BuffetField_2",
+      "subIdList": [
+        "BuffetField_0"
+      ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": []
+    },
+    {
+      "id": "BuffetShoes",
+      "iconId": "BuffetShoes",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "MinSpeedAdder",
+          "value": 3
+        },
+        {
+          "ability": "MaxSpeedAdder",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "BuffetGoldenClothes",
+      "iconId": "BuffetGoldenClothes",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "DefenseLevelAdder",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "BuffetGold",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": true,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "TakeAtkDamageMultiplierByStack",
+          "value": 0.05
+        },
+        {
+          "ability": "TakeAtkDamageMultiplierViaBuffCheckIfMaxStack",
+          "value": 0.1,
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "buffOwner": "Self",
+            "stack": 1,
+            "turn": 0
+          }
+        }
+      ]
+    }
+  ]
+}

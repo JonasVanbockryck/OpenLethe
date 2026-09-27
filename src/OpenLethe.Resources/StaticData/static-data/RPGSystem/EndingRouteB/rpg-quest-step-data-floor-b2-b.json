@@ -1,0 +1,133 @@
+{
+  "list": [
+    {
+      "questKey": "Q-2000",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "220100"
+    },
+    {
+      "questKey": "Q-2000",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2101"
+    },
+    {
+      "questKey": "Q-2000A",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2112"
+    },
+    {
+      "questKey": "Q-2001",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "220300"
+    },
+    {
+      "questKey": "Q-2002",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2102"
+    },
+    {
+      "questKey": "Q-2002",
+      "stepIndex": 1,
+      "goalType1": "WinBattle",
+      "goalValue1": "11049"
+    },
+    {
+      "questKey": "Q-2002",
+      "stepIndex": 2,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2103"
+    },
+    {
+      "questKey": "Q-2003",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "220400"
+    },
+    {
+      "questKey": "Q-2004",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2104"
+    },
+    {
+      "questKey": "Q-2004A",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11059"
+    },
+    {
+      "questKey": "Q-2005",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "221500"
+    },
+    {
+      "questKey": "Q-2006",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11059"
+    },
+    {
+      "questKey": "Q-2007",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "220200"
+    },
+    {
+      "questKey": "Q-2008",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2106"
+    },
+    {
+      "questKey": "Q-2008",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C202291",
+      "goalType2": "Cutscene",
+      "goalValue2": "C202290",
+      "goalGuideOnly2": true
+    },
+    {
+      "questKey": "Q-2008",
+      "stepIndex": 2,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2107"
+    },
+    {
+      "questKey": "Q-2009",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2108"
+    },
+    {
+      "questKey": "Q-2010",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "221400"
+    },
+    {
+      "questKey": "Q-2010A",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "230101"
+    },
+    {
+      "questKey": "Q-2010A",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-3107"
+    },
+    {
+      "questKey": "Q-2103H",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EA-2103"
+    }
+  ]
+}

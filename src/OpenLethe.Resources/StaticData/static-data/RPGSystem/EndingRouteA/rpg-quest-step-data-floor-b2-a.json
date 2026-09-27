@@ -1,0 +1,147 @@
+{
+  "list": [
+    {
+      "questKey": "Q-2000",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "220100"
+    },
+    {
+      "questKey": "Q-2000",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2000"
+    },
+    {
+      "questKey": "Q-2001",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "221500"
+    },
+    {
+      "questKey": "Q-2001",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-2001-1"
+    },
+    {
+      "questKey": "Q-2002",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2002"
+    },
+    {
+      "questKey": "Q-2003",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "220200"
+    },
+    {
+      "questKey": "Q-2004",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N202002"
+    },
+    {
+      "questKey": "Q-2004",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2004"
+    },
+    {
+      "questKey": "Q-2005",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N202015"
+    },
+    {
+      "questKey": "Q-2005",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2005"
+    },
+    {
+      "questKey": "Q-2006",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N202025"
+    },
+    {
+      "questKey": "Q-2006",
+      "stepIndex": 1,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N202026"
+    },
+    {
+      "questKey": "Q-2007",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2007"
+    },
+    {
+      "questKey": "Q-2009",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2009"
+    },
+    {
+      "questKey": "Q-2010",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I993002, 2",
+      "goalType2": "GetItem",
+      "goalValue2": "I993003, 2",
+      "goalType3": "GetItem",
+      "goalValue3": "I993004, 2"
+    },
+    {
+      "questKey": "Q-2010",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-2010-1"
+    },
+    {
+      "questKey": "Q-2011",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-2011-1"
+    },
+    {
+      "questKey": "Q-2012",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-2012-1"
+    },
+    {
+      "questKey": "Q-2013",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2013"
+    },
+    {
+      "questKey": "Q-2014",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11016"
+    },
+    {
+      "questKey": "Q-2015",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-2015-1"
+    },
+    {
+      "questKey": "Q-2016A",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-2017",
+      "navGoalFloorKey": "FB1001A"
+    },
+    {
+      "questKey": "Q-2017",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "130100"
+    }
+  ]
+}

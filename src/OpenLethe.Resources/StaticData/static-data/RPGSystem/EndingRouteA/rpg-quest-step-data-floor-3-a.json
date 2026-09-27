@@ -1,0 +1,166 @@
+{
+  "list": [
+    {
+      "questKey": "Q3001",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "130100"
+    },
+    {
+      "questKey": "Q3002",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N103004"
+    },
+    {
+      "questKey": "Q3003",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D3301"
+    },
+    {
+      "questKey": "Q3004",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C3041"
+    },
+    {
+      "questKey": "Q3005",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N103001"
+    },
+    {
+      "questKey": "Q3006",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E3015"
+    },
+    {
+      "questKey": "Q3007",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E3070"
+    },
+    {
+      "questKey": "Q3008",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C3080"
+    },
+    {
+      "questKey": "Q3009",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D3084"
+    },
+    {
+      "questKey": "Q3010",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D3085"
+    },
+    {
+      "questKey": "Q3012",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "130300"
+    },
+    {
+      "questKey": "Q3013",
+      "stepIndex": 0,
+      "goalType1": "KillEnemy",
+      "goalValue1": "N103012, 3"
+    },
+    {
+      "questKey": "Q3013",
+      "stepIndex": 1,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N103005"
+    },
+    {
+      "questKey": "Q3011",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I1206, 1"
+    },
+    {
+      "questKey": "Q3011",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C3130"
+    },
+    {
+      "questKey": "Q4014",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D41330"
+    },
+    {
+      "questKey": "Q4014",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D41331"
+    },
+    {
+      "questKey": "Q4014",
+      "stepIndex": 2,
+      "goalType1": "Dialogue",
+      "goalValue1": "D41410"
+    },
+    {
+      "questKey": "Q4015",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4150"
+    },
+    {
+      "questKey": "Q4017",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4160"
+    },
+    {
+      "questKey": "Q4017",
+      "stepIndex": 1,
+      "goalType1": "WinBattle",
+      "goalValue1": "11006"
+    },
+    {
+      "questKey": "Q4016",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D41610"
+    },
+    {
+      "questKey": "Q4016",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4162"
+    },
+    {
+      "questKey": "Q4016",
+      "stepIndex": 2,
+      "goalType1": "Dialogue",
+      "goalValue1": "D3156"
+    },
+    {
+      "questKey": "Q3016T",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EL3016"
+    },
+    {
+      "questKey": "Q3016H1",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E3018"
+    },
+    {
+      "questKey": "Q3016H2",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E3018"
+    }
+  ]
+}

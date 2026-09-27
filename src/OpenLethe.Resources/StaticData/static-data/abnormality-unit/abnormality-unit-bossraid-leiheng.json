@@ -1,0 +1,189 @@
+{
+  "list": [
+    {
+      "id": 5019,
+      "originID": 1145,
+      "nameID": 1145,
+      "viewid": 1145,
+      "sdPortrait": 1145,
+      "appearance": "1145_Thumb_LeiHengAppearance",
+      "unitKeywordList": [
+        "SMALL", 
+        "FINGER",
+        "THUMB_LEVEL_CAPO_FOUR",
+        "BOSS_RAID_MAIN_UNIT"
+      ],
+      "associationList": [
+        "THUMB_FINGER"
+      ],
+      "classType": "ZAYIN",
+      "attributeType": "CRIMSON",
+      "syncOnBossRaid": true,
+      "unlockConfigs": {
+        "isForceUnlockAll": true
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1049,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply6AndPlus20PercentWithMax100"
+              },
+              {
+                "conditionID": "OnKillEnemyMp10"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnLoseDuelAnyTarget4"
+              }
+            ]
+          }
+        ]
+      },
+      "specialDuelRank": 5,
+      "hp": {
+        "defaultStat": 570,
+        "incrementByLevel": 44.2
+      },
+      "unitScriptID": "1145",
+      "patternID": "5019",
+      "startActionSlotNum": 6,
+      "maxActionSlotNum": 6,
+      "phaseIDList": [
+      ],
+      "abnormalityPartList": [
+        501901
+      ],
+      "attributeList": [
+        {
+          "skillId": 501901,
+          "number": 0
+        },
+        {
+          "skillId": 501902,
+          "number": 0
+        },
+        {
+          "skillId": 501903,
+          "number": 0
+        },
+        {
+          "skillId": 501904,
+          "number": 0
+        },
+        {
+          "skillId": 501905,
+          "number": 0
+        },
+        {
+          "skillId": 501906,
+          "number": 0
+        },
+        {
+          "skillId": 501907,
+          "number": 0
+        },
+        {
+          "skillId": 501908,
+          "number": 0
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          501911,
+          501901,
+          501902,
+          501903,
+          501904,
+          501910,
+          501905,
+          501906,
+          501907,
+          501908
+        ]
+      }
+    },
+    
+    {
+      "id": 5020,
+      "originID": 1171,
+      "nameID": 1171,
+      "sdPortrait": 1171,
+      "appearance": "90217_Thumb_mob_1Appearance",
+      "associationList": [
+        "THUMB_FINGER"
+      ],
+      "unitKeywordList": [
+        "SMALL",
+        "FINGER",
+        "THUMB_LEVEL_SOLDATO_THREE",
+        "BOSS_RAID_MAIN_UNIT"
+      ],
+      "level": 60,
+      "classType": "ZAYIN",
+      "attributeType": "CRIMSON",
+      "hp": {
+        "defaultStat": 78,
+        "incrementByLevel": 2.69
+      },
+      "patternID": "AutoPick",
+      "syncOnBossRaid": false,
+      "mp": 0,
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1050,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnWinDuelAnyTarget10"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyMp10"
+              }
+            ]
+          }
+        ]
+      },
+      "abnormalityPartList": [
+        502001
+      ],
+      "attributeList": [
+        {
+          "skillId": 502001,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          502001,
+          9999994
+        ]
+      }
+    }
+  ]
+}

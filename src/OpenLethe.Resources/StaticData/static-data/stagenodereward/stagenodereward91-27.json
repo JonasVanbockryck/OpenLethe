@@ -153,6 +153,10 @@
         {
           "type": "UNLOCK_CODE",
           "id": 9127
+        },
+        {
+          "type": "SYNC_SUBCHAPTER",
+          "id": 9128
         }
       ],
       "exClearRewards": [

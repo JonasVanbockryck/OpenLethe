@@ -1,0 +1,129 @@
+{
+  "list": [
+      {
+        "patternKey": "N201014",
+        "triggerRange": 0,
+        "cooldown": 0.5,
+        "steps": [
+              { "action": "ShowAttackRange", "duration": 0.3 },
+              { "action": "Charge", "hpDamage": 6, "mpDamage": 0, "chargeSpeed": 75.0, "knockbackTiles": 2, "motion": "RushAttack", "impactEffectMotion": "ImpactEffect" },
+              { "action": "Wait", "duration": 1.0 }
+          ]
+        },
+      {
+        "patternKey": "N201015",
+        "triggerRange": 0,
+        "cooldown": 1.0,
+        "steps": [
+              { "action": "ShowAttackRange", "duration": 0.5 },
+              { "action": "Charge", "hpDamage": 12, "mpDamage": 0, "chargeSpeed": 75.0, "knockbackTiles": 2, "motion": "RushAttack", "impactEffectMotion": "ImpactEffect" },
+              { "action": "Wait", "duration": 0.5 },
+              { "action": "Flip", "motion": "BeforeDetect" }
+          ]
+        },
+
+    {
+      "patternKey": "NA201016",
+      "triggerRange": 6,
+      "cooldown": 0.2,
+      "requireAxisAlign": true,
+      "steps": [
+        { "action": "FacePlayer" },
+        { "action": "Wait", "duration": 0.3 },
+        { "action": "RangedShot", "hpDamage": 3, "mpDamage": 0, "projectileKey": "Projectile_GOGI", "projectileSpeed": 18.0, "maxDistance": 6, "motion": "Attack" },
+        { "action": "Wait", "duration": 0.8 }
+      ]
+    },
+    {
+      "patternKey": "NA201013",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        { "action": "ShowAttackRange", "duration": 0.1, "motion": "AttackReady" },
+        { "action": "MeleeHit", "hpDamage": 0, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+        { "action": "Wait", "duration": 1.0 }
+      ]
+    },
+    {
+      "patternKey": "NA201108",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        { "action": "ShowAttackRange", "duration": 0.1, "motion": "AttackReady" },
+        { "action": "MeleeHit", "hpDamage": 3, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+        { "action": "Wait", "duration": 1.0 }
+      ]
+    },
+    {
+      "patternKey": "NA201109",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        { "action": "ShowAttackRange", "duration": 0.1, "motion": "AttackReady" },
+        { "action": "MeleeHit", "hpDamage": 3, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+        { "action": "Wait", "duration": 1.0 }
+      ]
+    },
+    {
+      "patternKey": "NA201017",
+      "triggerRange": 5,
+      "cooldown": 0.2,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 4,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_SmallGOGI",
+          "projectileSpeed": 14.0,
+          "maxDistance": 11,
+          "motion": "Attack",
+          "explodeOnEnd": true,
+          "explodeRange": 1,
+          "explodeHpDamage": 3,
+          "explodeMpDamage": 0,
+          "residueKey": "Residue_GOGI"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201018",
+      "triggerRange": 7,
+      "cooldown": 0.2,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.1
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 3,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_BigGOGI",
+          "projectileSpeed": 25.0,
+          "maxDistance": 20,
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.8
+        }
+      ]
+    }
+  ]
+}

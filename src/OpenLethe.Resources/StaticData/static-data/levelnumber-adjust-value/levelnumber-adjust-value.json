@@ -2375,6 +2375,18 @@
           "classType": "SUPPLEMENT", 
           "hazardGrade": "03", 
           "codeName": "LU-14-37" 
+        },
+        {
+          "unitId": 1501, 
+          "classType": "WAW", 
+          "hazardGrade": "06", 
+          "codeName": "L-04-14-53" 
+        },
+        {
+          "unitId": 1502, 
+          "classType": "SUPPLEMENT", 
+          "hazardGrade": "06", 
+          "codeName": "L-04-14-53-a" 
         }
       ]
     }

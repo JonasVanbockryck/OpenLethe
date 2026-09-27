@@ -1,0 +1,51 @@
+{
+  "list": [
+    {
+      "id": 110101003,
+      "eventKey": "E999999",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N999999"
+    },
+    {
+      "id": 110101099,
+      "eventKey": "EB-WDN-KILL",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-WDN-B"
+    },
+    {
+      "id": 110101097,
+      "eventKey": "E999999",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N999998"
+    },
+    {
+      "id": 110101100,
+      "eventKey": "EDS901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "DeadscenePlayer",
+      "passiveConditionValue1": "",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "E40101",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q5009"
+    },
+    {
+      "id": 820001001,
+      "eventKey": "EPI-CLEAR-B1",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": ""
+    },
+    {
+      "id": 820001002,
+      "eventKey": "EPI-CLEAR-B2",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

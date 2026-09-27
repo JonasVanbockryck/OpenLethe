@@ -1,0 +1,132 @@
+{
+  "list": [
+    {
+      "key": "Q-2000",
+      "isBackupCheckpoint": true,
+      "hideLog": true,
+      "hideList": true,
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1011",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2000A",
+      "hideLog": true,
+      "hideList": true,
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "None",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2000",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2001",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2000",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2002",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2001",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2003",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2002",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2004",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2003",
+      "completeEventKey": "",
+      "completeRewardMoney": 260
+    },
+    {
+      "key": "Q-2004A",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2004",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2005",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2004A",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2006",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2005",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2007",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2006",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2008",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2007",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2009",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2008",
+      "completeEventKey": "",
+      "completeRewardMoney": 260
+    },
+    {
+      "key": "Q-2010",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2009",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2010A",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-2010",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2103H",
+      "hideList": true,
+      "sessionOnly": true,
+      "hideLog": true,
+      "acquireConditionType": "Always"
+    }
+  ]
+}

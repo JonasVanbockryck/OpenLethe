@@ -1,0 +1,1456 @@
+﻿{
+  "list": [
+    {
+      "attackId": "Basic",
+      "motion": "Attack",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": {
+        "audioId": "sfx_field_attack_meur",
+        "extraDelayFrames": 4
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "BasicB",
+      "motion": "Attack_B",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": {
+        "audioId": "sfx_field_attack_meur",
+        "extraDelayFrames": 4
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 2,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "BasicC",
+      "motion": "Attack_C",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": {
+        "audioId": "sfx_field_attack_meur",
+        "extraDelayFrames": 4
+      },
+      "hitArea": {
+        "shape": "Sweep",
+        "width": 3,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "BasicBC",
+      "motion": "Attack_C",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": {
+        "audioId": "sfx_field_attack_meur_charge",
+        "extraDelayFrames": 4
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "Basic2",
+      "motion": "Attack2",
+      "impactCount": 2,
+      "castVfx": {
+        "mode": "Override",
+        "key": "SimpleHit",
+        "offset": { "x": 0.0, "y": 1.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Override",
+        "key": "SimpleHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": {
+        "audioId": "sfx_tool_clank",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "sfx_field_hit",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "Engagement",
+      "motion": "Attack",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "engagementPresentation": {
+        "bandIndicator": {
+          "vfx": {
+            "mode": "Override",
+            "key": "EngagementLv1",
+            "offset": { "x": 0.0, "y": 1.0, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "", "extraDelayFrames": 0 }
+        },
+        "timingSuccess": {
+          "vfx": {
+            "mode": "Override",
+            "key": "EngagementLv1",
+            "offset": { "x": 0.0, "y": 1.0, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_engagement_success", "extraDelayFrames": 0 }
+        },
+        "attack": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "offset": { "x": 0.0, "y": 2.0, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_sword_clang_3", "extraDelayFrames": 0 }
+        },
+        "windowTelegraph": {
+          "ghost": {
+            "tint": { "r": 0.35, "g": 0.35, "b": 0.4, "a": 1.0 },
+            "startAlpha": 0.7,
+            "sortingOrderOffset": 1,
+            "successBurstSeconds": 0.25,
+            "successBurstScale": 1.5
+          },
+          "particle": {
+            "vfxKey": "",
+            "frameMin": 0.0,
+            "frameMax": 1.0
+          }
+        }
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "Flash1",
+      "motion": "Attack",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": { "audioId": "sfx_field_attack_meur_charge", "extraDelayFrames": 4 },
+      "flashPresentation": {
+        "chargeStartSeconds": 0.3,
+        "chargeStart": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "offset": { "x": 0.0, "y": 0.5, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "", "extraDelayFrames": 0 }
+        },
+        "chargeLoop": {
+          "vfx": {
+            "mode": "Default",
+            "key": "",
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_field_charge_loop", "extraDelayFrames": 0 }
+        },
+        "levelReached": {
+          "vfx": {
+            "mode": "Override",
+            "key": "EngagementLv1",
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_item_pickup", "extraDelayFrames": 0 }
+        },
+        "attack": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "offset": { "x": 0.0, "y": 2.5, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_flesh_explode", "extraDelayFrames": 0 }
+        },
+        "hit": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "anchor": "HitPoint"
+          },
+          "sfx": { "audioId": "sfx_field_hit_crit", "extraDelayFrames": 0 }
+        }
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "Flash2",
+      "motion": "Attack",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": { "audioId": "sfx_field_attack_meur_charge", "extraDelayFrames": 4 },
+      "flashPresentation": {
+        "chargeStartSeconds": -1,
+        "chargeStart": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "offset": { "x": 0.0, "y": 0.5, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "", "extraDelayFrames": 0 }
+        },
+        "chargeLoop": {
+          "vfx": {
+            "mode": "None",
+            "key": "",
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_field_charge_loop", "extraDelayFrames": 0 }
+        },
+        "levelReached": {
+          "vfx": {
+            "mode": "Override",
+            "key": "EngagementLv1",
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_item_pickup", "extraDelayFrames": 0 }
+        },
+        "attack": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "offset": { "x": 0.0, "y": 2.5, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_flesh_explode", "extraDelayFrames": 0 }
+        },
+        "hit": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "anchor": "HitPoint"
+          },
+          "sfx": { "audioId": "sfx_field_hit_crit", "extraDelayFrames": 0 }
+        }
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "Flash3",
+      "motion": "Attack",
+      "castVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source"
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": { "audioId": "sfx_field_attack_meur_charge", "extraDelayFrames": 4 },
+      "flashPresentation": {
+        "chargeStartSeconds": -1,
+        "chargeStart": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "offset": { "x": 0.0, "y": 0.5, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "", "extraDelayFrames": 0 }
+        },
+        "chargeLoop": {
+          "vfx": {
+            "mode": "None",
+            "key": "",
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_field_charge_loop", "extraDelayFrames": 0 }
+        },
+        "levelReached": {
+          "vfx": {
+            "mode": "Override",
+            "key": "EngagementLv1",
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_item_pickup", "extraDelayFrames": 0 }
+        },
+        "attack": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "offset": { "x": 0.0, "y": 2.5, "z": 0.0 },
+            "anchor": "Source"
+          },
+          "sfx": { "audioId": "sfx_flesh_explode", "extraDelayFrames": 0 }
+        },
+        "hit": {
+          "vfx": {
+            "mode": "Override",
+            "key": "SimpleHit",
+            "anchor": "HitPoint"
+          },
+          "sfx": { "audioId": "sfx_field_hit_crit", "extraDelayFrames": 0 }
+        }
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 2.0,
+      "impactTiming": {
+        "mode": "MotionMarker",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "Scissor",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "ScissorAttack",
+        "anchor": "Target",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0,
+        "sortingOrderOffset": {
+          "enabled": true,
+          "up": -1,
+          "right": 1,
+          "down": 1,
+          "left": 1
+        }
+      },
+      "hitVfx": {
+        "mode": "Override",
+        "key": "ScissorHit",
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 1,
+        "length": 1,
+        "origin": "SourceFront",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 1,
+      "stagger": 0.3,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": [
+        {
+          "scriptId": "AccumulateTargetCounter",
+          "controlValue": [1, 5],
+          "floatValue": [0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 1.0],
+          "stringValue": [""]
+        }
+      ]
+    },
+    {
+      "attackId": "FlowerScissor",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "FlowerScissors",
+        "anchor": "Target",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0,
+        "sortingOrderOffset": {
+          "enabled": true,
+          "up": -1,
+          "right": 1,
+          "down": 1,
+          "left": 1
+        }
+      },
+      "hitVfx": {
+        "mode": "None"
+      },
+      "castSfx": {
+        "audioId": "sfx_scissors_flower_cut",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 3,
+        "length": 3,
+        "origin": "Target",
+        "offset": { "x": 0, "y": -1 },
+        "rotateWithDirection": true,
+        "maxTargets": 0
+      },
+      "attackPower": 8,
+      "stagger": 0.3,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": [
+        {
+          "scriptId": "AccumulateTargetCounter",
+          "controlValue": [1, 5],
+          "floatValue": [0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 1.0],
+          "stringValue": [""]
+        }
+      ]
+    },
+    {
+      "attackId": "CheeseCross",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "None",
+        "key": "",
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "anchor": "Target",
+        "rotateWithDirection": false,
+        "rotationOffsetDegrees": 0.0
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "ScissorHit",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "HitAreaTiles",
+          "rotateWithDirection": false,
+          "rotationOffsetDegrees": 0.0,
+          "sequenceDelaySeconds": 0.05,
+          "skipBlockedTiles": true
+        },
+        {
+          "mode": "Override",
+          "key": "CheeseBurn",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "HitAreaTiles",
+          "rotateWithDirection": false,
+          "rotationOffsetDegrees": 0.0,
+          "sequenceDelaySeconds": 0.05,
+          "skipBlockedTiles": true
+        }
+      ],
+      "hitVfx": {
+        "mode": "Override",
+        "key": "ScissorHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Cross",
+        "width": 1,
+        "length": 1,
+        "origin": "Target",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 3,
+      "stagger": 0.2,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "NeedleKingMarkBurst",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "None",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Target",
+        "rotateWithDirection": false,
+        "rotationOffsetDegrees": 0.0
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "NeedleKingBurst",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "Target",
+          "rotateWithDirection": false,
+          "rotationOffsetDegrees": 0.0,
+          "sequenceDelaySeconds": 0.03,
+          "skipBlockedTiles": true
+        }
+      ],
+      "hitVfx": {
+        "mode": "None"
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 7,
+        "length": 7,
+        "origin": "Source",
+        "offset": {
+          "x": 0,
+          "y": -3
+        },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 3,
+      "stagger": 0.1,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "NeedleKingMarkExpireBurst",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "None",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Target",
+        "rotateWithDirection": false,
+        "rotationOffsetDegrees": 0.0
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "NeedleKingBurst",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "Target",
+          "rotateWithDirection": false,
+          "rotationOffsetDegrees": 0.0,
+          "sequenceDelaySeconds": 0.03,
+          "skipBlockedTiles": true
+        }
+      ],
+      "hitVfx": {
+        "mode": "None"
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 3,
+        "length": 3,
+        "origin": "Source",
+        "offset": {
+          "x": 0,
+          "y": -1
+        },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 3,
+      "stagger": 0.1,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "AliuneItemBloom",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "None",
+        "key": "",
+        "offset": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "anchor": "Target",
+        "rotateWithDirection": false,
+        "rotationOffsetDegrees": 0.0
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "AliuneMarkBurst",
+          "scale": 1,
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "Target",
+          "rotateWithDirection": false,
+          "rotationOffsetDegrees": 0.0,
+          "sequenceDelaySeconds": 0.03,
+          "skipBlockedTiles": true
+        }
+      ],
+      "hitVfx": {
+        "mode": "None"
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 3,
+        "length": 3,
+        "origin": "Source",
+        "offset": {
+          "x": 0,
+          "y": -2
+        },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 10,
+      "stagger": 0.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "SapsariKnife",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "KitchenKnifeAttack",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 12.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.35,
+          "maxRangeTiles": 7,
+          "fadeOutSeconds": 0.3
+        }
+      },
+      "hitVfx": {
+        "mode": "Override",
+        "key": "KitchenKnifeHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 1
+      },
+      "attackPower": 3,
+      "stagger": 0.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "NeedleKingToothbrush",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "NeedleKingToothbrushAttack3",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 14.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.35,
+          "maxRangeTiles": 7,
+          "fadeOutSeconds": 0.3
+        }
+      },
+      "hitVfx": {
+        "mode": "Override",
+        "key": "NeedleKingToothbrushHit3",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 1
+      },
+      "attackPower": 2,
+      "stagger": 0.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "LenoirBagItemJustGuardAttack",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "JustGuardBurst",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "horizontalFacingOffset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Source",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0,
+        "sortingOrderOffset": {
+          "enabled": true,
+          "up": -1,
+          "right": 1,
+          "down": 1,
+          "left": 1
+        }
+      },
+      "hitVfx": {
+        "mode": "None"
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Circle",
+        "length": 1,
+        "origin": "Source",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 2,
+      "stagger": 0.1,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "DyeChain",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "KitchenKnifeAttack",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 14.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.3,
+          "maxChaseTiles": 6.0
+        }
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 2,
+      "stagger": 1.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "Basic3FinisherBurst",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "Basic3FinisherBurst",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": false,
+        "rotationOffsetDegrees": 0.0
+      },
+      "hitVfx": {
+        "mode": "None"
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Circle",
+        "width": 1,
+        "length": 1,
+        "origin": "Source",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 2,
+      "stagger": 0.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "DyeChainYellow",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "DyedYellowProjectile",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 14.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.3,
+          "maxRangeTiles": 7,
+          "fadeOutSeconds": 0.3
+        }
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "DyedYellowStart",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "World",
+          "rotateWithDirection": true,
+          "rotationOffsetDegrees": 0.0,
+          "delaySeconds": 0.0
+        }
+      ],
+      "hitVfx": {
+        "mode": "Override",
+        "key": "DyedYellowHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 4,
+      "stagger": 1.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "DyeChainRed",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "DyedRedProjectile",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 14.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.3,
+          "maxRangeTiles": 7,
+          "fadeOutSeconds": 0.3
+        }
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "DyedRedStart",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "World",
+          "rotateWithDirection": true,
+          "rotationOffsetDegrees": 0.0,
+          "delaySeconds": 0.0
+        }
+      ],
+      "hitVfx": {
+        "mode": "Override",
+        "key": "DyedRedHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 4,
+      "stagger": 1.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "DyeChainBlue",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "DyedBlueProjectile",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 14.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.3,
+          "maxRangeTiles": 7,
+          "fadeOutSeconds": 0.3
+        }
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "DyedBlueStart",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "World",
+          "rotateWithDirection": true,
+          "rotationOffsetDegrees": 0.0,
+          "delaySeconds": 0.0
+        }
+      ],
+      "hitVfx": {
+        "mode": "Override",
+        "key": "DyedBlueHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 4,
+      "stagger": 1.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "BlackWaterChain",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "LittleBuffetBlackWater",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 14.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.3,
+          "maxRangeTiles": 7,
+          "fadeOutSeconds": 0.3
+        }
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "LittleBuffetBlackWaterStart",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "World",
+          "rotateWithDirection": true,
+          "rotationOffsetDegrees": 0.0,
+          "delaySeconds": 0.0
+        }
+      ],
+      "hitVfx": {
+        "mode": "Override",
+        "key": "LittleBuffetBlackWaterHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 5,
+      "stagger": 1.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "DodgeThunder",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "DodgeThunder",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "Target",
+        "rotateWithDirection": false,
+        "rotationOffsetDegrees": 0.0
+      },
+      "hitVfx": {
+        "mode": "Default",
+        "key": "",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint"
+      },
+      "castSfx": {
+        "audioId": "sfx_flesh_explode",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Line",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 0
+      },
+      "attackPower": 2,
+      "stagger": 0.5,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    },
+    {
+      "attackId": "LeRougeBagProjectile",
+      "motion": "",
+      "inheritBasicAttackPowerModifiers": false,
+      "castVfx": {
+        "mode": "Override",
+        "key": "LeRougeBagProjectile",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "World",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 0.0,
+        "travel": {
+          "enabled": true,
+          "speed": 14.0,
+          "homing": true,
+          "arriveDistance": 0.3,
+          "timeoutSeconds": 10.0,
+          "minTravelSeconds": 0.35,
+          "maxRangeTiles": 7,
+          "fadeOutSeconds": 0.3
+        }
+      },
+      "castVfxList": [
+        {
+          "mode": "Override",
+          "key": "LeRougeBagProjectileStart",
+          "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "anchor": "World",
+          "rotateWithDirection": true,
+          "rotationOffsetDegrees": 0.0,
+          "delaySeconds": 0.0
+        }
+      ],
+      "hitVfx": {
+        "mode": "Override",
+        "key": "LeRougeBagProjectileHit",
+        "offset": { "x": 0.0, "y": 0.0, "z": 0.0 },
+        "anchor": "HitPoint",
+        "rotateWithDirection": true,
+        "rotationOffsetDegrees": 180.0
+      },
+      "castSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitSfx": {
+        "audioId": "",
+        "extraDelayFrames": 0
+      },
+      "hitArea": {
+        "shape": "Rectangle",
+        "width": 1,
+        "length": 1,
+        "origin": "TargetDirect",
+        "offset": { "x": 0, "y": 0 },
+        "rotateWithDirection": false,
+        "maxTargets": 1
+      },
+      "attackPower": 2,
+      "stagger": 0.0,
+      "impactTiming": {
+        "mode": "Delay",
+        "fallbackDelay": 0.0,
+        "delay": 0.0
+      },
+      "onHitAbilities": []
+    }
+  ]
+}

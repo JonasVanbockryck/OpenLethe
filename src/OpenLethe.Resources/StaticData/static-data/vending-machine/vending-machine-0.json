@@ -97,6 +97,11 @@
 						},
 						{
 							"type": "PERSONALITY",
+							"id": 10616,
+							"price": 400
+						},
+						{
+							"type": "PERSONALITY",
 							"id": 10703,
 							"price": 400
 						},
@@ -428,6 +433,36 @@
 							"type": "ANNOUNCER",
 							"id": 22,
 							"paidLunacyPrice": 1300
+						}
+					]
+				},
+				{
+					"groupType": "BGM",
+					"contents": [
+						{
+							"type": "BGM",
+							"id": 400001,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 400002,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 400003,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 400004,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 400005,
+							"paidTwinePrice": 25
 						}
 					]
 				}

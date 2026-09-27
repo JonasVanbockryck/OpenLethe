@@ -1,0 +1,266 @@
+{
+  "list": [
+    {
+      "questKey": "Q-3000",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EQ-3091",
+      "goalType2": "TriggerEvent",
+      "goalValue2": "EQ-3092",
+      "goalType3": "TriggerEvent",
+      "goalValue3": "EQ-3093",
+      "goalType4": "TriggerEvent",
+      "goalValue4": "EQ-3094",
+      "goalType5": "TriggerEvent",
+      "goalValue5": "EQ-3095",
+      "goalType6": "TriggerEvent",
+      "goalValue6": "EQ-3096"
+    },
+    {
+      "questKey": "Q-3010",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I991004, 1",
+      "goalType2": "GetItem",
+      "goalValue2": "I991005, 1",
+      "goalType3": "GetItem",
+      "goalValue3": "I991006, 1",
+      "goalType4": "GetItem",
+      "goalValue4": "I991007, 1",
+      "goalType5": "GetItem",
+      "goalValue5": "I991008, 1",
+      "goalType6": "GetItem",
+      "goalValue6": "I991011, 1",
+      "goalType7": "GetItem",
+      "goalValue7": "I991009, 1",
+      "goalType8": "GetItem",
+      "goalValue8": "I991010, 1"
+    },
+    {
+      "questKey": "Q-3011",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "210100",
+      "goalType2": "GetItem",
+      "goalValue2": "I991007, 1",
+      "goalType3": "InteractNpc",
+      "goalValue3": "N201003C",
+      "goalGuideOnly3": true,
+      "goalType4": "InteractNpc",
+      "goalValue4": "N201003",
+      "goalGuideOnly4": true
+    },
+    {
+      "questKey": "Q-3012",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N101191",
+      "goalType2": "GetItem",
+      "goalValue2": "I991008, 1",
+      "goalHidden2": true
+    },
+    {
+      "questKey": "Q-3013",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N102091",
+      "goalType2": "GetItem",
+      "goalValue2": "I991009, 1",
+      "goalHidden2": true
+    },
+    {
+      "questKey": "Q-3014",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "130500",
+      "goalType2": "GetItem",
+      "goalValue2": "I991010, 1",
+      "goalType3": "InteractNpc",
+      "goalValue3": "N103016C",
+      "goalGuideOnly3": true,
+      "goalType4": "InteractNpc",
+      "goalValue4": "N103016",
+      "goalGuideOnly4": true
+    },
+    {
+      "questKey": "Q-3015",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N104191",
+      "goalType2": "GetItem",
+      "goalValue2": "I991011, 1",
+      "goalHidden2": true
+    },
+    {
+      "questKey": "Q-3006",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-3214",
+      "goalType2": "Cutscene",
+      "goalValue2": "C-3109"
+    },
+    {
+      "questKey": "Q-3003",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-3215",
+      "goalType2": "Cutscene",
+      "goalValue2": "C-3110"
+    },
+    {
+      "questKey": "Q-3003",
+      "stepIndex": 1,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EV-3003A"
+    },
+    {
+      "questKey": "Q-3003",
+      "stepIndex": 2,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-32151"
+    },
+    {
+      "questKey": "Q-3004",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-3216"
+    },
+    {
+      "questKey": "Q-3004",
+      "stepIndex": 1,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EV-3003B"
+    },
+    {
+      "questKey": "Q-3004",
+      "stepIndex": 2,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-3223"
+    },
+    {
+      "questKey": "Q-3007",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-3106",
+      "goalType2": "TriggerEvent",
+      "goalValue2": "EQ-3003C"
+    },
+    {
+      "questKey": "Q-3001",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-3102"
+    },
+    {
+      "questKey": "Q-3005",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11030",
+      "goalType2": "InteractNpc",
+      "goalValue2": "N203007",
+      "goalGuideOnly2": true
+    },
+    {
+      "questKey": "Q-3005",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-3105"
+    },
+    {
+      "questKey": "Q-3005T",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EL-3005S",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3002",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "150200",
+      "navGoalFloorKey": "F1005B"
+    },
+    {
+      "questKey": "Q-3010A",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I991004, 1",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3010B",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I991005, 1",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3010S",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EL-2115S",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3011S",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EQ-3000",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3011T",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EL-1193S",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3011H1",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EA-1193B",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3011H2",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EA-1193B",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3011H3",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EA-1193B",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q-3003A",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EV-3003A"
+    },
+    {
+      "questKey": "Q-3003B",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EV-3003B"
+    },
+    {
+      "questKey": "Q-3003C",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EV-3003C"
+    },
+    {
+      "questKey": "Q-3011R",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "210100",
+      "goalType2": "InteractNpc",
+      "goalValue2": "N201003C"
+    }
+  ]
+}

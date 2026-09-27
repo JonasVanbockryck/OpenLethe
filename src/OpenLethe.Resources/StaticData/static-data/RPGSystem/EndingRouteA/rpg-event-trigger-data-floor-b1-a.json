@@ -1,0 +1,336 @@
+{
+  "list": [
+    {
+      "id": 210100001,
+      "eventKey": "EC-1001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "210200",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-1000"
+    },
+    {
+      "id": 210100002,
+      "eventKey": "EC-1002",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "218001",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-1001"
+    },
+    {
+      "id": 210100027,
+      "eventKey": "ES-1020",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1003",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-1002"
+    },
+    {
+      "id": 210100028,
+      "eventKey": "ES-1020",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1004",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-1002"
+    },
+    {
+      "id": 210100029,
+      "eventKey": "ES-1020",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1005",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-1002"
+    },
+    {
+      "id": 210100004,
+      "eventKey": "EC-1003",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q-1003"
+    },
+    {
+      "id": 210100007,
+      "eventKey": "E-B1",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1003"
+    },
+    {
+      "id": 210100008,
+      "eventKey": "EC-1005",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11008"
+    },
+    {
+      "id": 210100011,
+      "eventKey": "E-Q7ITEMS",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1007"
+    },
+    {
+      "id": 210100012,
+      "eventKey": "EC-1021",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1020"
+    },
+    {
+      "id": 210100015,
+      "eventKey": "EC-1008C",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1021"
+    },
+    {
+      "id": 210100037,
+      "eventKey": "E-ESCDEF-A",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1019"
+    },
+    {
+      "id": 210100038,
+      "eventKey": "E-ESCDEF-B",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1020"
+    },
+    {
+      "id": 210100016,
+      "eventKey": "EC-1009",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1023",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EC-1008C"
+    },
+    {
+      "id": 210100034,
+      "eventKey": "EC-1009A",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D_WRONGDEF",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I992709"
+    },
+    {
+      "id": 210100035,
+      "eventKey": "EC-1009B",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D_WRONGDEF",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I992707"
+    },
+    {
+      "id": 210100040,
+      "eventKey": "E-WRONGRIDE-A",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D_WRONGDEF",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EC-1009A",
+      "passiveCondition2": "HasItem",
+      "passiveConditionValue2": "I992709"
+    },
+    {
+      "id": 210100041,
+      "eventKey": "E-WRONGRIDE-B",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D_WRONGDEF",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EC-1009B",
+      "passiveCondition2": "HasItem",
+      "passiveConditionValue2": "I992707"
+    },
+    {
+      "id": 210100025,
+      "eventKey": "E-EYE4",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1066"
+    },
+    {
+      "id": 210100026,
+      "eventKey": "E-EYE5",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1069"
+    },
+    {
+      "id": 210100023,
+      "eventKey": "EC-1022",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1062"
+    },
+    {
+      "id": 210100024,
+      "eventKey": "EC-1023",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1064"
+    },
+    {
+      "id": 210100020,
+      "eventKey": "E-EYE1",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1046"
+    },
+    {
+      "id": 210100021,
+      "eventKey": "E-EYE2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1047"
+    },
+    {
+      "id": 210100047,
+      "eventKey": "E-EYE6",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1086"
+    },
+    {
+      "id": 210100048,
+      "eventKey": "E-B1MAPFRAG",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1083"
+    },
+    {
+      "id": 210100022,
+      "eventKey": "E-EYE3",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1048"
+    },
+    {
+      "id": 210100031,
+      "eventKey": "E-MINGA87",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1071"
+    },
+    {
+      "id": 210100032,
+      "eventKey": "E-MINGA88",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1073"
+    },
+    {
+      "id": 210100033,
+      "eventKey": "E-MINGA89",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1075"
+    },
+    {
+      "id": 210100030,
+      "eventKey": "E-DARKDOOR",
+      "activeCondition": "SelectDialogueChoice",
+      "activeConditionValue": "DC-1069"
+    },
+    {
+      "id": 210100018,
+      "eventKey": "E-Q6ITEM",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1017"
+    },
+    {
+      "id": 210100090,
+      "eventKey": "E-FCCAM",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "210101"
+    },
+    {
+      "id": 210100091,
+      "eventKey": "E-ESCAM",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "210501"
+    },
+    {
+      "id": 210100092,
+      "eventKey": "E-FreshCornerCAM",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "210201"
+    },
+    {
+      "id": 210100042,
+      "eventKey": "E-VEND-B1",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1083"
+    },
+    {
+      "id": 210100043,
+      "eventKey": "E-VEND-B1",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1084"
+    },
+    {
+      "id": 210100044,
+      "eventKey": "EC-1012",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1001"
+    },
+    {
+      "id": 210100045,
+      "eventKey": "EC-1010",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1021"
+    },
+    {
+      "id": 210100046,
+      "eventKey": "EC-1011",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1010"
+    },
+    {
+      "id": 210100049,
+      "eventKey": "E-EYEPAY1",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1012"
+    },
+    {
+      "id": 210100093,
+      "eventKey": "ED-1001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N201101"
+    },
+    {
+      "id": 210100094,
+      "eventKey": "ED-1001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N201102"
+    },
+    {
+      "id": 210100095,
+      "eventKey": "ED-1001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N201107"
+    },
+    {
+      "id": 210100096,
+      "eventKey": "ED-1001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N201005"
+    },
+    {
+      "id": 210100097,
+      "eventKey": "ED-1002",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N201104"
+    },
+    {
+      "id": 210100098,
+      "eventKey": "ED-1002",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N201110"
+    },
+    {
+      "id": 210100099,
+      "eventKey": "ED-1003",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N201003"
+    },
+    {
+      "id": 812101001,
+      "eventKey": "EPI-B1A",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

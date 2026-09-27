@@ -18,7 +18,8 @@
       "id":3,
 
       "category": "NORMAL",
-      "spriteStr":"lunacy"
+      "spriteStr":"lunacy",
+      "ignoreExcess": true
     },
 
     {

@@ -123,6 +123,69 @@
               ]
             }
           ]
+        },
+        {
+          "gaksungLevel": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "TargetNumAdder1BBOnRC_NONE4"
+            },
+            {
+              "scriptName": "TargetNumAdder1BBOnRC_NONE6"
+            },
+            {
+              "scriptName": "DmgMullAllTargetAndSelfBuffCheck20205",
+              "buffData": {
+                "buffKeyword": "Combustion",
+                "stack": 1,
+                "value": 0.05,
+                "limit": 100
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 8,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "DefenseDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "FaustFifthEgoEnhancedCoinAbility_Combustion2",
+                  "buffData": {
+                    "buffKeyword": "DefenseDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0,
+                    "value": 5,
+                    "limit": 30
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -277,6 +340,88 @@
                     "turn": 0,
                     "activeRound": 0,
                     "value": 10
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "TargetNumAdder1BBOnRC_NONE4"
+            },
+            {
+              "scriptName": "TargetNumAdder1BBOnRC_NONE6"
+            },
+            {
+              "scriptName": "DmgMullAllTargetAndSelfBuffCheck20205",
+              "buffData": {
+                "buffKeyword": "Combustion",
+                "stack": 1,
+                "value": 0.06,
+                "limit": 120
+              }
+            },
+            {
+              "scriptName": "SkillPowerDown10OnLoseDuel"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 12,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "DefenseDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "FaustFifthEgoEnhancedCoinAbility_Combustion2",
+                  "buffData": {
+                    "buffKeyword": "DefenseDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0,
+                    "value": 5,
+                    "limit": 30
                   }
                 }
               ]

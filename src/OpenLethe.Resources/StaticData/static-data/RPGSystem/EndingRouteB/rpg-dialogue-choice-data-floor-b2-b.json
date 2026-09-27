@@ -1,0 +1,69 @@
+{
+  "list": [
+    {
+      "key": "DC-2022A",
+      "iconKey": "Talk",
+      "tag": "tag_b2_thread_extract",
+      "tagScope": "Persistent",
+      "nextDialogueKey": "D20221411",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "tag_b2_thread_extract, 6",
+      "conditionDialogueKey1": "D20221416",
+      "conditionType2": "TagCountAboveOrEqual",
+      "conditionValue2": "tag_b2_thread_extract, 5",
+      "conditionDialogueKey2": "D20221415",
+      "conditionType3": "TagCountAboveOrEqual",
+      "conditionValue3": "tag_b2_thread_extract, 4",
+      "conditionDialogueKey3": "D20221414",
+      "conditionType4": "TagCountAboveOrEqual",
+      "conditionValue4": "tag_b2_thread_extract, 3",
+      "conditionDialogueKey4": "D20221413",
+      "conditionType5": "TagCountAboveOrEqual",
+      "conditionValue5": "tag_b2_thread_extract, 2",
+      "conditionDialogueKey5": "D20221412"
+    },
+    {
+      "key": "DC-2022B",
+      "iconKey": "Talk",
+      "tag": "tag_b2_thread_spin",
+      "tagScope": "Persistent",
+      "nextDialogueKey": "D20221417",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "tag_b2_thread_spin, 2",
+      "conditionDialogueKey1": "D20221418"
+    },
+    {
+      "key": "DC-2022C",
+      "iconKey": "Talk",
+      "nextDialogueKey": "D20221419"
+    },
+    {
+      "key": "DC-2022D",
+      "iconKey": "Warning",
+      "tag": "tag_b2_thread_mash",
+      "tagScope": "Persistent",
+      "nextDialogueKey": "D20221420",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "tag_b2_thread_mash, 3",
+      "conditionDialogueKey1": "D20221422",
+      "conditionType2": "TagCountAboveOrEqual",
+      "conditionValue2": "tag_b2_thread_mash, 2",
+      "conditionDialogueKey2": "D20221421"
+    },
+    {
+      "key": "DC-2244A",
+      "iconKey": "X",
+      "nextDialogueKey": "D-2252"
+    },
+    {
+      "key": "DC-2244B",
+      "iconKey": "Talk",
+      "nextDialogueKey": "D-2254"
+    },
+    {
+      "key": "DC-2244C",
+      "iconKey": "Talk",
+      "nextDialogueKey": "D-2253"
+    }
+  ]
+}

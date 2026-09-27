@@ -1,0 +1,200 @@
+{
+  "list": [
+    {
+      "key": "E110204",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110204, 128001"
+    },
+    {
+      "key": "E2001",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2001"
+    },
+    {
+      "key": "E2002",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2002"
+    },
+    {
+      "key": "E2003",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110208, 128003"
+    },
+    {
+      "key": "E2004",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110207, 128002"
+    },
+    {
+      "key": "E2006",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2003"
+    },
+    {
+      "key": "E2008",
+      "canRepeat": false,
+      "action1": "None",
+      "actionValue1": ""
+    },
+    {
+      "key": "E2009",
+      "canRepeat": false,
+      "action1": "None",
+      "actionValue1": ""
+    },
+    {
+      "key": "E2009A",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2005A"
+    },
+    {
+      "key": "E2009C",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2005D"
+    },
+    {
+      "key": "E2010",
+      "canRepeat": false,
+      "action1": "None",
+      "actionValue1": ""
+    },
+    {
+      "key": "E2011",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2007"
+    },
+    {
+      "key": "E2012",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2008"
+    },
+    {
+      "key": "E2091",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991009, 1",
+      "action2": "DespawnNpc",
+      "actionValue2": "N102091, 128004"
+    },
+    {
+      "key": "EK-2092",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N102021"
+    },
+    {
+      "key": "EB2181",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2181"
+    },
+    {
+      "key": "EQ-3101",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-CS",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-1",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-2",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-3",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-4",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-5",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-6",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-7",
+      "canRepeat": false
+    },
+    {
+      "key": "EB2LIGHT-8",
+      "canRepeat": false
+    },
+    {
+      "key": "E2013",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2009"
+    },
+    {
+      "key": "E2009B",
+      "canRepeat": false,
+      "action1": "None",
+      "actionValue1": ""
+    },
+    {
+      "key": "EB2FEAST",
+      "canRepeat": true,
+      "action1": "AttachNpcSound",
+      "actionValue1": "N102003, feastLoop",
+      "action2": "AttachNpcSound",
+      "actionValue2": "N102008, feastLoop",
+      "action3": "AttachNpcSound",
+      "actionValue3": "N102009, feastLoop",
+      "action4": "AttachNpcSound",
+      "actionValue4": "N102010, feastLoop",
+      "action5": "AttachNpcSound",
+      "actionValue5": "N102011, feastLoop"
+    },
+    {
+      "key": "E2004A",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2014"
+    },
+    {
+      "key": "E2014A",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2015"
+    },
+    {
+      "key": "E2015A",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2005"
+    },
+    {
+      "key": "EDS201",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS201"
+    },
+    {
+      "key": "EPI-2B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990009, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990013, 1"
+    }
+  ]
+}

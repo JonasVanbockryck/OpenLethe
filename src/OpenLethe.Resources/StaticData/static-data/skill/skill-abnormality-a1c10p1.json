@@ -34,6 +34,16 @@
                 "turn": 7,
                 "activeRound": 0
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -115,6 +125,16 @@
                 "target": "Self",
                 "stack": 0,
                 "turn": 4,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -205,6 +225,16 @@
             },
             {
               "scriptName": "1465SkillCancel"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -284,6 +314,16 @@
                 "value": 0.1,
                 "limit": 50
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -362,6 +402,16 @@
                 "turn": 0,
                 "value": 0.1,
                 "limit": 50
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
               }
             }
           ],
@@ -1022,6 +1072,16 @@
                 "turn": 5,
                 "activeRound": 0
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -1103,6 +1163,16 @@
                 "target": "Self",
                 "stack": 0,
                 "turn": 5,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -1201,6 +1271,16 @@
                 "turn": 5,
                 "value" : 2
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -1294,6 +1374,16 @@
             },
             {
               "scriptName": "SkillPowerReducerBBByBrokenCoin2"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -1483,6 +1573,16 @@
             {
               "scriptName": "AttackDmgDownAndTargetIgnoreBreakOnLoseDuel",
               "value": 0.8
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -2828,6 +2928,16 @@
                 "turn": 2,
                 "activeRound": 0
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -2953,6 +3063,16 @@
                 "stack": 3,
                 "turn": 0
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -3070,6 +3190,16 @@
                 "buffOwner" : "Self",
                 "stack": 3,
                 "turn": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
               }
             }
           ],
@@ -3194,6 +3324,16 @@
             {
               "scriptName": "AttackDmgDownAndTargetIgnoreBreakOnLoseDuel",
               "value" : 0.5
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -3309,6 +3449,16 @@
                 "buffOwner": "Self",
                 "stack": 0,
                 "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -3435,6 +3585,16 @@
                 "buffOwner": "Self",
                 "stack": 0,
                 "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -3570,6 +3730,16 @@
                 "buffKeyword": "DefenseUp",
                 "target": "Self",
                 "buffOwner": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
                 "stack": 0,
                 "turn": 0,
                 "activeRound": 0
@@ -3714,6 +3884,16 @@
             {
               "scriptName": "AttackDmgDownAndTargetIgnoreBreakOnLoseDuel",
               "value": 0.75
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -3887,6 +4067,16 @@
             {
               "scriptName": "AttackDmgDownAndTargetIgnoreBreakOnLoseDuel",
               "value": 0.75
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoir",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -4000,7 +4190,7 @@
           "skillLevelCorrection": 1,
           "defaultValue": 3,
           "skillMotion": "S1",
-          "viewType": "ENCOUNTER",
+          "viewType": "BATTLE",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [
             {
@@ -4014,6 +4204,16 @@
                 "buffOwner": "",
                 "stack": 0,
                 "turn": 6,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -4085,7 +4285,7 @@
           "skillLevelCorrection": 2,
           "defaultValue": 4,
           "skillMotion": "S2",
-          "viewType": "ENCOUNTER",
+          "viewType": "BATTLE",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [
             {
@@ -4099,6 +4299,16 @@
                 "buffOwner": "",
                 "stack": 0,
                 "turn": 4,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -4186,7 +4396,7 @@
           "skillLevelCorrection": 3,
           "defaultValue": 4,
           "skillMotion": "S3",
-          "viewType": "ENCOUNTER",
+          "viewType": "BATTLE",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [
             {
@@ -4206,6 +4416,16 @@
                 "stack": 0,
                 "turn": 3,
                 "value": 30
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
               }
             }
           ],
@@ -4369,6 +4589,16 @@
                 "turn": 0,
                 "value": 0.1,
                 "limit": 30
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
               }
             }
           ],
@@ -5916,6 +6146,16 @@
             {
               "scriptName": "AttackDmgDownAndTargetIgnoreBreakOnLoseDuel",
               "value" : 0.95
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -6091,6 +6331,16 @@
                 "turn": 3,
                 "activeRound": 0
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -6166,6 +6416,16 @@
                 "target": "AbnormalitySelf",
                 "stack": 0,
                 "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -6259,6 +6519,16 @@
                 "target": "AbnormalitySelf",
                 "stack": 0,
                 "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
                 "activeRound": 0
               }
             }
@@ -6465,6 +6735,16 @@
                 "turn": 3,
                 "activeRound": 0
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -6541,6 +6821,16 @@
             {
               "scriptName": "AttackDmgDownAndTargetIgnoreBreakOnLoseDuel",
               "value": 0.8
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -6662,6 +6952,16 @@
             {
               "scriptName": "AttackDmgDownAndTargetIgnoreBreakOnLoseDuel",
               "value": 0.8
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRouge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [

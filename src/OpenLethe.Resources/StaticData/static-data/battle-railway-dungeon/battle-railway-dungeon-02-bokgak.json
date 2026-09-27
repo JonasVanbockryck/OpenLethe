@@ -1,0 +1,791 @@
+{
+  "list": [
+    {
+      "id": 100201,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_Nobody"
+          },
+          "unitList": [
+            {
+              "unitID": 9622,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_4",
+            "Battle_Cp4_Enemy_4"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_SteamRobot",
+            "mapSize": 35.0
+          },
+          "unitList": [
+            {
+              "unitID": 9623,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_5",
+            "Battle_Cp4_Enemy_5"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_UmbrellaFox"
+          },
+          "unitList": [
+            {
+              "unitID": 9624,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList":[
+            {
+              "unitID": 9625,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp1_Ally_2",
+            "Battle_Cp1_Enemy_2"
+          ],
+          "enemyPositionID": 43
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 60,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "dangerLevel": 0,
+      "stageScriptList": [ "9622ForList", "9623ForList", "9624ForList", "DeadEGOResource_Abnormality" ],
+      "isBatonPassOn": "TRUE",
+      "eventScriptName": "",
+      "abnormalityEventList": [
+      ]
+    },
+    {
+      "id": 100202,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 1,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_Nobody"
+          },
+          "unitList": [
+            {
+              "unitID": 9622,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_4",
+            "Battle_Cp4_Enemy_4"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_GentleFairy"
+          },
+          "unitList": [
+            {
+              "unitID": 9601,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList":[
+            {
+              "unitID": 9602,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp2_Ally_3",
+            "Battle_Cp4_5_Boss"
+          ],
+          "enemyPositionID": 40
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_ElectricCentipede"
+          },
+          "unitList": [
+            {
+              "unitID": 9621,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_1",
+            "Battle_Cp4_Enemy_1"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_SteamRobot",
+            "mapSize": 35.0
+          },
+          "unitList": [
+            {
+              "unitID": 9623,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_5",
+            "Battle_Cp4_Enemy_5"
+          ],
+          "enemyPositionID": 13
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 60,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "dangerLevel": 0,
+      "stageScriptList": [ "9622ForList", "9601ForList", "9621ForList", "9623ForList", "DeadEGOResource_Abnormality" ],
+      "isBatonPassOn": "TRUE",
+      "eventScriptName": "",
+      "abnormalityEventList": [
+      ]
+    },
+    {
+      "id": 100203,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 1,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_Nobody"
+          },
+          "unitList": [
+            {
+              "unitID": 9622,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_4",
+            "Battle_Cp4_Enemy_4"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_NCorSquareRoom"
+          },
+          "unitList": [
+            {
+              "unitID": 9618,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9619,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_6",
+            "Battle_Cp4_Enemy_6"
+          ]
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_GentleFairy"
+          },
+          "unitList": [
+            {
+              "unitID": 9601,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList":[
+            {
+              "unitID": 9602,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp2_Ally_3",
+            "Battle_Cp4_5_Boss"
+          ],
+          "enemyPositionID": 40
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_UmbrellaFox"
+          },
+          "unitList": [
+            {
+              "unitID": 9624,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList":[
+            {
+              "unitID": 9625,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp1_Ally_2",
+            "Battle_Cp1_Enemy_2"
+          ],
+          "enemyPositionID": 43
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 60,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "dangerLevel": 0,
+      "stageScriptList": [ "9622ForList", "9618ForList", "9601ForList", "9624ForList", "DeadEGOResource_Abnormality" ],
+      "isBatonPassOn": "TRUE",
+      "eventScriptName": "",
+      "abnormalityEventList": [
+      ]
+    },
+    {
+      "id": 100204,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 1,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_Nobody"
+          },
+          "unitList": [
+            {
+              "unitID": 9622,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_4",
+            "Battle_Cp4_Enemy_4"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_FairyLantern"
+          },
+          "unitList": [
+            {
+              "unitID": 9620,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_2",
+            "Battle_Cp4_Enemy_2"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_LongFairy"
+          },
+          "unitList": [
+            {
+              "unitID": 9603,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9601,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 9604,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9602,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp2_Ally_3",
+            "Battle_Cp4_5_Boss"
+          ],
+          "enemyPositionID": 44
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_NCorSquareRoom"
+          },
+          "unitList": [
+            {
+              "unitID": 9618,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9619,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_6",
+            "Battle_Cp4_Enemy_6"
+          ]
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_LostPassenger"
+          },
+          "unitList": [
+            {
+              "unitID": 9605,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 9606,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9607,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9608,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9609,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_3",
+            "Battle_Cp4_Enemy_3"
+          ],
+          "enemyPositionID": 45
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 60,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "dangerLevel": 0,
+      "stageScriptList": [ "9622ForList", "9620ForList", "9603ForList", "9618ForList", "9605ForList", "DeadEGOResource_Abnormality" ],
+      "isBatonPassOn": "TRUE",
+      "eventScriptName": "",
+      "abnormalityEventList": [
+      ]
+    },
+    {
+      "id": 100205,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 1,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_Nobody"
+          },
+          "unitList": [
+            {
+              "unitID": 9622,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_4",
+            "Battle_Cp4_Enemy_4"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_SteamRobot",
+            "mapSize": 35.0
+          },
+          "unitList": [
+            {
+              "unitID": 9623,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_5",
+            "Battle_Cp4_Enemy_5"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_UmbrellaFox"
+          },
+          "unitList": [
+            {
+              "unitID": 9624,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList":[
+            {
+              "unitID": 9625,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp1_Ally_2",
+            "Battle_Cp1_Enemy_2"
+          ],
+          "enemyPositionID": 43
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_NCorSquareRoom"
+          },
+          "unitList": [
+            {
+              "unitID": 9618,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9619,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_6",
+            "Battle_Cp4_Enemy_6"
+          ]
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_NCorSquareRoom"
+          },
+          "unitList": [
+            {
+              "unitID": 9618,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9619,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp1_Ally_1",
+            "Battle_Cp1_Enemy_1"
+          ]
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_FairyLantern"
+          },
+          "unitList": [
+            {
+              "unitID": 9620,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_2",
+            "Battle_Cp4_Enemy_2"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_ElectricCentipede"
+          },
+          "unitList": [
+            {
+              "unitID": 9621,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_1",
+            "Battle_Cp4_Enemy_1"
+          ],
+          "enemyPositionID": 13
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Cp4_LongFairy"
+          },
+          "unitList": [
+            {
+              "unitID": 9603,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9601,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 9604,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9602,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp2_Ally_3",
+            "Battle_Cp4_5_Boss"
+          ],
+          "enemyPositionID": 44
+        },
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_LostPassenger"
+          },
+          "unitList": [
+            {
+              "unitID": 9605,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 9606,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9607,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9608,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9609,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp4_Ally_3",
+            "Battle_Cp4_Enemy_3"
+          ],
+          "enemyPositionID": 45
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 60,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "dangerLevel": 0,
+      "stageScriptList": [ "9622ForList", "9623ForList", "9624ForList", "9618ForList", "9620ForList", "9621ForList", "9603ForList", "9605ForList", "DeadEGOResource_Abnormality" ],
+      "isBatonPassOn": "TRUE",
+      "eventScriptName": "",
+      "abnormalityEventList": [
+      ]
+    },
+    
+    {
+      "id": 100206,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 1,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Ab_RoseSign"
+          },
+          "unitList": [
+            {
+              "unitID": 9610,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 9611,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9612,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9613,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9614,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9615,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9616,
+              "unitCount": 1,
+              "unitLevel": 60
+            },
+            {
+              "unitID": 9617,
+              "unitCount": 1,
+              "unitLevel": 60
+            }
+          ],
+          "bgmList": [
+            "Battle_Flore_sicut_rosa"
+          ],
+          "enemyPositionID": 46
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 60,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "dangerLevel": 0,
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [ "8556", "DeadEGOResource_Abnormality" ],
+      "eventScriptName": "8556",
+      "abnormalityEventList": [
+        855601,
+        85560101
+      ]
+    }
+  ]
+}

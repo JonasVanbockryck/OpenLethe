@@ -647,15 +647,6 @@ public static class ReplayMasks
         // dul[*].mlos inheriting the blocked egmlos is masked. (seq408 is a non-new-theme floor whose
         // csnft is now derived to 0 - no mask needed.)
         // ---- Refraction Railway ----
-        // MISSING UPSTREAM STATIC DATA, not RNG and not a logic gap: the bundled
-        // static-data dump has no railway-dungeon-1002.json, so Refraction Railway 2's
-        // rerun has no extra-reward definitions to resolve. Clearing node 7 therefore
-        // cannot unlock its rewards 6-10 (seq 94), acquiring them grants nothing
-        // (seq 98), and the 5 unlocked-but-unrewarded states stay as stored. Everything
-        // else on those records byte-verifies. Drop the real 1002 definition into
-        // static-data/railway-dungeon/ and these three masks go away.
-        [("rr2", 94)] = new[] { "result.saveInfo.extrarewardstate" },
-        [("rr2", 98)] = new[] { "result.saveInfo.extrarewardstate", "result.rewardList" },
         // ExitRailwayDungeon's `rewards` are the dungeon's bannerRewards (profile
         // banners). The port owns no banner inventory, so the list is always empty.
         [("rr2", 144)] = new[] { "result.rewards" },

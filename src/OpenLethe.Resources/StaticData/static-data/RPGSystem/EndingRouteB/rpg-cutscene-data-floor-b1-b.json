@@ -1,0 +1,2997 @@
+{
+  "list": [
+    {
+      "key": "C-1001",
+      "controlArrivalFade": true,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe1",
+          "kind": "Player",
+          "actorKey": "400041"
+        },
+        {
+          "actorName": "buffe2",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "buffe3",
+          "kind": "Player",
+          "actorKey": "400043"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -35, -12"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "faust, player, -1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, 0, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "gregor, player, 1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buffe1, player, 1, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buffe2, player, 1, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buffe3, player, 1, 1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, gregor"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "gregor, dante"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-1"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "faust, gregor"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-2"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, faust"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-3"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, gregor"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-4"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, faust"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-5"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, dante"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-6"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buffe1, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buffe2, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buffe3, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buffe1"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buffe2"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buffe3"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-7"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, gregor"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-8"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, faust"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-9"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, gregor"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-10"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Left"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N201034, lecaki1, 0, -47, -12"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N201035, lecaki2, 0, -47, -11"
+        },
+        {
+          "type": "Wait",
+          "param": "0.1"
+        },
+        {
+          "type": "StopMotion",
+          "param": "lecaki1"
+        },
+        {
+          "type": "StopMotion",
+          "param": "lecaki2"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "lecaki1, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "lecaki2, Right"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "lecaki1, 0.8"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-11"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.8"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "gregor, buffe1"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "gregor, buffe2"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "gregor, buffe3"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-12"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, dante"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-13"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "lecaki1, 0.8"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-13A"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "DialogueOverFade",
+          "param": "D-1201-13B"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "lecaki1"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "lecaki2"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C-1001A",
+      "hideUnboundParty": true,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe1",
+          "kind": "Player",
+          "actorKey": "400041"
+        },
+        {
+          "actorName": "buffe2",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "buffe3",
+          "kind": "Player",
+          "actorKey": "400043"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -19, -59"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -17, -59"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, -17, -60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "gregor, -17, -58"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe1, -17, -57"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe2, -17, -57"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe3, -17, -57"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Left"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.5"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-34, -63.5, 1.2"
+        },
+        {
+          "type": "Wait",
+          "param": "2.0"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 1.2"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "gregor, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, gregor"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-14"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buffe1, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buffe2, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buffe3, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-15"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, dante"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1201-16"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        }
+      ]
+    },
+    {
+      "key": "C-1003",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -19, -59"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, 1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "faust, player, 2, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "gregor, player, 2, -1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Left"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-33, -54, 0.2"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-33, -67, 3"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 1.5"
+            },
+            {
+              "type": "FadeOut",
+              "param": "0.9"
+            }
+          ]
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C-1081",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1004",
+      "ambientSfx": { "enabled": true, "volume": 0.2 },
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003A"
+        }
+      ],
+      "commands": [
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -19, -59"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -17, -59"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, -17, -60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "gregor, -17, -58"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe, -17, -57"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Left"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "chef, player, -4, 0"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 0, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "chef, player, -3, 0"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203B"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203C"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -60"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203D"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -59"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203E"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203F"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -57"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203G"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -17, -56"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203H"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "buffe, -19, -57"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Right"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -57"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203I"
+        },
+        {
+          "type": "Knockback",
+          "param": "chef, Right, 1, 0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203J"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -57"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203K"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1203L"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -59"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -57"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -18, -59"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Down"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Dialogue",
+              "param": "D-1203M"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                { "type": "FaceCharacter", "param": "chef, Left" },
+                { "type": "MoveCharacter", "param": "chef, -26, -59" },
+                { "type": "FaceCharacter", "param": "chef, Right" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ],
+      "showUnboundNpcs": true,
+      "repeatable": true
+    },
+    {
+      "key": "C-1005",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003A"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Knockback",
+          "param": "chef, Left, 2, 0.25"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "HandoffNpc",
+          "param": "chef, N201003B, 201060"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1204"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "chef, Ready, 10"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1204B"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "chef, -36, -55"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C-1006",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "manager",
+          "kind": "Npc",
+          "actorKey": "N201002"
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003B"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1205"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C-1014",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe1",
+          "kind": "Player",
+          "actorKey": "400041"
+        },
+        {
+          "actorName": "buffe2",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "buffe3",
+          "kind": "Player",
+          "actorKey": "400043"
+        },
+        {
+          "actorName": "manager",
+          "kind": "Npc",
+          "actorKey": "N201002"
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003B"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Left"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -46, -56, 12, 2"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -39, -61"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -39, -60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "gregor, -39, -62"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, -38, -60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe1, -38, -61"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe2, -38, -61"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe3, -38, -61"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "chef, -43, -61"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "player, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "gregor, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "faust, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe1, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe2, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe3, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "chef, Right"
+            }
+          ]
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -40, -61"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-12052"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "chef, -36, -55"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1007",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "58, -108, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "70, -110, 2.2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "80, -114, 2.0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 1.0"
+            },
+            {
+              "type": "FadeOut",
+              "param": "0.9"
+            }
+          ]
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C-1082",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe1",
+          "kind": "Player",
+          "actorKey": "400041"
+        },
+        {
+          "actorName": "buffe2",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "buffe3",
+          "kind": "Player",
+          "actorKey": "400043"
+        },
+        {
+          "actorName": "fisher",
+          "kind": "Npc",
+          "actorKey": "N201007"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 74, -115"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 75, -114"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe1, 73, -114"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe2, 73, -114"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe3, 73, -114"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, 72, -115"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "gregor, 71, -114"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "player, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "faust, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "gregor, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe1, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe2, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe3, Down"
+            }
+          ]
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1206"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, fisher"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1206-1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1206-2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "faust, buffe1"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "faust, buffe2"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "faust, buffe3"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "buffe1, faust"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "buffe2, faust"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "buffe3, faust"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1206-3"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "gregor, faust"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "faust, gregor"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1206-4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1206-5"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "buffe1, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe2, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "buffe3, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "gregor, Down"
+            },
+            {
+              "type": "MoveCameraRelative",
+              "param": "player, 0, -1.5, 1.0"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "8, 1.0"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D-1206-6"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 0.8"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 0.8"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D-12061"
+            }
+          ]
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false,
+      "waitTeleportEnd": true
+    },
+    {
+      "key": "C-1008",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe1",
+          "kind": "Player",
+          "actorKey": "400041"
+        },
+        {
+          "actorName": "buffe2",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "buffe3",
+          "kind": "Player",
+          "actorKey": "400043"
+        },
+        {
+          "actorName": "fisher",
+          "kind": "Npc",
+          "actorKey": "N201007"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "player, fisher"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "dante, fisher"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "faust, fisher"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "gregor, fisher"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "buffe1, fisher"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "buffe2, fisher"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "buffe3, fisher"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-12071"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1009",
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1257"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1010",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N201114, r1, 0, 66, -77"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N201115, r2, 0, 72, -77"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N201114, r3, 0, 69, -77"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r1, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r2, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r3, player"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1260"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacterRelative",
+              "param": "r1, player, -1, 2"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "r2, player, 1, 2"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "r3, player, 0, 3"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r1, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r2, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r3, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1261"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacterRelative",
+              "param": "r1, player, -1, 1"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "r2, player, 1, 1"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "r3, player, 0, 2"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r1, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r2, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "r3, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1208"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C-1011",
+      "ambientSfx": { "enabled": true, "volume": 0.2, "includeBoundNpcKeys": ["N201002"] },
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "manager",
+          "kind": "Npc",
+          "actorKey": "N201002"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003B"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -32, -55"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -31, -55"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "gregor, -33, -57"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, -34, -57"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buffe, -32, -56"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -33, -55, 8, 2"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209B"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "buffe, -31, -56"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209C"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "player, -32, -56, 3, 0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 2.0"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "6.5, 2.0"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "2.5"
+                },
+                {
+                  "type": "PlayMotion",
+                  "param": "player, SitDown_Right"
+                },
+                {
+                  "type": "Wait",
+                  "param": "1.0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209D"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "StopMotion",
+          "param": "player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -37, -55"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chef, Right"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 0.75"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "player, -33, -55, 3, 0.5"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "buffe, -32, -56"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209E"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "buffe, -34, -55"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209F"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "gregor, -35, -55"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209G"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N201030, cocoon, 0, -34, -56"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "cocoon, Up"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209H"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "dante, -32, -56"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "gregor, -35, -56"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209I"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1209J"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "cocoon"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C-1012",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "cocoon",
+          "kind": "Accessory",
+          "actorKey": "I992704"
+        }
+      ],
+      "commands": [
+        {
+          "type": "MoveCharacterRelative",
+          "param": "cocoon, player, 0, -1"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "5, 0.5"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "cocoon, animation2"
+        },
+        {
+          "type": "SetChildActive",
+          "param": "cocoon, Main1 (2), on"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1213"
+        },
+        {
+          "type": "SetChildActive",
+          "param": "cocoon, Main1 (2), off"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0.5"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1013",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "WarpFloor",
+          "param": "FB1002B, 6, 62"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1015",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        },
+        {
+          "actorName": "buffe1",
+          "kind": "Player",
+          "actorKey": "400041"
+        },
+        {
+          "actorName": "buffe2",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "buffe3",
+          "kind": "Player",
+          "actorKey": "400043"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -21, -227"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, 1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buffe1, player, 2, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buffe2, player, 2, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buffe3, player, 2, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "gregor, player, 0, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "faust, player, 1, -1"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-39, -214, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "14, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-25, -214, 2.0"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-39, -224, 2.2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-25, -226, 2.0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1225"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1225B"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1225C"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1225D"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1225E"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1225F"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1225G"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "player, player, 0, 1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "dante, dante, 0, 1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "buffe1, buffe1, -5, 0"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "buffe2, buffe2, -5, 0"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "buffe3, buffe3, -5, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "buffe1, buffe1, -1, 0"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "buffe2, buffe2, -1, 0"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "buffe3, buffe3, -1, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe1, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe2, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffe3, Right"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, faust"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "faust, dante"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.6"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.2"
+        }
+      ],
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1192",
+      "showUnboundNpcs": true,
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D-1192"
+        }
+      ]
+    },
+    {
+      "key": "C-1181",
+      "showUnboundNpcs": false,
+      "waitTeleportEnd": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D-1181"
+        }
+      ]
+    },
+    {
+      "key": "C-1193",
+      "repeatable": true,
+      "showUnboundNpcs": true,
+      "hideUnboundParty": false,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003C"
+        }
+      ],
+      "commands": [
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -35, -55"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, chef"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "chef, Attack"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "PauseMotion",
+          "param": "chef"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1294"
+        },
+        {
+          "type": "PauseMotion",
+          "param": "chef, off"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "chef, Ready, 10"
+        }
+      ]
+    },
+    {
+      "key": "C-1193A",
+      "repeatable": true,
+      "showUnboundNpcs": true,
+      "hideUnboundParty": false,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003C"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1294A"
+        }
+      ]
+    },
+    {
+      "key": "C-1193B",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": false,
+      "noLetterbox": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003C"
+        }
+      ],
+      "commands": [
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -35, -55"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -37, -59"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1285"
+        }
+      ]
+    },
+    {
+      "key": "C-1194",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": false,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, chef"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1295"
+        }
+      ]
+    },
+    {
+      "key": "C-PB-SOUSCHEF",
+      "repeatable": true,
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "boss",
+          "kind": "Npc",
+          "actorKey": "N201003"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacterToward",
+          "param": "boss, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, boss"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-PB-SOUSCHEF"
+        }
+      ]
+    },
+    {
+      "key": "C-1016",
+      "bindings": [
+        { "actorName": "player", "kind": "Player", "actorKey": "" },
+        { "actorName": "dante", "kind": "Player", "actorKey": "13" },
+        { "actorName": "faust", "kind": "Player", "actorKey": "2" }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, faust"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "faust, dante"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1213B"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false,
+      "repeatable": true
+    },
+    {
+      "key": "C-1025",
+      "noLetterbox": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "manager",
+          "kind": "Npc",
+          "actorKey": "N201002"
+        }
+      ],
+      "commands": [
+        {
+          "type": "CameraShake",
+          "param": "0.35, 0.3, 15"
+        },
+        {
+          "type": "DamageCharacter",
+          "param": "player, 5"
+        },
+        {
+          "type": "Knockback",
+          "param": "player, Down, 2, 0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1074"
+        }
+      ],
+      "showUnboundNpcs": false
+    },
+    {
+      "key": "C-1193D",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        { "type": "FadeOut", "param": "0.3" },
+        { "type": "Wait", "param": "0.4" },
+        { "type": "FadeIn", "param": "0.3" },
+        { "type": "Dialogue", "param": "D-1294D" }
+      ]
+    }
+  ]
+}

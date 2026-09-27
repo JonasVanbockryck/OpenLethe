@@ -1,0 +1,65 @@
+{
+	"defaultCount": 0,
+	"categories": [
+		{
+			"categoryId": 0,
+			"availableAbilityIds": [90101, 80101, 70101, 60101],
+			"availableAdditionalCountIds": [1,2],
+			"desc": "전투, 거던, 스던, 스거던, 끈던, 경던, rpg"
+		},
+		{
+			"categoryId": 1,
+			"availableAbilityIds": [90101, 80101, 70101, 60101],
+			"availableAdditionalCountIds": [1,2],
+			"desc": "거굴철6"
+		},
+		{
+			"categoryId": 2,
+			"availableAbilityIds": [90101,80101, 70101],
+			"availableAdditionalCountIds": [1,2],
+			"desc": "거굴철1"
+		},
+		{
+			"categoryId": 3,
+			"availableAbilityIds": [90101, 80101, 70101, 60101],
+			"availableAdditionalCountIds": [1,2],
+			"desc": "보스레이드 (기간한정)"
+		},
+		{
+			"categoryId": 4,
+			"availableAbilityIds": [90101, 80101, 70101, 60101],
+			"availableAdditionalCountIds": [1,2],
+			"desc": "보스레이드 10002 (상시)"
+		},
+		{
+			"categoryId": 5,
+			"availableAbilityIds": [90101, 80101, 70101, 60101],
+			"availableAdditionalCountIds": [1,2],
+			"desc": "거굴철 2호선 복각"
+		},
+		{
+			"categoryId": 6,
+			"availableAbilityIds": [90101, 80101, 70101, 60101],
+			"availableAdditionalCountIds": [1,2],
+			"desc": "보스레이드 10004 (상시)"
+		}
+	],
+	"additionalCountInfos": [
+		{
+			"id": 1,
+			"unlockCondition": {
+				"unlockCode": 10644
+			},
+			"desc": "HOKMA",
+			"additionalCount": 1
+		},
+		{
+			"id": 2,
+			"unlockCondition": {
+				"unlockCode": 10830
+			},
+			"desc": "CHECED",
+			"additionalCount": 1
+		}
+	]
+}

@@ -1,0 +1,52 @@
+{
+  "list": [
+    {
+      "key": "Lock_Q1022",
+      "locationId": 110502,
+      "requiredQuestKey": "Q1022",
+      "dialogueKey": "D1098"
+    },
+    {
+      "key": "Lock_Q1023",
+      "locationId": 110602,
+      "requiredQuestKey": "Q1023",
+      "dialogueKey": "D1097"
+    },
+    {
+      "key": "Lock_Q1042",
+      "locationId": 110902,
+      "requiredQuestKey": "Q1042",
+      "dialogueKey": "D1100"
+    },
+    {
+      "key": "Lock_Q1011",
+      "locationId": 110204,
+      "requiredQuestKey": "Q1011",
+      "dialogueKey": "D1101"
+    },
+    {
+      "key": "Lock_Q1012",
+      "locationId": 110205,
+      "requiredQuestKey": "Q1012",
+      "dialogueKey": "D1102"
+    },
+    {
+      "key": "Lock_Q1062",
+      "locationId": 111202,
+      "requiredQuestKey": "Q1062",
+      "dialogueKey": "D1107"
+    },
+    {
+      "key": "Lock_Q1061",
+      "locationId": 111201,
+      "requiredQuestKey": "Q1061",
+      "dialogueKey": "D1106"
+    },
+    {
+      "key": "Lock_Q4014",
+      "locationId": 118001,
+      "requiredQuestKey": "Q4014",
+      "dialogueKey": "D1108"
+    }
+  ]
+}

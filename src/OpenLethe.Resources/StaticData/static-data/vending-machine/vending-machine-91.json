@@ -4,7 +4,7 @@
 			"id": 91,
 			"bannerInfo": {
 				"bannerSpr": "banner_vendingMachine91",
-				"priority": 100,
+				"priority": 1,
 				"festival": true
 			},
 			"groups": [
@@ -14,12 +14,14 @@
 						{
 							"type": "PERSONALITY",
 							"id": 10110,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10207,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
@@ -30,57 +32,68 @@
 						{
 							"type": "PERSONALITY",
 							"id": 10312,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10410,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10414,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10514,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10611,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10711,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10813,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10913,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 11009,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 11107,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 11213,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
@@ -95,12 +108,14 @@
 						{
 							"type": "PERSONALITY",
 							"id": 10307,
-							"price": 150
+							"price": 150,
+							"blocked": true
 						},
 						{
 							"type": "PERSONALITY",
 							"id": 10607,
-							"price": 150
+							"price": 150,
+							"blocked": true
 						},
 
 
@@ -115,37 +130,62 @@
 						{
 							"type": "EGO",
 							"id": 20309,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "EGO",
 							"id": 20505,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "EGO",
 							"id": 20806,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "EGO",
 							"id": 20906,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "EGO",
 							"id": 21009,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "EGO",
 							"id": 21108,
-							"price": 400
+							"price": 400,
+							"blocked": true
 						},
 						{
 							"type": "EGO",
 							"id": 21207,
-							"price": 400
+							"price": 400,
+							"blocked": true
+						}
+					]
+					
+					
+				},
+				
+				{
+					"groupType": "BGM",
+					"contents": [
+						{
+							"type": "BGM",
+							"id": 300011,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 300012,
+							"paidTwinePrice": 25
 						}
 					]
 				}

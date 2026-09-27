@@ -1,0 +1,98 @@
+{
+  "list":[
+    {
+      "id": 1208,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_O_BOX",
+        "id": 0
+      },
+      "contentsOpenType": "PACKAGE_OPTIONAL",
+      "contents": [
+        {
+          "type": "ITEM",
+          "id": 10108,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10208,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10308,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10408,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10508,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10608,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10708,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10808,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 10908,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 11008,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 11108,
+          "minNum": 1,
+          "maxNum": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 11208,
+          "minNum": 1,
+          "maxNum": 3
+        }
+      ],
+      
+      "category": "CONSUMABLE",
+      "itemUseType": "PACKAGE_OPTIONAL",
+      "spriteStr": "seasonal_optional_package",
+      "optionalSample": {
+        "type": "ITEM",
+        "id": 10001,
+        "minNum": 1,
+        "maxNum": 3
+      }
+    }
+  ]
+}

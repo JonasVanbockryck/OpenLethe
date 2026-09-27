@@ -1,0 +1,20 @@
+{
+  "list": [
+    {
+      "npcKey": "N102018",
+      "order": 1,
+      "conditionType": "Dialogue",
+      "conditionValue": "D2014",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2015"
+    },
+    {
+      "npcKey": "N102041",
+      "order": 1,
+      "conditionType": "Cutscene",
+      "conditionValue": "C2003",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2601"
+    }
+  ]
+}

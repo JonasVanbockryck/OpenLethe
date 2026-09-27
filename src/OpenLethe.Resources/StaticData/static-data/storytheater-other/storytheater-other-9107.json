@@ -21,43 +21,50 @@
           "id": 3,
           "storyId": "E511A",
           "nodeId": 910702,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E505_2_1"
         },
         {
           "id": 4,
           "storyId": "E512B",
           "nodeId": 910703,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_T_back street_fiter"
         },
         {
           "id": 5,
           "storyId": "E512A",
           "nodeId": 910704,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_T_back street_fiter"
         },
         {
           "id": 6,
           "storyId": "E513B",
           "nodeId": 910706,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_yongjin_front_filter"
         },
         {
           "id": 7,
           "storyId": "E513A",
           "nodeId": 910706,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_yongjin_1f_filter"
         },
         {
           "id": 8,
           "storyId": "E514B",
           "nodeId": 910707,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_yongjin_2f"
         },
         {
           "id": 9,
           "storyId": "E515A",
           "nodeId": 910709,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E505_2_2"
         },
         {
           "id": 10,
@@ -69,7 +76,8 @@
           "id": 11,
           "storyId": "E516A",
           "nodeId": 910710,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_yongjin_office"
         },
         {
           "id": 12,
@@ -81,13 +89,15 @@
           "id": 13,
           "storyId": "E518B",
           "nodeId": 910712,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E505_2_3"
         },
         {
           "id": 14,
           "storyId": "E519B",
           "nodeId": 910712,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E505_2_4_2"
         },
         {
           "id": 15,

@@ -362,6 +362,9 @@
           "canTeamKill": true,
           "canDuel": true,
           "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
           "abilityScriptList": [
             {
               "scriptName": "AttackLowestHpAbnormalityTarget"
@@ -373,9 +376,6 @@
               "scriptName": "ChangeAttackDamageToZeroOnAttackAlly"
             }
           ],
-          "skillMotion": "Default",
-          "viewType": "SKILL",
-          "parryingCloseType": "NEAR",
           "coinList": [
             {
               "operatorType": "SUB",
@@ -472,6 +472,91 @@
         {
           "gaksungLevel": 4,
           "targetNum": 7
+        },
+        {
+          "gaksungLevel": 5,
+          "defaultValue": 24,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackLowestHpAbnormalityTarget"
+            },
+            {
+              "scriptName": "IgnoreDefenseSkillIncludeCanDuelDefenseOnAttackAlly"
+            },
+            {
+              "scriptName": "ChangeAttackDamageToZeroOnAttackAlly"
+            },
+            {
+              "scriptName": "SkillPowerAdderBeforeAttackIfHasBrokenCoin",
+              "value": -8
+            },
+            {
+              "scriptName": "MpHealSelfOnEndAttack2100311",
+              "value": 1
+            },
+            {
+              "scriptName": "HpHealSelfOnEndAttack2100311_5_20",
+              "value": 0.05
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttack",
+              "buffData": {
+                "buffKeyword": "GainSinStockAdder",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttack",
+              "buffData": {
+                "buffKeyword": "Agility",
+                "target": "Self",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 8,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "TypoOnSAAlly"
+                },
+                {
+                  "scriptName": "HealOnSA2100311_20",
+                  "value": 0.05
+                },
+                {
+                  "scriptName": "GiveBuffAlly2100311_GainSinStockAdder1_Agility2",
+                  "buffData": {
+                    "target": "Target",
+                    "activeRound": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttackTail",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 7,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -494,6 +579,9 @@
           "canTeamKill": true,
           "canDuel": true,
           "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
           "abilityScriptList": [
             {
               "scriptName": "AttackLowestHpTarget"
@@ -502,9 +590,6 @@
               "scriptName": "AttackDmgUpByRatio10BeforeAttackByUseRandomSinStock3"
             }
           ],
-          "skillMotion": "Default",
-          "viewType": "SKILL",
-          "parryingCloseType": "NEAR",
           "coinList": [
             {
               "operatorType": "SUB",
@@ -581,6 +666,72 @@
                     "turn": 2,
                     "activeRound": 0
                   }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 5,
+          "defaultValue": 28,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackLowestHpTarget"
+            },
+            {
+              "scriptName": "SkillPowerAdderBeforeAttackIfHasBrokenCoin",
+              "value": -12
+            },
+            {
+              "scriptName": "AttackDmgUpBeforeAttackViaAllTargetsBuffSumDivide",
+              "buffData": {
+                "buffKeyword": "Combustion",
+                "stack": 4,
+                "turn": 0,
+                "value": 0.15,
+                "limit": 60
+              }
+            },
+            {
+              "scriptName": "UseSinStockAndDmgMul2100321_3_30",
+              "value": 0.1
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 12,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "AdditionalDmgOnSAIfUsable2100321",
+                  "value": 0.5
                 }
               ]
             }

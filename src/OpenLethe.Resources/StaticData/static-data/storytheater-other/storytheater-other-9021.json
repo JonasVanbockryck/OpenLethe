@@ -10,13 +10,15 @@
           "id": 1,
           "storyId": "E090X",
           "nodeId": 912301,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_welfare_corridor"
         },
         {
           "id": 2,
           "storyId": "E091X",
           "nodeId": 912302,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E090X_1"
         }
       ],
       "unLockCondition": {

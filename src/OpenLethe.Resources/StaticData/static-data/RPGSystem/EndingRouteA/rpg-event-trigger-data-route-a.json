@@ -1,0 +1,31 @@
+{
+  "list": [
+    {
+      "id": 110101003,
+      "eventKey": "E999999",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N999999"
+    },
+    {
+      "id": 110101012,
+      "eventKey": "E999998",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "DeadscenePlayer"
+    },
+    {
+      "id": 810001001,
+      "eventKey": "EPI-CLEAR-A1",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": ""
+    },
+    {
+      "id": 810001002,
+      "eventKey": "EPI-CLEAR-A2",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

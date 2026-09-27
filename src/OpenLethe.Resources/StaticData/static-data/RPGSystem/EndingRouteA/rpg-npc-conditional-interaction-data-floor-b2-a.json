@@ -1,0 +1,143 @@
+{
+  "list": [
+    {
+      "npcKey": "N202002",
+      "order": 1,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2003",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-2004"
+    },
+    {
+      "npcKey": "N202015",
+      "order": 1,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2004",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2005-1"
+    },
+    {
+      "npcKey": "N202015",
+      "order": 2,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2005",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2005-2"
+    },
+    {
+      "npcKey": "N202015",
+      "order": 3,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-2005-2",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2005-3"
+    },
+    {
+      "npcKey": "N202015",
+      "order": 4,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2007",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-2009"
+    },
+    {
+      "npcKey": "N202015",
+      "order": 5,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-2009-1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2005-3"
+    },
+    {
+      "npcKey": "N202015",
+      "order": 6,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2010, 0",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2010-1",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N202015",
+      "order": 7,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-2010-1",
+      "interactionType": "Shop",
+      "interactionKey": "SH109003"
+    },
+    {
+      "npcKey": "N202002",
+      "order": 2,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2004",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2004-1"
+    },
+    {
+      "npcKey": "N202002",
+      "order": 3,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2011",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2045",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N202002",
+      "order": 4,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2013",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2004-1"
+    },
+    {
+      "npcKey": "N202002",
+      "order": 5,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2014",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2015-1",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N202002",
+      "order": 6,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-2015-1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2015-2"
+    },
+    {
+      "npcKey": "N202006",
+      "order": 1,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2005",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-2007"
+    },
+    {
+      "npcKey": "N202006",
+      "order": 3,
+      "conditionType": "Quest",
+      "conditionValue": "Q-2010",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2011-1"
+    },
+    {
+      "npcKey": "N202006",
+      "order": 4,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-2011-1",
+      "interactionType": "Shop",
+      "interactionKey": "SH109002"
+    },
+    {
+      "npcKey": "N202022",
+      "order": 1,
+      "conditionType": "InteractionCount",
+      "conditionValue": "2",
+      "interactionType": "Event",
+      "interactionKey": "EK-2022"
+    }
+  ]
+}

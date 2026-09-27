@@ -1,0 +1,129 @@
+{
+  "list": [
+    {
+      "id": "meursault_rental_chapter_10_rpg",
+      "rentalPersonalityList": [
+        {
+          "personality": {
+            "id": 10512,
+            "gacksung": 4
+          },
+          "egos": [
+            {
+              "id": 20501,
+              "gacksung": 4
+            },
+            {
+              "id": 20506,
+              "gacksung": 4
+            },
+            {
+              "id": 20504,
+              "gacksung": 4
+            },
+            {
+              "id": 20508,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id": 10515,
+            "gacksung": 4
+          },
+          "egos": [
+            {
+              "id": 20501,
+              "gacksung": 4
+            },
+            {
+              "id": 20506,
+              "gacksung": 4
+            },
+            {
+              "id": 20503,
+              "gacksung": 4
+            },
+            {
+              "id": 20507,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id": 10513,
+            "gacksung": 4
+          },
+          "egos": [
+            {
+              "id": 20501,
+              "gacksung": 4
+            },
+            {
+              "id": 20506,
+              "gacksung": 4
+            },
+            {
+              "id": 20503,
+              "gacksung": 4
+            },
+            {
+              "id": 20507,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id": 10508,
+            "gacksung": 4
+          },
+          "egos": [
+            {
+              "id": 20501,
+              "gacksung": 4
+            },
+            {
+              "id": 20506,
+              "gacksung": 4
+            },
+            {
+              "id": 20509,
+              "gacksung": 4
+            },
+            {
+              "id": 20507,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id": 10511,
+            "gacksung": 4
+          },
+          "egos": [
+            {
+              "id": 20501,
+              "gacksung": 4
+            },
+            {
+              "id": 20506,
+              "gacksung": 4
+            },
+            {
+              "id": 20503,
+              "gacksung": 4
+            },
+            {
+              "id": 20508,
+              "gacksung": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

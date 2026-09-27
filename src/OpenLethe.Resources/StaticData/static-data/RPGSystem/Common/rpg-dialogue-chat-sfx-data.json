@@ -1,0 +1,40 @@
+{
+    "list": [
+        {
+            "key": "laNoir",
+            "audioIds": ["sfx_chat_black_1", "sfx_chat_black_2"]
+        },
+        {
+            "key": "laRouge",
+            "audioIds": ["sfx_chat_red_1", "sfx_chat_red_2"]
+        },
+        {
+            "key": "sfx_chat_1",
+            "audioIds": ["sfx_chat_1"]
+        },
+        {
+            "key": "sfx_chat_2",
+            "audioIds": ["sfx_chat_2"]
+        },
+        {
+            "key": "sfx_chat_h1",
+            "audioIds": ["sfx_chat_h1"]
+        },
+        {
+            "key": "sfx_chat_h2",
+            "audioIds": ["sfx_chat_h2"]
+        },
+        {
+            "key": "sfx_chat_l1",
+            "audioIds": ["sfx_chat_l1"]
+        },
+        {
+            "key": "sfx_chat_l2",
+            "audioIds": ["sfx_chat_l2"]
+        },
+        {
+            "key": "sfx_chat_l3",
+            "audioIds": ["sfx_chat_l3"]
+        }
+    ]
+}

@@ -1,0 +1,244 @@
+{
+  "list": [
+    {
+      "key": "D2002",
+      "trackCompletion": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2003",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2004",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D20041",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2005",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2006",
+      "trackCompletion": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2007",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2026",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2008",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2009",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D20091",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2010",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2011",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2012",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D20121",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D20122",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2013",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2020",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D20201",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D20202",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2021",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2014",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": ["DC2001","DC2002"]
+    },
+    {
+      "key": "D2015",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": ["DC2001","DC2002"]
+    },
+    {
+      "key": "D2016",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2601",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2602",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2603",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2901",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2902",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2903",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2904",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2905",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2019",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2030",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2031",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D20111",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D201111",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D201112",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2022",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2906",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2907",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2908",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2032",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2033",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    }
+  ]
+}

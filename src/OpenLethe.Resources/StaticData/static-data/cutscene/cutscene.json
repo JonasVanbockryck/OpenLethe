@@ -3121,6 +3121,91 @@
           "closeUp": 0.45
         }
       ]
+    },
+    {
+      "id": 10116,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": 0,
+          "offsetY": 0.22,
+          "closeUp": 0.62
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": -0.17,
+          "offsetY": 0.25,
+          "closeUp": 0.55
+        }
+      ]
+    },
+    {
+      "id": 10616,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": -0.05,
+          "offsetY": 0.16,
+          "closeUp": 0.74
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": -0.03,
+          "offsetY": 0.16,
+          "closeUp": 0.64
+        }
+      ]
+    },
+    {
+      "id": 10416,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": -0.19,
+          "offsetY": 0.17,
+          "closeUp": 0.65
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": -0.07,
+          "offsetY": 0.29,
+          "closeUp": 0.5
+        }
+      ]
+    },
+    {
+      "id": 10816,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": 0.115,
+          "offsetY": 0.17,
+          "closeUp": 0.51
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": 0.02,
+          "offsetY": 0.2,
+          "closeUp": 0.51
+        }
+      ]
+    },
+    {
+      "id": 10917,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": 0,
+          "offsetY": 0.22,
+          "closeUp": 0.65
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": 0.07,
+          "offsetY": 0.23,
+          "closeUp": 0.7
+        }
+      ]
     }
   ]
 }

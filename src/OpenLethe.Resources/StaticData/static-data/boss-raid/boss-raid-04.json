@@ -1,0 +1,141 @@
+{
+  "list": [
+    {
+      "id": 10004,
+      "openChapterData": {
+        "unlockCode": 108
+      },
+      "specialReward": {
+        "eventId": 53,
+        "rewardId": 15
+      },
+      "maxPartyCount": 3,
+      "danteAbilityCategory": 6,
+      "maxPersonalityLevel": 60,
+      "difficulties": [
+        {
+          "difficulty": "NORMAL",
+          "stageId": 912722,
+          "unlockCode": 0,
+          "rewards": [
+            { "type": "UNLOCK_CODE", "id": 912722, "num": 1 }
+          ],
+          "missions": [
+            { "category": "BOSS_RAID_04_NORMAL", "missionIds": [301004001, 301004002, 301004003, 301004004] }
+          ],
+          "uiConfigs": {
+            "mainUnitId": 5019,
+            "isHideEnemySprite": true,
+            "phases": [
+              {
+                "phaseIndex": 0,
+                "waveIndex": 0,
+                "ignoreHide": true
+              },
+              {
+                "phaseIndex": 1,
+                "waveIndex": 0,
+                "ignoreHide": true
+              }
+            ]
+          }
+        },
+        {
+          "difficulty": "HARD",
+          "stageId": 912723,
+          "unlockCode": 912722,
+          "rewards": [
+            { "type": "UNLOCK_CODE", "id": 912723, "num": 1 }
+          ],
+          "missions": [
+            { "category": "BOSS_RAID_04_HARD", "missionIds": [301004005, 301004006, 301004007, 301004008] }
+          ],
+          "uiConfigs": {
+            "mainUnitId": 5019,
+            "isHideEnemySprite": true,
+            "phases": [
+              {
+                "phaseIndex": 0,
+                "waveIndex": 0,
+                "ignoreHide": true
+              },
+              {
+                "phaseIndex": 1,
+                "waveIndex": 0,
+                "ignoreHide": true
+              }
+            ]
+          }
+        }
+      ],
+      "buffList": [
+        {
+          "faction": "PLAYER",
+          "buffId": "FavorBuffLeiheng",
+          "isPart": false,
+          "buffWave": 0,
+          "stack": 1,
+          "turn": 0,
+          "buffType": 0,
+          "targetLevel": -1,
+          "uiConfigs" : {
+            "uiAlternativeBuffId": "FavorBuffLeiheng1stPhaseForUI"
+          }
+        },
+        {
+          "faction": "PLAYER",
+          "buffId": "FavorBuffLeihengTwo",
+          "isPart": false,
+          "buffWave": 1,
+          "stack": 1,
+          "turn": 0,
+          "buffType": 0,
+          "targetLevel": -1,
+          "uiConfigs" : {
+            "uiAlternativeBuffId": "FavorBuffLeiheng2ndPhaseForUI"
+          }
+        },
+        {
+          "faction": "ENEMY",
+          "buffId": "FavorBuffLeihengHard",
+          "isPart": false,
+          "buffWave": 0,
+          "stack": 1,
+          "turn": 0,
+          "buffType": 1,
+          "targetLevel": 2,
+          "uiConfigs" : {
+            "notShowPhase": true,
+            "uiAlternativeBuffId": "FavorBuffLeihengHardForUI"
+          }
+        },
+        {
+          "faction": "ENEMY",
+          "buffId": "FavorBuffLeihengHardTwo",
+          "isPart": false,
+          "buffWave": 1,
+          "stack": 1,
+          "turn": 0,
+          "buffType": 1,
+          "targetLevel": 2,
+          "uiConfigs" : {
+            "notShowPhase": true,
+            "uiAlternativeBuffId": "FavorBuffLeihengHardForUI"
+          }
+        }
+      ],
+      "uiConfigs": {
+        "priority": 2,
+        "resourceName" : "Leiheng",
+        "bannerTitleTextKey": "boss_raid_10004_banner_title",
+        "bannerChapterText": "8",
+        "bossTitleTextKey": "boss_raid_10004_boss_title",
+        "rewardWarningTextKey": "boss_raid_reward_ui_warning_10004",
+        "ruleTextKey": "boss_raid_rule_popup_desc_10004",
+        "bgm": "event:/BGM/Battle/Battle_Cp8_Enemy_6",
+        "isMostEarly": false,
+        "shopDescKey": "boss_raid_reward_ui_desc_10004"
+      }
+    }
+  ]
+}

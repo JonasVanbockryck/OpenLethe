@@ -1,0 +1,141 @@
+{
+  "list": [
+    {
+      "key": "Q3001",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q2001",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3002",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3001",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3003",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3002",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3004",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3003",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3005",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3004",
+      "completeEventKey": "E3051"
+    },
+    {
+      "key": "Q3006",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3005",
+      "completeEventKey": "",
+      "completeRewardItemKey1": "I1201",
+      "completeRewardCount1": 1
+    },
+    {
+      "key": "Q3007",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3006",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3008",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3007",
+      "completeEventKey": "E3081",
+      "completeRewardMoney": 140
+    },
+    {
+      "key": "Q3009",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3008",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3010",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3009",
+      "completeEventKey": "",
+      "completeRewardMoney": 90
+    },
+    {
+      "key": "Q3012",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3011",
+      "completeEventKey": "E3121"
+    },
+    {
+      "key": "Q3013",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3012",
+      "completeEventKey": "E3123",
+      "completeRewardItemKey1": "I1207",
+      "completeRewardCount1": 1,
+      "completeRewardMoney": 90
+    },
+    {
+      "key": "Q3011",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3010",
+      "completeEventKey": "",
+      "completeRewardMoney": 90
+    },
+    {
+      "key": "Q4014",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4013",
+      "completeEventKey": "",
+      "completeRewardMoney": 90
+    },
+    {
+      "key": "Q4015",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2017",
+      "completeEventKey": "E41501",
+      "completeRewardMoney": 90
+    },
+    {
+      "key": "Q4017",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4015",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q4016",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4017",
+      "completeEventKey": "",
+      "completeRewardMoney": 90
+    },
+    {
+      "key": "Q3016T",
+      "hideList": true,
+      "sessionOnly": true,
+      "hideLog": true,
+      "acquireConditionType": "Always"
+    },
+    {
+      "key": "Q3016H1",
+      "hideList": true,
+      "sessionOnly": true,
+      "hideLog": true,
+      "acquireConditionType": "Always"
+    },
+    {
+      "key": "Q3016H2",
+      "hideList": true,
+      "sessionOnly": true,
+      "hideLog": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3016H1"
+    }
+  ]
+}

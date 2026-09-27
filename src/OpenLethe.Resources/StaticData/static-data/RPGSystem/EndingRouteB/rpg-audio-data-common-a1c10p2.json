@@ -1,0 +1,240 @@
+{
+  "list": [
+    {
+      "audioId": "bgm_needleMobAggro",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/I_Said_Run"
+    },
+    {
+      "audioId": "bgm_hostileHunt",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Run_Not_Walk"
+    },
+    {
+      "audioId": "bgm_swarmB3",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Calvary"
+    },
+    {
+      "audioId": "bgm_fieldBossISaidRun",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/I_Said_Run"
+    },
+    {
+      "audioId": "bgm_fieldBossCalvary",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Calvary"
+    },
+    {
+      "audioId": "bgm_fieldBossEndlessPain",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Endless_Pain"
+    },
+    {
+      "audioId": "bgm_floor4thLostChild",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Faint_Aroma"
+    },
+    {
+      "audioId": "bgm_floorB3rd",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Timewalker"
+    },
+    {
+      "audioId": "bgm_floor5th",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Fresh_Meal"
+    },
+    {
+      "audioId": "bgm_floor5thBuffetFeast",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Precious_Than_Your_Brain"
+    },
+    {
+      "audioId": "bgm_fieldBossBattleCp10Boss6",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Battle/Battle_Cp10_Boss_6"
+    },
+    {
+      "audioId": "sfx_2nd_light_off",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/UI/UI_TV_Off"
+    },
+    {
+      "audioId": "sfx_stall_break",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_HeavyFall"
+    },
+    {
+      "audioId": "sfx_scissors_pull_out",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Flesh_Find"
+    },
+    {
+      "audioId": "sfx_scissors_3thfloor_near",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/Story/SFX_Scissors_Amb_Near"
+    },
+    {
+      "audioId": "sfx_floor_walk_oneleg",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_FloorWalk_Longleg"
+    },
+    {
+      "audioId": "sfx_floor_walk_oneleg_1",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_FloorWalk_Longleg",
+      "volumeRatio": 0.35
+    },
+    {
+      "audioId": "sfx_floor_walk_oneleg_2",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_FloorWalk_Longleg",
+      "volumeRatio": 0.55
+    },
+    {
+      "audioId": "sfx_floor_walk_oneleg_3",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_FloorWalk_Longleg",
+      "volumeRatio": 0.8
+    },
+    {
+      "audioId": "LanoirCaptainHammerLight",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_GolemSmash"
+    },
+    {
+      "audioId": "LanoirCaptainHammerMedium",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_GolemSmash"
+    },
+    {
+      "audioId": "LanoirCaptainHammerHeavy",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_HeavyFall"
+    },
+    {
+      "audioId": "LanoirCaptainNailSmall",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Chain_Attach"
+    },
+    {
+      "audioId": "LanoirCaptainNailBig",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Chain_Attach"
+    },
+    {
+      "audioId": "sfx_captain_walk_armor",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Walk_Armor_Scene"
+    },
+    {
+      "audioId": "sfx_captain_hammer_ready",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Hammerhorse_Ready"
+    },
+    {
+      "audioId": "sfx_aliune_field_ready",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Alri_FieldReady_NoSpat"
+    },
+    {
+      "audioId": "sfx_aliune_field_shot",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Alri_FieldShot_NoSpat"
+    },
+    {
+      "audioId": "sfx_floorwalk_dog",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_FloorWalk_Dog"
+    },
+    {
+      "audioId": "sfx_leather_stretch",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Leather_Stretch"
+    },
+    {
+      "audioId": "sfx_dorothea_boots_hit",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Boots_Hit"
+    },
+    {
+      "audioId": "sfx_shelter_wall_crack",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Wall_Crack"
+    },
+    {
+      "audioId": "sfx_shelter_wall_destroy",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Wall_Destroy"
+    },
+    {
+      "audioId": "sfx_don_run_short",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Run_Short"
+    },
+    {
+      "audioId": "sfx_don_lance_swing",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Don_Swing"
+    },
+    {
+      "audioId": "sfx_don_repelled_splash",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Blood_Splash"
+    },
+    {
+      "audioId": "sfx_bag_burst",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Huge_Impact"
+    },
+    {
+      "audioId": "bgm_floor5thBroadcast",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Battle/Battle_Cp10_Boss_5"
+    },
+    {
+      "audioId": "sfx_c1011_shutter_cut",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Doma_Cut"
+    },
+    {
+      "audioId": "sfx_c1011_fire_burn",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Fire_Burn"
+    }
+  ]
+}

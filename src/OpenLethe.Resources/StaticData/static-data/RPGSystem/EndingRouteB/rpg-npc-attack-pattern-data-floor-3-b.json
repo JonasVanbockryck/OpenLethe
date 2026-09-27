@@ -1,0 +1,362 @@
+﻿{
+  "list": [
+    {
+      "patternKey": "NA9301",
+      "triggerRange": 1,
+      "cooldown": 1.0,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 1.5,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 13,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA9302",
+      "triggerRange": 2,
+      "cooldown": 2.0,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 2.0,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 31,
+          "mpDamage": 0,
+          "hitRange": 2,
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.5
+        }
+      ]
+    },
+    {
+      "patternKey": "NA9304",
+      "triggerRange": 0,
+      "cooldown": 2.0,
+      "steps": [
+        {
+          "action": "ChargeUntilRightAngle",
+          "hpDamage": 5,
+          "mpDamage": 0,
+          "chargeSpeed": 40,
+          "knockbackTiles": 2,
+          "multiHitSeconds": 0.4,
+          "multiHitCount": 10,
+          "animSpeedScale": 1.0,
+          "motion": "SpinAttack",
+          "impactEffectMotion": "Impact"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.04
+        },
+        {
+          "action": "FacePlayer180Degrees"
+        },
+        {
+          "action": "Charge",
+          "hpDamage": 5,
+          "mpDamage": 0,
+          "chargeSpeed": 40,
+          "knockbackTiles": 2,
+          "multiHitSeconds": 0.4,
+          "multiHitCount": 10,
+          "animSpeedScale": 1.0,
+          "motion": "SpinAttack",
+          "impactEffectMotion": "Impact"
+        },
+        {
+          "action": "Wait",
+          "duration": 2.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA103016",
+      "triggerRange": 4,
+      "canStartWhileMoving": true,
+      "cooldown": 0,
+      "startBranchesOnCooldown": false,
+      "branches": [
+        {
+          "branchKey": "Slash",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Pierce"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer",
+              "debugLabel": "② 베기 진입"
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "② 베기 예고",
+              "duration": 1.6
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "② 베기 타격 18",
+              "motion": "Swing",
+              "motionHoldSeconds": 0.8,
+              "hpDamage": 18,
+              "knockbackTiles": 1,
+              "mpDamage": 0,
+              "parryImmune": true,
+              "hitShape": [
+                "XXXXXXXXX",
+                "XXXXXXXXX",
+                "XXXXXXXXX",
+                "....N...."
+              ],
+              "cameraShakeStrength": 0.4,
+              "cameraShakeDuration": 0.22,
+              "cameraShakeAxis": "Free",
+              "cameraShakeFrequencyHz": 12,
+              "splashHitsNpcs": true
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "② 후딜·전진",
+              "duration": 1.8,
+              "waitMoveTowardTarget": true
+            }
+          ]
+        },
+        {
+          "branchKey": "Pierce",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Slash"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer",
+              "debugLabel": "③ 찌르기 진입"
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "③ 찌르기 예고",
+              "duration": 1.6
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "③ 찌르기 타격 25",
+              "motion": "Pierce",
+              "motionHoldSeconds": 0.9,
+              "hpDamage": 25,
+              "knockbackTiles": 1,
+              "mpDamage": 0,
+              "parryImmune": true,
+              "hitShape": [
+                "XXX",
+                "XXX",
+                "XXX",
+                "XXX",
+                "XXX",
+                "XXX",
+                "XXX",
+                "XXX",
+                "XXX",
+                ".N."
+              ],
+              "cameraShakeStrength": 0.35,
+              "cameraShakeDuration": 0.2,
+              "cameraShakeAxis": "Free",
+              "cameraShakeFrequencyHz": 12,
+              "splashHitsNpcs": true
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "③ 후딜·전진",
+              "duration": 2.1,
+              "waitMoveTowardTarget": true
+            }
+          ]
+        },
+        {
+          "branchKey": "Sonic",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Slash"
+            }
+          ],
+          "entryType": "Priority",
+          "entryCooldownSeconds": 16,
+          "entryDisabledByDefault": true,
+          "entryRange": 5,
+          "steps": [
+            {
+              "action": "FacePlayer",
+              "debugLabel": "① 음파 진입(쿨 16s)"
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "① 음파 예고",
+              "duration": 1.5
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "① 음파 타격 10·가드가능",
+              "motion": "Sonic",
+              "motionHoldSeconds": 0.8,
+              "hpDamage": 10,
+              "knockbackTiles": 2,
+              "mpDamage": 0,
+              "parryImmune": true,
+              "hitShape": [
+                "....XXXXX....",
+                "...XXXXXXX...",
+                "..XXXXXXXXX..",
+                ".XXXXXXXXXXX.",
+                "XXXXXXXXXXXXX",
+                "XXXXXXXXXXXXX",
+                "XXXXXXNXXXXXX",
+                "XXXXXXXXXXXXX",
+                "XXXXXXXXXXXXX",
+                ".XXXXXXXXXXX.",
+                "..XXXXXXXXX..",
+                "...XXXXXXX...",
+                "....XXXXX...."
+              ],
+              "cameraShakeStrength": 0.45,
+              "cameraShakeDuration": 0.3,
+              "cameraShakeAxis": "Free",
+              "cameraShakeFrequencyHz": 10,
+              "splashHitsNpcs": true
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "① 후딜·전진",
+              "duration": 1.5,
+              "waitMoveTowardTarget": true
+            }
+          ]
+        },
+        {
+          "branchKey": "Jail",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Slash"
+            }
+          ],
+          "entryType": "Priority",
+          "entryCooldownSeconds": 18,
+          "entryDisabledByDefault": true,
+          "entryRange": 99,
+          "steps": [
+            {
+              "action": "FacePlayer",
+              "debugLabel": "④ 새장 진입(쿨 18s)"
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "④ 새장 시전",
+              "duration": 1.2,
+              "motion": "SummonJail"
+            },
+            {
+              "action": "SummonJail",
+              "debugLabel": "④ 새장 낙하·창살HP20",
+              "jailRadius": 1,
+              "jailHp": 20,
+              "jailPrefabKey": "Object_FloorMasterJail.prefab",
+              "jailDropSeconds": 0.1
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "④ 폭발까지",
+              "duration": 7.0
+            },
+            {
+              "action": "TargetTileBlast",
+              "debugLabel": "④ 나팔 폭발 20·가드불가",
+              "blastEffectKey": "FloorMasterTrumpetBlast",
+              "hpDamage": 20,
+              "knockbackTiles": 2,
+              "mpDamage": 0,
+              "blastShape": "Room",
+              "blastRoomMaxTiles": 1024,
+              "blastRoomBoundsMin": {
+                "x": 49,
+                "y": -44
+              },
+              "blastRoomBoundsMax": {
+                "x": 80,
+                "y": -35
+              },
+              "ignorePlayerGuard": true,
+              "parryImmune": true,
+              "dodgeImmune": true,
+              "cameraShakeStrength": 0.8,
+              "cameraShakeDuration": 0.4,
+              "cameraShakeAxis": "Free",
+              "cameraShakeFrequencyHz": 12
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "④ 후딜",
+              "duration": 1.5
+            }
+          ]
+        },
+        {
+          "branchKey": "Star",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Slash"
+            }
+          ],
+          "entryType": "Priority",
+          "entryCooldownSeconds": 30,
+          "entryDisabledByDefault": true,
+          "entryRange": 99,
+          "steps": [
+            {
+              "action": "FacePlayer",
+              "debugLabel": "⑤ 별 진입(쿨 30s)"
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "⑤ 별 소환 시전",
+              "duration": 1.5,
+              "motion": "SummonStar"
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "⑤ 후딜",
+              "duration": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "list": [
+    {
+      "id": 11,
+      "bannerInfo": {
+        "bannerType": "PERMANENT",
+        "priority": 18,
+        "condition": {
+          "type": "ITEM",
+          "id": 111,
+          "num": 1
+        },
+
+        "pickupIdList": [],
+        "illustList": [ "gacha_11_illust" ],
+        "videoList": []
+      },
+      "payments": [
+        {
+          "paymentId": 0,
+          "gachaUIState": "Ten",
+          "requiredItemId": 111,
+          "requiredNum": 1,
+          "count": 10
+        }
+      ],
+      "contents": [
+        {
+          "groupType": "1",
+          "occupancyCaseList":[
+            {
+              "occupancyCase":"DEFAULT",
+              "occupancy":9700
+            }
+          ],
+          "elementType": "PERSONALITY",
+          "elementIdList": [
+            10101,
+            10201,
+            10301,
+            10401,
+            10501,
+            10601,
+            10701,
+            10801,
+            10901,
+            11001,
+            11101,
+            11201
+          ]
+        },
+        {
+          "groupType": "3",
+          "occupancyCaseList":[
+            {
+              "occupancyCase":"DEFAULT",
+              "occupancy":300
+            },
+            {
+              "occupancyCase":"TENTH",
+              "occupancy":10000
+            }
+          ],
+          "elementType": "PERSONALITY",
+          "elementIdList": [
+            10416,
+            10816,
+            10917
+          ]
+        }
+      ]
+    }
+  ]
+}

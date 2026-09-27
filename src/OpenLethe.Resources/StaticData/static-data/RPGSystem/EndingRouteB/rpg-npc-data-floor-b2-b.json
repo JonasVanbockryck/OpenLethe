@@ -1,0 +1,562 @@
+{
+  "list": [
+    {
+      "npcKey": "N202104",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RedNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2201",
+      "corpseDialogueKey": "D-2267",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle"
+    },
+    {
+      "npcKey": "N202105",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GreenNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2202",
+      "corpseDialogueKey": "D-2263",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle"
+    },
+    {
+      "npcKey": "N202105B",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GreenNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2202B",
+      "corpseDialogueKey": "D-2263",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle"
+    },
+    {
+      "npcKey": "N202105C",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GreenNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2202C",
+      "corpseDialogueKey": "D-2263",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle"
+    },
+    {
+      "npcKey": "N202107",
+      "corpseDialogueKey": "D3923",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirHighDomestic.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2203",
+      "canTakeFieldDamage": false,
+      "fieldHp": 10,
+      "dropTableKey": "DT202107",
+      "collisionType": "None",
+      "deathMotion": "Dead_HighDomestic"
+    },
+    {
+      "npcKey": "N202108",
+      "corpseDialogueKey": "D3923",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirHighDomestic2.prefab",
+      "footstepType": "Surface",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 10,
+      "dropTableKey": "DT202108",
+      "collisionType": "None",
+      "deathMotion": "Dead_HighDomestic2"
+    },
+    {
+      "npcKey": "N202109",
+      "corpseDialogueKey": "D5901",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LanoirGuard.prefab",
+      "footstepType": "Surface",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 10,
+      "dropTableKey": "DT202109",
+      "collisionType": "None",
+      "deathMotion": "Dead_LanoirGuard_RouteB"
+    },
+    {
+      "npcKey": "N202101",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Palette.prefab",
+      "footprintWidth": 2,
+      "footprintHeight": 1,
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2210",
+      "canTakeFieldDamage": false,
+      "corpseDialogueKey": "D-2291",
+      "collisionType": "None",
+      "conditionalMotions": [
+        {
+          "conditionType": "Cutscene",
+          "conditionValue": "C-2116",
+          "motionId": "Dead",
+          "asCorpse": true
+        },
+        {
+          "conditionType": "Quest",
+          "conditionValue": "Q-3010S",
+          "invincibleType": "IgnoreHit"
+        }
+      ],
+      "mustNeedQuestKeys": [
+        "Q-2000",
+        "Q-2001",
+        "Q-2002",
+        "Q-2003",
+        "Q-2004",
+        "Q-2004A",
+        "Q-2005",
+        "Q-2006",
+        "Q-2007",
+        "Q-2008",
+        "Q-2009",
+        "Q-2010"
+      ],
+      "attackedEventKey": "EC-2119"
+    },
+    {
+      "npcKey": "N202102",
+      "isBoss": true,
+      "bossBgmAudioId": "bgm_fieldBossEndlessPain",
+      "moveSpeed": 4,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_DyerBodyguard.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2211",
+      "detectType": "Chase",
+      "detectShape": "Omni",
+      "detectRange": 0,
+      "maxRangeOnDetect": 50,
+      "speedOnDetect": 8,
+      "returnType": "AreaExit",
+      "attackPatternKey": "NA202102",
+      "corpseDialogueKey": "D-2261",
+      "canTakeFieldDamage": true,
+      "hitStaggerImmune": true,
+      "knockbackImmune": true,
+      "fieldHp": 700,
+      "preBattleCutsceneKey": "C-PB-PALETTE",
+      "startBattleBelowHpPercent": 0,
+      "bossBattleEntryHpPercent": 50,
+      "attackEntersBattleOnlyWhenLowHp": true,
+      "fieldHpFloor": 350,
+      "battleBlockTiles": [
+        {
+          "x": 20,
+          "y": 90
+        },
+        {
+          "x": 21,
+          "y": 90
+        },
+        {
+          "x": 22,
+          "y": 90
+        },
+        {
+          "x": 20,
+          "y": 91
+        },
+        {
+          "x": 21,
+          "y": 91
+        },
+        {
+          "x": 22,
+          "y": 91
+        },
+        {
+          "x": 20,
+          "y": 92
+        },
+        {
+          "x": 21,
+          "y": 92
+        },
+        {
+          "x": 22,
+          "y": 92
+        },
+        {
+          "x": 33,
+          "y": 101
+        },
+        {
+          "x": 33,
+          "y": 102
+        },
+        {
+          "x": 33,
+          "y": 103
+        },
+        {
+          "x": 33,
+          "y": 104
+        }
+      ],
+      "battleBlockPrefabAddress": "RPGSystem/Object/Object_Floor_B2_ExitBlock.prefab",
+      "collisionType": "None",
+      "deathMotion": "Dead_BodyGuard",
+      "dropTableKey": "DT202102",
+      "mustNeedQuestKeys": [
+        "Q-2000",
+        "Q-2001",
+        "Q-2002",
+        "Q-2003",
+        "Q-2004",
+        "Q-2004A",
+        "Q-2005",
+        "Q-2006",
+        "Q-2007",
+        "Q-2008",
+        "Q-2009",
+        "Q-2010"
+      ],
+      "detectOnHit": true,
+      "attackOnlyWhenAlerted": true,
+      "fieldHpFloorEventKey": "EC-2118"
+    },
+    {
+      "npcKey": "N2021022",
+      "moveSpeed": 4,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_DyerBodyguard.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2211",
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "mustNeedQuestKeys": [
+        "Q-2000",
+        "Q-2001",
+        "Q-2002",
+        "Q-2003",
+        "Q-2004",
+        "Q-2004A",
+        "Q-2005",
+        "Q-2006",
+        "Q-2007",
+        "Q-2008",
+        "Q-2009",
+        "Q-2010"
+      ],
+      "attackedEventKey": "EC-2119"
+    },
+    {
+      "npcKey": "N202110",
+      "corpseDialogueKey": "D3923",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirContemporary.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2204",
+      "canTakeFieldDamage": false,
+      "fieldHp": 10,
+      "battleId": 11059,
+      "attackedEventKey": "EA-2110",
+      "dropTableKey": "DT202110",
+      "collisionType": "None",
+      "deathMotion": "Dead_RenoirContem"
+    },
+    {
+      "npcKey": "N202103",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ThreadNest.prefab",
+      "footprintWidth": 5,
+      "footprintHeight": 2,
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2212",
+      "corpseSortingOrder": 0,
+      "corpseSortPointOffsetTiles": 1.75,
+      "canTakeFieldDamage": false,
+      "fieldHp": 10,
+      "knockbackImmune": true,
+      "battleId": 11033,
+      "preBattleCutsceneKey": "C-PB-THREADNEST",
+      "attackedEventKey": "EA-2103",
+      "dropTableKey": "DT202103",
+      "corpseDialogueKey": "D-2292",
+      "collisionType": "None",
+      "conditionalMotions": [
+        {
+          "conditionType": "Quest",
+          "conditionValue": "Q-2008",
+          "motionId": "Dead",
+          "asCorpse": true
+        }
+      ],
+      "mustNeedQuestKeys": [
+        "Q-2000",
+        "Q-2001",
+        "Q-2002",
+        "Q-2003",
+        "Q-2004",
+        "Q-2004A",
+        "Q-2005",
+        "Q-2006",
+        "Q-2007",
+        "Q-2008"
+      ]
+    },
+    {
+      "npcKey": "N202121",
+      "moveSpeed": 5,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_PinKing.prefab",
+      "footprintWidth": 2,
+      "footprintHeight": 3,
+      "footstepType": "Surface",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11032,
+      "preBattleCutsceneKey": "C-PB-PINKING",
+      "dropTableKey": "DT202121",
+      "invincibleType": "IgnoreHit",
+      "corpseDialogueKey": "D-2293",
+      "collisionType": "None",
+      "deathMotion": "Dead_Pinking3",
+      "deathMotionOverrides": [
+        {
+          "conditionType": "Item",
+          "conditionValue": "I992704",
+          "deathMotion": "Dead_PinKing2"
+        }
+      ],
+      "fateLostOnDeathScene": true,
+      "isBoss": true,
+      "bossBgmAudioId": "bgm_fieldBossLeather"
+    },
+    {
+      "npcKey": "N202111",
+      "corpseDialogueKey": "D3923",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirContemporary.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2237",
+      "canTakeFieldDamage": false,
+      "fieldHp": 10,
+      "battleId": 11059,
+      "attackedEventKey": "EA-2111",
+      "dropTableKey": "DT202111",
+      "collisionType": "None",
+      "deathMotion": "Dead_RenoirContem"
+    },
+    {
+      "npcKey": "N202118",
+      "corpseDialogueKey": "D3923",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirContemporary.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2237",
+      "canTakeFieldDamage": false,
+      "fieldHp": 10,
+      "battleId": 11059,
+      "attackedEventKey": "EA-2111",
+      "dropTableKey": "DT202111",
+      "collisionType": "None",
+      "deathMotion": "Dead_RenoirContem"
+    },
+    {
+      "npcKey": "N202112",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RedNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2236",
+      "restoreFacingOnDialogueEnd": true,
+      "corpseDialogueKey": "D-2267",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle",
+      "mustNeedQuestKeys": [
+        "Q-2000"
+      ]
+    },
+    {
+      "npcKey": "N202113",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GreenNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2236",
+      "restoreFacingOnDialogueEnd": true,
+      "corpseDialogueKey": "D-2263",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle",
+      "mustNeedQuestKeys": [
+        "Q-2000"
+      ]
+    },
+    {
+      "npcKey": "N202114",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RedNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2240",
+      "restoreFacingOnDialogueEnd": true,
+      "spawnMotion": "Work",
+      "corpseDialogueKey": "D-2267",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle"
+    },
+    {
+      "npcKey": "N202115",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GreenNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2240",
+      "restoreFacingOnDialogueEnd": true,
+      "spawnMotion": "Work",
+      "corpseDialogueKey": "D-2263",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle"
+    },
+    {
+      "npcKey": "N202116",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RedNeedle.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2240",
+      "restoreFacingOnDialogueEnd": true,
+      "spawnMotion": "WorkSpecial",
+      "corpseDialogueKey": "D-2267",
+      "canTakeFieldDamage": true,
+      "fieldHp": 10,
+      "battleId": 11058,
+      "collisionType": "None",
+      "deathMotion": "Dead_Needle"
+    },
+    {
+      "npcKey": "N202191",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GoldenHideShine.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2241",
+      "canTakeFieldDamage": false,
+      "immortal": true,
+      "invincibleType": "IgnoreHit",
+      "fieldHp": 1,
+      "battleId": 0,
+      "collisionType": "None",
+      "useFillInteractionRange": true,
+      "interactionRangeLeft": 1,
+      "interactionRangeRight": 1,
+      "interactionRangeUp": 1,
+      "interactionRangeDown": 1,
+      "mustNeedQuestKeys": [
+        "Q-3010"
+      ]
+    },
+    {
+      "npcKey": "N202192",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GoldenHideShine.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2242",
+      "canTakeFieldDamage": false,
+      "immortal": true,
+      "invincibleType": "IgnoreHit",
+      "fieldHp": 1,
+      "battleId": 0,
+      "collisionType": "None",
+      "useFillInteractionRange": true,
+      "interactionRangeLeft": 1,
+      "interactionRangeRight": 4,
+      "interactionRangeUp": 1,
+      "interactionRangeDown": 1,
+      "mustNeedQuestKeys": [
+        "Q-3010"
+      ]
+    },
+    {
+      "npcKey": "N202102S",
+      "moveSpeed": 4,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_DyerBodyguard.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-2211",
+      "detectType": "None",
+      "corpseDialogueKey": "D-2261",
+      "canTakeFieldDamage": true,
+      "hitStaggerImmune": true,
+      "knockbackImmune": true,
+      "fieldHp": 700,
+      "collisionType": "None",
+      "attackedEventKey": "EA-2115B"
+    },
+    {
+      "npcKey": "N202117",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_NakedLanoir.prefab",
+      "collisionType": "None"
+    }
+  ]
+}

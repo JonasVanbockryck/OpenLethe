@@ -1,0 +1,412 @@
+{
+  "list": [
+    {
+      "id": "LANOIR",
+      "buffA": {
+        "id": "LaNoir_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "MaxSpeedAdderIncludeFirstTurn",
+            "value": -1
+          },
+          {
+            "ability": "DefAdder",
+            "value": 1
+          }
+        ]
+      },
+      "buffB": {
+        "id": "LaNoir_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "MaxSpeedAdderIncludeFirstTurn",
+            "value": -5
+          },
+          {
+            "ability": "DefAdder",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "BLACKSWAN",
+      "buffA": {
+        "id": "BlackSwan_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Vulnerable",
+              "target": "IfAbnormalityAllPartsOrSelf",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "BlackSwan_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Vulnerable",
+              "target": "IfAbnormalityAllPartsOrSelf",
+              "stack": 2,
+              "turn": 0,
+              "activeRound": 0
+            }
+          },
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "AttackDmgUp",
+              "target": "IfAbnormalityAllPartsOrSelf",
+              "stack": 2,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "RAROUGE",
+      "buffA": {
+        "id": "LaRouge_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "DefAdder",
+            "value" : -3
+          },
+          {
+            "ability": "AtkAdder",
+            "value" : 1
+          }
+        ]
+      },
+      "buffB": {
+        "id": "LaRouge_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "DefAdder",
+            "value" : -5
+          },
+          {
+            "ability": "AtkAdder",
+            "value" : 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "HUNGRYPEOPLE",
+      "buffA": {
+        "id": "HungryPeople_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdderByLostHpWithLimit_2",
+            "value": "0.2"
+          },
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Vulnerable",
+              "target": "Self",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "HungryPeople_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdderByLostHpWithLimit_2",
+            "value": "0.2"
+          },
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Vulnerable",
+              "target": "Self",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "SAPSAREE",
+      "buffA": {
+        "id": "Sapsaree_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdderSapsareePanic",
+            "buffData": {
+              "buffKeyword": "SapsareeHungry",
+              "stack": 1,
+              "turn" : 0,
+              "value": 1
+            }
+          },
+          {
+            "ability": "TakeAtkDmgMulSapsareePanic",
+            "buffData": {
+              "buffKeyword": "SapsareeHungry",
+              "stack": 1,
+              "turn": 0,
+              "value": 0.03
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "Sapsaree_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdderSapsareePanic",
+            "buffData": {
+              "buffKeyword": "SapsareeHungry",
+              "stack": 1,
+              "turn" : 0,
+              "value": 2
+            }
+          },
+          {
+            "ability": "TakeAtkDmgMulSapsareePanic",
+            "buffData": {
+              "buffKeyword": "SapsareeHungry",
+              "stack": 1,
+              "turn": 0,
+              "value": 0.05
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "WEAKWITHERING",
+      "buffA": {
+        "id": "WeakWithering_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Reduction",
+              "target": "Self",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "WeakWithering_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Reduction",
+              "target": "Self",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          },
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "AttackDmgDown",
+              "target": "Self",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "LANOIRSUPERIOR",
+      "buffA": {
+        "id": "LaNoirSuperior_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": -2
+          },
+          {
+            "ability": "DefAdder",
+            "value": 2
+          }
+        ]
+      },
+      "buffB": {
+        "id": "LaNoirSuperior_Panic",
+        "iconId": "LaNoirSuperior",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": -3
+          },
+          {
+            "ability": "DefAdder",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "EARLYBUFFET",
+      "buffA": {
+        "id": "EarlyBuffet_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": 3
+          },
+          {
+            "ability": "DefAdder",
+            "value": -3
+          },
+          {
+            "ability": "ParryingResultAdderViaBuffCheck",
+            "value": 2,
+            "buffData": {
+              "buffKeyword": "BloodyMucus",
+              "target": "",
+              "buffOwner": "Target",
+              "stack": 5,
+              "turn": 0
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "EarlyBuffet_Panic",
+        "iconId": "EarlyBuffet_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": 3
+          },
+          {
+            "ability": "DefAdder",
+            "value": -5
+          },
+          {
+            "ability": "AttackDmgMultiplier",
+            "value": 0.1
+          },
+          {
+            "ability": "ParryingResultAdderViaBuffCheck",
+            "value": 3,
+            "buffData": {
+              "buffKeyword": "BloodyMucus",
+              "target": "",
+              "buffOwner": "Target",
+              "stack": 3,
+              "turn": 0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

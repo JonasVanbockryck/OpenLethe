@@ -1,4 +1,3 @@
-
 {
   "list": [
     {
@@ -10,103 +9,120 @@
           "id": 1,
           "storyId": "E915B",
           "nodeId": 912701,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_n_street"
         },
         {
           "id": 2,
           "storyId": "E916B",
           "nodeId": 912702,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E907"
         },
         {
           "id": 3,
           "storyId": "E917B",
           "nodeId": 912703,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E907_2"
         },
         {
           "id": 4,
           "storyId": "E918B",
           "nodeId": 912704,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_old photo studio"
         },
         {
           "id": 5,
           "storyId": "E918A",
           "nodeId": 912704,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_fathoms_backstreet_s"
         },
         {
           "id": 6,
           "storyId": "E919B",
           "nodeId": 912705,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_darkroom_red"
         },
         {
           "id": 7,
           "storyId": "E919A",
           "nodeId": 912705,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_darkroom_red"
         },
         {
           "id": 8,
           "storyId": "E920B",
           "nodeId": 912706,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E908"
         },
         {
           "id": 9,
           "storyId": "E921B",
           "nodeId": 912707,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_n_street"
         },
         {
           "id": 10,
           "storyId": "E922B",
           "nodeId": 912708,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_n_street"
         },
         {
           "id": 11,
           "storyId": "E923B",
           "nodeId": 912710,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_screening room"
         },
         {
           "id": 12,
           "storyId": "E923I",
           "nodeId": 912710,
-          "stageDetail": "Inter"
+          "stageDetail": "Inter",
+          "fullBannerId": "Story_BG/story_screening room"
         },
         {
           "id": 13,
           "storyId": "E924B",
           "nodeId": 912711,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_fathoms_backstreet_s_v1"
         },
         {
           "id": 14,
           "storyId": "E925B",
           "nodeId": 912711,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_right_state_concilor_house"
         },
         {
           "id": 15,
           "storyId": "E926B",
           "nodeId": 912711,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_right_state_concilor_house_burn"
         },
         {
           "id": 16,
           "storyId": "E926A",
           "nodeId": 912711,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E909"
         },
         {
           "id": 17,
           "storyId": "E927B",
           "nodeId": 912712,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_n_street"
         }
       ]
     }

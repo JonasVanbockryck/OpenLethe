@@ -1634,6 +1634,134 @@
           "number": 0
         }
       ]
+    },
+    {
+      "id": 10917,
+      "updatedDate": 20260924,
+      "appearance": "10917_Rodion_ScissorsAppearance",
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "associationList": [
+        "SISYPHE"
+      ],
+      "skillKeywordList": [
+        "Charge",
+        "Vibration"
+      ],
+      "characterId": 9,
+      "panicType": 9999,
+      "season": 8,
+      "defenseSkillIDList": [
+        1091704
+      ],
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "ChargeKhakiAlly",
+              "stack": 1,
+              "turn": 0
+            }
+          ]
+        }
+      ],
+      "panicSkillOnErosion": 1000104,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "hp": {
+        "defaultStat": 72,
+        "incrementByLevel": 3.03
+      },
+      "defCorrection": 3,
+      "minSpeedList": [
+        2,
+        4,
+        4,
+        4
+      ],
+      "maxSpeedList": [
+        6,
+        6,
+        7,
+        7
+      ],
+      "uniqueAttribute": "INDIGO",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          70,
+          30
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 0.5
+          },
+          {
+            "type": "PENETRATE",
+            "value": 2
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 1091701,
+          "number": 3
+        },
+        {
+          "skillId": 1091702,
+          "number": 2
+        },
+        {
+          "skillId": 1091703,
+          "number": 1
+        },
+        {
+          "skillId": 1091705,
+          "number": 0
+        },
+        {
+          "skillId": 1091706,
+          "number": 0
+        }
+      ]
     }
   ]
 }

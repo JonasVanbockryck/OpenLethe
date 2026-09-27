@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "id": "InterlockingTimeBokGak",
+      "iconId": "InterlockingTime_Re",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "list": [
+        {
+          "ability": "InterlockingTimeRe"
+        }
+      ]
+    },
+    {
+      "id": "PassedPortal_GreenBokGak",
+      "iconId": "PassedPortal_Green",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": [
+        {
+          "ability": "PassedPortalGreenBokGak",
+          "value": 0.2
+        }
+      ]
+    }
+  ]
+}

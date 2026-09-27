@@ -101,9 +101,9 @@ public class RailwayRulesTests
     [Fact]
     public void UnlockedExtraRewards_UndefinedDungeon_PreservesStoredProgress()
     {
-        // Refraction Railway 2's rerun has no bundled railway-dungeon-1002.json;
+        // A dungeon with no bundled railway-dungeon-*.json (as 1002 once was):
         // an account's real reward progress must survive that rather than be wiped.
-        var run = RunFor(1002);
+        var run = RunFor(999999);
         run.save.lastclearnode = 7;
         run.save.extrarewardstate = new List<Extrarewardstate> { new() { id = 1, isRewarded = true } };
         Assert.Equal(new long[] { 1 }, RailwayRules.UnlockedExtraRewards(run).Select(e => e.id).ToArray());

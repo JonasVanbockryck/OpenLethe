@@ -1,0 +1,1557 @@
+{
+  "list": [
+    {
+      "spawnId": 202202,
+      "npcKey": "N202202",
+      "mapId": 0,
+      "spawnTileX": 56,
+      "spawnTileY": 58,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 51,
+          "y": 58
+        },
+        {
+          "x": 61,
+          "y": 58
+        }
+      ]
+    },
+    {
+      "spawnId": 202204,
+      "npcKey": "N202203",
+      "mapId": 0,
+      "spawnTileX": 70,
+      "spawnTileY": 104,
+      "direction": "Left",
+      "spawnConditionType": "NotSpawn",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 66,
+          "y": 104
+        },
+        {
+          "x": 76,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202205,
+      "npcKey": "N202202",
+      "mapId": 0,
+      "spawnTileX": 74,
+      "spawnTileY": 101,
+      "direction": "Left",
+      "spawnConditionType": "NotSpawn",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 68,
+          "y": 101
+        },
+        {
+          "x": 80,
+          "y": 101
+        }
+      ]
+    },
+    {
+      "spawnId": 202206,
+      "npcKey": "N202208",
+      "mapId": 0,
+      "spawnTileX": 135,
+      "spawnTileY": 103,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 128,
+          "y": 103
+        },
+        {
+          "x": 142,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202211,
+      "npcKey": "N202204",
+      "mapId": 0,
+      "spawnTileX": 53,
+      "spawnTileY": 57,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 50,
+          "y": 57
+        },
+        {
+          "x": 58,
+          "y": 57
+        }
+      ]
+    },
+    {
+      "spawnId": 202212,
+      "npcKey": "N202206",
+      "mapId": 0,
+      "spawnTileX": 59,
+      "spawnTileY": 58,
+      "direction": "Right",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 52,
+          "y": 58
+        },
+        {
+          "x": 62,
+          "y": 58
+        }
+      ]
+    },
+    {
+      "spawnId": 202213,
+      "npcKey": "N202203",
+      "mapId": 0,
+      "spawnTileX": 51,
+      "spawnTileY": 56,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 50,
+          "y": 56
+        },
+        {
+          "x": 57,
+          "y": 56
+        }
+      ]
+    },
+    {
+      "spawnId": 202214,
+      "npcKey": "N202203",
+      "mapId": 0,
+      "spawnTileX": 60,
+      "spawnTileY": 57,
+      "direction": "Right",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 56,
+          "y": 57
+        },
+        {
+          "x": 61,
+          "y": 57
+        }
+      ]
+    },
+    {
+      "spawnId": 202215,
+      "npcKey": "N202202",
+      "mapId": 0,
+      "spawnTileX": 55,
+      "spawnTileY": 56,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 52,
+          "y": 56
+        },
+        {
+          "x": 60,
+          "y": 56
+        }
+      ]
+    },
+    {
+      "spawnId": 202216,
+      "npcKey": "N202204",
+      "mapId": 0,
+      "spawnTileX": 48,
+      "spawnTileY": 45,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 44,
+          "y": 45
+        },
+        {
+          "x": 55,
+          "y": 45
+        }
+      ]
+    },
+    {
+      "spawnId": 202217,
+      "npcKey": "N202206",
+      "mapId": 0,
+      "spawnTileX": 52,
+      "spawnTileY": 48,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 50,
+          "y": 48
+        },
+        {
+          "x": 55,
+          "y": 48
+        }
+      ]
+    },
+    {
+      "spawnId": 202218,
+      "npcKey": "N202203",
+      "mapId": 0,
+      "spawnTileX": 44,
+      "spawnTileY": 53,
+      "direction": "Right",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 40,
+          "y": 53
+        },
+        {
+          "x": 46,
+          "y": 53
+        }
+      ]
+    },
+    {
+      "spawnId": 202219,
+      "npcKey": "N202202",
+      "mapId": 0,
+      "spawnTileX": 61,
+      "spawnTileY": 53,
+      "direction": "Right",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 59,
+          "y": 53
+        },
+        {
+          "x": 62,
+          "y": 53
+        }
+      ]
+    },
+    {
+      "spawnId": 202220,
+      "npcKey": "N202203",
+      "mapId": 0,
+      "spawnTileX": 61,
+      "spawnTileY": 48,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 59,
+          "y": 48
+        },
+        {
+          "x": 63,
+          "y": 48
+        }
+      ]
+    },
+    {
+      "spawnId": 202221,
+      "npcKey": "N202207",
+      "mapId": 0,
+      "spawnTileX": 125,
+      "spawnTileY": 105,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 124,
+          "y": 105
+        },
+        {
+          "x": 127,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "spawnId": 202222,
+      "npcKey": "N202207",
+      "mapId": 0,
+      "spawnTileX": 138,
+      "spawnTileY": 105,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 137,
+          "y": 105
+        },
+        {
+          "x": 140,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "spawnId": 202223,
+      "npcKey": "N202207",
+      "mapId": 0,
+      "spawnTileX": 152,
+      "spawnTileY": 105,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 151,
+          "y": 105
+        },
+        {
+          "x": 153,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "spawnId": 202231,
+      "npcKey": "N202211",
+      "mapId": 0,
+      "spawnTileX": 64,
+      "spawnTileY": 103,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202232,
+      "npcKey": "N202212",
+      "mapId": 0,
+      "spawnTileX": 79,
+      "spawnTileY": 103,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202233,
+      "npcKey": "N202213",
+      "mapId": 0,
+      "spawnTileX": 72,
+      "spawnTileY": 102,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202234,
+      "npcKey": "N202211",
+      "mapId": 0,
+      "spawnTileX": 74,
+      "spawnTileY": 98,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202235,
+      "npcKey": "N202212",
+      "mapId": 0,
+      "spawnTileX": 66,
+      "spawnTileY": 98,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202236,
+      "npcKey": "N202213",
+      "mapId": 0,
+      "spawnTileX": 83,
+      "spawnTileY": 99,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202306,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 73,
+      "spawnTileY": 103,
+      "direction": "Down",
+      "spawnConditionType": "NotSpawn",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202307,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 82,
+      "spawnTileY": 95,
+      "direction": "Down",
+      "spawnConditionType": "NotSpawn",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202308,
+      "npcKey": "N202279",
+      "mapId": 0,
+      "spawnTileX": 62,
+      "spawnTileY": 107,
+      "direction": "Down",
+      "spawnConditionType": "NotSpawn",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202194,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 51,
+      "spawnTileY": 58,
+      "direction": "Up",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EC-2194",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202195,
+      "npcKey": "N202279",
+      "mapId": 0,
+      "spawnTileX": 52,
+      "spawnTileY": 58,
+      "direction": "Up",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EC-2194",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202196,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 53,
+      "spawnTileY": 58,
+      "direction": "Up",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EC-2194",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202197,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 53,
+      "spawnTileY": 59,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EC-2194",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202316,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 126,
+      "spawnTileY": 76,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202290,
+      "npcKey": "N202290",
+      "mapId": 0,
+      "spawnTileX": 205,
+      "spawnTileY": 51,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": ""
+    },
+    {
+      "spawnId": 202261,
+      "npcKey": "N202203",
+      "mapId": 0,
+      "spawnTileX": 50,
+      "spawnTileY": 51,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 50,
+          "y": 51
+        },
+        {
+          "x": 50,
+          "y": 49
+        }
+      ]
+    },
+    {
+      "spawnId": 202262,
+      "npcKey": "N202203",
+      "mapId": 0,
+      "spawnTileX": 55,
+      "spawnTileY": 51,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-2010A",
+      "patrolWaypoints": [
+        {
+          "x": 55,
+          "y": 51
+        },
+        {
+          "x": 55,
+          "y": 49
+        }
+      ]
+    },
+    {
+      "spawnId": 202401,
+      "npcKey": "N202271",
+      "mapId": 0,
+      "spawnTileX": 56,
+      "spawnTileY": 58,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 51,
+          "y": 58
+        },
+        {
+          "x": 61,
+          "y": 58
+        }
+      ]
+    },
+    {
+      "spawnId": 202404,
+      "npcKey": "N202272",
+      "mapId": 0,
+      "spawnTileX": 51,
+      "spawnTileY": 56,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 50,
+          "y": 56
+        },
+        {
+          "x": 57,
+          "y": 56
+        }
+      ]
+    },
+    {
+      "spawnId": 202405,
+      "npcKey": "N202272",
+      "mapId": 0,
+      "spawnTileX": 60,
+      "spawnTileY": 57,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 56,
+          "y": 57
+        },
+        {
+          "x": 61,
+          "y": 57
+        }
+      ]
+    },
+    {
+      "spawnId": 202407,
+      "npcKey": "N202280",
+      "mapId": 0,
+      "spawnTileX": 48,
+      "spawnTileY": 45,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 44,
+          "y": 45
+        },
+        {
+          "x": 55,
+          "y": 45
+        }
+      ]
+    },
+    {
+      "spawnId": 202408,
+      "npcKey": "N202281",
+      "mapId": 0,
+      "spawnTileX": 52,
+      "spawnTileY": 48,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 50,
+          "y": 48
+        },
+        {
+          "x": 55,
+          "y": 48
+        }
+      ]
+    },
+    {
+      "spawnId": 202409,
+      "npcKey": "N202272",
+      "mapId": 0,
+      "spawnTileX": 44,
+      "spawnTileY": 53,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 40,
+          "y": 53
+        },
+        {
+          "x": 46,
+          "y": 53
+        }
+      ]
+    },
+    {
+      "spawnId": 202414,
+      "npcKey": "N202272",
+      "mapId": 0,
+      "spawnTileX": 70,
+      "spawnTileY": 104,
+      "direction": "Left",
+      "spawnConditionType": "NotSpawn",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 66,
+          "y": 104
+        },
+        {
+          "x": 76,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202415,
+      "npcKey": "N202271",
+      "mapId": 0,
+      "spawnTileX": 74,
+      "spawnTileY": 101,
+      "direction": "Left",
+      "spawnConditionType": "NotSpawn",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 68,
+          "y": 101
+        },
+        {
+          "x": 80,
+          "y": 101
+        }
+      ]
+    },
+    {
+      "spawnId": 202416,
+      "npcKey": "N202275",
+      "mapId": 0,
+      "spawnTileX": 64,
+      "spawnTileY": 103,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202417,
+      "npcKey": "N202276",
+      "mapId": 0,
+      "spawnTileX": 79,
+      "spawnTileY": 103,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202418,
+      "npcKey": "N202277",
+      "mapId": 0,
+      "spawnTileX": 72,
+      "spawnTileY": 102,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202419,
+      "npcKey": "N202275",
+      "mapId": 0,
+      "spawnTileX": 74,
+      "spawnTileY": 98,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202420,
+      "npcKey": "N202276",
+      "mapId": 0,
+      "spawnTileX": 66,
+      "spawnTileY": 98,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202421,
+      "npcKey": "N202277",
+      "mapId": 0,
+      "spawnTileX": 83,
+      "spawnTileY": 99,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202425,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 140,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 136,
+          "y": 103
+        },
+        {
+          "x": 144,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202427,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 132,
+      "spawnTileY": 104,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 128,
+          "y": 104
+        },
+        {
+          "x": 134,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202428,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 130,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 126,
+          "y": 103
+        },
+        {
+          "x": 134,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202430,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 151,
+      "spawnTileY": 104,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 150,
+          "y": 104
+        },
+        {
+          "x": 155,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202431,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 122,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 121,
+          "y": 103
+        },
+        {
+          "x": 126,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202432,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 143,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 139,
+          "y": 103
+        },
+        {
+          "x": 147,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202434,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 155,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 151,
+          "y": 103
+        },
+        {
+          "x": 156,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202435,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 147,
+      "spawnTileY": 104,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 143,
+          "y": 104
+        },
+        {
+          "x": 148,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202321,
+      "npcKey": "N202279",
+      "mapId": 0,
+      "spawnTileX": 123,
+      "spawnTileY": 74,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202322,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 137,
+      "spawnTileY": 75,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202323,
+      "npcKey": "N202278",
+      "mapId": 0,
+      "spawnTileX": 148,
+      "spawnTileY": 76,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202443,
+      "npcKey": "N202280",
+      "mapId": 0,
+      "spawnTileX": 12,
+      "spawnTileY": 48,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202444,
+      "npcKey": "N202281",
+      "mapId": 0,
+      "spawnTileX": 13,
+      "spawnTileY": 48,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202445,
+      "npcKey": "N202281",
+      "mapId": 0,
+      "spawnTileX": 9,
+      "spawnTileY": 47,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202446,
+      "npcKey": "N202280",
+      "mapId": 0,
+      "spawnTileX": 10,
+      "spawnTileY": 47,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202449,
+      "npcKey": "N202281",
+      "mapId": 0,
+      "spawnTileX": 11,
+      "spawnTileY": 55,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202451,
+      "npcKey": "N202280",
+      "mapId": 0,
+      "spawnTileX": 6,
+      "spawnTileY": 54,
+      "direction": "Left",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202453,
+      "npcKey": "N202280",
+      "mapId": 0,
+      "spawnTileX": 17,
+      "spawnTileY": 46,
+      "direction": "Up",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202457,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 173,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 169,
+          "y": 103
+        },
+        {
+          "x": 177,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202459,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 165,
+      "spawnTileY": 104,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 161,
+          "y": 104
+        },
+        {
+          "x": 167,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202460,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 163,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 159,
+          "y": 103
+        },
+        {
+          "x": 167,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202462,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 184,
+      "spawnTileY": 104,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 183,
+          "y": 104
+        },
+        {
+          "x": 188,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202463,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 158,
+      "spawnTileY": 102,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 157,
+          "y": 102
+        },
+        {
+          "x": 162,
+          "y": 102
+        }
+      ]
+    },
+    {
+      "spawnId": 202464,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 176,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 172,
+          "y": 103
+        },
+        {
+          "x": 180,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202466,
+      "npcKey": "N202273",
+      "mapId": 0,
+      "spawnTileX": 188,
+      "spawnTileY": 103,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 184,
+          "y": 103
+        },
+        {
+          "x": 189,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202467,
+      "npcKey": "N202274",
+      "mapId": 0,
+      "spawnTileX": 180,
+      "spawnTileY": 104,
+      "direction": "Right",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 176,
+          "y": 104
+        },
+        {
+          "x": 181,
+          "y": 104
+        }
+      ]
+    },
+    {
+      "spawnId": 202224,
+      "npcKey": "N202207",
+      "mapId": 0,
+      "spawnTileX": 158,
+      "spawnTileY": 105,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 157,
+          "y": 105
+        },
+        {
+          "x": 160,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "spawnId": 202225,
+      "npcKey": "N202207",
+      "mapId": 0,
+      "spawnTileX": 171,
+      "spawnTileY": 105,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 170,
+          "y": 105
+        },
+        {
+          "x": 173,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "spawnId": 202226,
+      "npcKey": "N202207",
+      "mapId": 0,
+      "spawnTileX": 185,
+      "spawnTileY": 105,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 184,
+          "y": 105
+        },
+        {
+          "x": 186,
+          "y": 105
+        }
+      ]
+    },
+    {
+      "spawnId": 202207,
+      "npcKey": "N202208",
+      "mapId": 0,
+      "spawnTileX": 170,
+      "spawnTileY": 103,
+      "direction": "Left",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [
+        {
+          "x": 161,
+          "y": 103
+        },
+        {
+          "x": 175,
+          "y": 103
+        }
+      ]
+    },
+    {
+      "spawnId": 202470,
+      "npcKey": "N999104",
+      "mapId": 0,
+      "spawnTileX": 41,
+      "spawnTileY": 53,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202471,
+      "npcKey": "N999105",
+      "mapId": 0,
+      "spawnTileX": 44,
+      "spawnTileY": 46,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202473,
+      "npcKey": "N999101",
+      "mapId": 0,
+      "spawnTileX": 51,
+      "spawnTileY": 45,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202475,
+      "npcKey": "N999102",
+      "mapId": 0,
+      "spawnTileX": 53,
+      "spawnTileY": 44,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202476,
+      "npcKey": "N999102",
+      "mapId": 0,
+      "spawnTileX": 44,
+      "spawnTileY": 49,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202478,
+      "npcKey": "N999105",
+      "mapId": 0,
+      "spawnTileX": 124,
+      "spawnTileY": 34,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202479,
+      "npcKey": "N999101",
+      "mapId": 0,
+      "spawnTileX": 128,
+      "spawnTileY": 35,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202480,
+      "npcKey": "N999102",
+      "mapId": 0,
+      "spawnTileX": 132,
+      "spawnTileY": 35,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 202482,
+      "npcKey": "N999102",
+      "mapId": 0,
+      "spawnTileX": 128,
+      "spawnTileY": 75,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "EQ-3000",
+      "despawnConditionType": "None",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    }
+  ]
+}

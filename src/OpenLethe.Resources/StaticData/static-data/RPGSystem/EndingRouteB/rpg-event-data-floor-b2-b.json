@@ -1,0 +1,372 @@
+{
+  "list": [
+    {
+      "key": "EC-2101",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2101"
+    },
+    {
+      "key": "EL-2102N",
+      "canRepeat": false
+    },
+    {
+      "key": "EB-2102",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11049, N202107, , 1"
+    },
+    {
+      "key": "EC-2103",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N202107, 220300",
+      "action2": "KillNpc",
+      "actionValue2": "N202108, 220300",
+      "action3": "KillNpc",
+      "actionValue3": "N202109, 220300",
+      "action4": "DespawnNpc",
+      "actionValue4": "N202117, 220300",
+      "action5": "PlayCutscene",
+      "actionValue5": "C-2103"
+    },
+    {
+      "key": "EB-2106",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11059, N202110, , 1"
+    },
+    {
+      "key": "EB-2108",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C202290"
+    },
+    {
+      "key": "EB-2108S",
+      "canRepeat": true
+    },
+    {
+      "key": "EC-2107",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N202103",
+      "action2": "PlayCutscene",
+      "actionValue2": "C-2107",
+      "action3": "GiveItem",
+      "actionValue3": "I990926, 1",
+      "action4": "GiveItem",
+      "actionValue4": "I990915, 1",
+      "action5": "GiveItem",
+      "actionValue5": "I990916, 1"
+    },
+    {
+      "key": "EC-2108",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990926, 1",
+      "action2": "PlayCutscene",
+      "actionValue2": "C-2108"
+    },
+    {
+      "key": "EK-2106",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N202110, 221500"
+    },
+    {
+      "key": "EB-2111",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11032, N202121, , 1"
+    },
+    {
+      "key": "EK-2121",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N202121"
+    },
+    {
+      "key": "EB-2114",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11059, N202111, , 1"
+    },
+    {
+      "key": "EK-2114",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N202111, 220300",
+      "action2": "KillNpc",
+      "actionValue2": "N202118, 220300"
+    },
+    {
+      "key": "EB-2115",
+      "canRepeat": true,
+      "action1": "SetNpcAggro",
+      "actionValue1": "N202102, 220400",
+      "action2": "SetNpcInvincible",
+      "actionValue2": "N202101, 1",
+      "action3": "CameraPeek",
+      "actionValue3": "22020104, 220400"
+    },
+    {
+      "key": "EC-2116",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2116"
+    },
+    {
+      "key": "EK-2116",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N202101, 220400",
+      "action2": "KillNpc",
+      "actionValue2": "N202102"
+    },
+    {
+      "key": "EG-2141",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991004, 1",
+      "action2": "DespawnNpc",
+      "actionValue2": "N202191, 220400"
+    },
+    {
+      "key": "EG-2142",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991005, 1",
+      "action2": "DespawnNpc",
+      "actionValue2": "N202192, 220200"
+    },
+    {
+      "key": "EG-2143",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991006, 1"
+    },
+    {
+      "key": "EC-2117",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2117"
+    },
+    {
+      "key": "E22020101",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "22020101, 220202"
+    },
+    {
+      "key": "E22020102",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "22020102, 220203"
+    },
+    {
+      "key": "E22020103",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "22020103, 220204"
+    },
+    {
+      "key": "EB-2181",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2181"
+    },
+    {
+      "key": "EC-2194",
+      "canRepeat": false
+    },
+    {
+      "key": "EA-2145",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D-2246"
+    },
+    {
+      "key": "EA-2103",
+      "canRepeat": true
+    },
+    {
+      "key": "EK-2103D",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N202290K"
+    },
+    {
+      "key": "EC-2106A",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2106"
+    },
+    {
+      "key": "EM-2106",
+      "canRepeat": false
+    },
+    {
+      "key": "EA-2107",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D-2217"
+    },
+    {
+      "key": "EA-2110",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D-2234"
+    },
+    {
+      "key": "EA-2111",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D-2235"
+    },
+    {
+      "key": "EQ-3104",
+      "canRepeat": false
+    },
+    {
+      "key": "EG-2107M",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "200"
+    },
+    {
+      "key": "EC-2115",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2115"
+    },
+    {
+      "key": "EB-2119",
+      "canRepeat": true,
+      "action1": "SetNpcInvincible",
+      "actionValue1": "N202101, 1",
+      "action2": "PlayCutscene",
+      "actionValue2": "C-2115"
+    },
+    {
+      "key": "EC-2118",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2118",
+      "action2": "SetNpcInvincible",
+      "actionValue2": "N202101, 1"
+    },
+    {
+      "key": "EB-2118",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11040, N202102, , 1"
+    },
+    {
+      "key": "E22020104",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "22020104, 220400"
+    },
+    {
+      "key": "E-VEND-B2",
+      "canRepeat": true,
+      "action1": "OpenShop",
+      "actionValue1": "SH109004"
+    },
+    {
+      "key": "EA-2115B",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D-2249"
+    },
+    {
+      "key": "EL-2115S",
+      "canRepeat": false,
+      "action1": "SetNpcInvincible",
+      "actionValue1": "N202101, 1"
+    },
+    {
+      "key": "EG-2254",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990006, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I991004, 1",
+      "action3": "SetNpcInvincible",
+      "actionValue3": "N202101, 1"
+    },
+    {
+      "key": "EC-2119",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D-2251"
+    },
+    {
+      "key": "EM-2119",
+      "canRepeat": false
+    },
+    {
+      "key": "EK-2119",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N202102"
+    },
+    {
+      "key": "EG-2022T",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990923, 1"
+    },
+    {
+      "key": "EC-2022D1",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D1"
+    },
+    {
+      "key": "EC-2022D2",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D2"
+    },
+    {
+      "key": "EC-2022D3",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D3"
+    },
+    {
+      "key": "EC-2022D4",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D4"
+    },
+    {
+      "key": "EC-2022D5",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D5"
+    },
+    {
+      "key": "EDS701",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS701"
+    },
+    {
+      "key": "EDS702",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS702"
+    },
+    {
+      "key": "EPI-B2B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990017, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990011, 1"
+    }
+  ]
+}

@@ -14,12 +14,14 @@
         {
           "id": 1,
           "storyId": "E064X",
-          "nodeId": 901801
+          "nodeId": 901801,
+          "fullBannerId": "Story_BG/story_information_corridor"
         },
         {
           "id": 2,
           "storyId": "E065X",
-          "nodeId": 901802
+          "nodeId": 901802,
+          "fullBannerId": "Story_BG/story_educationteam"
         }
       ]
     }

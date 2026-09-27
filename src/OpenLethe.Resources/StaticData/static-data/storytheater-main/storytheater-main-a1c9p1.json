@@ -8,91 +8,106 @@
           "id": 1,
           "storyId": "S901B",
           "nodeId": 10901,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_w_truck_rebirth"
         },
         {
           "id": 2,
           "storyId": "S902B",
           "nodeId": 10902,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_w_truck_rebirth_broken_off"
         },
         {
           "id": 3,
           "storyId": "S903I",
           "nodeId": 10903,
-          "stageDetail": "Inter"
+          "stageDetail": "Inter",
+          "fullBannerId": "Story_BG/story_w_truck_rebirth_broken_off"
         },
         {
           "id": 4,
           "storyId": "S903A",
           "nodeId": 10903,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_w_truck_rebirth_broken_off"
         },
         {
           "id": 5,
           "storyId": "S904B",
           "nodeId": 10904,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S901"
         },
         {
           "id": 6,
           "storyId": "S907B",
           "nodeId": 10907,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S903"
         },
         {
           "id": 7,
           "storyId": "S908B",
           "nodeId": 10908,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_corridor_B_Ch9"
         },
         {
           "id": 8,
           "storyId": "S911B",
           "nodeId": 10911,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story__command_broadcast_entrance"
         },
         {
           "id": 9,
           "storyId": "S912B",
           "nodeId": 10912,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_command_broadcast"
         },
         {
           "id": 10,
           "storyId": "S913B",
           "nodeId": 10913,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story__command_broadcast_hallway_close"
         },
         {
           "id": 11,
           "storyId": "S915B",
           "nodeId": 10914,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S908"
         },
         {
           "id": 12,
           "storyId": "S916B",
           "nodeId": 10916,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S902"
         },
         {
           "id": 13,
           "storyId": "S917B",
           "nodeId": 10917,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_deeparea_lab_entry"
         },
         {
           "id": 14,
           "storyId": "S918B",
           "nodeId": 10918,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S909_1"
         },
         {
           "id": 15,
           "storyId": "S918A",
           "nodeId": 10918,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_deeparea_lab"
         }
       ]
     }

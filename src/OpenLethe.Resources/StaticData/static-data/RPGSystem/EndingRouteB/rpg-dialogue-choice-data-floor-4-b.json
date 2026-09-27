@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "key": "DC4001",
+      "nextDialogueKey": "D42075"
+    },
+    {
+      "key": "DC4002",
+      "nextDialogueKey": "D42076"
+    },
+    {
+      "key": "DC4003",
+      "nextDialogueKey": "",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC4004",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    }
+  ]
+}

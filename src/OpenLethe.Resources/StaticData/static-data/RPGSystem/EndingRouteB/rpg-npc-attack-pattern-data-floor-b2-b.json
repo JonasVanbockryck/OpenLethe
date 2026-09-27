@@ -1,0 +1,431 @@
+{
+  "list": [
+    {
+      "patternKey": "NA202201",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 1.0,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 1.5,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 6,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA202202",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 1.0,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 1,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 6,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "PlaceDebuffTile"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA202203",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 1.05,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "patternKey": "NA202204",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.7,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "PlaceDebuffTile"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "patternKey": "NA202205",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 0.35,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.2,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.49
+        }
+      ]
+    },
+    {
+      "patternKey": "NA202102",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 0,
+      "canStartWhileMoving": true,
+      "branches": [
+        {
+          "branchKey": "Combo",
+          "entryType": "Trigger",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Combo"
+            },
+            {
+              "conditionType": "OnHit",
+              "hitCount": 8,
+              "playerAttackOnly": true,
+              "nextBranchKey": "WarpEvade"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "패턴1 연타 예고",
+              "motion": "AttackReady2",
+              "duration": 0.35
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "패턴1 연타1",
+              "motion": "Attack1",
+              "hpDamage": 5,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.25
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "패턴1 연타2",
+              "hpDamage": 5,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.35
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "패턴1 연타3",
+              "hpDamage": 5,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "패턴1 찢기 예고",
+              "duration": 0.5
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "패턴1 다리 찢기",
+              "motion": "Attack1_1",
+              "hpDamage": 15,
+              "requirePlayerInRange": true,
+              "hitShape": [
+                "XXX",
+                "XNX"
+              ],
+              "cameraShakeStrength": 0.2,
+              "cameraShakeDuration": 0.2,
+              "cameraShakeFrequencyHz": 12
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "패턴1 후딜",
+              "duration": 0.25
+            }
+          ]
+        },
+        {
+          "branchKey": "Bind",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 3.5,
+          "entryRange": 8,
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Combo"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "패턴2 조준",
+              "motion": "AttackReady2",
+              "duration": 0.25,
+              "trackPlayer": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.1
+            },
+            {
+              "action": "RangedShot",
+              "debugLabel": "패턴2 속박탄",
+              "motion": "Attack2",
+              "hpDamage": 2,
+              "projectileKey": "Projectile_DyerBodyguardBind",
+              "projectileSpeed": 20,
+              "maxDistance": 60,
+              "playerBindSeconds": 2
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "패턴2 후딜",
+              "duration": 0.15
+            }
+          ]
+        },
+        {
+          "branchKey": "Rush",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 3.5,
+          "entryRange": 7,
+          "requireAxisAlign": true,
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Combo"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "패턴3 돌진 예고",
+              "motion": "AttackReady",
+              "duration": 0.35
+            },
+            {
+              "action": "Charge",
+              "debugLabel": "패턴3 돌진",
+              "motion": "Rush",
+              "hpDamage": 15,
+              "maxDistance": 7,
+              "chargeSpeed": 75,
+              "chargeAccelSeconds": 0.15,
+              "chargeStartSpeedScale": 0.4,
+              "dealtStaggerSeconds": 0.35,
+              "cameraShakeStrength": 0.3,
+              "cameraShakeDuration": 0.2,
+              "cameraShakeFrequencyHz": 14,
+              "parryImmune": true
+            },
+            {
+              "action": "ShowAttackRange",
+              "debugLabel": "패턴3-2 회전 예고",
+              "motion": "Attack3",
+              "duration": 0.5
+            },
+            {
+              "action": "MeleeHit",
+              "debugLabel": "패턴3-2 회전",
+              "hpDamage": 15,
+              "hitShape": [
+                "XXX",
+                "XNX",
+                "XXX"
+              ],
+              "cameraShakeStrength": 0.25,
+              "cameraShakeDuration": 0.2,
+              "cameraShakeFrequencyHz": 12
+            },
+            {
+              "action": "Wait",
+              "debugLabel": "패턴3-2 후딜",
+              "duration": 0.25
+            }
+          ]
+        },
+        {
+          "branchKey": "WarpEvade",
+          "entryType": "Forced",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Combo"
+            }
+          ],
+          "steps": [
+            {
+              "action": "RopeAnchor",
+              "debugLabel": "직접 피격 8회 로프 발사",
+              "ropeRange": 8,
+              "ropeExtendSeconds": 0.25,
+              "duration": 0.3
+            },
+            {
+              "action": "RopeDash",
+              "debugLabel": "로프 순간이동",
+              "ropeReelSeconds": 0.15
+            },
+            {
+              "action": "FacePlayer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patternKey": "NA202206",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 1.0,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 1,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 7,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA202273",
+      "memo": "",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 1,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        }
+      ]
+    }
+  ]
+}

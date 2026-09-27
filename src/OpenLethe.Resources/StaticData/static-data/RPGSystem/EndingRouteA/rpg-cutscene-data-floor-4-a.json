@@ -1,0 +1,1127 @@
+{
+  "list": [
+    {
+      "key": "C4002",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "don",
+          "kind": "Player",
+          "actorKey": "3"
+        },
+        {
+          "actorName": "honglu",
+          "kind": "Player",
+          "actorKey": "6"
+        },
+        {
+          "actorName": "oneleg",
+          "kind": "Npc",
+          "actorKey": "N104011"
+        },
+        {
+          "actorName": "poreleg",
+          "kind": "Npc",
+          "actorKey": "N104012"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 144, -52"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 143, -51"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "don, 143, -52"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "honglu, 144, -53"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Left"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 2, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.1"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Wait",
+          "param": "1.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40210"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "oneleg, Up"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "oneleg, 138, -50"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "oneleg, Right"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "oneleg, 141, -50"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "oneleg, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "poreleg, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40212"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "oneleg, Left"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "oneleg, 139, -50"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Left"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "oneleg, 135, -50"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "oneleg"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "poreleg, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40213"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        }
+      ]
+    },
+    {
+      "key": "C4003",
+      "controlArrivalFade": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "don",
+          "kind": "Player",
+          "actorKey": "3"
+        },
+        {
+          "actorName": "honglu",
+          "kind": "Player",
+          "actorKey": "6"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DialogueOverFade",
+          "param": "D40001"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 56, -60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 55, -60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "don, 54, -60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "honglu, 53, -60"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40110"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Right"
+        }
+      ]
+    },
+    {
+      "key": "C4007",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "don",
+          "kind": "Player",
+          "actorKey": "3"
+        },
+        {
+          "actorName": "honglu",
+          "kind": "Player",
+          "actorKey": "6"
+        },
+        {
+          "actorName": "oneleg",
+          "kind": "Npc",
+          "actorKey": "N104011"
+        },
+        {
+          "actorName": "poreleg",
+          "kind": "Npc",
+          "actorKey": "N104012"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D40211"
+        },
+        {
+          "type": "Die",
+          "param": "poreleg"
+        },
+        {
+          "type": "Wait",
+          "param": "1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40220"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Story",
+          "param": "S1060B"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40222"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 2, 0.7"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "oneleg, Up"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "oneleg, 138, -50"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "oneleg, Right"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "oneleg, 144, -50"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "oneleg, player"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40230"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 0, 0.5"
+        }
+      ]
+    },
+    {
+      "key": "C4015",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "oneleg",
+          "kind": "Npc",
+          "actorKey": "N104011"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Wait",
+          "param": "0.7"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Knockback",
+              "param": "oneleg, Up, 2, 0.25"
+            },
+            {
+              "type": "MoveCameraRelative",
+              "param": "player, 0, 2, 0.25"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40231A"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "oneleg, player, 0, 1"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40231"
+        }
+      ]
+    },
+    {
+      "key": "C4008",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "oneleg",
+          "kind": "Npc",
+          "actorKey": "N104011"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "oneleg, 138, -53"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "oneleg, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        }
+      ]
+    },
+    {
+      "key": "C4009",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "don",
+          "kind": "Player",
+          "actorKey": "3"
+        },
+        {
+          "actorName": "honglu",
+          "kind": "Player",
+          "actorKey": "6"
+        },
+        {
+          "actorName": "wardrobe",
+          "kind": "Npc",
+          "actorKey": "N104006"
+        },
+        {
+          "actorName": "sofa",
+          "kind": "Npc",
+          "actorKey": "N104003"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N104002, f1, 0, 45, -128"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N104017, f2, 0, 49, -131"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N104004, f3, 0, 48, -128"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N104016, f4, 0, 47, -132"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N104023, f5, 0, 46, -127"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N104015, f6, 0, 45, -133"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40811"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 46, -131"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 47, -130"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "honglu, 45, -130"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "don, 45, -131"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Up"
+        },
+        {
+          "type": "DialogueOverFade",
+          "param": "D40814"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "wardrobe, dead"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sofa, 46, -129"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sofa, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40812"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "wardrobe"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.5"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "f1"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "f2"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "f3"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "f4"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "f5"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "f6"
+        }
+      ]
+    },
+    {
+      "key": "C4017",
+      "showUnboundNpcs": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "DialogueOverFade",
+          "param": "D40818"
+        },
+        {
+          "type": "Story",
+          "param": "S1062B"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.5"
+        }
+      ]
+    },
+    {
+      "key": "C4018",
+      "showUnboundNpcs": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D40819"
+        }
+      ]
+    },
+    {
+      "key": "C4019",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "1.5"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "132, 5, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "8, 0"
+        },
+        {
+          "type": "CameraOverlayFx",
+          "param": "on"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40815"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.0"
+        },
+        {
+          "type": "CameraOverlayFx",
+          "param": "off"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.5"
+        }
+      ]
+    },
+    {
+      "key": "C4020",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "sofa",
+          "kind": "Npc",
+          "actorKey": "N104003"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D40816"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sofa, 46, -129"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sofa, Down"
+        }
+      ]
+    },
+    {
+      "key": "C4010",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "sofa",
+          "kind": "Npc",
+          "actorKey": "N104003"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sofa, 63, -126"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sofa, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D41321"
+        },
+        {
+          "type": "ShowCenterImage",
+          "param": "S1014"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D41324"
+        },
+        {
+          "type": "HideCenterImage"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D41325"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.5"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C4016",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "don",
+          "kind": "Player",
+          "actorKey": "3"
+        },
+        {
+          "actorName": "honglu",
+          "kind": "Player",
+          "actorKey": "6"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 59, -127"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 59, -127"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "don, 59, -127"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "honglu, 59, -127"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.8"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C4011",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Wait",
+          "param": "0.1"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "player, player, 0, -5"
+        }
+      ]
+    },
+    {
+      "key": "C4012",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "wardrobe",
+          "kind": "Npc",
+          "actorKey": "N104006"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D40410"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "wardrobe, Open"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40411"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "wardrobe, Close"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        }
+      ]
+    },
+    {
+      "key": "C4013",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "wardrobe",
+          "kind": "Npc",
+          "actorKey": "N104006"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D40610"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "wardrobe, Open"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40611"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "wardrobe, Close"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        }
+      ]
+    },
+    {
+      "key": "C4014",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "wardrobe",
+          "kind": "Npc",
+          "actorKey": "N104006"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D40810"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "wardrobe, Open"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40813"
+        }
+      ]
+    },
+    {
+      "key": "C4090",
+      "waitTeleportEnd": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D40910"
+        }
+      ],
+      "hideUnboundParty": false,
+      "showUnboundNpcs": false
+    }
+  ]
+}

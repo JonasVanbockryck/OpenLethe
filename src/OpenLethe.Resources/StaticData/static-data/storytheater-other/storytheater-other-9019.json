@@ -14,12 +14,14 @@
         {
           "id": 1,
           "storyId": "E070X",
-          "nodeId": 901901
+          "nodeId": 901901,
+          "fullBannerId": "Story_BG/E071X_Cog_Corridor"
         },
         {
           "id": 2,
           "storyId": "E071X",
-          "nodeId": 901902
+          "nodeId": 901902,
+          "fullBannerId": "Story_BG/E071X_Cog_Corridor"
         }
       ]
     }

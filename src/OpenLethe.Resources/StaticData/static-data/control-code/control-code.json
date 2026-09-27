@@ -1,4 +1,6 @@
 {
+  "isPreloadOnLoadingCgUi": true,
+  "isShowChangeIllustUi": true,
   "isCheckingEventStoryCode": true,
   "isCheckingLoadUserData": true,
   "isLackOfParticipantsPopupAppears": true,
@@ -83,6 +85,10 @@
     {
       "targetId": 92821,
       "targetIntegers": [ 10 ]
+    },
+    {
+      "targetId": 10416,
+      "targetIntegers": [ 10416, 2 ]
     }
   ],
   "isSendblog": true,
@@ -346,6 +352,8 @@
   "isStageEnterButtonInteractableChanged": true,
   "useDefaultAppearanceTrailParam": false,
   "isSolve1272": true,
-  "onEndTurnBuffTypo": true
+  "onEndTurnBuffTypo": true,
+  "isUseNextButton": true,
+  "isAbleToRetryOnRpg": true
 }
 

@@ -1,0 +1,283 @@
+{
+  "list": [
+    {
+      "id": 110101002,
+      "eventKey": "E10015",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N101030"
+    },
+    {
+      "id": 110301011,
+      "eventKey": "E1010",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "110300"
+    },
+    {
+      "id": 110301001,
+      "eventKey": "E1020",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "110500"
+    },
+    {
+      "id": 110601001,
+      "eventKey": "E1914",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "110600"
+    },
+    {
+      "id": 110601002,
+      "eventKey": "E1915",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q1023, 0"
+    },
+    {
+      "id": 110202012,
+      "eventKey": "E1012",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1011"
+    },
+    {
+      "id": 110101004,
+      "eventKey": "E1109",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1011",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q1021"
+    },
+    {
+      "id": 110101091,
+      "eventKey": "E1091",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D10991",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000"
+    },
+    {
+      "id": 111101002,
+      "eventKey": "E1954",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D1952"
+    },
+    {
+      "id": 111101003,
+      "eventKey": "E1954",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D1953"
+    },
+    {
+      "id": 110502012,
+      "eventKey": "E10411",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1041"
+    },
+    {
+      "id": 110101011,
+      "eventKey": "E1111",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EM-1193A",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3011",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "EG-1091",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "EG-1092",
+      "passiveCondition5": "EventNotCompleted",
+      "passiveConditionValue5": "EQ-3092"
+    },
+    {
+      "id": 111101004,
+      "eventKey": "E1963",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D1963"
+    },
+    {
+      "id": 111101005,
+      "eventKey": "E1964",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1091",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1965",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1964"
+    },
+    {
+      "id": 111101006,
+      "eventKey": "E1965",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1091",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1962",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1965"
+    },
+    {
+      "id": 111101007,
+      "eventKey": "E1962",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1091",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1961",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1962"
+    },
+    {
+      "id": 111101008,
+      "eventKey": "E1961",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1091",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E1961"
+    },
+    {
+      "id": 111101009,
+      "eventKey": "E1970",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1092",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1969",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1970"
+    },
+    {
+      "id": 111101010,
+      "eventKey": "E1969",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1092",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1968",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1969"
+    },
+    {
+      "id": 111101011,
+      "eventKey": "E1968",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1092",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1967",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1968"
+    },
+    {
+      "id": 111101012,
+      "eventKey": "E1967",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1092",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E1967"
+    },
+    {
+      "id": 111101013,
+      "eventKey": "E1975",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1093",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1974",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1975"
+    },
+    {
+      "id": 111101014,
+      "eventKey": "E1974",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1093",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1973",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1974"
+    },
+    {
+      "id": 111101015,
+      "eventKey": "E1973",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1093",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1972",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1973"
+    },
+    {
+      "id": 111101016,
+      "eventKey": "E1972",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1093",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E1972"
+    },
+    {
+      "id": 111101017,
+      "eventKey": "E1980",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1094",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1979",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1980"
+    },
+    {
+      "id": 111101018,
+      "eventKey": "E1979",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1094",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1978",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1979"
+    },
+    {
+      "id": 111101019,
+      "eventKey": "E1978",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1094",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1977",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E1978"
+    },
+    {
+      "id": 111101020,
+      "eventKey": "E1977",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1094",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E1977"
+    },
+    {
+      "id": 111101021,
+      "eventKey": "EDS101",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N101011"
+    },
+    {
+      "id": 111101022,
+      "eventKey": "EDS102",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N101030"
+    },
+    {
+      "id": 820101001,
+      "eventKey": "EPI-1B",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q1022"
+    },
+    {
+      "id": 820101002,
+      "eventKey": "EPI-1B",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q1022"
+    }
+  ]
+}

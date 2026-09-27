@@ -1,0 +1,57 @@
+{
+  "list": [
+    {
+      "patternKey": "NA-B3-SWARM-NEEDLE",
+      "memo": "",
+      "triggerRange": 6,
+      "cooldown": 1.0,
+      "canStartWhileMoving": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.2,
+          "motion": "Attack"
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 1,
+          "mpDamage": 0,
+          "projectileKey": "Fx_RPG_Mon_Cp10_NeedleHolder_Projectile",
+          "projectileSpeed": 12.0,
+          "maxDistance": 20
+        },
+        {
+          "action": "Wait",
+          "duration": 0.5
+        }
+      ]
+    },
+    {
+      "patternKey": "NA-B3-SWARM-HEAL",
+      "memo": "",
+      "triggerRange": 0,
+      "cooldown": 2.0,
+      "canStartWhileMoving": true,
+      "steps": [
+        {
+          "action": "Wait",
+          "duration": 0.5,
+          "motion": "Attack"
+        },
+        {
+          "action": "HealAllies",
+          "healAmount": 5,
+          "blastWidth": 5,
+          "blastHeight": 5
+        },
+        {
+          "action": "Wait",
+          "duration": 0.5
+        }
+      ]
+    }
+  ]
+}

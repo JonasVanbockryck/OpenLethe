@@ -187,6 +187,67 @@
 							"paidLunacyPrice": 1300
 						}
 					]
+				},
+
+				{
+					"groupType": "BGM",
+					"contents": [
+						{
+							"type": "BGM",
+							"id": 200197,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200198,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200199,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200200,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200201,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200202,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200203,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200204,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200205,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200206,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200207,
+							"paidTwinePrice": 25
+						}
+					]
 				}
 			]
 		}

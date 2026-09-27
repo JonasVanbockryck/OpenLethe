@@ -1,0 +1,142 @@
+{
+  "list": [
+    {
+      "questKey": "Q1000",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "999999"
+    },
+    {
+      "questKey": "Q1011",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "110202"
+    },
+    {
+      "questKey": "Q1012",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C1011"
+    },
+    {
+      "questKey": "Q1012",
+      "stepIndex": 1,
+      "goalType1": "EnterLocation",
+      "goalValue1": "999999"
+    },
+    {
+      "questKey": "Q1013",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C1020"
+    },
+        {
+      "questKey": "Q1014",
+      "stepIndex": 0,
+      "goalType1": "InteractObject",
+      "goalValue1": "SO201917",
+      "goalHidden1": true
+    },
+{
+      "questKey": "Q1021",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1021"
+    },
+    {
+      "questKey": "Q1022",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1022"
+    },
+    {
+      "questKey": "Q1022",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D10221"
+    },
+    {
+      "questKey": "Q1023",
+      "stepIndex": 0,
+      "goalType1": "KillEnemy",
+      "goalValue1": "N101011, 3"
+    },
+    {
+      "questKey": "Q1023",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1023"
+    },
+    {
+      "questKey": "Q1031",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "110800"
+    },
+    {
+      "questKey": "Q1032",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "110900"
+    },
+    {
+      "questKey": "Q1041",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1047",
+      "goalType2": "Dialogue",
+      "goalValue2": "D1048",
+      "goalType3": "Dialogue",
+      "goalValue3": "D1049"
+    },
+    {
+      "questKey": "Q1042",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11003"
+    },
+    {
+      "questKey": "Q1051",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1050"
+    },
+    {
+      "questKey": "Q1052",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I990108, 1"
+    },
+    {
+      "questKey": "Q1052",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1055"
+    },
+    {
+      "questKey": "Q1061",
+      "stepIndex": 0,
+      "goalType1": "BuyFromShop",
+      "goalValue1": "SH101007"
+    },
+    {
+      "questKey": "Q1062",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1061"
+    },
+    {
+      "questKey": "Q1064",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "120100"
+    },
+    {
+      "questKey": "Q1018",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I990108, 1",
+      "goalHidden1": true
+    }
+  ]
+}

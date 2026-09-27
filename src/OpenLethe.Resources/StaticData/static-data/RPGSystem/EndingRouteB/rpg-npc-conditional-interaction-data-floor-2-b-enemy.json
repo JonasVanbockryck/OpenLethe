@@ -1,0 +1,12 @@
+{
+  "list": [
+    {
+      "npcKey": "N102002",
+      "order": 1,
+      "conditionType": "Dialogue",
+      "conditionValue": "D2002",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2003"
+    }
+  ]
+}

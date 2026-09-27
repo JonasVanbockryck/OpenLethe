@@ -1,0 +1,252 @@
+{
+  "list": [
+    {
+      "npcKey": "N104011",
+      "order": 100,
+      "conditionType": "Quest",
+      "conditionValue": "Q4014, 0",
+      "interactionType": "Dialogue",
+      "interactionKey": "D41331",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N104011",
+      "order": 99,
+      "conditionType": "Quest",
+      "conditionValue": "Q4003, 0",
+      "interactionType": "Shop",
+      "interactionKey": "SH104001"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 55,
+      "conditionType": "Quest",
+      "conditionValue": "Q4008, 1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D41320"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 80,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140310",
+      "interactionType": "Event",
+      "interactionKey": "E40736"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 70,
+      "conditionType": "Dialogue",
+      "conditionValue": "D41330",
+      "interactionType": "Shop",
+      "interactionKey": "SH104003"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 60,
+      "conditionType": "Quest",
+      "conditionValue": "Q4013, 0",
+      "interactionType": "Dialogue",
+      "interactionKey": "D41330"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 20,
+      "conditionType": "Item",
+      "conditionValue": "I104002, 1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D40510"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q4003, 0",
+      "interactionType": "Dialogue",
+      "interactionKey": "D40311",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N104003",
+      "order": 57,
+      "conditionType": "Dialogue",
+      "conditionValue": "D41320",
+      "interactionType": "Dialogue",
+      "interactionKey": "D41801"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 25,
+      "conditionType": "Dialogue",
+      "conditionValue": "D40510",
+      "interactionType": "Dialogue",
+      "interactionKey": "D41803"
+    },
+    {
+      "npcKey": "N104003",
+      "order": 15,
+      "conditionType": "Dialogue",
+      "conditionValue": "D40311",
+      "interactionType": "Dialogue",
+      "interactionKey": "D41802"
+    },
+    {
+      "npcKey": "N104006",
+      "order": 30,
+      "conditionType": "Quest",
+      "conditionValue": "Q4007, 0",
+      "interactionType": "Cutscene",
+      "interactionKey": "C4014"
+    },
+    {
+      "npcKey": "N104006",
+      "order": 20,
+      "conditionType": "Quest",
+      "conditionValue": "Q4005, 0",
+      "interactionType": "Cutscene",
+      "interactionKey": "C4013"
+    },
+    {
+      "npcKey": "N104006",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q4003, 1",
+      "interactionType": "Cutscene",
+      "interactionKey": "C4012"
+    },
+    {
+      "npcKey": "N104015",
+      "order": 10,
+      "conditionType": "Item",
+      "conditionValue": "I990414, 1",
+      "interactionType": "Event",
+      "interactionKey": "E40725",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N104002",
+      "order": 40,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140306",
+      "interactionType": "Event",
+      "interactionKey": "E40730"
+    },
+    {
+      "npcKey": "N104002",
+      "order": 30,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140305",
+      "interactionType": "Event",
+      "interactionKey": "E40799"
+    },
+    {
+      "npcKey": "N104002",
+      "order": 35,
+      "conditionType": "Item",
+      "conditionValue": "I990409, 1",
+      "interactionType": "Event",
+      "interactionKey": "E40799",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N104017",
+      "order": 40,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140308",
+      "interactionType": "Event",
+      "interactionKey": "E40731"
+    },
+    {
+      "npcKey": "N104017",
+      "order": 30,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140307",
+      "interactionType": "Event",
+      "interactionKey": "E40799"
+    },
+    {
+      "npcKey": "N104017",
+      "order": 35,
+      "conditionType": "Item",
+      "conditionValue": "I990410, 1",
+      "interactionType": "Event",
+      "interactionKey": "E40799",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N104004",
+      "order": 40,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140304",
+      "interactionType": "Event",
+      "interactionKey": "E40732"
+    },
+    {
+      "npcKey": "N104004",
+      "order": 30,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140303",
+      "interactionType": "Event",
+      "interactionKey": "E40799"
+    },
+    {
+      "npcKey": "N104004",
+      "order": 35,
+      "conditionType": "Item",
+      "conditionValue": "I990411, 1",
+      "interactionType": "Event",
+      "interactionKey": "E40799",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N104016",
+      "order": 40,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140302",
+      "interactionType": "Event",
+      "interactionKey": "E40733"
+    },
+    {
+      "npcKey": "N104016",
+      "order": 30,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140301",
+      "interactionType": "Event",
+      "interactionKey": "E40799"
+    },
+    {
+      "npcKey": "N104016",
+      "order": 35,
+      "conditionType": "Item",
+      "conditionValue": "I990412, 1",
+      "interactionType": "Event",
+      "interactionKey": "E40799",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N104023",
+      "order": 35,
+      "conditionType": "Item",
+      "conditionValue": "I990413, 1",
+      "interactionType": "Event",
+      "interactionKey": "E40799",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N104023",
+      "order": 40,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140310",
+      "interactionType": "Event",
+      "interactionKey": "E40734"
+    },
+    {
+      "npcKey": "N104023",
+      "order": 30,
+      "conditionType": "IsInLocation",
+      "conditionValue": "140309",
+      "interactionType": "Event",
+      "interactionKey": "E40799"
+    }
+  ]
+}

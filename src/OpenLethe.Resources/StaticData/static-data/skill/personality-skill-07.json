@@ -7901,6 +7901,9 @@
                 "turn": 10,
                 "value": 4
               }
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "coinList": [
@@ -8006,6 +8009,9 @@
                 "buffOwner": "Self",
                 "limit": 5
               }
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "coinList": [

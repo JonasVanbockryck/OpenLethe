@@ -2738,6 +2738,29 @@
         "nextSubchapterid": 9125,
         "lastnodeid": 10951,
         "voiceBank": "Ch9"
+        },
+        {
+        "id": 110,
+        "illustSprName": "110",
+        "region": "n",
+        "sprName": "chapter10",
+        "subChapterNumber": "10",
+        "mapSizeRow": 1,
+        "mapSizeColoumn": 2,
+        "stageNodeList": [
+          {
+            "nodeId": 11001,
+            "stageId": 11001,
+            "posx": 900,
+            "posy": 935,
+            "upper": 1,
+            "stageNodeType": "RPG"
+          }
+        ],
+        "nextMainchapterid": 1,
+        "nextSubchapterid": 0,
+        "lastnodeid": -1,
+        "voiceBank": "Ch9"
         }
       ],
       "subchapterUIList": [
@@ -3068,10 +3091,19 @@
             "region": "n",
             "timeLine": "985-03"
           }
+        },
+        {
+          "chapterId": 1,
+          "subchapterId": 110,
+          "type": "MAIN"
+        },
+        {
+          "chapterId": 91,
+          "subchapterId": 9128,
+          "type": "MAIN"
         }
       ],
-      "focusScrollToSpecificSubchapter": true,
-      "focusSubchapterId": 9127
+      "focusScrollToSpecificSubchapter": false
     },
     {
       "id": 91,
@@ -3173,7 +3205,7 @@
           "nextMainchapterid": 1,
           "nextSubchapterid": 104,
           "lastnodeid": 910309,
-          "voiceBank": "Event3"
+          "voiceBank": "9103"
         },
         {
           "id": 9104,
@@ -3289,7 +3321,7 @@
           "nextMainchapterid": 1,
           "nextSubchapterid": 105,
           "lastnodeid": 910411,
-          "voiceBank": "Event4"
+          "voiceBank": "9104"
         },
         {
           "id": 9105,
@@ -3412,7 +3444,8 @@
           ],
           "nextMainchapterid": 91,
           "nextSubchapterid": 9107,
-          "lastnodeid": 910512
+          "lastnodeid": 910512,
+          "voiceBank": "9105"
         },
         {
           "id": 9106,
@@ -3551,7 +3584,8 @@
           ],
           "nextMainchapterid": 1,
           "nextSubchapterid": 106,
-          "lastnodeid": 910712
+          "lastnodeid": 910712,
+          "voiceBank": "9107"
         },
         {
           "id": 9108,
@@ -3712,7 +3746,8 @@
           ],
           "nextMainchapterid": 91,
           "nextSubchapterid": 9110,
-          "lastnodeid": 910915
+          "lastnodeid": 910915,
+          "voiceBank": "9109"
         },
         {
           "id": 9110,
@@ -3850,7 +3885,8 @@
           ],
           "nextMainchapterid": 1,
           "nextSubchapterid": 107,
-          "lastnodeid": 911015
+          "lastnodeid": 911015,
+          "voiceBank": "9110"
         },
         {
           "id": 9111,
@@ -4192,7 +4228,8 @@
           ],
           "nextMainchapterid": 91,
           "nextSubchapterid": 9116,
-          "lastnodeid": 911414
+          "lastnodeid": 911414,
+          "voiceBank": "9114"
         },
         {
           "id": 9115,
@@ -4449,7 +4486,8 @@
           ],
           "nextMainchapterid": 1,
           "nextSubchapterid": 108,
-          "lastnodeid": 911612
+          "lastnodeid": 911612,
+          "voiceBank": "9116"
         },
         {
           "id": 9117,
@@ -5820,6 +5858,37 @@
             }
           ],
           "lastnodeid": 912712
+        },
+        {
+          "id": 9128,
+          "isSyncChapter": true,
+          "syncChapterId": 110,
+          "illustSprName": "110",
+          "region": "n",
+          "sprName": "chapter10",
+          "subChapterNumber": "10",
+          "mapSizeRow": 1,
+          "mapSizeColoumn": 2,
+          "mapIllustId": "110",
+          "unlockCondition": {
+            "unlockCode": 100
+          },
+          "stageNodeList": [
+            {
+              "nodeId": 912801,
+              "stageId": 11001,
+              "posx": 900,
+              "posy": 935,
+              "upper": 1,
+              "stageNodeType": "RPG",
+              "nodeInfoId": 11001,
+              "nodeIllustIdString": "11001"
+            }
+          ],
+          "nextMainchapterid": 1,
+          "nextSubchapterid": 0,
+          "lastnodeid": -1,
+          "voiceBank": "Ch9"
         }
       ]
     }

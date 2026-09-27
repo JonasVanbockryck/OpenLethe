@@ -2006,7 +2006,9 @@
       "canBeDespelled": true,
       "destroyableOnDie": true,
       "list": [
-
+        {
+          "ability": "DianxueMark"
+        }
       ],
       "categoryKeywordList": [ "DIANXUE" ]
     },
@@ -7001,7 +7003,7 @@
       "list": [
         {
           "ability": "MinSpeedAdderIncludeFirstTurn",
-          "value": 1
+          "value": 2
         },
         {
           "ability": "DefaultAtkSkillSkillPowerAdderOnUse",
@@ -7106,7 +7108,7 @@
       "list": [
         {
           "ability": "MinSpeedAdderIncludeFirstTurn",
-          "value": 1
+          "value": 2
         },
         {
           "ability": "DefaultAtkSkillSkillPowerAdderOnUse",
@@ -7465,6 +7467,510 @@
         },
         {
           "ability": "LoseStackDawnTeam"
+        }
+      ]
+    },
+    {
+      "id": "DriftingDimensionYisang",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnRetreat": true,
+      "destroyableOnDie": true,
+      "maxStack": 3,
+      "list": [
+        {
+          "ability": "AddShieldBeforeTakeAttackDamageByMaxHpRatio",
+          "value": 3
+        },
+        {
+          "ability": "ActivateBuffEffectBack"
+        }
+      ]
+    },
+    {
+      "id": "FourDimensionYisang",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnRetreat": true,
+      "destroyableOnDie": true,
+      "maxStack": 4,
+      "list": [
+        {
+          "ability": "AtkAdderViaBuffCheck",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "FourDimensionYisang",
+            "buffOwner": "Self",
+            "stack": 1,
+            "turn" : 0
+          }
+        },
+        {
+          "ability": "DefAdderViaBuffCheck",
+          "value": 2,
+          "buffData": {
+            "buffKeyword": "FourDimensionYisang",
+            "buffOwner": "Self",
+            "stack": 2,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "TakeBuffTurnAdderIfSelfAndBuffStackCheck",
+          "value": 3,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "turn" : 1
+          }
+        },
+        {
+          "ability": "AttackDmgMultiplierViaSelfBuffStackCheck",
+          "value": 4,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "buffOwner": "Self",
+            "value": 0.04,
+            "limit" : 20
+          }
+        },
+        {
+          "ability": "GiveBuffOnNextTurnByOverStack"
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        },
+        {
+          "ability": "ActivateBuffEffectBack"
+        }
+      ]
+    },
+    {
+      "id": "ChargeRougeAlly",
+      "iconId": "ChargeRouge",
+      "subIdList": [
+        "Charge"
+      ],
+      "buffClass": "UsedTurnReportSinBuff",
+      "attributeType": "VIOLET",
+      "buffType": "Positive",
+      "canBeDespelled": true,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "destroyableOnZeroTurn": false,
+      "destroyableOnBothZero": true,
+      "maxTurn": 20,
+      "list": [
+        {
+          "ability": "LoseTurnOnRoundEnd",
+          "value": 1
+        }
+      ],
+      "categoryKeywordList": [
+        "SIN",
+        "CHARGE"
+      ]
+    },
+    {
+      "id": "RougeIshmaelCocoon",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 2,
+      "list": [
+        {
+          "ability": "RougeIshmaelCocoon",
+          "value": 1081605
+        },
+        {
+          "ability": "OverwriteSpeed",
+          "value": 1
+        },
+        {
+          "ability": "TakeAtkDamageMultiplier",
+          "value": -0.5
+        },
+        {
+          "ability": "TauntAllSlot",
+          "value": 1000
+        },
+        {
+          "ability": "GiveBuffOnTakeAttackDamageWithTurnLimit",
+          "value" : 20,
+          "buffData" : {
+            "buffKeyword": "Charge",
+            "target": "Self",
+            "stack": 0,
+            "turn": 1,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "CanNotRetreat"
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "RougeIshmaelEclose",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "MinSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "MaxSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "MaxHpMultiplier",
+          "value": 0.25
+        },
+        {
+          "ability": "TakeAtkDamageMultiplier",
+          "value": -0.1
+        },
+        {
+          "ability": "GiveBuffStackAdderToEnemyIfDefaultSkillNotZero",
+          "buffData" : {
+            "buffKeyword": "Laceration",
+            "stack": 1
+          }
+        } 
+      ]
+    },
+    {
+      "id": "NoirSuitAlly",
+      "iconId": "NoirSuit",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 100,
+      "list": [
+        {
+          "ability": "DefAdderPerStack",
+          "value": 25
+        },
+        {
+          "ability": "AggroAdderOnRoundStart",
+          "value": 500
+        }, 
+        {
+          "ability": "10416GiveBuffBeforeTakeAttackIfHasShield",
+          "value": 2,
+          "buffData": {
+            "buffKeyword": "NoirSuitAlly",
+            "target": "Self",
+            "stack": 5,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundEndIfHasShield",
+          "buffData": {
+            "buffKeyword": "NoirSuitAlly",
+            "target": "Self",
+            "stack": 10,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "10416GiveBuffOnSelfChargingTurn",
+          "value": 30
+        },
+        {
+          "ability": "10416BuffChangerORE",
+          "value": 100,
+          "buffData": {
+            "buffKeyword": "RealisationAlly",
+            "target": "Self",
+            "stack": 100,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "RealisationAlly",
+      "iconId": "Realisation",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 100,
+      "list": [
+        {
+          "ability": "MinSpeedAdder",
+          "value": 2
+        },
+        {
+          "ability": "MaxSpeedAdderIncludeFirstTurn",
+          "value": 2
+        },
+        {
+          "ability": "DefAdderPerStack",
+          "value": 25
+        },
+        {
+          "ability": "AtkAdderPerStack",
+          "value": 25
+        },
+        {
+          "ability": "ChangeToSuperCoinIfDefaultAttackSkill"
+        },
+        {
+          "ability": "RecoverSelfMpOnRoundStart",
+          "value": 8
+        },
+        {
+          "ability": "10416BuffChangerImmediately",
+          "value": 0,
+          "buffData": {
+            "activeRound": 1,
+            "buffKeyword": "NoirSuitAlly",
+            "target": "Self",
+            "stack": 0,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "ChargeNoirAlly",
+      "iconId": "ChargeNoir",
+      "subIdList": [
+        "Charge"
+      ],
+      "categoryKeywordList": [
+        "SIN",
+        "CHARGE"
+      ],
+      "buffClass": "UsedTurnReportSinBuff",
+      "attributeType": "VIOLET",
+      "buffType": "Positive",
+      "canBeDespelled": true,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "destroyableOnZeroTurn": false,
+      "destroyableOnBothZero": true,
+      "maxTurn": 20,
+      "list": [
+        {
+          "ability": "LoseTurnOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "DianxueHongLu",
+      "iconId": "DianxueDonQuixote",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "maxStack": 3,
+      "canBeDespelled": true,
+      "destroyableOnDie": true,
+      "list": [
+        {
+          "ability": "DianxueMark"
+        }
+      ],
+      "categoryKeywordList": [ "DIANXUE" ]
+    },
+    {
+      "id": "DuelSousTemoinsEast",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 3,
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "list": [
+        {
+          "ability": "AtkAdderByStack",
+          "value": 1
+        },
+        {
+          "ability": "GiveBuffAdderIfDefaultSkillViaStackCheck",
+          "buffData": {
+            "buffKeyword": "Breath",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0
+          },
+          "value": 2
+        },
+        {
+          "ability": "GiveBuffAdderIfDefaultSkillViaStackCheck",
+          "buffData": {
+            "buffKeyword": "Breath",
+            "target": "Self",
+            "stack": 0,
+            "turn": 1
+          },
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "ChargeKhakiAlly",
+      "iconId": "ChargeKhaki",
+      "subIdList": [
+        "Charge"
+      ],
+      "buffClass": "UsedTurnReportSinBuff",
+      "attributeType": "VIOLET",
+      "buffType": "Positive",
+      "canBeDespelled": true,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": false,
+      "destroyableOnZeroTurn": false,
+      "destroyableOnBothZero": true,
+      "maxTurn": 20,
+      "list": [
+        {
+          "ability": "LoseTurnOnRoundEnd",
+          "value": 1
+        }
+      ],
+      "categoryKeywordList": [
+        "SIN",
+        "CHARGE"
+      ]
+    },
+    {
+      "id": "NoirScissorAlly",
+      "iconId": "ScissorsMark",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "maxStack": 4,
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "NoirScissorAllyOnDie",
+          "value": 5,
+          "buffData": {
+            "buffKeyword": "AttackUp",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 1,
+            "limit": 3
+          }
+        },
+        {
+          "ability": "ActivateBuffEffectBackCenter"
+        }
+      ]
+    },
+    {
+      "id": "NoirScissorCut",
+      "iconId": "LargeTailoringShears",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 2,
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "AtkDamageMultiplierByStack",
+          "value": 0.07
+        }
+      ]
+    },
+    {
+      "id": "NoirScissorShield",
+      "iconId": "TailoringSensibility",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 1,
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "AtkAdder",
+          "value": 3
+        },
+        {
+          "ability": "DefAdder",
+          "value": 3
+        },
+        {
+          "ability": "NoirScissorShieldMpHeal_1",
+          "value": 5
+        },
+        {
+          "ability": "NoirScissorShieldAdditionalDmg",
+          "value": 0.05
+        },
+        {
+          "ability": "ActivateBuffEffectSkin"
+        }
+      ]
+    },
+    {
+      "id": "EmpathicDistressAlly",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": true,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "GiveBuffOnTakeAttackDamageAlly20910",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "Vibration",
+            "target": "Self",
+            "stack": 0,
+            "turn": 1,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnTakeAttackDamageSelf20910",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "Vibration",
+            "target": "Self",
+            "stack": 2,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "TakeCriticalAtkDamageMultiplierByBuffStackWithMax_Vibration_15",
+          "value": 0.01
         }
       ]
     }

@@ -1,0 +1,97 @@
+{
+  "list": [
+    {
+      "id": 40004101,
+      "controlValueList": [
+        1,
+        2, 2
+      ]
+    },
+    {
+      "id": 40004102,
+      "controlValueList": [
+        1
+      ]
+    },
+    {
+      "id": 40004103,
+      "importanceLevel": 2,
+      "controlValueList": [
+        1, 2, 20, 10, 100,
+        2, 1,
+        15,
+        0, 3
+      ]
+    },
+    {
+      "id": 40004104,
+      "useUnlock": true,
+      "importanceLevel": 2,
+      "controlValueList": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": 40004105,
+      "useUnlock": true,
+      "controlValueList": [
+        3,
+        3,
+        1,
+        20
+      ]
+    },
+    {
+      "id": 40004106,
+      "controlValueList": [
+        30,
+        15,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "id": 40004107,
+      "useUnlock": true,
+      "controlValueList": [
+        1
+      ]
+    },
+    {
+      "id": 40004108,
+      "importanceLevel": 3
+    },
+    {
+      "id": 40004201
+    },
+    {
+      "id": 40004202,
+      "importanceLevel": 3,
+      "controlValueList": [
+        20
+      ]
+    },
+    {
+      "id": 40004203,
+      "importanceLevel": 2,
+      "controlValueList": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": 40004204,
+      "importanceLevel": 1,
+      "controlValueList": [
+        5,
+        15
+      ]
+    }
+  ]
+}

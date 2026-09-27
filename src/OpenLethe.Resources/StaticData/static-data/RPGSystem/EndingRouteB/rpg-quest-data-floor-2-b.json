@@ -1,0 +1,77 @@
+{
+  "list": [
+    {
+      "key": "Q2001",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Dialogue",
+      "acquireConditionValue": "D2005",
+      "requiredQuestKey": "Q1064",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2003",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q3025",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2004",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2003",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2005",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2004",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2008",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2005",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2008A",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2008",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2008B",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2008A",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2009",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2008B",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2010",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q3028",
+      "completeEventKey": ""
+    }
+  ]
+}

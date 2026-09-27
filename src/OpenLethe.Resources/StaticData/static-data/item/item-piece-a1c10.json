@@ -1,0 +1,148 @@
+{
+  "list": [
+    {
+      "id": 10108,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 1
+      },
+
+      "category": "PIECE",
+      "spriteStr": "piece_1"
+    },
+    {
+      "id": 10208,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 2
+      },
+
+      "category": "PIECE",
+      "spriteStr": "piece_2"
+    },
+    {
+      "id": 10308,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 3
+      },
+
+      "category": "PIECE",
+      "spriteStr": "piece_3"
+    },
+    {
+      "id": 10408,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 4
+      },
+      
+      "category": "PIECE",
+      "spriteStr": "piece_4"
+    },
+    {
+      "id": 10508,
+      
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 5
+      },
+
+      "category": "PIECE",
+      "spriteStr": "piece_5"
+    },
+    {
+      "id": 10608,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 6
+      },
+
+      "category": "PIECE",
+      "spriteStr": "piece_6"
+    },
+    {
+      "id": 10708,
+      
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 7
+      },
+      
+      "category": "PIECE",
+      "spriteStr": "piece_7"
+    },
+    {
+      "id": 10808,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 8
+      },
+
+      "category": "PIECE",
+      "spriteStr": "piece_8"
+    },
+    {
+      "id": 10908,
+      
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 9
+      },
+      
+      "category": "PIECE",
+      "spriteStr": "piece_9"
+    },
+    {
+      "id": 11008,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 10
+      },
+      
+      "category": "PIECE",
+      "spriteStr": "piece_10"
+    },
+    {
+      "id": 11108,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 11
+      },
+      
+      "category": "PIECE",
+      "spriteStr": "piece_11"
+    },
+    {
+      "id": 11208,
+
+      "season": 8,
+      "seasonalTargetElement": {
+        "type": "SEASONAL_PIECE",
+        "id": 12
+      },
+      
+      "category": "PIECE",
+      "spriteStr": "piece_12"
+    }
+  ]
+}

@@ -14,13 +14,15 @@
           "id": 2,
           "storyId": "S402B",
           "nodeId": 10402,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S402_1"
         },
         {
           "id": 3,
           "storyId": "S403A",
           "nodeId": 10403,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S401"
         },
         {
           "id": 4,
@@ -32,55 +34,67 @@
           "id": 5,
           "storyId": "S407B",
           "nodeId": 10407,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lab entrance"
         },
         {
           "id": 6,
           "storyId": "S408B",
           "nodeId": 10408,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lab 2F"
         },
         {
           "id": 7,
           "storyId": "S409B",
           "nodeId": 10409,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lab_next_F",
+          "moveY": 500,
+          "scaleX": 1.1,
+          "scaleY": 1.1
         },
         {
           "id": 8,
           "storyId": "S410B",
           "nodeId": 10410,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S403_3"
         },
         {
           "id": 9,
           "storyId": "S412B",
           "nodeId": 10412,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S404_4"
         },
         {
           "id": 10,
           "storyId": "S415B",
           "nodeId": 10415,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lab 2F"
         },
         {
           "id": 11,
           "storyId": "S416B",
           "nodeId": 10416,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_adapted_lobotomy"
         },
         {
           "id": 12,
           "storyId": "S416A",
           "nodeId": 10416,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_adapted_lobotomy"
         },
         {
           "id": 13,
           "storyId": "S417A",
           "nodeId": 10417,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_adapted_lobotomy"
         },
         {
           "id": 14,
@@ -92,43 +106,50 @@
           "id": 15,
           "storyId": "S421B",
           "nodeId": 10421,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_adapted_lobotomy2"
         },
         {
           "id": 16,
           "storyId": "S422B",
           "nodeId": 10422,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_adapted_lobotomy2"
         },
         {
           "id": 17,
           "storyId": "S426B",
           "nodeId": 10426,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S405_3"
         },
         {
           "id": 18,
           "storyId": "S427B",
           "nodeId": 10427,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S407_2"
         },
         {
           "id": 19,
           "storyId": "S428B",
           "nodeId": 10428,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S410_2"
         },
         {
           "id": 20,
           "storyId": "S429B",
           "nodeId": 10429,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_story_adminoffice"
         },
         {
           "id": 21,
           "storyId": "S430B",
           "nodeId": 10430,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S413_1"
         },
         {
           "id": 22,
@@ -140,25 +161,29 @@
           "id": 23,
           "storyId": "S433A",
           "nodeId": 10433,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/SubChapter104/S433B"
         },
         {
           "id": 24,
           "storyId": "S435B",
           "nodeId": 10435,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lab corridor_v1"
         },
         {
           "id": 25,
           "storyId": "S438B",
           "nodeId": 10438,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S425"
         },
         {
           "id": 26,
           "storyId": "S441B",
           "nodeId": 10441,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lab corridor_v1"
         },
         {
           "id": 27,
@@ -170,31 +195,36 @@
           "id": 28,
           "storyId": "S445B",
           "nodeId": 10445,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lab corridor_v1"
         },
         {
           "id": 29,
           "storyId": "S447B",
           "nodeId": 10447,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_shedding tears_2(light on)"
         },
         {
           "id": 30,
           "storyId": "S448B",
           "nodeId": 10448,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_shedding tears_4(screen v2)"
         },
         {
           "id": 31,
           "storyId": "S448A",
           "nodeId": 10448,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S409"
         },
         {
           "id": 32,
           "storyId": "S449B",
           "nodeId": 10449,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_relocated lab"
         },
         {
           "id": 33,
@@ -206,7 +236,8 @@
           "id": 34,
           "storyId": "S454B",
           "nodeId": 10454,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_bandofnine_lab01_1"
         },
         {
           "id": 35,
@@ -218,19 +249,22 @@
           "id": 36,
           "storyId": "4D103B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S416"
         },
         {
           "id": 37,
           "storyId": "4D104B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_bandofnine_lab01_1"
         },
         {
           "id": 38,
           "storyId": "4D105B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S423"
         },
         {
           "id": 39,
@@ -242,37 +276,43 @@
           "id": 40,
           "storyId": "4D107B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_t_street"
         },
         {
           "id": 41,
           "storyId": "4D201B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_bandofnine_lab02"
         },
         {
           "id": 42,
           "storyId": "4D202B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_bandofnine_lab02"
         },
         {
           "id": 43,
           "storyId": "4D203B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S421_1"
         },
         {
           "id": 44,
           "storyId": "4D204B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_bandofnine_lab03"
         },
         {
           "id": 45,
           "storyId": "4D205B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_bandofnine_lab03"
         },
         {
           "id": 46,
@@ -284,55 +324,64 @@
           "id": 47,
           "storyId": "4D206A",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/SubChapter104/4D206B"
         },
         {
           "id": 48,
           "storyId": "4D207B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_bandofnine_lab04"
         },
         {
           "id": 49,
           "storyId": "4D208B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S421_4"
         },
         {
           "id": 50,
           "storyId": "4D301B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_Nlab"
         },
         {
           "id": 51,
           "storyId": "4D302B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S433_1"
         },
         {
           "id": 52,
           "storyId": "4D303B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S434_1"
         },
         {
           "id": 53,
           "storyId": "4D304B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S419"
         },
         {
           "id": 54,
           "storyId": "4D305B",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S418_2"
         },
         {
           "id": 55,
           "storyId": "4D305A",
           "nodeId": 10454,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S418_2"
         }
       ]
     }

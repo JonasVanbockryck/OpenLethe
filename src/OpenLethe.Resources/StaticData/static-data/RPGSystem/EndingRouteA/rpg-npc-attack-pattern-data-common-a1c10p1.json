@@ -1,0 +1,49 @@
+{
+    "list": [
+        {
+            "patternKey": "NA990899",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                {
+                    "action": "ShowAttackRange",
+                    "duration": 0.5,
+                    "motion": "AttackReady"
+                },
+                {
+                    "action": "MeleeHit",
+                    "hpDamage": 1,
+                    "mpDamage": 0,
+                    "hitRange": 1,
+                    "hitDirections": [
+                        "Front"
+                    ],
+                    "motion": "Attack"
+                },
+                {
+                    "action": "Wait",
+                    "duration": 0.5
+                }
+            ]
+        },
+        {
+            "patternKey": "swarm-default",
+            "triggerRange": 1,
+            "cooldown": 0,
+            "canStartWhileMoving": true,
+            "steps": [
+                {
+                    "action": "Wait",
+                    "duration": 0,
+                    "motion": "Attack"
+                },
+                {
+                    "action": "MeleeHit",
+                    "hpDamage": 0,
+                    "mpDamage": 0,
+                    "hitRange": 1
+                }
+            ]
+        }
+    ]
+}

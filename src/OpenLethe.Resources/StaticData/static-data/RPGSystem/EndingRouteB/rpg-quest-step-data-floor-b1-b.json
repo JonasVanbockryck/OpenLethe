@@ -1,0 +1,131 @@
+{
+  "list": [
+    {
+      "questKey": "Q-1000",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "210200"
+    },
+    {
+      "questKey": "Q-1000",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1001"
+    },
+    {
+      "questKey": "Q-1001",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1250"
+    },
+    {
+      "questKey": "Q-1002",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EV-1002"
+    },
+    {
+      "questKey": "Q-1003",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1230"
+    },
+    {
+      "questKey": "Q-1003",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1006"
+    },
+    {
+      "questKey": "Q-1003",
+      "stepIndex": 2,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1014"
+    },
+    {
+      "questKey": "Q-1004",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "210400"
+    },
+    {
+      "questKey": "Q-1004",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1082"
+    },
+    {
+      "questKey": "Q-1005",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1207"
+    },
+    {
+      "questKey": "Q-1005",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1008"
+    },
+    {
+      "questKey": "Q-1006",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1009"
+    },
+    {
+      "questKey": "Q-1007",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1207"
+    },
+    {
+      "questKey": "Q-1007",
+      "stepIndex": 1,
+      "goalType1": "GetItem",
+      "goalValue1": "I992705, 1"
+    },
+    {
+      "questKey": "Q-1008",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1231"
+    },
+    {
+      "questKey": "Q-1008",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1011"
+    },
+    {
+      "questKey": "Q-1009",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "218001"
+    },
+    {
+      "questKey": "Q-1009",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1015"
+    },
+    {
+      "questKey": "Q-1010",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1213"
+    },
+    {
+      "questKey": "Q-1011",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1013"
+    },
+    {
+      "questKey": "Q-1001S",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EM-1005",
+      "goalHidden1": true
+    }
+  ]
+}

@@ -158,6 +158,37 @@
 							"paidLunacyPrice": 1300
 						}
 					]
+				},
+
+				{
+					"groupType": "BGM",
+					"contents": [
+						{
+							"type": "BGM",
+							"id": 200075,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200076,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200077,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200078,
+							"paidTwinePrice": 25
+						},
+						{
+							"type": "BGM",
+							"id": 200079,
+							"paidTwinePrice": 25
+						}
+					]
 				}
 			]
 		}

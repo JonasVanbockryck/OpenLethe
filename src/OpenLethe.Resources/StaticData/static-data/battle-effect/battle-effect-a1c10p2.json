@@ -1,0 +1,156 @@
+{
+  "list": [
+    {
+      "keyword": "BlackThreadMoveReady",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/FX_RPG_Cp10_C_B2BlackThread_MoveReady.prefab"
+    },
+    {
+      "keyword": "HideBlackYarnOnTakeDmg",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BlackThread/FX_Mon_Cp10_BlackThread_ClockDamage.prefab"
+    },
+    {
+      "keyword": "HideBlackYarnEffect",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BlackThread/FX_Mon_Cp10_BlackThread_Buff2.prefab"
+    },
+    {
+      "keyword": "AngryBlackYarn",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BlackThread/FX_Mon_Cp10_BlackThread_Buff_AngryBlackYarn.prefab"
+    },
+    {
+      "keyword": "TangleBlackYarn",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BlackThread/FX_Mon_Cp10_BlackThread_Buff3.prefab"
+    },
+    {
+      "keyword": "BuffetFieldCreep",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_Buff_Map_Creep.prefab"
+    },
+    {
+      "keyword": "NoirShieldUp",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_Buff_NoirShieldPiece_Self.prefab"
+    },
+    {
+      "keyword": "NoirShieldUpHit",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_Buff_NoirShieldPiece_Self_Hit.prefab"
+    },
+    {
+      "keyword": "NoirShieldUpBroken",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_Buff_NoirShieldPiece_Self_Broken.prefab"
+    },
+    {
+      "keyword": "NoirShieldPiece",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_Buff_NoirShieldPiece_Team.prefab"
+    },
+    {
+      "keyword": "NoirShieldPiece2",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_Buff_NoirShieldPiece_Team_2.prefab"
+    },
+    {
+      "keyword": "NoirField1",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_BG_1.prefab"
+    },
+    {
+      "keyword": "NoirField2",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LanoirCaptain_BG_2.prefab"
+    },
+    {
+      "keyword": "FlowerLaurelWreath",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Alriune/FX_Mon_Cp10_Alliune_Buff2_Laurel.prefab"
+    },
+    {
+      "keyword": "AlriuneSillage",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Alriune/FX_Mon_Cp10_Alliune_Buff1_Flower.prefab"
+    },
+    {
+      "keyword": "AlriunePetal",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Alriune/FX_Mon_Cp10_Alliune_Buff3.prefab"
+    },
+    {
+      "keyword": "SapsareeGold",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/c10p2Common/FX_Mon_Cp10_GoldenLedder1.prefab"
+    },
+    {
+      "keyword": "GoldenLeatherEnhance",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/c10p2Common/FX_Mon_Cp10_GoldenLedder1.prefab"
+    },
+    {
+      "keyword": "GoldenManager",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/c10p2Common/FX_Mon_Cp10_GoldenLedder1.prefab"
+    },
+    {
+      "keyword": "NoirScissorAlly",
+      "address": "Assets/Prefab/Effect/PC/Cp10_2/Fx_PC_Rodion_Scissors_Buff_NoirScissorAllyObject.prefab"
+    },
+    {
+      "keyword": "NoirScissorShield",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_Scissors_Buff_LargeTailoringShears_Lv3.prefab"
+    },
+    {
+      "keyword": "TailoringTarget",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Arnete/Fx_Mon_Cp10_Scissors_Buff_TailoringTarget.prefab"
+    },
+    {
+      "keyword": "FinishedFabric",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_Scissors_Buff_FinishedFabric.prefab"
+    },
+    {
+      "keyword": "LargeTailoringShears",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Arnete/Fx_Mon_Cp10_Scissors_Buff_LargeTailoringShears.prefab"
+    },
+    {
+      "keyword": "DodgeThunder",
+      "address": "Assets/Prefab/Effect/RPG/Item/Cp10_2/FX_RPG_Cp10_Buff_RoseNecklace.prefab"
+    },
+    {
+      "keyword": "ThreadDye",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/FX_Mon_Cp10_DyeGuard_Buff1.prefab"
+    },
+    {
+      "keyword": "SpreadingDye",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/FX_Mon_Cp10_DyeGuard_Buff2.prefab"
+    },
+    {
+      "keyword": "StickyDye",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/FX_Mon_Cp10_DyeGuard_StickyDye.prefab"
+    },
+    {
+      "keyword": "RestrictBoss",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/FX_RPG_Mon_Cp10_FloorMaster_B3_Buff1_RestrictBoss.prefab"
+    },
+    {
+      "keyword": "RestrictDef",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/FX_RPG_Mon_Cp10_FloorMaster_B3_Buff2_RestrictDef.prefab"
+    },
+    {
+      "keyword": "RestrictMob",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/FX_RPG_Mon_Cp10_FloorMaster_B3_Buff3_RestrictMob.prefab"
+    },
+    {
+      "keyword": "RestrictTier1",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/FX_RPG_Mon_Cp10_FloorMaster_B3_Buff4_RestrictTier1.prefab"
+    },
+    {
+      "keyword": "GourmandiseAlly",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LittleBuffet_Buff_HeadGlow.prefab"
+    },
+    {
+      "keyword": "BloodyMucusAlly",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LittleBuffet_Buff_BloodyMucusAlly.prefab"
+    },
+    {
+      "keyword": "BuffetGold",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_2/Fx_Mon_Cp10_LittleBuffet_Buff_BuffetGold.prefab"
+    },
+    {
+      "keyword": "CocoonCryingMeursault",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_1/NeedleKing/Fx_Mon_Cp10_NeedleKing_Buff_CocoonCrying_Meursault.prefab"
+    },
+    {
+      "keyword": "SapsareeRageBurst",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/Fx_RPG_Mon_Cp10_SabsalPuppet_Buff_Rage_Burst.prefab"
+    },
+    {
+      "keyword": "SapsareeRecover",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/Fx_RPG_Mon_Cp10_SabsalPuppet_Buff_Recover.prefab"
+    }
+  ]
+}

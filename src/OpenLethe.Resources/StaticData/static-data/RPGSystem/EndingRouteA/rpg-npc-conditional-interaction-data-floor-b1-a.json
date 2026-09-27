@@ -1,0 +1,133 @@
+{
+  "list": [
+    {
+      "npcKey": "N201002",
+      "order": 9,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1004",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1035"
+    },
+    {
+      "npcKey": "N201002",
+      "order": 11,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1005",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1031"
+    },
+    {
+      "npcKey": "N201002",
+      "order": 13,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1006",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1030"
+    },
+    {
+      "npcKey": "N201002",
+      "order": 12,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1006, 0",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-1007",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N201002",
+      "order": 10,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-1028",
+      "interactionType": "Cutscene",
+      "interactionKey": "C-1006",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N201017",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1002",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1053",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N201017",
+      "order": 15,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1006",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1055"
+    },
+    {
+      "npcKey": "N201017",
+      "order": 20,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1006",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1054",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N201018",
+      "order": 1,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-1056",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1057"
+    },
+    {
+      "npcKey": "N201003",
+      "order": 1,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1003",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1028",
+      "skipIfComplete": true
+    },
+    {
+      "npcKey": "N201003",
+      "order": 5,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1005",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1033"
+    },
+    {
+      "npcKey": "N201003",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1005",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1012",
+      "skipIfComplete": true,
+      "interactEffect": "InteractSparkle"
+    },
+    {
+      "npcKey": "N201003",
+      "order": 12,
+      "conditionType": "Dialogue",
+      "conditionValue": "D-1017",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1089"
+    },
+    {
+      "npcKey": "N201003",
+      "order": 15,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1006",
+      "interactionType": "Shop",
+      "interactionKey": "SH108001"
+    },
+    {
+      "npcKey": "N201003",
+      "order": 20,
+      "conditionType": "Quest",
+      "conditionValue": "Q-1006",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1034",
+      "skipIfComplete": true,
+      "interactEffect": "InteractSparkle"
+    }
+  ]
+}

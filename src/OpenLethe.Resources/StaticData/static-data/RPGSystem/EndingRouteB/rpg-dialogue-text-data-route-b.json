@@ -1,0 +1,220 @@
+{
+  "list": [
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Normal2",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Normal2",
+      "index": 1,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Click",
+      "index": 2,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-173",
+      "index": 3,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Normal2",
+      "index": 4,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "index": 5
+    },
+    {
+      "dialogueKey": "D999999",
+      "index": 6
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-177",
+      "index": 7,
+      "expression": "idle_R",
+      "portraitKey": "DP_Gregor"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Tok",
+      "index": 8,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Normal2",
+      "index": 9,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-180",
+      "index": 10,
+      "expression": "idle2_R",
+      "portraitKey": "DP_YiSang"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Tick",
+      "index": 11,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-182",
+      "index": 12,
+      "expression": "sad_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Normal2",
+      "index": 13,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "index": 14
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Click",
+      "index": 15,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-186",
+      "index": 16,
+      "expression": "idle_L",
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-187",
+      "index": 17,
+      "expression": "idle_R",
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Normal2",
+      "index": 18,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-189",
+      "index": 19,
+      "expression": "idle_R",
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-190",
+      "index": 20,
+      "expression": "idle_R",
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Normal2",
+      "index": 21,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-192",
+      "index": 22,
+      "expression": "idle_L",
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "10SV-193",
+      "index": 23,
+      "expression": "angry_L",
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D999999",
+      "voice": "D_Tick",
+      "index": 24,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D999999",
+      "index": 25
+    },
+    {
+      "dialogueKey": "D999999",
+      "index": 26
+    },
+    {
+      "dialogueKey": "D999999",
+      "index": 27
+    },
+    {
+      "dialogueKey": "D-9181",
+      "index": 0,
+      "portraitKey": "DP_Lady_InBlue",
+      "voice": "S1002V-2697"
+    },
+    {
+      "dialogueKey": "D-9181",
+      "index": 1,
+      "portraitKey": "DP_Lady_InBlue",
+      "voice": "S1002V-2698"
+    },
+    {
+      "dialogueKey": "D-9182",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D-9183",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D-9184",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D-9185",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D-9186",
+      "index": 0
+    },
+    {
+      "dialogueKey": "DDS901",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "DDS901",
+      "index": 1,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "DDS901",
+      "index": 2
+    },
+    {
+      "dialogueKey": "DDS901",
+      "index": 3
+    }
+  ]
+}

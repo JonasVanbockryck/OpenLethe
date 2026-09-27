@@ -1,0 +1,329 @@
+{
+  "list": [
+    {
+      "key": "E5001",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5001"
+    },
+    {
+      "key": "E5007",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5004"
+    },
+    {
+      "key": "EL-5010S",
+      "canRepeat": false,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N105001, 0"
+    },
+    {
+      "key": "EL-5010WALK",
+      "canRepeat": true,
+      "action1": "AttachNpcSound",
+      "actionValue1": "N105001, cutsceneWalk"
+    },
+    {
+      "key": "EL-5010WALKEND",
+      "canRepeat": true,
+      "action1": "DetachNpcSound",
+      "actionValue1": "N105001, cutsceneWalk"
+    },
+    {
+      "key": "E5029",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5010"
+    },
+    {
+      "key": "E5028",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N105001, 1",
+      "action2": "SetNpcAggro",
+      "actionValue2": "N105001"
+    },
+    {
+      "key": "E5027",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5004"
+    },
+    {
+      "key": "E5002",
+      "canRepeat": false,
+      "action1": "SetNpcInvincible",
+      "actionValue1": "N105003, 1",
+      "action2": "EndSwarmMode",
+      "actionValue2": "",
+      "action3": "PlayCutscene",
+      "actionValue3": "C5010"
+    },
+    {
+      "key": "E5004",
+      "canRepeat": false,
+      "action1": "PlayEnding",
+      "actionValue1": ""
+    },
+    {
+      "key": "E5005",
+      "canRepeat": false,
+      "action1": "EndSwarmMode",
+      "actionValue1": "",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N105001, 0",
+      "action3": "PlayCutscene",
+      "actionValue3": "C5003"
+    },
+    {
+      "key": "E5006",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N105001",
+      "action2": "PlayCutscene",
+      "actionValue2": "C5002"
+    },
+    {
+      "key": "E5008",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5005"
+    },
+    {
+      "key": "E5011",
+      "canRepeat": false,
+      "action1": "CameraPeekEnd",
+      "action2": "PlayCutscene",
+      "actionValue2": "C5007"
+    },
+    {
+      "key": "E5035",
+      "canRepeat": false
+    },
+    {
+      "key": "E5009",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5006"
+    },
+    {
+      "key": "EW-5001",
+      "canRepeat": true,
+      "action1": "SetNpcInvincible",
+      "actionValue1": "N105003, 0",
+      "action2": "StartSwarmMode",
+      "actionValue2": "swarm_zone_5f_cocoon, N105003"
+    },
+    {
+      "key": "E5023",
+      "canRepeat": false,
+      "action1": "SetAnimatorParameter",
+      "actionValue1": "floor_5_gate_instant"
+    },
+    {
+      "key": "E5024",
+      "canRepeat": true,
+      "action1": "SetAnimatorParameter",
+      "actionValue1": "floor_5_gate_instant"
+    },
+    {
+      "key": "E5-PEEK-111",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "150111, 150111"
+    },
+    {
+      "key": "E5-PEEK-112",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "150112, 150112"
+    },
+    {
+      "key": "E5-PEEK-113",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "150113, 150113"
+    },
+    {
+      "key": "E5-PEEK-114",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "150114, 150114"
+    },
+    {
+      "key": "E5-PEEK-115",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "150115, 158004"
+    },
+    {
+      "key": "E5012",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5008"
+    },
+    {
+      "key": "E5013",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5009"
+    },
+    {
+      "key": "E5025",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5011"
+    },
+    {
+      "key": "E5026",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5012"
+    },
+    {
+      "key": "E5017",
+      "canRepeat": false,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N105107, 0",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N105108, 0",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N105109, 0",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N105110, 0",
+      "action5": "SetNpcAwake",
+      "actionValue5": "N105111, 0"
+    },
+    {
+      "key": "E5019",
+      "canRepeat": false
+    },
+    {
+      "key": "E5020",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5017"
+    },
+    {
+      "key": "E5021",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N105107, 1",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N105108, 1",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N105109, 1",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N105110, 1",
+      "action5": "SetNpcAwake",
+      "actionValue5": "N105111, 1"
+    },
+    {
+      "key": "E5018",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N105113, 1",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N105114, 1",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N105115, 1",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N105116, 1",
+      "action5": "SetNpcAwake",
+      "actionValue5": "N105122, 1"
+    },
+    {
+      "key": "E5030",
+      "canRepeat": false,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N105119, 1",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N105120, 1",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N105121, 1",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N105117, 1",
+      "action5": "SetNpcAwake",
+      "actionValue5": "N105118, 1"
+    },
+    {
+      "key": "E5031",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N105119, 1",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N105120, 1",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N105121, 1",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N105117, 1",
+      "action5": "SetNpcAwake",
+      "actionValue5": "N105118, 1"
+    },
+    {
+      "key": "E5032",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5013"
+    },
+    {
+      "key": "E5033",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5013"
+    },
+    {
+      "key": "E5034",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5014"
+    },
+    {
+      "key": "E5036",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5015"
+    },
+    {
+      "key": "EDS501",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS501"
+    },
+    {
+      "key": "EDS502",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS502"
+    },
+    {
+      "key": "E5037",
+      "canRepeat": false
+    },
+    {
+      "key": "E5038",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5016"
+    },
+    {
+      "key": "E5039",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C5016"
+    },
+    {
+      "key": "EBGM-5006",
+      "canRepeat": false
+    },
+    {
+      "key": "EPI-5B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990018, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990008, 1"
+    }
+  ]
+}

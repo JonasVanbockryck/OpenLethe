@@ -1,0 +1,59 @@
+{
+  "list": [
+    {
+      "triggerQuestKey": "Q1013",
+      "targetFloorList": [
+        {
+          "floor": "1",
+          "leaderId": 13,
+          "followerList": [ 9, 8 ],
+          "order": 1
+        }
+      ]
+    },
+    {
+      "triggerQuestKey": "Q1022",
+      "targetFloorList": [
+        {
+          "floor": "1",
+          "leaderId": 5,
+          "followerList": [ 13, 9, 8 ],
+          "order": 2
+        }
+      ]
+    },
+    {
+      "triggerQuestKey": "Q2008B",
+      "targetFloorList": [
+        {
+          "floor": "1",
+          "leaderId": 5,
+          "followerList": [ 13, 9, 8, 400041 ],
+          "order": 3
+        }
+      ]
+    },
+    {
+      "triggerQuestKey": "Q4023E",
+      "targetFloorList": [
+        {
+          "floor": "1",
+          "leaderId": 5,
+          "followerList": [ 13, 9, 8, 400042 ],
+          "order": 4
+        }
+      ]
+    },
+    {
+      "triggerQuestKey": "Q-3005",
+      "targetFloorList": [
+        {
+          "floor": "1",
+          "leaderId": 5,
+          "followerList": [ 13, 9, 8, 400043 ],
+          "order": 5
+        }
+      ]
+    }
+  ]
+}

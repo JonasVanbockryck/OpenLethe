@@ -1,0 +1,43 @@
+{
+  "list": [
+    {
+      "questKey": "Q2001",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N102002"
+    },
+    {
+      "questKey": "Q2002",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N102041",
+      "goalType2": "Cutscene",
+      "goalValue2": "C2003",
+      "goalHidden2": true
+    },
+    {
+      "questKey": "Q2003",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "128006"
+    },
+    {
+      "questKey": "Q2011",
+      "stepIndex": 0,
+      "goalType1": "KillEnemy",
+      "goalValue1": "N102045, 1"
+    },
+    {
+      "questKey": "Q2004",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D2016"
+    },
+    {
+      "questKey": "Q2004",
+      "stepIndex": 1,
+      "goalType1": "WinBattle",
+      "goalValue1": "11011"
+    }
+  ]
+}

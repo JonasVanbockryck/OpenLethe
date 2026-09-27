@@ -1,0 +1,78 @@
+{
+  "list": [
+    {
+      "key": "DC3111",
+      "nextDialogueKey": "D3012"
+    },
+    {
+      "key": "DC3112",
+      "nextDialogueKey": "D3015",
+      "tag": "FM_WRONG",
+      "tagScope": "Persistent",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "FM_WRONG, 3",
+      "conditionDialogueKey1": "D3017"
+    },
+    {
+      "key": "DC3113",
+      "nextDialogueKey": "D3015",
+      "tag": "FM_WRONG",
+      "tagScope": "Persistent",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "FM_WRONG, 3",
+      "conditionDialogueKey1": "D3017"
+    },
+    {
+      "key": "DC3121",
+      "nextDialogueKey": "D3013"
+    },
+    {
+      "key": "DC3122",
+      "nextDialogueKey": "D3015",
+      "tag": "FM_WRONG",
+      "tagScope": "Persistent",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "FM_WRONG, 3",
+      "conditionDialogueKey1": "D3017"
+    },
+    {
+      "key": "DC3123",
+      "nextDialogueKey": "D3015",
+      "tag": "FM_WRONG",
+      "tagScope": "Persistent",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "FM_WRONG, 3",
+      "conditionDialogueKey1": "D3017"
+    },
+    {
+      "key": "DC3131",
+      "nextDialogueKey": "D3014"
+    },
+    {
+      "key": "DC3132",
+      "nextDialogueKey": "D3015",
+      "tag": "FM_WRONG",
+      "tagScope": "Persistent",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "FM_WRONG, 3",
+      "conditionDialogueKey1": "D3017"
+    },
+    {
+      "key": "DC3133",
+      "nextDialogueKey": "D3015",
+      "tag": "FM_WRONG",
+      "tagScope": "Persistent",
+      "conditionType1": "TagCountAboveOrEqual",
+      "conditionValue1": "FM_WRONG, 3",
+      "conditionDialogueKey1": "D3017"
+    },
+    {
+      "key": "DC39161",
+      "nextDialogueKey": "D39161"
+    },
+    {
+      "key": "DC39162",
+      "nextDialogueKey": "D39162"
+    }
+  ]
+}

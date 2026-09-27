@@ -1,0 +1,450 @@
+{
+  "list": [
+    {
+      "key": "E40101",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4003"
+    },
+    {
+      "key": "E40102",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4002"
+    },
+    {
+      "key": "E40201",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11013, , N104012, 1"
+    },
+    {
+      "key": "E40203",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N104012"
+    },
+    {
+      "key": "E40205",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4007"
+    },
+    {
+      "key": "E40207",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11014, , N104011, 1"
+    },
+    {
+      "key": "E40208",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4015"
+    },
+    {
+      "key": "E40209",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4008"
+    },
+    {
+      "key": "E41900",
+      "canRepeat": false,
+      "action1": "",
+      "actionValue1": ""
+    },
+    {
+      "key": "E40310",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4011"
+    },
+    {
+      "key": "E40311",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D40310"
+    },
+    {
+      "key": "E40410",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I104002, 1"
+    },
+    {
+      "key": "E40510",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I104002, 1"
+    },
+    {
+      "key": "E40610",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990409, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990410, 1",
+      "action3": "GiveItem",
+      "actionValue3": "I990411, 1",
+      "action4": "GiveItem",
+      "actionValue4": "I990412, 1",
+      "action5": "GiveItem",
+      "actionValue5": "I990413, 1"
+    },
+    {
+      "key": "E40611",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990414, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990415, 1",
+      "action3": "GiveItem",
+      "actionValue3": "I990416, 1"
+    },
+    {
+      "key": "E40710",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990409, 1"
+    },
+    {
+      "key": "E40711",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990410, 1"
+    },
+    {
+      "key": "E40712",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990411, 1"
+    },
+    {
+      "key": "E40713",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990412, 1"
+    },
+    {
+      "key": "E40714",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990413, 1"
+    },
+    {
+      "key": "E40715",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990414, 1"
+    },
+    {
+      "key": "E40810",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4009"
+    },
+    {
+      "key": "E40811",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990415, 1",
+      "action2": "RemoveItem",
+      "actionValue2": "I990416, 1",
+      "action3": "GiveItem",
+      "actionValue3": "I104003, 1",
+      "action4": "PlayCutscene",
+      "actionValue4": "C4010"
+    },
+    {
+      "key": "E40813",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4016"
+    },
+    {
+      "key": "E40814",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4017"
+    },
+    {
+      "key": "E40815",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4018"
+    },
+    {
+      "key": "E40816",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4019"
+    },
+    {
+      "key": "E40817",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4020"
+    },
+    {
+      "key": "E41330",
+      "canRepeat": false,
+      "action1": "OpenShop",
+      "actionValue1": "SH104003"
+    },
+    {
+      "key": "E40901",
+      "canRepeat": false,
+      "action1": "",
+      "actionValue1": ""
+    },
+    {
+      "key": "E40903",
+      "canRepeat": false,
+      "action1": "",
+      "actionValue1": ""
+    },
+    {
+      "key": "E40905",
+      "canRepeat": false,
+      "action1": "",
+      "actionValue1": ""
+    },
+    {
+      "key": "E40720",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40710"
+    },
+    {
+      "key": "E40721",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40711"
+    },
+    {
+      "key": "E40722",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40712"
+    },
+    {
+      "key": "E40723",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40713"
+    },
+    {
+      "key": "E40724",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40714"
+    },
+    {
+      "key": "E40725",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40715"
+    },
+    {
+      "key": "E40730",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104002"
+    },
+    {
+      "key": "E40731",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104017"
+    },
+    {
+      "key": "E40732",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104004"
+    },
+    {
+      "key": "E40733",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104016"
+    },
+    {
+      "key": "E40734",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104023"
+    },
+    {
+      "key": "E40735",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104018"
+    },
+    {
+      "key": "E40736",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104003"
+    },
+    {
+      "key": "E40737",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104019"
+    },
+    {
+      "key": "E40799",
+      "canRepeat": true,
+      "action1": "",
+      "actionValue1": ""
+    },
+    {
+      "key": "E40996",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104020"
+    },
+    {
+      "key": "E40997",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104021"
+    },
+    {
+      "key": "E40998",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104022"
+    },
+    {
+      "key": "E40999",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N104023"
+    },
+    {
+      "key": "E40740",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40740"
+    },
+    {
+      "key": "E40741",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40741"
+    },
+    {
+      "key": "E40742",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40742"
+    },
+    {
+      "key": "E40743",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40743"
+    },
+    {
+      "key": "E40744",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40744"
+    },
+    {
+      "key": "E40750",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40750"
+    },
+    {
+      "key": "E40751",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40751"
+    },
+    {
+      "key": "E40752",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40752"
+    },
+    {
+      "key": "E40753",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40753"
+    },
+    {
+      "key": "E40754",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D40754"
+    },
+    {
+      "key": "E40412",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4012"
+    },
+    {
+      "key": "E40612",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4013"
+    },
+    {
+      "key": "E40812",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4014"
+    },
+    {
+      "key": "E41901",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D40755"
+    },
+    {
+      "key": "E41903",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D407551"
+    },
+    {
+      "key": "E40910",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4090"
+    },
+    {
+      "key": "E40911",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4090"
+    },
+    {
+      "key": "E41950",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E41902",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D40756"
+    },
+    {
+      "key": "EPI-4A",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990010, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990012, 1"
+    }
+  ]
+}

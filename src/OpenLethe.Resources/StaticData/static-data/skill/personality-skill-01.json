@@ -2725,6 +2725,9 @@
             },
             {
               "scriptName": "1010603_3"
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "coinList": [
@@ -2828,6 +2831,9 @@
                 "activeRound": 0,
                 "value": 15
               }
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "coinList": [
@@ -10498,6 +10504,1017 @@
                     "target": "Target",
                     "stack": 0,
                     "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011601,
+      "skillTier": 1,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "INDIGO",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 3,
+          "defaultValue": 5,
+          "range" : 10,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0,
+                "value" : 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack1011601",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 6,
+                    "limit" : 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "RerollOnSAViaConditionalBuffCheckAndUseResultIfAnyTargetAlive",
+                  "conditionalData": {
+                    "category": "Buff_Stack",
+                    "type": "GreaterEqual",
+                    "conditionBuffData": {
+                      "buffKeyword": "DriftingDimensionYisang",
+                      "buffOwner": "Self",
+                      "stack": 1,
+                      "turn": 0,
+                      "activeRound": 0
+                    },
+                    "resultBuffData": {
+                      "buffKeyword": "DriftingDimensionYisang",
+                      "buffOwner": "Self",
+                      "stack": 1,
+                      "turn": 0,
+                      "activeRound": 0,
+                      "limit": 1
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack1011601",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 6,
+                    "limit" : 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "RerollOnSAViaConditionalBuffCheckAndUseResultIfAnyTargetAlive",
+                  "conditionalData": {
+                    "category": "Buff_Stack",
+                    "type": "GreaterEqual",
+                    "conditionBuffData": {
+                      "buffKeyword": "DriftingDimensionYisang",
+                      "buffOwner": "Self",
+                      "stack": 1,
+                      "turn": 0,
+                      "activeRound": 0
+                    },
+                    "resultBuffData": {
+                      "buffKeyword": "DriftingDimensionYisang",
+                      "buffOwner": "Self",
+                      "stack": 1,
+                      "turn": 0,
+                      "activeRound": 0,
+                      "limit": 1
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "defaultValue": 6
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdder1011601_6_1",
+              "value" : 3
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0,
+                "value" : 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 7,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack1011601",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 6,
+                    "limit" : 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "RerollOnSAViaConditionalBuffCheckAndUseResultIfAnyTargetAlive",
+                  "conditionalData": {
+                    "category": "Buff_Stack",
+                    "type": "GreaterEqual",
+                    "conditionBuffData": {
+                      "buffKeyword": "DriftingDimensionYisang",
+                      "buffOwner": "Self",
+                      "stack": 1,
+                      "turn": 0,
+                      "activeRound": 0
+                    },
+                    "resultBuffData": {
+                      "buffKeyword": "DriftingDimensionYisang",
+                      "buffOwner": "Self",
+                      "stack": 1,
+                      "turn": 0,
+                      "activeRound": 0,
+                      "limit": 1
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011602,
+      "skillTier": 2,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "SHAMROCK",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 3,
+          "defaultValue": 4,
+          "skillMotion": "S2",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderViaOnUseBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0,
+                "value" : 2
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 6,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "DimensionRift",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveAdditionalSlashDmgByChargeStack",
+                  "value": 0.04
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderViaOnUseBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0,
+                "value" : 2
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn" : 0,
+                "activeRound": 0,
+                "value" : 1
+              }
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 6,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "DimensionRift",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveAdditionalSlashDmgByChargeStack",
+                  "value": 0.04
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderOnSTViaSumOfTwoBuffStackDivide_Burst_DimensionRift",
+              "buffData": {
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value" : 1,
+                "limit" : 3
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaOnUseBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0,
+                "value" : 2
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn" : 0,
+                "activeRound": 0,
+                "value" : 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011603,
+      "skillTier": 3,
+      "skillType": "SKILL",
+      "requireIDList": [
+        "CheckAwakenLevel3"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 3,
+          "attributeType": "VIOLET",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 4,
+          "defaultValue": 4,
+          "range" : 10,
+          "skillMotion": "S3",
+          "specialDuelIndex" : 0,
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "ChangeSkillOnBeforeTurnViaBuffCheck",
+              "value" : 1011605,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 15
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck1011603_7_15_7",
+              "value" : 2
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "DriftingDimensionYisang",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "FourDimensionYisang",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "WCorpRipSpace"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "DimensionRift",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveAdditionalSlashDmgByChargeStack",
+                  "value": 0.04
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "ChangeSkillOnBeforeTurnViaBuffCheck",
+              "value" : 1011605,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 15
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck1011603_7_15_7",
+              "value" : 2
+            },
+            {
+              "scriptName": "SkillPowerResultAdderOnSTViaSumOfTwoBuffStackDivide_Burst_DimensionRift",
+              "buffData": {
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value" : 1,
+                "limit" : 4
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "DriftingDimensionYisang",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "FourDimensionYisang",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "WCorpRipSpace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011604,
+      "skillTier": 1,
+      "skillType": "SKILL",
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "NEUTRAL",
+          "atkType": "NONE",
+          "defType": "EVADE",
+          "targetNum": 1,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 2,
+          "defaultValue": 4,
+          "skillMotion": "Default",
+          "specialDuelIndex" : 1,
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffOnBattleStart1011605_Charge",
+              "turnLimit" : 1,
+              "buffData": {
+                "buffKeyword" : "DriftingDimensionYisang",
+                "buffOwner": "Self",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0,
+                "limit" : 3,
+                "value" : 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStart1011605_Charge",
+              "turnLimit" : 1,
+              "buffData": {
+                "buffKeyword" : "FourDimensionYisang",
+                "buffOwner": "Self",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0,
+                "limit" : 3,
+                "value" : 1
+              }
+            },
+            {
+              "scriptName": "GiveChargeTurnOnBattleStart1011604",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target" : "Self",
+                "stack" : 0,
+                "turn": -1,
+                "limit" : 7,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChageTurnOnBattleStart1011604",
+              "value" : 3,
+              "buffData": {
+                "buffKeyword": "Agility",
+                "target" : "Self",
+                "stack" : -1,
+                "turn": 0,
+                "activeRound": 1,
+                "limit" : 15,
+                "value" : 10
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 10,
+              "abilityScriptList": [
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "attributeType": "VIOLET",
+          "iconID": "1011604_4",
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffOnBattleStartByDuplicateStack_Charge",
+              "turnLimit" : 1,
+              "buffData": {
+                "buffKeyword": "ChargeForceField",
+                "target": "Self",
+                "stack": -1,
+                "turn": 0,
+                "limit" : 5,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStart1011605_Charge",
+              "turnLimit" : 1,
+              "buffData": {
+                "buffKeyword" : "DriftingDimensionYisang",
+                "buffOwner": "Self",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "limit" : 3,
+                "value" : 1,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStart1011605_Charge",
+              "turnLimit" : 1,
+              "buffData": {
+                "buffKeyword" : "FourDimensionYisang",
+                "buffOwner": "Self",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "limit" : 3,
+                "value" : 1,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveChargeTurnOnBattleStart1011604",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target" : "Self",
+                "stack" : 0,
+                "turn": -1,
+                "limit" : 7,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChageTurnOnBattleStart1011604",
+              "value" : 3,
+              "buffData": {
+                "buffKeyword": "Agility",
+                "target" : "Self",
+                "stack" : -1,
+                "turn": 0,
+                "activeRound": 1,
+                "limit" : 15,
+                "value" : 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1011605,
+      "skillTier": 3,
+      "skillType": "SKILL",
+      "requireIDList": [
+        "CheckAwakenLevel3"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 3,
+          "attributeType": "VIOLET",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "targetNum": 4,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillLevelCorrection": 5,
+          "defaultValue": 5,
+          "range" : 8,
+          "arearange" : 2.5,
+          "skillMotion": "S4",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "DealRandomTargetAmongTargetsMTFirst"
+            },
+            {
+              "scriptName": "SkillPowerResultAdderOnSTViaSumOfTwoBuffStackDivide_Burst_DimensionRift",
+              "buffData": {
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value" : 1,
+                "limit" : 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "DriftingDimensionYisang",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "FourDimensionYisang",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseBuffOnUse1011605_15_1_2"
+            },
+            {
+              "scriptName": "WCorpRipSpace"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "FourDimensionYisang",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveAdditionalSlashDmgOnSuccessAttackAllTargetByRatio",
+                  "value": 0.05
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "FourDimensionYisang",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveAdditionalSlashDmgOnSuccessAttackAllTargetByRatio",
+                  "value": 0.05
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "FourDimensionYisang",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveAdditionalSlashDmgOnSuccessAttackAllTargetByRatio",
+                  "value": 0.05
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Burst",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "DimensionRift",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveAdditionalSlashDmgOnSuccessAttackAllTargetByRatio",
+                  "value": 0.05
+                },
+                {
+                  "scriptName": "RerollOnSAViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "",
+                    "buffOwner": "Self",
+                    "stack": 5,
+                    "turn": 0,
                     "activeRound": 0
                   }
                 }

@@ -1,0 +1,24 @@
+{
+    "list": [
+        {
+            "patternKey": "NA104001",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.25, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+                { "action": "Wait", "duration": 2.0 }
+            ]
+        },
+        {
+            "patternKey": "NA104007",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.25, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+                { "action": "Wait", "duration": 2.0 }
+            ]
+        }
+    ]
+}

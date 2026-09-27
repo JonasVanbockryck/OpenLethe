@@ -3,6 +3,12 @@
   "directory": "static-data/",
   "dataList": [
     {
+      "dataClass": "RPGSystem",
+      "fileList": [
+        "rpg-all-ending-data-a1c10p2"
+      ]
+    },
+    {
       "dataClass": "abnormality-event",
       "fileList": [
         "abnormality-action-choice-event",
@@ -64,6 +70,7 @@
         "assistant-Cultivation",
         "assistant-a1c9p2",
         "assistant-a1c9p3",
+        "assistant-a1c10p2",
         "assistant-twth",
         "assistant-exme"
       ]
@@ -131,7 +138,11 @@
         "abnormality-part-a1c972-bokgak",
         "abnormality-mirror7-extreme-part",
         "abnormality-part-exme",
-        "abnormality-part-bossraid-exme"
+        "abnormality-part-bossraid-exme",
+        "abnormality-refraction2-bokgak-part",
+        "abnormality-part-bossraid-leiheng",
+        "abnormality-part-a1c10p1",
+        "abnormality-part-a1c10p2"
       ]
     },
     {
@@ -198,7 +209,11 @@
         "abnormality-unit-a1c972-bokgak",
         "abnormality-mirror7-extreme-unit",
         "abnormality-unit-exme",
-        "abnormality-unit-bossraid-exme"
+        "abnormality-unit-bossraid-exme",
+        "abnormality-refraction2-bokgak-unit",
+        "abnormality-unit-bossraid-leiheng",
+        "abnormality-unit-a1c10p1",
+        "abnormality-unit-a1c10p2"
       ]
     },
     {
@@ -208,7 +223,6 @@
         "common-buff",
         "resource-buff",
         "ego-gift-buff",
-        "mirror-dungeon-floor-buff",
         "negative-nonvolatile-buff",
         "mirror-dungeon-floor-buff",
         "mirror-dungeon-4-floor-buff",
@@ -247,7 +261,6 @@
         "buff-enemy-a1c7p3",
         "buff-enemy-wp5",
         "buff-enemy-a1c971",
-        "buff-enemy-a1c9115",
         "buff-enemy-refraction5",
         "buff-floor-refraction5",
         "buff-enemy-a1c972",
@@ -285,7 +298,11 @@
         "buff-enemy-a1c972-bokgak",
         "buff-enemy-exme",
         "buff-assistant-exme",
-        "buff-enemy-bossraid-exme"
+        "buff-enemy-bossraid-exme",
+        "rail-line-2-Bokgak-content-buff",
+        "buff-enemy-a1c10p1",
+        "buff-enemy-a1c10p2",
+        "buff-assistant-a1c10p2"
       ]
     },
     {
@@ -308,7 +325,6 @@
         "panic-buff-a1c8p1",
         "panic-buff-a1c8p2",
         "panic-buff-a1c8p3",
-        "mirror-dungeon-6-infinite-floor-buff",
         "panic-buff-cultivation",
         "panic-buff-pilgrimage",
         "panic-buff-a1c9p1",
@@ -318,7 +334,9 @@
         "panic-buff-x1p1c1",
         "panic-buff-twth",
         "panic-buff-refraction6",
-        "panic-buff-exme"
+        "panic-buff-exme",
+        "panic-buff-a1c10p1",
+        "panic-buff-a1c10p2"
       ]
     },
     {
@@ -335,7 +353,7 @@
     {
       "dataClass": "part",
       "fileList": [
-        "part-a1c9p3"
+        "part-a1c10p2"
       ]
     },
     {
@@ -347,7 +365,7 @@
     {
       "dataClass": "common-data",
       "fileList": [
-        "common-data-a1c9"
+        "common-data-a1c10"
       ]
     },
     {
@@ -379,6 +397,7 @@
         "ego-gift",
         "hidden-ego-gift-storydungeon",
         "hidden-ego-gift-mirror-refraction-railway",
+        "hidden-ego-gift-rpg-system",
         "ego-gift-a1c5p1",
         "ego-gift-a1c5p2",
         "ego-gift-a1c5p3",
@@ -464,7 +483,9 @@
         "enemy-twth",
         "enemy-a1c972-bokgak",
         "enemy-mirrordungeon7-extreme",
-        "enemy-exme"
+        "enemy-exme",
+        "enemy-a1c10p1",
+        "enemy-a1c10p2"
       ]
     },
     {
@@ -480,8 +501,10 @@
         "gacha-8",
         "gacha-9",
         "gacha-10",
-        "gacha-285",
-        "gacha-286"
+        "gacha-11",
+        "gacha-295",
+        "gacha-296",
+        "gacha-297"
       ]
     },
     {
@@ -526,9 +549,15 @@
         "item-piece-growth-s7-a1c9",
         "item-200-ticket-a1c9",
         "item-700-optionalPersonality-limbus3rdAnniversary",
+        "item-700-optionalAnnouncer",
         "item-9900-skin-currency",
         "item-9000-eventConsumable-x1p1c1",
-        "item-200-ticket-egoFifth"
+        "item-200-ticket-egoFifth",
+        "item-1100-season-randompackage-a1c10",
+        "item-1200-season-optionalpackage-a1c10",
+        "item-piece-a1c10",
+        "item-piece-growth-s8-a1c10",
+        "item-100-gacha-a1c10"
       ]
     },
     {
@@ -603,7 +632,11 @@
         "passive-mirror7-extreme",
         "passive-enemy-mirror7-extreme",
         "passive-enemy-exme",
-        "passive-assistant-exme"
+        "passive-assistant-exme",
+        "passive-enemy-railway2-bokgak",
+        "passive-enemy-a1c10p1",
+        "passive-enemy-a1c10p2",
+        "passive-assistant-a1c10p2"
       ]
     },
     {
@@ -794,7 +827,14 @@
         "skill-enemy-exme",
         "skill-abnormality-exme",
         "skill-assistant-exme",
-        "skill-abnormality-bossraid-exme"
+        "skill-abnormality-bossraid-exme",
+        "abnormality-refraction2-bokgak-skill",
+        "skill-abnormality-bossraid-leiheng",
+        "skill-enemy-a1c10p1",
+        "skill-enemy-a1c10p2",
+        "skill-abnormality-a1c10p1",
+        "skill-abnormality-a1c10p2",
+        "skill-assistant-a1c10p2"
       ]
     },
     {
@@ -844,7 +884,9 @@
         "storybattle-x1p1c1",
         "storybattle-twth",
         "storybattle-night-cleanup-re",
-        "storybattle-exme"
+        "storybattle-exme",
+        "storybattle-a1c10p1",
+        "storybattle-a1c10p2"
       ]
     },
     {
@@ -928,7 +970,8 @@
       "fileList": [
         "bossraidbattle-twth",
         "bossraidbattle-5001",
-        "bossraidbattle-exme"
+        "bossraidbattle-exme",
+        "bossraidbattle-leiheng"
       ]
     },
     {
@@ -978,7 +1021,9 @@
         "stagenodereward91-24",
         "stagenodereward91-25",
         "stagenodereward91-26",
-        "stagenodereward91-27"
+        "stagenodereward91-27",
+        "stagenodereward-a1c10p1",
+        "stagenodereward-a1c10p2"
       ]
     },
     {
@@ -994,13 +1039,15 @@
         "story-a1c8p3",
         "story-a1c9p1",
         "story-a1c9p2",
-        "story-a1c9p3"
+        "story-a1c9p3",
+        "story-a1c10p1"
       ]
     },
     {
       "dataClass": "story-config",
       "fileList": [
-        "story-config-x1p1c1"
+        "story-config-x1p1c1",
+        "story-config-a1c10p2"
       ]
     },
     {
@@ -1023,7 +1070,9 @@
       "fileList": [
         "team-position",
         "team-position-a1c8p2",
-        "team-position-a1c8p3"
+        "team-position-a1c8p3",
+        "team-position-a1c10p1",
+        "team-position-a1c10p2"
       ]
     },
     {
@@ -1037,7 +1086,8 @@
         "vending-machine-91",
         "vending-machine-5-a1c7p3",
         "vending-machine-6",
-        "vending-machine-7-a1c9p1"
+        "vending-machine-7-a1c9p1",
+        "vending-machine-8"
       ]
     },
     {
@@ -1048,7 +1098,8 @@
         "chance-mirrordungeon",
         "chance-rewarddungeon",
         "chance-iap-a1c8",
-        "chance-iap-a1c9"
+        "chance-iap-a1c9",
+        "chance-iap-a1c10"
       ]
     },
     {
@@ -1065,7 +1116,8 @@
         "iap-limbuspass",
         "iap-package",
         "iap-package-a1c8",
-        "iap-package-a1c9"
+        "iap-package-a1c9",
+        "iap-package-a1c10"
       ]
     },
     {
@@ -1077,7 +1129,7 @@
     {
       "dataClass": "paidshop-ui",
       "fileList": [
-        "paidshop-ui-a1c9"
+        "paidshop-ui-a1c10"
       ]
     },
     {
@@ -1147,7 +1199,8 @@
         "battlepass-4-a1c6p3",
         "battlepass-5-a1c7p3",
         "battlepass-6-a1c8p3",
-        "battlepass-7-a1c9p3"
+        "battlepass-7-a1c9p3",
+        "battlepass-8-a1c10p2"
       ]
     },
     {
@@ -1164,7 +1217,8 @@
         "storytheater-main-a1c8p3",
         "storytheater-main-a1c9p1",
         "storytheater-main-a1c9p2",
-        "storytheater-main-a1c9p3"
+        "storytheater-main-a1c9p3",
+        "storytheater-main-a1c10p1"
       ]
     },
     {
@@ -1270,7 +1324,8 @@
         "announcer-twth",
         "announcer-nightcleanup-re",
         "announcer-exme",
-        "announcer-wp9"
+        "announcer-wp9",
+        "announcer-a1c10p1"
       ]
     },
     {
@@ -1334,16 +1389,13 @@
     {
       "dataClass": "userbannerconfiguration",
       "fileList": [
-        "userbannerconfiguration",
-        "userbannerconfiguration-a1c9p1",
-        "userbannerconfiguration-a1c9p3"
+        "userbannerconfiguration"
       ]
     },
     {
       "dataClass": "userbanner",
       "fileList": [
-        "userbanner",
-        "userbanner-a1c9p3"
+        "userbanner"
       ]
     },
     {
@@ -1355,29 +1407,25 @@
     {
       "dataClass": "userticketconfiguration",
       "fileList": [
-        "userticketconfiguration",
-        "userticketconfiguration-a1c9p3"
+        "userticketconfiguration"
       ]
     },
     {
       "dataClass": "userticket-l",
       "fileList": [
-        "userticket-l",
-        "userticket-l-a1c9p3"
+        "userticket-l"
       ]
     },
     {
       "dataClass": "userticket-r",
       "fileList": [
-        "userticket-r",
-        "userticket-r-a1c9p3"
+        "userticket-r"
       ]
     },
     {
       "dataClass": "userticket-egobg",
       "fileList": [
-        "userticket-ego-bg",
-        "userticket-ego-bg-a1c9p3"
+        "userticket-ego-bg"
       ]
     },
     {
@@ -1450,7 +1498,8 @@
         "ab-part-status-ui-position-a1c5p3",
         "ab-part-status-ui-position-tkt",
         "ab-part-status-ui-position-walpu4",
-        "refraction6-abnormality-part-status-ui-position"
+        "refraction6-abnormality-part-status-ui-position",
+        "ab-part-status-ui-position-a1c10p2"
       ]
     },
     {
@@ -1462,7 +1511,8 @@
         "season-4-a1c6",
         "season-5-a1c7",
         "season-6-a1c8",
-        "season-7-a1c9"
+        "season-7-a1c9",
+        "season-8-a1c10"
       ]
     },
     {
@@ -1545,7 +1595,8 @@
         "exp-dungeon-03-a1c6p3",
         "exp-dungeon-04-a1c7p2",
         "exp-dungeon-05-a1c8p2",
-        "exp-dungeon-06-a1c9p1"
+        "exp-dungeon-06-a1c9p1",
+        "exp-dungeon-07-a1c10p1"
       ]
     },
     {
@@ -1556,7 +1607,8 @@
         "battle-exp-dungeon-03-a1c6p3",
         "battle-exp-dungeon-04-a1c7p2",
         "battle-exp-dungeon-05-a1c8p2",
-        "battle-exp-dungeon-06-a1c9p1"
+        "battle-exp-dungeon-06-a1c9p1",
+        "battle-exp-dungeon-07-a1c10p1"
       ]
     },
     {
@@ -1568,7 +1620,8 @@
         "railway-dungeon-04-a1c7p3",
         "railway-dungeon-05",
         "railway-dungeon-1001",
-        "railway-dungeon-06"
+        "railway-dungeon-06",
+        "railway-dungeon-1002"
       ]
     },
     {
@@ -1580,7 +1633,8 @@
         "battle-railway-dungeon-04",
         "battle-railway-dungeon-05",
         "battle-railway-dungeon-01-bokgak",
-        "battle-railway-dungeon-06"
+        "battle-railway-dungeon-06",
+        "battle-railway-dungeon-02-bokgak"
       ]
     },
     {
@@ -1604,7 +1658,6 @@
     {
       "dataClass": "main-event",
       "fileList": [
-        "main-event-x1p1c1",
         "main-event",
         "permanent-main-event"
       ]
@@ -1624,7 +1677,8 @@
         "subchapter-detail-a1c7p3",
         "subchapter-detail-a1c8p3",
         "subchapter-detail-pilgrimage",
-        "subchapter-detail-a1c9p3"
+        "subchapter-detail-a1c9p3",
+        "subchapter-detail-a1c10p2"
       ]
     },
     {
@@ -1651,11 +1705,11 @@
       "fileList": [
         "main-stage-map-setting",
         "main-stage-map-setting-a1c5p1",
-        "main-stage-map-setting-a1c6p1",
         "main-stage-map-setting-a1c6p3",
         "main-stage-map-setting-a1c7p3",
         "main-stage-map-setting-a1c8p3",
-        "main-stage-map-setting-a1c9p1"
+        "main-stage-map-setting-a1c9p1",
+        "main-stage-map-setting-a1c10p1"
       ]
     },
     {
@@ -1695,7 +1749,9 @@
         "restrict-participation-a1c9124",
         "restrict-participation-twth",
         "restrict-participation-night-cleanup-re",
-        "restrict-participation-exme"
+        "restrict-participation-exme",
+        "restrict-participation-a1c10p1",
+        "restrict-participation-a1c10p2"
       ]
     },
     {
@@ -1725,22 +1781,12 @@
     {
       "dataClass": "event",
       "fileList": [
-        "x1p1c1-event",
         "returninguser-event",
         "newuser-event",
-        "Limbus3rdAnniversary-attendance-event",
-        "Limbus3rdAnniversary-onetime-event",
-        "walpu8-main-event",
-        "walpu9-main-event",
         "mirrordungeon7-mission-event",
         "mirrordungeon7-additional-reward-event",
         "mirrordungeon7-mission-purchase-event",
-        "lcbcheckup-returns-event",
-        "twining-threads-event",
-        "night-cleanup-returns-event",
-        "boss-raid-permanent-shop-event",
-        "record-memory-event",
-        "boss-raid-shop-event-03"
+        "boss-raid-permanent-shop-event"
       ]
     },
     {
@@ -1754,7 +1800,8 @@
       "fileList": [
         "boss-raid-01",
         "boss-raid-02",
-        "boss-raid-03"
+        "boss-raid-03",
+        "boss-raid-04"
       ]
     },
     {
@@ -1772,11 +1819,7 @@
     {
       "dataClass": "ego-empty",
       "fileList": [
-        "ego-empty",
-        "ego-empty-a1c6p1",
-        "ego-empty-a1c7",
-        "ego-empty-a1c8",
-        "ego-empty-a1c9p1"
+        "ego-empty-a1c10p1"
       ]
     },
     {
@@ -1808,22 +1851,19 @@
       "fileList": [
         "unlockcode-subchapter",
         "unlockcode-event-user",
-        "unlockcode-boss-raid"
+        "unlockcode-boss-raid",
+        "unlockcode-railway"
       ]
     },
     {
       "dataClass": "event-mission",
       "fileList": [
-        "event-walpu8-mission",
-        "event-walpu9-mission",
         "event-mirrordungeon7-mission"
       ]
     },
     {
       "dataClass": "mission",
       "fileList": [
-        "event-walpu8-mission",
-        "event-walpu9-mission",
         "mirrordungeon7-mission-clear",
         "mirrordungeon7-mission-collection",
         "mirrordungeon7-mission-deck",
@@ -1834,14 +1874,13 @@
         "mirrordungeon7-mission-all",
         "boss-raid-01-mission",
         "boss-raid-02-mission",
-        "boss-raid-03-mission"
+        "boss-raid-03-mission",
+        "boss-raid-04-mission"
       ]
     },
     {
       "dataClass": "mission-condition",
       "fileList": [
-        "event-walpu8-mission-condition",
-        "event-walpu9-mission-condition",
         "mirrordungeon7-mission-condition-clear",
         "mirrordungeon7-mission-condition-collection",
         "mirrordungeon7-mission-condition-deck",
@@ -1852,13 +1891,14 @@
         "mirrordungeon7-mission-condition-all",
         "boss-raid-01-mission-condition",
         "boss-raid-02-mission-condition",
-        "boss-raid-03-mission-condition"
+        "boss-raid-03-mission-condition",
+        "boss-raid-04-mission-condition"
       ]
     },
     {
       "dataClass": "season-filter",
       "fileList": [
-        "season-filter-a1c9"
+        "season-filter-a1c10"
       ]
     },
     {
@@ -1886,7 +1926,7 @@
     {
       "dataClass": "dante-ability-common-data",
       "fileList": [
-        "dante-ability-common-data-a1c9p3-railway6"
+        "dante-ability-common-data-a1c10p1"
       ]
     },
     {
@@ -1899,6 +1939,18 @@
       "dataClass": "loading-cg-exception",
       "fileList": [
         "loading-cg-exception"
+      ]
+    },
+    {
+      "dataClass": "story-loading-cg",
+      "fileList": [
+        "story-loading-cg"
+      ]
+    },
+    {
+      "dataClass": "personality-cg-thumbnail",
+      "fileList": [
+        "personality-cg-thumbnail"
       ]
     },
     {
@@ -1970,7 +2022,8 @@
       "fileList": [
         "rental-personality-list-a1c8p1",
         "rental-personality-list-a1c8p2",
-        "rental-personality-list-a1c8p3"
+        "rental-personality-list-a1c8p3",
+        "rental-personality-list-a1c10p1"
       ]
     },
     {
@@ -2044,7 +2097,9 @@
         "battle-result-hint-a1c9p2",
         "battle-result-hint-a1c9p3",
         "battle-result-hint-twth",
-        "battle-result-hint-exme"
+        "battle-result-hint-exme",
+        "battle-result-hint-a1c10p1",
+        "battle-result-hint-a1c10p2"
       ]
     },
     {
@@ -2106,7 +2161,30 @@
         "battle-effect-ego-11",
         "battle-effect-ego-12",
         "battle-effect-refraction6",
-        "battle-effect-exme"
+        "battle-effect-exme",
+        "battle-effect-bossraid",
+        "battle-effect-a1c10p1",
+        "battle-effect-a1c10p2"
+      ]
+    },
+    {
+      "dataClass": "lobby-bgm",
+      "fileList": [
+        "lobby-bgm-01",
+        "lobby-bgm-ui-category-01"
+      ]
+    },
+    {
+      "dataClass": "sync-subchapter",
+      "fileList": [
+        "sync-subchapter-a1c10p2"
+      ]
+    },
+    {
+      "dataClass": "stagenode-ending-map",
+      "fileList": [
+        "stagenode-ending-map-a1c10p1",
+        "stagenode-ending-map-a1c10p2"
       ]
     }
   ]

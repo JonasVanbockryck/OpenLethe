@@ -445,6 +445,9 @@
                 "turn": 0,
                 "activeRound": 1
               }
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "coinList": [
@@ -503,6 +506,9 @@
                 "turn": 0,
                 "activeRound": 1
               }
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "coinList": [
@@ -578,6 +584,9 @@
             },
             {
               "scriptName": "AttackHighestHpAbnormalityTarget"
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "skillMotion": "Default",
@@ -634,6 +643,9 @@
             },
             {
               "scriptName": "AttackHighestHpAbnormalityTarget"
+            },
+            {
+              "scriptName": "WCorpRipSpace"
             }
           ],
           "coinList": [
@@ -2343,6 +2355,526 @@
                 {
                   "scriptName": "GiveIndigoDmgOSAByRatioWithLimit25",
                   "value": 0.25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2061011,
+      "skillType": "EGO_AWAKEN",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 3,
+          "mpUsage": 15,
+          "skillLevelCorrection": 2,
+          "defaultValue": 10,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "",
+                "target": "Self",
+                "stack": 0,
+                "turn": 1,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChargeGiveForceFieldToRandomAllies2061011",
+              "value": 6,
+              "buffData": {
+                "buffKeyword": "ChargeForceField",
+                "buffOwner": "",
+                "target": "Custom",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 2,
+                "limit": 5
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": []
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "ParryingResultAdderOnUseByChargeStack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 0,
+                "limit": 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChargeGiveForceFieldToRandomAllies2061011",
+              "value": 8,
+              "buffData": {
+                "buffKeyword": "ChargeForceField",
+                "buffOwner": "",
+                "target": "Custom",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 2,
+                "limit": 6
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "PhotoElectricity",
+                    "buffOwner": "",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "ParryingResultAdderOnUseByChargeStack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 0,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "",
+                "target": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChargeGiveForceFieldToRandomAllies2061011",
+              "value": 10,
+              "buffData": {
+                "buffKeyword": "ChargeForceField",
+                "buffOwner": "",
+                "target": "Custom",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 2,
+                "limit": 7
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "PhotoElectricity",
+                    "buffOwner": "",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2061021,
+      "skillType": "EGO_EROSION",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "RANDOM",
+          "targetNum": 3,
+          "mpUsage": 20,
+          "skillLevelCorrection": 3,
+          "defaultValue": 22,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpToShieldedTarget",
+              "value": 0.15
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChargeGiveForceFieldToRandomAllies2061011",
+              "value": 6,
+              "buffData": {
+                "buffKeyword": "ChargeForceField",
+                "buffOwner": "",
+                "target": "Custom",
+                "stack": 7,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 2,
+                "limit": 5
+              }
+            },
+            {
+              "scriptName": "SkillPowerReducerBB6ByBrokenCoinWithLimit12"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "UseChargeTurnOnStartCoinToSkillPowerResult",
+                  "value": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpToShieldedTarget",
+              "value": 0.2
+            },
+            {
+              "scriptName": "SkillPowerResultAdderBeforeAttackByChargeStack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 0,
+                "limit": 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "",
+                "target": "Self",
+                "stack": 0,
+                "turn": 4,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChargeGiveForceFieldToRandomAllies2061011",
+              "value": 8,
+              "buffData": {
+                "buffKeyword": "ChargeForceField",
+                "buffOwner": "",
+                "target": "Custom",
+                "stack": 7,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 2,
+                "limit": 6
+              }
+            },
+            {
+              "scriptName": "SkillPowerReducerBB6ByBrokenCoinWithLimit12"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "UseChargeTurnOnStartCoinToSkillPowerResult",
+                  "value": 10
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "PhotoElectricity",
+                    "buffOwner": "",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpToShieldedTarget",
+              "value": 0.25
+            },
+            {
+              "scriptName": "SkillPowerResultAdderBeforeAttackByChargeStack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 0,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "",
+                "target": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "UseChargeGiveForceFieldToRandomAllies2061011",
+              "value": 10,
+              "buffData": {
+                "buffKeyword": "ChargeForceField",
+                "buffOwner": "",
+                "target": "Custom",
+                "stack": 7,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 2,
+                "limit": 7
+              }
+            },
+            {
+              "scriptName": "SkillPowerReducerBB6ByBrokenCoinWithLimit12"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 6,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "UseChargeTurnOnStartCoinToSkillPowerResult",
+                  "value": 10
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "PhotoElectricity",
+                    "buffOwner": "",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
                 }
               ]
             }

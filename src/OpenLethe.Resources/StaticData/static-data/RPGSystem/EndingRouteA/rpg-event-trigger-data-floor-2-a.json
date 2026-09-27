@@ -1,0 +1,254 @@
+{
+  "list": [
+    {
+      "id": 110204001,
+      "eventKey": "E110204",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128001"
+    },
+    {
+      "id": 110210001,
+      "eventKey": "E1102101",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "120201"
+    },
+    {
+      "id": 110210002,
+      "eventKey": "E1102111",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128004"
+    },
+    {
+      "id": 110210003,
+      "eventKey": "E1102112",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128005"
+    },
+    {
+      "id": 110202001,
+      "eventKey": "E2001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "120100"
+    },
+    {
+      "id": 110202002,
+      "eventKey": "E2002",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q2001"
+    },
+    {
+      "id": 110202003,
+      "eventKey": "E2003",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128003"
+    },
+    {
+      "id": 110202004,
+      "eventKey": "E2004",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128002"
+    },
+    {
+      "id": 110202005,
+      "eventKey": "E2005",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N102041",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q4016"
+    },
+    {
+      "id": 110202007,
+      "eventKey": "E2007",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q2004, 0"
+    },
+    {
+      "id": 110202008,
+      "eventKey": "E90001",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2006"
+    },
+    {
+      "id": 110202009,
+      "eventKey": "E2008",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2005"
+    },
+    {
+      "id": 110202010,
+      "eventKey": "E2009",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11011"
+    },
+    {
+      "id": 110301001,
+      "eventKey": "E2010",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128011"
+    },
+    {
+      "id": 110302001,
+      "eventKey": "E2011",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128012"
+    },
+    {
+      "id": 110302002,
+      "eventKey": "E2018",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128012"
+    },
+    {
+      "id": 110303001,
+      "eventKey": "E2012",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128013"
+    },
+    {
+      "id": 110304001,
+      "eventKey": "E2013",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128014"
+    },
+    {
+      "id": 110305001,
+      "eventKey": "E2014",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128015"
+    },
+    {
+      "id": 110306001,
+      "eventKey": "E2015",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128016"
+    },
+    {
+      "id": 110307001,
+      "eventKey": "E2016",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128017"
+    },
+    {
+      "id": 110308001,
+      "eventKey": "E2017",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128018"
+    },
+    {
+      "id": 110202020,
+      "eventKey": "E2020",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128019",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q2011"
+    },
+    {
+      "id": 110202040,
+      "eventKey": "E2025",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128019",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E2020"
+    },
+    {
+      "id": 110202041,
+      "eventKey": "E2026",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2022",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2011"
+    },
+    {
+      "id": 110202023,
+      "eventKey": "E2024",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20111"
+    },
+    {
+      "id": 110202022,
+      "eventKey": "E2023",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128007",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2011"
+    },
+    {
+      "id": 110202019,
+      "eventKey": "E2019",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1002A",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2016A",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4015"
+    },
+    {
+      "id": 110202021,
+      "eventKey": "E2027",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1002A"
+    },
+    {
+      "id": 110202042,
+      "eventKey": "ED2001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N102047"
+    },
+    {
+      "id": 110202043,
+      "eventKey": "ED2002",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N102002"
+    },
+    {
+      "id": 110202044,
+      "eventKey": "ED2003",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N102023"
+    },
+    {
+      "id": 110202045,
+      "eventKey": "ED2003",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N102024"
+    },
+    {
+      "id": 110202046,
+      "eventKey": "ED2002",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N102045"
+    },
+    {
+      "id": 110202047,
+      "eventKey": "E2028",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2004"
+    },
+    {
+      "id": 110202056,
+      "eventKey": "ER2007",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2016",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E2007",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E2008"
+    },
+    {
+      "id": 810201001,
+      "eventKey": "EPI-2A",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

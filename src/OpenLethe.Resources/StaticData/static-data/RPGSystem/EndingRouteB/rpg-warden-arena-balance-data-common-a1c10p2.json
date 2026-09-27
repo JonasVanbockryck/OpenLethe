@@ -1,0 +1,92 @@
+{
+  "list": [
+    {
+      "key": "B",
+      "routes": [
+        "B",
+        "T"
+      ],
+      "floorKeys": [
+        "F9990B",
+        "F9990T"
+      ],
+      "unlockRoutes": [
+        "B",
+        "T"
+      ],
+      "phase1FirstHideNarrationKey": "NAR_WARDEN_FIRST_HIDE",
+      "phaseThresholds": [
+        {
+          "hpPercent": 80,
+          "phase": 1
+        }
+      ],
+      "routeSpecs": [
+        {
+          "routes": [
+            "B"
+          ],
+          "phase1BranchKey": "Phase1Lethal",
+          "candleMarkEnabled": false,
+          "bossHpBarAlwaysMasked": true
+        }
+      ],
+      "playerEnterTile": {
+        "x": 17,
+        "y": 4
+      },
+      "bossSpawnTile": {
+        "x": 17,
+        "y": 18
+      },
+      "bossNpcKey": "N999997",
+      "unlockCutsceneKey": "",
+      "unlockItemKeys": [
+        "I990004"
+      ],
+      "groggySeconds": [
+        4.0,
+        6.0
+      ],
+      "volumeProfileAddress": "RPGSystem/Volume/WardenVolume_Backup.asset",
+      "bgmAudioId": "bgm_wardenArena",
+      "introProduceAddress": "",
+      "introDelaySeconds": 0,
+      "cameraZoomOutScale": 0,
+      "cameraZoomSeconds": 0,
+      "hitEnterSlowFloor": 0.15,
+      "hitEnterSlowRampDownSeconds": 0.03,
+      "hitEnterSlowHoldSeconds": 0.3,
+      "hitEnterSlowRampUpSeconds": 0.25,
+      "hitEnterZoomOutScale": 1.12,
+      "hitEnterZoomOutSeconds": 0.14,
+      "hitEnterZoomTargetScale": 0.55,
+      "hitEnterZoomInSeconds": 0.75,
+      "hitEnterFadeOutSeconds": 0.22,
+      "wardenBossCandleBossNpcKey": "N999997",
+      "wardenBossCandleNormalNpcKey": "N999996",
+      "wardenBossCandleExplodeEffectKey": "JustGuardBurst",
+      "wardenBossCandleExplodeShakeStrength": 0.5,
+      "wardenBossCandleExplodeShakeSeconds": 0.35,
+      "wardenBossCandleExplodeFlashAlpha": 0.55,
+      "wardenBossCandleExplodeFlashSeconds": 0.25,
+      "wardenBossCandleFirstDelaySeconds": 5.0,
+      "wardenBossCandleIntervalSeconds": 5.0,
+      "wardenBossCandleInitialCount": 1,
+      "wardenBossCandleCountStepPerWave": 1,
+      "wardenBossCandleCountLogScale": 3.5,
+      "wardenBossCandleMaxCountPerWave": 0,
+      "wardenBossCandleMaxAliveOnField": 0,
+      "wardenBossCandleTelegraphSeconds": 0,
+      "wardenBossCandleStaggerSeconds": 0.5,
+      "wardenBossCandleRadiusTiles": 12,
+      "wardenBossCandleRingMinTiles": 3,
+      "wardenBossCandleRingMaxTiles": 8,
+      "wardenBossCandleForwardWeight": 1.5,
+      "wardenBossCandleRingWeight": 1.0,
+      "wardenBossCandleChokeWeight": 5.0,
+      "wardenBossCandleKeepEscapeTiles": 0,
+      "wardenBossCandleBlockFirstCount": 1
+    }
+  ]
+}

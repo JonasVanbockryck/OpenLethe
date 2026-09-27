@@ -1,0 +1,151 @@
+{
+  "floorList": [
+    {
+      "key": "F1001A",
+      "floor": "1",
+      "endingRoute": "A",
+      "floorEntrancePosX": 68,
+      "floorEntrancePosY": 39,
+      "floorEntranceDirection": "Up",
+      "leaderId": 13,
+      "partyMemberIds": [],
+      "unrecruitedPlayerIds": [
+        5
+      ],
+      "floorStaticData": "EndingRouteA/rpg-system-static-data-info-floor-1-a.json",
+      "floorPrefab": "EndingRouteA/RpgFloor1_A",
+      "floorMoveRequiredQuestKey": "Q1012",
+      "uiSort": 1
+    },
+    {
+      "key": "F1002A",
+      "floor": "2",
+      "endingRoute": "A",
+      "floorEntrancePosX": 65,
+      "floorEntrancePosY": 50,
+      "floorEntranceBranches": [
+        {
+          "questKey": "Q-2016A",
+          "questState": "Completed",
+          "posX": 10,
+          "posY": 50
+        }
+      ],
+      "leaderId": 5,
+      "partyMemberIds": [
+        13,
+        2,
+        7
+      ],
+      "floorStaticData": "EndingRouteA/rpg-system-static-data-info-floor-2-a.json",
+      "floorPrefab": "EndingRouteA/RpgFloor2_A",
+      "floorMoveRequiredQuestKey": "Q2001",
+      "uiSort": 2
+    },
+    {
+      "key": "F1003A",
+      "floor": "3",
+      "endingRoute": "A",
+      "floorEntrancePosX": 53,
+      "floorEntrancePosY": 57,
+      "floorEntranceDirection": "Up",
+      "leaderId": 5,
+      "partyMemberIds": [
+        13,
+        11,
+        10
+      ],
+      "floorStaticData": "EndingRouteA/rpg-system-static-data-info-floor-3-a.json",
+      "floorPrefab": "EndingRouteA/RpgFloor3_A",
+      "floorMoveRequiredQuestKey": "Q3001",
+      "uiSort": 3
+    },
+    {
+      "key": "F1004A",
+      "floor": "4",
+      "endingRoute": "A",
+      "floorEntrancePosX": 55,
+      "floorEntrancePosY": -63,
+      "floorEntranceDirection": "Up",
+      "leaderId": 5,
+      "partyMemberIds": [
+        13,
+        3,
+        6
+      ],
+      "floorStaticData": "EndingRouteA/rpg-system-static-data-info-floor-4-a.json",
+      "floorPrefab": "EndingRouteA/RpgFloor4_A",
+      "floorMoveRequiredQuestKey": "Q4001",
+      "uiSort": 4
+    },
+    {
+      "key": "FB1001A",
+      "floor": "B1",
+      "endingRoute": "A",
+      "floorEntrancePosX": -15,
+      "floorEntrancePosY": -14,
+      "floorEntranceDirection": "Left",
+      "leaderId": 5,
+      "partyMemberIds": [
+        13,
+        2,
+        12
+      ],
+      "floorStaticData": "EndingRouteA/rpg-system-static-data-info-floor-b1-a.json",
+      "floorPrefab": "EndingRouteA/RpgFloorB1_A",
+      "floorMoveRequiredQuestKey": "Q4009",
+      "uiSort": -1
+    },
+    {
+      "key": "FB1002A",
+      "floor": "B2",
+      "endingRoute": "A",
+      "floorEntrancePosX": 5,
+      "floorEntrancePosY": 34,
+      "floorEntranceDirection": "Up",
+      "leaderId": 5,
+      "partyMemberIds": [
+        13,
+        11,
+        4
+      ],
+      "floorStaticData": "EndingRouteA/rpg-system-static-data-info-floor-b2-a.json",
+      "floorPrefab": "EndingRouteA/RpgFloorB2_A",
+      "floorMoveRequiredQuestKey": "Q-1009",
+      "uiSort": -2
+    },
+    {
+      "key": "F9990A",
+      "floor": "9990",
+      "endingRoute": "A",
+      "playerInitPosX": 17,
+      "playerInitPosY": 4,
+      "leaderId": 5,
+      "partyMemberIds": [],
+      "excludeFromSave": true,
+      "spawnWorldOffsetX": -500,
+      "spawnWorldOffsetY": -500,
+      "floorPrefab": "RpgWardenBossArenaFloor"
+    },
+    {
+      "key": "F8000A",
+      "floor": "8000",
+      "endingRoute": "A",
+      "playerInitPosX": 26,
+      "playerInitPosY": 2,
+      "leaderId": 13,
+      "partyMemberIds": [],
+      "excludeFromSave": true,
+      "suppressStaticNpcSpawn": true,
+      "floorStaticData": "TheaterA/rpg-system-static-data-info-floor-theater-a.json",
+      "floorPrefab": "Theater/RpgFloorTheater_A"
+    }
+  ],
+  "endingRouteList": [
+    {
+      "endingRoute": "A",
+      "endingRouteStaticData": "EndingRouteA/rpg-system-static-data-info-route-a.json",
+      "menuStatusTabQuestCompleted": "Q1022"
+    }
+  ]
+}

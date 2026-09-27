@@ -1,0 +1,160 @@
+{
+    "list": [
+        {
+            "key": "THB_G001",
+            "type": "TheaterFloorEntry",
+            "x": 14,
+            "y": 8,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G002",
+            "type": "TheaterFloorEntry",
+            "x": 16,
+            "y": 9,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G003",
+            "type": "TheaterFloorEntry",
+            "x": 17,
+            "y": 12,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G004",
+            "type": "TheaterFloorEntry",
+            "x": 19,
+            "y": 9,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G005",
+            "type": "TheaterFloorEntry",
+            "x": 21,
+            "y": 12,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G006",
+            "type": "TheaterFloorEntry",
+            "x": 23,
+            "y": 13,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G007",
+            "type": "TheaterFloorEntry",
+            "x": 25,
+            "y": 14,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G008",
+            "type": "TheaterFloorEntry",
+            "x": 27,
+            "y": 9,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G009",
+            "type": "TheaterFloorEntry",
+            "x": 29,
+            "y": 6,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G010",
+            "type": "TheaterFloorEntry",
+            "x": 32,
+            "y": 8,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G011",
+            "type": "TheaterFloorEntry",
+            "x": 35,
+            "y": 13,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G012",
+            "type": "TheaterFloorEntry",
+            "x": 39,
+            "y": 4,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THB_G013",
+            "type": "TheaterFloorEntry",
+            "x": 41,
+            "y": 14,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        }
+    ]
+}

@@ -1,0 +1,185 @@
+{
+  "list": [
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11027,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11027_1",
+                "battleTip_11027_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11028,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11028_1",
+                "battleTip_11028_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11030,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11030_1",
+                "battleTip_11030_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11031,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11031_1",
+                "battleTip_11031_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11032,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11032_1",
+                "battleTip_11032_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11033,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11033_1",
+                "battleTip_11033_2",
+                "battleTip_11033_3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11034,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11034_1",
+                "battleTip_11034_2",
+                "battleTip_11034_3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11038,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11038_1",
+                "battleTip_11038_2",
+                "battleTip_11038_3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11040,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11040_1",
+                "battleTip_11040_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11054,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11008_1",
+                "battleTip_11008_2",
+                "battleTip_11008_3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11055,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11008_1",
+                "battleTip_11008_2",
+                "battleTip_11008_3"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

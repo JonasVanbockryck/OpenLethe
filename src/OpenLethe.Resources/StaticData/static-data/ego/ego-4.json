@@ -311,6 +311,7 @@
       "characterId": 4,
       "egoType": "ZAYIN",
       "season": 2,
+      "maxEgoSyncLevel": 5,
       "additionalAttachment": "EVENT",
       "attributeResistList": [
         {
@@ -379,7 +380,8 @@
         }
       ],
       "awakeningPassiveList": [
-        2040511
+        2040511,
+        2040512
       ],
       "awakeningSkillId": 2040511,
       "corrosionSkillId": 2040521

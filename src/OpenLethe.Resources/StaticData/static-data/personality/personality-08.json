@@ -1576,6 +1576,125 @@
           "number": 0
         }
       ]
+    },
+    {
+      "id": 10816,
+      "updatedDate": 20260917,
+      "appearance": "10816_Ishmael_LeRouge_HighdomesticAppearance",
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "associationList": [
+        "LE_ROUGE",
+        "SISYPHE"
+      ],
+      "skillKeywordList": [ "Laceration", "Charge" ],
+      "characterId": 8,
+      "panicType": 9999,
+      "unitScriptID": "10816",
+      "season": 8,
+      "rank": 3,
+      "hp": {
+        "defaultStat": 85,
+        "incrementByLevel": 2.28
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        2,
+        2,
+        4,
+        4
+      ],
+      "maxSpeedList": [
+        5,
+        5,
+        6,
+        6
+      ],
+      "defenseSkillIDList": [
+        1081604,
+        1081605
+      ],
+      "panicSkillOnErosion": 1000104,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "ChargeRougeAlly",
+              "stack": 1,
+              "turn": 0
+            }
+          ]
+        }
+      ],
+      "uniqueAttribute": "CRIMSON",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          50
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 0.5
+          },
+          {
+            "type": "HIT",
+            "value": 2
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 1081601,
+          "number": 3
+        },
+        {
+          "skillId": 1081602,
+          "number": 2
+        },
+        {
+          "skillId": 1081603,
+          "number": 1
+        }
+      ]
     }
   ]
 }

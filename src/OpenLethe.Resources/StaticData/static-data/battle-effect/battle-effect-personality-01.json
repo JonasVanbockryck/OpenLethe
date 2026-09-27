@@ -1,4 +1,12 @@
 {
   "list": [
+    {
+      "keyword": "DriftingDimensionYisang",
+      "address": "Assets/Prefab/Effect/PC/4_YiSang/LostPassenger/DriftingDimensionYisangEffect.prefab"
+    },
+    {
+      "keyword": "FourDimensionYisang",
+      "address": "Assets/Prefab/Effect/PC/4_YiSang/LostPassenger/FourDimensionYisangEffect.prefab"
+    }
   ]
 }

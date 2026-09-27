@@ -1,0 +1,53 @@
+{
+  "list": [
+    {
+      "projectileKey": "Projectile_PillarBossS",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": true,
+      "hitSizeTiles": 1
+    },
+    {
+      "projectileKey": "Projectile_PillarBossL",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": true,
+      "hitSizeTiles": 3
+    },
+    {
+      "projectileKey": "Projectile_PillarBossL_Blue",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": true,
+      "hitSizeTiles": 3
+    },
+    {
+      "projectileKey": "Projectile_B3FloorMaster",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": false,
+      "hitSizeTiles": 1
+    },
+    {
+      "projectileKey": "Projectile_PillarS",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": false,
+      "hitSizeTiles": 1
+    },
+    {
+      "projectileKey": "Projectile_PillarL",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": false,
+      "hitSizeTiles": 3
+    },
+    {
+      "projectileKey": "Projectile_PillarL_Blue",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": false,
+      "hitSizeTiles": 3
+    }
+  ]
+}

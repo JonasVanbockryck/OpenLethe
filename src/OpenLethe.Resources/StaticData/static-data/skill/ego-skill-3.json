@@ -700,6 +700,68 @@
         {
           "gaksungLevel": 4,
           "targetNum": 3
+        },
+        {
+          "gaksungLevel": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderDivideBySumOfTwoBuffStack_Combustion_Laceration",
+              "buffData": {
+                "buffKeyword": "Combustion",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2030411_ScarletResultUp",
+              "value": 0,
+              "buffData": {
+                "target": "Custom",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1,
+                "value": 6,
+                "limit": 5
+              }
+            },
+            {
+              "scriptName": "DmgMulBySinStock2030411_120",
+              "value": 0.06
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -794,6 +856,80 @@
         {
           "gaksungLevel": 4,
           "targetNum": 3
+        },
+        {
+          "gaksungLevel": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackHighestHpAbnormalityTarget"
+            },
+            {
+              "scriptName": "SkillPowerResultAdderDivideBySumOfTwoBuffStack_Combustion_Laceration",
+              "buffData": {
+                "buffKeyword": "Combustion",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2030421_ScarletResultUp_ScarletDamageUp",
+              "value": 0,
+              "buffData": {
+                "target": "Custom",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1,
+                "value": 6,
+                "limit": 5
+              }
+            },
+            {
+              "scriptName": "DmgMulByScarletStock20304_100",
+              "value": 0.05
+            },
+            {
+              "scriptName": "DmgMulByUseScarlet20304_2_8",
+              "value": 0.2
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2873,6 +3009,265 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2031011,
+      "skillType": "EGO_AWAKEN",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 3,
+          "mpUsage": 20,
+          "skillLevelCorrection": 2,
+          "defaultValue": 12,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "Default",
+          "isManyCoinSkill" : true,
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "HealOnEndAttackAfterWinDuel2031011_2_2_3_5",
+              "value": 0.02
+            },
+            {
+              "scriptName": "ShieldOnLoseDuel20310_5_20"
+            },
+            {
+              "scriptName": "DmgUpToMTOnLoseDuel20310",
+              "value": 1
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 12,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSAAfterWinduel2031011",
+                  "buffData": {
+                    "buffKeyword": "ResultReduction",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1,
+                    "limit": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "HealOnEndAttackAfterWinDuel2031011_2_2_4_5",
+              "value": 0.04
+            },
+            {
+              "scriptName": "ShieldOnLoseDuel20310_5_25"
+            },
+            {
+              "scriptName": "DmgUpToMTOnLoseDuel20310",
+              "value": 1.5
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "HealOnEndAttackAfterWinDuel2031011_2_2_4_5",
+              "value": 0.06
+            },
+            {
+              "scriptName": "ShieldOnLoseDuel20310_5_30"
+            },
+            {
+              "scriptName": "DmgUpToMTOnLoseDuel20310",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2031021,
+      "skillType": "EGO_EROSION",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillTargetType": "RANDOM",
+          "targetNum": 3,
+          "mpUsage": 20,
+          "skillLevelCorrection": 3,
+          "defaultValue": 4,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderDivideByResonance_VIOLET_2_1",
+              "value": 1
+            },
+            {
+              "scriptName": "DmgUpToMTOnWinDuel20310",
+              "value": 0.6
+            },
+            {
+              "scriptName": "ShieldOnLoseDuel20310_5_20"
+            },
+            {
+              "scriptName": "BuffAdder20310",
+              "buffData": {
+                "buffKeyword": "ResultReduction",
+                "stack": 1,
+                "turn": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSA2031021",
+                  "buffData": {
+                    "buffKeyword": "ResultReduction",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1,
+                    "limit": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 6,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderDivideByResonance_VIOLET_2_2",
+              "value": 1
+            },
+            {
+              "scriptName": "DmgUpToMTOnWinDuel20310",
+              "value": 0.8
+            },
+            {
+              "scriptName": "ShieldOnLoseDuel20310_5_25"
+            },
+            {
+              "scriptName": "BuffAdder20310",
+              "buffData": {
+                "buffKeyword": "ResultReduction",
+                "stack": 1,
+                "turn": 0
+              }
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderDivideByResonance_VIOLET_2_3",
+              "value": 1
+            },
+            {
+              "scriptName": "DmgUpToMTOnWinDuel20310",
+              "value": 1
+            },
+            {
+              "scriptName": "ShieldOnLoseDuel20310_5_30"
+            },
+            {
+              "scriptName": "BuffAdder20310",
+              "buffData": {
+                "buffKeyword": "ResultReduction",
+                "stack": 1,
+                "turn": 0
+              }
             }
           ]
         }

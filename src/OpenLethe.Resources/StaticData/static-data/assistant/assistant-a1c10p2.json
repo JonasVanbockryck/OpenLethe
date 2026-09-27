@@ -1,0 +1,247 @@
+{
+  "list": [
+    {
+      "id": 400041,
+      "nameID": 400041,
+      "appearance": "400041_LittleBuffeAppearance",
+      "unitKeywordList": [
+        "SISYPHE",
+        "SMALL"
+      ],
+      "associationList": [
+        "LE_ROUGE"
+      ],
+      "level": 50,
+      "specialDuelRank": 3,
+      "showAtkLevel": true,
+      "showDefLevel": true,
+      "useUnlock": true,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 42,
+        "incrementByLevel": 2.06
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        3
+      ],
+      "maxSpeedList": [
+        6
+      ],
+      "unitScriptID": "400041",
+      "patternID": "400041",
+      "breakSection": {
+        "sectionList": [
+          50
+        ]
+      },
+      "mp": 0,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1109,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnOneSideAttackEnd8"
+              },
+              {
+                "conditionID": "OnKillEnemyMp10"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnLoseDuelAsParryingCountMultiply5AndPlus10Percent"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 1
+          },
+          {
+            "type": "SCARLET",
+            "value": 1
+          },
+          {
+            "type": "AMBER",
+            "value": 1
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1
+          },
+          {
+            "type": "AZURE",
+            "value": 1
+          },
+          {
+            "type": "INDIGO",
+            "value": 1
+          },
+          {
+            "type": "VIOLET",
+            "value": 1
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        1
+      ],
+      "maxActionSlotNum": 2,
+      "attributeList": [
+        {
+          "skillId": 40004101,
+          "number": 1
+        },
+        {
+          "skillId": 40004102,
+          "number": 1
+        },
+        {
+          "skillId": 40004103,
+          "number": 1
+        },
+        {
+          "skillId": 40004104,
+          "number": 0
+        },
+        {
+          "skillId": 40004105,
+          "number": 0
+        },
+        {
+          "skillId": 40004106,
+          "number": 0
+        },
+        {
+          "skillId": 40004107,
+          "number": 0
+        }
+      ],
+      "defenseSkillIDList": [
+      ],
+      "patternList": [],
+      "passiveSet": {
+        "passiveIdList": [
+          40004108,
+          40004101,
+          40004102,
+          40004103,
+          40004104,
+          40004105,
+          40004106,
+          40004107
+        ]
+      }
+    },
+    {
+      "id": 400042,
+      "nameID": 400042,
+      "appearance": "400042_Buffe_CocoonAppearance",
+      "unitKeywordList": [
+        "LARGE"
+      ],
+      "associationList": [
+        "SISYPHE",
+        "LE_ROUGE"
+      ],
+      "level": 1,
+      "showAtkLevel": true,
+      "showDefLevel": true,
+      "useUnlock": true,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 148,
+        "incrementByLevel": 5.1
+      },
+      "defCorrection": 5,
+      "minSpeedList": [
+        3
+      ],
+      "maxSpeedList": [
+        6
+      ],
+      "patternID": "400042",
+      "mp": 0,
+      "startActionSlotNumList": [
+        1
+      ],
+      "maxActionSlotNum": 1,
+      "attributeList": [
+        {
+          "skillId": 40004201,
+          "number": 0
+        },
+        {
+          "skillId": 40004202,
+          "number": 0
+        }
+      ],
+      "patternList": [
+        {
+          "slotList": [
+            {
+              "skillParentList": [
+                {
+                  "skillChildList": [
+                    {
+                      "skillID": -1,
+                      "chance": 1
+                    }
+                  ],
+                  "chance": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          40004201,
+          40004202,
+          40004203,
+          40004204
+        ]
+      }
+    }
+  ]
+}

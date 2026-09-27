@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "key": "DC2001",
+      "nextDialogueKey": "D2016",
+      "iconKey": "Warning"
+    },
+    {
+      "key": "DC2002",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    }
+  ]
+}

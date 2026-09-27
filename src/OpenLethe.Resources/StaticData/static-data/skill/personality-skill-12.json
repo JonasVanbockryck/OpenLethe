@@ -12037,7 +12037,7 @@
               }
             },
             {
-              "scriptName": "SkillGlitterFxByBuff",
+              "scriptName": "CommonSkillSlotEffect",
               "buffData": {
                 "buffKeyword": "StigmaWorkshopHandStep1",
                 "buffOwner": "Self",
@@ -12107,7 +12107,7 @@
               }
             },
             {
-              "scriptName": "SkillGlitterFxByBuff",
+              "scriptName": "CommonSkillSlotEffect",
               "buffData": {
                 "buffKeyword": "StigmaWorkshopHandStep1",
                 "buffOwner": "Self",

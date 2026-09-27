@@ -42,6 +42,10 @@
       "priority": 3
     },
     {
+      "id": "AttendanceCheckS7",
+      "priority": 5
+    },
+    {
       "id": "LimbusAnnivAttendanceOneTime",
       "priority": 10
     },

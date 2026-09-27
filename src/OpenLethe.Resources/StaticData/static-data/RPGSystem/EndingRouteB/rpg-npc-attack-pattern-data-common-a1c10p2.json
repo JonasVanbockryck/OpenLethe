@@ -1,0 +1,335 @@
+{
+    "list": [
+        {
+            "patternKey": "NA999997",
+            "triggerRange": 2,
+            "cooldown": 1.2,
+            "canStartWhileMoving": true,
+            "sequenceEndAtNextStart": true,
+            "branches": [
+                {
+                    "branchKey": "Slam",
+                    "entryType": "Trigger",
+                    "branchConditions": [
+                        {
+                            "conditionType": "SequenceEnd",
+                            "targetWithinTiles": 2,
+                            "nextBranchKey": "Swing"
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "action": "FacePlayer",
+                            "debugLabel": "① 조준(전방 스텐실 = facing 의존)"
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 0.4,
+                            "motion": "Slam",
+                            "debugLabel": "① 팔 들기(0~24f)"
+                        },
+                        {
+                            "action": "ShowAttackRange",
+                            "duration": 1,
+                            "debugLabel": "① 내려찍기 예고(24~81f)"
+                        },
+                        {
+                            "action": "MeleeHit",
+                            "hpDamage": 50,
+                            "mpDamage": 0,
+                            "continueMotion": true,
+                            "splashHitsNpcs": true,
+                            "playerStaggerSeconds": 0.5,
+                            "debugLabel": "① 내려찍기",
+                            "cameraShakeStrength": 0.25,
+                            "cameraShakeDuration": 0.25,
+                            "cameraShakeAxis": "Free",
+                            "cameraShakeFrequencyHz": 120,
+                            "hitShape": [
+                                ".X.",
+                                "XXX",
+                                "XXX",
+                                "XXX",
+                                "XXX",
+                                "XOX"
+                            ]
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 0.5,
+                            "debugLabel": "① 후딜"
+                        }
+                    ]
+                },
+                {
+                    "branchKey": "Swing",
+                    "entryType": "Trigger",
+                    "branchConditions": [
+                        {
+                            "conditionType": "SequenceEnd",
+                            "targetWithinTiles": 2,
+                            "nextBranchKey": "Weapon"
+                        },
+                        {
+                            "conditionType": "SequenceEnd",
+                            "nextBranchKey": "Slam"
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "action": "FacePlayer",
+                            "debugLabel": "② 조준(전방 스텐실 = facing 의존)"
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 0.6667,
+                            "motion": "Attack",
+                            "debugLabel": "② 치켜들기(Attack 전반 클립 0~40f, 0.3배속)"
+                        },
+                        {
+                            "action": "ShowAttackRange",
+                            "duration": 0.7,
+                            "debugLabel": "② 휘두르기 예고(Attack 갭 구간 — 마커 1.333s)"
+                        },
+                        {
+                            "action": "MeleeHit",
+                            "hpDamage": 70,
+                            "mpDamage": 0,
+                            "continueMotion": true,
+                            "splashHitsNpcs": true,
+                            "parryImmune": true,
+                            "knockbackTiles": 4,
+                            "playerStaggerSeconds": 1.0,
+                            "guardedKnockbackTiles": 3,
+                            "guardedPlayerStaggerSeconds": 0.5,
+                            "wallImpactStaggerScale": 2.0,
+                            "debugLabel": "② 휘두르기",
+                            "cameraShakeStrength": 0,
+                            "cameraShakeDuration": 0,
+                            "cameraShakeAxis": "Free",
+                            "cameraShakeFrequencyHz": 120,
+                            "hitShape": [
+                                "..XXX..",
+                                ".XXXXX.",
+                                ".XXXXX.",
+                                "XXXXXXX",
+                                "XXXOXXX"
+                            ]
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 0.5,
+                            "debugLabel": "② 후딜"
+                        }
+                    ]
+                },
+                {
+                    "branchKey": "Fog",
+                    "entryType": "Trigger",
+                    "branchConditions": [
+                        {
+                            "conditionType": "SequenceEnd",
+                            "nextBranchKey": "Weapon"
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "action": "FacePlayerHorizontal",
+                            "debugLabel": "③ 플레이어 방향 보기"
+                        },
+                        {
+                            "action": "BeginHide",
+                            "motion": "Hide",
+                            "motionSpeedScale": 0.4,
+                            "debugLabel": "③ 안개화"
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 1.0,
+                            "debugLabel": "③ 안개 유지"
+                        },
+                        {
+                            "action": "WarpFarFromPlayer",
+                            "warpMinTilesFromPlayer": 8,
+                            "warpMaxTilesFromPlayer": 14,
+                            "debugLabel": "③ 원거리 워프"
+                        },
+                        {
+                            "action": "FacePlayerHorizontal",
+                            "debugLabel": "③ 플레이어 방향 보기"
+                        },
+                        {
+                            "action": "EndHide",
+                            "duration": 0.8,
+                            "debugLabel": "③ 재등장"
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 0.2,
+                            "debugLabel": "③ 후딜"
+                        }
+                    ]
+                },
+                {
+                    "branchKey": "Weapon",
+                    "entryType": "Trigger",
+                    "branchConditions": [
+                        {
+                            "conditionType": "SequenceEnd",
+                            "nextBranchKey": "Slam"
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "action": "FacePlayerHorizontal",
+                            "debugLabel": "④ 좌우 조준"
+                        },
+                        {
+                            "action": "BeginHide",
+                            "motion": "Hide",
+                            "motionSpeedScale": 1.5,
+                            "debugLabel": "④ 퇴장(안개화)"
+                        },
+                        {
+                            "action": "WarpNearPlayer",
+                            "warpDistanceFromPlayer": 1,
+                            "warpAnchor": "PlayerFacing",
+                            "debugLabel": "④ 착탄점으로"
+                        },
+                        {
+                            "action": "FacePlayerHorizontal",
+                            "debugLabel": "④ 재조준"
+                        },
+                        {
+                            "action": "ShowAttackRange",
+                            "duration": 2.0,
+                            "debugLabel": "④ 착탄 예고"
+                        },
+                        {
+                            "action": "EndHide",
+                            "debugLabel": "④ 알파 복원(즉시 — 몸은 Weapon 애니가 가린다)"
+                        },
+                        {
+                            "action": "MeleeHit",
+                            "hpDamage": 100,
+                            "mpDamage": 0,
+                            "motion": "Weapon",
+                            "splashHitsNpcs": true,
+                            "parryImmune": true,
+                            "knockbackTiles": 6,
+                            "playerStaggerSeconds": 1.0,
+                            "guardedKnockbackTiles": 4,
+                            "guardedPlayerStaggerSeconds": 0.5,
+                            "wallImpactStaggerScale": 2.0,
+                            "debugLabel": "④ 무기 꽂힘",
+                            "cameraShakeStrength": 1.5,
+                            "cameraShakeDuration": 0.75,
+                            "cameraShakeAxis": "Free",
+                            "cameraShakeFrequencyHz": 120,
+                            "hitShape": [
+                                "....X....",
+                                "...XXX...",
+                                "..XXXXX..",
+                                ".XXXXXXX.",
+                                "XXXXOXXXX",
+                                ".XXXXXXX.",
+                                "..XXXXX..",
+                                "...XXX...",
+                                "....X...."
+                            ]
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 0.4,
+                            "debugLabel": "④ 꽂힌 채 뜸들이기"
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 1.2,
+                            "motion": "Collect",
+                            "debugLabel": "④ 등장 + 무기 집기"
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 0.3,
+                            "debugLabel": "④ 후딜"
+                        }
+                    ]
+                },
+                {
+                    "branchKey": "Phase1Lethal",
+                    "entryType": "Priority",
+                    "entryDisabledByDefault": true,
+                    "entryRange": 30,
+                    "entryCooldownSeconds": 0,
+                    "branchConditions": [
+                        {
+                            "conditionType": "SequenceEnd",
+                            "nextBranchKey": "Slam"
+                        }
+                    ],
+                    "steps": [
+                        {
+                            "action": "BeginHide",
+                            "motion": "Hide",
+                            "motionSpeedScale": 0.4,
+                            "debugLabel": "강화1즉사 안개화"
+                        },
+                        {
+                            "action": "Wait",
+                            "duration": 3.0,
+                            "debugLabel": "강화1즉사 은신 3초"
+                        },
+                        {
+                            "action": "WarpNearPlayer",
+                            "warpDistanceFromPlayer": 1,
+                            "warpAnchor": "PlayerBack",
+                            "debugLabel": "강화1즉사 플레이어 등 뒤로"
+                        },
+                        {
+                            "action": "FacePlayer",
+                            "debugLabel": "강화1즉사 조준(등 뒤에서 보면 곧 플레이어가 보는 방향)"
+                        },
+                        {
+                            "action": "EndHide",
+                            "hideFadeSeconds": 2.0,
+                            "debugLabel": "강화1즉사 재등장 개시(대기 0 — 예고와 같은 프레임에 시작해 같은 2초로 차오른다)"
+                        },
+                        {
+                            "action": "ShowAttackRange",
+                            "duration": 2.0,
+                            "debugLabel": "강화1즉사 원뿔 예고 2초"
+                        },
+                        {
+                            "action": "MeleeHit",
+                            "hpDamage": 40,
+                            "mpDamage": 0,
+                            "motion": "Swing",
+                            "splashHitsNpcs": true,
+                            "parryImmune": true,
+                            "knockbackTiles": 4,
+                            "playerStaggerSeconds": 1.0,
+                            "guardedKnockbackTiles": 3,
+                            "guardedPlayerStaggerSeconds": 0.5,
+                            "wallImpactStaggerScale": 2.0,
+                            "instakillOnHit": true,
+                            "ignorePlayerGuard": true,
+                            "debugLabel": "강화1(B루트) 등 뒤 광역 - 가드 무관 즉사",
+                            "cameraShakeStrength": 1.5,
+                            "cameraShakeDuration": 0.75,
+                            "cameraShakeAxis": "Free",
+                            "cameraShakeFrequencyHz": 120,
+                            "hitShape": [
+                                "..XXX..",
+                                ".XXXXX.",
+                                "XXXXXXX",
+                                ".XXXXX.",
+                                "..XOX.."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

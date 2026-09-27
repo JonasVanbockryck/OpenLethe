@@ -1,84 +1,619 @@
 {
- "list": [
-  {
-   "id": 1002,
-   "buffSet": [
+  "list": [
     {
-     "buffSetId": 1,
-     "isAlly": true,
-     "acquireCondition": [
-      {
-       "type": "PER_ROTATION_COUNT",
-       "value": 1
-      }
-     ],
-     "selectOption": [
-      {
-       "type": "EXCLUDE_RECENT"
-      }
-     ],
-     "idList": [
-      12,
-      11,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26
-     ]
-    },
-    {
-     "buffSetId": 2,
-     "isAlly": true,
-     "acquireCondition": [
-      {
-       "type": "PER_ROTATION_COUNT",
-       "value": 5
-      }
-     ],
-     "idList": [
-      18
-     ]
-    },
-    {
-     "buffSetId": 3,
-     "isAlly": false,
-     "acquireCondition": [
-      {
-       "type": "PER_ROTATION_COUNT",
-       "value": 1
-      }
-     ],
-     "selectOption": [
-      {
-       "type": "EXCLUDE_ACQUIRED_UNTIL_GET_ALL"
-      }
-     ],
-     "idList": [
-      13,
-      14,
-      15,
-      16,
-      17
-     ],
-     "autoAddIdPerBuffList": [
-      19
-     ]
+      "id": 1002,
+      "unlockCodeFirstClearReward": { "type": "UNLOCK_CODE", "id": 101002, "num": 1 },
+      "requiredModule": 25,
+      "openChapterData": {
+        "mainChapterId": 1,
+        "subChapterId": 109,
+        "nodeId": 10951,
+        "unlockCode": 109
+      },
+      "uiConfig":{
+        "railwayLineNumber": 2,
+        "mainColor":"#09962E",
+        "subColor":"#0CC63D",
+        "driveBannerColor": "#1cc354",
+        "driveBannerTextColor": "#1cc354",
+        "entrancePanelColor": "#09962E",
+        "entrancePopupColor": "#09962E",
+        "participateErrorTextKey": "railway_1002_must_participate_all",
+        "bgmRewardDescTextKey": "railway_1002_bgm_reward_desc",
+        "useClearRecordUI": false,
+        "mapPrefabName": "1002",
+        "isBokgak": true,
+        "isLoadEntranceUIInAddressable": false,
+        "recommendPersonalityLevel": 60,
+        "recommendPersonalitySyncLevel": 4,
+        "recommendEgoSyncLevel": 4,
+        "line1002": {
+          "isCombineTurnForLogUI" : true,
+          "showNodes": [
+            {
+              "rotationCount": 0,
+              "targetIndexArray" : [
+                0, 4, 8
+              ],
+              "enemySpriteId" : [
+                1, 2, 3
+              ]
+            },
+            {
+              "rotationCount": 1,
+              "targetIndexArray" : [
+                0, 4, 8, 9
+              ],
+              "enemySpriteId" : [
+                1, 7, 6, 2
+              ]
+            },
+            {
+              "rotationCount": 2,
+              "targetIndexArray" : [
+                0, 3, 6, 8
+              ],
+              "enemySpriteId" : [
+                1, 4, 7, 3
+              ]
+            },
+            {
+              "rotationCount": 3,
+              "targetIndexArray" : [
+                0, 3, 4, 6, 8
+              ],
+              "enemySpriteId" : [
+                1, 5, 10, 4, 8
+              ]
+            },
+            {
+              "rotationCount": 4,
+              "targetIndexArray" : [
+                0, 1, 2, 4, 5, 6, 7, 8, 9
+              ],
+              "enemySpriteId" : [
+                1, 2, 3, 4, 4, 5, 6, 10, 8
+              ]
+            }
+          ]
+        }
+      },
+      "endNodeIdByRotation": [ 1, 2, 3, 4, 5, 6 ],
+      "challengeType": "ROTATION_COUNT",
+      "isWithoutStartFormation": true,
+      "isSaveBattleState": false,
+      "isLoadSinFromSave": false,
+      "isNotAbleToAddSlot": true,
+      "isGiveUpNodeWhenAllDead": false,
+      "hasRestHeal": false,
+      "personalityMaxLevel": 60,
+      "restHPHealRate": 100,
+      "restMPHeal": 0,
+      "isReviveAllAfterWin": false,
+      "isRecoverAllAfterWin": false,
+      "isResetMPAtRestNode": true,
+      "isResetAfterLose": false,
+      "disableDanteAbilityIds": [ ],
+      "danteAbilityCategory": 5,
+      "nodeIdCollection_ForLog": [
+        {
+          "collectionId": 1,
+          "nodeIds": [ 1 ],
+          "formationTargetNode": 1,
+          "uiConfigs": {
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "collectionId": 2,
+          "nodeIds": [ 2 ],
+          "formationTargetNode": 2,
+          "uiConfigs": {
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "collectionId": 3,
+          "nodeIds": [ 3 ],
+          "formationTargetNode": 3,
+          "uiConfigs": {
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "collectionId": 4,
+          "nodeIds": [ 4 ],
+          "formationTargetNode": 4,
+          "uiConfigs": {
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "collectionId": 5,
+          "nodeIds": [ 5 ],
+          "formationTargetNode": 5,
+          "isNotShowOnUI": true,
+          "uiConfigs": {
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "collectionId": 6,
+          "nodeIds": [ 6 ],
+          "formationTargetNode": 6,
+          "combineCollectionIds": [6, 5],
+          "uiConfigs": {
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "collectionId": 7,
+          "nodeIds": [ 7 ],
+          "formationTargetNode": 7,
+          "uiConfigs": {
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        }
+      ],
+      "startDate": "2025-01-14T03:00:00.000Z",
+      "startDateForUI": "2025-02-20T03:00:00.000Z",
+      "endDate": "2099-12-31T15:00:00.000Z",
+      "endDateforUI": "2099-12-31T15:00:00.000Z",
+      "bannerRewards": [
+        {
+          "requiredConditions": [
+            {
+              "type": "CLEAR_TURN_COUNT",
+              "count": 150
+            },
+            {
+              "type": "ROTATION_COUNT",
+              "count": 5
+            }
+          ],
+          "reward": {
+            "type": "USERBANNER",
+            "id": 89,
+            "num": 1
+          },
+          "localizeId": "railway_dungeon_1002_banner_reward_condition_1"
+        }
+      ],
+      "extraRewards": [
+        {
+          "id": 1,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 1
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 214,
+              "num": 85
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 1
+          }
+        },
+        {
+          "id": 2,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 2
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 232,
+              "num": 1
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 2
+          }
+        },
+        {
+          "id": 3,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 3
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 214,
+              "num": 85
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 3
+          }
+        },
+        {
+          "id": 4,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 4
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 102,
+              "num": 1
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 4
+          }
+        },
+        {
+          "id": 5,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 5
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 105,
+              "num": 1
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 5
+          }
+        },
+        {
+          "id": 6,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 7
+            },
+            {
+              "type": "ROTATION_COUNT",
+              "count": 1
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 201,
+              "num": 100
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 6
+          }
+        },
+        {
+          "id": 7,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 7
+            },
+            {
+              "type": "ROTATION_COUNT",
+              "count": 2
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 102,
+              "num": 1
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 7
+          }
+        },
+        {
+          "id": 8,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 7
+            },
+            {
+              "type": "ROTATION_COUNT",
+              "count": 3
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 201,
+              "num": 100
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 8
+          }
+        },
+        {
+          "id": 9,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 7
+            },
+            {
+              "type": "ROTATION_COUNT",
+              "count": 4
+            }
+          ],
+          "rewards": [
+            {
+              "type": "ITEM",
+              "id": 102,
+              "num": 1
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 9
+          }
+        },
+        {
+          "id": 10,
+          "requiredConditions": [
+            {
+              "type": "CLEAR_NODE",
+              "count": 7
+            },
+            {
+              "type": "ROTATION_COUNT",
+              "count": 5
+            }
+          ],
+          "rewards": [
+            {
+              "type": "USER_TICKET_DECO_LEFT",
+              "id": 79,
+              "num": 1
+            },
+            {
+              "type": "USER_TICKET_DECO_RIGHT",
+              "id": 79,
+              "num": 1
+            },
+            {
+              "type": "USER_TICKET_DECO_EGOBG",
+              "id": 79,
+              "num": 1
+            }
+          ],
+          "uiConfig": {
+            "showStationNumber": 10
+          }
+        }
+      ],
+      "bossUnitIdList": [
+        1,2
+      ],
+      "sector": [
+        {
+          "nodeId": 1,
+          "stageId": 100201,
+          "nextNodes": [ 2, 7 ],
+          "clearRequiredNodesForEnter": [ ],
+          "buffLoadNodeIds": [],
+          "egoResourceNodeIds": [ ],
+          "restrictedFormationNodeIds": [ ],
+          "removeNodeIdsWhenRestart": [ ],
+          "isSetFormationWithBattle": true,
+          "isSaveMpAfterBattle": true,
+          "isMpZeroWhenRevive": true,
+          "isStartOfOneCycle": true,
+          "isEndOfOneCycle": true,
+          "uiConfig": {
+            "nodeUIText": "01",
+            "overrideStationName": 1,
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "nodeId": 2,
+          "stageId": 100202,
+          "nextNodes": [ 3, 7 ],
+          "clearRequiredNodesForEnter": [ 1 ],
+          "buffLoadNodeIds": [],
+          "egoResourceNodeIds": [ 1 ],
+          "restrictedFormationNodeIds": [ ],
+          "removeNodeIdsWhenRestart": [ ],
+          "isSetFormationWithBattle": true,
+          "isSaveMpAfterBattle": true,
+          "isMpZeroWhenRevive": true,
+          "isStartOfOneCycle": true,
+          "isEndOfOneCycle": true,
+          "inheritStatusFromNode": {
+            "nodeId": 1,
+            "isInheritMp": true
+          },
+          "uiConfig": {
+            "nodeUIText": "02",
+            "overrideStationName": 2,
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "nodeId": 3,
+          "stageId": 100203,
+          "nextNodes": [ 4, 7 ],
+          "clearRequiredNodesForEnter": [ 2 ],
+          "buffLoadNodeIds": [],
+          "egoResourceNodeIds": [ 2 ],
+          "restrictedFormationNodeIds": [ ],
+          "removeNodeIdsWhenRestart": [ ],
+          "isSetFormationWithBattle": true,
+          "isSaveMpAfterBattle": true,
+          "isMpZeroWhenRevive": true,
+          "isStartOfOneCycle": true,
+          "isEndOfOneCycle": true,
+          "inheritStatusFromNode": {
+            "nodeId": 2,
+            "isInheritMp": true
+          },
+          "uiConfig": {
+            "nodeUIText": "03",
+            "overrideStationName": 3,
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "nodeId": 4,
+          "stageId": 100204,
+          "nextNodes": [ 5, 7 ],
+          "clearRequiredNodesForEnter": [ 3 ],
+          "buffLoadNodeIds": [],
+          "egoResourceNodeIds": [ 3 ],
+          "restrictedFormationNodeIds": [ ],
+          "removeNodeIdsWhenRestart": [ ],
+          "isSetFormationWithBattle": true,
+          "isSaveMpAfterBattle": true,
+          "isMpZeroWhenRevive": true,
+          "isStartOfOneCycle": true,
+          "isEndOfOneCycle": true,
+          "inheritStatusFromNode": {
+            "nodeId": 3,
+            "isInheritMp": true
+          },
+          "uiConfig": {
+            "nodeUIText": "04",
+            "overrideStationName": 4,
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "nodeId": 5,
+          "stageId": 100205,
+          "nextNodes": [ 6, 7 ],
+          "clearRequiredNodesForEnter": [ 4 ],
+          "buffLoadNodeIds": [],
+          "egoResourceNodeIds": [ 4 ],
+          "restrictedFormationNodeIds": [ ],
+          "removeNodeIdsWhenRestart": [ ],
+          "isSetFormationWithBattle": true,
+          "isSaveMpAfterBattle": true,
+          "isMpZeroWhenRevive": true,
+          "isStartOfOneCycle": true,
+          "isEndOfOneCycle": true,
+          "inheritStatusFromNode": {
+            "nodeId": 4,
+            "isInheritMp": true
+          },
+          "uiConfig": {
+            "nodeUIText": "05",
+            "overrideStationName": 5,
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "nodeId": 6,
+          "stageId": 100205,
+          "nextNodes": [ 6, 7 ],
+          "clearRequiredNodesForEnter": [ 5 ],
+          "buffLoadNodeIds": [],
+          "egoResourceLoadType": 1,
+          "egoResourceNodeIds": [ 6, 5 ],
+          "restrictedFormationNodeIds": [ ],
+          "removeNodeIdsWhenRestart": [ ],
+          "isSetFormationWithBattle": true,
+          "isSaveMpAfterBattle": true,
+          "isMpZeroWhenRevive": true,
+          "isStartOfOneCycle": true,
+          "isEndOfOneCycle": true,
+          "inheritStatusFromNode": {
+            "nodeId": 1,
+            "nodeIdsFindFirst": [ 6, 5 ],
+            "isInheritMp": true
+          },
+          "uiConfig": {
+            "nodeUIText": "05",
+            "overrideStationName": 5,
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        },
+        {
+          "nodeId": 7,
+          "stageId": 100206,
+          "nextNodes": [ ],
+          "clearRequiredNodesForEnter": [ 1 ],
+          "buffLoadNodeIds": [],
+          "egoResourceLoadType": 1,
+          "egoResourceNodeIds": [ 6, 5, 4, 3, 2, 1 ],
+          "restrictedFormationNodeIds": [ ],
+          "removeNodeIdsWhenRestart": [ ],
+          "isBossNode": true,
+          "isSetFormationWithBattle": true,
+          "isSaveMpAfterBattle": true,
+          "inheritStatusFromNode": {
+            "nodeId": 1,
+            "nodeIdsFindFirst": [ 6, 5, 4, 3, 2, 1 ],
+            "isInheritMp": true
+          },
+          "uiConfig": {
+            "nodeUIText": "6",
+            "overrideStationName": 6,
+            "overrideClearInfoUITitleText": "BOSS",
+            "overrideInfoPanelTypes" : [2, 3]
+          }
+        }
+      ],
+      "buffInBattle": {
+        "buffSetPool": [],
+        "buffSetDistribute": []
+      },
+      "buffSet": [
+        {
+          "buffSetId": 1,
+          "isAlly": true,
+          "acquireCondition": [
+            {
+              "type": "PER_ROTATION_COUNT",
+              "value": 1
+            }
+          ],
+          "selectOption": [
+            {
+              "type": "EXCLUDE_RECENT"
+            }
+          ],
+          "idList": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 21, 22, 23, 24, 25, 26 ],
+          "isAcquire1PerRotation": true
+        },
+        {
+          "buffSetId": 3,
+          "isAlly": false,
+          "acquireCondition": [
+            {
+              "type": "PER_ROTATION_COUNT",
+              "value": 1
+            }
+          ],
+          "selectOption": [
+            {
+              "type": "EXCLUDE_ACQUIRED_UNTIL_GET_ALL"
+            }
+          ],
+          "idList": [ 13, 14, 15, 16, 17 ],
+          "autoAddIdPerBuffList": [ 19 ]
+        }
+      ]
     }
-   ],
-   "extraRewards": []
-  }
- ]
+  ]
 }
+

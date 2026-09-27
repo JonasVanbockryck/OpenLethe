@@ -1,0 +1,1323 @@
+{
+  "list": [
+    {
+      "key": "C3041",
+      "hideUnboundParty": false,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Player",
+          "actorKey": "10"
+        },
+        {
+          "actorName": "larouge",
+          "kind": "Npc",
+          "actorKey": "N103001"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -23, 72"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -23, 73"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sinclair, -21, 73"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, -22, 71"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3005"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        }
+      ]
+    },
+    {
+      "key": "C3200",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "larouge",
+          "kind": "Npc",
+          "actorKey": "N103001"
+        }
+      ],
+      "commands": [
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 1, 0.3"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3200"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "larouge, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "larouge, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "larouge, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "larouge, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3200B"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "larouge, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3200C"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3201",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Player",
+          "actorKey": "10"
+        },
+        {
+          "actorName": "named",
+          "kind": "Npc",
+          "actorKey": "N103005"
+        },
+        {
+          "actorName": "felt",
+          "kind": "Npc",
+          "actorKey": "N103029"
+        },
+        {
+          "actorName": "noir1",
+          "kind": "Npc",
+          "actorKey": "N103017",
+          "location": 130300
+        },
+        {
+          "actorName": "noir2",
+          "kind": "Npc",
+          "actorKey": "N103030",
+          "location": 130300
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 134, 47"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 133, 48"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 132, 47"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sinclair, 133, 46"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "player, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "sinclair, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "outis, Right"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "named, felt"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "felt, named"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "noir1, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "noir2, Right"
+            }
+          ]
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "named"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3205"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "named, player"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "felt, player"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "noir1, player"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "noir2, player"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32051"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3202",
+      "hideUnboundParty": false,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Player",
+          "actorKey": "10"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 61, 104"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 61, 103"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sinclair, 62, 103"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 62, 102"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3206"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "player, Attack"
+        },
+        {
+          "type": "Wait",
+          "param": "0.07"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.25, 0.2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.33"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "player, Attack_B"
+        },
+        {
+          "type": "Wait",
+          "param": "0.07"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_stall_break"
+        },
+        {
+          "type": "PlayVfx",
+          "param": "SimpleHit, 61.5, 105"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.4, 0.3"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3203",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Player",
+          "actorKey": "10"
+        },
+        {
+          "actorName": "larouge",
+          "kind": "Npc",
+          "actorKey": "N103001"
+        },
+        {
+          "actorName": "buppe",
+          "kind": "Player",
+          "actorKey": "400041"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -27, 74"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -26, 74"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, -27, 72"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sinclair, -26, 72"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buppe, -25, 72"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "larouge"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3305"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Up"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buppe, larouge"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "buppe, -27, 73"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3306"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3307"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.5, 0.4"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Die",
+              "param": "larouge"
+            },
+            {
+              "type": "Knockback",
+              "param": "player, Right, 1, 0.15, true"
+            },
+            {
+              "type": "Knockback",
+              "param": "dante, Right, 1, 0.15, true"
+            },
+            {
+              "type": "Knockback",
+              "param": "outis, Right, 1, 0.15, true"
+            },
+            {
+              "type": "Knockback",
+              "param": "sinclair, Right, 1, 0.15, true"
+            },
+            {
+              "type": "Knockback",
+              "param": "buppe, Right, 1, 0.15, true"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_flesh_explode"
+            }
+          ]
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO304100"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO304103"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3304"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "outis, dante"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3308"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3204",
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "shutter",
+          "kind": "Npc",
+          "actorKey": "N103003"
+        }
+      ],
+      "commands": [
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "shutter"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3210"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_scissors_ready"
+        },
+        {
+          "type": "Wait",
+          "param": "0.33"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_scissors_cut"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.4, 0.3"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ]
+    },
+    {
+      "key": "C3205",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Player",
+          "actorKey": "10"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 133, 47"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 132, 47"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sinclair, 134, 47"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 133, 46"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "outis, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "sinclair, Left"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "player, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Up"
+            }
+          ]
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 133, 45"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D32052B"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052C"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 132, 45"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 133, 45"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 132, 47"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sinclair, 134, 47"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052D"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, dante"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052E"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052F"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "outis, dante"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052G"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, outis"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052H"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052I"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, dante"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D32052J"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3206",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D3214"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3207",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D3212"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3181",
+      "showUnboundNpcs": false,
+      "waitTeleportEnd": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D3181"
+        }
+      ]
+    },
+    {
+      "key": "C3010",
+      "controlArrivalFade": true,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Player",
+          "actorKey": "10"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "player, player, 0, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "sinclair, player, -1, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Down"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "outis, player, 1, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Down"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, 0, 1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "player, sinclair"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "outis, sinclair"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D3001"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "player, outis"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "sinclair, Right"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D3110"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "outis, Left"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D3115"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Dialogue",
+              "param": "D3112"
+            },
+            {
+              "type": "Knockback",
+              "param": "outis, Right, 1, 0.2"
+            },
+            {
+              "type": "Knockback",
+              "param": "sinclair, Left, 1, 0.2"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "0.3"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "outis, Right"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.6"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "outis, Down"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.6"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "outis, Right"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.6"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "outis, Down"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.6"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "outis, Left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3114"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "player, sinclair"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "sinclair, player"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "outis, player"
+            }
+          ]
+        },
+        {
+          "type": "Story",
+          "param": "S1019B"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3002"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "player, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "sinclair, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "outis, Right"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Right"
+            }
+          ]
+        },
+        {
+          "type": "MoveCamera",
+          "param": "60, 62, 0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 0, 0.5"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 1, 0, 0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3003"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ]
+    },
+    {
+      "key": "C3208",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "larouge",
+          "kind": "Npc",
+          "actorKey": "N103001"
+        }
+      ],
+      "commands": [
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "larouge, 0.3"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3203"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "larouge, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3203B"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "larouge, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3203C"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C3026",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Player",
+          "actorKey": "10"
+        },
+        {
+          "actorName": "buppe",
+          "kind": "Player",
+          "actorKey": "400041"
+        },
+        {
+          "actorName": "shutter",
+          "kind": "Npc",
+          "actorKey": "N103003",
+          "location": 130100
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 55, 61"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 55, 62"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 56, 61"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "sinclair, 54, 61"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "buppe, 51, 62"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D3303"
+        }
+      ]
+    }
+  ]
+}

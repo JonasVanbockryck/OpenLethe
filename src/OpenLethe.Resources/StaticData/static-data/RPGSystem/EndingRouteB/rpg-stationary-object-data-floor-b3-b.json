@@ -1,0 +1,1282 @@
+{
+  "list": [
+    {
+      "key": "SO910022",
+      "type": "HiddenObject",
+      "x": 152,
+      "y": 81,
+      "width": 1,
+      "height": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "visualOffsetX": 0,
+      "visualOffsetY": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "blockConditionType": "NotBlock",
+      "appearance": "SephirahLogo/Prefabs/SephirahLogo_Malkuth.prefab",
+      "dialogueKey": "D91022_B"
+    },
+    {
+      "key": "SO-3001",
+      "type": "sign",
+      "x": 42,
+      "y": 88,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3230"
+    },
+    {
+      "key": "SO-3002",
+      "type": "sign",
+      "x": 45,
+      "y": 88,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3231"
+    },
+    {
+      "key": "SO-3003",
+      "type": "sign",
+      "x": 42,
+      "y": 85,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3232"
+    },
+    {
+      "key": "SO-3004",
+      "type": "sign",
+      "x": 45,
+      "y": 85,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3233"
+    },
+    {
+      "key": "SO-3005",
+      "type": "sign",
+      "x": 42,
+      "y": 82,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3234"
+    },
+    {
+      "key": "SO-3006",
+      "type": "sign",
+      "x": 46,
+      "y": 82,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3235"
+    },
+    {
+      "key": "SO-3007",
+      "type": "sign",
+      "x": 42,
+      "y": 77,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3236"
+    },
+    {
+      "key": "SO-3008",
+      "type": "sign",
+      "x": 46,
+      "y": 77,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3237"
+    },
+    {
+      "key": "SO-3009",
+      "type": "sign",
+      "x": 42,
+      "y": 57,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3236"
+    },
+    {
+      "key": "SO-3010",
+      "type": "sign",
+      "x": 46,
+      "y": 57,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3238"
+    },
+    {
+      "key": "SO-3011",
+      "type": "sign",
+      "x": 42,
+      "y": 53,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3237"
+    },
+    {
+      "key": "SO-3012",
+      "type": "sign",
+      "x": 46,
+      "y": 53,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3235"
+    },
+    {
+      "key": "SO-3013",
+      "type": "sign",
+      "x": 42,
+      "y": 49,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3234"
+    },
+    {
+      "key": "SO-3014",
+      "type": "sign",
+      "x": 46,
+      "y": 49,
+      "width": 3,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3238"
+    },
+    {
+      "key": "SO-3015",
+      "type": "sign",
+      "x": 33,
+      "y": 83,
+      "height": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3232"
+    },
+    {
+      "key": "SO-3016",
+      "type": "sign",
+      "x": 33,
+      "y": 78,
+      "height": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3233"
+    },
+    {
+      "key": "SO-3017",
+      "type": "sign",
+      "x": 35,
+      "y": 78,
+      "height": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3237"
+    },
+    {
+      "key": "SO-3018",
+      "type": "sign",
+      "x": 35,
+      "y": 83,
+      "height": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3235"
+    },
+    {
+      "key": "SO-3019",
+      "type": "sign",
+      "x": 37,
+      "y": 83,
+      "height": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3236"
+    },
+    {
+      "key": "SO-3020",
+      "type": "sign",
+      "x": 37,
+      "y": 80,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3238"
+    },
+    {
+      "key": "SO-3021",
+      "type": "sign",
+      "x": 62,
+      "y": 51,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3232"
+    },
+    {
+      "key": "SO-3022",
+      "type": "sign",
+      "x": 65,
+      "y": 51,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3233"
+    },
+    {
+      "key": "SO-3023",
+      "type": "sign",
+      "x": 68,
+      "y": 51,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3234"
+    },
+    {
+      "key": "SO-3024",
+      "type": "sign",
+      "x": 52,
+      "y": 49,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3239"
+    },
+    {
+      "key": "SO-3025",
+      "type": "sign",
+      "x": 54,
+      "y": 48,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3240"
+    },
+    {
+      "key": "SO-3026",
+      "type": "sign",
+      "x": 55,
+      "y": 49,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3239"
+    },
+    {
+      "key": "SO-3027",
+      "type": "sign",
+      "x": 57,
+      "y": 49,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3241"
+    },
+    {
+      "key": "SO-3028",
+      "type": "sign",
+      "x": 58,
+      "y": 48,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3240"
+    },
+    {
+      "key": "SO-3029",
+      "type": "sign",
+      "x": 55,
+      "y": 54,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3261",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "D-3261",
+      "condDialogueKey1": "D-3239"
+    },
+    {
+      "key": "SO-3030",
+      "type": "sign",
+      "x": 22,
+      "y": 94,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3242"
+    },
+    {
+      "key": "SO-3031",
+      "type": "sign",
+      "x": 24,
+      "y": 94,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3243"
+    },
+    {
+      "key": "SO-3032",
+      "type": "sign",
+      "x": 24,
+      "y": 92,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3244"
+    },
+    {
+      "key": "SO-3033",
+      "type": "sign",
+      "x": 26,
+      "y": 93,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3245"
+    },
+    {
+      "key": "SO-3034",
+      "type": "sign",
+      "x": 32,
+      "y": 51,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3244"
+    },
+    {
+      "key": "SO-3035",
+      "type": "sign",
+      "x": 36,
+      "y": 51,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3243"
+    },
+    {
+      "key": "SO-3036",
+      "type": "sign",
+      "x": 37,
+      "y": 53,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3243"
+    },
+    {
+      "key": "SO-3037",
+      "type": "sign",
+      "x": 11,
+      "y": 71,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3242"
+    },
+    {
+      "key": "SO-3038",
+      "type": "sign",
+      "x": 13,
+      "y": 70,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3262",
+      "dialogueCond3": "Quest",
+      "dialogueCondValue3": "Q5009",
+      "condDialogueKey3": "D-3501",
+      "dialogueCond2": "Dialogue",
+      "dialogueCondValue2": "D-3262",
+      "condDialogueKey2": "D-3501"
+    },
+    {
+      "key": "SO-3039",
+      "type": "sign",
+      "x": 24,
+      "y": 68,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3242"
+    },
+    {
+      "key": "SO-3040",
+      "type": "sign",
+      "x": 26,
+      "y": 67,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3244"
+    },
+    {
+      "key": "SO-3041",
+      "type": "sign",
+      "x": 26,
+      "y": 69,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3243"
+    },
+    {
+      "key": "SO-3042",
+      "type": "sign",
+      "x": 28,
+      "y": 69,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3242"
+    },
+    {
+      "key": "SO-3043",
+      "type": "sign",
+      "x": 23,
+      "y": 93,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3246"
+    },
+    {
+      "key": "SO-3044",
+      "type": "sign",
+      "x": 27,
+      "y": 92,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3247"
+    },
+    {
+      "key": "SO-3045",
+      "type": "sign",
+      "x": 28,
+      "y": 94,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3248"
+    },
+    {
+      "key": "SO-3046",
+      "type": "sign",
+      "x": 24,
+      "y": 67,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3249"
+    },
+    {
+      "key": "SO-3047",
+      "type": "sign",
+      "x": 23,
+      "y": 69,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3247"
+    },
+    {
+      "key": "SO-3048",
+      "type": "sign",
+      "x": 28,
+      "y": 68,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3248"
+    },
+    {
+      "key": "SO-3049",
+      "type": "sign",
+      "x": 31,
+      "y": 53,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3246"
+    },
+    {
+      "key": "SO-3050",
+      "type": "sign",
+      "x": 34,
+      "y": 52,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3249"
+    },
+    {
+      "key": "SO-3051",
+      "type": "sign",
+      "x": 38,
+      "y": 50,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3248"
+    },
+    {
+      "key": "SO-3052",
+      "type": "sign",
+      "x": 39,
+      "y": 52,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3247"
+    },
+    {
+      "key": "SO-3053",
+      "type": "sign",
+      "x": 34,
+      "y": 61,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3250"
+    },
+    {
+      "key": "SO-3054",
+      "type": "sign",
+      "x": 34,
+      "y": 58,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3250"
+    },
+    {
+      "key": "SO-3055",
+      "type": "sign",
+      "x": 34,
+      "y": 55,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3250"
+    },
+    {
+      "key": "SO-3056",
+      "type": "sign",
+      "x": 35,
+      "y": 61,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3251"
+    },
+    {
+      "key": "SO-3057",
+      "type": "sign",
+      "x": 35,
+      "y": 58,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3251"
+    },
+    {
+      "key": "SO-3058",
+      "type": "sign",
+      "x": 35,
+      "y": 55,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3251"
+    },
+    {
+      "key": "SO-3059",
+      "type": "sign",
+      "x": 28,
+      "y": 60,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3252"
+    },
+    {
+      "key": "SO-3060",
+      "type": "sign",
+      "x": 26,
+      "y": 59,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3503",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "D-3503",
+      "condDialogueKey1": "D-3502"
+    },
+    {
+      "key": "SO-3061",
+      "type": "sign",
+      "x": 28,
+      "y": 56,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3252"
+    },
+    {
+      "key": "SO-3062",
+      "type": "sign",
+      "x": 32,
+      "y": 61,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3253"
+    },
+    {
+      "key": "SO-3063",
+      "type": "sign",
+      "x": 32,
+      "y": 58,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3253"
+    },
+    {
+      "key": "SO-3064",
+      "type": "sign",
+      "x": 32,
+      "y": 55,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3253"
+    },
+    {
+      "key": "SO-3065",
+      "type": "sign",
+      "x": -83,
+      "y": 89,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3254"
+    },
+    {
+      "key": "SO-3066",
+      "type": "sign",
+      "x": -68,
+      "y": 89,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3254"
+    },
+    {
+      "key": "SO-3067",
+      "type": "sign",
+      "x": -70,
+      "y": 89,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3255"
+    },
+    {
+      "key": "SO-3068",
+      "type": "sign",
+      "x": -74,
+      "y": 89,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3255"
+    },
+    {
+      "key": "SO-3069",
+      "type": "sign",
+      "x": -72,
+      "y": 89,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3256"
+    },
+    {
+      "key": "SO-3070",
+      "type": "sign",
+      "x": -150,
+      "y": 80,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3257"
+    },
+    {
+      "key": "SO-3071",
+      "type": "sign",
+      "x": -148,
+      "y": 80,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3258"
+    },
+    {
+      "key": "SO-3072",
+      "type": "sign",
+      "x": -146,
+      "y": 80,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3259"
+    },
+    {
+      "key": "SO-3073",
+      "type": "sign",
+      "x": -157,
+      "y": 80,
+      "height": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3260"
+    },
+    {
+      "key": "SO-3074",
+      "type": "sign",
+      "x": -155,
+      "y": 80,
+      "height": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3259"
+    },
+    {
+      "key": "SO-3075",
+      "type": "sign",
+      "x": -157,
+      "y": 91,
+      "height": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3255"
+    },
+    {
+      "key": "SO-3076",
+      "type": "sign",
+      "x": -156,
+      "y": 91,
+      "height": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3260"
+    },
+    {
+      "key": "SO-3077",
+      "type": "sign",
+      "x": -155,
+      "y": 91,
+      "height": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3257"
+    },
+    {
+      "key": "SO-3078",
+      "type": "sign",
+      "x": -154,
+      "y": 91,
+      "height": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3255"
+    },
+    {
+      "key": "SO-3079",
+      "type": "sign",
+      "x": 241,
+      "y": 33,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3264"
+    },
+    {
+      "key": "SO-3080",
+      "type": "sign",
+      "x": 242,
+      "y": 29,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3265"
+    },
+    {
+      "key": "SO-3081",
+      "type": "sign",
+      "x": 260,
+      "y": 33,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3266"
+    },
+    {
+      "key": "SO-3082",
+      "type": "sign",
+      "x": 247,
+      "y": 33,
+      "width": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3267"
+    },
+    {
+      "key": "SO-3083",
+      "type": "sign",
+      "x": 247,
+      "y": 36,
+      "width": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3268"
+    },
+    {
+      "key": "SO-3084",
+      "type": "sign",
+      "x": 258,
+      "y": 36,
+      "width": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3269"
+    },
+    {
+      "key": "SO-3085",
+      "type": "sign",
+      "x": 241,
+      "y": 26,
+      "width": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3270"
+    },
+    {
+      "key": "SO-3086",
+      "type": "sign",
+      "x": 247,
+      "y": 25,
+      "width": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3269"
+    },
+    {
+      "key": "SO-3087",
+      "type": "sign",
+      "x": 258,
+      "y": 25,
+      "width": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3269"
+    },
+    {
+      "key": "SO-3088",
+      "type": "sign",
+      "x": 264,
+      "y": 26,
+      "width": 4,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3270"
+    },
+    {
+      "key": "SO-3089",
+      "type": "sign",
+      "x": 240,
+      "y": 36,
+      "width": 6,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3271"
+    },
+    {
+      "key": "SO-3090",
+      "type": "sign",
+      "x": 252,
+      "y": 34,
+      "width": 5,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3272"
+    },
+    {
+      "key": "SO-3091",
+      "type": "sign",
+      "x": 246,
+      "y": 28,
+      "width": 5,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3272"
+    },
+    {
+      "key": "SO-3092",
+      "type": "sign",
+      "x": 252,
+      "y": 93,
+      "width": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3273"
+    },
+    {
+      "key": "SO-3093",
+      "type": "sign",
+      "x": 257,
+      "y": 93,
+      "width": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3274"
+    },
+    {
+      "key": "SO-3094",
+      "type": "sign",
+      "x": 253,
+      "y": 88,
+      "width": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3273"
+    },
+    {
+      "key": "SO-3095",
+      "type": "sign",
+      "x": 259,
+      "y": 88,
+      "width": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3274"
+    },
+    {
+      "key": "SO-3096",
+      "type": "sign",
+      "x": 257,
+      "y": 84,
+      "width": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3273"
+    },
+    {
+      "key": "SO-3097",
+      "type": "sign",
+      "x": 241,
+      "y": 84,
+      "width": 3,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3274"
+    },
+    {
+      "key": "SO-3098",
+      "type": "sign",
+      "x": 241,
+      "y": 92,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3275"
+    },
+    {
+      "key": "SO-3099",
+      "type": "sign",
+      "x": 245,
+      "y": 86,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3276"
+    },
+    {
+      "key": "SO-3100",
+      "type": "sign",
+      "x": 249,
+      "y": 85,
+      "height": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3275"
+    },
+    {
+      "key": "SO-3101",
+      "type": "sign",
+      "x": 262,
+      "y": 85,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3277"
+    },
+    {
+      "key": "SO-3102",
+      "type": "sign",
+      "x": 264,
+      "y": 85,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3278"
+    },
+    {
+      "key": "SO-3103",
+      "type": "sign",
+      "x": 266,
+      "y": 85,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3277"
+    },
+    {
+      "key": "SO-3104",
+      "type": "sign",
+      "x": 268,
+      "y": 85,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3278"
+    },
+    {
+      "key": "SO-3105",
+      "type": "sign",
+      "x": 243,
+      "y": 86,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3279"
+    },
+    {
+      "key": "SO-3106",
+      "type": "sign",
+      "x": 248,
+      "y": 87,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3280"
+    },
+    {
+      "key": "SO-3107",
+      "type": "sign",
+      "x": 256,
+      "y": 87,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3279"
+    },
+    {
+      "key": "SO-3108",
+      "type": "sign",
+      "x": 260,
+      "y": 93,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3280"
+    },
+    {
+      "key": "SO-3109",
+      "type": "sign",
+      "x": 245,
+      "y": 94,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3281"
+    },
+    {
+      "key": "SO-3110",
+      "type": "sign",
+      "x": 255,
+      "y": 93,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3281"
+    },
+    {
+      "key": "SO-3111",
+      "type": "sign",
+      "x": 243,
+      "y": 92,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3282"
+    },
+    {
+      "key": "SO-3112",
+      "type": "sign",
+      "x": 250,
+      "y": 92,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3283"
+    },
+    {
+      "key": "SO-3113",
+      "type": "sign",
+      "x": 264,
+      "y": 94,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3279"
+    },
+    {
+      "key": "SO-3114",
+      "type": "sign",
+      "x": 266,
+      "y": 93,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3284"
+    },
+    {
+      "key": "SO-3115",
+      "type": "sign",
+      "x": 268,
+      "y": 92,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3275"
+    },
+    {
+      "key": "SO-3116",
+      "type": "sign",
+      "x": 265,
+      "y": 91,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3281"
+    },
+    {
+      "key": "SO-3117",
+      "type": "sign",
+      "x": 265,
+      "y": 88,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3285"
+    },
+    {
+      "key": "SO-3118",
+      "type": "sign",
+      "x": 268,
+      "y": 88,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3286"
+    },
+    {
+      "key": "SO-3119",
+      "type": "sign",
+      "x": 266,
+      "y": 89,
+      "width": 2,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3279"
+    },
+    {
+      "key": "SO-3120",
+      "type": "sign",
+      "x": 267,
+      "y": 90,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3281"
+    },
+    {
+      "key": "SO-3121",
+      "type": "sign",
+      "x": 260,
+      "y": 85,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3283"
+    },
+    {
+      "key": "SO-3124",
+      "type": "Sign",
+      "x": 151,
+      "y": 85,
+      "width": 3,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3505"
+    },
+    {
+      "key": "SO-3123",
+      "type": "Sign",
+      "x": 149,
+      "y": 85,
+      "width": 1,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3505"
+    },
+    {
+      "key": "SO-3122",
+      "type": "Sign",
+      "x": 147,
+      "y": 85,
+      "width": 2,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D-3504"
+    },
+    {
+      "key": "SO-3134",
+      "type": "Sign",
+      "x": 59,
+      "y": 89,
+      "width": 2,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3133",
+      "type": "Sign",
+      "x": 61,
+      "y": 88,
+      "width": 1,
+      "height": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3132",
+      "type": "Sign",
+      "x": 60,
+      "y": 87,
+      "width": 2,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3131",
+      "type": "Sign",
+      "x": 59,
+      "y": 86,
+      "width": 1,
+      "height": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3130",
+      "type": "Sign",
+      "x": 58,
+      "y": 85,
+      "width": 2,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3129",
+      "type": "Sign",
+      "x": 57,
+      "y": 84,
+      "width": 1,
+      "height": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3128",
+      "type": "Sign",
+      "x": 56,
+      "y": 83,
+      "width": 2,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3127",
+      "type": "Sign",
+      "x": 52,
+      "y": 81,
+      "width": 2,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3126",
+      "type": "Sign",
+      "x": 51,
+      "y": 81,
+      "width": 1,
+      "height": 9,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    },
+    {
+      "key": "SO-3125",
+      "type": "Sign",
+      "x": 51,
+      "y": 90,
+      "width": 9,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "SO-3300",
+      "dialogueCond1": "Dialogue",
+      "dialogueCondValue1": "SO-3300",
+      "condDialogueKey1": "SO-3301"
+    }
+  ]
+}

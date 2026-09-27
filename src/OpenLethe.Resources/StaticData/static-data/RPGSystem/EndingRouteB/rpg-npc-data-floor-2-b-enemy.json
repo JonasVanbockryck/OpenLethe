@@ -1,0 +1,69 @@
+{
+  "list": [
+    {
+      "npcKey": "N102002",
+      "corpseDialogueKey": "D2092",
+      "moveSpeed": 0,
+      "footprintWidth": 2,
+      "footprintHeight": 1,
+      "interactionType": "Dialogue",
+      "interactionKey": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeNamed.prefab",
+      "footstepType": "Surface",
+      "fieldHp": 15,
+      "collisionType": "None",
+      "killPlayerWhenAttacked": true,
+      "deathMotion": "Dead_LaRougeNamed",
+      "mustNeedQuestKeys": [
+        "Q2001"
+      ]
+    },
+    {
+      "npcKey": "N102004",
+      "moveSpeed": 0,
+      "interactionType": "Enemy",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSickleSp.prefab",
+      "footstepType": "Surface",
+      "fieldHp": 15,
+      "hitStaggerSeconds": 0.2,
+      "weaknessHitStaggerSeconds": 0.4,
+      "collisionType": "FieldDamage",
+      "collisionHpDamage": 0,
+      "collisionMpDamage": 0
+    },
+    {
+      "npcKey": "N102071",
+      "randomCorpseFlip": true,
+      "faction": "LaRouge",
+      "friendlyToPlayer": true,
+      "attackOtherFaction": true,
+      "moveSpeed": 2,
+      "defaultState": "Wander",
+      "wanderRadius": 6,
+      "prefabKey": "NPC_LaRougeSickleSp.prefab",
+      "footstepType": "Surface",
+      "patrolWaitTime": "0.5",
+      "detectType": "Chase",
+      "detectShape": "Omni",
+      "detectRange": 12,
+      "maxRangeOnDetect": 13,
+      "speedOnDetect": 4.5,
+      "detectOnHit": true,
+      "returnType": "LostTarget",
+      "interactionType": "Enemy",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "hitStaggerSeconds": 0.2,
+      "weaknessHitStaggerSeconds": 0.4,
+      "dropTableKey": "DT102071",
+      "fieldHp": 24,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "collisionType": "None",
+      "attackPatternKey": "NA999101",
+      "deathMotion": "Dead_Sickle"
+    }
+  ]
+}

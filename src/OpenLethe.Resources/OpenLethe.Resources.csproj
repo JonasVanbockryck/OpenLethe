@@ -29,4 +29,37 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <!-- When StaticDataSourceDir (trailing slash) points at an upstream data checkout, every build
+       overlays its StaticData tree and the embedded Localize files onto ours, so updating that
+       checkout is all an update takes (then commit the diff here). Set it locally in
+       OpenLethe.Resources.csproj.user (gitignored) or with -p:StaticDataSourceDir=...
+       Builds without it (Docker, fly) use what is committed.
+       ponytail: overlay only, never deletes - upstream drops old-season files, and we keep
+       those plus our own. A file we must NOT take from upstream would need an exclude here. -->
+  <Target Name="SyncStaticData" BeforeTargets="BeforeBuild" Condition="'$(StaticDataSourceDir)' != '' And Exists('$(StaticDataSourceDir)StaticData')">
+    <ItemGroup>
+      <_UpstreamStatic Include="$(StaticDataSourceDir)StaticData\**\*.json" />
+      <_UpstreamLocalize Include="$(StaticDataSourceDir)Localize\en\EN_Personalities.json;$(StaticDataSourceDir)Localize\en\EN_Skills*.json;$(StaticDataSourceDir)Localize\en\EN_SkillTag.json" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_UpstreamStatic)" DestinationFiles="@(_UpstreamStatic->'StaticData\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true">
+      <Output TaskParameter="WroteAtLeastOneFile" PropertyName="_StaticSynced" />
+    </Copy>
+    <Copy SourceFiles="@(_UpstreamLocalize)" DestinationFolder="Localize\en" SkipUnchangedFiles="true">
+      <Output TaskParameter="WroteAtLeastOneFile" PropertyName="_LocalizeSynced" />
+    </Copy>
+
+    <!-- Copy keeps upstream's timestamps, which can be older than our last build (e.g. after a
+         checkout here), so the compiler would skip re-embedding. A touched marker forces it. -->
+    <Touch Files="$(IntermediateOutputPath)staticdata.synced" AlwaysCreate="true" Condition="'$(_StaticSynced)' == 'true' Or '$(_LocalizeSynced)' == 'true'" />
+
+    <!-- The EmbeddedResource globs above ran before the copy: embed files that are new this build too. -->
+    <ItemGroup>
+      <CustomAdditionalCompileInputs Include="$(IntermediateOutputPath)staticdata.synced" Condition="Exists('$(IntermediateOutputPath)staticdata.synced')" />
+      <_NewStatic Include="StaticData\**\*.json" Exclude="@(EmbeddedResource)" />
+      <_NewLocalize Include="Localize\en\EN_Skills*.json" Exclude="@(EmbeddedResource)" />
+      <EmbeddedResource Include="@(_NewStatic)" LogicalName="%(_NewStatic.RecursiveDir)%(_NewStatic.Filename)%(_NewStatic.Extension)" />
+      <EmbeddedResource Include="@(_NewLocalize)" LogicalName="Localize/en/%(_NewLocalize.Filename)%(_NewLocalize.Extension)" />
+    </ItemGroup>
+  </Target>
+
 </Project>

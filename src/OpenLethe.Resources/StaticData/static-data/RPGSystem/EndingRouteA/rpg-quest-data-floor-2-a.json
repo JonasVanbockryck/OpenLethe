@@ -1,0 +1,42 @@
+{
+  "list": [
+    {
+      "key": "Q2001",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q1064",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2002",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4016",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2003",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q2002",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2011",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2003",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q2004",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Dialogue",
+      "acquireConditionValue": "D2012",
+      "requiredQuestKey": "Q2011",
+      "completeEventKey": ""
+    }
+  ]
+}

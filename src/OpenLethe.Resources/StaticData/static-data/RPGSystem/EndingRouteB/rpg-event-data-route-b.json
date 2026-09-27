@@ -1,0 +1,64 @@
+{
+  "list": [
+    {
+      "key": "E999999",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C999999"
+    },
+    {
+      "key": "EB-9181",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-9181"
+    },
+    {
+      "key": "EB-WDN-FLOOR",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-WDN-B"
+    },
+    {
+      "key": "EB-WDN-KILL",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N999998"
+    },
+    {
+      "key": "EDS901",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS901"
+    },
+    {
+      "key": "EPI-CLEAR-B1",
+      "canRepeat": true,
+      "action1": "RemoveItem",
+      "actionValue1": "I990008, 1",
+      "action2": "RemoveItem",
+      "actionValue2": "I990009, 1",
+      "action3": "RemoveItem",
+      "actionValue3": "I990010, 1",
+      "action4": "RemoveItem",
+      "actionValue4": "I990011, 1",
+      "action5": "RemoveItem",
+      "actionValue5": "I990012, 1",
+      "action6": "RemoveItem",
+      "actionValue6": "I990013, 1"
+    },
+    {
+      "key": "EPI-CLEAR-B2",
+      "canRepeat": true,
+      "action1": "RemoveItem",
+      "actionValue1": "I990014, 1",
+      "action2": "RemoveItem",
+      "actionValue2": "I990015, 1",
+      "action3": "RemoveItem",
+      "actionValue3": "I990016, 1",
+      "action4": "RemoveItem",
+      "actionValue4": "I990017, 1",
+      "action5": "RemoveItem",
+      "actionValue5": "I990018, 1"
+    }
+  ]
+}

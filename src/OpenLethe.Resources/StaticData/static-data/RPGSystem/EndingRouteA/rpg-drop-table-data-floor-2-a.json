@@ -1,0 +1,42 @@
+{
+  "list": [
+    { "key": "DT9102023", "money": 0, "itemKey1": "I102023", "itemCount1": 1, "itemDropRate1": 100 },
+    { "key": "DT9102045", "money": 0, "itemKey1": "I102023", "itemCount1": 1, "itemDropRate1": 100 },
+    {
+      "key": "DT102023",
+      "money": 70
+    },
+    {
+      "key": "DT102024",
+      "money": 800
+    },
+    {
+      "key": "DT102025",
+      "money": 0
+    },
+    {
+      "key": "DT102026",
+      "money": 0
+    },
+    {
+      "key": "DT102027",
+      "money": 0
+    },
+    {
+      "key": "DT102042",
+      "money": 10
+    },
+    {
+      "key": "DT102044",
+      "money": 10
+    },
+    {
+      "key": "DT102045",
+      "money": 70
+    },
+    {
+      "key": "DT102046",
+      "money": 10
+    }
+  ]
+}

@@ -1,0 +1,1067 @@
+{
+  "list": [
+    {
+      "patternKey": "NA201003",
+      "triggerRange": 1,
+      "cooldown": 0,
+      "canStartWhileMoving": true,
+      "branches": [
+        {
+          "branchKey": "NormalMelee",
+          "entryType": "Trigger",
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "NormalMelee",
+          "steps": [
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.5,
+              "motion": "Ready"
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 4,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true,
+              "motion": "Attack",
+              "motionSpeedScale": 1.5833
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.2,
+              "motion": "Attack",
+              "motionSpeedScale": 1.5833
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 4,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3,
+              "motion": "JumpAttack",
+              "motionSpeedScale": 2.9444
+            },
+            {
+              "action": "Charge",
+              "hpDamage": 15,
+              "dealtStaggerSeconds": 0.5,
+              "chargeSpeed": 20.0,
+              "maxDistance": 1,
+              "knockbackTiles": 2,
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "RetreatFromPlayer",
+              "retreatMinGap": 8,
+              "maxDistance": 12,
+              "retreatSpeedScale": 2.5
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "RageMelee",
+          "entryType": "Trigger",
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "RageMelee",
+          "steps": [
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3,
+              "motion": "Ready"
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 5,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true,
+              "motion": "TwinAttack",
+              "motionSpeedScale": 4.3333
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.1,
+              "motion": "TwinAttack",
+              "motionSpeedScale": 4.3333
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 5,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3,
+              "motion": "JumpAttack",
+              "motionSpeedScale": 2.9444
+            },
+            {
+              "action": "Charge",
+              "hpDamage": 18,
+              "dealtStaggerSeconds": 0.5,
+              "chargeSpeed": 20.0,
+              "maxDistance": 1,
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 1.0
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "Toss",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 0,
+          "entryMinRange": 2,
+          "entryRange": 12,
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "NormalMelee",
+          "steps": [
+            {
+              "action": "RetreatFromPlayer",
+              "retreatMinGap": 8,
+              "maxDistance": 12,
+              "retreatSpeedScale": 2.5
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "RangedShot",
+              "hpDamage": 3,
+              "projectileKey": "Projectile_SapsareeKnife",
+              "projectileSpeed": 20.0,
+              "maxDistance": 110,
+              "motion": "KifeThrow"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "RangedShot",
+              "hpDamage": 3,
+              "projectileKey": "Projectile_SapsareeKnife",
+              "projectileSpeed": 20.0,
+              "maxDistance": 110,
+              "motion": "KifeThrow"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "RangedShot",
+              "hpDamage": 3,
+              "projectileKey": "Projectile_SapsareeKnife",
+              "projectileSpeed": 20.0,
+              "maxDistance": 110,
+              "motion": "KifeThrow"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "Wait",
+              "duration": 1.0
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "RageJump",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 4,
+          "entryMinRange": 2,
+          "entryRange": 6,
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "RageMelee",
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.5,
+              "motion": "JumpAttack"
+            },
+            {
+              "action": "JumpToTargetFront",
+              "hpDamage": 20,
+              "dealtStaggerSeconds": 1.5,
+              "chargeSpeed": 20.0,
+              "jumpDurationSeconds": 0.4,
+              "impactBlastWidth": 3,
+              "impactBlastHeight": 3
+            },
+            {
+              "action": "Wait",
+              "duration": 1.0
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201003A",
+      "triggerRange": 1,
+      "cooldown": 0,
+      "canStartWhileMoving": true,
+      "branches": [
+        {
+          "branchKey": "NormalMelee",
+          "entryType": "Trigger",
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "NormalMelee",
+          "steps": [
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.5,
+              "motion": "Ready"
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 4,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true,
+              "motion": "Attack",
+              "motionSpeedScale": 1.5833
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.2,
+              "motion": "Attack",
+              "motionSpeedScale": 1.5833
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 4,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3,
+              "motion": "JumpAttack",
+              "motionSpeedScale": 2.9444
+            },
+            {
+              "action": "Charge",
+              "hpDamage": 15,
+              "dealtStaggerSeconds": 0.5,
+              "chargeSpeed": 20.0,
+              "maxDistance": 1,
+              "knockbackTiles": 2,
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "RetreatFromPlayer",
+              "retreatMinGap": 8,
+              "maxDistance": 12,
+              "retreatSpeedScale": 2.5
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "RageMelee",
+          "entryType": "Trigger",
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "RageMelee",
+          "steps": [
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3,
+              "motion": "Ready"
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 5,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true,
+              "motion": "TwinAttack",
+              "motionSpeedScale": 4.3333
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.1,
+              "motion": "TwinAttack",
+              "motionSpeedScale": 4.3333
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 5,
+              "dealtStaggerSeconds": 0,
+              "hitRange": 1,
+              "hitDirections": [
+                "Front"
+              ],
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.12
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3,
+              "motion": "JumpAttack",
+              "motionSpeedScale": 2.9444
+            },
+            {
+              "action": "Charge",
+              "hpDamage": 18,
+              "dealtStaggerSeconds": 0.5,
+              "chargeSpeed": 20.0,
+              "maxDistance": 1,
+              "parryImmune": true
+            },
+            {
+              "action": "Wait",
+              "duration": 1.0
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "Toss",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 0,
+          "entryMinRange": 4,
+          "entryRange": 12,
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "NormalMelee",
+          "steps": [
+            {
+              "action": "RetreatFromPlayer",
+              "retreatMinGap": 8,
+              "maxDistance": 12,
+              "retreatSpeedScale": 2.5
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "RangedShot",
+              "hpDamage": 2,
+              "projectileKey": "Projectile_SapsareeKnife",
+              "projectileSpeed": 20.0,
+              "maxDistance": 110,
+              "motion": "KifeThrow"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "RangedShot",
+              "hpDamage": 2,
+              "projectileKey": "Projectile_SapsareeKnife",
+              "projectileSpeed": 20.0,
+              "maxDistance": 110,
+              "motion": "KifeThrow"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "RangedShot",
+              "hpDamage": 2,
+              "projectileKey": "Projectile_SapsareeKnife",
+              "projectileSpeed": 20.0,
+              "maxDistance": 110,
+              "motion": "KifeThrow"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "Wait",
+              "duration": 1.0
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "RageJump",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 4,
+          "entryMinRange": 2,
+          "entryRange": 6,
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "RageMelee",
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.5,
+              "motion": "JumpAttack"
+            },
+            {
+              "action": "JumpToTargetFront",
+              "hpDamage": 20,
+              "dealtStaggerSeconds": 1.5,
+              "chargeSpeed": 20.0,
+              "jumpDurationSeconds": 0.4,
+              "impactBlastWidth": 3,
+              "impactBlastHeight": 3
+            },
+            {
+              "action": "Wait",
+              "duration": 1.0
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "CloseCounter",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 2.0,
+          "entryMinRange": 1,
+          "entryRange": 3,
+          "requireAxisAlign": true,
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "NormalMelee",
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3,
+              "motion": "Ready"
+            },
+            {
+              "action": "Charge",
+              "hpDamage": 10,
+              "dealtStaggerSeconds": 1.0,
+              "chargeSpeed": 20.0,
+              "maxDistance": 3,
+              "knockbackTiles": 2,
+              "parryImmune": true,
+              "motion": "JumpAttack",
+              "motionSpeedScale": 2.9444
+            },
+            {
+              "action": "Wait",
+              "duration": 0.1
+            },
+            {
+              "action": "RetreatFromPlayer",
+              "retreatMinGap": 10,
+              "maxDistance": 14,
+              "retreatSpeedScale": 3.5
+            },
+            {
+              "action": "Wait",
+              "duration": 0.2
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patternKey": "N201014",
+      "triggerRange": 0,
+      "cooldown": 0.5,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.3
+        },
+        {
+          "action": "Charge",
+          "hpDamage": 7,
+          "mpDamage": 0,
+          "chargeSpeed": 75.0,
+          "knockbackTiles": 2,
+          "motion": "RushAttack",
+          "impactEffectMotion": "ImpactEffect"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "N201015",
+      "triggerRange": 0,
+      "cooldown": 1.0,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.5
+        },
+        {
+          "action": "Charge",
+          "hpDamage": 34,
+          "mpDamage": 0,
+          "chargeSpeed": 75.0,
+          "knockbackTiles": 2,
+          "motion": "RushAttack",
+          "impactEffectMotion": "ImpactEffect"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.5
+        },
+        {
+          "action": "Flip",
+          "motion": "BeforeDetect"
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201016",
+      "triggerRange": 6,
+      "cooldown": 0.2,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.3
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 6,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_GOGI",
+          "projectileSpeed": 18.0,
+          "maxDistance": 6,
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201013",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.1,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 0,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201017",
+      "triggerRange": 5,
+      "cooldown": 0.2,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 7,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_SmallGOGI",
+          "projectileSpeed": 14.0,
+          "maxDistance": 11,
+          "motion": "Attack",
+          "explodeOnEnd": true,
+          "explodeRange": 1,
+          "explodeHpDamage": 3,
+          "explodeMpDamage": 0,
+          "residueKey": "Residue_GOGI"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201018",
+      "triggerRange": 7,
+      "cooldown": 0.2,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.1
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 6,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_BigGOGI",
+          "projectileSpeed": 25.0,
+          "maxDistance": 20,
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.8
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201112",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.1,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 3,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201123",
+      "triggerRange": 1,
+      "cooldown": 1.2,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.25,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 3,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.5
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201111",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.1
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 4,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201116",
+      "triggerRange": 1,
+      "cooldown": 0.5,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.07,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 5,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201117",
+      "triggerRange": 1,
+      "cooldown": 0.5,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.07,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 6,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201118",
+      "triggerRange": 1,
+      "cooldown": 0.5,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.07,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 6,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201119",
+      "triggerRange": 1,
+      "cooldown": 0.5,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.07,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 6,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.7
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201120",
+      "triggerRange": 5,
+      "cooldown": 0.14,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.07
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 5,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_BigGOGI",
+          "projectileSpeed": 25.0,
+          "maxDistance": 20,
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.56
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201121",
+      "triggerRange": 6,
+      "cooldown": 0.14,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.49
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_SmallGOGI",
+          "projectileSpeed": 14.0,
+          "maxDistance": 11,
+          "motion": "Attack",
+          "explodeOnEnd": true,
+          "explodeRange": 1,
+          "explodeHpDamage": 5,
+          "explodeMpDamage": 0,
+          "residueKey": "Residue_GOGI"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.56
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201122",
+      "triggerRange": 5,
+      "cooldown": 0.14,
+      "requireAxisAlign": true,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.21
+        },
+        {
+          "action": "RangedShot",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "projectileKey": "Projectile_GOGI",
+          "projectileSpeed": 18.0,
+          "maxDistance": 6,
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 0.56
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201108",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.1,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 4,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA201109",
+      "triggerRange": 1,
+      "cooldown": 0.7,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.1,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 3,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    }
+  ]
+}

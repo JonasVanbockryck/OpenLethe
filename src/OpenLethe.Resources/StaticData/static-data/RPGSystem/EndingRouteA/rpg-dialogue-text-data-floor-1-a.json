@@ -1,0 +1,4151 @@
+{
+  "list": [
+    {
+      "dialogueKey": "D1089",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1090",
+      "index": 0,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-703"
+    },
+    {
+      "dialogueKey": "D1090",
+      "index": 1,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-704"
+    },
+    {
+      "dialogueKey": "D1090",
+      "index": 2,
+      "portraitKey": "DP_YiSang",
+      "voice": "S1001V-705"
+    },
+    {
+      "dialogueKey": "D1090",
+      "index": 3,
+      "expression": "idlel 2",
+      "portraitKey": "DP_HongLu",
+      "voice": "S1001V-706"
+    },
+    {
+      "dialogueKey": "D1091",
+      "index": 0,
+      "expression": "shock_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-707"
+    },
+    {
+      "dialogueKey": "D1091",
+      "index": 1,
+      "expression": "shock 3",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-708"
+    },
+    {
+      "dialogueKey": "D1091",
+      "index": 2,
+      "expression": "shork_R",
+      "portraitKey": "DP_Gregor",
+      "voice": "S1001V-709"
+    },
+    {
+      "dialogueKey": "D1091",
+      "index": 3,
+      "expression": "shock2_R",
+      "portraitKey": "DP_YiSang",
+      "voice": "S1001V-710"
+    },
+    {
+      "dialogueKey": "D1091",
+      "index": 4,
+      "expression": "angry2_L",
+      "portraitKey": "DP_Outis",
+      "voice": "S1001V-711"
+    },
+    {
+      "dialogueKey": "D1091",
+      "index": 5,
+      "portraitKey": "DP_Faust",
+      "voice": "S1001V-712"
+    },
+    {
+      "dialogueKey": "D1091",
+      "index": 6,
+      "expression": "idle2",
+      "portraitKey": "DP_Faust",
+      "voice": "S1001V-713"
+    },
+    {
+      "dialogueKey": "D1092",
+      "index": 0,
+      "voice": "S1001V-714"
+    },
+    {
+      "dialogueKey": "D1093",
+      "index": 0,
+      "voice": "S1001V-715"
+    },
+    {
+      "dialogueKey": "D1093",
+      "index": 1,
+      "voice": "S1001V-716"
+    },
+    {
+      "dialogueKey": "D1019",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1019",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 0,
+      "portraitKey": "DP_YiSang",
+      "voice": "S1001V-871"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 1,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 2,
+      "portraitKey": "DP_YiSang",
+      "voice": "S1001V-873"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 3
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 4,
+      "expression": "idle3_R",
+      "portraitKey": "DP_YiSang",
+      "voice": "S1001V-875"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 5,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-876"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 6,
+      "voice": "S1001V-877"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 7,
+      "portraitKey": "DP_Faust",
+      "voice": "S1001V-878"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 8,
+      "expression": "shock_R",
+      "portraitKey": "DP_YiSang",
+      "voice": "S1001V-879"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 9,
+      "expression": "idle2",
+      "portraitKey": "DP_Faust",
+      "voice": "S1001V-880"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 10,
+      "expression": "smile4_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-881"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 11,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-882"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 12,
+      "expression": "close",
+      "portraitKey": "DP_Faust",
+      "voice": "S1001V-883"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 13,
+      "expression": "smile3",
+      "portraitKey": "DP_HongLu",
+      "voice": "S1001V-884"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 14,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-885"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 15,
+      "expression": "serious_R",
+      "portraitKey": "DP_Outis",
+      "voice": "S1001V-886"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 16,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Gregor",
+      "voice": "S1001V-887"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 17,
+      "portraitKey": "DP_Ryushu_Smoke",
+      "expression": "smile_L",
+      "voice": "S1001V-888"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 18,
+      "expression": "smile2_R",
+      "portraitKey": "DP_Sinclair",
+      "voice": "S1001V-889"
+    },
+    {
+      "dialogueKey": "D1010",
+      "index": 19,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Tick"
+    },
+    {
+      "dialogueKey": "D1011",
+      "index": 0,
+      "portraitKey": "DP_Cromer_Sister",
+      "voice": "S1001V-719"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 0,
+      "expression": "shork_R",
+      "portraitKey": "DP_Gregor",
+      "voice": "S1001V-720"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 1,
+      "portraitKey": "DP_Cromer_Sister",
+      "voice": "S1001V-721"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 2,
+      "expression": "smile",
+      "portraitKey": "DP_Cromer_Sister",
+      "voice": "S1001V-722"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 3,
+      "expression": "shock2_R",
+      "portraitKey": "DP_YiSang",
+      "voice": "S1001V-723"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 4,
+      "expression": "smile",
+      "portraitKey": "DP_Cromer_Sister",
+      "voice": "S1001V-724"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 5,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Heathcliff2",
+      "voice": "S1001V-725"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 6,
+      "expression": "shock_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-726"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 7,
+      "expression": "surprise",
+      "portraitKey": "DP_Cromer_Sister",
+      "voice": "S1001V-727"
+    },
+    {
+      "dialogueKey": "D10111",
+      "index": 8,
+      "expression": "smile",
+      "portraitKey": "DP_Cromer_Sister",
+      "voice": "S1001V-728"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 0,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-850"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 1,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-851"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 2,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 3,
+      "expression": "sigh_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-853"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 4,
+      "portraitKey": "DP_Outis",
+      "voice": "S1001V-854"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 5,
+      "expression": "nervous",
+      "portraitKey": "DP_DonQuixote",
+      "voice": "S1001V-855"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 6,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 7,
+      "expression": "sad4_L",
+      "portraitKey": "DP_Sinclair",
+      "voice": "S1001V-857"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 8,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D10121",
+      "index": 9,
+      "expression": "serious1",
+      "portraitKey": "DP_Sinclair",
+      "voice": "S1001V-859"
+    },
+    {
+      "dialogueKey": "D10400",
+      "index": 0,
+      "isNarration": true,
+      "portraitKey": "narration_Jeanne_noise",
+      "voice": "S1001V-908"
+    },
+    {
+      "dialogueKey": "D10400",
+      "index": 1,
+      "voice": "S1001V-909"
+    },
+    {
+      "dialogueKey": "D10400",
+      "index": 2,
+      "voice": "S1001V-910"
+    },
+    {
+      "dialogueKey": "D10400",
+      "index": 3,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Click"
+    },
+    {
+      "dialogueKey": "D10401",
+      "index": 0,
+      "portraitKey": "narration_Damienmom",
+      "isNarration": true,
+      "faction": "LadyInBlue",
+      "voice": "S1001V-891"
+    },
+    {
+      "dialogueKey": "D10401",
+      "index": 1,
+      "portraitKey": "narration_Damienmom",
+      "isNarration": true,
+      "faction": "LadyInBlue",
+      "voice": "S1001V-892"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Surprise"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-913"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 2,
+      "expression": "smile2_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-914"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 3,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-915"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 4,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-916"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 5,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-917"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 6,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Tick"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 7,
+      "expression": "close",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-919"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 8,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-920"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 9,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-921"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 10,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-922"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 11,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-923"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 12,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-924"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 13,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-925"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 14,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-926"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 15,
+      "expression": "smile4_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-927"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 16,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-928"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 17,
+      "expression": "smile4_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-929"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 18,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-930"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 19,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-931"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 20,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-932"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 21,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-933"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 22,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-934"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 23
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 24,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-936"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 25,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-937"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 26,
+      "expression": "sigh2_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-938"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 27,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-939"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 28,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-940"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 29,
+      "expression": "smile_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-941"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 30,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-942"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 31,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-943"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 32,
+      "expression": "idle_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-944"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 33,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-945"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 34,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-946"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 35,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-947"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 36,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-948"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 37,
+      "expression": "smile4_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-949"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 38,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-950"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 39,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-951"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 40
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 41,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-953"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 42,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-954"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 43,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-955"
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 44
+    },
+    {
+      "dialogueKey": "D1021",
+      "index": 45,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-957"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 0,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-958"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-959"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 2,
+      "expression": "angry_R",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-960"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 3,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-961"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 4,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-962"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 5,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-963"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 6,
+      "expression": "close",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-964"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 7,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-965"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 8,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-966"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 9,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-967"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 10,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-968"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 11,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-969"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 12,
+      "expression": "smile4_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-970"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 13,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-971"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 14,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-972"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 15,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-973"
+    },
+    {
+      "dialogueKey": "D1022",
+      "index": 16,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-974"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 1,
+      "expression": "smile_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-976"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 2,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-977"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 3,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Wick"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 4,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-979"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 5,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Tick"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 6,
+      "expression": "smile2_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-981"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 7,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-982"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 8,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 9,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-984"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 10,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-984_1"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 11,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Surprise"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 12,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-986"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 13,
+      "expression": "shock_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-987"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 14,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-988"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 15,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-989"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 16,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-990"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 17,
+      "expression": "sigh_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-991"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 18,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-992"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 19,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 20,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-994"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 21,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 22,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Tok"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 23,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-997"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 24,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-998"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 25,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-999"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 26,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 27,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1001"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 28,
+      "expression": "smile4_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1002"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 29,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1003"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 30,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1004"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 31,
+      "expression": "sigh2_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1005"
+    },
+    {
+      "dialogueKey": "D10221",
+      "index": 32,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10222",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D10223",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D10224",
+      "voice": "LCB_05_EmotionVoice_6_A",
+      "index": 0,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D10225",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1914",
+      "index": 0,
+      "expression": "shock_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1007"
+    },
+    {
+      "dialogueKey": "D1914",
+      "index": 1,
+      "expression": "idle_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1008"
+    },
+    {
+      "dialogueKey": "D1914",
+      "index": 2,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Click"
+    },
+    {
+      "dialogueKey": "D1914",
+      "index": 3,
+      "portraitKey": "DP_Muff",
+      "voice": "S1001V-1010"
+    },
+    {
+      "dialogueKey": "D1914",
+      "index": 4,
+      "portraitKey": "DP_Muff",
+      "voice": "S1001V-1011"
+    },
+    {
+      "dialogueKey": "D1914",
+      "index": 5,
+      "portraitKey": "DP_Muff",
+      "voice": "S1001V-1012"
+    },
+    {
+      "dialogueKey": "D1914",
+      "index": 6,
+      "portraitKey": "DP_Muff",
+      "voice": "S1001V-1013"
+    },
+    {
+      "dialogueKey": "D1915",
+      "index": 0,
+      "portraitKey": "DP_Muff",
+      "voice": "S1001V-1014"
+    },
+    {
+      "dialogueKey": "D1915",
+      "index": 1,
+      "portraitKey": "DP_Muff",
+      "voice": "S1001V-1015"
+    },
+    {
+      "dialogueKey": "D1023",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-1016"
+    },
+    {
+      "dialogueKey": "D1023",
+      "index": 1,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-1017"
+    },
+    {
+      "dialogueKey": "D1023",
+      "index": 2,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-1018"
+    },
+    {
+      "dialogueKey": "D1023",
+      "index": 3,
+      "isNarration": true,
+      "portraitKey": "narration_Jeanne_noise",
+      "voice": "S1001V-1019"
+    },
+    {
+      "dialogueKey": "D1023",
+      "index": 4,
+      "portraitKey": "DP_1FSPA_Rose",
+      "voice": "S1001V-1020"
+    },
+    {
+      "dialogueKey": "D102301",
+      "index": 0,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1021"
+    },
+    {
+      "dialogueKey": "D102302",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1022"
+    },
+    {
+      "dialogueKey": "D102303",
+      "index": 0,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1023"
+    },
+    {
+      "dialogueKey": "D102304",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1024"
+    },
+    {
+      "dialogueKey": "D102304",
+      "index": 1,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Click"
+    },
+    {
+      "dialogueKey": "D102304",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D102305",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1027"
+    },
+    {
+      "dialogueKey": "D102305",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1028"
+    },
+    {
+      "dialogueKey": "D102305",
+      "index": 2,
+      "expression": "idle_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1029"
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1030"
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1031"
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 2,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1032"
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 3,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1033"
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 4,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1034"
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 5
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 6,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D102306",
+      "index": 7,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_FastTickTok"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 0,
+      "expression": "close",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1038"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1039"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 2,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 3,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 4,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1042"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 5
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 6,
+      "expression": "idle_R",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1044"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 7,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1045"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 8,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 9,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1047"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 10,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1048"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 11,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1049"
+    },
+    {
+      "dialogueKey": "D102307",
+      "index": 12,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1050"
+    },
+    {
+      "dialogueKey": "D102308",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1051"
+    },
+    {
+      "dialogueKey": "D102308",
+      "index": 1,
+      "expression": "hate",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1052"
+    },
+    {
+      "dialogueKey": "D102309",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1053"
+    },
+    {
+      "dialogueKey": "D102309",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1054"
+    },
+    {
+      "dialogueKey": "D102309",
+      "index": 2,
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1055"
+    },
+    {
+      "dialogueKey": "D102310",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1056"
+    },
+    {
+      "dialogueKey": "D102310",
+      "index": 1,
+      "expression": "shock_L_1",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1057"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 0,
+      "expression": "idle_L",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1058"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 1,
+      "expression": "angry_L",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1059"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 2,
+      "expression": "idle_L",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1060"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 3,
+      "expression": "shock_R_1",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1061"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 4,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1062"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 5,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1063"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 6,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1064"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 7,
+      "expression": "idle_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1065"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 8,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1066"
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 9
+    },
+    {
+      "dialogueKey": "D102311",
+      "index": 10
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1069"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 1,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Tick"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 2,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1071"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 3,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1072"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 4
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 5,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_FastTickTok"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 6,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1075"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 7,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1076"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 8,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1077"
+    },
+    {
+      "dialogueKey": "D102312",
+      "index": 9,
+      "expression": "shock 3",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1078"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 0,
+      "expression": "close",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1079"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 1,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 2,
+      "expression": "shock 3",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1081"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 3,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1082"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 4,
+      "expression": "idle_R",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1083"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 5,
+      "expression": "idle_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1084"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 6,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1085"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 7,
+      "expression": "idle_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1086"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 8,
+      "expression": "angry_L",
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1087"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 9
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 10,
+      "expression": "sigh2_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1089"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 11,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1090"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 12,
+      "expression": "smile_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1091"
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 13
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 14
+    },
+    {
+      "dialogueKey": "D102313",
+      "index": 15,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1031",
+      "index": 0,
+      "voice": "S1001V-1102"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 0,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1103"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 1,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1104"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 2,
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1105"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 3,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1106"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 4,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 5,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1108"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 6,
+      "expression": "smile4_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1109"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 7,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1110"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 8,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1111"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 9,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1112"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 10,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1113"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 11,
+      "expression": "sigh2_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1114"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 12,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1115"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 13,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1116"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 14,
+      "expression": "idle_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1117"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 15,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1118"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 16,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1119"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 17,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1120"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 18,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1121"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 19,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1122"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 20,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1123"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 21,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1124"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 22,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1125"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 23,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1126"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 24,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1127"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 25,
+      "expression": "sad_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1128"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 26,
+      "expression": "sigh3_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1129"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 27,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1130"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 28,
+      "expression": "smile4_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1131"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 29,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1132"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 30,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1133"
+    },
+    {
+      "dialogueKey": "D10311",
+      "index": 31,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1134"
+    },
+    {
+      "dialogueKey": "D1032",
+      "index": 0,
+      "portraitKey": "DP_Newbi_Sisy"
+    },
+    {
+      "dialogueKey": "D1033",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1040",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1135"
+    },
+    {
+      "dialogueKey": "D1040",
+      "index": 1,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1136"
+    },
+    {
+      "dialogueKey": "D1040",
+      "index": 2,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Click"
+    },
+    {
+      "dialogueKey": "D1040",
+      "index": 3,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1138"
+    },
+    {
+      "dialogueKey": "D1040",
+      "index": 4,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1139"
+    },
+    {
+      "dialogueKey": "D1040",
+      "index": 5,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1140"
+    },
+    {
+      "dialogueKey": "D1041",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1041",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1047",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1047",
+      "index": 1,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1142"
+    },
+    {
+      "dialogueKey": "D1047",
+      "index": 2,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1143"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 0,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1152"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 1,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 2,
+      "expression": "happy_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1154"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 3,
+      "expression": "sigh_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1155"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 4,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 5,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1157"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 6,
+      "expression": "shock_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1158"
+    },
+    {
+      "dialogueKey": "D1048",
+      "index": 7,
+      "expression": "sigh3_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1159"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1145"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 2,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1146"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 3,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 4,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1148"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 5,
+      "expression": "idle_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1149"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 6,
+      "expression": "idle_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1150"
+    },
+    {
+      "dialogueKey": "D1049",
+      "index": 7,
+      "expression": "sad_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1151"
+    },
+    {
+      "dialogueKey": "D1976",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 1,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1161"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 2,
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1162"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 3,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1163"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 4,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1164"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 5,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1165"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 6,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1166"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 7,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1167"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 8,
+      "expression": "idle_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1168"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 9,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1169"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 10,
+      "expression": "shock_R_1",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1170"
+    },
+    {
+      "dialogueKey": "D1042",
+      "index": 11,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1171"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 0,
+      "portraitKey": "narration_guard",
+      "alignCenter": true,
+      "isNarration": true,
+      "faction": "laNoir",
+      "voice": "S1001V-1172"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 1,
+      "portraitKey": "narration_guard",
+      "alignCenter": true,
+      "isNarration": true,
+      "faction": "laNoir",
+      "voice": "S1001V-1173"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 2,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1174"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 3,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1175"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 4,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1176"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 5,
+      "expression": "smile4_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1177"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 6,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1178"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 7,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Angry"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 8,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1180"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 9,
+      "expression": "shock 3",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1181"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 10,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1182"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 11,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1183"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 12,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 13,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1185"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 14,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1186"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 15,
+      "portraitKey": "narration_guard",
+      "alignCenter": true,
+      "isNarration": true,
+      "faction": "laNoir",
+      "voice": "S1001V-1187"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 16,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1188"
+    },
+    {
+      "dialogueKey": "D10421",
+      "index": 17,
+      "portraitKey": "narration_guard",
+      "alignCenter": true,
+      "isNarration": true,
+      "faction": "laNoir",
+      "voice": "S1001V-1189"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1190"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 1,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1191"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 2,
+      "expression": "angry2_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1192"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 3
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 4,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1194"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 5,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1195"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 6,
+      "expression": "angry_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1196"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 7,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1197"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 8,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1198"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 9,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1199"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 10,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1200"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 11,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1201"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 12,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1202"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 13,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 14,
+      "expression": "idle_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1204"
+    },
+    {
+      "dialogueKey": "D10430",
+      "index": 15
+    },
+    {
+      "dialogueKey": "D10431",
+      "index": 0,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1206"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1207"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 1,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1208"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 2,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1209"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 3,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1210"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 4,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1211"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 5,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1212"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 6,
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1213"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 7,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1214"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 8,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1215"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 9,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1216"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 10,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1217"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 11,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1218"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 12,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1219"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 13,
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1220"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 14,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1221"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 15,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1222"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 16,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1223"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 17,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1224"
+    },
+    {
+      "dialogueKey": "D10432",
+      "index": 18,
+      "portraitKey": "DP_1FContem_Noir",
+      "voice": "S1001V-1225"
+    },
+    {
+      "dialogueKey": "D1043",
+      "index": 0,
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1226"
+    },
+    {
+      "dialogueKey": "D1043",
+      "index": 1,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1043",
+      "index": 2,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1228"
+    },
+    {
+      "dialogueKey": "D1044",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1044",
+      "index": 1,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1044",
+      "index": 2,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1044",
+      "index": 3,
+      "expression": "angry_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1044",
+      "index": 4,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1050",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1229"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1230"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 1,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1231"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 2,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1232"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 3,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 4,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1234"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 5,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1235"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 6,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1236"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 7,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1237"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 8,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1238"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 9
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 10,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1240"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 11,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1241"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 12,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1242"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 13,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1243"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 14,
+      "expression": "smile4_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1244"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 15,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1245"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 16,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1246"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 17,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1247"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 18,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1248"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 19,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1249"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 20,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1250"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 21,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1251"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 22,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1252"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 23,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1253"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 24,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1254"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 25,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1255"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 26,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1256"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 27,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1257"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 28,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1258"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 29,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1259"
+    },
+    {
+      "dialogueKey": "D10501",
+      "index": 30,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1260"
+    },
+    {
+      "dialogueKey": "D1051",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Rouge"
+    },
+    {
+      "dialogueKey": "D1055",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1266"
+    },
+    {
+      "dialogueKey": "D1052",
+      "index": 0,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1267"
+    },
+    {
+      "dialogueKey": "D1052",
+      "index": 1,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1268"
+    },
+    {
+      "dialogueKey": "D1052",
+      "index": 2,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1269"
+    },
+    {
+      "dialogueKey": "D1052",
+      "index": 3,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1270"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 0,
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1271"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 2,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1273"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 3,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1274"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 4,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1275"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 5,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1276"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 6,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-1277"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 7,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1278"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 8,
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1279"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 9,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1280"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 10,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1281"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 11,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 12,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1283"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 13,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1284"
+    },
+    {
+      "dialogueKey": "D10521",
+      "index": 14,
+      "portraitKey": "DP_1FContem_Rouge",
+      "voice": "S1001V-1285"
+    },
+    {
+      "dialogueKey": "D1060",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1061",
+      "index": 0,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1286"
+    },
+    {
+      "dialogueKey": "D1061",
+      "index": 1,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1287"
+    },
+    {
+      "dialogueKey": "D1061",
+      "index": 2,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1288"
+    },
+    {
+      "dialogueKey": "D1061",
+      "index": 3,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1289"
+    },
+    {
+      "dialogueKey": "D1061",
+      "index": 4,
+      "portraitKey": "DP_Newbi_Sisy",
+      "voice": "S1001V-1290"
+    },
+    {
+      "dialogueKey": "D1061",
+      "index": 5,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1291"
+    },
+    {
+      "dialogueKey": "D1013",
+      "index": 0,
+      "portraitKey": "DP_Cromer_Sister"
+    },
+    {
+      "dialogueKey": "D1027",
+      "index": 0,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1028",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1034",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1046",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1063",
+      "index": 0,
+      "portraitKey": "DP_Newbi_Sisy"
+    },
+    {
+      "dialogueKey": "D1015",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1015",
+      "voice": "LCB_09_EmotionVoice_4_A",
+      "index": 1,
+      "expression": "smile2",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1015",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D1015",
+      "index": 3
+    },
+    {
+      "dialogueKey": "D1925",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1926",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1926",
+      "voice": "LCB_09_EmotionVoice_5_B",
+      "index": 1,
+      "expression": "shock_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1926",
+      "voice": "LCB_08_EmotionVoice_1_C",
+      "index": 2,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1927",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1016",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1017",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1017",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1017",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D1949",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1018",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1029",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1056",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1056",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1901",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1901",
+      "voice": "LCB_05_EmotionVoice_3_C",
+      "index": 1,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1901",
+      "voice": "LCB_05_EmotionVoice_2_B",
+      "index": 2,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1901",
+      "voice": "LCB_05_EmotionVoice_1_B",
+      "index": 3,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_FastTickTok"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 1,
+      "expression": "shock_L_1",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-900"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 2,
+      "expression": "smile4_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-901"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 3,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Tick"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 4,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 5,
+      "expression": "happy_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-904"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 6,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 7,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-906"
+    },
+    {
+      "dialogueKey": "D1020",
+      "index": 8,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D10201",
+      "index": 0,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-893"
+    },
+    {
+      "dialogueKey": "D10202",
+      "index": 0,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-894"
+    },
+    {
+      "dialogueKey": "D10202",
+      "index": 1,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-895"
+    },
+    {
+      "dialogueKey": "D10202",
+      "index": 2,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-896"
+    },
+    {
+      "dialogueKey": "D10203",
+      "index": 0,
+      "expression": "shock 3",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-897"
+    },
+    {
+      "dialogueKey": "D10203",
+      "index": 1,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_FastTickTok"
+    },
+    {
+      "dialogueKey": "D1097",
+      "voice": "LCB_05_EmotionVoice_3_C",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1098",
+      "voice": "LCB_08_EmotionVoice_6_B",
+      "index": 0,
+      "portraitKey": "DP_Ishmael",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1902",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1924",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1924",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1903",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1903",
+      "voice": "LCB_08_EmotionVoice_3_B",
+      "index": 1,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1903",
+      "voice": "LCB_08_EmotionVoice_2_A",
+      "index": 2,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1904",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1905",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1906",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1907",
+      "voice": "LCB_08_EmotionVoice_4_A",
+      "index": 0,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1907",
+      "index": 1,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1907",
+      "voice": "LCB_08_EmotionVoice_1_B",
+      "index": 2,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1907",
+      "voice": "LCB_09_EmotionVoice_4_A",
+      "index": 3,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1907",
+      "index": 4
+    },
+    {
+      "dialogueKey": "D1908",
+      "voice": "LCB_08_EmotionVoice_4_C",
+      "index": 0,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1908",
+      "index": 1,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1908",
+      "voice": "LCB_08_EmotionVoice_1_A",
+      "index": 2,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1908",
+      "voice": "LCB_09_EmotionVoice_4_B",
+      "index": 3,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1908",
+      "index": 4
+    },
+    {
+      "dialogueKey": "D1909",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1910",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1947",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1948",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1945",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1945",
+      "voice": "LCB_05_EmotionVoice_6_C",
+      "index": 1,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1945",
+      "voice": "LCB_08_EmotionVoice_3_B",
+      "index": 2,
+      "expression": "sink_R",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1945",
+      "voice": "LCB_09_EmotionVoice_3_B",
+      "index": 3,
+      "expression": "sad_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1945",
+      "voice": "LCB_09_EmotionVoice_5_A",
+      "index": 4,
+      "expression": "sad_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1945",
+      "voice": "LCB_08_EmotionVoice_3_A",
+      "index": 5,
+      "expression": "sink2_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1945",
+      "index": 6,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1950",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1956",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1957",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1957",
+      "voice": "LCB_05_EmotionVoice_3_B",
+      "index": 1,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1957",
+      "voice": "LCB_08_EmotionVoice_4_A",
+      "index": 2,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1957",
+      "voice": "LCB_05_EmotionVoice_4_A",
+      "index": 3,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1957",
+      "voice": "LCB_09_EmotionVoice_2_A",
+      "index": 4,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1957",
+      "voice": "LCB_09_EmotionVoice_4_B",
+      "index": 5,
+      "expression": "happy_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1957",
+      "voice": "LCB_05_EmotionVoice_5_C",
+      "index": 6,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1957",
+      "voice": "LCB_08_EmotionVoice_1_C",
+      "index": 7,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1957",
+      "index": 8
+    },
+    {
+      "dialogueKey": "D1958",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1961",
+      "index": 0,
+      "portraitKey": "narration_Light",
+      "isNarration": true
+    },
+    {
+      "dialogueKey": "D1961",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1961",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D1962",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1962",
+      "index": 1,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1962",
+      "index": 2,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1962",
+      "index": 3,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1962",
+      "index": 4,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1962",
+      "index": 5,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1962",
+      "index": 6,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1991",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1991",
+      "index": 1,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1991",
+      "index": 2,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1991",
+      "index": 3,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1990",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1990",
+      "index": 1,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1990",
+      "index": 2,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1990",
+      "index": 3,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1990",
+      "index": 4,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1960",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1960",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1942",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1943",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1911",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1913",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1928",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1929",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1929",
+      "voice": "LCB_09_EmotionVoice_6_C",
+      "index": 1,
+      "expression": "shock_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1929",
+      "voice": "LCB_08_EmotionVoice_3_C",
+      "index": 2,
+      "expression": "angry_R",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1929",
+      "voice": "LCB_05_EmotionVoice_3_A",
+      "index": 3,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1929",
+      "index": 4,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1951",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1952",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1952",
+      "voice": "LCB_09_EmotionVoice_2_B",
+      "index": 1,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1952",
+      "voice": "LCB_08_EmotionVoice_4_B",
+      "index": 2,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1952",
+      "voice": "LCB_05_EmotionVoice_3_C",
+      "index": 3,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1952",
+      "voice": "LCB_09_EmotionVoice_3_B",
+      "index": 4,
+      "expression": "idle_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1952",
+      "voice": "LCB_09_EmotionVoice_1_A",
+      "index": 5,
+      "expression": "happy_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1952",
+      "voice": "LCB_08_EmotionVoice_2_B",
+      "index": 6,
+      "expression": "sigh2_R",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1952",
+      "voice": "LCB_09_EmotionVoice_6_B",
+      "index": 7,
+      "expression": "smile4_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1953",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1954",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1955",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1959",
+      "index": 0,
+      "expression": "happy_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1959",
+      "index": 1,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1959",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 0,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 1,
+      "expression": "sad3_R",
+      "portraitKey": "DP_Sinclair"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 2,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 3,
+      "expression": "panic2_R",
+      "portraitKey": "DP_Outis"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 4,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 5,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 6,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 7,
+      "expression": "angry_R",
+      "portraitKey": "DP_Heathcliff2"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 8,
+      "expression": "idle2_R",
+      "portraitKey": "DP_YiSang"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 9,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 10,
+      "expression": "idle4",
+      "portraitKey": "DP_Faust"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 11,
+      "expression": "idle2",
+      "portraitKey": "DP_HongLu"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 12,
+      "expression": "nervous",
+      "portraitKey": "DP_DonQuixote"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 13,
+      "expression": "close_L",
+      "portraitKey": "DP_Outis"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 14,
+      "expression": "angry2_L",
+      "portraitKey": "DP_Outis"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 15,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 16
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 17,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 18,
+      "expression": "sigh_R",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 19,
+      "portraitKey": "DP_YiSang"
+    },
+    {
+      "dialogueKey": "D10011",
+      "index": 20,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1099",
+      "index": 0,
+      "expression": "surprise_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1261"
+    },
+    {
+      "dialogueKey": "D1099",
+      "index": 1,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-1262"
+    },
+    {
+      "dialogueKey": "D1099",
+      "index": 2,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1099",
+      "index": 3,
+      "expression": "idle_L",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-1264"
+    },
+    {
+      "dialogueKey": "D1099",
+      "index": 4,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D1100",
+      "voice": "LCB_05_EmotionVoice_1_A",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1101",
+      "index": 0,
+      "portraitKey": "",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1102",
+      "index": 0,
+      "portraitKey": "",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1106",
+      "voice": "LCB_05_EmotionVoice_2_B",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1107",
+      "voice": "LCB_05_EmotionVoice_6_C",
+      "index": 0,
+      "portraitKey": "DP_Meursault",
+      "sfx": "SFX_UI_ChainRuttle"
+    },
+    {
+      "dialogueKey": "D1107",
+      "voice": "LCB_05_EmotionVoice_1_B",
+      "index": 1,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 0,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Tok"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 1,
+      "expression": "idle_L",
+      "portraitKey": "DP_Outis",
+      "voice": "S1001V-861"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 2,
+      "expression": "serious_R",
+      "portraitKey": "DP_Outis",
+      "voice": "S1001V-862"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 3,
+      "expression": "smile_L",
+      "portraitKey": "DP_Gregor",
+      "voice": "S1001V-863"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 4,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 5,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Wick"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 6,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 7,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_FastTickTok"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 8,
+      "expression": "panic2_L",
+      "portraitKey": "DP_Outis",
+      "voice": "S1001V-868"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 9,
+      "expression": "idle_R",
+      "portraitKey": "DP_Gregor",
+      "voice": "S1001V-869"
+    },
+    {
+      "dialogueKey": "D1109",
+      "index": 10,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal"
+    },
+    {
+      "dialogueKey": "D1980",
+      "index": 0,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael",
+      "voice": "S1001V-2622"
+    },
+    {
+      "dialogueKey": "D1980",
+      "index": 1,
+      "expression": "happy_R",
+      "portraitKey": "DP_Rodion",
+      "voice": "S1001V-2623"
+    },
+    {
+      "dialogueKey": "D1980",
+      "index": 2,
+      "portraitKey": "DP_Meursault",
+      "voice": "S1001V-2624"
+    },
+    {
+      "dialogueKey": "D1980",
+      "index": 3,
+      "portraitKey": "DP_Dante3",
+      "voice": "D_Normal2"
+    },
+    {
+      "dialogueKey": "D10204",
+      "index": 0,
+      "portraitKey": "DP_Sinclair"
+    },
+    {
+      "dialogueKey": "D10204",
+      "index": 1,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D10204",
+      "index": 2,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D10204",
+      "index": 3,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "D10204",
+      "index": 4,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D10226",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1026",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1923",
+      "index": 0,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1923",
+      "index": 1,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1923",
+      "index": 2,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1096",
+      "index": 0,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1012",
+      "index": 0,
+      "portraitKey": "DP_Cromer_Sister"
+    },
+    {
+      "dialogueKey": "D1012",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D1012",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D1012",
+      "index": 3,
+      "portraitKey": "DP_Outis"
+    },
+    {
+      "dialogueKey": "D1012",
+      "index": 4,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1012",
+      "index": 5,
+      "portraitKey": "DP_Cromer_Sister"
+    },
+    {
+      "dialogueKey": "D1012",
+      "index": 6,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1024",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1025",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1025",
+      "index": 1,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1025",
+      "index": 2,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1045",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1054",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Rouge"
+    },
+    {
+      "dialogueKey": "D1094",
+      "index": 0,
+      "portraitKey": "DP_YiSang"
+    },
+    {
+      "dialogueKey": "D1094",
+      "index": 1,
+      "portraitKey": "DP_Cromer_Sister"
+    },
+    {
+      "dialogueKey": "D1095",
+      "index": 0,
+      "portraitKey": "DP_Cromer_Sister"
+    },
+    {
+      "dialogueKey": "D2001",
+      "index": 0,
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D2001",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D2001",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D2001",
+      "index": 3
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_08_EmotionVoice_4_B",
+      "index": 0,
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_05_EmotionVoice_5_B",
+      "index": 1,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_05_EmotionVoice_1_B",
+      "index": 2,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_08_EmotionVoice_3_C",
+      "index": 3,
+      "expression": "idle_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_09_EmotionVoice_1_B",
+      "index": 4,
+      "expression": "smile_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1963",
+      "index": 5,
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_05_EmotionVoice_2_A",
+      "index": 6,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_09_EmotionVoice_3_B",
+      "index": 7,
+      "expression": "sigh_L",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_08_EmotionVoice_3_A",
+      "index": 8,
+      "expression": "surprise_L",
+      "portraitKey": "DP_Ishmael"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_09_EmotionVoice_6_B",
+      "index": 9,
+      "expression": "happy_R",
+      "portraitKey": "DP_Rodion"
+    },
+    {
+      "dialogueKey": "D1963",
+      "voice": "LCB_05_EmotionVoice_5_C",
+      "index": 10,
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D1963",
+      "index": 11,
+      "portraitKey": ""
+    },
+    {
+      "dialogueKey": "D1964",
+      "index": 0,
+      "portraitKey": ""
+    },
+    {
+      "dialogueKey": "D1964",
+      "index": 1,
+      "portraitKey": ""
+    },
+    {
+      "dialogueKey": "D1916",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1917",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1965",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1966",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1967",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1968",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1969",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1970",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1971",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1972",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1973",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1974",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1975",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1083",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1084",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1084",
+      "voice": "LCB_09_EmotionVoice_4_A",
+      "index": 1,
+      "portraitKey": "DP_Rodion",
+      "expression": "smile2_R"
+    },
+    {
+      "dialogueKey": "D1085",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1085",
+      "voice": "LCB_08_EmotionVoice_4_B",
+      "index": 1,
+      "portraitKey": "DP_Ishmael",
+      "expression": "surprise_L"
+    },
+    {
+      "dialogueKey": "D1085",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D1085",
+      "voice": "LCB_08_EmotionVoice_2_A",
+      "index": 3,
+      "portraitKey": "DP_Ishmael",
+      "expression": "sigh2_R"
+    },
+    {
+      "dialogueKey": "D1086",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1977",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D1981",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1982",
+      "index": 0,
+      "portraitKey": "DP_1FSPA_Rose"
+    },
+    {
+      "dialogueKey": "D1983",
+      "index": 0,
+      "portraitKey": "DP_Newbi_Sisy"
+    },
+    {
+      "dialogueKey": "D1984",
+      "index": 0,
+      "portraitKey": "DP_Newbi_Sisy"
+    },
+    {
+      "dialogueKey": "D1985",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1986",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Noir"
+    },
+    {
+      "dialogueKey": "D1987",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Rouge"
+    },
+    {
+      "dialogueKey": "D1988",
+      "index": 0,
+      "portraitKey": "DP_1FContem_Rouge"
+    }
+  ]
+}

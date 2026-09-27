@@ -1,0 +1,282 @@
+{
+  "list": [
+    {
+      "key": "EC-2000",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2000"
+    },
+    {
+      "key": "E22020101",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "22020101, 220202"
+    },
+    {
+      "key": "E22020102",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "22020102, 220203"
+    },
+    {
+      "key": "E22020103",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "22020103, 220204"
+    },
+    {
+      "key": "ED-2001",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D-2001-1"
+    },
+    {
+      "key": "EQ-2002F",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2002A"
+    },
+    {
+      "key": "ED-2002F",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-2002-1"
+    },
+    {
+      "key": "EC-2002",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2002"
+    },
+    {
+      "key": "EC-2003",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2003"
+    },
+    {
+      "key": "EC-2005",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2005"
+    },
+    {
+      "key": "EC-2034",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2034"
+    },
+    {
+      "key": "EK-2034",
+      "canRepeat": false,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N202034",
+      "action2": "DespawnNpc",
+      "actionValue2": "N202034, 221500"
+    },
+    {
+      "key": "EK-2034R",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N202034"
+    },
+    {
+      "key": "EQ-2007",
+      "canRepeat": false
+    },
+    {
+      "key": "ER-2010",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I993002, 2",
+      "action2": "RemoveItem",
+      "actionValue2": "I993003, 2",
+      "action3": "RemoveItem",
+      "actionValue3": "I993004, 2",
+      "action4": "GiveItem",
+      "actionValue4": "I992806, 1"
+    },
+    {
+      "key": "ER-2011",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I992806, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I992807, 1"
+    },
+    {
+      "key": "EG-2012",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I992807, 1"
+    },
+    {
+      "key": "EC-2013",
+      "canRepeat": true,
+      "action1": "RemoveItem",
+      "actionValue1": "I992704, 1",
+      "action2": "RemoveItem",
+      "actionValue2": "I992807, 1",
+      "action3": "PlayCutscene",
+      "actionValue3": "C-2013"
+    },
+    {
+      "key": "EQ-2013BGM",
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-2014BGM",
+      "canRepeat": false
+    },
+    {
+      "key": "EC-2014",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2014"
+    },
+    {
+      "key": "EB-2014",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11016, N202021, , 1"
+    },
+    {
+      "key": "EC-2014B",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2014B"
+    },
+    {
+      "key": "EQ-2016",
+      "canRepeat": false
+    },
+    {
+      "key": "EC-2017",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2017"
+    },
+    {
+      "key": "EK-2022",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N202022"
+    },
+    {
+      "key": "EA-2015",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D20201560"
+    },
+    {
+      "key": "EA-2022",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D20202260"
+    },
+    {
+      "key": "EK-2021",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N202021, 1"
+    },
+    {
+      "key": "EW-2002",
+      "canRepeat": false
+    },
+    {
+      "key": "EK-2002",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N202021"
+    },
+    {
+      "key": "EC-2022D1",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D1"
+    },
+    {
+      "key": "EC-2022D2",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D2"
+    },
+    {
+      "key": "EC-2022D3",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D3"
+    },
+    {
+      "key": "EC-2022D4",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D4"
+    },
+    {
+      "key": "EG-2022T",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990923, 1"
+    },
+    {
+      "key": "ES-2022A",
+      "canRepeat": false
+    },
+    {
+      "key": "ES-2022B",
+      "canRepeat": false
+    },
+    {
+      "key": "EG-2022Y",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "100"
+    },
+    {
+      "key": "E-VEND-B2",
+      "canRepeat": true,
+      "action1": "OpenShop",
+      "actionValue1": "SH109004"
+    },
+    {
+      "key": "EC-2022D5",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-2022D5"
+    },
+    {
+      "key": "ED-2003",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-2801"
+    },
+    {
+      "key": "ED-2004",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-2802"
+    },
+    {
+      "key": "ED-2005",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-2803"
+    },
+    {
+      "key": "ED-2006",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-2804"
+    },
+    {
+      "key": "EPI-B2A",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990017, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990011, 1"
+    }
+  ]
+}

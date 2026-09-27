@@ -8,97 +8,113 @@
           "id": 16,
           "storyId": "S919B",
           "nodeId": 10919,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_deeparea_lab"
         },
         {
           "id": 17,
           "storyId": "S920B",
           "nodeId": 10921,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_collapsed corridor"
         },
         {
           "id": 18,
           "storyId": "S922B",
           "nodeId": 10923,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_preservation room"
         },
         {
           "id": 19,
           "storyId": "S923B",
           "nodeId": 10924,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_vault sector_before"
         },
         {
           "id": 20,
           "storyId": "S924B",
           "nodeId": 10925,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_collapsed corridor"
         },
         {
           "id": 21,
           "storyId": "S925B",
           "nodeId": 10927,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S919"
         },
         {
           "id": 22,
           "storyId": "S926B",
           "nodeId": 10930,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S917"
         },
         {
           "id": 23,
           "storyId": "S926I1",
           "nodeId": 10930,
-          "stageDetail": "Inter"
+          "stageDetail": "Inter",
+          "fullBannerId": "Story_BG/story_deeparea_ev_close"
         },
         {
           "id": 24,
           "storyId": "S926I2",
           "nodeId": 10930,
-          "stageDetail": "Inter"
+          "stageDetail": "Inter",
+          "fullBannerId": "Story_BG/story_deeparea_ev_close"
         },
         {
           "id": 25,
           "storyId": "S926A",
           "nodeId": 10930,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S918"
         },
         {
           "id": 26,
           "storyId": "S927B",
           "nodeId": 10931,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_corridor_C_Ch9"
         },
         {
           "id": 27,
           "storyId": "S928B",
           "nodeId": 10932,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_control room_before"
         },
         {
           "id": 28,
           "storyId": "S929B",
           "nodeId": 10933,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_deeparea_ev_close"
         },
         {
           "id": 29,
           "storyId": "S929A",
           "nodeId": 10933,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S911"
         },
         {
           "id": 30,
           "storyId": "S930B",
           "nodeId": 10934,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S913_2"
         },
         {
           "id": 31,
           "storyId": "S931B",
           "nodeId": 10935,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_countdown location"
         }
       ]
     }

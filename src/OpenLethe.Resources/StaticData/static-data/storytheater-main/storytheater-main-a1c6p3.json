@@ -8,25 +8,29 @@
           "id": 1,
           "storyId": "S601B",
           "nodeId": 10601,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S602_2"
         },
         {
           "id": 2,
           "storyId": "S602B",
           "nodeId": 10602,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_t_backstreet"
         },
         {
           "id": 3,
           "storyId": "S603B",
           "nodeId": 10603,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_t_backstreet"
         },
         {
           "id": 4,
           "storyId": "S603A",
           "nodeId": 10603,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_t_backstreet"
         },
         {
           "id": 5,
@@ -44,67 +48,86 @@
           "id": 7,
           "storyId": "S606B",
           "nodeId": 10606,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_distant mansion"
         },
         {
           "id": 8,
           "storyId": "S607B",
           "nodeId": 10607,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S603"
         },
         {
           "id": 9,
           "storyId": "S608B",
           "nodeId": 10608,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_near the mansion"
         },
         {
           "id": 10,
           "storyId": "S609B",
           "nodeId": 10609,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion drawing room",
+          "scaleX": 1.5,
+          "scaleY": 1.5
         },
         {
           "id": 11,
           "storyId": "S609A",
           "nodeId": 10609,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_mansion drawing room",
+          "scaleX": 1.5,
+          "scaleY": 1.5
         },
         {
           "id": 12,
           "storyId": "S610B",
           "nodeId": 10610,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion drawing room",
+          "scaleX": 1.5,
+          "scaleY": 1.5
         },
         {
           "id": 13,
           "storyId": "S611B",
           "nodeId": 10611,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion drawing room",
+          "scaleX": 1.5,
+          "scaleY": 1.5
         },
         {
           "id": 14,
           "storyId": "S612B",
           "nodeId": 10612,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion drawing room_past(short)"
         },
         {
           "id": 15,
           "storyId": "S613B",
           "nodeId": 10613,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion_entrance"
         },
         {
           "id": 16,
           "storyId": "S614B",
           "nodeId": 10614,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hallway"
         },
         {
           "id": 17,
           "storyId": "S616B",
           "nodeId": 10616,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hallway"
         },
         {
           "id": 18,
@@ -116,181 +139,211 @@
           "id": 19,
           "storyId": "S618B",
           "nodeId": 10618,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_room_catherine_past"
         },
         {
           "id": 20,
           "storyId": "S619B",
           "nodeId": 10619,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_room_catherine"
         },
         {
           "id": 21,
           "storyId": "S619A",
           "nodeId": 10619,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_room_catherine"
         },
         {
           "id": 22,
           "storyId": "S620B",
           "nodeId": 10620,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hallway_v1"
         },
         {
           "id": 23,
           "storyId": "S621B",
           "nodeId": 10621,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion fireplace"
         },
         {
           "id": 24,
           "storyId": "S621A",
           "nodeId": 10621,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_mansion fireplace"
         },
         {
           "id": 25,
           "storyId": "S622B",
           "nodeId": 10622,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_basement stairs"
         },
         {
           "id": 26,
           "storyId": "S623A",
           "nodeId": 10623,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_basement door"
         },
         {
           "id": 27,
           "storyId": "S624B",
           "nodeId": 10624,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_basement_laboratory"
         },
         {
           "id": 28,
           "storyId": "S625B",
           "nodeId": 10625,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_basement_laboratory_v1"
         },
         {
           "id": 29,
           "storyId": "S628B",
           "nodeId": 10628,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_basement_laboratory_v1"
         },
         {
           "id": 30,
           "storyId": "S629A",
           "nodeId": 10629,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_basement_laboratory_v2"
         },
         {
           "id": 31,
           "storyId": "S630B",
           "nodeId": 10630,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_catherine_sleep"
         },
         {
           "id": 32,
           "storyId": "S631A",
           "nodeId": 10631,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_catherine_sleep"
         },
         {
           "id": 33,
           "storyId": "S632B",
           "nodeId": 10632,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion fireplace_past"
         },
         {
           "id": 34,
           "storyId": "S632A",
           "nodeId": 10632,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_mansion fireplace_past"
         },
         {
           "id": 35,
           "storyId": "S633B",
           "nodeId": 10633,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_catherine_sleep"
         },
         {
           "id": 36,
           "storyId": "S634B",
           "nodeId": 10634,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S609"
         },
         {
           "id": 37,
           "storyId": "S634A",
           "nodeId": 10634,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S609"
         },
         {
           "id": 38,
           "storyId": "S635B",
           "nodeId": 10635,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_broken_laboratory_v1"
         },
         {
           "id": 39,
           "storyId": "S635A",
           "nodeId": 10635,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_broken_laboratory_v1"
         },
         {
           "id": 40,
           "storyId": "S636B",
           "nodeId": 10636,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_broken_laboratory_v2"
         },
         {
           "id": 41,
           "storyId": "S637B",
           "nodeId": 10637,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_broken_laboratory_v2"
         },
         {
           "id": 42,
           "storyId": "S637A",
           "nodeId": 10637,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_broken_laboratory_v3"
         },
         {
           "id": 43,
           "storyId": "S638B",
           "nodeId": 10638,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_broken_laboratory_v4"
         },
         {
           "id": 44,
           "storyId": "S639B",
           "nodeId": 10639,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_broken_laboratory_v7"
         },
         {
           "id": 45,
           "storyId": "S643B",
           "nodeId": 10643,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion_hall"
         },
         {
           "id": 46,
           "storyId": "S644B",
           "nodeId": 10644,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion_hall"
         },
         {
           "id": 47,
           "storyId": "S644A",
           "nodeId": 10644,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_rooftop stairs"
         },
         {
           "id": 48,
           "storyId": "S645B",
           "nodeId": 10645,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_rooftop stairs"
         },
         {
           "id": 49,
@@ -302,25 +355,29 @@
           "id": 50,
           "storyId": "S646B",
           "nodeId": 10646,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S619"
         },
         {
           "id": 51,
           "storyId": "S647B",
           "nodeId": 10647,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S618"
         },
         {
           "id": 52,
           "storyId": "S648B",
           "nodeId": 10648,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_mansion_rooftop_v5"
         },
         {
           "id": 53,
           "storyId": "S648A",
           "nodeId": 10648,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_mansion_rooftop_v2"
         }
       ]
     }

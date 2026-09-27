@@ -1,0 +1,342 @@
+{
+  "list": [
+    {
+      "id": 10310014,
+      "eventKey": "E3013",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "130100"
+    },
+    {
+      "id": 10310021,
+      "eventKey": "E3021",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "138003",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3002"
+    },
+    {
+      "id": 10310022,
+      "eventKey": "E3021",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "138004",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3002"
+    },
+    {
+      "id": 10310023,
+      "eventKey": "E3021",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "138005",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3002"
+    },
+    {
+      "id": 10310031,
+      "eventKey": "E3031",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q3002"
+    },
+    {
+      "id": 10310042,
+      "eventKey": "E3041",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "130200",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3002"
+    },
+    {
+      "id": 10310043,
+      "eventKey": "E3042",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "130200"
+    },
+    {
+      "id": 10310044,
+      "eventKey": "E3043",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "130300"
+    },
+    {
+      "id": 10310151,
+      "eventKey": "E3015",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3014"
+    },
+    {
+      "id": 10310152,
+      "eventKey": "E3015",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3015"
+    },
+    {
+      "id": 10310171,
+      "eventKey": "E3017",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11010",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q3006"
+    },
+    {
+      "id": 10310071,
+      "eventKey": "E3071",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "138001",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3006",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q3007"
+    },
+    {
+      "id": 10310072,
+      "eventKey": "E3072",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "138002",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3006",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q3007"
+    },
+    {
+      "id": 10310073,
+      "eventKey": "E3070",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3070"
+    },
+    {
+      "id": 10310074,
+      "eventKey": "E3070",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3071"
+    },
+    {
+      "id": 10310085,
+      "eventKey": "E3085",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3085"
+    },
+    {
+      "id": 10310124,
+      "eventKey": "E3122",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q3013, 0"
+    },
+    {
+      "id": 10310132,
+      "eventKey": "E3131",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3130"
+    },
+    {
+      "id": 10310141,
+      "eventKey": "E3141",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "130400"
+    },
+    {
+      "id": 10310162,
+      "eventKey": "E3161",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "130501",
+      "passiveCondition1": "NpcNotAlerted",
+      "passiveConditionValue1": "N103016"
+    },
+    {
+      "id": 10310981,
+      "eventKey": "E3981",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3981"
+    },
+    {
+      "id": 10310916,
+      "eventKey": "E39161",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D39161"
+    },
+    {
+      "id": 10310918,
+      "eventKey": "E3918",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3918"
+    },
+    {
+      "id": 10310808,
+      "eventKey": "E3808",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3808"
+    },
+    {
+      "id": 10310838,
+      "eventKey": "E3838",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3838"
+    },
+    {
+      "id": 10310858,
+      "eventKey": "E3858",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3858"
+    },
+    {
+      "id": 10341602,
+      "eventKey": "E41602",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4160"
+    },
+    {
+      "id": 10341603,
+      "eventKey": "E41603",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11006"
+    },
+    {
+      "id": 10341604,
+      "eventKey": "E41603",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "130200",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q4017"
+    },
+    {
+      "id": 10341605,
+      "eventKey": "E41604",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41610"
+    },
+    {
+      "id": 10310940,
+      "eventKey": "E3940",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3940"
+    },
+    {
+      "id": 10310182,
+      "eventKey": "E3016",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q3016T"
+    },
+    {
+      "id": 10310183,
+      "eventKey": "EL3016",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q3016H2",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q3016T"
+    },
+    {
+      "id": 10310184,
+      "eventKey": "ED3016",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q3016H1",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q3016T"
+    },
+    {
+      "id": 10310161,
+      "eventKey": "EL3016",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D3017"
+    },
+    {
+      "id": 10310991,
+      "eventKey": "ED3990",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N103013"
+    },
+    {
+      "id": 10310992,
+      "eventKey": "ED3990",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N103027"
+    },
+    {
+      "id": 10310994,
+      "eventKey": "ED3991",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N103015"
+    },
+    {
+      "id": 10310995,
+      "eventKey": "ED3992",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N103016"
+    },
+    {
+      "id": 10310996,
+      "eventKey": "ED3993",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N103003"
+    },
+    {
+      "id": 10310997,
+      "eventKey": "E3965",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3091",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E3964",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E3965",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q3008"
+    },
+    {
+      "id": 10310998,
+      "eventKey": "E3964",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3091",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E3963",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E3964",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q3008"
+    },
+    {
+      "id": 10310999,
+      "eventKey": "E3963",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3091",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E3962",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E3963",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q3008"
+    },
+    {
+      "id": 10311000,
+      "eventKey": "E3962",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3091",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E3962",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q3008"
+    },
+    {
+      "id": 10311001,
+      "eventKey": "E3966",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C3091",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3008",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E3966"
+    },
+    {
+      "id": 810301001,
+      "eventKey": "EPI-3A",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

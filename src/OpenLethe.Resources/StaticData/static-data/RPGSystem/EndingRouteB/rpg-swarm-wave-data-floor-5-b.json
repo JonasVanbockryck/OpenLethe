@@ -1,0 +1,63 @@
+{
+  "list": [
+    {
+      "waveIndex": 0,
+      "defenseCreep": {
+        "startRadiusTiles": 1,
+        "maxRadiusTiles": 10,
+        "growTileIntervalSeconds": 0.075,
+        "growthIrregularity": 1.5,
+        "spreadSeed": 105003,
+        "moveSpeedMultiplier": 1.2,
+        "attackSpeedMultiplier": 1.2,
+        "attackPowerAdd": 2,
+        "clearOnQuestKey": "Q5003"
+      },
+      "startSeconds": 0,
+      "spawnIntervalSeconds": 4.0,
+      "mobsPerSpawn": 6,
+      "zoneKey": "swarm_zone_5f_cocoon",
+      "mobKeys": [
+        "swarm_lanoir_guard",
+        "swarm_lanoir_fanatic_3f",
+        "swarm_lanoir_fanatic"
+      ]
+    },
+    {
+      "waveIndex": 1,
+      "startSeconds": 7.5,
+      "spawnIntervalSeconds": 3.5,
+      "mobsPerSpawn": 7,
+      "zoneKey": "swarm_zone_5f_cocoon",
+      "mobKeys": [
+        "swarm_lanoir_guard",
+        "swarm_lanoir_fanatic_3f",
+        "swarm_lanoir_fanatic"
+      ]
+    },
+    {
+      "waveIndex": 2,
+      "startSeconds": 15,
+      "spawnIntervalSeconds": 3.0,
+      "mobsPerSpawn": 8,
+      "zoneKey": "swarm_zone_5f_cocoon",
+      "mobKeys": [
+        "swarm_lanoir_guard",
+        "swarm_lanoir_fanatic_3f",
+        "swarm_lanoir_fanatic"
+      ]
+    },
+    {
+      "waveIndex": 3,
+      "startSeconds": 22.5,
+      "spawnIntervalSeconds": 2.5,
+      "mobsPerSpawn": 9,
+      "zoneKey": "swarm_zone_5f_cocoon",
+      "mobKeys": [
+        "swarm_lanoir_guard",
+        "swarm_lanoir_fanatic_3f",
+        "swarm_lanoir_fanatic"
+      ]
+    }
+  ]
+}

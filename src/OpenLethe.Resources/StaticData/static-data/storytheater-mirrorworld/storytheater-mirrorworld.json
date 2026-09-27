@@ -303,7 +303,8 @@
     {
       "mirrorWorldId": 36,
       "needsPersonalityIdList": [
-        10311
+        10311,
+        10616
       ]
     },
     {
@@ -429,6 +430,20 @@
         11009,
         10216,
         11216
+      ]
+    },
+    {
+      "mirrorWorldId": 53,
+      "needsPersonalityIdList": [
+        10116
+      ]
+    },
+    {
+      "mirrorWorldId": 54,
+      "needsPersonalityIdList": [
+        10416,
+        10816,
+        10917
       ]
     }
   ]

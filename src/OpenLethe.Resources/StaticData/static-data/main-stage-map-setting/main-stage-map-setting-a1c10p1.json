@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "subChapterId": 110,
+      "stageMapPosZ": -2000.0,
+      "stageNodeZoomAnimationPivotX": 0.35,
+      "upperStageNodeZoomAnimationPivotY": 0.55,
+      "lowerStageNodeZoomAnimationPivotY": 0.4,
+      "zoomInScale": 1.4,
+      "stageIconSlotScale": 0.5,
+      "selectedIconScale": 1.0,
+      "isUseEffectPositionData": true,
+      "effectPosition": {
+        "positionX": 0,
+        "positionY": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "list": [
+    {
+      "key": "EC-1001",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1001"
+    },
+    {
+      "key": "EC-1002",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1002"
+    },
+    {
+      "key": "EC-1003",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1003"
+    },
+    {
+      "key": "EC-1005",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1005"
+    },
+    {
+      "key": "EC-1007",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1007"
+    },
+    {
+      "key": "EC-1008C",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1008",
+      "action2": "GiveItem",
+      "actionValue2": "I992710, 1"
+    },
+    {
+      "key": "EC-1009",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1009",
+      "action2": "GiveItem",
+      "actionValue2": "I992710, 1"
+    },
+    {
+      "key": "EC-1009A",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1009AR",
+      "action2": "RemoveItem",
+      "actionValue2": "I992709, 1"
+    },
+    {
+      "key": "EC-1009B",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1009BR",
+      "action2": "RemoveItem",
+      "actionValue2": "I992707, 1"
+    },
+    {
+      "key": "E-ESCDEF-A",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I992709, 1"
+    },
+    {
+      "key": "E-ESCDEF-B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I992707, 1"
+    },
+    {
+      "key": "E-WRONGRIDE-A",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1009AR",
+      "action2": "RemoveItem",
+      "actionValue2": "I992709, 1"
+    },
+    {
+      "key": "E-WRONGRIDE-B",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1009BR",
+      "action2": "RemoveItem",
+      "actionValue2": "I992707, 1"
+    },
+    {
+      "key": "ES-1020",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1020"
+    },
+    {
+      "key": "EC-1021",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1021"
+    },
+    {
+      "key": "E-B1",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11008, , N201003, 1"
+    },
+    {
+      "key": "EC-1022",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1022"
+    },
+    {
+      "key": "EC-1023",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1023"
+    },
+    {
+      "key": "E-EYE4",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "50"
+    },
+    {
+      "key": "E-EYE5",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "50"
+    },
+    {
+      "key": "E-EYE1",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E-EYE2",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E-EYE3",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E-EYE6",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E-B1MAPFRAG",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990814, 1"
+    },
+    {
+      "key": "E-Q6ITEM",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I992702, 1"
+    },
+    {
+      "key": "E-DARKDOOR",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N201027"
+    },
+    {
+      "key": "E-Q7ITEMS",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I992702, 1"
+    },
+    {
+      "key": "E-MINGA87",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1024"
+    },
+    {
+      "key": "E-MINGA88",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1025"
+    },
+    {
+      "key": "E-MINGA89",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1026"
+    },
+    {
+      "key": "E-FCCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "2000011, 210101"
+    },
+    {
+      "key": "E-ESCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "2000051, 210501"
+    },
+    {
+      "key": "E-FreshCornerCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "2000021, 210201"
+    },
+    {
+      "key": "E-VEND-B1",
+      "canRepeat": true,
+      "action1": "OpenShop",
+      "actionValue1": "SH108002"
+    },
+    {
+      "key": "EC-1012",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1012"
+    },
+    {
+      "key": "E-EYEPAY1",
+      "canRepeat": false,
+      "action1": "RemoveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "EC-1010",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1010"
+    },
+    {
+      "key": "EC-1011",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1011"
+    },
+    {
+      "key": "ED-1001",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-1105"
+    },
+    {
+      "key": "ED-1002",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-1106"
+    },
+    {
+      "key": "ED-1003",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-1107"
+    },
+    {
+      "key": "EPI-B1A",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990009, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990018, 1"
+    }
+  ]
+}

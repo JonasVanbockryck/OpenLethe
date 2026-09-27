@@ -1,0 +1,59 @@
+{
+    "list": [
+        {
+            "patternKey": "NA999101",
+            "memo": "",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.07, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 6, "mpDamage": 0, "hitRange": 1, "hitDirections": [ "Front" ], "motion": "Attack" },
+                { "action": "Wait", "duration": 0.7 }
+            ]
+        },
+        {
+            "patternKey": "NA999103",
+            "memo": "",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.07, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 8, "mpDamage": 0, "hitShape": [ "XXX", "XNX" ], "motion": "Attack" },
+                { "action": "Wait", "duration": 0.7 }
+            ]
+        },
+        {
+            "patternKey": "NA999104",
+            "memo": "",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.2, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 8, "mpDamage": 0, "hitShape": [ "XXX", "XNX" ], "motion": "Attack" },
+                { "action": "Wait", "duration": 0.7 }
+            ]
+        },
+        {
+            "patternKey": "NA999105",
+            "memo": "",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.07, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 6, "mpDamage": 0, "hitShape": [ "XXX", ".N." ], "motion": "Attack" },
+                { "action": "Wait", "duration": 0.7 }
+            ]
+        },
+        {
+            "patternKey": "NA999106",
+            "memo": "",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.2, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 10, "mpDamage": 0, "hitRange": 1, "hitDirections": [ "Front" ], "motion": "Attack" },
+                { "action": "Wait", "duration": 0.7 }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "list": [
+    {
+      "shopKey": "SH103003",
+      "itemKey": "I990303",
+      "price": 30,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990304",
+      "price": 70,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990305",
+      "price": 60,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990306",
+      "price": 70,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990316",
+      "price": 100,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990317",
+      "price": 180,
+      "stock": 1
+    }
+  ]
+}

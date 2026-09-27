@@ -236,6 +236,7 @@
       "egoType": "TETH",
       "season": 1,
       "additionalAttachment": "EVENT",
+      "maxEgoSyncLevel": 5,
       "attributeResistList": [
         {
           "type": "CRIMSON",
@@ -295,7 +296,8 @@
         }
       ],
       "awakeningPassiveList": [
-        2030411
+        2030411,
+        2030412
       ],
       "awakeningSkillId": 2030411,
       "corrosionSkillId": 2030421
@@ -617,6 +619,76 @@
       ],
       "awakeningSkillId": 2030911,
       "corrosionSkillId": 2030921
+    },
+    {
+      "id": 20310,
+      "updatedDate": 20260806,
+      "characterId": 3,
+      "egoType": "ZAYIN",
+      "season": 7,
+      "attributeResistList": [
+        {
+          "type": "CRIMSON",
+          "value": 1
+        },
+        {
+          "type": "SCARLET",
+          "value": 1
+        },
+        {
+          "type": "AMBER",
+          "value": 2
+        },
+        {
+          "type": "SHAMROCK",
+          "value": 1
+        },
+        {
+          "type": "AZURE",
+          "value": 2
+        },
+        {
+          "type": "INDIGO",
+          "value": 1
+        },
+        {
+          "type": "VIOLET",
+          "value": 0.75
+        },
+        {
+          "type": "WHITE",
+          "value": 2
+        },
+        {
+          "type": "BLACK",
+          "value": 2
+        }
+      ],
+      "requirementList": [
+        {
+          "attributeType": "VIOLET",
+          "num": 5
+        }
+      ],
+      "corrosionSectionList": [
+        {
+          "section": 0.5,
+          "probability": 0.25
+        },
+        {
+          "section": 0.25,
+          "probability": 0.75
+        },
+        {
+          "section": 0,
+          "probability": 1.0
+        }
+      ],
+      "awakeningPassiveList": [
+        2031011
+      ],
+      "awakeningSkillId": 2031011,
+      "corrosionSkillId": 2031021
     }
   ]
 }

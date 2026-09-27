@@ -1,0 +1,17 @@
+{
+  "list": [
+    {
+      "key": "Lock_Q4025_Floor5",
+      "locationId": 148004,
+      "requiredQuestKey": "Q4025C",
+      "dialogueKey": "D42090"
+    },
+    {
+      "key": "Lock_Q3000_Floor5",
+      "locationId": 140405,
+      "requiredQuestKey": "Q-3005",
+      "lockActiveQuestKey": "Q-3000",
+      "dialogueKey": "D42091"
+    }
+  ]
+}

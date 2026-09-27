@@ -1,0 +1,49 @@
+{
+  "list": [
+    {
+      "levelCut" : 65,
+      "gradeIntForEnum": 8,
+      "gradeName" : "DIAMOND"
+    },
+    {
+      "levelCut" : 55,
+      "gradeIntForEnum": 7,
+      "gradeName" : "ONYX"
+    },
+    {
+      "levelCut" : 50,
+      "gradeIntForEnum": 6,
+      "gradeName" : "SAPPHIRE"
+    },
+    {
+      "levelCut" : 45,
+      "gradeIntForEnum": 5,
+      "gradeName" : "RUBY"
+    },
+    {
+      "levelCut" : 40,
+      "gradeIntForEnum": 4,
+      "gradeName" : "GOLD"
+    },
+    {
+      "levelCut" : 35,
+      "gradeIntForEnum": 3,
+      "gradeName" : "EMERALD"
+    },
+    {
+      "levelCut" : 25,
+      "gradeIntForEnum": 2,
+      "gradeName" : "AMBER"
+    },
+    {
+      "levelCut" : 15,
+      "gradeIntForEnum": 1,
+      "gradeName" : "AMETHYST"
+    },
+    {
+      "levelCut" : 0,
+      "gradeIntForEnum": 0,
+      "gradeName" : "TOPAZ"
+    }
+  ]
+}

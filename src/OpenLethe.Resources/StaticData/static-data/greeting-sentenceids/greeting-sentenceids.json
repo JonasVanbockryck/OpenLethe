@@ -1449,6 +1449,60 @@
       "condition": "GetEGO",
       "conditionRefId": 20109,
       "sortingOrder": 1
+    },
+    {
+      "id": 257,
+      "condition": "GetPersonality",
+      "conditionRefId": 10116,
+      "sortingOrder": 1
+    },
+    {
+      "id": 258,
+      "condition": "GetEGO",
+      "conditionRefId": 20310,
+      "sortingOrder": 1
+    },
+    {
+      "id": 259,
+      "condition": "GetPersonality",
+      "conditionRefId": 10616,
+      "sortingOrder": 1
+    },
+    {
+      "id": 260,
+      "condition": "GetEGO",
+      "conditionRefId": 21210,
+      "sortingOrder": 1
+    },
+    {
+      "id": 261,
+      "condition": "GetPersonality",
+      "conditionRefId": 10416,
+      "sortingOrder": 1
+    },
+    {
+      "id": 262,
+      "condition": "GetPersonality",
+      "conditionRefId": 10816,
+      "sortingOrder": 1
+    },
+    {
+      "id": 263,
+      "condition": "GetPersonality",
+      "conditionRefId": 10917,
+      "sortingOrder": 1
+    },
+    {
+      "id": 264,
+      "condition": "GetEGO",
+      "conditionRefId": 20610,
+      "sortingOrder": 1
+    },
+    {
+      "id": 265,
+      "condition": "GetEGO",
+      "conditionRefId": 20910,
+      "sortingOrder": 1
     }
   ]
 }

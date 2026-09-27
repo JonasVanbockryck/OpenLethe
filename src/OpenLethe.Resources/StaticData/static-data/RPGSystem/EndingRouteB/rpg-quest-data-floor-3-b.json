@@ -1,0 +1,122 @@
+{
+  "list": [
+    {
+      "key": "Q3001",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q2001",
+      "completeEventKey": "E3001"
+    },
+    {
+      "key": "Q3002",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3001"
+    },
+    {
+      "key": "Q3004",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3003"
+    },
+    {
+      "key": "Q3005",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3004",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3006",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3005",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3020",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3006",
+      "completeEventKey": "E3201"
+    },
+    {
+      "key": "Q3021",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3020",
+      "completeEventKey": "E3211",
+      "completeRewardMoney": 110
+    },
+    {
+      "key": "Q3022",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3021"
+    },
+    {
+      "key": "Q3023",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3022",
+      "completeEventKey": "E3231",
+      "completeRewardMoney": 110
+    },
+    {
+      "key": "Q3024",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3023",
+      "completeRewardMoney": 110
+    },
+    {
+      "key": "Q3025",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3024"
+    },
+    {
+      "key": "Q3003",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3002"
+    },
+    {
+      "key": "Q3026",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2009",
+      "completeEventKey": "E3026"
+    },
+    {
+      "key": "Q3027",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q3026",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q3028",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q3027",
+      "completeEventKey": "E3028"
+    },
+    {
+      "key": "Q3016T",
+      "hideList": true,
+      "sessionOnly": true,
+      "hideLog": true,
+      "acquireConditionType": "Always"
+    },
+    {
+      "key": "Q3016H1",
+      "hideList": true,
+      "sessionOnly": true,
+      "hideLog": true,
+      "acquireConditionType": "Always"
+    },
+    {
+      "key": "Q3016H2",
+      "hideList": true,
+      "sessionOnly": true,
+      "hideLog": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q3016H1"
+    }
+  ]
+}

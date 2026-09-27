@@ -1,0 +1,64 @@
+{
+  "list": [
+    {
+      "chapterId": 1,
+      "subChapterId": 110,
+      "hideProgressUntilCleared": true,
+      "syncSubChapterId": 9128,
+      "storyList": [
+        {
+          "id": 1,
+          "storyId": "S1003B",
+          "nodeId": 11001,
+          "syncNodeId": 912801,
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_n_street"
+        },
+        {
+          "id": 2,
+          "storyId": "S1004B",
+          "nodeId": 11002,
+          "syncNodeId": 912802,
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_Ncourt3"
+        },
+        {
+          "id": 3,
+          "storyId": "S1005B",
+          "nodeId": 11003,
+          "syncNodeId": 912803,
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_InVendingMachine"
+        },
+        {
+          "id": 4,
+          "nodeId": 11004,
+          "syncNodeId": 912804,
+          "fullBannerId": "Story_BG/story_beauty",
+          "rpgDetailInfo":
+          {
+            "storyTitle": "A",
+            "storyGroup": 0
+          }
+        },
+        {
+          "id": 5,
+          "nodeId": 11005,
+          "syncNodeId": 912805,
+          "rpgDetailInfo":
+          {
+            "storyTitle": "B",
+            "storyGroup": 1
+          }
+        },
+        {
+          "id": 6,
+          "rpgDetailInfo":
+          {
+            "storyTitle": "??"
+          }
+        }
+      ]
+    }
+  ]
+}

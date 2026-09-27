@@ -1,0 +1,490 @@
+{
+  "list": [
+    {
+      "key": "DP_NoirCaptain",
+      "portrait": "Story_StandingSprite/2F_NoirCaptain.png",
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_NoirGuard",
+      "portrait": "Story_StandingSprite/2F_NoirGuard.png",
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_PalettePortrait",
+      "portrait": "Story_StandingSprite/2F_PalettePortrait.png",
+      "background": ""
+    },
+    {
+      "key": "DP_GoldenWall",
+      "portrait": "",
+      "background": "#F5E7B2"
+    },
+    {
+      "key": "DP_GoldenFabric",
+      "portrait": "",
+      "centerX": 550,
+      "centerY": 770,
+      "size": 305,
+      "background": "#F5E7B2"
+    },
+    {
+      "key": "narration_Jeanne",
+      "portrait": "Story_StandingModel/Jeanne.psb",
+      "size": 216,
+      "background": "#ebcaa2",
+      "narrationFontMaterial": 1
+    },
+    {
+      "key": "narration_Jeanne_noise",
+      "portrait": "Story_StandingSprite/narration_mary_2.png",
+      "background": "#ebcaa2",
+      "hasNoise" : true,
+      "narrationFontMaterial": 1
+    },
+    {
+      "key": "DP_Jeanne",
+      "portrait": "Story_StandingModel/Jeanne.psb",
+      "size": 216,
+      "background": "#ebcaa2"
+    },
+    {
+      "key": "DP_Jeanne_Out",
+      "portrait": "Story_StandingModel/Jeanne_Out.psb",
+      "size": 216,
+      "background": "#ebcaa2"
+    },
+    {
+      "key": "B1_FM",
+      "portrait": "Story_StandingSprite/B1_FM.png",
+      "background": "#a01932"
+    },
+    {
+      "key": "B1_SousChef",
+      "portrait": "RPGPortrait/B1_SousChef.png",
+      "background": "#a01932"
+    },
+    {
+      "key": "DP_B1F_Medu1",
+      "portrait": "Story_StandingSprite/B1F_Medu1.png",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_B1F_Medu2",
+      "portrait": "Story_StandingSprite/B1F_Medu2.png",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_Lava",
+      "portrait": "Story_StandingSprite/B2F_Lava.png",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "narration_MEURSAULTmom",
+      "portrait": "Story_StandingSprite/narration_MEURSAULTmom.png",
+      "background": "#cf0000"
+    },
+    {
+      "key": "narration_MEURSAULTmom_noise",
+      "portrait": "Story_StandingSprite/narration_MEURSAULTmom.png",
+      "background": "#cf0000",
+      "hasNoise": true
+    },
+    {
+      "key": "narration_guard",
+      "portrait": "Story_StandingSprite/narration_guard.png",
+      "background": "#7d7d7d"
+    },
+    {
+      "key": "narration_Light",
+      "portrait": "Story_StandingSprite/narration_Light.png",
+      "background": "#E1B643",
+      "narrationFontMaterial": 3
+    },
+    {
+      "key": "narration_Damienmom",
+      "portrait": "Story_StandingSprite/narration_Damienmom.png",
+      "background": "#515aee"
+    },
+    {
+      "key": "DP_Priest",
+      "portrait": "Story_StandingSprite/Priest.png",
+      "background": ""
+    },
+    {
+      "key": "DP_Dante3",
+      "portrait": "Story_StandingSprite/Dante3.png",
+      "centerX": 370,
+      "centerY": 640,
+      "size": 309,
+      "background": "#a01932"
+    },
+    {
+      "key": "DP_Rodion",
+      "portrait": "Story_StandingModel/Rodion.psb",
+      "size": 216,
+      "background": "#820000"
+    },
+    {
+      "key": "DP_Meursault",
+      "portrait": "Story_StandingModel/Meursault.psb",
+      "size": 216,
+      "background": "#293b95"
+    },
+    {
+      "key": "DP_Past_Meursault",
+      "portrait": "Story_StandingModel/Past_Meursault.psb",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_Ishmael",
+      "portrait": "Story_StandingModel/Ishmael.psb",
+      "size": 216,
+      "background": "#ff9500"
+    },
+    {
+      "key": "DP_Outis",
+      "portrait": "Story_StandingModel/Outis.psb",
+      "size": 216,
+      "background": "#325339"
+    },
+    {
+      "key": "DP_Heathcliff2",
+      "portrait": "Story_StandingModel/Heathcliff2.psb",
+      "size": 216,
+      "background": "#4e3076"
+    },
+    {
+      "key": "DP_YiSang",
+      "portrait": "Story_StandingModel/YiSang.psb",
+      "size": 216,
+      "background": "#d4e1e8"
+    },
+    {
+      "key": "DP_Sinclair",
+      "portrait": "Story_StandingModel/Sinclair.psb",
+      "size": 216,
+      "background": "#8b9c15"
+    },
+    {
+      "key": "DP_Ryushu_Smoke",
+      "portrait": "Story_StandingModel/Ryushu_AfterCh9_Smoke.psb",
+      "size": 216,
+      "background": "#cf0000"
+    },
+    {
+      "key": "DP_Ryushu_HalfSmoke",
+      "portrait": "Story_StandingModel/Ryushu_AfterCh9_HalfSmoke.psb",
+      "size": 216,
+      "background": "#cf0000"
+    },
+    {
+      "key": "DP_Ryushu_NoSmoke",
+      "portrait": "Story_StandingModel/Ryushu_AfterCh9_NoSmoke.psb",
+      "size": 216,
+      "background": "#cf0000"
+    },
+    {
+      "key": "DP_HongLu",
+      "portrait": "Story_StandingModel/HongLu.psb",
+      "size": 216,
+      "background": "#5bffde"
+    },
+    {
+      "key": "DP_Cromer_Sister",
+      "portrait": "Story_StandingModel/Cromer_Sister.psb",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_1FSPA_Rose",
+      "portrait": "Story_StandingModel/1FSPA_Rose.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_1FContem_Noir",
+      "portrait": "Story_StandingModel/1FContem_Noir.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_1FContem_Rouge",
+      "portrait": "Story_StandingModel/1FContem_Rouge.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_2FGuard_Rouge",
+      "portrait": "Story_StandingModel/2FGuard_Rouge.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_Faust",
+      "portrait": "Story_StandingModel/Faust.psb",
+      "size": 216,
+      "background": "#ffb1b4"
+    },
+    {
+      "key": "DP_DonQuixote",
+      "portrait": "Story_StandingModel/DonQuixote.psb",
+      "size": 216,
+      "background": "#ffef23"
+    },
+    {
+      "key": "DP_Gregor",
+      "portrait": "Story_StandingModel/Gregor.psb",
+      "size": 216,
+      "background": "#69350b"
+    },
+    {
+      "key": "DP_Lady_InBlue",
+      "portrait": "Story_StandingModel/Lady_InBlue.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LadyInBlue"
+    },
+    {
+      "key": "DP_Newbi_Sisy",
+      "portrait": "Story_StandingModel/Newbi_Sisy.psb",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_1F_Medu1",
+      "portrait": "Story_StandingSprite/1F_Medu1.png",
+      "background": ""
+    },
+    {
+      "key": "DP_1F_Medu2",
+      "portrait": "Story_StandingSprite/1F_Medu2.png",
+      "background": ""
+    },
+    {
+      "key": "DP_3F_Rouge_Organ",
+      "portrait": "Story_StandingSprite/3F_Rouge_Organ.png",
+      "centerX": 660,
+      "centerY": 510,
+      "size": 305,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_3F_blanket",
+      "portrait": "Story_StandingSprite/3F_blanket.png",
+      "centerX": 23,
+      "centerY": 764,
+      "size": 1100,
+      "background": ""
+    },
+    {
+      "key": "DP_3F_Noir3rd",
+      "portrait": "Story_StandingSprite/3F_Noir3rd.png",
+      "centerX": 440,
+      "centerY": 630,
+      "size": 305,
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_3F_Noir3rd2",
+      "portrait": "Story_StandingSprite/3F_Noir3rd2.png",
+      "centerX": 660,
+      "centerY": 610,
+      "size": 305,
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_3F_Rouge_Dome",
+      "portrait": "Story_StandingSprite/3F_Rouge_Dome.png",
+      "centerX": 978,
+      "centerY": 462,
+      "size": 356,
+      "background": ""
+    },
+    {
+      "key": "DP_3F_Rouge_Dome_Before",
+      "portrait": "Story_StandingSprite/3F_Rouge_Dome_Before.png",
+      "centerX": 640,
+      "centerY": 440,
+      "size": 305,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_3F_Scissor",
+      "portrait": "Story_StandingSprite/3F_Scissor.png",
+      "centerX": 550,
+      "centerY": 770,
+      "size": 305,
+      "background": ""
+    },
+    {
+      "key": "DP_3F_ShutterBlue",
+      "portrait": "Story_StandingSprite/3F_Shutter.png",
+      "centerX": 868,
+      "centerY": 517,
+      "size": 305,
+      "background": ""
+    },
+    {
+      "key": "DP_3F_ShutterRed",
+      "portrait": "Story_StandingSprite/3F_Shutter.png",
+      "centerX": 1250,
+      "centerY": 520,
+      "size": 305,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_OneLeg",
+      "portrait": "Story_StandingModel/4F_OneLeg.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_4F_Happy",
+      "portrait": "Story_StandingSprite/4F_Happy.png",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_Lamp",
+      "portrait": "Story_StandingSprite/4F_Lamp.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_FourLeg",
+      "portrait": "Story_StandingSprite/4F_FourLeg.png",
+      "centerX": 948,
+      "centerY": 896,
+      "size": 1903,
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_4F_Rouge_Shoe",
+      "portrait": "Story_StandingSprite/4F_Rouge_Shoe.png",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_4F_Curtain",
+      "portrait": "Story_StandingSprite/4F_Curtain.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_Hanger",
+      "portrait": "Story_StandingSprite/4F_Hanger.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_Bed",
+      "portrait": "Story_StandingSprite/4F_bed.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_Sofa",
+      "portrait": "Story_StandingSprite/4F_Sofa.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_Stool",
+      "portrait": "Story_StandingSprite/4F_Stool.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_TwinsLamp",
+      "portrait": "Story_StandingSprite/4F_TwinsLamp.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_B2F_Pins",
+      "portrait": "Story_StandingSprite/B2F_Pins.png",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_B2F_PinKing",
+      "portrait": "Story_StandingSprite/B2F_PinKing.png",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_B2F_Bthread",
+      "portrait": "Story_StandingSprite/B2F_Bthread.png",
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_B2F_Naked",
+      "portrait": "Story_StandingSprite/B2F_Naked.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_B2F_Echeveau1",
+      "portrait": "Story_StandingSprite/B2F_Echeveau.png",
+      "centerX": 500,
+      "centerY": 605,
+      "size": 305,
+      "background": ""
+    },
+    {
+      "key": "DP_B2F_Putty",
+      "portrait": "Story_StandingSprite/B2F_Putty.png",
+      "centerX": 660,
+      "centerY": 610,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_Muff",
+      "portrait": "Story_StandingSprite/1F_Muff.png",
+      "background": ""
+    },
+    {
+      "key": "DP_RedgodPortrait",
+      "portrait": "Story_StandingSprite/2F_RedgodPortrait.png",
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
   "list": [
     {
       "id": 1001,
+      "unlockCodeFirstClearReward": { "type": "UNLOCK_CODE", "id": 101001, "num": 1 },
       "requiredModule": 25,
       "openChapterData": {
         "mainChapterId": 1,
@@ -18,6 +19,7 @@
         "entrancePanelColor": "#0013e3",
         "entrancePopupColor": "#405CFF",
         "participateErrorTextKey": "railway_1001_must_participate_all",
+        "bgmRewardDescTextKey": "railway_1001_bgm_reward_desc",
         "useClearRecordUI": false,
         "mapPrefabName": "1001",
         "isBokgak": true,

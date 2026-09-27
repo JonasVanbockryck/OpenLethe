@@ -1,0 +1,41 @@
+{
+	"list": [
+		{
+			"id": 8,
+			"bannerInfo": {
+				"bannerSpr": "banner_vendingMachine8",
+				"priority": 18
+			},
+			"groups": [
+				{
+					"groupType": "GACHA",
+					"contents": [
+						{
+							"type": "PERSONALITY",
+							"id": 10416,
+							"vendingAvailableDate": "2026-09-24T03:00:00.000Z",
+							"price": 400
+						},
+						{
+							"type": "PERSONALITY",
+							"id": 10816,
+							"vendingAvailableDate": "2026-09-24T03:00:00.000Z",
+							"price": 400
+						},
+						{
+							"type": "PERSONALITY",
+							"id": 10917,
+							"vendingAvailableDate": "2026-10-01T03:00:00.000Z",
+							"price": 400
+						}
+					]
+				},
+				{
+					"groupType": "BGM",
+					"contents": [
+					]
+				}
+			]
+		}
+	]
+}

@@ -2,6 +2,7 @@
   "list": [
     {
       "id": 2,
+      "unlockCodeFirstClearReward": { "type": "UNLOCK_CODE", "id": 100002, "num": 1 },
       "endNodeIdByRotation": [ 3, 4, 6, 7, 8 ],
       "requiredModule": 25,
       "openChapterData": {

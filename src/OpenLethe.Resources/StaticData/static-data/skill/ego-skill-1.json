@@ -667,6 +667,11 @@
           "skillMotion": "Default",
           "viewType": "SKILL",
           "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "WCorpRipSpace"
+            }
+          ],
           "coinList": [
             {
               "operatorType": "ADD",
@@ -741,6 +746,11 @@
           "skillMotion": "Default",
           "viewType": "SKILL",
           "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "WCorpRipSpace"
+            }
+          ],
           "coinList": [
             {
               "operatorType": "SUB",

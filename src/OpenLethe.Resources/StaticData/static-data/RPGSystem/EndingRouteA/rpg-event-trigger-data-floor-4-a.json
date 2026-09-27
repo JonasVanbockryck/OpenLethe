@@ -1,0 +1,744 @@
+{
+  "list": [
+    {
+      "id": 410201001,
+      "eventKey": "E40101",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "140100"
+    },
+    {
+      "id": 410201007,
+      "eventKey": "E40102",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "140200"
+    },
+    {
+      "id": 410201002,
+      "eventKey": "E40201",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4002"
+    },
+    {
+      "id": 410201003,
+      "eventKey": "E40205",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11013"
+    },
+    {
+      "id": 410201004,
+      "eventKey": "E40203",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40211"
+    },
+    {
+      "id": 410201011,
+      "eventKey": "E40207",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4007"
+    },
+    {
+      "id": 410201012,
+      "eventKey": "E40208",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11014"
+    },
+    {
+      "id": 410201013,
+      "eventKey": "E40209",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4015"
+    },
+    {
+      "id": 410401001,
+      "eventKey": "E40310",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "140300",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E40209"
+    },
+    {
+      "id": 410401006,
+      "eventKey": "E40311",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4011"
+    },
+    {
+      "id": 410401002,
+      "eventKey": "E40410",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4012"
+    },
+    {
+      "id": 410401003,
+      "eventKey": "E40510",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40510"
+    },
+    {
+      "id": 410401004,
+      "eventKey": "E40610",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4013"
+    },
+    {
+      "id": 410401005,
+      "eventKey": "E40611",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4013"
+    },
+    {
+      "id": 410401011,
+      "eventKey": "E40710",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40710"
+    },
+    {
+      "id": 410401012,
+      "eventKey": "E40711",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40711"
+    },
+    {
+      "id": 410401013,
+      "eventKey": "E40712",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40712"
+    },
+    {
+      "id": 410401014,
+      "eventKey": "E40713",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40713"
+    },
+    {
+      "id": 410401015,
+      "eventKey": "E40714",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40714"
+    },
+    {
+      "id": 410401016,
+      "eventKey": "E40715",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D40715"
+    },
+    {
+      "id": 410401031,
+      "eventKey": "E40810",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4014"
+    },
+    {
+      "id": 410401032,
+      "eventKey": "E40811",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41320"
+    },
+    {
+      "id": 410401034,
+      "eventKey": "E40813",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4010"
+    },
+    {
+      "id": 410401035,
+      "eventKey": "E40814",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4009"
+    },
+    {
+      "id": 410401036,
+      "eventKey": "E40815",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4017"
+    },
+    {
+      "id": 410401037,
+      "eventKey": "E40816",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4018"
+    },
+    {
+      "id": 410401038,
+      "eventKey": "E40817",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4019"
+    },
+    {
+      "id": 410401033,
+      "eventKey": "E41330",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41330"
+    },
+    {
+      "id": 410401041,
+      "eventKey": "E40901",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41910"
+    },
+    {
+      "id": 410401043,
+      "eventKey": "E40903",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41912"
+    },
+    {
+      "id": 410401045,
+      "eventKey": "E40905",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41914"
+    },
+    {
+      "id": 410401061,
+      "eventKey": "E40740",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104002",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140305",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006"
+    },
+    {
+      "id": 410401062,
+      "eventKey": "E40741",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104017",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140307",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006"
+    },
+    {
+      "id": 410401063,
+      "eventKey": "E40742",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104004",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140303",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006"
+    },
+    {
+      "id": 410401064,
+      "eventKey": "E40743",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104016",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140301",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006"
+    },
+    {
+      "id": 410401065,
+      "eventKey": "E40744",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104023",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140309",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006"
+    },
+    {
+      "id": 410401071,
+      "eventKey": "E40750",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104002",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140305",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventCompleted",
+      "passiveConditionValue4": "E40710"
+    },
+    {
+      "id": 410401072,
+      "eventKey": "E40751",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104017",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140307",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventCompleted",
+      "passiveConditionValue4": "E40711"
+    },
+    {
+      "id": 410401073,
+      "eventKey": "E40752",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104004",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140303",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventCompleted",
+      "passiveConditionValue4": "E40712"
+    },
+    {
+      "id": 410401074,
+      "eventKey": "E40753",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104016",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140301",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventCompleted",
+      "passiveConditionValue4": "E40713"
+    },
+    {
+      "id": 410401075,
+      "eventKey": "E40754",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104023",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140309",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventCompleted",
+      "passiveConditionValue4": "E40714"
+    },
+    {
+      "id": 410401081,
+      "eventKey": "E40740",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104002",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140305",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4007"
+    },
+    {
+      "id": 410401082,
+      "eventKey": "E40741",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104017",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140307",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4007"
+    },
+    {
+      "id": 410401083,
+      "eventKey": "E40742",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104004",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140303",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4007"
+    },
+    {
+      "id": 410401084,
+      "eventKey": "E40743",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104016",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140301",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4007"
+    },
+    {
+      "id": 410401085,
+      "eventKey": "E40754",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104023",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "140309",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4007"
+    },
+    {
+      "id": 410401021,
+      "eventKey": "E40720",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104002",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990409, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140305"
+    },
+    {
+      "id": 410401022,
+      "eventKey": "E40721",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104017",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990410, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140307"
+    },
+    {
+      "id": 410401023,
+      "eventKey": "E40722",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104004",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990411, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140303"
+    },
+    {
+      "id": 410401024,
+      "eventKey": "E40723",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104016",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990412, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140301"
+    },
+    {
+      "id": 410401025,
+      "eventKey": "E40724",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104023",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990413, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140309"
+    },
+    {
+      "id": 410401051,
+      "eventKey": "E40730",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104002",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990409, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140306"
+    },
+    {
+      "id": 410401052,
+      "eventKey": "E40731",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104017",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990410, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140308"
+    },
+    {
+      "id": 410401053,
+      "eventKey": "E40732",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104004",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990411, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140304"
+    },
+    {
+      "id": 410401054,
+      "eventKey": "E40733",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104016",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990412, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140302"
+    },
+    {
+      "id": 410401055,
+      "eventKey": "E40734",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N104023",
+      "passiveCondition1": "HasItem",
+      "passiveConditionValue1": "I990413, 1",
+      "passiveCondition2": "IsInLocation",
+      "passiveConditionValue2": "140310"
+    },
+    {
+      "id": 410401056,
+      "eventKey": "E40996",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41943"
+    },
+    {
+      "id": 410401057,
+      "eventKey": "E40997",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41944"
+    },
+    {
+      "id": 410401058,
+      "eventKey": "E40998",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41946"
+    },
+    {
+      "id": 410401059,
+      "eventKey": "E40999",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41932"
+    },
+    {
+      "id": 110101004,
+      "eventKey": "E41901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104017",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "E41903"
+    },
+    {
+      "id": 110101005,
+      "eventKey": "E41901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104016",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "E41903"
+    },
+    {
+      "id": 110101006,
+      "eventKey": "E41901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104015",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "E41903"
+    },
+    {
+      "id": 110101007,
+      "eventKey": "E41901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104004",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "E41903"
+    },
+    {
+      "id": 110101008,
+      "eventKey": "E41901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104002",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "E41903"
+    },
+    {
+      "id": 110101009,
+      "eventKey": "E41901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104003",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "E41903"
+    },
+    {
+      "id": 110101010,
+      "eventKey": "E41901",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104023",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q4007",
+      "passiveCondition4": "EventNotCompleted",
+      "passiveConditionValue4": "E41903"
+    },
+    {
+      "id": 410101090,
+      "eventKey": "E40910",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "140100",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EC-1009A",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "E40101"
+    },
+    {
+      "id": 410101091,
+      "eventKey": "E40911",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4003",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EC-1009A"
+    },
+    {
+      "id": 410401086,
+      "eventKey": "E41950",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D41950"
+    },
+    {
+      "id": 110101013,
+      "eventKey": "E41902",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104001"
+    },
+    {
+      "id": 110101014,
+      "eventKey": "E41902",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104007"
+    },
+    {
+      "id": 110101015,
+      "eventKey": "E41902",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104008"
+    },
+    {
+      "id": 110101016,
+      "eventKey": "E41902",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104014"
+    },
+    {
+      "id": 410401091,
+      "eventKey": "E41903",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104017",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "E41901",
+      "passiveCondition4": "QuestCompleted",
+      "passiveConditionValue4": "Q4003"
+    },
+    {
+      "id": 410401092,
+      "eventKey": "E41903",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104016",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "E41901",
+      "passiveCondition4": "QuestCompleted",
+      "passiveConditionValue4": "Q4003"
+    },
+    {
+      "id": 410401093,
+      "eventKey": "E41903",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104015",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "E41901",
+      "passiveCondition4": "QuestCompleted",
+      "passiveConditionValue4": "Q4003"
+    },
+    {
+      "id": 410401094,
+      "eventKey": "E41903",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104004",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "E41901",
+      "passiveCondition4": "QuestCompleted",
+      "passiveConditionValue4": "Q4003"
+    },
+    {
+      "id": 410401095,
+      "eventKey": "E41903",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104002",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "E41901",
+      "passiveCondition4": "QuestCompleted",
+      "passiveConditionValue4": "Q4003"
+    },
+    {
+      "id": 410401096,
+      "eventKey": "E41903",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104003",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "E41901",
+      "passiveCondition4": "QuestCompleted",
+      "passiveConditionValue4": "Q4002"
+    },
+    {
+      "id": 410401097,
+      "eventKey": "E41903",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N104023",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q4006",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "E41901",
+      "passiveCondition4": "QuestCompleted",
+      "passiveConditionValue4": "Q4003"
+    },
+    {
+      "id": 810401001,
+      "eventKey": "EPI-4A",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

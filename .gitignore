@@ -9,3 +9,6 @@ modfiles/
 # Local environment overrides (never commit secrets)
 .env
 !.env.example
+
+# Local build config (e.g. StaticDataSourceDir)
+*.user

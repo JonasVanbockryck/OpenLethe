@@ -9,37 +9,49 @@
           "id": 1,
           "storyId": "E301B",
           "nodeId": 910301,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_street"
         },
         {
           "id": 2,
           "storyId": "E301A",
           "nodeId": 910301,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E303_4"
         },
         {
           "id": 3,
           "storyId": "E302B",
           "nodeId": 910303,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_oldrestaurant"
         },
         {
           "id": 4,
           "storyId": "E302A",
           "nodeId": 910303,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E306_11"
         },
         {
           "id": 5,
           "storyId": "E303B",
           "nodeId": 910305,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_oldrestaurant_kitchen",
+          "moveX": 639,
+          "scaleX": 2.5,
+          "scaleY": 2.5
         },
         {
           "id": 6,
           "storyId": "E303A",
           "nodeId": 910305,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_oldrestaurant_kitchen",
+          "moveX": 639,
+          "scaleX": 2.5,
+          "scaleY": 2.5
         },
         {
           "id": 7,
@@ -51,25 +63,30 @@
           "id": 8,
           "storyId": "E304A",
           "nodeId": 910307,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E302"
         },
         {
           "id": 9,
           "storyId": "E305A",
           "nodeId": 910309,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E304_1"
         },
         {
           "id": 10,
           "storyId": "E306B",
           "nodeId": 910309,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_oldrestaurant_inside_past"
         },
         {
           "id": 11,
           "storyId": "E306A",
           "nodeId": 910309,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E305",
+          "moveY": -300
         }
       ]
     }

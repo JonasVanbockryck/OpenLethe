@@ -1,0 +1,23 @@
+{
+  "list": [
+    {
+      "key": "Lock_Q2001",
+      "locationId": 128008,
+      "requiredQuestKey": "Q2001",
+      "dialogueKey": "D2008"
+    },
+    {
+      "key": "Lock_Q2011",
+      "locationId": 128007,
+      "requiredQuestKey": "Q2011",
+      "dialogueKey": "D2013"
+    },
+    {
+      "key": "Lock_Q2003",
+      "locationId": 128009,
+      "lockAfterQuestKey": "Q2003",
+      "requiredQuestKey": "Q2004",
+      "dialogueKey": "D2032"
+    }
+  ]
+}

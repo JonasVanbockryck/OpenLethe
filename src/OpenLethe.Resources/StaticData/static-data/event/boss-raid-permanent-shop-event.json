@@ -22,7 +22,7 @@
 							"num": 125
 						}
 					],
-					"limitCount": 2
+					"limitCount": 4
 				},
 				{
 					"rewardId": 2,
@@ -38,7 +38,7 @@
 							"num": 1
 						}
 					],
-					"limitCount": 1
+					"limitCount": 2
 				},
 				{
 					"rewardId": 3,
@@ -54,7 +54,7 @@
 							"num": 2
 						}
 					],
-					"limitCount": 40
+					"limitCount": 80
 				},
 				{
 					"rewardId": 4,
@@ -70,8 +70,61 @@
 							"num": 2
 						}
 					],
-					"limitCount": 10
-				}
+					"limitCount": 20
+				},
+                {
+                  "rewardId": 10001,
+                  "rewardPrice": {
+                    "type": "ITEM",
+                    "id": 20045,
+                    "num": 5
+                  },
+                  "rewardItemList": [
+                    {
+                      "type": "ITEM",
+                      "id": 213,
+                      "num": 1
+                    }
+                  ],
+                  "limitCount": 999,
+                  "isDisabled": true
+                },
+				{
+					"rewardId": 10002,
+					"rewardPrice": {
+						"type": "ITEM",
+						"id": 20045,
+						"num": 5
+					},
+					"rewardItemList": [
+						{
+							"type": "ITEM",
+							"id": 213,
+							"num": 1
+						}
+					],
+					"limitCount": 999,
+					"isDisabled": false,
+					"uiConfig": {
+						"warningTextKeyBeforePurchase": "boss_raid_shop_infinite_item_warning_text"
+					}
+				},
+                {
+                  "rewardId": 90001,
+                  "rewardPrice": {
+                    "type": "ITEM",
+                    "id": 20048,
+                    "num": 1
+                  },
+                  "rewardItemList": [
+                    {
+                      "type": "ITEM",
+                      "id": 20045,
+                      "num": 1
+                    }
+                  ],
+                  "isAutoConvertable": true
+                }
 			],
 			"eventMainItemId": 20045
 		}

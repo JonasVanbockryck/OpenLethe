@@ -1,0 +1,115 @@
+{
+  "list": [
+    {
+      "key": "Q-1000",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q5002",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1001",
+      "tag": "rpg_quest_tag_gather",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1000",
+      "completeEventKey": "",
+      "completeRewardMoney": 220
+    },
+    {
+      "key": "Q-1002",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1001",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1003",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Event",
+      "acquireConditionValue": "EM-1005",
+      "requiredQuestKey": "Q-1002",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1004",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1003",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1005",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1004",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1006",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "None",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1005",
+      "completeEventKey": "",
+      "completeRewardMoney": 220
+    },
+    {
+      "key": "Q-1007",
+      "tag": "rpg_quest_tag_gather",
+      "acquireConditionType": "None",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1006",
+      "completeEventKey": "",
+      "completeRewardMoney": 220
+    },
+    {
+      "key": "Q-1008",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1005",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1009",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1008",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1010",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1009",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1011",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q-1010",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-1001S",
+      "tag": "rpg_quest_tag_gather",
+      "hideList": true,
+      "hideLog": true,
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "",
+      "completeEventKey": ""
+    }
+  ]
+}

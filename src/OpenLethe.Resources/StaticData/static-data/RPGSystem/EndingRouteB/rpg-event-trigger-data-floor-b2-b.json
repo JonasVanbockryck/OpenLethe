@@ -1,0 +1,488 @@
+{
+  "list": [
+    {
+      "id": 220100201,
+      "eventKey": "EC-2101",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "220100",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2000"
+    },
+    {
+      "id": 220100205,
+      "eventKey": "EL-2102N",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11049"
+    },
+    {
+      "id": 220100203,
+      "eventKey": "EB-2102",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2102",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2002"
+    },
+    {
+      "id": 220100204,
+      "eventKey": "EC-2103",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11049",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2002"
+    },
+    {
+      "id": 220100207,
+      "eventKey": "EB-2106",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2114",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2006",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q-2004A"
+    },
+    {
+      "id": 220100209,
+      "eventKey": "EB-2108",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2106",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2008",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EC-2107"
+    },
+    {
+      "id": 220100210,
+      "eventKey": "EC-2107",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C202291",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2008"
+    },
+    {
+      "id": 220100213,
+      "eventKey": "EK-2106",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11059",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2005"
+    },
+    {
+      "id": 220100216,
+      "eventKey": "EB-2111",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2111"
+    },
+    {
+      "id": 220100217,
+      "eventKey": "EB-2114",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2114",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2004A"
+    },
+    {
+      "id": 220100218,
+      "eventKey": "EK-2114",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11059",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2004",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-2005"
+    },
+    {
+      "id": 220100240,
+      "eventKey": "EL-2115S",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2115",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3010"
+    },
+    {
+      "id": 220100221,
+      "eventKey": "EB-2115",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2115",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EG-2254"
+    },
+    {
+      "id": 220100222,
+      "eventKey": "EC-2116",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11040",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2010"
+    },
+    {
+      "id": 220100223,
+      "eventKey": "EK-2116",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2116"
+    },
+    {
+      "id": 220100224,
+      "eventKey": "EG-2141",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2241",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000"
+    },
+    {
+      "id": 220100225,
+      "eventKey": "EG-2142",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2242",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000"
+    },
+    {
+      "id": 220100226,
+      "eventKey": "EG-2143",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11032",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000"
+    },
+    {
+      "id": 220100227,
+      "eventKey": "EC-2117",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "221600",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2010",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3000",
+      "passiveCondition3": "EventCompleted",
+      "passiveConditionValue3": "EQ-3000"
+    },
+    {
+      "id": 22020101,
+      "eventKey": "E22020101",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "220202"
+    },
+    {
+      "id": 22020102,
+      "eventKey": "E22020102",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "220203",
+      "passiveCondition1": "NpcNotAlerted",
+      "passiveConditionValue1": "N202102"
+    },
+    {
+      "id": 22020103,
+      "eventKey": "E22020103",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "220204"
+    },
+    {
+      "id": 220100228,
+      "eventKey": "EB-2181",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "FB1002B",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3000"
+    },
+    {
+      "id": 220100229,
+      "eventKey": "EC-2194",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "220300",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3000",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "EG-2141"
+    },
+    {
+      "id": 220100248,
+      "eventKey": "EC-2194",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "220300",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3000",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "EG-2254"
+    },
+    {
+      "id": 220100230,
+      "eventKey": "EK-2121",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11032"
+    },
+    {
+      "id": 220100231,
+      "eventKey": "EB-2115",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2246"
+    },
+    {
+      "id": 220100232,
+      "eventKey": "EB-2108",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2220",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2008"
+    },
+    {
+      "id": 220100233,
+      "eventKey": "EB-2102",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2217"
+    },
+    {
+      "id": 220100234,
+      "eventKey": "EB-2106",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2234"
+    },
+    {
+      "id": 220100235,
+      "eventKey": "EB-2114",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2235"
+    },
+    {
+      "id": 220100249,
+      "eventKey": "EB-2114",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2238"
+    },
+    {
+      "id": 220100236,
+      "eventKey": "EQ-3104",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2116",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000"
+    },
+    {
+      "id": 220100237,
+      "eventKey": "EQ-3104",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-3201",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EK-2116"
+    },
+    {
+      "id": 220100238,
+      "eventKey": "EG-2143",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-3201",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EK-2121"
+    },
+    {
+      "id": 220100211,
+      "eventKey": "EG-2107M",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C202291",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2008"
+    },
+    {
+      "id": 220100239,
+      "eventKey": "EB-2118",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2118"
+    },
+    {
+      "id": 220100110,
+      "eventKey": "E-VEND-B2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20222001"
+    },
+    {
+      "id": 220100111,
+      "eventKey": "E-VEND-B2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20222002"
+    },
+    {
+      "id": 220100241,
+      "eventKey": "EB-2119",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2249",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3010",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EG-2254"
+    },
+    {
+      "id": 220100242,
+      "eventKey": "EL-2115S",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2251",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3010",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "EQ-3000"
+    },
+    {
+      "id": 220100252,
+      "eventKey": "EB-2115",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2251",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3010",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "EQ-3000"
+    },
+    {
+      "id": 220100243,
+      "eventKey": "EB-2115",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "220400",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EL-2115S",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3010",
+      "passiveCondition3": "EventNotCompleted",
+      "passiveConditionValue3": "EG-2254"
+    },
+    {
+      "id": 220100244,
+      "eventKey": "EK-2119",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2251",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EQ-3000"
+    },
+    {
+      "id": 220100245,
+      "eventKey": "EM-2119",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2251",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EQ-3000",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EM-2119"
+    },
+    {
+      "id": 220100247,
+      "eventKey": "EG-2254",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2254"
+    },
+    {
+      "id": 220100104,
+      "eventKey": "EG-2022T",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20221415"
+    },
+    {
+      "id": 220100100,
+      "eventKey": "EC-2022D1",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20221411"
+    },
+    {
+      "id": 220100101,
+      "eventKey": "EC-2022D2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20221412"
+    },
+    {
+      "id": 220100102,
+      "eventKey": "EC-2022D3",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20221413"
+    },
+    {
+      "id": 220100103,
+      "eventKey": "EC-2022D4",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20221414"
+    },
+    {
+      "id": 220100108,
+      "eventKey": "EC-2022D5",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D20221415"
+    },
+    {
+      "id": 220100250,
+      "eventKey": "EDS701",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N202102",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q-2010A"
+    },
+    {
+      "id": 220100251,
+      "eventKey": "EDS702",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N202290"
+    },
+    {
+      "id": 220100253,
+      "eventKey": "EM-2106",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-2106"
+    },
+    {
+      "id": 220100257,
+      "eventKey": "EM-2106",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2220"
+    },
+    {
+      "id": 220100258,
+      "eventKey": "EC-2106A",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-2292",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EC-2107",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EM-2106",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q-2008, 0"
+    },
+    {
+      "id": 220100254,
+      "eventKey": "EK-2103D",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q-2103H",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-2006"
+    },
+    {
+      "id": 220100255,
+      "eventKey": "EC-2106A",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q-2103H",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2006",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EM-2106",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q-2008"
+    },
+    {
+      "id": 220100256,
+      "eventKey": "EB-2108",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q-2103H",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2006",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "EM-2106",
+      "passiveCondition3": "QuestNotCompleted",
+      "passiveConditionValue3": "Q-2008"
+    },
+    {
+      "id": 822201001,
+      "eventKey": "EPI-B2B",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

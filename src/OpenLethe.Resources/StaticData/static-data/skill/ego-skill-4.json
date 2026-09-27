@@ -1249,6 +1249,71 @@
               ]
             }
           ]
+        },
+        {
+          "gaksungLevel": 5,
+          "targetNum": 2,
+          "defaultValue": 15,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpByRatio40IfEachTargetHpRatioLessThan25"
+            },
+            {
+              "scriptName": "TargetNumAdder1BBOnRC_NONE4"
+            },
+            {
+              "scriptName": "GiveBuffToRandomAllyOnEndAttackByResonance",
+              "buffData": {
+                "buffKeyword": "GainSinStockAdder",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1,
+                "value": 2,
+                "limit": 7
+              }
+            },
+            {
+              "scriptName": "HealMpAndAddRandomOwnedSinStockOnEndAttackIfBreakOrPanic_1_3"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 10,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 6,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "AddRandomOwnedSinStockOnKillTarget3"
+                },
+                {
+                  "scriptName": "HealMpOnKillTargetEveryAlly3"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1372,6 +1437,83 @@
                   "scriptName": "GiveBuffOnEndCoin",
                   "buffData": {
                     "buffKeyword": "Agility",
+                    "target": "EveryAlly",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 5,
+          "targetNum": 2,
+          "defaultValue": 26,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpByRatio40IfEachTargetHpRatioLessThan25"
+            },
+            {
+              "scriptName": "SkillPowerDown12OnLoseDuel"
+            },
+            {
+              "scriptName": "TargetNumAdder1BBOnRC_NONE4"
+            },
+            {
+              "scriptName": "HealMpAndAddRandomOwnedSinStockOnEndAttackIfBreakOrPanic_1_3"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 12,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 6,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnEndCoinWithAgility_1",
+                  "buffData": {
+                    "buffKeyword": "GainSinStockAdder",
+                    "target": "EveryAlly",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "204052101",
+                  "turnLimit": 1,
+                  "buffData": {
+                    "buffKeyword": "GainSinStockAdder",
                     "target": "EveryAlly",
                     "buffOwner": "",
                     "stack": 1,

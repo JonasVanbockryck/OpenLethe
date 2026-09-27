@@ -1,0 +1,43 @@
+{
+  "list": [
+    {
+      "spawnId": 10202300,
+      "npcKey": "N1020230",
+      "mapId": 0,
+      "spawnTileX": 58,
+      "spawnTileY": 8,
+      "direction": "Down",
+      "spawnConditionType": "Quest",
+      "spawnConditionParam": "Q2008B",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q4023E",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 10202301,
+      "npcKey": "N1020231",
+      "mapId": 0,
+      "spawnTileX": 58,
+      "spawnTileY": 8,
+      "direction": "Down",
+      "spawnConditionType": "Quest",
+      "spawnConditionParam": "Q4023E",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q-3005",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 10202302,
+      "npcKey": "N1020232",
+      "mapId": 0,
+      "spawnTileX": 58,
+      "spawnTileY": 8,
+      "direction": "Down",
+      "spawnConditionType": "Quest",
+      "spawnConditionParam": "Q-3005",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q5009",
+      "patrolWaypoints": []
+    }
+  ]
+}

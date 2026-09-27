@@ -1,0 +1,112 @@
+{
+  "list": [
+    {
+      "questKey": "Q3001",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "130100"
+    },
+    {
+      "questKey": "Q3002",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D3218"
+    },
+    {
+      "questKey": "Q3004",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C3041"
+    },
+    {
+      "questKey": "Q3005",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C3200"
+    },
+    {
+      "questKey": "Q3006",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D3302"
+    },
+    {
+      "questKey": "Q3020",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "130300"
+    },
+    {
+      "questKey": "Q3021",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11026"
+    },
+    {
+      "questKey": "Q3022",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C3206"
+    },
+    {
+      "questKey": "Q3023",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11027"
+    },
+    {
+      "questKey": "Q3024",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N103001"
+    },
+    {
+      "questKey": "Q3025",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "120100"
+    },
+    {
+      "questKey": "Q3003",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D3301"
+    },
+    {
+      "questKey": "Q3026",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "130100"
+    },
+    {
+      "questKey": "Q3027",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C3203"
+    },
+    {
+      "questKey": "Q3028",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D41610"
+    },
+    {
+      "questKey": "Q3016T",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EL3016"
+    },
+    {
+      "questKey": "Q3016H1",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E3018"
+    },
+    {
+      "questKey": "Q3016H2",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E3018"
+    }
+  ]
+}

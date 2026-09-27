@@ -1,0 +1,154 @@
+{
+  "list": [
+    {
+      "id": 320100204,
+      "eventKey": "EQ-3000",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-3201"
+    },
+    {
+      "id": 320102001,
+      "eventKey": "E320102",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "230200"
+    },
+    {
+      "id": 320100217,
+      "eventKey": "EI-3003",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "FB1003B"
+    },
+    {
+      "id": 320100206,
+      "eventKey": "E-3106",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-3104"
+    },
+    {
+      "id": 320100208,
+      "eventKey": "E-3108",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11030"
+    },
+    {
+      "id": 320100210,
+      "eventKey": "EW-3003A",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-3110",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3003A"
+    },
+    {
+      "id": 320100211,
+      "eventKey": "EW-3003B",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-3216",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3003B",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q-3003"
+    },
+    {
+      "id": 320100212,
+      "eventKey": "EW-3003C",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-3217L",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3003C",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q-3004"
+    },
+    {
+      "id": 320100213,
+      "eventKey": "EV-3003A",
+      "activeCondition": "SwarmModeEnded",
+      "activeConditionValue": "1",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "230800"
+    },
+    {
+      "id": 320100214,
+      "eventKey": "EV-3003B",
+      "activeCondition": "SwarmModeEnded",
+      "activeConditionValue": "1",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "231000"
+    },
+    {
+      "id": 320100215,
+      "eventKey": "EV-3003C",
+      "activeCondition": "SwarmModeEnded",
+      "activeConditionValue": "1",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "230400"
+    },
+    {
+      "id": 320100111,
+      "eventKey": "E-PARKINGCAM",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "230401"
+    },
+    {
+      "id": 320100221,
+      "eventKey": "E-3111",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-3108"
+    },
+    {
+      "id": 320100220,
+      "eventKey": "E-3100",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "FB1003B"
+    },
+    {
+      "id": 320100222,
+      "eventKey": "EQ-3001",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-3101"
+    },
+    {
+      "id": 320100223,
+      "eventKey": "EL-3005S",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q-3001",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3005"
+    },
+    {
+      "id": 320102002,
+      "eventKey": "EDS801",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N203007"
+    },
+    {
+      "id": 320102003,
+      "eventKey": "EDS801",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N203017"
+    },
+    {
+      "id": 320102004,
+      "eventKey": "EDS801",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N203119"
+    },
+    {
+      "id": 320102005,
+      "eventKey": "E-3503",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-3503"
+    },
+    {
+      "id": 822301001,
+      "eventKey": "EPI-B3B",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

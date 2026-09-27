@@ -1,0 +1,116 @@
+{
+  "list": [
+    {
+      "id": 912722,
+      "bossRaidId": 10004,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp8_TiekanTempleRoad"
+          },
+          "unitList": [
+            {
+              "unitID": 5019,
+              "unitCount": 1,
+              "unitLevel": 83
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 5020,
+              "unitCount": 2,
+              "unitLevel": 55,
+              "isHide": true
+            }
+          ],
+          "enemyPositionID": 126,
+          "allyPositionID": 73,
+          "bgmList": [
+            "Battle_Cp8_Boss_2"
+          ]
+        }
+      ],
+      "stageScriptList": [ "5019" ],
+      "recommendedLevel": 60,
+      "uiConfigs": {
+        "recommendSyncLevel": 4
+      },
+      "staminaCost": 20,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "story": {
+      },
+      "isBatonPassOn": "TRUE"
+    },
+    {
+      "id": 912723,
+      "bossRaidId": 10004,
+      "stageLevel": 60,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp8_TiekanTempleRoad"
+          },
+          "unitList": [
+            {
+              "unitID": 5019,
+              "unitCount": 1,
+              "unitLevel": 83
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 5020,
+              "unitCount": 2,
+              "unitLevel": 55,
+              "isHide": true
+            }
+          ],
+          "enemyPositionID": 126,
+          "allyPositionID": 73,
+          "bgmList": [
+            "Battle_Cp8_Boss_2"
+          ]
+        }
+      ],
+      "stageScriptList": [ "5019" ],
+      "recommendedLevel": 60,
+      "uiConfigs": {
+        "recommendSyncLevel": 4
+      },
+      "staminaCost": 20,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "story": {
+      },
+      "isBatonPassOn": "TRUE"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "projectileKey": "Projectile_GOGI",
+      "removableByPlayerAttack": true
+    },
+    {
+      "projectileKey": "Projectile_SmallGOGI",
+      "removableByPlayerAttack": true
+    },
+    {
+      "projectileKey": "Projectile_BigGOGI",
+      "removableByPlayerAttack": true
+    }
+  ]
+}

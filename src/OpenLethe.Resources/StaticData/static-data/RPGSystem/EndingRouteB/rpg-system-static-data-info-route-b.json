@@ -1,0 +1,16 @@
+{
+    "dataFiles": [
+        { "type": "player", "fileName": "EndingRouteB/rpg-player-data-route-b.json" },
+        { "type": "npc", "fileName": "EndingRouteB/rpg-npc-data-route-b.json", "fileNameArray": ["EndingRouteB/rpg-npc-data-route-b-warden.json"] },
+        { "type": "npc-attack-pattern", "fileName": "EndingRouteB/rpg-npc-attack-pattern-data-route-b.json", "fileNameArray": ["EndingRouteB/rpg-npc-attack-pattern-data-route-b-warden.json"] },
+        { "type": "projectile", "fileName": "EndingRouteB/rpg-projectile-data-route-b.json" },
+        { "type": "event", "fileName": "EndingRouteB/rpg-event-data-route-b.json" },
+        { "type": "event-trigger", "fileName": "EndingRouteB/rpg-event-trigger-data-route-b.json" },
+        { "type": "cutscene", "fileName": "EndingRouteB/rpg-cutscene-data-route-b.json" },
+        { "type": "dialogue", "fileName": "EndingRouteB/rpg-dialogue-data-route-b.json" },
+        { "type": "dialogue-text", "fileName": "EndingRouteB/rpg-dialogue-text-data-route-b.json" },
+        { "type": "route-b-balance", "fileName": "EndingRouteB/rpg-balance-data-route-b.json" },
+        { "type": "floor-move-lock", "fileName": "EndingRouteB/rpg-floor-move-lock-data-route-b.json" },
+        { "type": "stationary-object", "fileName": "EndingRouteB/rpg-stationary-object-data-route-b.json" }
+    ]
+}

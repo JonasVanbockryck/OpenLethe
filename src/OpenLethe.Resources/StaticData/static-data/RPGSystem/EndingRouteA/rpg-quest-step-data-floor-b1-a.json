@@ -1,0 +1,94 @@
+{
+  "list": [
+    {
+      "questKey": "Q-1000",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "210200"
+    },
+    {
+      "questKey": "Q-1000",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1001"
+    },
+    {
+      "questKey": "Q-1001",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "218001"
+    },
+    {
+      "questKey": "Q-1001",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1002"
+    },
+    {
+      "questKey": "Q-1002",
+      "stepIndex": 0,
+      "goalType1": "InteractObjectAny",
+      "goalValue1": "SO-1001, SO-1038, SO-1039, SO-1002, SO-1026, SO-1027, SO-1003, SO-1028, SO-1029, SO-1030, SO-1031, SO-1032, SO-1033, SO-1034, SO-1035, SO-1036, SO-1037, 5"
+    },
+    {
+      "questKey": "Q-1003",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "218002"
+    },
+    {
+      "questKey": "Q-1004",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1028"
+    },
+    {
+      "questKey": "Q-1005",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1006"
+    },
+    {
+      "questKey": "Q-1006",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I992702, 1"
+    },
+    {
+      "questKey": "Q-1006",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1007"
+    },
+    {
+      "questKey": "Q-1008",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "218001"
+    },
+    {
+      "questKey": "Q-1008",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1021"
+    },
+    {
+      "questKey": "Q-1009",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1008"
+    },
+    {
+      "questKey": "Q-1010",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D-1023"
+    },
+    {
+      "questKey": "Q-1011",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1009"
+    }
+  ]
+}

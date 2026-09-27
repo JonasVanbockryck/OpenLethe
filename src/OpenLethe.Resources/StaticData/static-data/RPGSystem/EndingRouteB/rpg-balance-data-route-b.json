@@ -1,0 +1,505 @@
+{
+  "swarmBgm": {
+    "endingRoute": "B",
+    "floorKey": "FB1003B",
+    "zones": [
+      { "zoneKey": "swarm_zone_b3_tanning", "audioId": "bgm_needleMobAggro" },
+      { "zoneKey": "swarm_zone_b3_milling", "audioId": "bgm_hostileHunt" },
+      { "zoneKey": "swarm_zone_b3_plaza_main", "audioId": "bgm_fieldBossEndlessPain" }
+    ]
+  },
+  "aliuneFloorKey": "F1004B",
+  "aliuneBossNpcKey": "N104029",
+  "aliuneNestCutsceneKey": "C4026",
+  "aliuneNestBattleId": 11028,
+  "aliuneActivateQuestKey": "Q4023B",
+  "aliuneEndQuestKey": "Q4023C",
+  "aliuneMazeMinTile": {
+    "x": 72,
+    "y": 44
+  },
+  "aliuneMazeMaxTile": {
+    "x": 131,
+    "y": 81
+  },
+  "aliuneNestMinTile": {
+    "x": 118,
+    "y": 64
+  },
+  "aliuneNestMaxTile": {
+    "x": 126,
+    "y": 71
+  },
+  "aliuneEntranceBlockerTiles": [
+    {
+      "x": 71,
+      "y": 61
+    }
+  ],
+  "aliuneEntranceBlockerWidth": 1,
+  "aliuneEntranceBlockerHeight": 2,
+  "aliuneEntranceBlockerScale": 2.0,
+  "aliuneNestBlockerTiles": [
+    {
+      "x": 118,
+      "y": 73
+    },
+    {
+      "x": 125,
+      "y": 62
+    }
+  ],
+  "aliuneNestBlockerWidth": 2,
+  "aliuneNestBlockerHeight": 3,
+  "aliuneNestBlockerScale": 2.0,
+  "aliuneNestWarpTile": {
+    "x": 122,
+    "y": 90
+  },
+  "aliuneNestWarpDelaySeconds": 4.6,
+  "aliuneNestWarpReadyMotion": "MakeDead1",
+  "aliuneNestWarpArriveMotion": "idle",
+  "aliuneBlockerPrefabAddress": "RPGSystem/Object/Object_AliuneDoor2.prefab",
+  "aliuneNestBlockerPrefabAddress": "RPGSystem/Object/Object_AliuneDoor.prefab",
+  "aliunePivotPrefabKey": "Object_Floor4_Alliune_PivotAngler.prefab",
+  "aliunePivotFarDistanceTiles": 80.0,
+  "aliunePivotEdgeMarginWorld": 0.0,
+  "aliunePivotOffsetY": 3.0,
+  "aliunePivotUpdateIntervalSeconds": 0.0,
+  "aliunePivotRotationOffsetDegrees": 90.0,
+  "aliunePivotSortOrderBase": 100,
+  "aliuneBossBgm": { "audioId": "bgm_floor4thLostChild", "holdWhileHidden": true },
+  "pillarBoss": {
+    "bossBgm": { "audioId": "bgm_fieldBossLeather" },
+    "floorKey": "FB1002B",
+    "npcKey": "N202290",
+    "encounterCutsceneKey": "C202290",
+    "returnCutsceneKey": "C202291",
+    "encounterStageEventKey": "EB-2108S",
+    "beatCycleSeconds": 9.0,
+    "pillars": [
+      {
+        "npcKey": "N202291",
+        "spawnTile": {
+          "x": 196,
+          "y": 43
+        },
+        "hiddenSeconds": 2.0,
+        "shownSeconds": 10.0,
+        "phaseOffsetSeconds": 0.0
+      },
+      {
+        "npcKey": "N202292",
+        "spawnTile": {
+          "x": 204,
+          "y": 45
+        },
+        "hiddenSeconds": 2.5,
+        "shownSeconds": 8.0,
+        "phaseOffsetSeconds": 0.0
+      },
+      {
+        "npcKey": "N202293",
+        "spawnTile": {
+          "x": 214,
+          "y": 43
+        },
+        "hiddenSeconds": 1.0,
+        "shownSeconds": 9.0,
+        "phaseOffsetSeconds": 0.0
+      }
+    ],
+    "emergeHpDamage": 24,
+    "emergeKnockbackTiles": 2,
+    "pillarAppearMotion": "Appear",
+    "pillarDisappearMotion": "Disappear",
+    "pillarRelocateMinTile": {
+      "x": 195,
+      "y": 40
+    },
+    "pillarRelocateMaxTile": {
+      "x": 215,
+      "y": 50
+    },
+    "projectileTelegraphSeconds": 0,
+    "projectileTelegraphLengthTiles": 0,
+    "pillarEmergeTelegraphSeconds": 2.0,
+    "cameraZoomOutScale": 1.3,
+    "cameraZoomSeconds": 0.5,
+    "pillarDeathSlowMoFloor": 0.2,
+    "pillarDeathSlowMoRampDownSeconds": 0.25,
+    "pillarDeathSlowMoHoldSeconds": 0.6,
+    "pillarDeathSlowMoRampUpSeconds": 0.35,
+    "emitters": [
+      {
+        "id": "BossA",
+        "owner": "Boss",
+        "originTile": {
+          "x": 200,
+          "y": 53
+        },
+        "angles": [
+          270.0,
+          225.0,
+          315.0
+        ],
+        "projectileKey": "Projectile_PillarBossS",
+        "startEffectTimelineKey": "FX_PillarBossShot_Red",
+        "beatSeconds": [
+          1.0,
+          4.0,
+          7.0
+        ],
+        "burstCount": 2,
+        "burstIntervalSeconds": 0.3333,
+        "fireMode": "AllAtOnce",
+        "activeWhilePillarsAlive": [
+          3,
+          2
+        ],
+        "attackMotions": [
+          "AttackAWithAll",
+          "AttackAWithAB"
+        ],
+        "projectileSpeed": 5.0,
+        "projectileHpDamage": 10,
+        "projectileMaxDistance": 100
+      },
+      {
+        "id": "BossB",
+        "owner": "Boss",
+        "originTile": {
+          "x": 205,
+          "y": 53
+        },
+        "angles": [
+          225.0,
+          270.0,
+          315.0
+        ],
+        "projectileKey": "Projectile_PillarBossL",
+        "startEffectTimelineKey": "FX_PillarBossShot_Yellow",
+        "beatSeconds": [
+          2.0,
+          5.0,
+          8.0
+        ],
+        "burstCount": 1,
+        "burstIntervalSeconds": 0.3333,
+        "fireMode": "Sequential",
+        "activeWhilePillarsAlive": [
+          3,
+          2,
+          1
+        ],
+        "attackMotions": [
+          "AttackBWithAll",
+          "AttackBWithAB",
+          "AttackBOnlyB"
+        ],
+        "projectileSpeed": 5.0,
+        "projectileHpDamage": 10,
+        "projectileMaxDistance": 100
+      },
+      {
+        "id": "BossC",
+        "owner": "Boss",
+        "originTile": {
+          "x": 210,
+          "y": 53
+        },
+        "angles": [
+          270.0,
+          225.0
+        ],
+        "projectileKey": "Projectile_PillarBossL_Blue",
+        "startEffectTimelineKey": "FX_PillarBossShot_Blue",
+        "beatSeconds": [
+          3.0,
+          6.0,
+          9.0
+        ],
+        "burstCount": 1,
+        "burstIntervalSeconds": 0.3333,
+        "fireMode": "AllAtOnce",
+        "activeWhilePillarsAlive": [
+          3
+        ],
+        "attackMotions": [
+          "AttackCWithAll"
+        ],
+        "projectileSpeed": 5.0,
+        "projectileHpDamage": 10,
+        "projectileMaxDistance": 100
+      },
+      {
+        "id": "PillarA",
+        "owner": "Pillar",
+        "pillarIndex": 0,
+        "angles": [
+          45.0,
+          0.0,
+          315.0
+        ],
+        "projectileKey": "Projectile_PillarS",
+        "startEffectTimelineKey": "FX_PillarBossShot_Red",
+        "attackIntervalSeconds": 4.0,
+        "burstCount": 2,
+        "burstIntervalSeconds": 0.3333,
+        "fireMode": "AllAtOnce",
+        "activeWhilePillarsAlive": [
+          3,
+          2,
+          1
+        ],
+        "projectileSpeed": 5.0,
+        "projectileHpDamage": 10,
+        "projectileMaxDistance": 100
+      },
+      {
+        "id": "PillarB",
+        "owner": "Pillar",
+        "pillarIndex": 1,
+        "angles": [
+          180.0,
+          0.0,
+          270.0
+        ],
+        "projectileKey": "Projectile_PillarL",
+        "startEffectTimelineKey": "FX_PillarBossShot_Yellow",
+        "attackIntervalSeconds": 3.0,
+        "burstCount": 1,
+        "burstIntervalSeconds": 0.3333,
+        "fireMode": "AllAtOnce",
+        "activeWhilePillarsAlive": [
+          3,
+          2,
+          1
+        ],
+        "projectileSpeed": 4.0,
+        "projectileHpDamage": 10,
+        "projectileMaxDistance": 100
+      },
+      {
+        "id": "PillarC",
+        "owner": "Pillar",
+        "pillarIndex": 2,
+        "angles": [
+          180.0,
+          225.0,
+          270.0,
+          315.0
+        ],
+        "projectileKey": "Projectile_PillarL_Blue",
+        "startEffectTimelineKey": "FX_PillarBossShot_Blue",
+        "attackIntervalSeconds": 5.0,
+        "burstCount": 1,
+        "burstIntervalSeconds": 0.3333,
+        "fireMode": "AllAtOnce",
+        "activeWhilePillarsAlive": [
+          3,
+          2,
+          1
+        ],
+        "projectileSpeed": 3.0,
+        "projectileHpDamage": 10,
+        "projectileMaxDistance": 100
+      }
+    ],
+    "mobNpcKeys": [
+      "N202294",
+      "N202295",
+      "N202296"
+    ],
+    "mobSpawnTiles": [
+      {
+        "x": 194,
+        "y": 37
+      },
+      {
+        "x": 198,
+        "y": 37
+      },
+      {
+        "x": 212,
+        "y": 37
+      },
+      {
+        "x": 218,
+        "y": 37
+      },
+      {
+        "x": 194,
+        "y": 49
+      },
+      {
+        "x": 202,
+        "y": 49
+      },
+      {
+        "x": 212,
+        "y": 49
+      },
+      {
+        "x": 218,
+        "y": 49
+      }
+    ],
+    "mobIntervalSecondsByPhase": [
+      9.0,
+      5.0,
+      2.0
+    ],
+    "mobCountByPhase": [
+      1,
+      1,
+      1
+    ],
+    "mobMaxAlive": 15,
+    "mobFarthestPickTopCount": 3,
+    "mobCorpseDespawnSeconds": 5.0,
+    "collapseMotions": [
+      "Collapse_1",
+      "Collapse_2",
+      "Collapse_3"
+    ],
+    "stageLoopMotions": [
+      "",
+      "IdleWithAB",
+      "IdleOnlyB"
+    ],
+    "projectilePrewarmCount": 60
+  },
+  "blackThread": {
+    "bossBgm": { "audioId": "bgm_fieldBossISaidRun", "holdWhileHidden": true },
+    "floorKey": "F1005B",
+    "npcKey": "N105106",
+    "wakeCutsceneKey": "C5007",
+    "entranceLoopPairId": 150111,
+    "clearQuestKey": "Q5012",
+    "battleId": 11038,
+    "battleHpPercent": 90,
+    "hideDamageThreshold": 150,
+    "hideSeconds": 3.0,
+    "hideMotion": "Hide",
+    "appearMotion": "Show",
+    "hideObjectSwitchKey": "blackthread-hide-rush-blackout",
+    "warpDistanceFromTarget": 8,
+    "chargeLaneHalfWidth": 2,
+    "chargeTelegraphSeconds": 0.8,
+    "chargeMotionSpeed": 1.35,
+    "chargeWindupSeconds": 0.32,
+    "chargeGlideSeconds": 0.47,
+    "chargeHpDamage": 30,
+    "chargeKnockbackTiles": 2,
+    "chargeMotion": "Attack2",
+    "chargeDirectionEffectKey": "BlackThreadMoveReady",
+    "chargeDirectionEffectTiles": 1,
+    "chargeDirectionEffectDelayMs": 0,
+    "chargeDirectionEffectRotationOffset": 180,
+    "boardIntervalSeconds": 1.5,
+    "boardTelegraphSeconds": 1.0,
+    "boardCount": 4,
+    "boardSize": 2,
+    "boardSearchRadius": 20,
+    "boardHpDamage": 10,
+    "boardEffectKey": "BlackThreadBoard"
+  },
+  "b3FloorMaster": {
+    "bossBgm": { "audioId": "bgm_fieldBossCalvary", "holdWhileHidden": true },
+    "floorKey": "FB1003B",
+    "npcKey": "N203017",
+    "jumpDamageThreshold": 300,
+    "jumpStartDelaySeconds": 1,
+    "hideMotion": "LandAttack",
+    "hideSeconds": 4,
+    "hideWindupSeconds": 0.867,
+    "bodyOffDelaySeconds": 1.0,
+    "hideJumpUpTiles": 10,
+    "hideJumpUpSeconds": 1.0,
+    "telegraphSeconds": 1.5,
+    "telegraphRampSeconds": 1.4,
+    "appearMotion": "LandAttack",
+    "appearMotionStartSeconds": 0.8,
+    "appearRecoverSeconds": 0.9,
+    "hitShape": [
+      "..XXXXX..",
+      ".XXXXXXX.",
+      "XXXXXXXXX",
+      "XXXXXXXXX",
+      "XXXXNXXXX",
+      "XXXXXXXXX",
+      "XXXXXXXXX",
+      ".XXXXXXX.",
+      "..XXXXX.."
+    ],
+    "hpDamage": 5,
+    "knockbackTiles": 7,
+    "effectKey": "",
+    "summonNpcKey": "N203119",
+    "summonIntervalSeconds": 5.0,
+    "summonCount": 4,
+    "summonRange": 2,
+    "blockerNpcKey": "N203016"
+  },
+  "lanoirCaptainFan": {
+    "bossBgm": { "audioId": "bgm_fieldBossBattleCp10Boss6" },
+    "floorKey": "F1005B",
+    "npcKey": "N105001",
+    "hideDamageThreshold": -1,
+    "chargeIntervalSeconds": 10,
+    "fanDepth": 8,
+    "fanMaxSidePad": 2,
+    "fanTelegraphSeconds": 0.75,
+    "fanHpDamage": 19,
+    "fanKnockbackTiles": 4,
+    "fanPlayerBindSeconds": 1,
+    "fanMotion": "HammerSingleHeavy",
+    "fanHitDelaySeconds": 0.7333333333333333,
+    "fanRecoverSeconds": 0.6,
+    "fanCameraShakeStrength": 0.5,
+    "fanCameraShakeDuration": 0.2,
+    "fanCameraShakeAxis": "Down",
+    "fanCameraShakeFrequencyHz": 14,
+    "fanEffectKey": ""
+  },
+  "enemyPresenceBgm": {
+    "audioId": "bgm_hostileHunt",
+    "requiredEventKey": "EQ-3000",
+    "endQuestKey": "Q-3000",
+    "floorKeys": ["FB1002B", "FB1001B", "F1001B", "F1002B", "F1003B", "F1004B"],
+    "excludedNpcKeys": ["N202290", "N202291", "N202292", "N202293"]
+  },
+  "sapsareeBoss": {
+    "bossBgm": { "audioId": "bgm_fieldBossEndlessPain" },
+    "floorKey": "FB1001B",
+    "enrageDelaySeconds": 15,
+    "enrageDurationSeconds": 10,
+    "enrageBurstShape": [ "XXX", "XNX", "XXX" ],
+    "enrageBurstDelaySeconds": 2.0,
+    "enrageBurstKnockbackTiles": 2,
+    "enrageBurstHpDamage": 0,
+    "enrageBurstEffectKey": "SapsareeRageBurst",
+    "tiredSeconds": 4,
+    "firstFightTiredMoveTiles": 25,
+    "woundSeconds": 0,
+    "woundDamageIntervalSeconds": 3,
+    "woundDamageMoveTiles": 3,
+    "woundHpDamage": 0,
+    "foodHpPercent": 75,
+    "foodCooldownSeconds": 30,
+    "foodFleeTotalTiles": 30,
+    "foodCastSeconds": 3,
+    "foodTickSeconds": 1.5,
+    "foodTickCount": 4,
+    "foodHealPerTick": 15,
+    "foodRecoverEffectKey": "SapsareeRecover",
+    "foodRecoverLeadSeconds": 1.5,
+    "fleeHopTiles": 5,
+    "fleeExtendedHopTiles": 12,
+    "fleeTilesPerSecond": 18,
+    "kiteBoxRadius": 4,
+    "kiteMeleeGuardRange": 1,
+    "kiteSpeedScale": 2
+  }
+}

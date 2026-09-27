@@ -1,0 +1,68 @@
+{
+  "list": [
+    {
+      "key": "Lock_Wave_TanningWest",
+      "locationId": 238001,
+      "requiredQuestKey": "Q-3003A",
+      "lockActiveQuestKey": "Q-3003A",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    },
+    {
+      "key": "Lock_Wave_TanningSouth",
+      "locationId": 238002,
+      "requiredQuestKey": "Q-3003A",
+      "lockActiveQuestKey": "Q-3003A",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    },
+    {
+      "key": "Lock_Wave_MillingWest",
+      "locationId": 238003,
+      "requiredQuestKey": "Q-3003B",
+      "lockActiveQuestKey": "Q-3003B",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    },
+    {
+      "key": "Lock_Wave_MillingNorth",
+      "locationId": 238004,
+      "requiredQuestKey": "Q-3003B",
+      "lockActiveQuestKey": "Q-3003B",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    },
+    {
+      "key": "Lock_Wave_PlazaNorth",
+      "locationId": 238005,
+      "requiredQuestKey": "Q-3003C",
+      "lockActiveQuestKey": "Q-3003C",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    },
+    {
+      "key": "Lock_Wave_PlazaWest",
+      "locationId": 238006,
+      "requiredQuestKey": "Q-3003C",
+      "lockActiveQuestKey": "Q-3003C",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    },
+    {
+      "key": "Lock_Wave_PlazaEastUp",
+      "locationId": 238007,
+      "requiredQuestKey": "Q-3003C",
+      "lockActiveQuestKey": "Q-3003C",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    },
+    {
+      "key": "Lock_Wave_PlazaEastLow",
+      "locationId": 238008,
+      "requiredQuestKey": "Q-3003C",
+      "lockActiveQuestKey": "Q-3003C",
+      "lockOnlyWhileSwarmActive": true,
+      "dialogueKey": "D-3225"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "list": [
+    {
+      "shopKey": "SH103007",
+      "itemKey": "I990307",
+      "price": 40,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103007",
+      "itemKey": "I990308",
+      "price": 60,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103007",
+      "itemKey": "I990309",
+      "price": 140,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103004",
+      "itemKey": "I1206",
+      "price": 10000,
+      "stock": 1,
+      "notForSale": true
+    },
+    {
+      "shopKey": "SH103003",
+      "itemKey": "I1206",
+      "price": 0,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103004",
+      "itemKey": "I1209",
+      "price": 10000,
+      "stock": 1,
+      "notForSale": true
+    },
+    {
+      "shopKey": "SH103003",
+      "itemKey": "I1209",
+      "price": 0,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103004",
+      "itemKey": "I990303",
+      "price": 30,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103003",
+      "itemKey": "I990303",
+      "price": 30,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103005",
+      "itemKey": "I990307",
+      "price": 40,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103005",
+      "itemKey": "I990308",
+      "price": 60,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103005",
+      "itemKey": "I990309",
+      "price": 140,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990304",
+      "price": 70,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990305",
+      "price": 60,
+      "stock": 1
+    },
+    {
+      "shopKey": "SH103006",
+      "itemKey": "I990306",
+      "price": 70,
+      "stock": 1
+    }
+  ]
+}

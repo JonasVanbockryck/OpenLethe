@@ -1,0 +1,367 @@
+﻿{
+  "list": [
+    {
+      "id": "B2COLOR",
+      "buffA": {
+        "id": "B2Color_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveAdditionalNegativeBuffStackAndTurn",
+            "value": 1
+          },
+          {
+            "value": 0.05,
+            "ability": "TakeAtkDamageMultiplier"
+          }
+        ]
+      },
+      "buffB": {
+        "id": "B2Color_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveAdditionalNegativeBuffStackAndTurn",
+            "value": 2
+          },
+          {
+            "value": 0.1,
+            "ability": "TakeAtkDamageMultiplier"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BUFFET",
+      "buffA": {
+        "id": "Buffet_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Protection",
+              "target": "Self",
+              "stack": 3,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "Buffet_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveBuffOnPanicOrLowMorale",
+            "buffData": {
+              "buffKeyword": "Protection",
+              "target": "Self",
+              "stack": 5,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "OUTOFCONTROL",
+      "buffA": {
+        "id": "OutOfControl_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "SkillPowerResultAdder",
+            "value": 1
+          },
+          {
+            "ability": "GiveBuffOnPanicOrLowMoraleToOtherAlliesExceptParts",
+            "buffData": {
+              "buffKeyword": "Reduction",
+              "target": "EveryAllyExceptSelf",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "OutOfControl_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "SkillPowerResultAdder",
+            "value": 1
+          },
+          {
+            "ability": "GiveBuffOnPanicOrLowMoraleToOtherAlliesExceptParts",
+            "buffData": {
+              "buffKeyword": "Reduction",
+              "target": "EveryAllyExceptSelf",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          },
+          {
+            "ability": "GiveBuffOnPanicOrLowMoraleToOtherAlliesExceptParts",
+            "buffData": {
+              "buffKeyword": "AttackDmgDown",
+              "target": "EveryAllyExceptSelf",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "MANNEQUIN",
+      "buffA": {
+        "id": "ThirdTailor_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "TakeAtkDamageMultiplier",
+            "value": 0.075
+          },
+          {
+            "ability": "GiveBuffOnTakeAttackDamagePerStackWithRoundLimitAndSkillLimit_5_1",
+            "value": 1,
+            "buffData": {
+              "buffKeyword": "Vibration",
+              "target": "Self",
+              "stack": 0,
+              "turn": 1,
+              "activeRound": 0
+            }
+          }
+        ]
+      },
+      "buffB": {
+        "id": "ThirdTailor_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "TakeAtkDamageMultiplier",
+            "value": 0.15
+          },
+          {
+            "ability": "GiveBuffOnTakeAttackDamagePerStackWithRoundLimitAndSkillLimit_5_1",
+            "value": 1,
+            "buffData": {
+              "buffKeyword": "Vibration",
+              "target": "Self",
+              "stack": 1,
+              "turn": 1,
+              "activeRound": 0
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "TARGET_DYE",
+      "buffA": {
+        "id": "targetDye_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkDamageMultiplierIfFasterThanTarget",
+            "value": -0.05
+          }
+        ]
+      },
+      "buffB": {
+        "id": "targetDye_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkDamageMultiplierIfFasterThanTarget",
+            "value": -0.10
+          }
+        ]
+      }
+    },
+
+    {
+      "id": "BLACKYARN",
+      "buffA": {
+        "id": "BlackYarn_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "GiveBuffOnTakeAttackDamageWithSkillLimit_3",
+            "buffData": {
+              "buffKeyword": "TangleBlackYarn",
+              "target": "Target",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          },
+          {
+            "ability": "BlackYarnParryResultAdder",
+            "value": 3
+          },
+          {
+            "ability": "BlackYarnSkillPowerAdderOnUse",
+            "value": 2
+          }
+        ]
+      },
+      "buffB": {
+        "id": "BlackYarn_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "ToSuperCoinOnBSWithAllParts"
+          },
+          {
+            "ability": "GiveBuffOnTakeAttackDamageWithSkillLimit_6",
+            "buffData": {
+              "buffKeyword": "TangleBlackYarn",
+              "target": "Target",
+              "stack": 1,
+              "turn": 0,
+              "activeRound": 0
+            }
+          },
+          {
+            "ability": "BlackYarnParryResultAdder",
+            "value": 6
+          },
+          {
+            "ability": "BlackYarnSkillPowerAdderOnUse",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "id": "LANOIRB3",
+      "buffA": {
+        "id": "LaNoirB3_LowMorale",
+        "iconId": "LaNoirB3_LowMorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "DefAdder",
+            "value": -1
+          }
+        ]
+      },
+      "buffB": {
+        "id": "LaNoirB3_Panic",
+        "iconId": "LaNoirB3_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "DefAdder",
+            "value": -3
+          }
+        ]
+      }
+    },
+    {
+      "id": "LAROUGEB3",
+      "buffA": {
+        "id": "LaRougeB3_LowMorale",
+        "iconId": "LaRougeB3_LowMorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": -1
+          }
+        ]
+      },
+      "buffB": {
+        "id": "LaRougeB3_Panic",
+        "iconId": "LaRougeB3_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": -3
+          }
+        ]
+      }
+    }
+  ]
+}

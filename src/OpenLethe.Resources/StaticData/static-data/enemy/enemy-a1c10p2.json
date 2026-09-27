@@ -1,0 +1,1077 @@
+{
+  "list": [
+    {
+      "id": 91070,
+      "nameID": 91059,
+      "sdPortrait": "91059",
+      "appearance": "91059_GrandMagasin_Customer_AAppearance",
+      "associationList": [
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "level": 60,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 90,
+        "incrementByLevel": 3.1
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        1
+      ],
+      "maxSpeedList": [
+        3
+      ],
+      "breakSection": {
+        "sectionList": [
+          40, 0
+        ]
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1005,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 1
+          },
+          {
+            "type": "SCARLET",
+            "value": 1
+          },
+          {
+            "type": "AMBER",
+            "value": 1
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1
+          },
+          {
+            "type": "AZURE",
+            "value": 1
+          },
+          {
+            "type": "INDIGO",
+            "value": 1
+          },
+          {
+            "type": "VIOLET",
+            "value": 1
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        1
+      ],
+      "startActionSlotNum": 1,
+      "maxActionSlotNum": 2,
+      "patternID": "Normal_AutoPick",
+      "defenseSkillIDList": [
+      ],
+      "attributeList": [
+        {
+          "skillId": 9105901,
+          "number": 2
+        },
+        {
+          "skillId": 9105902,
+          "number": 1
+        },
+        {
+          "skillId": 9105903,
+          "number": 1
+        },
+        {
+          "skillId": 9105904,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          9105901,
+          9105902,
+          9105903,
+          1590001
+        ]
+      }
+    },
+    {
+      "id": 91071,
+      "nameID": 91060,
+      "sdPortrait": "91060",
+      "appearance": "91060_GrandMagasin_Customer_BAppearance",
+      "associationList": [
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "level": 60,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 90,
+        "incrementByLevel": 3.1
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        1
+      ],
+      "maxSpeedList": [
+        3
+      ],
+      "breakSection": {
+        "sectionList": [
+          40, 0
+        ]
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1005,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 1
+          },
+          {
+            "type": "SCARLET",
+            "value": 1
+          },
+          {
+            "type": "AMBER",
+            "value": 1
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1
+          },
+          {
+            "type": "AZURE",
+            "value": 1
+          },
+          {
+            "type": "INDIGO",
+            "value": 1
+          },
+          {
+            "type": "VIOLET",
+            "value": 1
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        1
+      ],
+      "startActionSlotNum": 1,
+      "maxActionSlotNum": 2,
+      "patternID": "Normal_AutoPick",
+      "defenseSkillIDList": [
+      ],
+      "attributeList": [
+        {
+          "skillId": 9106001,
+          "number": 2
+        },
+        {
+          "skillId": 9106002,
+          "number": 1
+        },
+        {
+          "skillId": 9106003,
+          "number": 1
+        },
+        {
+          "skillId": 9106004,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          9105901,
+          9105902,
+          9105903,
+          1590001
+        ]
+      }
+    },
+    {
+      "id": 91072,
+      "nameID": 91063,
+      "sdPortrait": "91063",
+      "appearance": "91063_Pin_AAppearance",
+      "associationList": [
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "unitScriptID": "1498",
+      "level": 60,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 43,
+        "incrementByLevel": 1.48
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        1
+      ],
+      "maxSpeedList": [
+        3
+      ],
+      "breakSection": {
+        "sectionList": [
+          40, 0
+        ]
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1105,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1.5
+          },
+          {
+            "type": "HIT",
+            "value": 0.8
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 1
+          },
+          {
+            "type": "SCARLET",
+            "value": 1
+          },
+          {
+            "type": "AMBER",
+            "value": 1
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1
+          },
+          {
+            "type": "AZURE",
+            "value": 1
+          },
+          {
+            "type": "INDIGO",
+            "value": 1.25
+          },
+          {
+            "type": "VIOLET",
+            "value": 0.75
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        1
+      ],
+      "startActionSlotNum": 1,
+      "maxActionSlotNum": 2,
+      "patternID": "Normal_AutoPick",
+      "defenseSkillIDList": [
+      ],
+      "attributeList": [
+        {
+          "skillId": 9106301,
+          "number": 2
+        },
+        {
+          "skillId": 9106302,
+          "number": 2
+        },
+        {
+          "skillId": 9106303,
+          "number": 1
+        },
+        {
+          "skillId": 9106304,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          9106301,
+          9106302,
+          9106004,
+          1590001
+        ]
+      }
+    },
+    {
+      "id": 91073,
+      "nameID": 91064,
+      "sdPortrait": "91064",
+      "appearance": "91064_Pin_BAppearance",
+      "associationList": [
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "unitScriptID": "1499",
+      "level": 60,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 43,
+        "incrementByLevel": 1.48
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        1
+      ],
+      "maxSpeedList": [
+        3
+      ],
+      "breakSection": {
+        "sectionList": [
+          40, 0
+        ]
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1105,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1.5
+          },
+          {
+            "type": "HIT",
+            "value": 0.8
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 1
+          },
+          {
+            "type": "SCARLET",
+            "value": 1
+          },
+          {
+            "type": "AMBER",
+            "value": 1
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1
+          },
+          {
+            "type": "AZURE",
+            "value": 1
+          },
+          {
+            "type": "INDIGO",
+            "value": 1.25
+          },
+          {
+            "type": "VIOLET",
+            "value": 0.75
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        1
+      ],
+      "startActionSlotNum": 1,
+      "maxActionSlotNum": 2,
+      "patternID": "Normal_AutoPick",
+      "defenseSkillIDList": [
+      ],
+      "attributeList": [
+        {
+          "skillId": 9106401,
+          "number": 2
+        },
+        {
+          "skillId": 9106402,
+          "number": 2
+        },
+        {
+          "skillId": 9106403,
+          "number": 1
+        },
+        {
+          "skillId": 9106404,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          9106301,
+          9106302,
+          9106004,
+          1590001
+        ]
+      }
+    },
+    {
+      "id": 91074,
+      "nameID": 91067,
+      "sdPortrait": "91067",
+      "appearance": "1493_3F_LeRouge_fanaticAppearance",
+      "associationList": [
+        "LE_ROUGE",
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "level": 60,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 120,
+        "incrementByLevel": 4.14
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        2
+      ],
+      "maxSpeedList": [
+        5
+      ],
+      "breakSection": {
+        "sectionList": [
+          30, 0
+        ]
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1098,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnLoseDuelAsParryingCountMultiply5AndPlus10Percent"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1.25
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 0.8
+          },
+          {
+            "type": "SCARLET",
+            "value": 1.5
+          },
+          {
+            "type": "AMBER",
+            "value": 1
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1.2
+          },
+          {
+            "type": "AZURE",
+            "value": 0.8
+          },
+          {
+            "type": "INDIGO",
+            "value": 1
+          },
+          {
+            "type": "VIOLET",
+            "value": 1
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "startActionSlotNum": 2,
+      "maxActionSlotNum": 3,
+      "patternID": "91067",
+      "attributeList": [
+        {
+          "skillId": 149401,
+          "number": 1
+        },
+        {
+          "skillId": 149402,
+          "number": 1
+        },
+        {
+          "skillId": 149403,
+          "number": 1
+        },
+        {
+          "skillId": 149404,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          146603,
+          149401,
+          9106701,
+          9106702,
+          1590001
+        ]
+      }
+    },
+    {
+      "id": 91075,
+      "nameID": 91066,
+      "sdPortrait": "91066",
+      "appearance": "91068_3F_LeNoir_FanaticAppearance",
+      "associationList": [
+        "LE_NOIR",
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "level": 60,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 100,
+        "incrementByLevel": 3.45
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        1
+      ],
+      "maxSpeedList": [
+        3
+      ],
+      "breakSection": {
+        "sectionList": [
+          30, 0
+        ]
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1099,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnLoseDuelAsParryingCountMultiply5AndPlus10Percent"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1.25
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 0.8
+          },
+          {
+            "type": "SCARLET",
+            "value": 1
+          },
+          {
+            "type": "AMBER",
+            "value": 1.5
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1.2
+          },
+          {
+            "type": "AZURE",
+            "value": 0.8
+          },
+          {
+            "type": "INDIGO",
+            "value": 1
+          },
+          {
+            "type": "VIOLET",
+            "value": 1
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "startActionSlotNum": 2,
+      "maxActionSlotNum": 3,
+      "patternID": "91066",
+      "defenseSkillIDList": [
+      ],
+      "attributeList": [
+        {
+          "skillId": 9106601,
+          "number": 1
+        },
+        {
+          "skillId": 9106602,
+          "number": 1
+        },
+        {
+          "skillId": 9106603,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          9106601,
+          9106602,
+          9106603,
+          1590001
+        ]
+      }
+    },
+    {
+      "id": 91076,
+      "nameID": 1494,
+      "sdPortrait": "1494",
+      "appearance": "1494_LeRouge_SPA_EmployeeAppearance",
+      "associationList": [
+        "LE_ROUGE",
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "level": 60,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 100,
+        "incrementByLevel": 3.45
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        1
+      ],
+      "maxSpeedList": [
+        3
+      ],
+      "breakSection": {
+        "sectionList": [
+          30, 0
+        ]
+      },
+      "hasMp": true,
+      "lowMorale": -20,
+      "panic": -45,
+      "panicType": 1098,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnLoseDuelAsParryingCountMultiply5AndPlus10Percent"
+              }
+            ]
+          }
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1.25
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ],
+        "attributeResistList": [
+          {
+            "type": "CRIMSON",
+            "value": 0.8
+          },
+          {
+            "type": "SCARLET",
+            "value": 1.5
+          },
+          {
+            "type": "AMBER",
+            "value": 1
+          },
+          {
+            "type": "SHAMROCK",
+            "value": 1.2
+          },
+          {
+            "type": "AZURE",
+            "value": 0.8
+          },
+          {
+            "type": "INDIGO",
+            "value": 1
+          },
+          {
+            "type": "VIOLET",
+            "value": 1
+          },
+          {
+            "type": "WHITE",
+            "value": 2
+          },
+          {
+            "type": "BLACK",
+            "value": 2
+          }
+        ]
+      },
+      "startActionSlotNumList": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "startActionSlotNum": 2,
+      "maxActionSlotNum": 3,
+      "patternID": "Normal_AutoPick",
+      "defenseSkillIDList": [
+      ],
+      "attributeList": [
+        {
+          "skillId": 149401,
+          "number": 2
+        },
+        {
+          "skillId": 149402,
+          "number": 1
+        },
+        {
+          "skillId": 149403,
+          "number": 1
+        },
+        {
+          "skillId": 149404,
+          "number": 1
+        }
+      ],
+      "passiveSet": {
+        "passiveIdList": [
+          146603,
+          149401,
+          149402,
+          1590001
+        ]
+      }
+    }
+  ]
+}

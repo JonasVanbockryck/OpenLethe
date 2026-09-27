@@ -2151,18 +2151,6 @@
               "scriptName": "EmptyBody"
             },
             {
-              "scriptName": "AttackDmgUpByRatioViaBuffCheckOver",
-              "buffData": {
-                "buffKeyword": "SelfCharge",
-                "target": "",
-                "buffOwner": "AbnormalitySelf",
-                "stack": 10,
-                "turn": 0,
-                "activeRound": 0,
-                "value": 0.1
-              }
-            },
-            {
               "scriptName": "UseBuffAllTurnOnEndSkill",
               "buffData": {
                 "buffKeyword": "SelfCharge",

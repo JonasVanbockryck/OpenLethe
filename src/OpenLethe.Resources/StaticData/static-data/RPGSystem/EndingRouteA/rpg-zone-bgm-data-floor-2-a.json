@@ -1,0 +1,9 @@
+{
+  "list": [
+        { "zoneId": 999999, "bgmAudioId": "bgm_toilet" },
+        { "zoneId": 120100, "bgmAudioId": "bgm_floor2ndRouge" },
+        { "zoneId": 120200, "bgmAudioId": "bgm_floor2ndRouge" },
+        { "zoneId": 120300, "bgmAudioId": "bgm_floor2ndRouge", "eventCompletedKey": "E2028", "eventCompletedBgmAudioId": "bgm_floor2ndBattle" },
+        { "zoneId": 120400, "bgmAudioId": "bgm_floor2ndCocoon" }
+  ]
+}

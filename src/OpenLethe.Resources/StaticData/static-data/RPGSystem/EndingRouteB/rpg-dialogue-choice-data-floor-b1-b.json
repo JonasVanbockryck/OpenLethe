@@ -1,0 +1,68 @@
+{
+  "list": [
+    {
+      "key": "DC-1061",
+      "nextDialogueKey": "D-1062",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC-1062",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    },
+    {
+      "key": "DC-1063",
+      "nextDialogueKey": "D-1064",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC-1064",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    },
+    {
+      "key": "DC-1065",
+      "nextDialogueKey": "D-1066",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC-1066",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    },
+    {
+      "key": "DC-1067",
+      "nextDialogueKey": "D-1069",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC-1068",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    },
+    {
+      "key": "DC-1069",
+      "nextDialogueKey": "",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC-1070",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    },
+    {
+      "key": "DC-1294A",
+      "nextDialogueKey": "",
+      "hideConditionType": "Deadscene",
+      "hideConditionValue": "N201032"
+    },
+    {
+      "key": "DC-1294B",
+      "nextDialogueKey": "D-1294B"
+    },
+    {
+      "key": "DC-1294C",
+      "nextDialogueKey": "D-1294C"
+    }
+  ]
+}

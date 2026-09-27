@@ -154,6 +154,7 @@
       "egoType": "TETH",
       "season": 1,
       "additionalAttachment": "EVENT",
+      "maxEgoSyncLevel": 5,
       "attributeResistList": [
         {
           "type": "CRIMSON",
@@ -221,10 +222,12 @@
         }
       ],
       "awakeningPassiveList": [
-        2100311
+        2100311,
+        2100312
       ],
       "awakeningSkillId": 2100311,
-      "corrosionSkillId": 2100321
+      "corrosionSkillId": 2100321,
+      "customEgoSkillExchanger": 21003
     },
     {
       "id": 21004,

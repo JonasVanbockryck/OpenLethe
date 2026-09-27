@@ -1,0 +1,52 @@
+{
+  "list": [
+    {
+      "zoneId": 0,
+      "bgmAudioId": "bgm_village",
+      "eventCompletedKey": "EBGM-5006",
+      "eventCompletedBgmAudioId": "bgm_floor5thBroadcast",
+      "eventRevertKey": "EL-5010S",
+      "prioritizeEventBgm": true
+    },
+    {
+      "zoneId": 999999,
+      "bgmAudioId": "bgm_toilet",
+      "eventCompletedKey": "EBGM-5006",
+      "eventCompletedBgmAudioId": "bgm_floor5thBroadcast",
+      "eventRevertKey": "EL-5010S",
+      "prioritizeEventBgm": true
+    },
+    {
+      "zoneId": 150100,
+      "bgmAudioId": "bgm_floor5th",
+      "eventCompletedKey": "EBGM-5006",
+      "eventCompletedBgmAudioId": "bgm_floor5thBroadcast",
+      "eventRevertKey": "EL-5010S",
+      "prioritizeEventBgm": true
+    },
+    {
+      "zoneId": 150200,
+      "bgmAudioId": "bgm_floor5th",
+      "eventCompletedKey": "EBGM-5006",
+      "eventCompletedBgmAudioId": "bgm_floor5thBroadcast",
+      "eventRevertKey": "EL-5010S",
+      "prioritizeEventBgm": true
+    },
+    {
+      "zoneId": 150201,
+      "bgmAudioId": "bgm_floor5th",
+      "eventCompletedKey": "EBGM-5006",
+      "eventCompletedBgmAudioId": "bgm_floor5thBroadcast",
+      "eventRevertKey": "EL-5010S",
+      "prioritizeEventBgm": true
+    },
+    {
+      "zoneId": 150300,
+      "bgmAudioId": "bgm_floor5th",
+      "eventCompletedKey": "EBGM-5006",
+      "eventCompletedBgmAudioId": "bgm_floor5thBroadcast",
+      "eventRevertKey": "EL-5010S",
+      "prioritizeEventBgm": true
+    }
+  ]
+}

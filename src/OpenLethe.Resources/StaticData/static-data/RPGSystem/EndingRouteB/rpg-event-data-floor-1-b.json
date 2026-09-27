@@ -1,0 +1,322 @@
+{
+  "list": [
+    {
+      "key": "E1001",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1001",
+      "action2": "GiveItem",
+      "actionValue2": "I990002, 1",
+      "action3": "GiveItem",
+      "actionValue3": "I990004, 1",
+      "action4": "GiveItem",
+      "actionValue4": "I990312, 1",
+      "action5": "GiveItem",
+      "actionValue5": "I990006, 1",
+      "action6": "GiveMoney",
+      "actionValue6": "800"
+    },
+    {
+      "key": "E1010",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1010"
+    },
+    {
+      "key": "E1011",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1011"
+    },
+    {
+      "key": "E1012",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1012"
+    },
+    {
+      "key": "E1021",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1021"
+    },
+    {
+      "key": "E1023",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1023"
+    },
+    {
+      "key": "E1031",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1031"
+    },
+    {
+      "key": "E1020",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1020"
+    },
+    {
+      "key": "E1914",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1914"
+    },
+    {
+      "key": "E1915",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1915"
+    },
+    {
+      "key": "E9000",
+      "canRepeat": false,
+      "action1": "RecoverHpOneTarget",
+      "actionValue1": "0, 20"
+    },
+    {
+      "key": "E9001",
+      "canRepeat": false,
+      "action1": "RecoverMpOneTarget",
+      "actionValue1": "1, 20"
+    },
+    {
+      "key": "E9002",
+      "canRepeat": false,
+      "action1": "RecoverHpAndMpOneTarget",
+      "actionValue1": "0, 20, 10"
+    },
+    {
+      "key": "E9003",
+      "canRepeat": false,
+      "action1": "RecoverHpAllParty",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E9004",
+      "canRepeat": false,
+      "action1": "RecoverHpAllPlayer",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E10015",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C10013"
+    },
+    {
+      "key": "E1109",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1109"
+    },
+    {
+      "key": "E1091",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991008, 1",
+      "action2": "DespawnNpc",
+      "actionValue2": "N101191, 110200"
+    },
+    {
+      "key": "EB1181",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1181"
+    },
+    {
+      "key": "E1954",
+      "canRepeat": true,
+      "action1": "OpenShop",
+      "actionValue1": "SH101009"
+    },
+    {
+      "key": "E1032",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1032"
+    },
+    {
+      "key": "E1041",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1041"
+    },
+    {
+      "key": "E1042",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1042"
+    },
+    {
+      "key": "E10411",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11046, , N101006, 1"
+    },
+    {
+      "key": "E1051",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1051"
+    },
+    {
+      "key": "E1052",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1052",
+      "action2": "RemoveItem",
+      "actionValue2": "I990108, 1"
+    },
+    {
+      "key": "E1061",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1061"
+    },
+    {
+      "key": "E1062",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1062"
+    },
+    {
+      "key": "E1111",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1111"
+    },
+    {
+      "key": "E1963",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E1960",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1091"
+    },
+    {
+      "key": "E1961",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1981"
+    },
+    {
+      "key": "E1962",
+      "canRepeat": false
+    },
+    {
+      "key": "E1965",
+      "canRepeat": false
+    },
+    {
+      "key": "E1964",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1982"
+    },
+    {
+      "key": "E1966",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1092"
+    },
+    {
+      "key": "E1967",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1983"
+    },
+    {
+      "key": "E1968",
+      "canRepeat": false
+    },
+    {
+      "key": "E1969",
+      "canRepeat": false
+    },
+    {
+      "key": "E1970",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1984"
+    },
+    {
+      "key": "E1971",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1093"
+    },
+    {
+      "key": "E1972",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1985"
+    },
+    {
+      "key": "E1973",
+      "canRepeat": false
+    },
+    {
+      "key": "E1974",
+      "canRepeat": false
+    },
+    {
+      "key": "E1975",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1986"
+    },
+    {
+      "key": "E1976",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1094"
+    },
+    {
+      "key": "E1977",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1987"
+    },
+    {
+      "key": "E1978",
+      "canRepeat": false
+    },
+    {
+      "key": "E1979",
+      "canRepeat": false
+    },
+    {
+      "key": "E1980",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D1988"
+    },
+    {
+      "key": "EDS101",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS101"
+    },
+    {
+      "key": "EDS102",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS102"
+    },
+    {
+      "key": "EPI-1B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990015, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990014, 1"
+    }
+  ]
+}

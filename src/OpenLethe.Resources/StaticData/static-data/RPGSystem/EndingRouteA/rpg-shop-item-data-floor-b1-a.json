@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "shopKey" : "SH108001",
+      "itemKey" : "I990801",
+      "price" : 100,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH108001",
+      "itemKey" : "I990802",
+      "price" : 90,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH108001",
+      "itemKey" : "I990803",
+      "price" : 150,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH108002",
+      "itemKey" : "I990804",
+      "price" : 90,
+      "stock" : 1
+    },
+    {
+      "shopKey" : "SH108002",
+      "itemKey" : "I990805",
+      "price" : 30,
+      "stock" : 1
+    }
+  ]
+}

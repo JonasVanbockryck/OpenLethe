@@ -1,0 +1,283 @@
+{
+  "list": [
+    {
+      "id": 607,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_B",
+      "productId": "start_package_s8",
+      "priceTier": 11,
+      "chanceId": 1607,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 1,
+          "num": 1300
+        }
+      ],
+      "priorityForUI": 600,
+      "ar":true
+    },
+    {
+      "id": 608,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_B",
+      "productId": "settlement_package_s8",
+      "priceTier": 54,
+      "chanceId": 1608,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 1,
+          "num": 5040
+        },
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 3
+        },
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 90
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 40
+        },
+        {
+          "type": "ITEM",
+          "id": 201,
+          "num": 80
+        },
+        {
+          "type": "ITEM",
+          "id": 1208,
+          "num": 40
+        }
+      ],
+      "priorityForUI": 601,
+      "ar":true
+    },
+
+
+    {
+      "id": 162,
+      "category": "PACKAGE",
+      "returnpolicytype": "GROWTH_A",
+      "productId": "exp_package_weekly_1_s8",
+      "priceTier": 7,
+      "chanceId": 1162,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 60
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 30
+        }
+      ],
+      "priorityForUI": 6,
+      "ar":true
+    },
+    {
+      "id": 163,
+      "category": "PACKAGE",
+      "returnpolicytype": "GROWTH_A",
+      "productId": "exp_package_monthly_1_s8",
+      "priceTier": 19,
+      "chanceId": 1163,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 140
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 40
+        }
+      ],
+      "priorityForUI": 79,
+      "ar":true
+    },
+    {
+      "id": 164,
+      "category": "PACKAGE",
+      "returnpolicytype": "GROWTH_A",
+      "productId": "exp_package_monthly_2_s8",
+      "priceTier": 33,
+      "chanceId": 1164,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 270
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 40
+        }
+      ],
+      "priorityForUI": 78,
+      "ar":true
+    },
+    {
+      "id": 165,
+      "category": "PACKAGE",
+      "returnpolicytype": "GROWTH_A",
+      "productId": "exp_package_monthly_3_s8",
+      "priceTier": 53,
+      "chanceId": 1165,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 500
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 170
+        }
+      ],
+      "priorityForUI": 77,
+      "ar":true
+    },
+
+
+    {
+      "id": 109,
+      "category": "PACKAGE",
+      "returnpolicytype": "GROWTH_A",
+      "productId": "growth_package_monthly_1_s8",
+      "priceTier": 31,
+      "chanceId": 1109,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 1,
+          "num": 1690
+        },
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 2
+        },
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 60
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 30
+        }
+      ],
+      "priorityForUI": 99,
+      "ar":true
+    },
+
+
+    {
+      "id": 504,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha296_extraction_package_1st",
+      "priceTier": 22,
+      "chanceId": 1504,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 4
+        }
+      ],
+      "endDate": "2026-10-01T01:00:00.000Z",
+      "priorityForUI": 988,
+      "ar":true
+    },
+    {
+      "id": 505,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha296_growth_package_1st",
+      "priceTier": 22,
+      "chanceId": 1505,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 232,
+          "num": 1
+        },
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 90
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 40
+        }
+      ],
+      "endDate": "2026-10-01T01:00:00.000Z",
+      "priorityForUI": 986,
+      "ar":true
+    },
+    {
+      "id": 506,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha298_extraction_package_1st",
+      "priceTier": 22,
+      "chanceId": 1506,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 4
+        }
+      ],
+      "endDate": "2026-10-08T01:00:00.000Z",
+      "priorityForUI": 992,
+      "ar":true
+    },
+    {
+      "id": 507,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha298_growth_package_1st",
+      "priceTier": 22,
+      "chanceId": 1507,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 232,
+          "num": 1
+        },
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 90
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 40
+        }
+      ],
+      "endDate": "2026-10-08T01:00:00.000Z",
+      "priorityForUI": 990,
+      "ar":true
+    }
+
+    
+  ]
+}

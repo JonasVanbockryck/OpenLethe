@@ -1,0 +1,24 @@
+{
+  "list": [
+    {
+      "key": "DC11",
+      "nextDialogueKey": "D10141",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC12",
+      "nextDialogueKey": "D10142",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC13",
+      "nextDialogueKey": "D10143",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC14",
+      "nextDialogueKey": "",
+      "iconKey": "X"
+    }
+  ]
+}

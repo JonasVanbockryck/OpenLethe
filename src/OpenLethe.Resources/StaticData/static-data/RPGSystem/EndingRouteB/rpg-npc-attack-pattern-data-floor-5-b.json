@@ -1,0 +1,451 @@
+{
+  "list": [
+    {
+      "patternKey": "NA105001",
+      "randomPriorityBranch": true,
+      "canStartWhileMoving": true,
+      "triggerRange": 9,
+      "cooldown": 3.5,
+      "branches": [
+        {
+          "branchKey": "Charge",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 0.5,
+          "entryRange": 30,
+          "entryMinRange": 10,
+          "requireAxisAlign": true,
+          "axisAlignExtraTiles": 2,
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Charge"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.4
+            },
+            {
+              "action": "ChargeOverrun",
+              "chargeFixedTiles": 20,
+              "chargeLaneExtraTiles": 2,
+              "hpDamage": 19,
+              "knockbackTiles": 8,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 1.8,
+              "cameraShakeDuration": 1.2,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "chargeTravelSeconds": 0.5,
+              "motion": "AttackCharge"
+            },
+            {
+              "action": "Wait",
+              "duration": 2.5
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "ChargeForced",
+          "entryType": "Forced",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Charge"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.4
+            },
+            {
+              "action": "ChargeOverrun",
+              "chargeFixedTiles": 20,
+              "chargeLaneExtraTiles": 2,
+              "hpDamage": 19,
+              "knockbackTiles": 8,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 1.8,
+              "cameraShakeDuration": 1.2,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "chargeTravelSeconds": 0.5,
+              "motion": "AttackCharge"
+            },
+            {
+              "action": "Wait",
+              "duration": 2.5
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "BlastPoint",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 1,
+          "entryRange": 9,
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Charge"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.4
+            },
+            {
+              "action": "TargetTileBlast",
+              "blastShape": "Square",
+              "blastWidth": 5,
+              "blastHeight": 5,
+              "hpDamage": 8,
+              "knockbackTiles": 4,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 0.5,
+              "cameraShakeDuration": 0.2,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "motion": "HandleAttackPoint",
+              "parryImmune": true,
+              "blastEffectKey": "LanoirCaptainNailBig",
+              "blastSfxKey": "LanoirCaptainNailBig",
+              "hitOtherFactionNpcs": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.3
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "StopMotion"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.4
+            },
+            {
+              "action": "TargetTileBlast",
+              "blastShape": "Square",
+              "blastWidth": 7,
+              "blastHeight": 7,
+              "hpDamage": 8,
+              "knockbackTiles": 4,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 1.8,
+              "cameraShakeDuration": 1.2,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "motion": "HammerSingleMedium",
+              "parryImmune": true,
+              "blastEffectKey": "LanoirCaptainHammerMedium",
+              "blastSfxKey": "LanoirCaptainHammerMedium",
+              "hitOtherFactionNpcs": true
+            },
+            {
+              "action": "Wait",
+              "duration": 2.5
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        },
+        {
+          "branchKey": "BlastRandom",
+          "entryType": "Priority",
+          "entryCooldownSeconds": 1,
+          "entryRange": 9,
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Charge"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.4
+            },
+            {
+              "action": "TargetTileBlast",
+              "blastShape": "Square",
+              "blastWidth": 30,
+              "blastHeight": 30,
+              "blastRandomTileNumber": 100,
+              "blastCenterIncludesTargetTile": true,
+              "hpDamage": 19,
+              "knockbackTiles": 4,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 0.5,
+              "cameraShakeDuration": 0.2,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "motion": "HandleAttackRandom",
+              "parryImmune": true,
+              "blastEffectKey": "LanoirCaptainNailSmall",
+              "blastSfxKey": "LanoirCaptainNailSmall",
+              "hitOtherFactionNpcs": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.3
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "StopMotion"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.4
+            },
+            {
+              "action": "RandomAreaBlast",
+              "blastShape": "Square",
+              "blastWidth": 3,
+              "blastHeight": 3,
+              "blastCenterCount": 60,
+              "blastCenterSearchRadius": 50,
+              "blastCenterMinGap": 2,
+              "blastCenterIncludesTargetTile": true,
+              "hpDamage": 19,
+              "knockbackTiles": 4,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 0.6,
+              "cameraShakeDuration": 0.3,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "motion": "HammerTripleLight",
+              "parryImmune": true,
+              "blastEffectKey": "LanoirCaptainHammerLight",
+              "blastSfxKey": "LanoirCaptainHammerLight",
+              "hitOtherFactionNpcs": true
+            },
+            {
+              "action": "StopMotion"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.3
+            },
+            {
+              "action": "RandomAreaBlast",
+              "blastShape": "Square",
+              "blastWidth": 3,
+              "blastHeight": 3,
+              "blastCenterCount": 60,
+              "blastCenterSearchRadius": 50,
+              "blastCenterMinGap": 2,
+              "blastCenterIncludesTargetTile": true,
+              "hpDamage": 19,
+              "knockbackTiles": 4,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 0.6,
+              "cameraShakeDuration": 0.3,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "motion": "HammerTripleMedium",
+              "parryImmune": true,
+              "blastEffectKey": "LanoirCaptainHammerMedium",
+              "blastSfxKey": "LanoirCaptainHammerMedium",
+              "hitOtherFactionNpcs": true
+            },
+            {
+              "action": "StopMotion"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.4
+            },
+            {
+              "action": "RandomAreaBlast",
+              "blastShape": "Square",
+              "blastWidth": 6,
+              "blastHeight": 6,
+              "blastCenterCount": 40,
+              "blastCenterSearchRadius": 50,
+              "blastCenterMinGap": 3,
+              "blastCenterIncludesTargetTile": true,
+              "hpDamage": 19,
+              "knockbackTiles": 4,
+              "playerBindSeconds": 1,
+              "cameraShakeStrength": 1.2,
+              "cameraShakeDuration": 1.2,
+              "cameraShakeAxis": "Down",
+              "cameraShakeFrequencyHz": 90,
+              "motion": "HammerTripleHeavy",
+              "parryImmune": true,
+              "blastEffectKey": "LanoirCaptainHammerHeavy",
+              "blastSfxKey": "LanoirCaptainHammerHeavy",
+              "hitOtherFactionNpcs": true
+            },
+            {
+              "action": "Wait",
+              "duration": 2.5
+            },
+            {
+              "action": "StopMotion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patternKey": "NA105101",
+      "triggerRange": 1,
+      "cooldown": 1.0,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 1.5,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA105113",
+      "triggerRange": 1,
+      "cooldown": 1.0,
+      "steps": [
+        {
+          "action": "Wait",
+          "duration": 1.5,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 8,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack",
+          "hidePrecursor": true
+        },
+        {
+          "action": "Wait",
+          "duration": 1.0
+        }
+      ]
+    },
+    {
+      "patternKey": "NA105102",
+      "triggerRange": 0,
+      "cooldown": 1.2,
+      "canStartWhileMoving": true,
+      "branches": [
+        {
+          "branchKey": "Bite",
+          "entryType": "Priority",
+          "entryRange": 2,
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Bite"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.8
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 12,
+              "mpDamage": 0,
+              "knockbackTiles": 3,
+              "motion": "Attack",
+              "parryImmune": true,
+              "hitShape": [
+                ".XXX.",
+                ".XXX.",
+                "XXXXX",
+                "XXXXX",
+                ".XNX."
+              ]
+            }
+          ]
+        },
+        {
+          "branchKey": "Rush",
+          "entryType": "Priority",
+          "entryMinRange": 3,
+          "entryRange": 18,
+          "requireAxisAlign": true,
+          "axisAlignExtraTiles": 2,
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Bite"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.8,
+              "motion": "Attack2"
+            },
+            {
+              "action": "JumpToTargetFront",
+              "hpDamage": 10,
+              "mpDamage": 0,
+              "knockbackTiles": 5,
+              "jumpDurationSeconds": 0.4,
+              "impactBlastWidth": 5,
+              "impactBlastHeight": 5
+            },
+            {
+              "action": "Wait",
+              "duration": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

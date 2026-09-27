@@ -1,0 +1,18 @@
+{
+  "list": [
+    {
+      "projectileKey": "Projectile_SapsareeKnife",
+      "removableByPlayerAttack": true
+    },
+    {
+      "projectileKey": "Projectile_PillarS",
+      "removableByPlayerAttack": true,
+      "passThroughNpc": true,
+      "passThroughTerrain": false
+    },
+    {
+      "projectileKey": "Fx_RPG_Mon_Cp10_NeedleHolder_Projectile",
+      "removableByPlayerAttack": true
+    }
+  ]
+}

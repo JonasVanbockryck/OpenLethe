@@ -1,0 +1,294 @@
+{
+  "list": [
+    {
+      "key": "E3013",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3010"
+    },
+    {
+      "key": "E3015",
+      "canRepeat": false,
+      "action1": "ClearDialogueTag",
+      "actionValue1": "FM_WRONG"
+    },
+    {
+      "key": "E3016",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11010, N103016, , 1",
+      "action2": "CameraPeekEnd",
+      "action3": "SetNpcInvincible",
+      "actionValue3": "N103016, 0"
+    },
+    {
+      "key": "E3017",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3015"
+    },
+    {
+      "key": "E3021",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3020"
+    },
+    {
+      "key": "E3031",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3030"
+    },
+    {
+      "key": "E3041",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3041"
+    },
+    {
+      "key": "E3042",
+      "canRepeat": false
+    },
+    {
+      "key": "E3043",
+      "canRepeat": false
+    },
+    {
+      "key": "E3051",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3050"
+    },
+    {
+      "key": "E3071",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3070"
+    },
+    {
+      "key": "E3072",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3071"
+    },
+    {
+      "key": "E3070",
+      "canRepeat": false
+    },
+    {
+      "key": "E3081",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I1201, 1"
+    },
+    {
+      "key": "E3085",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3085"
+    },
+    {
+      "key": "E3121",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3120"
+    },
+    {
+      "key": "E3122",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3121"
+    },
+    {
+      "key": "E3123",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3122"
+    },
+    {
+      "key": "E3131",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N103003, 130100",
+      "action2": "RemoveItem",
+      "actionValue2": "I1206, 1",
+      "action3": "GiveItem",
+      "actionValue3": "I990006, 1"
+    },
+    {
+      "key": "E3141",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "51, 0"
+    },
+    {
+      "key": "E3161",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "61, 130501"
+    },
+    {
+      "key": "E3981",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I1208, 1"
+    },
+    {
+      "key": "E39161",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "60"
+    },
+    {
+      "key": "E3918",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3808",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3838",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3858",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E41601",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4160"
+    },
+    {
+      "key": "E41602",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11006, N103001, , 1"
+    },
+    {
+      "key": "E41603",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4161"
+    },
+    {
+      "key": "E41604",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990320, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990312, 1",
+      "action3": "PlayCutscene",
+      "actionValue3": "C4162"
+    },
+    {
+      "key": "E41501",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I992808, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990320, 1"
+    },
+    {
+      "key": "E3940",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3018",
+      "canRepeat": true
+    },
+    {
+      "key": "EL3016",
+      "sessionOnly": true,
+      "canRepeat": false
+    },
+    {
+      "key": "ED3016",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D3020"
+    },
+    {
+      "key": "ED3990",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3983"
+    },
+    {
+      "key": "ED3991",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3984"
+    },
+    {
+      "key": "ED3992",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3985"
+    },
+    {
+      "key": "ED3993",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3986"
+    },
+    {
+      "key": "E3960",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3987"
+    },
+    {
+      "key": "E3961",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3091"
+    },
+    {
+      "key": "E3962",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3988"
+    },
+    {
+      "key": "E3963",
+      "canRepeat": false
+    },
+    {
+      "key": "E3964",
+      "canRepeat": false
+    },
+    {
+      "key": "E3965",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3989"
+    },
+    {
+      "key": "E3966",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D3990"
+    },
+    {
+      "key": "EPI-3A",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990017, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990016, 1"
+    }
+  ]
+}

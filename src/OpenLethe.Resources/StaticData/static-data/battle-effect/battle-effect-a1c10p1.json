@@ -1,0 +1,428 @@
+{
+  "list": [
+    {
+      "keyword": "SimpleHit",
+      "address": ""
+    },
+    {
+      "keyword": "InteractSparkle",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/FX_RPG_Cp10_BG_ActiveObj.prefab"
+    },
+    {
+      "keyword": "InteractSparkleLv3",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/FX_RPG_Cp10_BG_ActiveObj_Lv3.prefab"
+    },
+    {
+      "keyword": "SapsareeHungry",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/SabSalPuppet/Fx_Mon_Cp10_SabSalPuppet_Buff_Hungry.prefab"
+    },
+    {
+      "keyword": "SapsareeSpices",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/SabSalPuppet/Fx_Mon_Cp10_SabSalPuppet_Buff_Spices.prefab"
+    },
+    {
+      "keyword": "ScissorAttack",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/FX_RPG_Cp10_Add_3F1.prefab"
+    },
+    {
+      "keyword": "ScissorHit",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/FX_RPG_Cp10_Add_3F1_Damage.prefab"
+    },
+    {
+      "keyword": "CheeseBurn",
+      "address": "Assets/Prefab/Effect/RPG/Item/Cp10_1/FX_RPG_Cp10_Buff_CheeseBurn1.prefab"
+    },
+    {
+      "keyword": "BlackThreadBoard",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/FX_RPG_Cp10_C_B2BlackThread_Attack3_Ground.prefab"
+    },
+    {
+      "keyword": "FollowerHeal",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/FX_RPG_Cp10_Buff_Heal.prefab"
+    },
+    {
+      "keyword": "Wariness",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/3FBoss/Fx_Mon_Cp10_3FBoss_Buff_Wariness.prefab"
+    },
+    {
+      "keyword": "ReliefSense",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/3FBoss/Fx_Mon_Cp10_3FBoss_Buff_ReliefSense.prefab"
+    },
+    {
+      "keyword": "HorribleTerror",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/3FBoss/Fx_Mon_Cp10_3FBoss_Buff_HorribleTerror.prefab"
+    },
+    {
+      "keyword": "NoirBindArmor",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/LaNoir_Fanatic/Fx_Mon_Cp10_LaNoir_Shield.prefab"
+    },
+    {
+      "keyword": "NoirSuit",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/LaNoir_Fanatic/Fx_Mon_Cp10_LaNoir_Shield.prefab"
+    },
+    {
+      "keyword": "Realisation",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/LaNoir_Fanatic/Fx_Mon_Cp10_LaNoir_Realisation.prefab"
+    },
+    {
+      "keyword": "LoseDuelEffect148101",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/3FBoss/Fx_Mon_Cp10_3FBoss_Buff_Bird_Red_S1.prefab"
+    },
+    {
+      "keyword": "LoseDuelEffect148103",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/3FBoss/Fx_Mon_Cp10_3FBoss_Buff_Bird_Red_S3.prefab"
+    },
+    {
+      "keyword": "NiddleExpected",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/NiddleKing/Fx_Mon_Cp10_NiddleKing_Buff_NiddleExpected.prefab"
+    },
+    {
+      "keyword": "CocoonCrying1",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/NeedleKing/Fx_Mon_Cp10_NeedleKing_Buff_CocoonCrying_1.prefab"
+    },
+    {
+      "keyword": "CocoonCrying2",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/NeedleKing/Fx_Mon_Cp10_NeedleKing_Buff_CocoonCrying_2.prefab"
+    },
+    {
+      "keyword": "CocoonCrying3",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/NeedleKing/Fx_Mon_Cp10_NeedleKing_Buff_CocoonCrying_3.prefab"
+    },
+    {
+      "keyword": "NiddlePinned",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_1/NeedleKing/Fx_Mon_Cp10_NeedleKing_Buff_Taxidermy.prefab"
+    },
+    {
+      "keyword": "HowlingCocoon",
+      "address": ""
+    },
+    {
+      "keyword": "HowlingCocoonTwo",
+      "address": ""
+    },
+    {
+      "keyword": "KitchenKnifeAttack",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/KitchenKnife/FX_RPG_Cp10_Buff_Knife1_Bullet.prefab"
+    },
+    {
+      "keyword": "KitchenKnifeHit",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/KitchenKnife/FX_RPG_Cp10_Buff_Knife1_Explo.prefab"
+    },
+    {
+      "keyword": "NeedleKingToothbrushAttack3",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/NeedleKingToothbrush/FX_RPG_Cp10_Buff_NiddleKing_Bullet3.prefab"
+    },
+    {
+      "keyword": "NeedleKingToothbrushHit3",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/NeedleKingToothbrush/FX_RPG_Cp10_Buff_NiddleKing_Explo3.prefab"
+    },
+    {
+      "keyword": "FlashChargeLv1",
+      "address": "Assets/Prefab/Effect/RPG/PC/FX_RPG_Cp10_PC_Merusault_Charge1.prefab"
+    },
+    {
+      "keyword": "EngagementLv1",
+      "address": "Assets/Prefab/Effect/RPG/PC/Fx_RPG_Cp10_Pc_Merusault_Atk_Timing_Flare.prefab"
+    },
+    {
+      "keyword": "BloodyMucus",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BuffetImmature/Fx_Mon_Cp10_BuffetImmature_BloodyMucus.prefab"
+    }, 
+    {
+      "keyword": "BuffetSick",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BuffetImmature/Fx_Mon_Cp10_BuffetImmature_BuffetSick.prefab"
+    },
+    {
+      "keyword": "Gourmandise",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BuffetImmature/Fx_Mon_Cp10_BuffetImmature_Gourmandise.prefab"
+    },
+    {
+      "keyword": "GuardStance",
+      "address": ""
+    },
+    {
+      "keyword": "LittleBuffetSpear",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Projectile.prefab"
+    },
+    {
+      "keyword": "LittleBuffetSpearStart",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Projectile_Start.prefab"
+    },
+    {
+      "keyword": "LittleBuffetSpearBoom",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Projectile_Hit.prefab"
+    },
+    {
+      "keyword": "LittleBuffetJavelin",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Projectile_Alliune.prefab"
+    },
+    {
+      "keyword": "LittleBuffetJavelinStart",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Projectile_Start_Alliune.prefab"
+    },
+    {
+      "keyword": "LittleBuffetJavelinBoom",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Projectile_Hit_Alliune.prefab"
+    },
+    {
+      "keyword": "AliuneCurtain",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Curtain_Boss.prefab"
+    },
+    {
+      "keyword": "AliuneWarpBlast",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Alriune/FX_RPG_Cp10_C_4F_Alliune_Attack_Explo.prefab"
+    },
+    {
+      "keyword": "AliuneBloomFlower",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Alriune/FX_RPG_Cp10_C_4F_Alliune_Flower.prefab"
+    },
+    {
+      "keyword": "AliuneBloomShield",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Alriune/FX_RPG_Cp10_C_4F_Alliune_Shield.prefab"
+    },
+    {
+      "keyword": "AliuneMoveCurtain",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_1/4M2.prefab"
+    },
+    {
+      "keyword": "AliuneNestAppearCurtain",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_1/4M2.prefab"
+    },
+    {
+      "keyword": "AliuneCharOpenCurtain",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Move2_Char.prefab"
+    },
+    {
+      "keyword": "AliuneNestOpenCurtain",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Move2_Char.prefab"
+    },
+    {
+      "keyword": "AliuneNpcACloseCurtain",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Move_NpcA.prefab"
+    },
+    {
+      "keyword": "AliuneNpcAOpenCurtain",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Move2_NpcA.prefab"
+    },
+    {
+      "keyword": "AliuneMoveCurtainB",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Curtain_Boss.prefab"
+    },
+    {
+      "keyword": "ShelterWallBreak",
+      "address": "Assets/Prefab/Effect/RPG/PC/FX_RPG_Cp10_Death4_Ground.prefab"
+    },
+    {
+      "keyword": "AliuneShelterCurtainA",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Curtain_Boss.prefab"
+    },
+    {
+      "keyword": "AliuneShelterCurtainB",
+      "address": "Assets/Editor/DoNotBuild/DoNotBuild_FX/pratice_SH/0_LiveUpdate/RPG/Cp10/FX_RPG_Cp10_C_4F_Alliune_Curtain_Boss.prefab"
+    },
+    {
+      "keyword": "AliuneBloomExplo",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_1/4E.prefab"
+    },
+    {
+      "keyword": "LittleBuffetBlackWater",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_BlackWater_Projectile.prefab"
+    },
+    {
+      "keyword": "LittleBuffetBlackWaterStart",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_BlackWater_Start.prefab"
+    },
+    {
+      "keyword": "LittleBuffetBlackWaterHit",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_BlackWater_Hit.prefab"
+    },
+    {
+      "keyword": "AttackPrecursor",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Common_AttackPrecursor.prefab"
+    },
+    {
+      "keyword": "AttackPrecursorImmune",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Common_AttackPrecursorImmune.prefab"
+    },
+    {
+      "keyword": "DeathGore",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Common_DeathGore.prefab"
+    },
+    {
+      "keyword": "SwarmHit",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/FX_RPG_Cp10_Add_3F1_Damage.prefab"
+    },
+    {
+      "keyword": "LittleBuffetNeedle",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Needle_Projectile.prefab"
+    },
+    {
+      "keyword": "LittleBuffetNeedleStart",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Needle_Projectile_Start.prefab"
+    },
+    {
+      "keyword": "LittleBuffetNeedleBoom",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Needle_Projectile_Start.prefab"
+    },
+    {
+      "keyword": "LittleBuffetCannon",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_FloorMaster_B3_Projectile.prefab"
+    },
+    {
+      "keyword": "LittleBuffetCannonStart",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_FloorMaster_B3_Projectile_Start.prefab"
+    },
+    {
+      "keyword": "LittleBuffetCannonBoom",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_FloorMaster_B3_Projectile_Hit_Ground.prefab"
+    },
+    {
+      "keyword": "FloorMasterTrumpetChargeSign",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_FloorMaster_3F_Broadcast.prefab"
+    },
+    {
+      "keyword": "LittleBuffetGoldMark",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Gold.prefab"
+    },
+    {
+      "keyword": "LittleBuffetGoldBoom",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_LittleBuffet_Gold_Ground.prefab"
+    },
+    {
+      "keyword": "AliuneMarkBurst",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Alliune_Mark_Burst.prefab"
+    },
+    {
+      "keyword": "AliuneMark",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Alliune_Mark.prefab"
+    },
+    {
+      "keyword": "FlowerScissors",
+      "address": "Assets/Prefab/Effect/RPG/Item/FX_RPG_Cp10_Buff_Scissors_Flower_Burst.prefab"
+    },
+    {
+      "keyword": "LeRougeBagProjectileStart",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_LeRouge_Projectile_Start.prefab"
+    },
+    {
+      "keyword": "LeRougeBagProjectile",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_LeRouge_Projectile.prefab"
+    },
+    {
+      "keyword": "LeRougeBagProjectileHit",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_LeRouge_Projectile_Hit.prefab"
+    },
+    {
+      "keyword": "JustGuardBurst",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_LeNoir_Burst.prefab"
+    },
+    {
+      "keyword": "NeedleKingMark",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_NeedleKing_NeedleExpected.prefab"
+    },
+    {
+      "keyword": "NeedleKingBurst",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_NeedleKing_Burst.prefab"
+    },
+    {
+      "keyword": "Basic3FinisherBurst",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Merusult_Atk3_Burst.prefab"
+    },
+    {
+      "keyword": "DyedYellowStart",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Dyed_Yellow_Start.prefab"
+    },
+    {
+      "keyword": "DyedYellowProjectile",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Dyed_Yellow_Projectile.prefab"
+    },
+    {
+      "keyword": "DyedYellowHit",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Mon_Cp10_PusYellow_Dead_Hit.prefab"
+    },
+    {
+      "keyword": "DyedRedStart",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Dyed_Red_Start.prefab"
+    },
+    {
+      "keyword": "DyedRedProjectile",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Dyed_Red_Projectile.prefab"
+    },
+    {
+      "keyword": "DyedRedHit",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Mon_Cp10_PusRed_Dead_Hit.prefab"
+    },
+    {
+      "keyword": "DyedBlueStart",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Dyed_Blue_Start.prefab"
+    },
+    {
+      "keyword": "DyedBlueProjectile",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Cp10_Buff_Dyed_Blue_Projectile.prefab"
+    },
+    {
+      "keyword": "DyedBlueHit",
+      "address": "Assets/Prefab/Effect/RPG/Item/Fx_RPG_Mon_Cp10_PusBlue_Dead_Hit.prefab"
+    },
+    {
+      "keyword": "SabsalPuppetRage",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_SabsalPuppet_Buff_Rage.prefab"
+    },
+    {
+      "keyword": "SabsalPuppetBleed",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_SabsalPuppet_Buff_bleed.prefab"
+    },
+    {
+      "keyword": "StunOverhead",
+      "address": "Assets/Prefab/Effect/RPG/PC/Fx_RPG_Cp10_Buff_Stun_Common.prefab"
+    },
+    {
+      "keyword": "LanoirCaptainHammerLight",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/Fx_RPG_Mon_Cp10_LanoirCaptain_B_Triple_Ground_1.prefab"
+    },
+    {
+      "keyword": "LanoirCaptainHammerMedium",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/Fx_RPG_Mon_Cp10_LanoirCaptain_B_Triple_Ground_2.prefab"
+    },
+    {
+      "keyword": "LanoirCaptainHammerHeavy",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/Fx_RPG_Mon_Cp10_LanoirCaptain_B_Triple_Ground_3.prefab"
+    },
+    {
+      "keyword": "LanoirCaptainNailSmall",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/Fx_RPG_Mon_Cp10_LanoirCaptain_B_Nail_Small.prefab"
+    },
+    {
+      "keyword": "LanoirCaptainNailBig",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_2/Fx_RPG_Mon_Cp10_LanoirCaptain_B_Nail_Big.prefab"
+    },
+    {
+      "keyword": "RealisationAlly",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/LaNoir_Fanatic/Fx_Mon_Cp10_LaNoir_Realisation.prefab"
+    },
+    {
+      "keyword": "LanoirAllyShieldEffect",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/LaNoir_Fanatic/Fx_Mon_Cp10_LaNoir_ShieldAlly.prefab"
+    },
+    {
+      "keyword": "WardenEndBG",
+      "address": "Assets/Resources_moved/Prefab/Effect/Rpg/Fx_RPG_Mon_Cp10_Warden_EndBG.prefab"
+    },
+    {
+      "keyword": "WhiteRoomWarpFlare",
+      "address": "Assets/Prefab/Effect/RPG/BG/Fx_RPG_Cp10_BG_WhiteRoomWarpFlare.prefab"
+    },
+    {
+      "keyword": "LanoirExplosionEffect",
+      "address": "Assets/Prefab/Effect/PC/Cp10_1/FX_PC_BaseFX_Wave_Realisation.prefab"
+    },
+    {
+      "keyword": "RoseEliteAura",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_1/FX_RPG_Mon_Cp10_Rose_2FElite_Aura1.prefab"
+    },
+    {
+      "keyword": "CorpseFall",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_1/FX_RPG_Cp10_BG_Floor1_V1DeathFall1.prefab"
+    }
+  ]
+}

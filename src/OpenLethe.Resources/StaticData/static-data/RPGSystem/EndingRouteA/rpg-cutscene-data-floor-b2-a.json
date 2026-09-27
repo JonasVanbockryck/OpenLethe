@@ -1,0 +1,1196 @@
+{
+  "list": [
+    {
+      "key": "C-2002A",
+      "waitTeleportEnd": true,
+      "bindings": [
+        { "actorName": "player", "kind": "Player" },
+        { "actorName": "dante", "kind": "Player", "actorKey": "13" },
+        { "actorName": "outis", "kind": "Player", "actorKey": "11" },
+        { "actorName": "ryoshu", "kind": "Player", "actorKey": "4" },
+        { "actorName": "kromer", "kind": "Npc", "actorKey": "N202001" }
+      ],
+      "commands": [
+        { "type": "TeleportCharacter", "param": "player, 5, 34" },
+        { "type": "FaceCharacter", "param": "player, Up" },
+        { "type": "FaceCharacter", "param": "kromer, Down" },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Sequential",
+              "commands": [
+                { "type": "MoveCharacter", "param": "player, 5, 39" },
+                { "type": "FaceCharacter", "param": "player, Up" }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                { "type": "Wait", "param": "0.5" },
+                { "type": "MoveCharacter", "param": "dante, 5, 38" },
+                { "type": "MoveCharacter", "param": "dante, 4, 38" },
+                { "type": "FaceCharacter", "param": "dante, Up" }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                { "type": "Wait", "param": "1.2" },
+                { "type": "MoveCharacter", "param": "outis, 5, 38" },
+                { "type": "MoveCharacter", "param": "outis, 6, 38" },
+                { "type": "FaceCharacter", "param": "outis, Up" }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                { "type": "Wait", "param": "1.9" },
+                { "type": "MoveCharacter", "param": "ryoshu, 5, 37" },
+                { "type": "FaceCharacter", "param": "ryoshu, Up" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "C-2000",
+      "controlArrivalFade": true,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "ryoshu",
+          "kind": "Player",
+          "actorKey": "4"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DialogueOverFade",
+          "param": "D-20001"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 6, 60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 6, 62"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 8, 62"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "ryoshu, 5, 61"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "outis, 8, 61"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D-2000-1"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2000-2"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2000-3"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202001, kromer, 0, 12, 58"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Down"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "kromer, 6, 58"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "kromer, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2000-4"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "kromer, 6, 59"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "kromer, 4, 59"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "kromer"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Dialogue",
+              "param": "D-2000-5"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "MoveCharacter",
+                  "param": "ryoshu, 5, 59"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "ryoshu, 4, 59"
+                },
+                {
+                  "type": "PlaySfx",
+                  "param": "sfx_sword_clang_3"
+                },
+                {
+                  "type": "Knockback",
+                  "param": "ryoshu, Right, 1, 0.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2000-6"
+        }
+      ]
+    },
+    {
+      "key": "C-2002",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "kromer",
+          "kind": "Npc",
+          "actorKey": "N202001"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D-2002-2"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "kromer, 4, 40"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "kromer, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "kromer"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2002-3"
+        }
+      ]
+    },
+    {
+      "key": "C-2003",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "ryoshu",
+          "kind": "Player",
+          "actorKey": "4"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "nest",
+          "kind": "Npc",
+          "actorKey": "N202002"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 84, 42"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 85, 42"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 86, 42"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "ryoshu, 82, 43"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Right"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "89, 55, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "89, 48, 3"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2003-1"
+        }
+      ]
+    },
+    {
+      "key": "C-2004",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Story",
+          "param": "S1013B"
+        }
+      ]
+    },
+    {
+      "key": "C-2005",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Story",
+          "param": "S1014B"
+        }
+      ]
+    },
+    {
+      "key": "C-2007",
+      "showUnboundNpcs": true,
+      "bindings": [
+        { "actorName": "naked", "kind": "Npc", "actorKey": "N202006" }
+      ],
+      "commands": [
+        { "type": "Dialogue", "param": "D-2041" },
+        { "type": "FadeOut", "param": "0.5" },
+        { "type": "Wait", "param": "0.8" },
+        { "type": "FadeIn", "param": "0.5" },
+        { "type": "Dialogue", "param": "D-2041-2" },
+        { "type": "FadeOut", "param": "0.5" },
+        { "type": "DespawnNpc", "param": "naked" },
+        { "type": "FadeIn", "param": "0.5" },
+        { "type": "Dialogue", "param": "D-2041-3" }
+      ]
+    },
+    {
+      "key": "C-2009",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "palette",
+          "kind": "Npc",
+          "actorKey": "N202015"
+        },
+        {
+          "actorName": "bodyguard",
+          "kind": "Npc",
+          "actorKey": "N202022"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D-2009-1"
+        }
+      ]
+    },
+    {
+      "key": "C-2010",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "palette",
+          "kind": "Npc",
+          "actorKey": "N202015"
+        },
+        {
+          "actorName": "bodyguard",
+          "kind": "Npc",
+          "actorKey": "N202022"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D-2010-1"
+        }
+      ]
+    },
+    {
+      "key": "C-2013",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "nest",
+          "kind": "Npc",
+          "actorKey": "N202002"
+        }
+      ],
+      "commands": [
+        {
+          "type": "PlayMotion",
+          "param": "nest, intro"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2013-1"
+        }
+      ]
+    },
+    {
+      "key": "C-2014",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "ryoshu",
+          "kind": "Player",
+          "actorKey": "4"
+        },
+        {
+          "actorName": "pinking",
+          "kind": "Npc",
+          "actorKey": "N202021"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Wait",
+          "param": "0.1"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 159, 75"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 159, 76"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 159, 74"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "ryoshu, 158, 76"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Left"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "159, 75, 0"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "pinking, 139, 76"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "pinking, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2042"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "140, 75, 1.2"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "pinking, walk_Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "pinking, 140, 75"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "pinking, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "VignetteFocus",
+          "param": "146, 75, flicker"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "146, 75, 0.7"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "1"
+                },
+                {
+                  "type": "TeleportCharacter",
+                  "param": "pinking, 146, 75"
+                },
+                {
+                  "type": "VignetteFocus",
+                  "param": "pinking, on, 0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "VignetteFocus",
+          "param": "152, 75, flicker"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "152, 75, 0.7"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "1"
+                },
+                {
+                  "type": "TeleportCharacter",
+                  "param": "pinking, 152, 75"
+                },
+                {
+                  "type": "VignetteFocus",
+                  "param": "pinking, on, 0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "VignetteFocus",
+          "param": "156, 75, flicker"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "157, 75, 0.7"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "1"
+                },
+                {
+                  "type": "TeleportCharacter",
+                  "param": "pinking, 156, 75"
+                },
+                {
+                  "type": "VignetteFocus",
+                  "param": "pinking, on, 0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "pinking, player, -2, 0"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "pinking, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "pinking, Attack"
+        },
+        {
+          "type": "Wait",
+          "param": "0.9"
+        }
+      ]
+    },
+    {
+      "key": "C-2014B",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Player",
+          "actorKey": "11"
+        },
+        {
+          "actorName": "ryoshu",
+          "kind": "Player",
+          "actorKey": "4"
+        }
+      ],
+      "commands": [
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 159, 76"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "outis, 159, 74"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "ryoshu, 158, 76"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2043"
+        }
+      ]
+    },
+    {
+      "key": "C-2034",
+      "waitTeleportEnd": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "MoveCharacter",
+          "param": "player, 125, 75"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2034-1"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "138, 75, 0.8"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202034, blackthread, 0, 152, 74"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "blackthread, player"
+        },
+        {
+          "type": "SetBgm",
+          "param": "bgm_blackthreadAmbush"
+        },
+        {
+          "type": "Knockback",
+          "param": "blackthread, Left, 7, 1.2, true"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Knockback",
+          "param": "blackthread, Left, 3, 1.2, true"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "blackthread, 0"
+            },
+            {
+              "type": "CameraShake",
+              "param": "1, 2"
+            },
+            {
+              "type": "Knockback",
+              "param": "blackthread, Left, 15, 0.45, true"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "0.28"
+                },
+                {
+                  "type": "FadeOut",
+                  "param": "0.18"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "blackthread, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.05"
+        }
+      ]
+    },
+    {
+      "key": "C-2017",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "master",
+          "kind": "Npc",
+          "actorKey": "N202002",
+          "location": 220200
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "SetBgm",
+          "param": "bgm_floor4thFurniture"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "6, 0"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "89, 53, 0"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202028, corpse1, 0, 84, 40"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202030, corpse2, 0, 86, 40"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202029, corpse3, 0, 88, 40"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202028, corpse4, 0, 90, 40"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202003, corpse5, 0, 92, 40"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202029, corpse6, 0, 85, 39"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202030, corpse7, 0, 89, 39"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202028, corpse8, 0, 93, 39"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202005, corpse9, 0, 84, 39"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202029, corpse10, 0, 86, 42"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202030, corpse11, 0, 91, 42"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202004, corpse12, 0, 94, 42"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202028, corpse13, 0, 93, 41"
+        },
+        {
+          "type": "Die",
+          "param": "corpse1"
+        },
+        {
+          "type": "Die",
+          "param": "corpse2"
+        },
+        {
+          "type": "Die",
+          "param": "corpse3"
+        },
+        {
+          "type": "Die",
+          "param": "corpse4"
+        },
+        {
+          "type": "Die",
+          "param": "corpse5"
+        },
+        {
+          "type": "Die",
+          "param": "corpse6"
+        },
+        {
+          "type": "Die",
+          "param": "corpse7"
+        },
+        {
+          "type": "Die",
+          "param": "corpse8"
+        },
+        {
+          "type": "Die",
+          "param": "corpse9"
+        },
+        {
+          "type": "Die",
+          "param": "corpse10"
+        },
+        {
+          "type": "Die",
+          "param": "corpse11"
+        },
+        {
+          "type": "Die",
+          "param": "corpse12"
+        },
+        {
+          "type": "Die",
+          "param": "corpse13"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N202034, blackthread, 0, 84, 41"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "blackthread, Down"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "blackthread, Special"
+        },
+        {
+          "type": "Wait",
+          "param": "0.1"
+        },
+        {
+          "type": "PauseMotion",
+          "param": "blackthread, on"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "Wait",
+          "param": "1.4"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "89, 41, 2.2"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "7, 2.2"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "1.6"
+        },
+        {
+          "type": "PauseMotion",
+          "param": "blackthread, off"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "90, 44, 1.6"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "5, 1.6"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "86, 45, 1.8"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 1.8"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "1.6"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_blackthread_cry"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-2044"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.5"
+        }
+      ]
+    },
+    {
+      "key": "C-2022D1",
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DamageCharacter",
+          "param": "player, 3"
+        }
+      ]
+    },
+    {
+      "key": "C-2022D2",
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DamageCharacter",
+          "param": "player, 3"
+        }
+      ]
+    },
+    {
+      "key": "C-2022D3",
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DamageCharacter",
+          "param": "player, 3"
+        }
+      ]
+    },
+    {
+      "key": "C-2022D4",
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DamageCharacter",
+          "param": "player, 3"
+        }
+      ]
+    },
+    {
+      "key": "C-2022D5",
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DamageCharacter",
+          "param": "player, 3"
+        }
+      ]
+    }
+  ]
+}

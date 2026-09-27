@@ -1,0 +1,1472 @@
+{
+  "list": [
+    {
+      "id": 11002,
+      "stageLevel": 10,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Beauty"
+          },
+          "unitList": [
+            {
+              "unitID": 91059,
+              "unitCount": 2,
+              "unitLevel": 10
+            },
+            {
+              "unitID": 91060,
+              "unitCount": 2,
+              "unitLevel": 10
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 233
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 10,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": ["Refill" , "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      },
+      "controlValueList": [ 5 ]
+    },
+    {
+      "id": 11003,
+      "stageLevel": 10,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 30
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir"
+          },
+          "unitList": [
+            {
+              "unitID": 1465,
+              "unitCount": 1,
+              "unitLevel": 10
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "allyPositionID": 158,
+          "enemyPositionID": 160
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 10,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1465", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11004,
+      "stageLevel": 35,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0.5,
+        "defaultPosY": 0,
+        "defaultPosZ": 50
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Grocery",
+            "mapSize": 34
+          },
+          "unitList": [
+            {
+              "unitID": 91061,
+              "unitCount": 3,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 91062,
+              "unitCount": 2,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 251,
+          "allyPositionID": 252
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11005,
+      "stageLevel": 35,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 30
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 1480,
+              "unitCount": 4,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": ["Refill_Abnormality" , "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      },
+      "controlValueList": [ 5 ]
+    },
+    {
+      "id": 11006,
+      "stageLevel": 43,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 20
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 1466,
+              "unitCount": 1,
+              "unitLevel": 43
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_3"
+          ],
+          "allyPositionID": 158,
+          "enemyPositionID": 160
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 43,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "ImmortalMeursault", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11007,
+      "stageLevel": 10,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_SPA"
+          },
+          "unitList": [
+            {
+              "unitID": 1494,
+              "unitCount": 1,
+              "unitLevel": 10
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "allyPositionID": 158,
+          "enemyPositionID": 160
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 10,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11008,
+      "stageLevel": 35,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 20
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 1474,
+              "unitCount": 1,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 1475,
+              "unitCount": 4,
+              "unitLevel": 35
+            }
+          ],
+          "subUnitList":[
+            {
+              "unitID": 1475,
+              "unitCount": 1,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_2"
+          ],
+          "allyPositionID": 235,
+          "enemyPositionID": 236
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1474Immortal", "ImmortalMeursault", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11009,
+      "stageLevel": 18,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": -0.2,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 30
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 91066,
+              "unitCount": 3,
+              "unitLevel": 18
+            }
+          ],
+          "subUnitList": [ ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 268,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 18,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11010,
+      "stageLevel": 40,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 20
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_BroadcastRoom",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 1481,
+              "unitCount": 1,
+              "unitLevel": 40
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_5"
+          ],
+          "enemyPositionID": 238,
+          "allyPositionID": 237
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 40,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "ImmortalMeursault", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11011,
+      "stageLevel": 50,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10_2F_BuffetImmature",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 1484,
+              "unitCount": 1,
+              "unitLevel": 50
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 1497,
+              "unitCount": 1,
+              "unitLevel": 50
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Boss_1"
+          ],
+          "enemyPositionID": 246,
+          "allyPositionID": 245
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 45,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1484", "ImmortalMeursault", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11012,
+      "stageLevel": 15,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 30
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 91067,
+              "unitCount": 3,
+              "unitLevel": 15
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 244,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 15,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11013,
+      "stageLevel": 23,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.4,
+        "defaultPosZ": 40
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_4F_Shose"
+          },
+          "unitList": [
+            {
+              "unitID": 1482,
+              "unitCount": 1,
+              "unitLevel": 23
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 239,
+          "allyPositionID": 240
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 23,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1482", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11014,
+      "stageLevel": 25,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.4,
+        "defaultPosZ": 40
+      },
+      "waveList": [
+        {          
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_4F_Shose"
+          },
+          "unitList": [
+            {
+              "unitID": 1483,
+              "unitCount": 1,
+              "unitLevel": 25
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_2"
+          ],
+          "enemyPositionID": 239,
+          "allyPositionID": 240
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 25,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg", "1465"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11015,
+      "stageLevel": 38,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 30
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B2F_Corridor",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 91063,
+              "unitCount": 1,
+              "unitLevel": 38
+            },
+            {
+              "unitID": 91064,
+              "unitCount": 1,
+              "unitLevel": 38
+            },
+            {
+              "unitID": 91063,
+              "unitCount": 1,
+              "unitLevel": 38
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "allyPositionID": 242,
+          "enemyPositionID": 244
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 38,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11016,
+      "stageLevel": 43,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.3,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B2F_Filature"
+          },
+          "unitList": [
+            {
+              "unitID": 1496,
+              "unitCount": 1,
+              "unitLevel": 43
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 1498,
+              "unitCount": 1,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 1499,
+              "unitCount": 1,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_3"
+          ],
+          "enemyPositionID": 247,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 43,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1496", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg", "ImmortalMeursault"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11017,
+      "stageLevel": 13,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 1,
+        "defaultPosY": -0.5,
+        "defaultPosZ": 50
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir"
+          },
+          "unitList": [
+            {
+              "unitID": 1534,
+              "unitCount": 1,
+              "unitLevel": 13
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "allyPositionID": 158,
+          "enemyPositionID": 160
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 13,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+
+    {
+      "id": 1100401,
+      "stageLevel": 10,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 1465,
+              "unitCount": 1,
+              "unitLevel": 10
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp9_Boss_1"
+          ],
+          "allyPositionID": 158,
+          "enemyPositionID": 160
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 10,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1465", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11018,
+      "stageLevel": 35,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 20
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 91061,
+              "unitCount": 3,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 91062,
+              "unitCount": 2,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp9_Boss_1"
+          ],
+          "allyPositionID": 233,
+          "enemyPositionID": 232
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11019,
+      "stageLevel": 35,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 20
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 1480,
+              "unitCount": 3,
+              "unitLevel": 35
+            },
+                        {
+              "unitID": 1529,
+              "unitCount": 1,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 1530,
+              "unitCount": 1,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 263,
+          "allyPositionID": 264
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": ["Refill_Abnormality" , "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      },
+      "controlValueList": [ 5 ]
+    },
+    {
+      "id": 11020,
+      "stageLevel": 35,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 40
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 91068,
+              "unitCount": 3,
+              "unitLevel": 35
+            }
+          ],
+          "subUnitList": [ ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 244,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11021,
+      "stageLevel": 35,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 30
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 91069,
+              "unitCount": 3,
+              "unitLevel": 35
+            }
+          ],
+          "subUnitList": [ ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 244,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11022,
+      "stageLevel": 35,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0.5,
+        "defaultPosY": 0,
+        "defaultPosZ": 50
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Grocery",
+            "mapSize": 32
+          },
+          "unitList": [
+            {
+              "unitID": 91061,
+              "unitCount": 2,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 91062,
+              "unitCount": 3,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 251,
+          "allyPositionID": 252
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11023,
+      "stageLevel": 35,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 20
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 91061,
+              "unitCount": 2,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 91062,
+              "unitCount": 3,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp9_Boss_1"
+          ],
+          "allyPositionID": 233,
+          "enemyPositionID": 232
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11024,
+      "stageLevel": 35,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 20
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 1474,
+              "unitCount": 1,
+              "unitLevel": 35
+            },
+            {
+              "unitID": 1475,
+              "unitCount": 4,
+              "unitLevel": 35
+            }
+          ],
+          "subUnitList":[
+            {
+              "unitID": 1475,
+              "unitCount": 1,
+              "unitLevel": 35
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_2"
+          ],
+          "allyPositionID": 235,
+          "enemyPositionID": 236
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 35,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1474", "ImmortalMeursault", "IMForRpg", "IMFilterForRpg", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11043,
+      "stageLevel": 25,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.4,
+        "defaultPosZ": 40
+      },
+      "waveList": [
+        {          
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_4F_Shose"
+          },
+          "unitList": [
+            {
+              "unitID": 1533,
+              "unitCount": 1,
+              "unitLevel": 25
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_2"
+          ],
+          "enemyPositionID": 239,
+          "allyPositionID": 240
+        }
+      ],
+      "staminaCost": 20,
+      "recommendedLevel": 25,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "IMForRpg", "IMFilterForRpg", "VipGradeForRpg", "1465"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    }
+  ]
+}

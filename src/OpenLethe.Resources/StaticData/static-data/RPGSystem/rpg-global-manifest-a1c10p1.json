@@ -1,0 +1,126 @@
+{
+  "dataFiles": [
+    {
+      "type": "attack-type",
+      "fileName": "Common/rpg-attack-type-data.json"
+    },
+    {
+      "type": "world",
+      "fileName": "EndingRouteA/rpg-all-world-data-a.json"
+    },
+    {
+      "type": "world",
+      "editorOnly": true,
+      "fileName": "TestOnly/rpg-all-world-data-T.json"
+    },
+    {
+      "type": "audio",
+      "fileName": "EndingRouteA/rpg-audio-data-common-a1c10p1.json"
+    },
+    {
+      "type": "footstep-surface",
+      "fileName": "Common/rpg-footstep-surface-data.json"
+    },
+    {
+      "type": "dialogue-portrait",
+      "fileName": "EndingRouteA/rpg-dialogue-portrait-data-common-a1c10p1.json"
+    },
+    {
+      "type": "vip-grade",
+      "fileName": "Common/rpg-vip-grade-data.json"
+    },
+    {
+      "type": "player-level",
+      "fileName": "Common/rpg-player-level-data.json"
+    },
+    {
+      "type": "player-field-combo",
+      "fileName": "Common/rpg-player-field-combo-data-common.json"
+    },
+    {
+      "type": "balance",
+      "fileName": "EndingRouteA/rpg-balance-data-common-a1c10p1.json"
+    },
+    {
+      "type": "warden-arena-balance",
+      "fileName": "EndingRouteA/rpg-warden-arena-balance-data-common-a1c10p1.json"
+    },
+    {
+      "type": "npc",
+      "fileName": "EndingRouteA/rpg-npc-data-common-a1c10p1.json"
+    },
+    {
+      "type": "npc-spawn",
+      "fileName": "EndingRouteA/rpg-npc-spawn-data-common-a1c10p1.json"
+    },
+    {
+      "type": "npc-conditional-interaction",
+      "fileName": "Common/rpg-npc-conditional-interaction-data-common.json"
+    },
+    {
+      "type": "npc-attack-pattern",
+      "fileName": "EndingRouteA/rpg-npc-attack-pattern-data-common-a1c10p1.json"
+    },
+    {
+      "type": "npc-debuff-tile",
+      "fileName": "Common/rpg-npc-debuff-tile-data-common.json"
+    },
+    {
+      "type": "projectile",
+      "fileName": "EndingRouteA/rpg-projectile-data-common-a1c10p1.json"
+    },
+    {
+      "type": "dialogue",
+      "fileName": "EndingRouteA/rpg-dialogue-data-common-a1c10p1.json"
+    },
+    {
+      "type": "dialogue-text",
+      "fileName": "EndingRouteA/rpg-dialogue-text-data-common-a1c10p1.json"
+    },
+    {
+      "type": "dialogue-choice",
+      "fileName": "Common/rpg-dialogue-choice-data-common.json"
+    },
+    {
+      "type": "dialogue-chat-sfx",
+      "fileName": "Common/rpg-dialogue-chat-sfx-data.json"
+    },
+    {
+      "type": "color-code",
+      "fileName": "Common/rpg-color-code-data.json"
+    },
+    {
+      "type": "narration",
+      "fileName": "EndingRouteA/rpg-narration-data-common-a1c10p1.json"
+    },
+    {
+      "type": "cutscene",
+      "fileName": "EndingRouteA/rpg-cutscene-data-common-a1c10p1.json"
+    },
+    {
+      "type": "event",
+      "fileName": "Common/rpg-event-data-common.json"
+    },
+    {
+      "type": "event-trigger",
+      "fileName": "Common/rpg-event-trigger-data-common.json"
+    },
+    {
+      "type": "item",
+      "fileName": "EndingRouteA/rpg-item-data-common-a1c10p1.json"
+    },
+    {
+      "type": "ending",
+      "fileName": "rpg-all-ending-data-a1c10p1.json"
+    },
+    {
+      "type": "save-state-preset",
+      "fileName": "EndingRouteA/rpg-save-state-preset-data-a.json"
+    },
+    {
+      "type": "save-state-preset",
+      "editorOnly": true,
+      "fileName": "TestOnly/rpg-save-state-preset-data-a-T.json"
+    }
+  ]
+}

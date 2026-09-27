@@ -1,0 +1,297 @@
+{
+  "list": [
+    {
+      "id": 110202001,
+      "eventKey": "E2001",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "120100"
+    },
+    {
+      "id": 110202002,
+      "eventKey": "E2002",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q2001"
+    },
+    {
+      "id": 110202003,
+      "eventKey": "E2003",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128003"
+    },
+    {
+      "id": 110202004,
+      "eventKey": "E2004",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128002"
+    },
+    {
+      "id": 110202006,
+      "eventKey": "E2006",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128005",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3024"
+    },
+    {
+      "id": 110202009,
+      "eventKey": "E2011",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q2009"
+    },
+    {
+      "id": 110202010,
+      "eventKey": "E2012",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128004",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2004"
+    },
+    {
+      "id": 110202011,
+      "eventKey": "EB2LIGHT-CS",
+      "activeCondition": "InteractNpc",
+      "activeConditionValue": "N102026"
+    },
+    {
+      "id": 110202022,
+      "eventKey": "EB2LIGHT-1",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128011",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202023,
+      "eventKey": "EB2LIGHT-2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128012",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202024,
+      "eventKey": "EB2LIGHT-3",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128013",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202025,
+      "eventKey": "EB2LIGHT-4",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128014",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202026,
+      "eventKey": "EB2LIGHT-5",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128015",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202027,
+      "eventKey": "EB2LIGHT-6",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128016",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202028,
+      "eventKey": "EB2LIGHT-7",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128017",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202029,
+      "eventKey": "EB2LIGHT-8",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128018",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202030,
+      "eventKey": "EB2LIGHT-CS",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202031,
+      "eventKey": "EB2LIGHT-1",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202032,
+      "eventKey": "EB2LIGHT-2",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202033,
+      "eventKey": "EB2LIGHT-3",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202034,
+      "eventKey": "EB2LIGHT-4",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202035,
+      "eventKey": "EB2LIGHT-5",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202036,
+      "eventKey": "EB2LIGHT-6",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202037,
+      "eventKey": "EB2LIGHT-7",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202038,
+      "eventKey": "EB2LIGHT-8",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q2008B"
+    },
+    {
+      "id": 110202047,
+      "eventKey": "E2004A",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2004"
+    },
+    {
+      "id": 110202048,
+      "eventKey": "E2014A",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2014"
+    },
+    {
+      "id": 110202049,
+      "eventKey": "E2015A",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2015"
+    },
+    {
+      "id": 110204001,
+      "eventKey": "E110204",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128001"
+    },
+    {
+      "id": 110202091,
+      "eventKey": "E2091",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2091",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000"
+    },
+    {
+      "id": 110202092,
+      "eventKey": "EK-2092",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1002B",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2010"
+    },
+    {
+      "id": 110202093,
+      "eventKey": "EB2181",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1002B",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ-3000",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3000"
+    },
+    {
+      "id": 110202094,
+      "eventKey": "EQ-3101",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1002B",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-2010",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "EQ-3000"
+    },
+    {
+      "id": 110202095,
+      "eventKey": "EQ-3101",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-3201",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EK-2092"
+    },
+    {
+      "id": 110202012,
+      "eventKey": "E2013",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1002B",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q3024"
+    },
+    {
+      "id": 110202096,
+      "eventKey": "EB2FEAST",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1002B"
+    },
+    {
+      "id": 110204002,
+      "eventKey": "EDS201",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N102002"
+    },
+    {
+      "id": 820201001,
+      "eventKey": "EPI-2B",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

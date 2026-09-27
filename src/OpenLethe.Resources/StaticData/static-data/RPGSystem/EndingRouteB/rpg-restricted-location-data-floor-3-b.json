@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "key": "Lock_Q3003_LaRouge",
+      "locationId": 130201,
+      "requiredQuestKey": "Q3003",
+      "dialogueKey": "D3004"
+    },
+    {
+      "key": "Lock_Q3006_HuntingGround",
+      "locationId": 130502,
+      "requiredQuestKey": "Q3006",
+      "dialogueKey": "D3020"
+    },
+    {
+      "key": "Lock_Q2009_Floor4",
+      "locationId": 130601,
+      "requiredQuestKey": "Q3028",
+      "dialogueKey": "D1105"
+    }
+  ]
+}

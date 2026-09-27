@@ -1,0 +1,413 @@
+{
+  "list": [
+    {
+      "id": 150200101,
+      "eventKey": "E5001",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q5007",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5006"
+    },
+    {
+      "id": 150200102,
+      "eventKey": "EW-5001",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5004",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q5003"
+    },
+    {
+      "id": 150200114,
+      "eventKey": "E5002",
+      "activeCondition": "SwarmModeEnded",
+      "activeConditionValue": "1"
+    },
+    {
+      "id": 150200104,
+      "eventKey": "E5004",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5016"
+    },
+    {
+      "id": 150200105,
+      "eventKey": "E5005",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11031"
+    },
+    {
+      "id": 150200106,
+      "eventKey": "E5006",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5003"
+    },
+    {
+      "id": 150200108,
+      "eventKey": "E5008",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150200",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q5007",
+      "passiveCondition2": "QuestCompleted",
+      "passiveConditionValue2": "Q-3005"
+    },
+    {
+      "id": 150200111,
+      "eventKey": "E5011",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150202",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E5008",
+      "fireIfAlreadyInside": true
+    },
+    {
+      "id": 150200150,
+      "eventKey": "E5035",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5007"
+    },
+    {
+      "id": 150200118,
+      "eventKey": "E5007",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q5009"
+    },
+    {
+      "id": 150200113,
+      "eventKey": "E5009",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150204",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5012"
+    },
+    {
+      "id": 150201111,
+      "eventKey": "E5-PEEK-111",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150111"
+    },
+    {
+      "id": 150201112,
+      "eventKey": "E5-PEEK-112",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150112",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E5011"
+    },
+    {
+      "id": 150201118,
+      "eventKey": "E5-PEEK-112",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150112",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5006"
+    },
+    {
+      "id": 150201119,
+      "eventKey": "E5-PEEK-112",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q5006",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "150112"
+    },
+    {
+      "id": 150201113,
+      "eventKey": "E5-PEEK-113",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150113",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E5011"
+    },
+    {
+      "id": 150201114,
+      "eventKey": "E5-PEEK-114",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150114"
+    },
+    {
+      "id": 150201115,
+      "eventKey": "E5-PEEK-115",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158004",
+      "fireIfAlreadyInside": true
+    },
+    {
+      "id": 150200115,
+      "eventKey": "E5012",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150100",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-3005",
+      "fireIfAlreadyInside": true
+    },
+    {
+      "id": 150200116,
+      "eventKey": "E5013",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150200",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q-3005",
+      "fireIfAlreadyInside": true
+    },
+    {
+      "id": 150200140,
+      "eventKey": "E5025",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150200",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5009",
+      "passiveCondition2": "EventCompleted",
+      "passiveConditionValue2": "E5019"
+    },
+    {
+      "id": 150200141,
+      "eventKey": "E5026",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150201",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q5009"
+    },
+    {
+      "id": 150200144,
+      "eventKey": "E5027",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150200",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5009",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5019"
+    },
+    {
+      "id": 150200120,
+      "eventKey": "EW-5001",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158004",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E5007",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5002"
+    },
+    {
+      "id": 150200138,
+      "eventKey": "E5023",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5001"
+    },
+    {
+      "id": 150200139,
+      "eventKey": "E5024",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150200",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E5023"
+    },
+    {
+      "id": 150200143,
+      "eventKey": "E5024",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150201",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E5023"
+    },
+    {
+      "id": 150200125,
+      "eventKey": "E5017",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11031"
+    },
+    {
+      "id": 150200127,
+      "eventKey": "E5019",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5004"
+    },
+    {
+      "id": 150200128,
+      "eventKey": "E5019",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158004",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E5007"
+    },
+    {
+      "id": 150200146,
+      "eventKey": "EL-5010S",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5010"
+    },
+    {
+      "id": 150200129,
+      "eventKey": "E5020",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5010"
+    },
+    {
+      "id": 150200131,
+      "eventKey": "E5021",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158004",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EL-5010S",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5005"
+    },
+    {
+      "id": 150200145,
+      "eventKey": "E5028",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158004",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EL-5010S",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5005"
+    },
+    {
+      "id": 150200147,
+      "eventKey": "E5029",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158004",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E5002",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EL-5010S"
+    },
+    {
+      "id": 150200126,
+      "eventKey": "E5018",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158003",
+      "fireIfAlreadyInside": true
+    },
+    {
+      "id": 150200132,
+      "eventKey": "E5009",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150205",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5012"
+    },
+    {
+      "id": 150200133,
+      "eventKey": "E5009",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q5012",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "150205"
+    },
+    {
+      "id": 150200134,
+      "eventKey": "E5009",
+      "activeCondition": "CompleteQuest",
+      "activeConditionValue": "Q5012",
+      "passiveCondition1": "IsInLocation",
+      "passiveConditionValue1": "150204"
+    },
+    {
+      "id": 150200135,
+      "eventKey": "E5030",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5006"
+    },
+    {
+      "id": 150200136,
+      "eventKey": "E5031",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150205",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5008",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q5006"
+    },
+    {
+      "id": 150200148,
+      "eventKey": "E5032",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150100",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q4026",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3005"
+    },
+    {
+      "id": 150200149,
+      "eventKey": "E5033",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "150100",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q4026",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3005"
+    },
+    {
+      "id": 150200151,
+      "eventKey": "E5036",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158012",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5007",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q5009"
+    },
+    {
+      "id": 150201116,
+      "eventKey": "EDS501",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N105001"
+    },
+    {
+      "id": 150201117,
+      "eventKey": "EDS502",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "Deadscene",
+      "passiveConditionValue1": "N105106"
+    },
+    {
+      "id": 150200152,
+      "eventKey": "E5038",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5002"
+    },
+    {
+      "id": 150200153,
+      "eventKey": "E5039",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158004",
+      "fireIfAlreadyInside": true,
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E5038",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5004"
+    },
+    {
+      "id": 150201120,
+      "eventKey": "EBGM-5006",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5006"
+    },
+    {
+      "id": 820501001,
+      "eventKey": "EPI-5B",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": ""
+    }
+  ]
+}

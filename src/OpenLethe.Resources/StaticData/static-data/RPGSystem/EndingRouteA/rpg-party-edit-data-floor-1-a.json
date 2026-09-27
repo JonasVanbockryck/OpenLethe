@@ -1,0 +1,27 @@
+{
+    "list": [
+        {
+            "triggerQuestKey": "Q1013",
+            "targetFloorList": [
+              {
+                "floor": "1",
+                "leaderId": 13,
+                "followerList": [9, 8],
+                "order": 1
+              }
+            ]
+        },
+        {
+            "triggerQuestKey": "Q1022",
+            "targetFloorList": 
+            [
+              {
+                "floor": "1",
+                "leaderId": 5,
+                "followerList": [13, 9, 8],
+                "order": 2
+            }
+          ]
+        }
+    ]
+}

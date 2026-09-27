@@ -1,0 +1,76 @@
+{
+  "list": [
+    {
+      "questKey": "Q2001",
+      "stepIndex": 0,
+      "goalType1": "InteractNpc",
+      "goalValue1": "N102002"
+    },
+    {
+      "questKey": "Q2003",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "120300"
+    },
+    {
+      "questKey": "Q2004",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "120200"
+    },
+    {
+      "questKey": "Q2005",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "128004"
+    },
+    {
+      "questKey": "Q2008",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C2004"
+    },
+    {
+      "questKey": "Q2008",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C2014"
+    },
+    {
+      "questKey": "Q2008",
+      "stepIndex": 2,
+      "goalType1": "Cutscene",
+      "goalValue1": "C2015"
+    },
+    {
+      "questKey": "Q2008",
+      "stepIndex": 3,
+      "goalType1": "Cutscene",
+      "goalValue1": "C2005"
+    },
+    {
+      "questKey": "Q2008A",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C2005A"
+    },
+    {
+      "questKey": "Q2008B",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C2005D"
+    },
+    {
+      "questKey": "Q2009",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "120100"
+    },
+    {
+      "questKey": "Q2010",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "140100"
+    }
+  ]
+}

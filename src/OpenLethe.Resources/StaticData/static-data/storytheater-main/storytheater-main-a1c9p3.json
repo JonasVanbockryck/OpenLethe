@@ -8,145 +8,172 @@
           "id": 32,
           "storyId": "S936B",
           "nodeId": 10936,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_countdown location"
         },
         {
           "id": 33,
           "storyId": "S937B",
           "nodeId": 10937,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_ring_finger"
         },
         {
           "id": 34,
           "storyId": "S937I1",
           "nodeId": 10937,
-          "stageDetail": "Inter"
+          "stageDetail": "Inter",
+          "fullBannerId": "Story_BG/story_ring_finger"
         },
         {
           "id": 35,
           "storyId": "S938B",
           "nodeId": 10938,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_middle finger"
         },
         {
           "id": 36,
           "storyId": "S939B",
           "nodeId": 10939,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_index_finger"
         },
         {
           "id": 37,
           "storyId": "S940B",
           "nodeId": 10940,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S923_1"
         },
         {
           "id": 38,
           "storyId": "S941B",
           "nodeId": 10941,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S925"
         },
         {
           "id": 39,
           "storyId": "S941A",
           "nodeId": 10941,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S928"
         },
         {
           "id": 40,
           "storyId": "S942B",
           "nodeId": 10942,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S921_2"
         },
         {
           "id": 41,
           "storyId": "S942A",
           "nodeId": 10942,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S943_2"
         },
         {
           "id": 42,
           "storyId": "S943B",
           "nodeId": 10943,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S930_1"
         },
         {
           "id": 43,
           "storyId": "S943A",
           "nodeId": 10943,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_ring_finger_v1"
         },
         {
           "id": 44,
           "storyId": "S944I1",
           "nodeId": 10944,
-          "stageDetail": "Inter"
+          "stageDetail": "Inter",
+          "fullBannerId": "Story_BG/story_middle finger"
         },
         {
           "id": 45,
           "storyId": "S945B",
           "nodeId": 10945,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_dust pit"
         },
         {
           "id": 46,
           "storyId": "S945A",
           "nodeId": 10945,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_thumb"
         },
         {
           "id": 47,
           "storyId": "S946B",
           "nodeId": 10946,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_index_finger _v1"
         },
         {
           "id": 48,
           "storyId": "S947B",
           "nodeId": 10947,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S947_3"
         },
         {
           "id": 49,
           "storyId": "S948B",
           "nodeId": 10948,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_little_finger"
         },
         {
           "id": 50,
           "storyId": "S948A",
           "nodeId": 10948,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S936"
         },
         {
           "id": 51,
           "storyId": "S949B",
           "nodeId": 10949,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_house_spiders_rooftop"
         },
         {
           "id": 52,
           "storyId": "S949A",
           "nodeId": 10949,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S938_2"
         },
         {
           "id": 53,
           "storyId": "S950B",
           "nodeId": 10950,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_house_spiders_rooftop_ashes"
         },
         {
           "id": 54,
           "storyId": "S950A",
           "nodeId": 10950,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_darkwave",
+          "moveY": 706,
+          "scaleX": 1.6,
+          "scaleY": 1.6
         },
         {
           "id": 55,
           "storyId": "S951B",
           "nodeId": 10951,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S940"
         }
       ]
     }

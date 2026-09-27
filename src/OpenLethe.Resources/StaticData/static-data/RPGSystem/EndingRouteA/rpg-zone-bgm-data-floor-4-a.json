@@ -1,0 +1,10 @@
+{
+  "list": [
+    { "zoneId": 999999, "bgmAudioId": "bgm_toilet" },
+    { "zoneId": 140100, "bgmAudioId": "bgm_floor4thNoir" },
+    { "zoneId": 140200, "bgmAudioId": "bgm_floor4thNoir" },
+    { "zoneId": 140300, "bgmAudioId": "bgm_floor4thFurniture" },
+    { "zoneId": 140500, "bgmAudioId": "bgm_floor4thNoir" },
+    { "zoneId": 140600, "bgmAudioId": "bgm_floor4thNoir" }
+  ]
+}

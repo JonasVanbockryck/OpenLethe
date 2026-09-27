@@ -1,0 +1,138 @@
+{
+    "list": [
+        {
+            "patternKey": "NA9201",
+            "triggerRange": 1,
+            "cooldown": 0.3,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.5, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 4, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "knockbackTiles": 1, "knockbackLateralRandomTiles": 1, "knockbackChance": 0.3, "motion": "Attack" }
+            ]
+        },
+        {
+            "patternKey": "NA9202",
+            "triggerRange": 1,
+            "cooldown": 0.3,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.5, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 4, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "knockbackTiles": 1, "knockbackLateralRandomTiles": 1, "knockbackChance": 0.3, "motion": "Attack" }
+            ]
+        },
+        {
+            "patternKey": "NA102025",
+            "triggerRange": 1,
+            "cooldown": 0.3,
+            "steps": [
+                { "action": "Wait", "duration": 0.5, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 4, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "knockbackTiles": 1, "knockbackLateralRandomTiles": 1, "knockbackChance": 0.3, "motion": "Attack", "hidePrecursor": true }
+            ]
+        },
+        {
+            "patternKey": "NA9203",
+            "triggerRange": 1,
+            "cooldown": 1.0,
+            "branches": [
+                {
+                    "branchKey": "Front",
+                    "entryType": "Trigger",
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Omni",
+                    "steps": [
+                        { "action": "ShowAttackRange", "duration": 0.5, "motion": "AttackReady" },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitRange": 4, "hitDirections": ["Front"], "splashHitsPlayer": true, "knockbackTiles": 3, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12, "motion": "Attack" }
+                    ]
+                },
+                {
+                    "branchKey": "Omni",
+                    "entryType": "Trigger",
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Cone",
+                    "steps": [
+                        { "action": "ShowAttackRange", "duration": 0.6, "motion": "AttackReady" },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["..X..", ".XXX.", "XXNXX", ".XXX.", "..X.."], "splashHitsPlayer": true, "knockbackTiles": 3, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12, "motion": "Attack" },
+                        { "action": "ShowAttackRange", "duration": 0.5 },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["...X...", "..X.X..", ".X...X.", "X..N..X", ".X...X.", "..X.X..", "...X..."], "splashHitsPlayer": true, "knockbackTiles": 3, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12 },
+                        { "action": "ShowAttackRange", "duration": 0.5 },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["....X....", "...X.X...", "..X...X..", ".X.....X.", "X...N...X", ".X.....X.", "..X...X..", "...X.X...", "....X...."], "splashHitsPlayer": true, "knockbackTiles": 3, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12 }
+                    ]
+                },
+                {
+                    "branchKey": "Cone",
+                    "entryType": "Trigger",
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Front",
+                    "steps": [
+                        { "action": "ShowAttackRange", "duration": 0.5, "motion": "AttackReady" },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["XXXXXXXXX", ".XXXXXXX.", "..XXXXX..", "...XXX...", "....N...."], "splashHitsPlayer": true, "knockbackTiles": 3, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12, "motion": "Attack" }
+                    ]
+                }
+            ]
+        },
+        {
+            "patternKey": "NA9204",
+            "triggerRange": 1,
+            "cooldown": 0.8,
+            "canStartWhileMoving": true,
+            "branches": [
+                {
+                    "branchKey": "Attack1",
+                    "entryType": "Trigger",
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Attack2",
+                    "steps": [
+                        { "action": "ShowAttackRange", "duration": 0.5, "motion": "AttackReady" },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["XXXXX", ".XXX.", "..N.."], "splashHitsPlayer": true, "knockbackTiles": 2, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12, "motion": "Attack" }
+                    ]
+                },
+                {
+                    "branchKey": "Attack2",
+                    "entryType": "Trigger",
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Attack3",
+                    "steps": [
+                        { "action": "ShowAttackRange", "duration": 0.5, "motion": "AttackReady" },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["XXXXX", ".XXX.", "..N.."], "splashHitsPlayer": true, "knockbackTiles": 2, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12, "motion": "Attack2" }
+                    ]
+                },
+                {
+                    "branchKey": "Attack3",
+                    "entryType": "Trigger",
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Omni",
+                    "steps": [
+                        { "action": "ShowAttackRange", "duration": 0.5, "motion": "AttackReady" },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["XXXXX", ".XXX.", "..N.."], "splashHitsPlayer": true, "knockbackTiles": 2, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12, "motion": "Attack3" }
+                    ]
+                },
+                {
+                    "branchKey": "Omni",
+                    "entryType": "Trigger",
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Attack1",
+                    "steps": [
+                        { "action": "ShowAttackRange", "duration": 0.6, "motion": "AttackReady" },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["..X..", ".XXX.", "XXNXX", ".XXX.", "..X.."], "splashHitsPlayer": true, "knockbackTiles": 2, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12, "motion": "Attack" },
+                        { "action": "ShowAttackRange", "duration": 0.5 },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["...X...", "..X.X..", ".X...X.", "X..N..X", ".X...X.", "..X.X..", "...X..."], "splashHitsPlayer": true, "knockbackTiles": 2, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12 },
+                        { "action": "ShowAttackRange", "duration": 0.5 },
+                        { "action": "MeleeHit", "hpDamage": 2, "mpDamage": 0, "hitShape": ["....X....", "...X.X...", "..X...X..", ".X.....X.", "X...N...X", ".X.....X.", "..X...X..", "...X.X...", "....X...."], "splashHitsPlayer": true, "knockbackTiles": 2, "knockbackLateralRandomTiles": 2, "knockbackChance": 1, "cameraShakeStrength": 0.12 }
+                    ]
+                },
+                {
+                    "branchKey": "RushCharge",
+                    "entryType": "Priority",
+                    "entryCooldownSeconds": 5,
+                    "entryRange": 15,
+                    "transitionType": "SequenceEnd",
+                    "nextBranchKey": "Attack1",
+                    "steps": [
+                        { "action": "FacePlayer" },
+                        { "action": "ShowAttackRange", "duration": 2.0, "motion": "AttackReady" },
+                        { "action": "ChargeThrough", "hpDamage": 1, "mpDamage": 0, "chargeSpeedScale": 5, "maxDistance": 15, "knockbackTiles": 2, "animSpeedScale": 2.5, "motion": "", "impactEffectMotion": "" },
+                        { "action": "Wait", "duration": 1.0 }
+                    ]
+                }
+            ]
+        }
+    ]
+}

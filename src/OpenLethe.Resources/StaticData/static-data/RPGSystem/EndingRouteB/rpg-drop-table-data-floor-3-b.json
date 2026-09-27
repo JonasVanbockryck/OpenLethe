@@ -1,0 +1,69 @@
+{
+  "list": [
+    {
+      "key": "DT103019",
+      "money": 20
+    },
+    {
+      "key": "DT103020",
+      "money": 20
+    },
+    {
+      "key": "DT103003",
+      "money": 30
+    },
+    {
+      "key": "DT103004",
+      "money": 60,
+      "itemKey1": "I1209",
+      "itemCount1": 1,
+      "itemDropRate1": 100
+    },
+    {
+      "key": "DT103005",
+      "money": 20,
+      "itemKey1": "I990307",
+      "itemCount1": 1,
+      "itemDropRate1": 100,
+      "itemKey2": "I990308",
+      "itemCount2": 1,
+      "itemDropRate2": 100,
+      "itemKey3": "I990309",
+      "itemCount3": 1,
+      "itemDropRate3": 100
+    },
+    {
+      "key": "DT103016",
+      "money": 900,
+      "itemKey1": "I990310",
+      "itemCount1": 1,
+      "itemDropRate1": 100,
+      "itemKey2": "I1201",
+      "itemCount2": 1,
+      "itemDropRate2": 100,
+      "itemKey3": "I990315",
+      "itemCount3": 1,
+      "itemDropRate3": 100
+    },
+    {
+      "key": "DT103014",
+      "money": 60
+    },
+    {
+      "key": "DT103017",
+      "money": 20
+    },
+    {
+      "key": "DT103029",
+      "money": 20
+    },
+    {
+      "key": "DT103071",
+      "money": 20
+    },
+    {
+      "key": "DT103001",
+      "money": 50
+    }
+  ]
+}

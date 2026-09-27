@@ -8,127 +8,160 @@
           "id": 1,
           "storyId": "S701B",
           "nodeId": 10701,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_P_platform"
         },
         {
           "id": 2,
           "storyId": "S702B",
           "nodeId": 10702,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_P_platform",
+          "moveX": 553,
+          "moveY": 274,
+          "scaleX": 1.6,
+          "scaleY": 1.6
+          
         },
         {
           "id": 3,
           "storyId": "S703B",
           "nodeId": 10703,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_emptylot_off"
         },
         {
           "id": 4,
           "storyId": "S704A",
           "nodeId": 10704,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_emptylot_off",
+          "moveX": 204,
+          "moveY": -455,
+          "scaleX": 2,
+          "scaleY": 2
         },
         {
           "id": 5,
           "storyId": "S705B",
           "nodeId": 10705,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S701"
         },
         {
           "id": 6,
           "storyId": "S706B",
           "nodeId": 10706,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S702"
         },
         {
           "id": 7,
           "storyId": "S706A",
           "nodeId": 10706,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_emptylot_off",
+          "moveY": -71,
+          "scaleX": 2,
+          "scaleY": 2
         },
         {
           "id": 8,
           "storyId": "S707B",
           "nodeId": 10707,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S703_2"
         },
         {
           "id": 9,
           "storyId": "S708B",
           "nodeId": 10708,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_emptylot_side"
         },
         {
           "id": 10,
           "storyId": "S709B",
           "nodeId": 10709,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S704_2"
         },
         {
           "id": 11,
           "storyId": "S709A",
           "nodeId": 10709,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_lamancha_entrance"
         },
         {
           "id": 12,
           "storyId": "S710B",
           "nodeId": 10710,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_a_entrance"
         },
         {
           "id": 13,
           "storyId": "S712B",
           "nodeId": 10712,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_a_entrance"
         },
         {
           "id": 14,
           "storyId": "S712A",
           "nodeId": 10712,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_a_entrance"
         },
         {
           "id": 15,
           "storyId": "S713B",
           "nodeId": 10713,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_shooting game_0"
         },
         {
           "id": 16,
           "storyId": "S713A",
           "nodeId": 10713,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_shooting game_2"
         },
         {
           "id": 17,
           "storyId": "S714B",
           "nodeId": 10714,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_shooting game_3"
         },
         {
           "id": 18,
           "storyId": "S715B",
           "nodeId": 10715,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_shooting game_4"
         },
         {
           "id": 19,
           "storyId": "S715A",
           "nodeId": 10715,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_shooting game_5"
         },
         {
           "id": 20,
           "storyId": "S716B",
           "nodeId": 10716,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_shooting game_ver.2"
         },
         {
           "id": 21,
           "storyId": "S716A",
           "nodeId": 10716,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S705"
         },
         {
           "id": 22,
@@ -140,7 +173,8 @@
           "id": 23,
           "storyId": "S717A",
           "nodeId": 10717,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/SubChapter107/S717B"
         },
         {
           "id": 24,
@@ -152,43 +186,50 @@
           "id": 25,
           "storyId": "S718A",
           "nodeId": 10718,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/SubChapter107/S718B"
         },
         {
           "id": 26,
           "storyId": "S719B",
           "nodeId": 10719,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_shooting game_ver.2"
         },
         {
           "id": 27,
           "storyId": "S720B",
           "nodeId": 10720,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_b_entrance"
         },
         {
           "id": 28,
           "storyId": "S721B",
           "nodeId": 10721,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_haunted mansion"
         },
         {
           "id": 29,
           "storyId": "S722B",
           "nodeId": 10722,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_haunted mansion"
         },
         {
           "id": 30,
           "storyId": "S723B",
           "nodeId": 10723,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S710_8"
         },
         {
           "id": 31,
           "storyId": "S724B",
           "nodeId": 10724,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_confession room"
         },
         {
           "id": 32,
@@ -200,13 +241,15 @@
           "id": 33,
           "storyId": "S725B",
           "nodeId": 10725,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S706"
         },
         {
           "id": 34,
           "storyId": "S726B",
           "nodeId": 10726,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_theater_02"
         },
         {
           "id": 35,
@@ -218,97 +261,113 @@
           "id": 36,
           "storyId": "S728B",
           "nodeId": 10727,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_confession room"
         },
         {
           "id": 37,
           "storyId": "S729B",
           "nodeId": 10728,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_confession room"
         },
         {
           "id": 38,
           "storyId": "S730B",
           "nodeId": 10729,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_confession room"
         },
         {
           "id": 39,
           "storyId": "S731B",
           "nodeId": 10730,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_area_c_01"
         },
         {
           "id": 40,
           "storyId": "S733B",
           "nodeId": 10732,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_area_c_02"
         },
         {
           "id": 41,
           "storyId": "S735B",
           "nodeId": 10734,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_area_c_01_3"
         },
         {
           "id": 42,
           "storyId": "S736B",
           "nodeId": 10735,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lethe"
         },
         {
           "id": 43,
           "storyId": "S737B",
           "nodeId": 10736,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/S713_1"
         },
         {
           "id": 44,
           "storyId": "7D101B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_fathoms_maze01"
         },
         {
           "id": 45,
           "storyId": "7D102B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_field"
         },
         {
           "id": 46,
           "storyId": "7D102A",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_fathoms_maze01"
         },
         {
           "id": 47,
           "storyId": "7D103B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_donquixote_mansion"
         },
         {
           "id": 48,
           "storyId": "7D103A",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_fathoms_maze01"
         },
         {
           "id": 49,
           "storyId": "7D104B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_lamancha_heyday_on"
         },
         {
           "id": 50,
           "storyId": "7D105B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S716"
         },
         {
           "id": 51,
           "storyId": "7D106B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_fathoms_maze03"
         },
         {
           "id": 52,
@@ -320,37 +379,43 @@
           "id": 53,
           "storyId": "7D108B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S707"
         },
         {
           "id": 54,
           "storyId": "7D109B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_lethe"
         },
         {
           "id": 55,
           "storyId": "7D110B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S720_4"
         },
         {
           "id": 56,
           "storyId": "7D111B",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_fathoms_maze_boss01"
         },
         {
           "id": 57,
           "storyId": "7D111A",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S719"
         },
         {
           "id": 58,
           "storyId": "7D112A",
           "nodeId": 10736,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/S722"
         }
       ]
     }

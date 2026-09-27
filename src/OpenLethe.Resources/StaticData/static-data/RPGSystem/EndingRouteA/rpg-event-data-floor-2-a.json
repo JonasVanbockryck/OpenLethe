@@ -1,0 +1,286 @@
+{
+  "list": [
+    {
+      "key": "E110204",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110204, 128001"
+    },
+    {
+      "key": "E1102101",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "1102101, 120201"
+    },
+    {
+      "key": "E1102111",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110211, 128004"
+    },
+    {
+      "key": "E1102112",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110212, 128005"
+    },
+    {
+      "key": "E2001",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2001"
+    },
+    {
+      "key": "E2002",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2002"
+    },
+    {
+      "key": "E2003",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110208, 128003"
+    },
+    {
+      "key": "E2004",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "110207, 128002"
+    },
+    {
+      "key": "E2005",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2003"
+    },
+    {
+      "key": "E2006",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2004"
+    },
+    {
+      "key": "E2007",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2005"
+    },
+    {
+      "key": "E2008",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11011, N102047, , 1"
+    },
+    {
+      "key": "E2009",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2006"
+    },
+    {
+      "key": "E2010",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102042, 1, 128011",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102043, 1, 128011",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102026, 1, 128011"
+    },
+    {
+      "key": "E2011",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102042, 1, 128012",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102043, 1, 128012",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102044, 1, 128012",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N102026, 1, 128012"
+    },
+    {
+      "key": "E2012",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102025, 1, 128013",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102026, 1, 128013",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102042, 1, 128013",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N102043, 1, 128013"
+    , "action5": "SetNpcAwake", "actionValue5": "N102044, 1, 128013"},
+    {
+      "key": "E2013",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102025, 1, 128014",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102026, 1, 128014",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102044, 1, 128014"
+    , "action4": "SetNpcAwake", "actionValue4": "N102027, 1, 128014", "action5": "SetNpcAwake", "actionValue5": "N102042, 1, 128014"},
+    {
+      "key": "E2014",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102025, 1, 128015",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102026, 1, 128015",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102027, 1, 128015",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N102042, 1, 128015",
+      "action5": "SetNpcAwake",
+      "actionValue5": "N102044, 1, 128015"
+    },
+    {
+      "key": "E2015",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102026, 1, 128016",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102027, 1, 128016",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102044, 1, 128016"
+    },
+    {
+      "key": "E2016",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102026, 1, 128017",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102027, 1, 128017",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102043, 1, 128017"
+    , "action4": "SetNpcAwake", "actionValue4": "N102025, 1, 128017"},
+    {
+      "key": "E2017",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102023, 1, 128018",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102024, 1, 128018",
+      "action3": "SetNpcAwake",
+      "actionValue3": "N102025, 1, 128018",
+      "action4": "SetNpcAwake",
+      "actionValue4": "N102042, 1, 128018"
+    },
+    {
+      "key": "E2020",
+      "canRepeat": false,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102024, 1",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102045, 1",
+      "action3": "PlayCutscene",
+      "actionValue3": "C2020"
+    },
+    {
+      "key": "E2021",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2021"
+    },
+    {
+      "key": "E2029",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2022"
+    },
+    {
+      "key": "E2024",
+      "canRepeat": false
+    },
+    {
+      "key": "E2025",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N102024, 1",
+      "action2": "SetNpcAwake",
+      "actionValue2": "N102045, 1"
+    },
+    {
+      "key": "E2026",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2027"
+    },
+    {
+      "key": "E2023",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2026"
+    },
+    {
+      "key": "E2018",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2004"
+    },
+    {
+      "key": "E2022",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D2022"
+    },
+    {
+      "key": "E2019",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D2019"
+    },
+    {
+      "key": "E2027",
+      "canRepeat": true,
+      "action1": "AttachNpcSound",
+      "actionValue1": "N102003, feastLoop",
+      "action2": "AttachNpcSound",
+      "actionValue2": "N102008, feastLoop",
+      "action3": "AttachNpcSound",
+      "actionValue3": "N102009, feastLoop",
+      "action4": "AttachNpcSound",
+      "actionValue4": "N102010, feastLoop",
+      "action5": "AttachNpcSound",
+      "actionValue5": "N102011, feastLoop"
+    },
+    {
+      "key": "ED2001",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D2906"
+    },
+    {
+      "key": "ED2002",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D2907"
+    },
+    {
+      "key": "ED2003",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D2908"
+    },
+    {
+      "key": "E2028",
+      "canRepeat": false
+    },
+    {
+      "key": "ER2007",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2005"
+    },
+    {
+      "key": "EPI-2A",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990009, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990013, 1"
+    }
+  ]
+}

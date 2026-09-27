@@ -105,7 +105,12 @@ public static class RailwayRules
             state.isRewarded = true;
             if (byId.TryGetValue(state.id, out var def)) granted.AddRange(def.rewards);
         }
-        return granted;
+        // The real server sums same (type, id) entries, first-seen order: RR2's rewards
+        // 6-10 (201x100, 102x1, 201x100, 102x1, 3 tickets) arrive as 201x200, 102x2, tickets.
+        return granted
+            .GroupBy(e => (e.type_, e.id))
+            .Select(g => new Wire.Element { type_ = g.Key.type_, id = g.Key.id, num = g.Sum(e => e.num) })
+            .ToList();
     }
 
     // ---- rotation buffs ----

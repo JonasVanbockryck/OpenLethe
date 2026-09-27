@@ -1,0 +1,248 @@
+{
+  "list": [
+    {
+      "key": "Q4001",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q2010",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q4002",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4001",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4002A",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4002",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4003",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4002A",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4003A",
+      "acquireConditionType": "None",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4003",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4003B",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4021",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4004",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4003B",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4005",
+      "acquireConditionType": "None",
+      "requiredQuestKey": "",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4006",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4004",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4007",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4006",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4008",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4007",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4008A",
+      "acquireConditionType": "None",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4008",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4013",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4008",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4021",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4003",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "acquireConditionValue": ""
+    },
+    {
+      "key": "Q4022",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4013",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4023",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4022",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4023A",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4023",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4023B",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4023A",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4023C",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4023B",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4023D",
+      "isBackupCheckpoint": true,
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4023C",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardItemKey1": "I990417",
+      "completeRewardCount1": 1,
+      "completeRewardItemKey2": "I104005",
+      "completeRewardCount2": 1,
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4023E",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4023D",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4024",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4023E",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4024A",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4024",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4024B",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4024A",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4024C",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4024B",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4025",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q4024C",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4025A",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4025",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4025B",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4025A",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    },
+    {
+      "key": "Q4025C",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4025B",
+      "completeEventKey": "",
+      "completeDialogueKey": "",
+      "completeRewardMoney": 120
+    },
+    {
+      "key": "Q4026",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q4025C",
+      "completeEventKey": "",
+      "completeDialogueKey": ""
+    }
+  ]
+}

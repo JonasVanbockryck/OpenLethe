@@ -1,0 +1,93 @@
+{
+  "list": [
+    {
+      "key": "C999999",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        { "type": "FadeOut", "param": "0.3" },
+        { "type": "TeleportCharacter", "param": "player, 60, 6" },
+        { "type": "FaceCharacter", "param": "player, Up" },
+        { "type": "SpawnNpc", "param": "N1010190, roja0, 0, 63, 4" },
+        { "type": "FaceCharacter", "param": "roja0, Down" },
+        { "type": "SpawnNpc", "param": "N1010200, ish0, 0, 67, 5" },
+        { "type": "FaceCharacter", "param": "ish0, Down" },
+        { "type": "SpawnNpc", "param": "N1010210, yisang0, 0, 71, 6" },
+        { "type": "FaceCharacter", "param": "yisang0, Down" },
+        { "type": "SpawnNpc", "param": "N1010220, faust0, 0, 70, 4" },
+        { "type": "FaceCharacter", "param": "faust0, Right" },
+        { "type": "SpawnNpc", "param": "N1010230, sinclair0, 0, 63, 5" },
+        { "type": "FaceCharacter", "param": "sinclair0, Left" },
+        { "type": "SpawnNpc", "param": "N1010240, gregor0, 0, 62, 4" },
+        { "type": "FaceCharacter", "param": "gregor0, Left" },
+        { "type": "SpawnNpc", "param": "N1010250, ryoshu0, 0, 75, 7" },
+        { "type": "FaceCharacter", "param": "ryoshu0, Left" },
+        { "type": "SpawnNpc", "param": "N1010260, heathcliff0, 0, 58, 6" },
+        { "type": "FaceCharacter", "param": "heathcliff0, Down" },
+        { "type": "SpawnNpc", "param": "N1010270, outis0, 0, 72, 4" },
+        { "type": "FaceCharacter", "param": "outis0, Left" },
+        { "type": "SpawnNpc", "param": "N1010280, honglu0, 0, 64, 7" },
+        { "type": "FaceCharacter", "param": "honglu0, Up" },
+        { "type": "SpawnNpc", "param": "N1010290, don0, 0, 65, 6" },
+        { "type": "FaceCharacter", "param": "don0, Up" },
+        { "type": "SpawnNpc", "param": "N1010030, meur, 0, 60, 8" },
+        { "type": "FaceCharacter", "param": "meur, Down" },
+        { "type": "SpawnNpc", "param": "N101001, lady, 0, 58, 4" },
+        { "type": "FaceCharacter", "param": "lady, Down" },
+        { "type": "FadeIn", "param": "0.3" },
+        { "type": "Dialogue", "param": "D999999" },
+        { "type": "FadeOut", "param": "0.3" },
+        { "type": "DespawnNpc", "param": "roja0" },
+        { "type": "DespawnNpc", "param": "ish0" },
+        { "type": "DespawnNpc", "param": "yisang0" },
+        { "type": "DespawnNpc", "param": "faust0" },
+        { "type": "DespawnNpc", "param": "sinclair0" },
+        { "type": "DespawnNpc", "param": "gregor0" },
+        { "type": "DespawnNpc", "param": "ryoshu0" },
+        { "type": "DespawnNpc", "param": "heathcliff0" },
+        { "type": "DespawnNpc", "param": "outis0" },
+        { "type": "DespawnNpc", "param": "honglu0" },
+        { "type": "DespawnNpc", "param": "don0" },
+        { "type": "DespawnNpc", "param": "meur" },
+        { "type": "DespawnNpc", "param": "lady" },
+        { "type": "FadeIn", "param": "0.3" }
+      ]
+    },
+    {
+      "key": "C-9181",
+      "showUnboundNpcs": true,
+      "waitTeleportEnd": true,
+      "bindings": [
+        { "actorName": "player", "kind": "Player" }
+      ],
+      "commands": [
+        { "type": "Dialogue", "param": "D-9181" }
+      ]
+    },
+    {
+      "key": "C-WDN-B",
+      "bindings": [
+        { "actorName": "player", "kind": "Player" },
+        { "actorName": "warden", "kind": "Npc", "actorKey": "N999999" }
+      ],
+      "commands": [
+        { "type": "FaceCharacterToward", "param": "warden, player" },
+        { "type": "FaceCharacterToward", "param": "player, warden" },
+        { "type": "CenterCameraToCharacter", "param": "warden, 0.5" },
+        { "type": "Wait", "param": "0.4" },
+        { "type": "PlayMotion", "param": "warden, AttackReady" },
+        { "type": "Wait", "param": "1.2" },
+        { "type": "PlayMotion", "param": "warden, Attack" },
+        { "type": "Wait", "param": "0.25" },
+        { "type": "CameraShake", "param": "0.5, 0.6" },
+        { "type": "Wait", "param": "0.8" },
+        { "type": "CenterCameraToCharacter", "param": "player, 0.3" }
+      ]
+    }
+  ]
+}

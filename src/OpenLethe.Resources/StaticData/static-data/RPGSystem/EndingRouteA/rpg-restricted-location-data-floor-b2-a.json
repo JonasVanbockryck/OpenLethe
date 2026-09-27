@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "key": "Lock_Q-2005_DyeingPath",
+      "locationId": 220402,
+      "requiredQuestKey": "Q-2004",
+      "dialogueKey": "D-2005-0"
+    },
+    {
+      "key": "Lock_Q-2017_NestPath",
+      "locationId": 220205,
+      "lockAfterQuestKey": "Q-2016A",
+      "dialogueKey": "D-2017-0"
+    }
+  ]
+}

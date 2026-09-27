@@ -1,0 +1,102 @@
+{
+  "list": [
+    {
+      "questKey": "Q5001",
+      "stepIndex": 0,
+      "goalType1": "InteractObject",
+      "goalValue1": "SO105001"
+    },
+    {
+      "questKey": "Q5001",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D50015"
+    },
+    {
+      "questKey": "Q5011",
+      "stepIndex": 0,
+      "goalType1": "InteractObject",
+      "goalValue1": "SO105001",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q5002",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "118001"
+    },
+    {
+      "questKey": "Q5004",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5007",
+      "navGoalFloorKey": "F1005B"
+    },
+    {
+      "questKey": "Q5008",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5006"
+    },
+    {
+      "questKey": "Q5006",
+      "stepIndex": 0,
+      "goalType1": "KillEnemy",
+      "goalValue1": "N105118, 9",
+      "goalType2": "KillEnemy",
+      "goalValue2": "N105117, 7",
+      "goalType3": "KillEnemy",
+      "goalValue3": "N105121, 3",
+      "goalType4": "KillEnemy",
+      "goalValue4": "N105120, 2",
+      "goalType5": "KillEnemy",
+      "goalValue5": "N105119, 2"
+    },
+    {
+      "questKey": "Q5007",
+      "stepIndex": 0,
+      "goalType1": "InteractObject",
+      "goalValue1": "SO105002",
+      "goalType2": "Dialogue",
+      "goalValue2": "D5006"
+    },
+    {
+      "questKey": "Q5003",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11031"
+    },
+    {
+      "questKey": "Q5005",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5002"
+    },
+    {
+      "questKey": "Q5009",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5015"
+    },
+    {
+      "questKey": "Q5010",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E5002"
+    },
+    {
+      "questKey": "Q5004",
+      "stepIndex": 1,
+      "goalType2": "TriggerEvent",
+      "goalValue2": "E5037",
+      "navGoalFloorKey": "F1005B"
+    },
+    {
+      "questKey": "Q5012",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11038",
+      "navGoalFloorKey": "F1005B"
+    }
+  ]
+}

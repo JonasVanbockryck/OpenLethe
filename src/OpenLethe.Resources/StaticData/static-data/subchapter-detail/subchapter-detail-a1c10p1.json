@@ -1,0 +1,24 @@
+{
+  "subchapterDetailList": [
+    {
+      "partId": 1,
+      "subchapterId": 110,
+      "stageGroups": [
+        {
+          "lastNodeId": 11004
+        }
+      ],
+      "bgmTypeByUIPanel": "PUNCTUM"
+    },
+    {
+      "partId": 1,
+      "subchapterId": 9128,
+      "stageGroups": [
+        {
+          "lastNodeId": 912804
+        }
+      ],
+      "bgmTypeByUIPanel": "PUNCTUM"
+    }
+  ]
+}

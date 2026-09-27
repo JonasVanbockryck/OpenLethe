@@ -1,0 +1,254 @@
+{
+  "list": [
+    {
+      "key": "E3041",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3041"
+    },
+    {
+      "key": "E3016",
+      "canRepeat": true,
+      "action1": "SetNpcAggro",
+      "actionValue1": "N103016",
+      "action2": "CameraPeekEnd",
+      "action3": "SetNpcInvincible",
+      "actionValue3": "N103016, 0"
+    },
+    {
+      "key": "E3201",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3201"
+    },
+    {
+      "key": "E3211",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N103005, 130300",
+      "action2": "KillNpc",
+      "actionValue2": "N103017, 130300",
+      "action3": "PlayCutscene",
+      "actionValue3": "C3205",
+      "action4": "GiveItem",
+      "actionValue4": "I990318, 1",
+      "action5": "KillNpc",
+      "actionValue5": "N103029, 130300"
+    },
+    {
+      "key": "E3221",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3202"
+    },
+    {
+      "key": "E3231",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3207"
+    },
+    {
+      "key": "E3232",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990319, 1"
+    },
+    {
+      "key": "E3131",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N103003, 130100"
+    },
+    {
+      "key": "E3301",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990313, 1"
+    },
+    {
+      "key": "E3141",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "51, 0"
+    },
+    {
+      "key": "E3161",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "61, 130501"
+    },
+    {
+      "key": "E3981",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I1208, 1"
+    },
+    {
+      "key": "E39161",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "60"
+    },
+    {
+      "key": "E3918",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3808",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3839",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3858",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3202",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11026, N103005, , 1"
+    },
+    {
+      "key": "E3222",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3206"
+    },
+    {
+      "key": "E3242",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11027, N103004, , 1"
+    },
+    {
+      "key": "E3091",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991010, 1",
+      "action2": "DespawnNpc",
+      "actionValue2": "N103091, 130500",
+      "action3": "Dialogue",
+      "actionValue3": "D3922"
+    },
+    {
+      "key": "EG-3091",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991010, 1",
+      "action2": "Dialogue",
+      "actionValue2": "D3922"
+    },
+    {
+      "key": "EB3181",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3181"
+    },
+    {
+      "key": "EK-3091",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N103016"
+    },
+    {
+      "key": "E3013",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3010"
+    },
+    {
+      "key": "E3212",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N103030, 130300"
+    },
+    {
+      "key": "E3026",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3026"
+    },
+    {
+      "key": "E3028",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990311, 1"
+    },
+    {
+      "key": "E3940",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E3018",
+      "canRepeat": true
+    },
+    {
+      "key": "EL3016",
+      "sessionOnly": true,
+      "canRepeat": false
+    },
+    {
+      "key": "ED3016",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "D3220"
+    },
+    {
+      "key": "E3016K",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N103016K"
+    },
+    {
+      "key": "E3208",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3208"
+    },
+    {
+      "key": "EDS301",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS301"
+    },
+    {
+      "key": "EDS302",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS302"
+    },
+    {
+      "key": "EDS303",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS303"
+    },
+    {
+      "key": "EDS304",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS304"
+    },
+    {
+      "key": "EPI-3B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990017, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990016, 1"
+    }
+  ]
+}

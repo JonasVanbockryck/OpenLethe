@@ -1,0 +1,253 @@
+{
+  "list": [
+    {
+      "questKey": "Q4001",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40110"
+    },
+    {
+      "questKey": "Q4002",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4002"
+    },
+    {
+      "questKey": "Q4002A",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4007"
+    },
+    {
+      "questKey": "Q4003",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40231"
+    },
+    {
+      "questKey": "Q4003A",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42011"
+    },
+    {
+      "questKey": "Q4003B",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4012"
+    },
+    {
+      "questKey": "Q4004",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40311",
+      "goalType2": "Cutscene",
+      "goalValue2": "C4034"
+    },
+    {
+      "questKey": "Q4005",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40510"
+    },
+    {
+      "questKey": "Q4006",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4013"
+    },
+    {
+      "questKey": "Q4007",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40710",
+      "goalType2": "Dialogue",
+      "goalValue2": "D40711",
+      "goalType3": "Dialogue",
+      "goalValue3": "D40712",
+      "goalType4": "Dialogue",
+      "goalValue4": "D40713",
+      "goalType5": "Dialogue",
+      "goalValue5": "D40714",
+      "goalType6": "Dialogue",
+      "goalValue6": "D40715"
+    },
+    {
+      "questKey": "Q4008",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4014"
+    },
+    {
+      "questKey": "Q4008",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4009"
+    },
+    {
+      "questKey": "Q4008A",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4009"
+    },
+    {
+      "questKey": "Q4013",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4010"
+    },
+    {
+      "questKey": "Q4021",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42030",
+      "goalType2": "Cutscene",
+      "goalValue2": "C4032"
+    },
+    {
+      "questKey": "Q4022",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42050",
+      "goalType2": "Cutscene",
+      "goalValue2": "C4035"
+    },
+    {
+      "questKey": "Q4023",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42060",
+      "goalType2": "Cutscene",
+      "goalValue2": "C4040"
+    },
+    {
+      "questKey": "Q4023A",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42061",
+      "goalType2": "Cutscene",
+      "goalValue2": "C4036"
+    },
+    {
+      "questKey": "Q4023B",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4021"
+    },
+    {
+      "questKey": "Q4023C",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11028",
+      "goalType2": "EnterLocation",
+      "goalValue2": "140404",
+      "goalGuideOnly2": true
+    },
+    {
+      "questKey": "Q4023D",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42064"
+    },
+    {
+      "questKey": "Q4023D",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4022"
+    },
+    {
+      "questKey": "Q4023E",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42064"
+    },
+    {
+      "questKey": "Q4023E",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4022"
+    },
+    {
+      "questKey": "Q4024",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42070",
+      "goalType2": "Dialogue",
+      "goalValue2": "D42071",
+      "goalType3": "Cutscene",
+      "goalValue3": "C4037",
+      "goalType4": "Cutscene",
+      "goalValue4": "C4039"
+    },
+    {
+      "questKey": "Q4024A",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42072"
+    },
+    {
+      "questKey": "Q4024B",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E42076"
+    },
+    {
+      "questKey": "Q4024C",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "E42071"
+    },
+    {
+      "questKey": "Q4025",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42080",
+      "goalType2": "Cutscene",
+      "goalValue2": "C4041"
+    },
+    {
+      "questKey": "Q4025A",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I104006, 1",
+      "goalType2": "GetItem",
+      "goalValue2": "I104007, 1",
+      "goalType3": "GetItem",
+      "goalValue3": "I104008, 1"
+    },
+    {
+      "questKey": "Q4025B",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42081"
+    },
+    {
+      "questKey": "Q4025B",
+      "stepIndex": 1,
+      "goalType1": "Dialogue",
+      "goalValue1": "D420811",
+      "goalType2": "Dialogue",
+      "goalValue2": "D42082",
+      "goalType3": "Dialogue",
+      "goalValue3": "D42083"
+    },
+    {
+      "questKey": "Q4025C",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D42084"
+    },
+    {
+      "questKey": "Q4025C",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4031"
+    },
+    {
+      "questKey": "Q4026",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "148004"
+    }
+  ]
+}

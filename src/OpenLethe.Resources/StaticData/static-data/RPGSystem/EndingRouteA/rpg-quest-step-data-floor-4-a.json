@@ -1,0 +1,100 @@
+{
+  "list": [
+    {
+      "questKey": "Q4001",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40110"
+    },
+    {
+      "questKey": "Q4002",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4002"
+    },
+    {
+      "questKey": "Q4002",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4007"
+    },
+    {
+      "questKey": "Q4003",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40231"
+    },
+    {
+      "questKey": "Q4003",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4011",
+      "goalType2": "Dialogue",
+      "goalValue2": "D40311"
+    },
+    {
+      "questKey": "Q4004",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4012"
+    },
+    {
+      "questKey": "Q4005",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40510"
+    },
+    {
+      "questKey": "Q4006",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4013"
+    },
+    {
+      "questKey": "Q4007",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D40710",
+      "goalType2": "Dialogue",
+      "goalValue2": "D40711",
+      "goalType3": "Dialogue",
+      "goalValue3": "D40712",
+      "goalType4": "Dialogue",
+      "goalValue4": "D40713",
+      "goalType5": "Dialogue",
+      "goalValue5": "D40714",
+      "goalType6": "Dialogue",
+      "goalValue6": "D40715"
+    },
+    {
+      "questKey": "Q4008",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4014"
+    },
+    {
+      "questKey": "Q4008",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C4009"
+    },
+    {
+      "questKey": "Q4013",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D41320"
+    },
+    {
+      "questKey": "Q4009",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "210200"
+    },
+    {
+      "questKey": "Q4009",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C-1001"
+    }
+  ]
+}

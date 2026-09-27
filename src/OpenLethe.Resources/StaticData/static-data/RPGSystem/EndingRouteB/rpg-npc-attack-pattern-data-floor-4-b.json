@@ -1,0 +1,338 @@
+{
+  "list": [
+    {
+      "patternKey": "NA104001",
+      "triggerRange": 1,
+      "cooldown": 0.5,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.25,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 5,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "patternKey": "NA104007",
+      "triggerRange": 1,
+      "cooldown": 0.5,
+      "steps": [
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.25,
+          "motion": "AttackReady"
+        },
+        {
+          "action": "MeleeHit",
+          "hpDamage": 5,
+          "mpDamage": 0,
+          "hitRange": 1,
+          "hitDirections": [
+            "Front"
+          ],
+          "motion": "Attack"
+        },
+        {
+          "action": "Wait",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "patternKey": "NA104029",
+      "triggerRange": 0,
+      "cooldown": 0,
+      "bloomSafeSpotTiles": [
+        { "x": 74, "y": 52 },
+        { "x": 80, "y": 51 },
+        { "x": 77, "y": 48 },
+        { "x": 73, "y": 47 },
+        { "x": 79, "y": 46 },
+        { "x": 88, "y": 56 },
+        { "x": 92, "y": 58 },
+        { "x": 94, "y": 58 },
+        { "x": 91, "y": 62 },
+        { "x": 82, "y": 69 },
+        { "x": 78, "y": 71 },
+        { "x": 76, "y": 71 },
+        { "x": 74, "y": 75 },
+        { "x": 77, "y": 75 },
+        { "x": 82, "y": 74 },
+        { "x": 99, "y": 77 },
+        { "x": 102, "y": 73 },
+        { "x": 105, "y": 74 },
+        { "x": 106, "y": 78 },
+        { "x": 109, "y": 78 },
+        { "x": 109, "y": 74 },
+        { "x": 106, "y": 70 },
+        { "x": 126, "y": 58 },
+        { "x": 115, "y": 57 },
+        { "x": 125, "y": 63 },
+        { "x": 119, "y": 72 },
+        { "x": 118, "y": 71 },
+        { "x": 122, "y": 71 },
+        { "x": 126, "y": 71 },
+        { "x": 118, "y": 68 },
+        { "x": 118, "y": 65 },
+        { "x": 126, "y": 68 },
+        { "x": 120, "y": 69 },
+        { "x": 121, "y": 70 },
+        { "x": 121, "y": 69 },
+        { "x": 122, "y": 69 },
+        { "x": 122, "y": 68 },
+        { "x": 123, "y": 68 },
+        { "x": 124, "y": 68 },
+        { "x": 123, "y": 69 },
+        { "x": 124, "y": 69 },
+        { "x": 120, "y": 67 },
+        { "x": 121, "y": 67 },
+        { "x": 122, "y": 67 },
+        { "x": 123, "y": 67 },
+        { "x": 124, "y": 67 },
+        { "x": 117, "y": 51 },
+        { "x": 123, "y": 51 },
+        { "x": 121, "y": 48 },
+        { "x": 118, "y": 47 },
+        { "x": 123, "y": 46 },
+        { "x": 91, "y": 78 },
+        { "x": 129, "y": 76 },
+        { "x": 118, "y": 76 },
+        { "x": 130, "y": 65 },
+        { "x": 129, "y": 54 },
+        { "x": 111, "y": 48 },
+        { "x": 100, "y": 48 },
+        { "x": 90, "y": 46 },
+        { "x": 85, "y": 57 },
+        { "x": 92, "y": 51 },
+        { "x": 75, "y": 62 },
+        { "x": 84, "y": 62 },
+        { "x": 92, "y": 69 },
+        { "x": 100, "y": 67 },
+        { "x": 103, "y": 58 },
+        { "x": 110, "y": 67 },
+        { "x": 115, "y": 67 },
+        { "x": 109, "y": 60 },
+        { "x": 83, "y": 68 },
+        { "x": 101, "y": 79 },
+        { "x": 110, "y": 77 },
+        { "x": 109, "y": 60 },
+        { "x": 111, "y": 53 },
+        { "x": 86, "y": 46 }
+      ],
+      "bloomSafeRadius": 1,
+      "bloomFlowerPrefabKey": "",
+      "bloomSafeShieldEffectKey": "AliuneBloomShield",
+      "bloomDangerDecalRadiusTiles": 10,
+      "bloomDangerDecalHoldSeconds": 0.3,
+      "bloomDangerDecalAlphaScale": 0.6,
+      "bloomSafeDecalAlphaScale": 0.6,
+      "bloomDecalFullColorLeadSeconds": 1.0,
+      "bloomExplosionEffectKey": "AliuneBloomExplo",
+      "bloomExplosionEffectScale": 1,
+      "branches": [
+        {
+          "branchKey": "Calm",
+          "entryType": "Trigger",
+          "branchConditions": [
+            { "conditionType": "Timer", "seconds": 12.5, "nextBranchKey": "Warp" }
+          ],
+          "steps": [
+            {
+              "action": "FaceRight"
+            },
+            {
+              "action": "BloomStorm",
+              "telegraphSeconds": 2.5,
+              "lingerSeconds": 0.5,
+              "bloomScreenEffectKey": "AliuneBloomFlower",
+              "bloomTelegraphSfxKey": "sfx_aliune_field_ready",
+              "bloomBlastSfxKey": "sfx_aliune_field_shot",
+              "hpDamage": 30,
+              "mpDamage": 0
+            },
+            {
+              "action": "Wait",
+              "duration": 5.0
+            }
+          ]
+        },
+        {
+          "branchKey": "Warp",
+          "entryType": "Forced",
+          "branchConditions": [
+            { "conditionType": "SequenceEnd", "nextBranchKey": "Calm" }
+          ],
+          "steps": [
+            {
+              "action": "FaceRight"
+            },
+            {
+              "action": "BloomStorm",
+              "telegraphSeconds": 2.5,
+              "lingerSeconds": 0.5,
+              "bloomScreenEffectKey": "AliuneBloomFlower",
+              "bloomTelegraphSfxKey": "sfx_aliune_field_ready",
+              "bloomBlastSfxKey": "sfx_aliune_field_shot",
+              "hpDamage": 30,
+              "mpDamage": 0
+            },
+            {
+              "action": "Teleport",
+              "teleportExcludeNearestWithinTilesFromPlayer": 13,
+              "teleportDepartLeadSeconds": 3.6,
+              "teleportDepartEffectKey": "AliuneCurtain",
+              "teleportArriveEffectKey": "",
+              "teleportPoints": [
+                { "x": 78, "y": 72 },
+                { "x": 105, "y": 75 },
+                { "x": 92, "y": 59 },
+                { "x": 77, "y": 49 },
+                { "x": 121, "y": 49 }
+              ]
+            },
+            {
+              "action": "Wait",
+              "duration": 1.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patternKey": "NA104030",
+      "triggerRange": 4,
+      "canStartWhileMoving": true,
+      "cooldown": 0.5,
+      "staggerBreakBranchKey": "Rampage",
+      "branches": [
+        {
+          "branchKey": "Rampage",
+          "entryType": "Trigger",
+          "transitionType": "Timer",
+          "transitionSeconds": 6,
+          "nextBranchKey": "Groggy",
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.25
+            },
+            {
+              "action": "Charge",
+              "hpDamage": 10,
+              "maxDistance": 4,
+              "chargeSpeed": 40,
+              "motion": "Rush"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.25
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 7,
+              "parryImmune": true,
+              "hitRange": 1,
+              "hitShape": [
+                "XXX",
+                "XNX",
+                "XXX"
+              ],
+              "motion": "Attack"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.4
+            }
+          ]
+        },
+        {
+          "branchKey": "Groggy",
+          "entryType": "Forced",
+          "transitionType": "SequenceEnd",
+          "nextBranchKey": "Rampage",
+          "steps": [
+            {
+              "action": "Wait",
+              "duration": 3,
+              "motion": "Groggy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patternKey": "NA104034",
+      "triggerRange": 0,
+      "cooldown": 1.5,
+      "steps": [
+        {
+          "action": "FaceRandom"
+        },
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.3
+        },
+        {
+          "action": "Charge",
+          "hpDamage": 1,
+          "mpDamage": 0,
+          "knockbackTiles": 1,
+          "maxDistance": 3,
+          "chargeSpeed": 14.0,
+          "animSpeedScale": 2.0
+        },
+        {
+          "action": "Wait",
+          "duration": 0.5
+        }
+      ]
+    },
+    {
+      "patternKey": "NA104036",
+      "triggerRange": 0,
+      "cooldown": 1.5,
+      "steps": [
+        {
+          "action": "FacePlayer"
+        },
+        {
+          "action": "Flip"
+        },
+        {
+          "action": "ShowAttackRange",
+          "duration": 0.3
+        },
+        {
+          "action": "Charge",
+          "hpDamage": 1,
+          "mpDamage": 0,
+          "knockbackTiles": 1,
+          "maxDistance": 3,
+          "chargeSpeed": 14.0,
+          "animSpeedScale": 2.0
+        },
+        {
+          "action": "Wait",
+          "duration": 0.5
+        }
+      ]
+    }
+  ]
+}

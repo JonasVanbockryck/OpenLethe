@@ -1,0 +1,25 @@
+{
+    "list": [
+        {
+            "patternKey": "NA112001",
+            "triggerRange": 1,
+            "cooldown": 1.0,
+            "steps": [
+              { "action": "ShowAttackRange", "duration": 1, "motion": "AttackReady" },
+              { "action": "MeleeHit", "hpDamage": 5, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+              { "action": "PlaceDebuffTile" },
+              { "action": "Wait", "duration": 1.0 }
+            ]
+        },
+        {
+            "patternKey": "NA20201",
+            "triggerRange": 1,
+            "cooldown": 1.0,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 1, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 7, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+                { "action": "Wait", "duration": 1.0 }
+            ]
+        }
+    ]
+}

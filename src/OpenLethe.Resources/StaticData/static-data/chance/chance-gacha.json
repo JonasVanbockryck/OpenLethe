@@ -36,6 +36,26 @@
       "resetTimeType":"PERMANENT"
     },
     {
+      "id":8,
+      "max":1,
+      "resetTimeType":"PERMANENT"
+    },
+    {
+      "id":9,
+      "max":1,
+      "resetTimeType":"PERMANENT"
+    },
+    {
+      "id":10,
+      "max":1,
+      "resetTimeType":"PERMANENT"
+    },
+    {
+      "id":11,
+      "max":1,
+      "resetTimeType":"PERMANENT"
+    },
+    {
       "id":103,
       "max":1,
       "resetTimeType":"DAILY"
@@ -952,6 +972,61 @@
     },
     {
       "id":286,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":287,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":288,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":289,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":290,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":291,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":292,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":293,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":294,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":295,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":296,
+      "max":1,
+      "resetTimeType":"DAILY"
+    },
+    {
+      "id":297,
       "max":1,
       "resetTimeType":"DAILY"
     }

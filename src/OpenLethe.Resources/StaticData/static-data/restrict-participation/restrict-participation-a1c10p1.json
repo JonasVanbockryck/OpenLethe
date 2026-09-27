@@ -1,0 +1,109 @@
+{
+  "list": [
+    {
+      "stageType": "NORMAL_BATTLE",
+      "restrictList": [
+        {
+          "id": 11002,
+          "mustParticipateIds": [ 5, 8, 9 ]
+        },
+        {
+          "id": 11003,
+          "mustParticipateIds": [ 5, 8, 9 ]
+        },
+        {
+          "id": 11004,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11005,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11006,
+          "mustParticipateIds": [ 5, 10, 11 ]
+        },
+        {
+          "id": 11007,
+          "mustParticipateIds": [ 5, 8, 9 ]
+        },
+        {
+          "id": 11008,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11009,
+          "mustParticipateIds": [ 5, 10, 11 ]
+        },
+        {
+          "id": 11010,
+          "mustParticipateIds": [ 5, 10, 11 ]
+        },
+        {
+          "id": 11011,
+          "mustParticipateIds": [ 2, 5, 7 ]
+        },
+        {
+          "id": 11012,
+          "mustParticipateIds": [ 5, 10, 11 ]
+        },
+        {
+          "id": 11013,
+          "mustParticipateIds": [ 3, 5, 6 ]
+        },
+        {
+          "id": 11014,
+          "mustParticipateIds": [ 3, 5, 6 ]
+        },
+        {
+          "id": 11015,
+          "mustParticipateIds": [ 4, 5, 11 ]
+        },
+        {
+          "id": 11016,
+          "mustParticipateIds": [ 4, 5, 11 ]
+        },
+        {
+          "id": 11017,
+          "mustParticipateIds": [ 5, 8, 9 ]
+        },
+        {
+          "id": 11018,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11019,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11020,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11021,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11022,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11023,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11024,
+          "mustParticipateIds": [ 2, 5, 12 ]
+        },
+        {
+          "id": 11043,
+          "mustParticipateIds": [ 3, 5, 6 ]
+        },
+        {
+          "id": 1100401,
+          "mustParticipateIds": [ 5, 8, 9 ]
+        }
+      ]
+    }
+  ]
+}

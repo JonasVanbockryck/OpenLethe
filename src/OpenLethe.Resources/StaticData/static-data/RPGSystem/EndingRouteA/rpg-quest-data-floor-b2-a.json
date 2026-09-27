@@ -1,0 +1,135 @@
+{
+  "list": [
+    {
+      "key": "Q-2000",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-1009",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2001",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2000",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2002",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2001",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2003",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2002",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2004",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2003",
+      "completeEventKey": "",
+      "completeRewardMoney": 60
+    },
+    {
+      "key": "Q-2005",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2004",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2006",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "None",
+      "requiredQuestKey": "Q-2005",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2007",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2005",
+      "completeEventKey": "",
+      "completeRewardMoney": 60
+    },
+    {
+      "key": "Q-2009",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2007",
+      "completeEventKey": "",
+      "completeRewardMoney": 60
+    },
+    {
+      "key": "Q-2010",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2009",
+      "completeEventKey": "",
+      "completeRewardMoney": 60
+    },
+    {
+      "key": "Q-2011",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2010",
+      "completeEventKey": "",
+      "completeRewardMoney": 60
+    },
+    {
+      "key": "Q-2012",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "None",
+      "requiredQuestKey": "",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2013",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2011",
+      "completeEventKey": "",
+      "completeRewardMoney": 60
+    },
+    {
+      "key": "Q-2014",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2013",
+      "completeEventKey": "",
+      "completeRewardMoney": 60
+    },
+    {
+      "key": "Q-2015",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2014",
+      "completeRewardItemKey1": "I992808",
+      "completeRewardCount1": 1,
+      "completeEventKey": "",
+      "completeRewardMoney": 200
+    },
+    {
+      "key": "Q-2016A",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2015",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q-2017",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q-2016A",
+      "completeEventKey": ""
+    }
+  ]
+}

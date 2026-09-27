@@ -9,25 +9,29 @@
           "id": 1,
           "storyId": "E801B",
           "nodeId": 911901,
-          "stageDetail": "Before"
+          "stageDetail": "Before", 
+          "fullBannerId": "Story_BG/story_Conference Hall"
         },
         {
           "id": 2,
           "storyId": "E802B",
           "nodeId": 911902,
-          "stageDetail": "Before"
+          "stageDetail": "Before", 
+          "fullBannerId": "Story_BG/story_honglu_room_day"
         },
         {
           "id": 3,
           "storyId": "E803B",
           "nodeId": 911903,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E801_5"
         },
         {
           "id": 4,
           "storyId": "ES000B",
           "nodeId": 911904,
-          "stageDetail": "Before"
+          "stageDetail": "Before", 
+          "fullBannerId": "Story_BG/story_classroom"
         },
         {
           "id": 5,
@@ -39,7 +43,8 @@
           "id": 6,
           "storyId": "ES011A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES011B"
         },
         {
           "id": 7,
@@ -51,7 +56,9 @@
           "id": 8,
           "storyId": "ES013A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES013B"
+
         },
         {
           "id": 9,
@@ -63,7 +70,8 @@
           "id": 10,
           "storyId": "ES012A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES012B"
         },
         {
           "id": 11,
@@ -75,7 +83,8 @@
           "id": 12,
           "storyId": "ES040A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES040B"
         },
         {
           "id": 13,
@@ -87,13 +96,15 @@
           "id": 14,
           "storyId": "ES050A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES050B"
         },
         {
           "id": 15,
           "storyId": "ES060B",
           "nodeId": 911904,
-          "stageDetail": "Before"
+          "stageDetail": "Before", 
+          "fullBannerId": "Story_BG/story_daguanyuan_bluesky"
         },
         {
           "id": 16,
@@ -105,7 +116,8 @@
           "id": 17,
           "storyId": "ES061A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES061B"
         },
         {
           "id": 18,
@@ -117,7 +129,8 @@
           "id": 19,
           "storyId": "ES030A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES030B"
         },
         {
           "id": 20,
@@ -141,7 +154,8 @@
           "id": 23,
           "storyId": "ES120A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES120B"
         },
         {
           "id": 24,
@@ -153,7 +167,8 @@
           "id": 25,
           "storyId": "ES130A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES130B"
         },
         {
           "id": 26,
@@ -171,7 +186,8 @@
           "id": 28,
           "storyId": "ES180A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES180B"
         },
         {
           "id": 29,
@@ -195,97 +211,113 @@
           "id": 32,
           "storyId": "ES240A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES240B"
         },
         {
           "id": 33,
           "storyId": "ES250B",
           "nodeId": 911904,
-          "stageDetail": "Before"
+          "stageDetail": "Before", 
+          "fullBannerId": "Story_CG/E806"
         },
         {
           "id": 34,
           "storyId": "ES260B",
           "nodeId": 911904,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES190B"
         },
         {
           "id": 35,
           "storyId": "ES260A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES190B"
         },
         {
           "id": 36,
           "storyId": "ES280A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/EventChapter9119/ES210B"
         },
         {
           "id": 37,
           "storyId": "ES290B",
           "nodeId": 911904,
-          "stageDetail": "Before"
+          "stageDetail": "Before", 
+          "fullBannerId": "Story_CG/E807"
         },
         {
           "id": 38,
           "storyId": "ES300A",
           "nodeId": 911904,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_classroom"
         },
         {
           "id": 39,
           "storyId": "E805B",
           "nodeId": 911905,
-          "stageDetail": "Before"
+          "stageDetail": "Before", 
+          "fullBannerId": "Story_BG/story_classroom"
         },
         {
           "id": 40,
           "storyId": "E806B",
           "nodeId": 911906,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lastexam_entrance_near"
         },
         {
           "id": 41,
           "storyId": "E808B",
           "nodeId": 911908,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E808"
         },
         {
           "id": 42,
           "storyId": "E808A",
           "nodeId": 911908,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_lastexam_entrance"
         },
         {
           "id": 43,
           "storyId": "E809B",
           "nodeId": 911909,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lastexam"
         },
         {
           "id": 44,
           "storyId": "E811B",
           "nodeId": 911911,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_lastexam"
         },
         {
           "id": 44,
           "storyId": "E811I1",
           "nodeId": 911911,
-          "stageDetail": "Inter"
+          "stageDetail": "Inter",
+          "fullBannerId": "Story_BG/story_lastexam"
         },
         {
           "id": 46,
           "storyId": "E811A",
           "nodeId": 911911,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_lastexam"
         },
         {
           "id": 47,
           "storyId": "E812B",
           "nodeId": 911912,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_banquethall01"
         }
       ]
     }

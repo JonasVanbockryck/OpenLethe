@@ -14,25 +14,29 @@
           "id": 2,
           "storyId": "S001A",
           "nodeId": 10001,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/SubChapter100/S001B"
         },
         {
           "id": 3,
           "storyId": "S002B",
           "nodeId": 10002,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/Dark_Forest"
         },
         {
           "id": 4,
           "storyId": "S003B",
           "nodeId": 10003,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/Mephitz_Inside"
         },
         {
           "id": 5,
           "storyId": "S003A",
           "nodeId": 10003,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/Mephitz_Inside"
         },
         {
           "id": 6,
@@ -44,7 +48,8 @@
           "id": 7,
           "storyId": "S004A",
           "nodeId": 10004,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Assets/Resources_moved/Sprite/StoryTheater/SubChapter100/S004B"
         }
       ]
     }

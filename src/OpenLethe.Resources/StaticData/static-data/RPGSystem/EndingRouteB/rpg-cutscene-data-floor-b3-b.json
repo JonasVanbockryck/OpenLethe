@@ -1,0 +1,1744 @@
+﻿{
+  "list": [
+    {
+      "key": "C-3106",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "yisang",
+          "kind": "Player",
+          "actorKey": "1"
+        },
+        {
+          "actorName": "ishmael",
+          "kind": "Player",
+          "actorKey": "8"
+        },
+        {
+          "actorName": "buppe",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "grower",
+          "kind": "Npc",
+          "actorKey": "N203005"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "player, grower, 0, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, -1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "yisang, player, 1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ishmael, player, 2, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buppe, player, 0, -1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Up"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217B"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Parallel",
+                  "commands": [
+                    {
+                      "type": "MoveCharacterRelative",
+                      "param": "dante, dante, -1, 0, 0, 0, 1"
+                    },
+                    {
+                      "type": "MoveCharacterRelative",
+                      "param": "player, player, -1, 0, 0, 0, 1"
+                    },
+                    {
+                      "type": "MoveCharacterRelative",
+                      "param": "yisang, yisang, 1, 0, 0, 0, 1"
+                    },
+                    {
+                      "type": "MoveCharacterRelative",
+                      "param": "ishmael, ishmael, 1, 0, 0, 0, 1"
+                    }
+                  ]
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "player, Down"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "dante, Down"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "yisang, Down"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "ishmael, Down"
+                }
+              ]
+            },
+            {
+              "type": "MoveCameraRelative",
+              "param": "buppe, 0, 1, 1.2"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "7.0, 1.2"
+            }
+          ]
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "buppe, buppe, 0, 1"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "yisang, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "ishmael, buppe"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217C"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Dialogue",
+              "param": "D-3217D"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "dante, 0.5"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "5.5, 0.5"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Dialogue",
+              "param": "D-3217E"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 0.5"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, dante"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217F"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217G"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buppe"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Dialogue",
+              "param": "D-3217H"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "ishmael, 0.5"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217I"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "buppe, 0.6"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 0.6"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217J"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217K"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3217L"
+        }
+      ]
+    },
+    {
+      "key": "C-3101",
+      "hideUnboundParty": true,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "master",
+          "kind": "Npc",
+          "actorKey": "N203007"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "player, master, 3, 0"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N203011, yisang, 0, -154, 88"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N203009, dante, 0, -152, 86"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N203012, ishmael, 0, -153, 85"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N203013, buppe, 0, -153, 87"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "yisang, master, 3, -2"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, master, 5, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ishmael, master, 4, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buppe, master, 4, 1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "master, 36, 56"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32175"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "master, 37, 66, 2"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "master, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3218"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "yisang"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "dante"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "ishmael"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "buppe"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        }
+      ]
+    },
+    {
+      "key": "C-3102",
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "master",
+          "kind": "Npc",
+          "actorKey": "N203007"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "DialogueOverFade",
+          "param": "D-3205"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        }
+      ]
+    },
+    {
+      "key": "C-3103",
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        }
+      ]
+    },
+    {
+      "key": "C-3104",
+      "hideUnboundParty": false,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "master",
+          "kind": "Npc",
+          "actorKey": "N203017"
+        }
+      ],
+      "commands": [
+        {
+          "type": "MoveCameraRelative",
+          "param": "master, 0, 1, 0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "master, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3221"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "master, Eruption, 0, true"
+        },
+        {
+          "type": "Wait",
+          "param": "0.9"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3221A"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "master, Summon, 0, true"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.4, 0.35"
+        },
+        {
+          "type": "Wait",
+          "param": "1.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3221B"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.3"
+        }
+      ]
+    },
+    {
+      "key": "C-3105",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "yisang",
+          "kind": "Player",
+          "actorKey": "1"
+        },
+        {
+          "actorName": "ishmael",
+          "kind": "Player",
+          "actorKey": "8"
+        },
+        {
+          "actorName": "buppe",
+          "kind": "Player",
+          "actorKey": "400042"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "yisang, player, -1, 2"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, 1, 2"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ishmael, player, 2, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buppe, player, -2, 1"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 1, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "yisang, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "ishmael, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buppe, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3226"
+        },
+        {
+          "type": "Story",
+          "param": "S1028B"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3294"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        }
+      ]
+    },
+    {
+      "key": "C-PB-CONTROLLER",
+      "repeatable": true,
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "boss",
+          "kind": "Npc",
+          "actorKey": "N203017"
+        }
+      ],
+      "commands": [
+        {
+          "type": "SetBgm",
+          "param": "bgm_fieldBossCalvary, N203017"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "boss, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, boss"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-PB-CONTROLLER"
+        }
+      ]
+    },
+    {
+      "key": "C-3100",
+      "controlArrivalFade": true,
+      "blockLocationBanner": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "yisang",
+          "kind": "Player",
+          "actorKey": "1"
+        },
+        {
+          "actorName": "ishmael",
+          "kind": "Player",
+          "actorKey": "8"
+        },
+        {
+          "actorName": "buppe",
+          "kind": "Player",
+          "actorKey": "400042"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 38, 92"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, -1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ishmael, player, -1, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "yisang, player, 0, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buppe, player, 1, 0"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N201030, cocoon, 0, 39, 93"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "cocoon, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3227"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "cocoon"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        }
+      ]
+    },
+    {
+      "key": "C-3107",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "master",
+          "kind": "Npc",
+          "actorKey": "N203007"
+        },
+        {
+          "actorName": "scraper",
+          "kind": "Npc",
+          "actorKey": "N203018"
+        },
+        {
+          "actorName": "yisang",
+          "kind": "Player",
+          "actorKey": "1"
+        },
+        {
+          "actorName": "ishmael",
+          "kind": "Player",
+          "actorKey": "8"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "buppe",
+          "kind": "Player",
+          "actorKey": "400042"
+        }
+      ],
+      "commands": [
+        { "type": "FadeOut", "param": "0.5" },
+        { "type": "TeleportCharacterRelative", "param": "player, master, 3, 0" },
+        { "type": "TeleportCharacterRelative", "param": "yisang, master, 3, -2" },
+        { "type": "TeleportCharacterRelative", "param": "dante, master, 5, 0" },
+        { "type": "TeleportCharacterRelative", "param": "ishmael, master, 4, -1" },
+        { "type": "TeleportCharacterRelative", "param": "buppe, master, 4, 1" },
+        { "type": "FaceCharacter", "param": "player, Left" },
+        { "type": "FaceCharacter", "param": "yisang, Left" },
+        { "type": "FaceCharacter", "param": "dante, Left" },
+        { "type": "FaceCharacter", "param": "ishmael, Left" },
+        { "type": "FaceCharacter", "param": "buppe, Left" },
+        { "type": "FaceCharacter", "param": "master, Right" },
+        { "type": "FadeIn", "param": "0.5" },
+        { "type": "Wait", "param": "0.3" },
+        { "type": "Dialogue", "param": "D-3201A" },
+        {
+          "type": "ZoomCamera",
+          "param": "10, 1.5, nowait"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "master, 0, 2, 1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201B"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "8, 1.0, nowait"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "ishmael, 0, 2, 1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201C"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9, 1.5, nowait"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "master, 0, 4, 1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201D"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "10, 1.2, nowait"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "master, 0, 2, 1.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201E"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "8, 1.0, nowait"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "buppe, 0, 0.5, 1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201F"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "10, 1.2, nowait"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "master, 0, 2, 1.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201G"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201H"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "master, Eruption, 0, true"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.4, 0.35"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9, 1.2, nowait"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCameraRelative",
+              "param": "master, 0, 2.5, 1.2"
+            },
+            {
+              "type": "Wait",
+              "param": "1.8"
+            }
+          ]
+        },
+        {
+          "type": "PauseMotion",
+          "param": "master, on"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201I"
+        },
+        {
+          "type": "PauseMotion",
+          "param": "master, off"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "master, Summon, 0, true"
+        },
+        {
+          "type": "Wait",
+          "param": "1.2"
+        },
+        {
+          "type": "StopMotion",
+          "param": "master"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201J"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "10, 1.2, nowait"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "master, 0, 2, 1.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-3201"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "scraper, 0, 1, 0.6"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacterToward",
+              "param": "player, scraper"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "yisang, scraper"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "ishmael, scraper"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "dante, scraper"
+            },
+            {
+              "type": "FaceCharacterToward",
+              "param": "buppe, scraper"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32011"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32011B"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buppe, yisang"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32011B2"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "8.5, 1.5, nowait"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, dante"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32011C"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0.8"
+        }
+      ]
+    },
+    {
+      "key": "C-3108",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "yisang",
+          "kind": "Player",
+          "actorKey": "1"
+        },
+        {
+          "actorName": "ishmael",
+          "kind": "Player",
+          "actorKey": "8"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "buppe",
+          "kind": "Player",
+          "actorKey": "400042"
+        },
+        {
+          "actorName": "grower",
+          "kind": "Npc",
+          "actorKey": "N203005"
+        },
+        {
+          "actorName": "nest",
+          "kind": "Npc",
+          "actorKey": "N203016"
+        },
+        {
+          "actorName": "cocoon",
+          "kind": "Accessory",
+          "actorKey": "I992704"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 40, 66"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, -1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "buppe, player, 1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "yisang, player, 2, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ishmael, player, 3, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Up"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 1, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "6.0, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32171"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buppe, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "yisang, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "ishmael, player"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "40, 67, 0.4"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "3.0, 0.4"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32171B"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Up"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "grower, 0.4"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "6.0, 0.4"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32171C"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "buppe, player"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buppe"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCameraRelative",
+              "param": "player, 0.5, 0.5, 0.4"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "5.0, 0.4"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32171D"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "grower, 0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32171E"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "buppe, 0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32171F"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 0.5"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "8.0, 0.5"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "buppe, 41, 65"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "cocoon, 41, 65, 17"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "yisang, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "ishmael, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, buppe"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "buppe, 41, 63"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "cocoon, 41, 63, 17"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "yisang, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "ishmael, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, buppe"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32172"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacterRelative",
+              "param": "player, player, 0, -2"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "dante, dante, 0, -2"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "yisang, yisang, 0, -2"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "ishmael, ishmael, 0, -2"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Down"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "buppe, 0, 0.5, 0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32172A"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "buppe, 0.4"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "7.6, 0.8, nowait"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32172B"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacterRelative",
+              "param": "dante, buppe, -2, 1"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "ishmael, buppe, 2, 1"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "yisang, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "ishmael, buppe"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, buppe"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buppe, Down"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "41.5, 63.5, 0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32173"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "buppe, Eat"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "cocoon, buppe, 0, -40"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "3.0, 20.0, nowait, linear"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "buppe, 0, 1, 1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32173A"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32174"
+        },
+        {
+          "type": "StopMotion",
+          "param": "buppe"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "7.6, 1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-32174A"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "ClearSwarmCorpses"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0.2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        }
+      ]
+    },
+    {
+      "key": "C-3109",
+      "showUnboundNpcs": true,
+      "bindings": [
+        { "actorName": "player", "kind": "Player" },
+        { "actorName": "master", "kind": "Npc", "actorKey": "N203007" },
+        { "actorName": "yisang", "kind": "Player", "actorKey": "1" },
+        { "actorName": "ishmael", "kind": "Player", "actorKey": "8" },
+        { "actorName": "dante", "kind": "Player", "actorKey": "13" },
+        { "actorName": "buppe", "kind": "Player", "actorKey": "400042" }
+      ],
+      "commands": [
+        { "type": "FadeOut", "param": "0.5" },
+        { "type": "TeleportCharacterRelative", "param": "player, master, 3, 0" },
+        { "type": "TeleportCharacterRelative", "param": "yisang, master, 3, -2" },
+        { "type": "TeleportCharacterRelative", "param": "dante, master, 5, 0" },
+        { "type": "TeleportCharacterRelative", "param": "ishmael, master, 4, -1" },
+        { "type": "TeleportCharacterRelative", "param": "buppe, master, 4, 1" },
+        { "type": "FaceCharacter", "param": "player, Left" },
+        { "type": "FaceCharacter", "param": "yisang, Left" },
+        { "type": "FaceCharacter", "param": "dante, Left" },
+        { "type": "FaceCharacter", "param": "ishmael, Left" },
+        { "type": "FaceCharacter", "param": "buppe, Left" },
+        { "type": "FaceCharacter", "param": "master, Right" },
+        { "type": "FadeIn", "param": "0.5" },
+        { "type": "Wait", "param": "0.3" },
+        { "type": "Dialogue", "param": "D-3214" }
+      ]
+    },
+    {
+      "key": "C-3110",
+      "showUnboundNpcs": true,
+      "bindings": [
+        { "actorName": "player", "kind": "Player" },
+        { "actorName": "tanning", "kind": "Npc", "actorKey": "N203004" },
+        { "actorName": "yisang", "kind": "Player", "actorKey": "1" },
+        { "actorName": "ishmael", "kind": "Player", "actorKey": "8" },
+        { "actorName": "dante", "kind": "Player", "actorKey": "13" },
+        { "actorName": "buppe", "kind": "Player", "actorKey": "400042" }
+      ],
+      "commands": [
+        { "type": "FadeOut", "param": "0.5" },
+        { "type": "TeleportCharacterRelative", "param": "player, tanning, 0, -1" },
+        { "type": "TeleportCharacterRelative", "param": "buppe, tanning, -1, -1" },
+        { "type": "TeleportCharacterRelative", "param": "dante, tanning, 1, -1" },
+        { "type": "TeleportCharacterRelative", "param": "yisang, tanning, -2, -1" },
+        { "type": "TeleportCharacterRelative", "param": "ishmael, tanning, 2, -1" },
+        { "type": "FaceCharacter", "param": "player, Up" },
+        { "type": "FaceCharacter", "param": "buppe, Up" },
+        { "type": "FaceCharacter", "param": "dante, Up" },
+        { "type": "FaceCharacter", "param": "yisang, Up" },
+        { "type": "FaceCharacter", "param": "ishmael, Up" },
+        { "type": "FadeIn", "param": "0.5" },
+        { "type": "Wait", "param": "0.3" },
+        { "type": "Dialogue", "param": "D-3215" },
+        { "type": "FaceCharacter", "param": "buppe, Right" },
+        { "type": "MoveCharacterRelative", "param": "buppe, tanning, -1, 0" },
+        { "type": "FaceCharacterToward", "param": "buppe, tanning" },
+        { "type": "Dialogue", "param": "D-3215B" },
+        { "type": "FaceCharacterToward", "param": "tanning, buppe" },
+        {
+          "type": "Parallel",
+          "commands": [
+            { "type": "CenterCameraToCharacter", "param": "tanning, 0.8" },
+            { "type": "ZoomCamera", "param": "7.5, 0.8" }
+          ]
+        },
+        { "type": "FadeOut", "param": "0.2" },
+        { "type": "TeleportCharacterRelative", "param": "buppe, tanning, 0, -40" },
+        { "type": "PlayMotion", "param": "tanning, CheckBody" },
+        { "type": "Wait", "param": "0.1" },
+        { "type": "PauseMotion", "param": "tanning, on" },
+        { "type": "FadeIn", "param": "0.2" },
+        { "type": "PauseMotion", "param": "tanning, off" },
+        {
+          "type": "Parallel",
+          "commands": [
+            { "type": "Dialogue", "param": "D-3215C" },
+            { "type": "Wait", "param": "2.5" }
+          ]
+        },
+        { "type": "FadeOut", "param": "0.2" },
+        { "type": "StopMotion", "param": "tanning" },
+        { "type": "TeleportCharacterRelative", "param": "buppe, tanning, -1, 0" },
+        { "type": "FaceCharacterToward", "param": "buppe, tanning" },
+        { "type": "FaceCharacterToward", "param": "tanning, player" },
+        { "type": "Wait", "param": "0.1" },
+        { "type": "FadeIn", "param": "0.2" },
+        {
+          "type": "Parallel",
+          "commands": [
+            { "type": "CenterCameraToCharacter", "param": "player, 0.8" },
+            { "type": "ZoomCamera", "param": "9.5, 0.8" }
+          ]
+        },
+        { "type": "Dialogue", "param": "D-3215D" }
+      ]
+    }
+  ]
+}

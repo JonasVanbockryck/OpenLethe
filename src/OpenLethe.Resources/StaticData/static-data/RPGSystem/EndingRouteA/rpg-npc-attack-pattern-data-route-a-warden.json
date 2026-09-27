@@ -1,0 +1,24 @@
+{
+    "list": [
+        {
+            "patternKey": "NA999999",
+            "triggerRange": 3,
+            "cooldown": 1.5,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 1.2, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 100, "mpDamage": 0, "knockbackTiles": 2, "motion": "Attack",
+                  "ignorePlayerGuard": true, "parryImmune": true,
+                  "instakillOnHit": true,
+                  "hitShape": [
+                    "XXX",
+                    "XXX",
+                    "XXX",
+                    "XXX",
+                    "XXX",
+                    "XOX"
+                  ] },
+                { "action": "Wait", "duration": 0.8 }
+            ]
+        }
+    ]
+}

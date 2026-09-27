@@ -3365,6 +3365,682 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2121011,
+      "skillType": "EGO_AWAKEN",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 3,
+          "skillTargetType": "FRONT",
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "mpUsage": 20,
+          "skillLevelCorrection": 3,
+          "defaultValue": 9,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck2121011_6_1_3",
+              "value" : 1
+            },
+            {
+              "scriptName": "BuffStackAdderBeforeAttack2121011_Combustion",
+              "value": -1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "stack": 0,
+                "turn": 0,
+                "value": 1,
+                "limit" : 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2121021",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner" : "",
+                "target": "Self",
+                "stack": 0,
+                "turn": -1,
+                "value" : 1,
+                "limit" : 7
+              }
+            },
+            {
+              "scriptName": "UseBuffTurnBeforeAttack2121011",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "stack": 0,
+                "turn": 15,
+                "value": 0.01,
+                "limit" : 15
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack2121011_IDMicroChip_Binding",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "IDMicroChip",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck2121011_6_1_3",
+              "value" : 1
+            },
+            {
+              "scriptName": "BuffStackAdderBeforeAttack2121011_Combustion",
+              "value": -1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "stack": 0,
+                "turn": 0,
+                "value": 1,
+                "limit" : 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2121011",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0,
+                "value": 1,
+                "limit" : 7
+              },
+              "value" : 3
+            },
+            {
+              "scriptName": "UseBuffTurnBeforeAttack2121011",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "stack": 0,
+                "turn": 15,
+                "value": 0.02,
+                "limit" : 30
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttack2121011",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack2121011_IDMicroChip_Binding",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "IDMicroChip",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck2121011_6_1_3",
+              "value" : 1
+            },
+            {
+              "scriptName": "BuffStackAdderBeforeAttack2121011_Combustion",
+              "value": -1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "stack": 0,
+                "turn": 0,
+                "value": 1,
+                "limit" : 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2121011",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0,
+                "value": 1,
+                "limit" : 7
+              },
+              "value" : 3
+            },
+            {
+              "scriptName": "UseBuffTurnBeforeAttack2121011",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "stack": 0,
+                "turn": 15,
+                "value": 0.03,
+                "limit" : 45
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttack2121011",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack2121011_IDMicroChip_Binding",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "IDMicroChip",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2121021,
+      "skillType": "EGO_EROSION",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "targetNum": 3,
+          "skillTargetType": "RANDOM",
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "mpUsage": 20,
+          "skillLevelCorrection": 3,
+          "defaultValue": 7,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck2121011_6_1_3",
+              "value" : 1
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2121021",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": -1,
+                "value" : 3,
+                "limit" : 10
+              }
+            },
+            {
+              "scriptName": "AttackDamageUpBeforeAttack2121021",
+              "value" : -1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "value": 0.01,
+                "limit" : 20
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnKillEnemy",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 4,
+                "activeRound" : 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 7,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "IDMicroChip",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 7
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck2121011_6_1_3",
+              "value" : 1
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2121021",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner" : "",
+                "target": "Self",
+                "stack": 0,
+                "turn": -1,
+                "value" : 3,
+                "limit" : 10
+              }
+            },
+            {
+              "scriptName": "AttackDamageUpBeforeAttack2121021",
+              "value" : -1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "value": 0.02,
+                "limit" : 40
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnKillEnemy",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 4,
+                "activeRound" : 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnKillEnemy",
+              "turnLimit" : 1,
+              "buffData": {
+                "buffKeyword": "AttackDmgUp",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound" : 1,
+                "limit" : 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 7,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "IDMicroChip",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 7,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveAttributeDamageOnSuccessAttack2121011",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "",
+                    "stack": 0,
+                    "turn": 8,
+                    "value" : 0.05,
+                    "limit" : 40
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheck2121011_6_1_3",
+              "value" : 1
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack2121021",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": -1,
+                "value": 3,
+                "limit" : 10
+              }
+            },
+            {
+              "scriptName": "AttackDamageUpBeforeAttack2121021",
+              "value" : -1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "",
+                "value": 0.03,
+                "limit" : 60
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnKillEnemy",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 4,
+                "activeRound" : 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnKillEnemy",
+              "turnLimit" : 1,
+              "buffData": {
+                "buffKeyword": "AttackDmgUp",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound" : 1,
+                "limit" : 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 7,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "IDMicroChip",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 7,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveAttributeDamageOnSuccessAttack2121011",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "",
+                    "stack": 0,
+                    "turn": 8,
+                    "value" : 0.05,
+                    "limit" : 40
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

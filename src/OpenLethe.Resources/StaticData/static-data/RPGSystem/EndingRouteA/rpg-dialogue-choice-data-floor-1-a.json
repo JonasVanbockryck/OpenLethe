@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "key": "DC3021",
+      "nextDialogueKey": "D10221",
+      "iconKey": "Warning"
+    },
+    {
+      "key": "DC3022",
+      "nextDialogueKey": "D10222",
+      "iconKey": "X"
+    }
+  ]
+}

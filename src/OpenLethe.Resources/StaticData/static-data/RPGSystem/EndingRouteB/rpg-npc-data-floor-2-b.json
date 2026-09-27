@@ -1,0 +1,434 @@
+{
+  "list": [
+    {
+      "npcKey": "N102003",
+      "corpseDialogueKey": "D-3228",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeElite.prefab",
+      "spawnMotion": "CorpseAttackBack1",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "deathMotion": "Dead_LaRougeElite",
+      "eventSounds": [
+        {
+          "soundKey": "feastLoop",
+          "audioIds": ["sfx_larouge_corpse_claw"],
+          "audibleRadius": 8
+        }
+      ]
+    },
+    {
+      "npcKey": "N102005",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Dante.prefab",
+      "footstepType": "Surface",
+      "interactionType": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102006",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Heathcliff.prefab",
+      "footstepType": "Surface",
+      "interactionType": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102007",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Faust.prefab",
+      "footstepType": "Surface",
+      "interactionType": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102008",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSickleSp.prefab",
+      "spawnMotion": "CorpseAttackBack2",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "eventSounds": [
+        {
+          "soundKey": "feastLoop",
+          "audioIds": ["sfx_larouge_corpse_stab"],
+          "audibleRadius": 8
+        }
+      ]
+    },
+    {
+      "npcKey": "N102009",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSickleSp.prefab",
+      "spawnMotion": "CorpseAttackFront3",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "eventSounds": [
+        {
+          "soundKey": "feastLoop",
+          "audioIds": ["sfx_larouge_corpse_stab"],
+          "audibleRadius": 8
+        }
+      ]
+    },
+    {
+      "npcKey": "N102010",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSickleSp.prefab",
+      "spawnMotion": "CorpseAttackLeft1",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "eventSounds": [
+        {
+          "soundKey": "feastLoop",
+          "audioIds": ["sfx_larouge_corpse_stab"],
+          "audibleRadius": 8
+        }
+      ]
+    },
+    {
+      "npcKey": "N102011",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSickleSp.prefab",
+      "spawnMotion": "CorpseAttackRight3",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "eventSounds": [
+        {
+          "soundKey": "feastLoop",
+          "audioIds": ["sfx_larouge_corpse_stab"],
+          "audibleRadius": 8
+        }
+      ]
+    },
+    {
+      "npcKey": "N102013",
+      "corpseDialogueKey": "D3923",
+      "faction": "LaNoir",
+      "moveSpeed": 0,
+      "interactionType": "Dialogue",
+      "interactionKey": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirHighDomestic.prefab",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102014",
+      "moveSpeed": 0,
+      "interactionType": "Dialogue",
+      "interactionKey": "",
+      "defaultState": "Idle",
+      "spawnMotion": "IdleLoop",
+      "prefabKey": "NPC_LuxuryCocoon_RouteB.prefab",
+      "footprintWidth": 7,
+      "footprintHeight": 5,
+      "useFillInteractionRange": true,
+      "interactionRangeLeft": 7,
+      "interactionRangeRight": 0,
+      "interactionRangeUp": 0,
+      "interactionRangeDown": 0,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "conditionalMotions": [
+        {
+          "conditionType": "Quest",
+          "conditionValue": "Q2008",
+          "motionId": "Cut"
+        }
+      ],
+      "mustNeedQuestKeys": [
+        "Q2001",
+        "Q2003",
+        "Q2004",
+        "Q2005",
+        "Q2008"
+      ]
+    },
+    {
+      "npcKey": "N102015",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSickleSp.prefab",
+      "spawnMotion": "Dead",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102016",
+      "corpseDialogueKey": "D3903",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSpaStaff.prefab",
+      "spawnMotion": "dead",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102017",
+      "corpseDialogueKey": "D-3228",
+      "faction": "LaRouge",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeElite.prefab",
+      "spawnMotion": "Dead",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "deathMotion": "Dead_LaRougeElite"
+    },
+    {
+      "npcKey": "N102018",
+      "corpseDialogueKey": "D5901",
+      "faction": "LaNoir",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LanoirGuard.prefab",
+      "spawnMotion": "Dead",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102019",
+      "corpseDialogueKey": "D3923",
+      "faction": "LaNoir",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirHighDomestic2.prefab",
+      "spawnMotion": "Dead",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102020",
+      "corpseDialogueKey": "D3923",
+      "faction": "LaNoir",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirContemporary.prefab",
+      "spawnMotion": "Dead",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102021",
+      "faction": "LaRouge",
+      "moveSpeed": 3,
+      "interactionType": "Dialogue",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeNamed.prefab",
+      "spawnMotion": "IdleTattered",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "corpseSortingOrder": 0,
+      "canTakeFieldDamage": false,
+      "collisionType": "None",
+      "conditionalMotions": [
+        {
+          "conditionType": "Cutscene",
+          "conditionValue": "C2005D",
+          "motionId": "Dead",
+          "asCorpse": true
+        },
+        {
+          "conditionType": "Quest",
+          "conditionValue": "Q2004",
+          "motionId": "IdleTattered"
+        }
+      ],
+      "interactionKey": "D2024",
+      "corpseDialogueKey": "D2092"
+    },
+    {
+      "npcKey": "N102022",
+      "corpseDialogueKey": "D3923",
+      "faction": "LaNoir",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirHighDomestic2.prefab",
+      "spawnMotion": "Dead2",
+      "footstepType": "Surface",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102023",
+      "faction": "LaRouge",
+      "moveSpeed": 3,
+      "interactionType": "Dialogue",
+      "interactionKey": "",
+      "defaultState": "Idle",
+      "prefabKey": "Npc_400041_LittleBuffe.prefab",
+      "footstepType": "Surface",
+      "dropTableKey": "DT102023",
+      "corpseDialogueKey": "D2904",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "immortal": true,
+      "invincibleType": "IgnoreHit",
+      "useFillInteractionRange": true,
+      "interactionRangeLeft": 1,
+      "interactionRangeRight": 1,
+      "interactionRangeUp": 1,
+      "interactionRangeDown": 1,
+      "collisionType": "None",
+      "mustNeedQuestKeys": [
+        "Q2001",
+        "Q2003",
+        "Q2004",
+        "Q2005",
+        "Q2008",
+        "Q2008A"
+      ]
+    },
+    {
+      "npcKey": "N102024",
+      "faction": "LaNoir",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirHighDomestic2.prefab",
+      "spawnMotion": "Dead2",
+      "footstepType": "Surface",
+      "dropTableKey": "DT102024",
+      "corpseDialogueKey": "D3923",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102025",
+      "faction": "LaNoir",
+      "moveSpeed": 0,
+      "interactionType": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirHighDomestic2.prefab",
+      "spawnMotion": "Dead3",
+      "footstepType": "Surface",
+      "dropTableKey": "DT102025",
+      "corpseDialogueKey": "D3903",
+      "fieldHp": 10,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N102091",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_GoldenHideShine.prefab",
+      "footstepType": "Surface",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2091",
+      "useFillInteractionRange": true,
+      "interactionRangeLeft": 1,
+      "interactionRangeRight": 1,
+      "interactionRangeUp": 1,
+      "interactionRangeDown": 1,
+      "canTakeFieldDamage": false,
+      "immortal": true,
+      "invincibleType": "IgnoreHit",
+      "fieldHp": 1,
+      "battleId": 0,
+      "collisionType": "None",
+      "mustNeedQuestKeys": [
+        "Q-3013"
+      ]
+    },
+    {
+      "npcKey": "N102026",
+      "faction": "LaRouge",
+      "moveSpeed": 3,
+      "defaultState": "Wander",
+      "wanderRadius": 4,
+      "prefabKey": "Npc_400041_LittleBuffe.prefab",
+      "footstepType": "Surface",
+      "detectType": "Flee",
+      "detectShape": "Omni",
+      "detectRange": 6,
+      "reactDelayAfterDetect": 0.3,
+      "doNotFaceDirectionOnDetect": "true",
+      "speedOnDetect": 8.4,
+      "maxRangeOnDetect": 10,
+      "returnType": "AreaExit",
+      "interactionType": "",
+      "interactionKey": "",
+      "canInteractWhenAlerted": true,
+      "canTakeFieldDamage": false,
+      "invincibleType": "IgnoreHit",
+      "dropTableKey": "DT102026",
+      "corpseDialogueKey": "",
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None",
+      "mustNeedQuestKeys": [
+        "Q2001",
+        "Q2003",
+        "Q2004",
+        "Q2005",
+        "Q2008",
+        "Q2008A",
+        "Q2008B"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "list": [
+    {
+      "id": 751,
+      "contentsOpenType": "PACKAGE_OPTIONAL",
+      "contents": [
+        {
+          "type": "ANNOUNCER",
+          "id": 54,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 53,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 52,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 51,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 49,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 46,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 40,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 36,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 35,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 29,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 27,
+          "num": 1
+        },
+        {
+          "type": "ANNOUNCER",
+          "id": 26,
+          "num": 1
+        }
+      ],
+      "category": "CONSUMABLE",
+      "itemUseType": "ACQUIRE_ANNOUNCER",
+      "spriteStr": "Announcer_Ticket"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "list": [
+    {
+      "key": "EQ-3000",
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-3091",
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-3092",
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-3093",
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-3094",
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-3095",
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-3096",
+      "canRepeat": false
+    },
+    {
+      "key": "E320102",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "320102, 230200"
+    },
+    {
+      "key": "EC-3102",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-3104"
+    },
+    {
+      "key": "E-3101",
+      "canRepeat": false,
+      "action1": "EndSwarmMode",
+      "actionValue1": "",
+      "action2": "PlayCutscene",
+      "actionValue2": "C-3108"
+    },
+    {
+      "key": "E-3111",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I992704, 1",
+      "action2": "PlayCutscene",
+      "actionValue2": "C-3101"
+    },
+    {
+      "key": "E-3106",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I991022, 1"
+    },
+    {
+      "key": "E-3108",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-3105",
+      "action2": "GiveItem",
+      "actionValue2": "I991016, 1",
+      "action3": "GiveItem",
+      "actionValue3": "I991012, 1"
+    },
+    {
+      "key": "EL-3005S",
+      "sessionOnly": true,
+      "canRepeat": false
+    },
+    {
+      "key": "EQ-3006",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991013, 1",
+      "action2": "RemoveItem",
+      "actionValue2": "I991004, 1",
+      "action3": "RemoveItem",
+      "actionValue3": "I991005, 1",
+      "action4": "RemoveItem",
+      "actionValue4": "I991006, 1",
+      "action5": "RemoveItem",
+      "actionValue5": "I991007, 1",
+      "action6": "RemoveItem",
+      "actionValue6": "I991008, 1",
+      "action7": "RemoveItem",
+      "actionValue7": "I991009, 1",
+      "action8": "RemoveItem",
+      "actionValue8": "I991010, 1",
+      "action9": "RemoveItem",
+      "actionValue9": "I991011, 1"
+    },
+    {
+      "key": "EQ-3003A",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I991013, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I991014, 1"
+    },
+    {
+      "key": "EQ-3003B",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I991014, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I991015, 1"
+    },
+    {
+      "key": "EQ-3003C",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I991015, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I991022, 1"
+    },
+    {
+      "key": "EW-3003A",
+      "canRepeat": true,
+      "action1": "StartSwarmMode",
+      "actionValue1": "swarm_zone_b3_tanning, N203004"
+    },
+    {
+      "key": "EW-3003B",
+      "canRepeat": true,
+      "action1": "StartSwarmMode",
+      "actionValue1": "swarm_zone_b3_milling, N203015",
+      "action2": "SetNpcInvincible",
+      "actionValue2": "N203015, 0"
+    },
+    {
+      "key": "EW-3003C",
+      "canRepeat": true,
+      "action1": "StartSwarmMode",
+      "actionValue1": "swarm_zone_b3_plaza_main, N203005"
+    },
+    {
+      "key": "EV-3003A",
+      "canRepeat": false
+    },
+    {
+      "key": "EV-3003B",
+      "canRepeat": false,
+      "action1": "SetNpcInvincible",
+      "actionValue1": "N203015, 1"
+    },
+    {
+      "key": "EV-3003C",
+      "canRepeat": false,
+      "action1": "EndSwarmMode",
+      "actionValue1": ""
+    },
+    {
+      "key": "EI-3003",
+      "canRepeat": true,
+      "action1": "SetNpcInvincible",
+      "actionValue1": "N203015, 1",
+      "action2": "SetNpcInvincible",
+      "actionValue2": "N203016, 1"
+    },
+    {
+      "key": "E-PARKINGCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "230401, 230401"
+    },
+    {
+      "key": "E-3100",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-3100"
+    },
+    {
+      "key": "EQ-3001",
+      "canRepeat": false
+    },
+    {
+      "key": "EDS801",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS801"
+    },
+    {
+      "key": "E-3503",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "EPI-B3B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990008, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990014, 1"
+    }
+  ]
+}

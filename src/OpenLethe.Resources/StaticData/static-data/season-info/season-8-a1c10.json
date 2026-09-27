@@ -1,0 +1,13 @@
+{
+  "list": [
+    {
+      "seasonId": 8,
+      "startDate": "2026-09-16T21:00:00.000Z",
+      "endDate": "2099-12-31T14:59:59.999Z",
+      "seasonalPieceRandomPackageId": 1108,
+      "seasonalPieceOptionalPackageId": 1208,
+      "seasonalPieceIdList": [ 10108, 10208, 10308, 10408, 10508, 10608, 10708, 10808, 10908, 11008, 11108, 11208 ],
+      "seasonalGlobalGrowthPiece": 12008
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+    "list": [
+        {
+            "key": "THA_G001",
+            "type": "TheaterFloorEntry",
+            "x": 20,
+            "y": 8,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G002",
+            "type": "TheaterFloorEntry",
+            "x": 22,
+            "y": 9,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G003",
+            "type": "TheaterFloorEntry",
+            "x": 24,
+            "y": 12,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G004",
+            "type": "TheaterFloorEntry",
+            "x": 26,
+            "y": 14,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G005",
+            "type": "TheaterFloorEntry",
+            "x": 28,
+            "y": 12,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G006",
+            "type": "TheaterFloorEntry",
+            "x": 30,
+            "y": 9,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G007",
+            "type": "TheaterFloorEntry",
+            "x": 32,
+            "y": 7,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G008",
+            "type": "TheaterFloorEntry",
+            "x": 34,
+            "y": 12,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        },
+        {
+            "key": "THA_G009",
+            "type": "TheaterFloorEntry",
+            "x": 36,
+            "y": 9,
+            "width": 1,
+            "height": 1,
+            "direction": "Down",
+            "defaultState": 0,
+            "appearance": "Object_Floor_1_Sign_3",
+            "interactEffect": "InteractSparkleLv3"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "list": [
+      {
+        "id": 1503,
+        "partPositionDatas": [
+          {
+            "id": 150301,
+            "offsetX": 150,
+            "offsetY": 0,
+            "lineDirection": "RIGHT"
+          },
+          {
+            "id": 150302,
+            "offsetX": -200,
+            "offsetY": 0,
+            "lineDirection": "LEFT"
+          },
+          {
+            "id": 150303,
+            "offsetX": -250,
+            "offsetY":150,
+            "lineDirection": "LEFT"
+          }
+        ]
+      }
+    ]
+}

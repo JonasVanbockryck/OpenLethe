@@ -1,0 +1,510 @@
+{
+  "list": [
+    {
+      "npcKey": "N201002",
+      "invincibleType": "IgnoreHit",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Butcher.prefab",
+      "spawnMotion": "Loop2",
+      "haltExempt": true,
+      "haltMotion": "Freeze",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1030",
+      "useFillInteractionRange": true,
+      "interactionRangeLeft": 1,
+      "interactionRangeRight": 0,
+      "interactionRangeUp": 0,
+      "interactionRangeDown": 1,
+      "footprintWidth": 9,
+      "footprintHeight": 3,
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "dropTableKey": "DT201002",
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201003",
+      "moveSpeed": 4,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Sapsaree.prefab",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1089",
+      "canTakeFieldDamage": true,
+      "fieldHp": 34,
+      "fieldHpFloor": 1,
+      "knockbackImmune": true,
+      "battleId": 11024,
+      "startBattleBelowHpPercent": 50,
+      "dropTableKey": "DT201003",
+      "corpseDialogueKey": "D-1094",
+      "collisionType": "None",
+      "deathMotion": "Dead_Sapsaree1, Dead_Sapsaree2",
+      "mustNeedQuestKeys": [
+        "Q-1004",
+        "Q-1005",
+        "Q-1006"
+      ]
+    },
+    {
+      "npcKey": "N101018",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Dante.prefab",
+      "footstepType": "Surface",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N101022",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Faust.prefab",
+      "footstepType": "Surface",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N101024",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Gregor.prefab",
+      "footstepType": "Surface",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201005",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_CollecterTypeM.prefab",
+      "interactionType": "Dialogue",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 1,
+      "battleId": 0,
+      "corpseDialogueKey": "D-1095",
+      "collisionType": "None",
+      "deathMotion": "Dead_Collector"
+    },
+    {
+      "npcKey": "N201007",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Fisherman.prefab",
+      "interactionType": "Dialogue",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 17,
+      "battleId": 0,
+      "dropTableKey": "DT201007",
+      "corpseDialogueKey": "D-1096",
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201017",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_RenoirSpaStaff.prefab",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1052",
+      "canTakeFieldDamage": true,
+      "fieldHp": 34,
+      "fieldHpFloor": 1,
+      "battleId": 11020,
+      "startBattleBelowHpPercent": 50,
+      "dropTableKey": "DT201017",
+      "corpseDialogueKey": "D3901",
+      "collisionType": "None",
+      "deathMotion": "Dead_LaNoir"
+    },
+    {
+      "npcKey": "N201018",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeSpaStaff.prefab",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1056",
+      "canTakeFieldDamage": true,
+      "fieldHp": 34,
+      "startBattleBelowHpPercent": 50,
+      "battleId": 11021,
+      "dropTableKey": "DT201018",
+      "corpseDialogueKey": "D3903",
+      "collisionType": "None",
+      "deathMotion": "Dead_LaRouge"
+    },
+    {
+      "npcKey": "N201008",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeA.prefab",
+      "spawnMotion": "EatDown",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1006",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201008",
+      "corpseDialogueKey": "D-1090",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201009",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeA.prefab",
+      "spawnMotion": "DrinkLeft1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1007",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201009",
+      "corpseDialogueKey": "D-1090",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201010",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeB.prefab",
+      "spawnMotion": "DrinkUp",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1008",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201010",
+      "corpseDialogueKey": "D-1091",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201011",
+      "moveSpeed": 1,
+      "invincibleType": "IgnoreHit",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1099",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_BupyoDalpongE.prefab",
+      "spawnMotion": "dead",
+      "fieldHp": 0,
+      "battleId": 0,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201019",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeA.prefab",
+      "spawnMotion": "DrinkLeft2",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1006",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201019",
+      "corpseDialogueKey": "D-1090",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201020",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeA.prefab",
+      "spawnMotion": "DrinkRight1",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201020",
+      "corpseDialogueKey": "D-1090",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201021",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeA.prefab",
+      "spawnMotion": "DrinkRight2",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201021",
+      "corpseDialogueKey": "D-1090",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201022",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeA.prefab",
+      "spawnMotion": "EatDown",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201022",
+      "corpseDialogueKey": "D-1090",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201023",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeB.prefab",
+      "spawnMotion": "EatLeft1",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201023",
+      "corpseDialogueKey": "D-1091",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201024",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeB.prefab",
+      "spawnMotion": "EatLeft2",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201024",
+      "corpseDialogueKey": "D-1091",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201025",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeB.prefab",
+      "spawnMotion": "EatRight1",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 6,
+      "battleId": 0,
+      "dropTableKey": "DT201025",
+      "corpseDialogueKey": "D-1091",
+      "collisionType": "None",
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioIds": ["sfx_fanatic_whisper1", "sfx_fanatic_whisper2", "sfx_fanatic_whisper3", "sfx_fanatic_whisper4"],
+          "randomOrder": true,
+          "intervalMinSeconds": 0.4,
+          "intervalMaxSeconds": 0.6,
+          "audibleRadius": 1.2
+        }
+      ]
+    },
+    {
+      "npcKey": "N201026",
+      "moveSpeed": 1,
+      "invincibleType": "IgnoreHit",
+      "interactionType": "Dialogue",
+      "interactionKey": "D-1100",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_LaRougeDalpongE.prefab",
+      "spawnMotion": "Dead",
+      "fieldHp": 0,
+      "battleId": 0,
+      "canTakeFieldDamage": false,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201027",
+      "moveSpeed": 1,
+      "defaultState": "Idle",
+      "prefabKey": "",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None",
+      "deathMotion": "Dead_Darkness",
+      "deathVignettes": [
+        {
+          "motionId": "Dead_Darkness",
+          "radiusAdd": -1.0,
+          "offsetYAdd": -0.7,
+          "offsetXAdd": 0,
+          "backdropTopOffsetYAdd": 4.5,
+          "backdropFadeHeightAdd": -2.0,
+          "fadeFromFull": true,
+          "suspendFieldLightmap": true
+        }
+      ]
+    },
+    {
+      "npcKey": "N201028",
+      "moveSpeed": 1,
+      "invincibleType": "IgnoreHit",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeB.prefab",
+      "spawnMotion": "DrinkUp",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201029",
+      "moveSpeed": 1,
+      "invincibleType": "IgnoreHit",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentSpTypeA.prefab",
+      "spawnMotion": "EatDown",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201032",
+      "moveSpeed": 3,
+      "invincibleType": "IgnoreHit",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Resident.prefab",
+      "suppressStateAura": true,
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N201033",
+      "moveSpeed": 3,
+      "invincibleType": "IgnoreHit",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_ResidentB.prefab",
+      "suppressStateAura": true,
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    }
+  ]
+}

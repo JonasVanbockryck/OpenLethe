@@ -14,18 +14,20 @@
         {
           "id": 1,
           "storyId": "E080X",
-          "nodeId": 902001
+          "nodeId": 902001,
+          "fullBannerId": "Story_BG/story_w_mobileoperationcenter_in_green"
         },
         {
           "id": 2,
           "storyId": "E081X",
           "nodeId": 902002,
-          "bannerId":"E082X" 
+          "fullBannerId": "Story_BG/story_central_command_team_broken"
         },
         {
           "id": 3,
           "storyId": "E082X",
-          "nodeId": 902003
+          "nodeId": 902003,
+          "fullBannerId": "Story_BG/story_central_command_team_broken"
         }
       ]
     }

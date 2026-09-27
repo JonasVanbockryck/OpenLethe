@@ -1,0 +1,27 @@
+{
+  "list": [
+    {
+      "key": "Lock_GoldenHide",
+      "floorKeys": [],
+      "lockActiveQuestKey": "Q-3000",
+      "excepts": [
+        {
+          "onFloorKey": "FB1002B",
+          "openFloorKeys": ["FB1003B"],
+          "releaseQuestKey": "Q-3010"
+        }
+      ],
+      "noticeEventKey": "EB-9181"
+    },
+    {
+      "key": "Lock_Restaurant",
+      "floorKeys": [],
+      "lockCompleteQuestKey": "Q5009",
+      "excepts": [
+        {
+          "openFloorKeys": ["F1005B"]
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@
       "category": "PACKAGE",
       "returnpolicytype": "PACKAGE_B",
       "productId": "start_package_season_7th",
+      "isDisabled": true,
       "priceTier": 11,
       "chanceId": 1605,
       "defaultElements": [
@@ -22,6 +23,7 @@
       "category": "PACKAGE",
       "returnpolicytype": "PACKAGE_B",
       "productId": "settlement_package_season_7th",
+      "isDisabled": true,
       "priceTier": 54,
       "chanceId": 1606,
       "defaultElements": [
@@ -57,7 +59,7 @@
         }
       ],
       "priorityForUI": 601,
-      "ar":true
+      "ar":false
     },
 
 
@@ -66,6 +68,7 @@
       "category": "PACKAGE",
       "returnpolicytype": "GROWTH_A",
       "productId": "exp_package_weekly_1_s7",
+      "isDisabled": true,
       "priceTier": 7,
       "chanceId": 1158,
       "defaultElements": [
@@ -88,6 +91,7 @@
       "category": "PACKAGE",
       "returnpolicytype": "GROWTH_A",
       "productId": "exp_package_monthly_1_s7",
+      "isDisabled": true,
       "priceTier": 19,
       "chanceId": 1159,
       "defaultElements": [
@@ -110,6 +114,7 @@
       "category": "PACKAGE",
       "returnpolicytype": "GROWTH_A",
       "productId": "exp_package_monthly_2_s7",
+      "isDisabled": true,
       "priceTier": 33,
       "chanceId": 1160,
       "defaultElements": [
@@ -132,6 +137,7 @@
       "category": "PACKAGE",
       "returnpolicytype": "GROWTH_A",
       "productId": "exp_package_monthly_3_s7",
+      "isDisabled": true,
       "priceTier": 53,
       "chanceId": 1161,
       "defaultElements": [
@@ -156,6 +162,7 @@
       "category": "PACKAGE",
       "returnpolicytype": "GROWTH_A",
       "productId": "growth_package_monthly_1_s7",
+      "isDisabled": true,
       "priceTier": 31,
       "chanceId": 1108,
       "defaultElements": [
@@ -1004,6 +1011,152 @@
       ],
       "endDate": "2026-07-23T01:00:00.000Z",
       "priorityForUI": 988,
+      "ar":true
+    },
+    {
+      "id": 497,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha288_extraction_package_1st",
+      "priceTier": 22,
+      "chanceId": 1497,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 4
+        }
+      ],
+      "endDate": "2026-08-06T01:00:00.000Z",
+      "priorityForUI": 992,
+      "ar":true
+    },
+    {
+      "id": 498,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha288_growth_package_1st",
+      "priceTier": 22,
+      "chanceId": 1498,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 232,
+          "num": 1
+        },
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 80
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 20
+        }
+      ],
+      "endDate": "2026-08-06T01:00:00.000Z",
+      "priorityForUI": 990,
+      "ar":true
+    },
+    {
+      "id": 499,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha290_extraction_package_1st",
+      "priceTier": 22,
+      "chanceId": 1499,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 4
+        }
+      ],
+      "endDate": "2026-08-20T01:00:00.000Z",
+      "priorityForUI": 992,
+      "ar":true
+    },
+    {
+      "id": 500,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha290_growth_package_1st",
+      "priceTier": 12,
+      "chanceId": 1500,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 238,
+          "num": 1
+        }
+      ],
+      "endDate": "2026-08-20T01:00:00.000Z",
+      "priorityForUI": 990,
+      "ar":true
+    },
+    {
+      "id": 501,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha292_growth_package_1st",
+      "priceTier": 22,
+      "chanceId": 1501,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 232,
+          "num": 1
+        },
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 80
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 20
+        }
+      ],
+      "endDate": "2026-09-03T01:00:00.000Z",
+      "priorityForUI": 990,
+      "ar":true
+    },
+    {
+      "id": 502,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha294_extraction_package_1st",
+      "priceTier": 22,
+      "chanceId": 1502,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 4
+        }
+      ],
+      "endDate": "2026-09-16T21:00:00.000Z",
+      "priorityForUI": 992,
+      "ar":true
+    },
+    {
+      "id": 503,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha294_growth_package_1st",
+      "priceTier": 14,
+      "chanceId": 1503,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 237,
+          "num": 1
+        }
+      ],
+      "endDate": "2026-09-16T21:00:00.000Z",
+      "priorityForUI": 990,
       "ar":true
     }
   ]

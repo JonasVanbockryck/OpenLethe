@@ -276,6 +276,70 @@
       "buffType": "Neutral",
       "canBeDespelled": false,
       "list": []
+    },
+    {
+      "id": "SupportAlly",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "SupportEnemy",
+      "iconId": "SupportAlly",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "PersonalityCombustion",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "PersonalityLaceration",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "PersonalityVibration",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "PersonalityBurst",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "PersonalitySinking",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "PersonalityBreath",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "PersonalityCharge",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "list": []
     }
   ]
 }

@@ -1,0 +1,48 @@
+{
+    "list": [
+        {
+            "key":"LadyInBlue",
+            "colorCode": "#515aee"
+        },
+        {
+            "key":"LaRouge",
+            "colorCode": "#ca3834"
+        },
+        {
+            "key":"LaNoir",
+            "colorCode": "#b9a357"
+        },
+        {
+            "key":"Buoy",
+            "colorCode": "#c5af90"
+        },
+        {
+            "key":"Dissolution",
+            "colorCode": "#e2ba41"
+        },
+        {
+            "key":"None",
+            "colorCode": "#ffffff"
+        },
+        {
+            "key":"FieldStatEnemy",
+            "colorCode": "#e94722"
+        },
+        {
+            "key":"FieldStatAlly",
+            "colorCode": "#00ff94"
+        },
+        {
+            "key":"FieldStatSelf",
+            "colorCode": "#00ff94"
+        },
+        {
+            "key":"FieldStatSwarmTimer",
+            "colorCode": "#f8c200"
+        },
+        {
+            "key":"FieldStatSwarmGuardTarget",
+            "colorCode": "#26c831"
+        }
+    ]
+}

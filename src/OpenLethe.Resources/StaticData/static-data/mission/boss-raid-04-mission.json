@@ -1,0 +1,97 @@
+{
+  "list": [
+    {
+      "id": 301004001,
+      "category": "BOSS_RAID_04_NORMAL",
+      "requiredCondition": { "id": 301004001, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 20045, "num": 25 }
+      ],
+      "uiConfig": { "comment": "노말 클리어" }
+    },
+    {
+      "id": 301004002,
+      "category": "BOSS_RAID_04_NORMAL",
+      "requiredCondition": { "id": 301004002, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 20045, "num": 50 }
+      ],
+      "uiConfig": { "comment": "노말 32턴 이하 클리어" }
+    },
+    {
+      "id": 301004003,
+      "category": "BOSS_RAID_04_NORMAL",
+      "requiredCondition": { "id": 301004003, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 20045, "num": 75 }
+      ],
+      "uiConfig": { "comment": "노말 28턴 이하 클리어" }
+    },
+    {
+      "id": 301004004,
+      "category": "BOSS_RAID_04_NORMAL",
+      "requiredCondition": { "id": 301004004, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 2, "num": 150 },
+        { "type": "ITEM", "id": 20045, "num": 100 },
+        { "type": "USERBANNER", "id": 93, "num": 1 }
+      ],
+      "uiConfig": { "comment": "노말 24턴 이하 클리어" }
+    },
+    {
+      "id": 301004005,
+      "category": "BOSS_RAID_04_HARD",
+      "requiredCondition": { "id": 301004005, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 2, "num": 100 },
+        { "type": "ITEM", "id": 20045, "num": 100 },
+        {
+          "type": "USER_TICKET_DECO_LEFT",
+          "id": 83,
+          "num": 1
+        },
+        {
+          "type": "USER_TICKET_DECO_RIGHT",
+          "id": 83,
+          "num": 1
+        },
+        {
+          "type": "USER_TICKET_DECO_EGOBG",
+          "id": 83,
+          "num": 1
+        }
+      ],
+      "uiConfig": { "comment": "하드 클리어" }
+    },
+    {
+      "id": 301004006,
+      "category": "BOSS_RAID_04_HARD",
+      "requiredCondition": { "id": 301004006, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 2, "num": 100 },
+        { "type": "ITEM", "id": 20045, "num": 150 }
+      ],
+      "uiConfig": { "comment": "하드 30턴 이하 클리어" }
+    },
+    {
+      "id": 301004007,
+      "category": "BOSS_RAID_04_HARD",
+      "requiredCondition": { "id": 301004007, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 2, "num": 100 },
+        { "type": "ITEM", "id": 20045, "num": 200 }
+      ],
+      "uiConfig": { "comment": "하드 24턴 이하 클리어" }
+    },
+    {
+      "id": 301004008,
+      "category": "BOSS_RAID_04_HARD",
+      "requiredCondition": { "id": 301004008, "value": 1 },
+      "rewards": [
+        { "type": "ITEM", "id": 2, "num": 200 },
+        { "type": "ITEM", "id": 20045, "num": 300 }
+      ],
+      "uiConfig": { "comment": "하드 18턴 이하 클리어" }
+    }
+  ]
+}

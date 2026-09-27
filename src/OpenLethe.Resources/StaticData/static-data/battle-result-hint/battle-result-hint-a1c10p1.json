@@ -1,0 +1,104 @@
+{
+  "list": [
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11006,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11006_1",
+                "battleTip_11006_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11008,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11008_1",
+                "battleTip_11008_2",
+                "battleTip_11008_3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11010,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11010_1",
+                "battleTip_11010_2",
+                "battleTip_11010_3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11011,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11011_1",
+                "battleTip_11011_2",
+                "battleTip_11011_3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11016,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11016_1",
+                "battleTip_11016_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stageType": "NORMAL_BATTLE",
+      "dataList": [
+        {
+          "id": 11024,
+          "conditions": [
+            {
+              "textIds": [
+                "battleTip_11008_1",
+                "battleTip_11008_2",
+                "battleTip_11008_3"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

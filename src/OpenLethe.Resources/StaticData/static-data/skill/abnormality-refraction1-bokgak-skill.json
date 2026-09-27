@@ -593,16 +593,6 @@
           "abilityScriptList": [
             {
               "scriptName": "EmptyBody"
-            },
-            {
-              "scriptName": "GiveBuffOnUse",
-              "buffData": {
-                "buffKeyword": "Protection",
-                "target": "self",
-                "stack": 2,
-                "turn": 0,
-                "activeRound": 0
-              }
             }
           ],
           "coinList": [

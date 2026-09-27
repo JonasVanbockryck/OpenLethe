@@ -1,0 +1,157 @@
+{
+  "list": [
+    {
+      "key": "DP_B3_Control",
+      "portrait": "Story_StandingSprite/B3_ControlFace.png",
+      "centerX": 560,
+      "centerY": 570,
+      "size": 500,
+      "background": ""
+    },
+    {
+      "key": "DP_B3_SizeMan",
+      "portrait": "Story_StandingSprite/B3_SizeMan.png",
+      "centerX": 560,
+      "centerY": 460,
+      "size": 310,
+      "background": ""
+    },
+    {
+      "key": "DP_B3_Grower",
+      "portrait": "Story_StandingSprite/B3F_Grower.png",
+      "centerX": 150,
+      "centerY": 105,
+      "size": 216,
+      "background": ""
+    },
+    {
+      "key": "DP_B3_Scraper",
+      "portrait": "Story_StandingSprite/B3F_Scraper.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_B3_LeatherMonster",
+      "portrait": "Story_StandingSprite/B3F_LeatherMonster.png",
+      "centerX": 1200,
+      "centerY": 1700,
+      "size": 2000,
+      "background": ""
+    },
+    {
+      "key": "DP_Bbuee",
+      "portrait": "Story_StandingModel/Buffet_Child.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_Bbuee_Cloth",
+      "portrait": "Story_StandingModel/Buffet_ChildCloth.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_Bbuee_Shoes",
+      "portrait": "Story_StandingModel/Buffet_ChildShoses.psb",
+      "size": 216,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_4F_Bag",
+      "portrait": "Story_StandingSprite/4F_Bag.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": "",
+      "colorCodeKey": "LaNoir"
+    },
+    {
+      "key": "DP_4F_Rouge_BagA",
+      "portrait": "Story_StandingSprite/4F_Rouge_BagA.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_4F_Rouge_BagB",
+      "portrait": "Story_StandingSprite/4F_Rouge_BagB.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    },
+    {
+      "key": "DP_4F_hairBag",
+      "portrait": "Story_StandingSprite/4F_hairBag.png",
+      "centerX": 585,
+      "centerY": 990,
+      "size": 1000,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_teethBag",
+      "portrait": "Story_StandingSprite/4F_teethBag.png",
+      "centerX": 576,
+      "centerY": 1070,
+      "size": 1000,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_eyeBag",
+      "portrait": "Story_StandingSprite/4F_eyeBag.png",
+      "centerX": 546,
+      "centerY": 1010,
+      "size": 1000,
+      "background": ""
+    },
+    {
+      "key": "DP_B1F_Godot",
+      "portrait": "Story_StandingSprite/B1F_Godot.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_B2F_Echeveau2",
+      "portrait": "Story_StandingSprite/B2F_Echeveau.png",
+      "centerX": 845,
+      "centerY": 615,
+      "size": 305,
+      "background": ""
+    },
+    {
+      "key": "DP_B2F_Echeveau3",
+      "portrait": "Story_StandingSprite/B2F_Echeveau.png",
+      "centerX": 1160,
+      "centerY": 660,
+      "size": 305,
+      "background": ""
+    },
+    {
+      "key": "DP_4F_Leneant",
+      "portrait": "Story_StandingSprite/LeNeant2.png",
+      "centerX": 128,
+      "centerY": 128,
+      "size": 256,
+      "background": ""
+    },
+    {
+      "key": "DP_Buffet_Adult",
+      "portrait": "Story_StandingSprite/Buffet_Adult_P.png",
+      "centerX": 996,
+      "centerY": -178,
+      "size": 325,
+      "background": "",
+      "colorCodeKey": "LaRouge"
+    }
+  ]
+}

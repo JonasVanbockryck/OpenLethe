@@ -1,0 +1,87 @@
+{
+  "list": [
+    {
+      "npcKey": "N102014",
+      "order": 20,
+      "conditionType": "Quest",
+      "conditionValue": "Q2008",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2017",
+      "skipIfComplete": false,
+      "interactEffect": ""
+    },
+    {
+      "npcKey": "N102014",
+      "order": 15,
+      "conditionType": "Cutscene",
+      "conditionValue": "C2015",
+      "interactionType": "Cutscene",
+      "interactionKey": "C2005",
+      "skipIfComplete": false,
+      "interactEffect": ""
+    },
+    {
+      "npcKey": "N102014",
+      "order": 10,
+      "conditionType": "Cutscene",
+      "conditionValue": "C2014",
+      "interactionType": "Cutscene",
+      "interactionKey": "C2015",
+      "skipIfComplete": false,
+      "interactEffect": ""
+    },
+    {
+      "npcKey": "N102014",
+      "order": 5,
+      "conditionType": "Cutscene",
+      "conditionValue": "C2004",
+      "interactionType": "Cutscene",
+      "interactionKey": "C2014",
+      "skipIfComplete": false,
+      "interactEffect": ""
+    },
+    {
+      "npcKey": "N102014",
+      "order": 3,
+      "conditionType": "Quest",
+      "conditionValue": "Q2005",
+      "interactionType": "Cutscene",
+      "interactionKey": "C2004",
+      "skipIfComplete": false,
+      "interactEffect": "",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N102021",
+      "order": 10,
+      "conditionType": "Cutscene",
+      "conditionValue": "C2005D",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2023",
+      "skipIfComplete": false,
+      "interactEffect": ""
+    },
+    {
+      "npcKey": "N102023",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q2008",
+      "interactionType": "Event",
+      "interactionKey": "E2009A",
+      "skipIfComplete": false,
+      "interactEffect": "",
+      "showQuestMark": true
+    },
+    {
+      "npcKey": "N102026",
+      "order": 10,
+      "conditionType": "Quest",
+      "conditionValue": "Q2008A",
+      "interactionType": "Event",
+      "interactionKey": "E2009C",
+      "skipIfComplete": false,
+      "interactEffect": "",
+      "showQuestMark": true
+    }
+  ]
+}

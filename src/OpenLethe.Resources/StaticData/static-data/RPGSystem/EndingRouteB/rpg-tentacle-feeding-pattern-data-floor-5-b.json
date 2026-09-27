@@ -1,0 +1,40 @@
+{
+  "patterns": [
+    {
+      "key": "normal",
+      "weight": 1,
+      "extendSeconds": 0.65,
+      "eatSeconds": 0.8,
+      "retractSeconds": 1,
+      "restSeconds": 0.4,
+      "eatAnimationSpeed": 1
+    },
+    {
+      "key": "rush",
+      "weight": 3,
+      "extendSeconds": 0.24,
+      "eatSeconds": 0.55,
+      "retractSeconds": 0.3,
+      "restSeconds": 0.35,
+      "eatAnimationSpeed": 2.2
+    },
+    {
+      "key": "feast",
+      "weight": 2,
+      "extendSeconds": 0.3,
+      "eatSeconds": 1.1,
+      "retractSeconds": 0.35,
+      "restSeconds": 0.45,
+      "eatAnimationSpeed": 2.6
+    },
+    {
+      "key": "snatch",
+      "weight": 2,
+      "extendSeconds": 0.18,
+      "eatSeconds": 0.25,
+      "retractSeconds": 0.22,
+      "restSeconds": 0.3,
+      "eatAnimationSpeed": 3
+    }
+  ]
+}

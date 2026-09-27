@@ -1,0 +1,1195 @@
+{
+  "list": [
+    {
+      "itemKey": "I104004",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I104004.png"
+    },
+    {
+      "itemKey": "I104005",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AliuneMark",
+          "markLoopEffectKey": "AliuneMark",
+          "controlValue": [
+            -1,
+            10000,
+            913424447,
+            0,
+            5,
+            1,
+            10000
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I104005.png",
+      "dropVfxLevel": 3
+    },
+    {
+      "itemKey": "I104006",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I104006.png"
+    },
+    {
+      "itemKey": "I104007",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I104007.png"
+    },
+    {
+      "itemKey": "I104008",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I104008.png"
+    },
+    {
+      "itemKey": "I990311",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [],
+      "image": "RPGSystem/Item/Icons/I990311.png"
+    },
+    {
+      "itemKey": "I990313",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I990313.png",
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldImmortalChance",
+          "controlValue": [
+            10,
+            1
+          ]
+        },
+        {
+          "scriptId": "FieldMaxHpAdd",
+          "controlValue": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "itemKey": "I990417",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990417
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990417.png"
+    },
+    {
+      "itemKey": "I991012",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            993012
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I991012.png"
+    },
+    {
+      "itemKey": "I991013",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991013.png"
+    },
+    {
+      "itemKey": "I991014",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991014.png"
+    },
+    {
+      "itemKey": "I991015",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991015.png"
+    },
+    {
+      "itemKey": "I991016",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            993016
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I991016.png"
+    },
+    {
+      "itemKey": "I991022",
+      "image": "RPGSystem/Item/Icons/I991022.png",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false
+    },
+    {
+      "itemKey": "I992705",
+      "image": "RPGSystem/Item/Icons/I992705.png",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false
+    },
+    {
+      "itemKey": "I990423",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "StationaryFieldDamageReduce",
+          "controlValue": [
+            2
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990423.png"
+    },
+    {
+      "itemKey": "I990808",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldKillHpRecover",
+          "controlValue": [
+            3,
+            4
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990808.png"
+    },
+    {
+      "itemKey": "I990807",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldAttackSpeedMultiplier",
+          "controlValue": [
+            15
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990807.png"
+    },
+    {
+      "itemKey": "I990113",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldMaxHpAdd",
+          "controlValue": [
+            3
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990113.png"
+    },
+    {
+      "itemKey": "I990114",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldAttackPowerAdd",
+          "controlValue": [
+            1
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990114.png"
+    },
+    {
+      "itemKey": "I990115",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "DodgeEnable",
+          "effectTimelineKey": "FX_Dodge_Default",
+          "controlValue": [
+            300,
+            20,
+            500
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990115.png"
+    },
+    {
+      "itemKey": "I990116",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldMaxHpAdd",
+          "controlValue": [
+            3
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990116.png"
+    },
+    {
+      "itemKey": "I990111",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FlashAttackEnable",
+          "controlValue": [
+            2500,
+            2,
+            2
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990111.png"
+    },
+    {
+      "itemKey": "I990112",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "JustGuardEnable",
+          "effectTimelineKey": "FX_JustGuard_Default",
+          "controlValue": [
+            300
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990112.png"
+    },
+    {
+      "itemKey": "I990418",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FlashDashOnLevel",
+          "controlValue": [
+            2,
+            3,
+            2400
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990418.png"
+    },
+    {
+      "itemKey": "I990419",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FlashChargeSpeedRateAdd",
+          "controlValue": [
+            25
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990419.png"
+    },
+    {
+      "itemKey": "I990811",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldMaxHpAdd",
+          "controlValue": [
+            4
+          ]
+        },
+        {
+          "scriptId": "FlashAttackIdOverride",
+          "attackId": "BasicB",
+          "controlValue": [
+            2
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990811.png"
+    },
+    {
+      "itemKey": "I990812",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990812
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990812.png"
+    },
+    {
+      "itemKey": "I991019",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AttackIdPowerStaggerAdd",
+          "controlValue": [
+            763609192,
+            3,
+            0
+          ]
+        },
+        {
+          "scriptId": "AttackIdPowerStaggerAdd",
+          "controlValue": [
+            813942049,
+            3,
+            0
+          ]
+        },
+        {
+          "scriptId": "AttackIdPowerStaggerAdd",
+          "controlValue": [
+            797164430,
+            3,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I991019.png"
+    },
+    {
+      "itemKey": "I991020",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FlashDashSpeedRateAdd",
+          "controlValue": [
+            30
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I991020.png"
+    },
+    {
+      "itemKey": "I991021",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "ChargeGuardEnable"
+        },
+        {
+          "scriptId": "FieldMaxHpAdd",
+          "controlValue": [
+            4
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I991021.png"
+    },
+    {
+      "itemKey": "I990316",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldAttackSpeedMultiplier",
+          "controlValue": [
+            10
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990316.png"
+    },
+    {
+      "itemKey": "I990420",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "ArmedStepAttackPowerAdd",
+          "controlValue": [
+            2
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990420.png"
+    },
+    {
+      "itemKey": "I990421",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "DodgeChargeAdd",
+          "controlValue": [
+            1
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990421.png"
+    },
+    {
+      "itemKey": "I990426",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "EngagementChainHpRecover",
+          "controlValue": [
+            1,
+            1
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990426.png"
+    },
+    {
+      "itemKey": "I990424",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AdditionalAttackOnSucceedParry",
+          "controlValue": [
+            3,
+            761070357,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990424.png"
+    },
+    {
+      "itemKey": "I990425",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldAttackPowerAddParry",
+          "controlValue": [
+            2
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990425.png"
+    },
+    {
+      "itemKey": "I990427",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "HpDamageToAttackerOnGuard",
+          "controlValue": [
+            3,
+            100,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990427.png"
+    },
+    {
+      "itemKey": "I990428",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AdditionalAttackOnJustGuard",
+          "controlValue": [
+            100,
+            1936262430,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990428.png"
+    },
+    {
+      "itemKey": "I990429",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "KnockBackAttackerOnJustGuardAfter",
+          "controlValue": [
+            1,
+            1,
+            100,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990429.png"
+    },
+    {
+      "itemKey": "I990912",
+      "itemType": "Etc",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "DebuffTileOnRun",
+          "debuffTileKey": "HZ000006",
+          "controlValue": []
+        },
+        {
+          "scriptId": "FieldMaxHpAdd",
+          "controlValue": [
+            4
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990912.png"
+    },
+    {
+      "itemKey": "I990913",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "ChainAttackOnSucceedAttack",
+          "controlValue": [
+            100,
+            150,
+            1420100066,
+            0,
+            3,
+            5,
+            3,
+            1,
+            80,
+            20,
+            10,
+            614853217,
+            599951234
+          ]
+        },
+        {
+          "scriptId": "AttackIdHitAreaLengthAdd",
+          "controlValue": [
+            1590543949,
+            1
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990913.png"
+    },
+    {
+      "itemKey": "I990915",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AttackIdPowerStaggerAdd",
+          "controlValue": [
+            1573766330,
+            2,
+            100
+          ]
+        },
+        {
+          "scriptId": "KillKnockbackBurst",
+          "controlValue": [
+            1573766330,
+            5,
+            1,
+            2,
+            0,
+            3000,
+            1554740052
+          ]
+        },
+        {
+          "scriptId": "EngagementChainHpRecover",
+          "controlValue": [
+            2,
+            1
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990915.png"
+    },
+    {
+      "itemKey": "I990916",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990916
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990916.png"
+    },
+    {
+      "itemKey": "I990926",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I990926.png"
+    },
+    {
+      "itemKey": "I990422",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AttackIdHitAreaLengthAdd",
+          "controlValue": [
+            2124293872,
+            1
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990422.png"
+    },
+    {
+      "itemKey": "I990809",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "ChainAttackOnSucceedAttack",
+          "controlValue": [
+            30,
+            150,
+            979764792,
+            0,
+            3,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990809.png"
+    },
+    {
+      "itemKey": "I990317",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "DodgeChainAttack",
+          "controlValue": [
+            20,
+            3,
+            1705368458,
+            0
+          ]
+        },
+        {
+          "scriptId": "FieldMaxHpAdd",
+          "controlValue": [
+            2
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990317.png"
+    },
+    {
+      "itemKey": "I990318",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AttackIdHitAreaLengthAdd",
+          "controlValue": [
+            1590543949,
+            1
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990318.png"
+    },
+    {
+      "itemKey": "I990810",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "KillLaunchTileProjectile",
+          "controlValue": [
+            20,
+            3000,
+            200,
+            10,
+            1,
+            5,
+            1
+          ],
+          "projectileKey": "Projectile_BlackFluid"
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990810.png"
+    },
+    {
+      "itemKey": "I991018",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991018.png"
+    },
+    {
+      "itemKey": "I990918",
+      "image": "RPGSystem/Item/Icons/I990918.png",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990918
+          ]
+        }
+      ]
+    },
+    {
+      "itemKey": "I990813",
+      "itemType": "BuffetUpgrade",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990813
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990813.png"
+    },
+    {
+      "itemKey": "I990315",
+      "itemType": "Survival",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "GuardDamageReducePercent",
+          "controlValue": [
+            20
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990315.png"
+    },
+    {
+      "itemKey": "I990914",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FlashAttackEnable",
+          "controlValue": [
+            3000,
+            3,
+            3
+          ]
+        },
+        {
+          "scriptId": "FlashDashOnLevel",
+          "controlValue": [
+            2,
+            2,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990914.png"
+    },
+    {
+      "itemKey": "I991017",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FlashAttackIdOverride",
+          "attackId": "BasicC",
+          "combinedAttackId": "BasicBC",
+          "controlValue": [
+            3
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I991017.png"
+    },
+    {
+      "itemKey": "I990917",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "NeedleKingMark",
+          "markLoopEffectKey": "NeedleKingMark",
+          "controlValue": [
+            1590543949,
+            5000,
+            30,
+            1737382014,
+            972290163,
+            0,
+            5
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990917.png"
+    },
+    {
+      "itemKey": "I102024",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "GuardNextHitPowerAdd",
+          "controlValue": [
+            2,
+            5
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I102024.png"
+    },
+    {
+      "itemKey": "I990319",
+      "itemType": "AdditionalAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "AdditionalAttackOnSucceedAttack",
+          "controlValue": [
+            30,
+            0,
+            1064767292,
+            5
+          ]
+        },
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990314
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990319.png"
+    },
+    {
+      "itemKey": "I991004",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991004.png"
+    },
+    {
+      "itemKey": "I991005",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991005.png"
+    },
+    {
+      "itemKey": "I991006",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991006.png"
+    },
+    {
+      "itemKey": "I991007",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991007.png"
+    },
+    {
+      "itemKey": "I991008",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991008.png"
+    },
+    {
+      "itemKey": "I991009",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991009.png"
+    },
+    {
+      "itemKey": "I991010",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991010.png"
+    },
+    {
+      "itemKey": "I991011",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "image": "RPGSystem/Item/Icons/I991011.png"
+    },
+    {
+      "itemKey": "I990501",
+      "itemType": "Etc",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990501
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990501.png"
+    },
+    {
+      "itemKey": "I990002",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldAttackPowerAdd",
+          "controlValue": [
+            1
+          ]
+        },
+        {
+          "scriptId": "FieldDamageReducePercent",
+          "controlValue": [
+            10
+          ]
+        },
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990002
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990002.png"
+    },
+    {
+      "itemKey": "I990004",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "GuardEnable",
+          "effectTimelineKey": "FX_GuardBlock_Default",
+          "controlValue": [
+            0
+          ]
+        },
+        {
+          "scriptId": "GuardDamageReducePercent",
+          "controlValue": [
+            30
+          ]
+        },
+        {
+          "scriptId": "ParryEnable",
+          "effectTimelineKey": "FX_Parry_Default",
+          "controlValue": [
+            200
+          ]
+        },
+        {
+          "scriptId": "AttackIdPowerStaggerAdd",
+          "controlValue": [
+            1590543949,
+            2,
+            100
+          ]
+        },
+        {
+          "scriptId": "AttackIdPowerStaggerAdd",
+          "controlValue": [
+            1573766330,
+            2,
+            100
+          ]
+        },
+        {
+          "scriptId": "EngagementChainHpRecover",
+          "controlValue": [
+            1,
+            0
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990004.png"
+    },
+    {
+      "itemKey": "I990431",
+      "itemType": "BasicAttack",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "DodgeNextHitPowerAdd",
+          "controlValue": [
+            3,
+            10
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990431.png"
+    }
+  ]
+}

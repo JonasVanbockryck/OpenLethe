@@ -9,31 +9,36 @@
           "id": 1,
           "storyId": "E718B",
           "nodeId": 911601,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E708"
         },
         {
           "id": 2,
           "storyId": "E719B",
           "nodeId": 911602,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_CG/E704"
         },
         {
           "id": 3,
           "storyId": "E719A",
           "nodeId": 911602,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_h_entrance"
         },
         {
           "id": 4,
           "storyId": "E720B",
           "nodeId": 911603,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_h_entrance"
         },
         {
           "id": 5,
           "storyId": "E721B",
           "nodeId": 911604,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_h_entrance"
         },
         {
           "id": 6,
@@ -45,61 +50,71 @@
           "id": 7,
           "storyId": "E722B",
           "nodeId": 911605,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_h_entrance"
         },
         {
           "id": 8,
           "storyId": "E722A",
           "nodeId": 911605,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_h_inside"
         },
         {
           "id": 9,
           "storyId": "E723B",
           "nodeId": 911606,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hotel_inside"
         },
         {
           "id": 10,
           "storyId": "E724B",
           "nodeId": 911607,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hotel_inside_sleepinglight"
         },
         {
           "id": 11,
           "storyId": "E725B",
           "nodeId": 911608,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hotel room_broken_dark"
         },
         {
           "id": 12,
           "storyId": "E725A",
           "nodeId": 911609,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_BG/story_hotel_inside_broken"
         },
         {
           "id": 13,
           "storyId": "E726B",
           "nodeId": 911610,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hotel_inside_broken"
         },
         {
           "id": 14,
           "storyId": "E726A",
           "nodeId": 911610,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E705"
         },
         {
           "id": 15,
           "storyId": "E727A",
           "nodeId": 911611,
-          "stageDetail": "After"
+          "stageDetail": "After",
+          "fullBannerId": "Story_CG/E706_4"
         },
         {
           "id": 16,
           "storyId": "E728B",
           "nodeId": 911612,
-          "stageDetail": "Before"
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_hotel_inside_clean"
         }
       ]
     }

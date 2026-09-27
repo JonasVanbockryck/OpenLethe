@@ -1,0 +1,1389 @@
+{
+  "list": [
+    {
+      "key": "C2001",
+      "controlArrivalFade": true,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "DialogueOverFade",
+          "param": "D20041"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 71, 60"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 71, 62"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "heath, 70, 62"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, 72, 62"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "player, Up"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "heath, Down"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "faust, Down"
+            }
+          ]
+        },
+        {
+          "type": "MoveCamera",
+          "param": "71, 61, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2004"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2005"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2006"
+        }
+      ]
+    },
+    {
+      "key": "C2002",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "guard",
+          "kind": "Npc",
+          "actorKey": "N102002"
+        },
+        {
+          "actorName": "mob",
+          "kind": "Npc",
+          "actorKey": "N102004"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Up"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "faust, Up"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "heath, Up"
+            }
+          ]
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 2, 0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2002"
+        }
+      ]
+    },
+    {
+      "key": "C2003",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "guard",
+          "kind": "Npc",
+          "actorKey": "N102041"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "FaceCharacter",
+              "param": "dante, Up"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "faust, Up"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "heath, Up"
+            }
+          ]
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 2, 0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2009"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D20091"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "player, guard, 3, -1"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, guard"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "guard, 12, 67"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "guard, Right"
+        }
+      ]
+    },
+    {
+      "key": "C2004",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "player, 69, 126"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 68, 125"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "heath, 70, 125"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "faust, 69, 124"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2010"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "69, 185, 0.8"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2011"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.8"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N102040, guard, 0, 69, 138"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "guard, Down"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "guard, 69, 128, 6, 3.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D20111"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "guard, 69, 127, 6, 3.0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "7, 0.4"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "guard, 0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D201111"
+        },
+        {
+          "type": "Die",
+          "param": "guard"
+        },
+        {
+          "type": "Wait",
+          "param": "1.2"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0.5"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D201112"
+        }
+      ]
+    },
+    {
+      "key": "C2005",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "cocoon",
+          "kind": "Npc",
+          "actorKey": "N102018"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        }
+      ],
+      "commands": [
+        {
+          "type": "PlayMotion",
+          "param": "cocoon, Cutting"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_cocoon_tear"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_cocoon_shockwave"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.3, 0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Knockback",
+              "param": "player, Down, 2, 0.25"
+            },
+            {
+              "type": "Knockback",
+              "param": "dante, Down, 2, 0.25"
+            },
+            {
+              "type": "Knockback",
+              "param": "faust, Down, 2, 0.25"
+            },
+            {
+              "type": "Knockback",
+              "param": "heath, Down, 2, 0.25"
+            }
+          ]
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N102047, newborn, 0, 68, 234"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_buffet_flop"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 68, 232"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 67, 232"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, 69, 232"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "heath, 66, 232"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "68, 234, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "3, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "68, 237, 5.0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "12, 3.5, nowait"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "68, 235, 3.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Story",
+          "param": "S1061B"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "68, 233, 1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2030"
+        }
+      ]
+    },
+    {
+      "key": "C2006",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "cocoon",
+          "kind": "Npc",
+          "actorKey": "N102018"
+        },
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        }
+      ],
+      "commands": [
+        {
+          "type": "PlayMotion",
+          "param": "cocoon, Die"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "68, 234, 2.5"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "5, 2.5, nowait"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "player, 68, 230"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 67, 230"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "faust, 69, 230"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "heath, 66, 230"
+            }
+          ]
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 68, 230"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 67, 230"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, 69, 230"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "heath, 66, 230"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "1.4"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "12, 5.0, nowait"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "68, 233, 5.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2031"
+        }
+      ]
+    },
+    {
+      "key": "C2020",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "knight",
+          "kind": "Npc",
+          "actorKey": "N102024"
+        },
+        {
+          "actorName": "chasseur",
+          "kind": "Npc",
+          "actorKey": "N102045"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "TeleportCharacter",
+          "param": "chasseur, 68, 159"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chasseur, Down"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "player, 69, 148, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 68, 147, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "heath, 70, 147, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "faust, 69, 147, 0, 0, 1"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2012"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "chasseur, 68, 150, 5.6, 1.4"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "12, 0.4"
+            },
+            {
+              "type": "MoveCameraRelative",
+              "param": "player, 0, 3, 0.4"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "0.4"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "player, Up"
+                }
+              ]
+            },
+            {
+              "type": "Dialogue",
+              "param": "D20121"
+            }
+          ]
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "chasseur, 68, 150"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chasseur, Down"
+        },
+        {
+          "type": "Sequential",
+          "commands": [
+            {
+              "type": "PlayMotion",
+              "param": "chasseur, Attack"
+            },
+            {
+              "type": "Wait",
+              "param": "0.62"
+            },
+            {
+              "type": "PauseMotion",
+              "param": "chasseur, on"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D20122"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "MoveCharacterRelative",
+                  "param": "player, chasseur, 4, -2, 0, 0, 1"
+                },
+                {
+                  "type": "FaceCharacterToward",
+                  "param": "player, chasseur"
+                }
+              ]
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "dante, chasseur, 6, -4, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "heath, chasseur, 4, -4, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "faust, chasseur, 5, -4, 0, 0, 1"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "11, 0.3"
+            },
+            {
+              "type": "MoveCameraRelative",
+              "param": "chasseur, -2, 0, 0.6"
+            }
+          ]
+        },
+        {
+          "type": "Sequential",
+          "commands": [
+            {
+              "type": "TeleportCharacter",
+              "param": "knight, 65, 137"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "knight, Up"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "knight, 0.8"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "knight, 65, 150, 12, 3.0, 1"
+            },
+            {
+              "type": "TeleportCharacter",
+              "param": "knight, 65, 150"
+            },
+            {
+              "type": "FaceCharacter",
+              "param": "knight, Right"
+            },
+            {
+              "type": "PlayMotion",
+              "param": "knight, CutsceneAttack"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "chasseur, 0.25"
+            },
+            {
+              "type": "Wait",
+              "param": "0.13"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9, 0.3"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_c2020_bertrand_hit"
+            },
+            {
+              "type": "CameraShake",
+              "param": "0.5, 0.6"
+            },
+            {
+              "type": "Knockback",
+              "param": "chasseur, Right, 13, 0.5, true"
+            },
+            {
+              "type": "TeleportCharacter",
+              "param": "chasseur, 81, 150"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_c2020_chasseur_impact"
+            },
+            {
+              "type": "CameraShake",
+              "param": "0.3, 0.9"
+            },
+            {
+              "type": "PauseMotion",
+              "param": "chasseur, off"
+            },
+            {
+              "type": "Wait",
+              "param": "1.2"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 0.5"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "knight, 0.5"
+            }
+          ]
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "knight, 68, 150"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "player, 69, 149, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 68, 148, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "heath, 70, 148, 0, 0, 1"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "faust, 69, 148, 0, 0, 1"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "knight, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2020"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "knight, Up"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.5"
+        },
+        {
+          "type": "AttachVfx",
+          "param": "chasseur, RoseEliteAura, 0"
+        }
+      ]
+    },
+    {
+      "key": "C2022",
+      "noLetterbox": true,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "knight",
+          "kind": "Npc",
+          "actorKey": "N102024"
+        },
+        {
+          "actorName": "chasseur",
+          "kind": "Npc",
+          "actorKey": "N102045"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.45"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "TeleportNpcPairNearby",
+          "param": "chasseur, knight, 3, 0, 8, 66"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "knight, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "chasseur, Right"
+        },
+        {
+          "type": "SetActorVisible",
+          "param": "chasseur, off"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "knight, -2, 3, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "11, 0"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "knight, VsLaRougeBoss"
+        },
+        {
+          "type": "Wait",
+          "param": "0.05"
+        },
+        {
+          "type": "PauseMotion",
+          "param": "knight, on"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.9"
+        },
+        {
+          "type": "Wait",
+          "param": "0.35"
+        },
+        {
+          "type": "PauseMotion",
+          "param": "knight, off"
+        },
+        {
+          "type": "Wait",
+          "param": "0.383333"
+        },
+        {
+          "type": "Wait",
+          "param": "2.916667"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.2"
+        },
+        {
+          "type": "StopMotion",
+          "param": "knight"
+        },
+        {
+          "type": "SetActorVisible",
+          "param": "chasseur, on"
+        },
+        {
+          "type": "Die",
+          "param": "chasseur, permanent, questCredit"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.2"
+        }
+      ]
+    },
+    {
+      "key": "C2021",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": []
+    },
+    {
+      "key": "C2026",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D20201"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 67, 187"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "heath, 69, 187"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "faust, 68, 186"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Knockback",
+          "param": "player, Up, 1, 0.6"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 0, 0"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 68, 180"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, 67, 187"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "heath, 69, 187"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "faust, 68, 186"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 67, 189"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "heath, 69, 189"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "faust, 68, 188"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D20202"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 69, 224"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.5"
+        },
+        {
+          "type": "ShowLocationBanner",
+          "param": "120400"
+        }
+      ],
+      "blockLocationBanner": true
+    },
+    {
+      "key": "C2027",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "ZoomCamera",
+          "param": "7, 0.35"
+        },
+        {
+          "type": "Wait",
+          "param": "0.9"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2033"
+        }
+      ]
+    }
+  ]
+}

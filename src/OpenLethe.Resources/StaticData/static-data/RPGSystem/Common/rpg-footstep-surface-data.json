@@ -1,0 +1,12 @@
+{
+    "list": [
+        {
+            "surfaceType": "Stone",
+            "footstepAudioId": "sfx_floor_walk"
+        },
+        {
+            "surfaceType": "Wood",
+            "footstepAudioId": "sfx_floor_walk"
+        }
+    ]
+}

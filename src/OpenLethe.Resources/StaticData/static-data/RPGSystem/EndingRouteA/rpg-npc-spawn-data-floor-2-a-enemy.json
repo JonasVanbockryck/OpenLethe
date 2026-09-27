@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "spawnId": 2001,
+      "npcKey": "N102002",
+      "mapId": 0,
+      "spawnTileX": 69,
+      "spawnTileY": 67,
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "Quest",
+      "despawnConditionParam": "Q4016",
+      "patrolWaypoints": []
+    }
+  ]
+}

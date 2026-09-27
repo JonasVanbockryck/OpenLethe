@@ -1632,6 +1632,139 @@
           "number": 0
         }
       ]
+    },
+    {
+      "id": 10416,
+      "updatedDate": 20260917,
+      "appearance": "10416_Ryoshu_LeNoirAppearance",
+      "unitScriptID": "10416",
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "associationList": [
+        "LE_NOIR",
+        "SISYPHE"
+      ],
+      "skillKeywordList": [
+        "Charge",
+        "Vibration"
+      ],
+      "characterId": 4,
+      "panicType": 9999,
+      "season": 8,
+      "defenseSkillIDList": [
+        1041604
+      ],
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "NoirSuitAlly",
+              "stack": 25
+            },
+            {
+              "buff": "ChargeNoirAlly",
+              "stack": 1
+            }
+          ]
+        }
+      ],
+      "panicSkillOnErosion": 1000104,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "hp": {
+        "defaultStat": 73,
+        "incrementByLevel": 3.21
+      },
+      "defCorrection": 2,
+      "minSpeedList": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "maxSpeedList": [
+        5,
+        6,
+        7,
+        7
+      ],
+      "uniqueAttribute": "AMBER",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          60,
+          30
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 0.5
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1
+          },
+          {
+            "type": "HIT",
+            "value": 2
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 1041601,
+          "number": 3
+        },
+        {
+          "skillId": 1041602,
+          "number": 2
+        },
+        {
+          "skillId": 1041603,
+          "number": 1
+        },
+        {
+          "skillId": 1041605,
+          "number": 0
+        },
+        {
+          "skillId": 1041606,
+          "number": 0
+        }
+      ]
     }
   ]
 }

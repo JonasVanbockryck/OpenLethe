@@ -1,0 +1,380 @@
+{
+  "list": [
+    {
+      "key": "EC-1001",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1001"
+    },
+    {
+      "key": "EC-1001A",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1001A"
+    },
+    {
+      "key": "E-Q1ITEM",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I992702, 1"
+    },
+    {
+      "key": "EC-1002",
+      "canRepeat": false,
+      "action1": "",
+      "actionValue1": ""
+    },
+    {
+      "key": "EC-1003",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1003"
+    },
+    {
+      "key": "ES-1081",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1081"
+    },
+    {
+      "key": "EC-1004",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1004"
+    },
+    {
+      "key": "E-B1",
+      "canRepeat": false,
+      "action1": "Battle",
+      "actionValue1": "11054, , N201003, 1"
+    },
+    {
+      "key": "E-B1S",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N201003A, 1",
+      "action2": "SetNpcAggro",
+      "actionValue2": "N201003A",
+      "action3": "CameraPeek",
+      "actionValue3": "2000031, 210100"
+    },
+    {
+      "key": "EL-1004S",
+      "canRepeat": false,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N201003A, 1"
+    },
+    {
+      "key": "EC-1005",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1005"
+    },
+    {
+      "key": "EM-1005",
+      "canRepeat": false
+    },
+    {
+      "key": "EV-1002",
+      "canRepeat": false
+    },
+    {
+      "key": "EC-1006",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1006"
+    },
+    {
+      "key": "EC-1014",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1014"
+    },
+    {
+      "key": "EC-1007",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1082"
+    },
+    {
+      "key": "ES-1082",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1082"
+    },
+    {
+      "key": "EC-1008",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1008"
+    },
+    {
+      "key": "EC-1009",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1009"
+    },
+    {
+      "key": "E-Q7ITEM",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I992705, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990812, 1"
+    },
+    {
+      "key": "EC-1010",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1010"
+    },
+    {
+      "key": "EC-1011",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1011"
+    },
+    {
+      "key": "E-Q8SWAP",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I992705, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I992704, 1"
+    },
+    {
+      "key": "E-Q3SOUL",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I992702, 1"
+    },
+    {
+      "key": "EC-1012",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1012"
+    },
+    {
+      "key": "EC-1015",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1015"
+    },
+    {
+      "key": "EC-1013",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1013"
+    },
+    {
+      "key": "EC-1016",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1016"
+    },
+    {
+      "key": "EG-1091",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I991007, 1",
+      "action2": "DespawnNpc",
+      "actionValue2": "N201091, 210100"
+    },
+    {
+      "key": "EB-1091",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11055, N201003, , 1"
+    },
+    {
+      "key": "EB-1181",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1181"
+    },
+    {
+      "key": "EK-1091",
+      "canRepeat": false,
+      "action1": "KillNpc",
+      "actionValue1": "N201003",
+      "action2": "PlayCutscene",
+      "actionValue2": "C-1194"
+    },
+    {
+      "key": "EK-1092",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1192"
+    },
+    {
+      "key": "EQ-3103",
+      "canRepeat": false
+    },
+    {
+      "key": "EC-1193",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1193"
+    },
+    {
+      "key": "EM-1193A",
+      "canRepeat": false
+    },
+    {
+      "key": "EM-1193C",
+      "canRepeat": false
+    },
+    {
+      "key": "EG-1092",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990311, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I991007, 1"
+    },
+    {
+      "key": "EC-1193A",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1193A"
+    },
+    {
+      "key": "EK-1193A",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N201032"
+    },
+    {
+      "key": "EC-1193D",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1193D"
+    },
+    {
+      "key": "E-1193W",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N201003, 1, 210100",
+      "action2": "SetNpcAggro",
+      "actionValue2": "N201003, 210100",
+      "action3": "CameraPeek",
+      "actionValue3": "2000031, 210100"
+    },
+    {
+      "key": "EA-1193B",
+      "canRepeat": true,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N201003C, 1, 210100"
+    },
+    {
+      "key": "EL-1193S",
+      "canRepeat": false,
+      "action1": "SetNpcAwake",
+      "actionValue1": "N201003, 1, 210100"
+    },
+    {
+      "key": "ED-1193H1",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-1286"
+    },
+    {
+      "key": "ED-1193H2",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-1287"
+    },
+    {
+      "key": "ED-1193H3",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D-1288"
+    },
+    {
+      "key": "EC-1193B",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1193B"
+    },
+    {
+      "key": "E-FCCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "2000011, 210101"
+    },
+    {
+      "key": "E-ESCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "2000051, 210501"
+    },
+    {
+      "key": "E-FreshCornerCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "2000021, 210201"
+    },
+    {
+      "key": "E-FCBATCAM",
+      "canRepeat": true,
+      "action1": "CameraPeek",
+      "actionValue1": "2000031, 210100"
+    },
+    {
+      "key": "E-VEND-B1",
+      "canRepeat": true,
+      "action1": "OpenShop",
+      "actionValue1": "SH108002"
+    },
+    {
+      "key": "E-DARKDOOR",
+      "canRepeat": true,
+      "action1": "KillPlayerWithDeathScene",
+      "actionValue1": "N201027"
+    },
+    {
+      "key": "E-EYE6",
+      "canRepeat": false,
+      "action1": "GiveMoney",
+      "actionValue1": "10"
+    },
+    {
+      "key": "E-B1MAPFRAG",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990814, 1"
+    },
+    {
+      "key": "E-MINGA88",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1025"
+    },
+    {
+      "key": "EDS601",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS601"
+    },
+    {
+      "key": "EDS602",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS602"
+    },
+    {
+      "key": "EDS603",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "DDS603"
+    },
+    {
+      "key": "EPI-B1B",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990009, 1",
+      "action2": "GiveItem",
+      "actionValue2": "I990018, 1"
+    }
+  ]
+}

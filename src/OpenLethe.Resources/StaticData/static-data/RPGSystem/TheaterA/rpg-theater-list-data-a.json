@@ -1,0 +1,1455 @@
+{
+  "list": [
+    {
+      "objectKey": "THA_001",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1001",
+      "floorKey": "F1001A",
+      "startPosX": 67,
+      "startPosY": 40,
+      "routeKey": "A",
+      "stagePartyIds": [
+        13
+      ]
+    },
+    {
+      "objectKey": "THA_002",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1011",
+      "floorKey": "F1001A",
+      "startPosX": 67,
+      "startPosY": 50,
+      "startDirection": "Left",
+      "routeKey": "A",
+      "steps": [
+        {
+          "cutsceneKey": "C1011"
+        },
+        {
+          "cutsceneKey": "C1012"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N101031",
+          "actorName": "guest1",
+          "tileX": 76,
+          "tileY": 58,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101032",
+          "actorName": "guest2",
+          "tileX": 80,
+          "tileY": 58,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101033",
+          "actorName": "guest3",
+          "tileX": 84,
+          "tileY": 50,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101031",
+          "actorName": "guest1",
+          "tileX": 76,
+          "tileY": 54,
+          "stepIndex": 1
+        },
+        {
+          "npcKey": "N101032",
+          "actorName": "guest2",
+          "tileX": 71,
+          "tileY": 53,
+          "stepIndex": 1
+        },
+        {
+          "npcKey": "N101033",
+          "actorName": "guest3",
+          "tileX": 76,
+          "tileY": 52,
+          "stepIndex": 1
+        }
+      ],
+      "stagePartyIds": [
+        13
+      ]
+    },
+    {
+      "objectKey": "THA_003",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1020",
+      "floorKey": "F1001A",
+      "startPosX": 165,
+      "startPosY": 126,
+      "startDirection": "Left",
+      "routeKey": "A",
+      "stagePartyIds": [
+        13
+      ]
+    },
+    {
+      "objectKey": "THA_004",
+      "stageLeaderId": 13,
+      "dialogueKey": "D1021",
+      "floorKey": "F1001A",
+      "startPosX": 167,
+      "startPosY": 119,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "steps": [
+        {
+          "dialogueKey": "D1021"
+        },
+        {
+          "cutsceneKey": "C1021"
+        }
+      ],
+      "stagePartyIds": [
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THA_005",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1023",
+      "floorKey": "F1001A",
+      "startPosX": 167,
+      "startPosY": 119,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "steps": [
+        {
+          "dialogueKey": "D1023"
+        },
+        {
+          "cutsceneKey": "C1023"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ],
+      "stageCompletedQuestKeys": [
+        "Q1022"
+      ]
+    },
+    {
+      "objectKey": "THA_006",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1031",
+      "floorKey": "F1001A",
+      "startPosX": 171,
+      "startPosY": 9,
+      "startDirection": "Right",
+      "routeKey": "A",
+      "stageCompletedQuestKeys": [
+        "Q1022"
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THA_007",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1032",
+      "floorKey": "F1001A",
+      "startPosX": 216,
+      "startPosY": 8,
+      "startDirection": "Right",
+      "routeKey": "A",
+      "stageCompletedQuestKeys": [
+        "Q1022"
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THA_008",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1047",
+      "stageTargetObjectKey": "SO201903",
+      "floorKey": "F1001A",
+      "startPosX": 220,
+      "startPosY": 12,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THA_009",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1048",
+      "stageTargetObjectKey": "SO201904",
+      "floorKey": "F1001A",
+      "startPosX": 229,
+      "startPosY": 5,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THA_010",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1049",
+      "stageTargetObjectKey": "SO201905",
+      "floorKey": "F1001A",
+      "startPosX": 240,
+      "startPosY": 12,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THA_011",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1041",
+      "floorKey": "F1001A",
+      "startPosX": 220,
+      "startPosY": 12,
+      "routeKey": "A",
+      "stageCompletedQuestKeys": [
+        "Q1022"
+      ]
+    },
+    {
+      "objectKey": "THA_012",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1042",
+      "floorKey": "F1001A",
+      "startPosX": 219,
+      "startPosY": 7,
+      "routeKey": "A",
+      "stageCompletedQuestKeys": [
+        "Q1022"
+      ]
+    },
+    {
+      "objectKey": "THA_013",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1050",
+      "floorKey": "F1001A",
+      "startPosX": 247,
+      "startPosY": 122,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "steps": [
+        {
+          "dialogueKey": "D1050"
+        },
+        {
+          "cutsceneKey": "C1051"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N101007"
+      ]
+    },
+    {
+      "objectKey": "THA_014",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1055",
+      "floorKey": "F1001A",
+      "startPosX": 247,
+      "startPosY": 122,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "steps": [
+        {
+          "dialogueKey": "D1055"
+        },
+        {
+          "cutsceneKey": "C1052"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N101007"
+      ]
+    },
+    {
+      "objectKey": "THA_016",
+      "stageLeaderId": 5,
+      "dialogueKey": "D1061",
+      "stageTargetNpcKey": "N101008",
+      "floorKey": "F1001A",
+      "startPosX": 225,
+      "startPosY": 134,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THA_017",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2001",
+      "floorKey": "F1002A",
+      "startPosX": 71,
+      "startPosY": 60,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_018",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2002",
+      "floorKey": "F1002A",
+      "startPosX": 69,
+      "startPosY": 66,
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_020",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3010",
+      "floorKey": "F1003A",
+      "startPosX": 55,
+      "startPosY": 61,
+      "startDirection": "Down",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THA_021",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3030",
+      "floorKey": "F1003A",
+      "startPosX": 61,
+      "startPosY": 104,
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_022",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3301",
+      "stageTargetNpcKey": "N103003",
+      "floorKey": "F1003A",
+      "startPosX": 71,
+      "startPosY": 59,
+      "startDirection": "Right",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_023",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "larouge",
+      "cutsceneKey": "C3041",
+      "floorKey": "F1003A",
+      "startPosX": -23,
+      "startPosY": 72,
+      "startDirection": "Left",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N103001"
+      ]
+    },
+    {
+      "objectKey": "THA_024",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "larouge",
+      "cutsceneKey": "C3050",
+      "floorKey": "F1003A",
+      "startPosX": -31,
+      "startPosY": 73,
+      "startDirection": "Right",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N103001"
+      ]
+    },
+    {
+      "objectKey": "THA_025",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3011",
+      "stageTargetNpcKey": "N103016C",
+      "floorKey": "F1003A",
+      "startPosX": 66,
+      "startPosY": -42,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_026",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "master",
+      "cutsceneKey": "C3015",
+      "floorKey": "F1003A",
+      "startPosX": 66,
+      "startPosY": -42,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THA_027",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3070",
+      "floorKey": "F1003A",
+      "startPosX": -19,
+      "startPosY": 39,
+      "startDirection": "Left",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_028",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3071",
+      "floorKey": "F1003A",
+      "startPosX": -22,
+      "startPosY": 73,
+      "startDirection": "Left",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_029",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "larouge",
+      "cutsceneKey": "C3080",
+      "floorKey": "F1003A",
+      "startPosX": -31,
+      "startPosY": 73,
+      "startDirection": "Right",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageIgnoreConditionalMotionNpcKeys": [
+        "N103001"
+      ]
+    },
+    {
+      "objectKey": "THA_030",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3084",
+      "stageTargetNpcKey": "N103003",
+      "floorKey": "F1003A",
+      "startPosX": 71,
+      "startPosY": 59,
+      "startDirection": "Right",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_031",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "repairnpc",
+      "dialogueKey": "D3085",
+      "floorKey": "F1003A",
+      "startPosX": 61,
+      "startPosY": 104,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "steps": [
+        {
+          "dialogueKey": "D3085"
+        },
+        {
+          "cutsceneKey": "C3085"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_032",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "gate",
+      "cutsceneKey": "C3130",
+      "floorKey": "F1003A",
+      "startPosX": 71,
+      "startPosY": 59,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THA_033",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3120",
+      "floorKey": "F1003A",
+      "startPosX": 132,
+      "startPosY": 72,
+      "startDirection": "Right",
+      "routeKey": "A",
+      "stageNpcs": [
+        {
+          "npcKey": "N103012",
+          "actorName": "madnoir",
+          "tileX": 138,
+          "tileY": 54,
+          "stepIndex": -1
+        },
+        {
+          "spawnId": 55
+        },
+        {
+          "spawnId": 56
+        },
+        {
+          "spawnId": 57
+        },
+        {
+          "spawnId": 58
+        },
+        {
+          "spawnId": 59
+        },
+        {
+          "spawnId": 60
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_034",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3121",
+      "floorKey": "F1003A",
+      "startPosX": 141,
+      "startPosY": 71,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THA_035",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "renoir",
+      "cutsceneKey": "C3122",
+      "floorKey": "F1003A",
+      "startPosX": 141,
+      "startPosY": 71,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "stageCompletedQuestKeys": [
+        "Q3013"
+      ]
+    },
+    {
+      "objectKey": "THA_036",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4003",
+      "floorKey": "F1004A",
+      "startPosX": 56,
+      "startPosY": -60,
+      "startDirection": "Down",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_037",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4002",
+      "floorKey": "F1004A",
+      "startPosX": 144,
+      "startPosY": -52,
+      "startDirection": "Right",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_038",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "poreleg",
+      "cutsceneKey": "C4007",
+      "floorKey": "F1004A",
+      "startPosX": 144,
+      "startPosY": -52,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_039",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "oneleg",
+      "cutsceneKey": "C4015",
+      "floorKey": "F1004A",
+      "startPosX": 138,
+      "startPosY": -54,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6
+      ],
+      "steps": [
+        {
+          "cutsceneKey": "C4015"
+        },
+        {
+          "cutsceneKey": "C4008"
+        }
+      ],
+      "stageCompletedEventKeys": [
+        "E40208"
+      ]
+    },
+    {
+      "objectKey": "THA_041",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40311",
+      "stageTargetNpcKey": "N104003",
+      "floorKey": "F1004A",
+      "startPosX": 63,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_042",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "wardrobe",
+      "cutsceneKey": "C4012",
+      "floorKey": "F1004A",
+      "startPosX": 46,
+      "startPosY": -131,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stageAliveNpcKeys": [
+        "N104006"
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6
+      ]
+    },
+    {
+      "objectKey": "THA_043",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40510",
+      "stageTargetNpcKey": "N104003",
+      "floorKey": "F1004A",
+      "startPosX": 63,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_044",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "wardrobe",
+      "cutsceneKey": "C4013",
+      "floorKey": "F1004A",
+      "startPosX": 46,
+      "startPosY": -131,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stageAliveNpcKeys": [
+        "N104006"
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6
+      ]
+    },
+    {
+      "objectKey": "THA_045",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40710",
+      "stageTargetNpcKey": "N104002",
+      "floorKey": "F1004A",
+      "startPosX": 59,
+      "startPosY": -140,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_046",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40711",
+      "stageTargetNpcKey": "N104017",
+      "floorKey": "F1004A",
+      "startPosX": 32,
+      "startPosY": -142,
+      "startDirection": "Left",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_047",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40712",
+      "stageTargetNpcKey": "N104004",
+      "floorKey": "F1004A",
+      "startPosX": 55,
+      "startPosY": -139,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_048",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40713",
+      "stageTargetNpcKey": "N104016",
+      "floorKey": "F1004A",
+      "startPosX": 49,
+      "startPosY": -139,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_049",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40714",
+      "stageTargetNpcKey": "N104023",
+      "floorKey": "F1004A",
+      "startPosX": 54,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_050",
+      "stageLeaderId": 5,
+      "dialogueKey": "D40715",
+      "stageTargetNpcKey": "N104015",
+      "floorKey": "F1004A",
+      "startPosX": 35,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_051",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "wardrobe",
+      "cutsceneKey": "C4014",
+      "floorKey": "F1004A",
+      "startPosX": 46,
+      "startPosY": -131,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stageAliveNpcKeys": [
+        "N104006"
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        3,
+        6
+      ],
+      "steps": [
+        {
+          "cutsceneKey": "C4014"
+        },
+        {
+          "cutsceneKey": "C4009"
+        },
+        {
+          "cutsceneKey": "C4017"
+        },
+        {
+          "cutsceneKey": "C4018"
+        },
+        {
+          "cutsceneKey": "C4019"
+        },
+        {
+          "cutsceneKey": "C4020"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_052",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "sofa",
+      "dialogueKey": "D41320",
+      "floorKey": "F1004A",
+      "startPosX": 63,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5
+      ],
+      "steps": [
+        {
+          "dialogueKey": "D41320"
+        },
+        {
+          "cutsceneKey": "C4010"
+        },
+        {
+          "cutsceneKey": "C4016"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_053",
+      "stageLeaderId": 5,
+      "dialogueKey": "D41330",
+      "stageTargetNpcKey": "N104003",
+      "floorKey": "F1004A",
+      "startPosX": 63,
+      "startPosY": -127,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_054",
+      "stageLeaderId": 5,
+      "dialogueKey": "D41331",
+      "stageTargetNpcKey": "N104011",
+      "floorKey": "F1004A",
+      "startPosX": 138,
+      "startPosY": -54,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_055",
+      "stageLeaderId": 5,
+      "dialogueKey": "D41410",
+      "stageTargetNpcKey": "N103005",
+      "floorKey": "F1003A",
+      "startPosX": 141,
+      "startPosY": 72,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_056",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1001",
+      "floorKey": "FB1001A",
+      "startPosX": -35,
+      "startPosY": -12,
+      "startDirection": "Down",
+      "routeKey": "A",
+      "steps": [
+        {
+          "cutsceneKey": "C-1001"
+        },
+        {
+          "cutsceneKey": "C-1012"
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12
+      ]
+    },
+    {
+      "objectKey": "THA_057",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1003",
+      "floorKey": "FB1001A",
+      "startPosX": -19,
+      "startPosY": -59,
+      "startDirection": "Left",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_058",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1005",
+      "floorKey": "FB1001A",
+      "startPosX": -19,
+      "startPosY": -59,
+      "startDirection": "Left",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12
+      ]
+    },
+    {
+      "objectKey": "THA_059",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-1028",
+      "stageTargetNpcKey": "N201003",
+      "floorKey": "FB1001A",
+      "startPosX": -47,
+      "startPosY": -73,
+      "startDirection": "Down",
+      "routeKey": "A",
+      "stageNpcs": [
+        {
+          "npcKey": "N201003",
+          "tileX": -47,
+          "tileY": -74
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_060",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "chef",
+      "cutsceneKey": "C-1006",
+      "floorKey": "FB1001A",
+      "startPosX": -37,
+      "startPosY": -55,
+      "startDirection": "Right",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N201003",
+          "actorName": "chef",
+          "tileX": -36,
+          "tileY": -55,
+          "stepIndex": -1
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_061",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "chef",
+      "cutsceneKey": "C-1007",
+      "floorKey": "FB1001A",
+      "startPosX": -37,
+      "startPosY": -55,
+      "startDirection": "Right",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        2,
+        12
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N201003",
+          "actorName": "chef",
+          "tileX": -36,
+          "tileY": -55,
+          "stepIndex": -1
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_062",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1002",
+      "floorKey": "FB1001A",
+      "startPosX": -16,
+      "startPosY": -228,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_066",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-1020",
+      "floorKey": "FB1001A",
+      "startPosX": -16,
+      "startPosY": -228,
+      "startDirection": "Left",
+      "routeKey": "A",
+      "steps": [
+        {
+          "cutsceneKey": "C-1020"
+        },
+        {
+          "cutsceneKey": "C-1021"
+        },
+        {
+          "cutsceneKey": "C-1010"
+        },
+        {
+          "cutsceneKey": "C-1011"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_068",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2000",
+      "floorKey": "FB1002A",
+      "startPosX": 6,
+      "startPosY": 60,
+      "startDirection": "Down",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_069",
+      "stageLeaderId": 13,
+      "dialogueKey": "D-2001-1",
+      "floorKey": "FB1002A",
+      "startPosX": 73,
+      "startPosY": 6,
+      "startDirection": "Down",
+      "routeKey": "A",
+      "stageNpcs": [
+        {
+          "spawnId": 10102201
+        },
+        {
+          "spawnId": 10102202
+        },
+        {
+          "spawnId": 10102203
+        },
+        {
+          "spawnId": 10102204
+        },
+        {
+          "spawnId": 10102205
+        },
+        {
+          "spawnId": 10102206
+        },
+        {
+          "spawnId": 10102207
+        },
+        {
+          "spawnId": 10102208
+        },
+        {
+          "spawnId": 10102209
+        },
+        {
+          "spawnId": 10102210
+        },
+        {
+          "spawnId": 10102211
+        }
+      ],
+      "stagePartyIds": [
+        13
+      ]
+    },
+    {
+      "objectKey": "THA_070",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2002A",
+      "floorKey": "FB1002A",
+      "startPosX": 5,
+      "startPosY": 34,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "steps": [
+        {
+          "cutsceneKey": "C-2002A"
+        },
+        {
+          "dialogueKey": "D-2002-1"
+        },
+        {
+          "cutsceneKey": "C-2002"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_071",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2003",
+      "floorKey": "FB1002A",
+      "startPosX": 86,
+      "startPosY": 42,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_072",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2004",
+      "floorKey": "FB1002A",
+      "startPosX": 89,
+      "startPosY": 50,
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_073",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-2005-1",
+      "floorKey": "FB1002A",
+      "startPosX": 21,
+      "startPosY": 103,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "steps": [
+        {
+          "dialogueKey": "D-2005-1"
+        },
+        {
+          "cutsceneKey": "C-2005"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_074",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "naked",
+      "cutsceneKey": "C-2007",
+      "floorKey": "FB1002A",
+      "startPosX": 59,
+      "startPosY": 58,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4
+      ]
+    },
+    {
+      "objectKey": "THA_075",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "palette",
+      "cutsceneKey": "C-2009",
+      "floorKey": "FB1002A",
+      "startPosX": 21,
+      "startPosY": 103,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4
+      ]
+    },
+    {
+      "objectKey": "THA_076",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-2010-1",
+      "floorKey": "FB1002A",
+      "startPosX": 21,
+      "startPosY": 103,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_077",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-2011-1",
+      "stageTargetNpcKey": "N202006",
+      "floorKey": "FB1002A",
+      "startPosX": 59,
+      "startPosY": 58,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_078",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-2045",
+      "floorKey": "FB1002A",
+      "startPosX": 89,
+      "startPosY": 50,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        4
+      ],
+      "steps": [
+        {
+          "dialogueKey": "D-2045"
+        },
+        {
+          "cutsceneKey": "C-2013"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_079",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2014",
+      "floorKey": "FB1002A",
+      "startPosX": 159,
+      "startPosY": 75,
+      "startDirection": "Left",
+      "routeKey": "A",
+      "stageCompletedQuestKeys": [
+        "Q-2004"
+      ]
+    },
+    {
+      "objectKey": "THA_080",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2014B",
+      "floorKey": "FB1002A",
+      "startPosX": 139,
+      "startPosY": 75,
+      "routeKey": "A",
+      "stageCompletedQuestKeys": [
+        "Q-2004"
+      ]
+    },
+    {
+      "objectKey": "THA_081",
+      "stageLeaderId": 5,
+      "dialogueKey": "D-2015-1",
+      "stageTargetNpcKey": "N202002",
+      "floorKey": "FB1002A",
+      "startPosX": 89,
+      "startPosY": 50,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_082",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C-2017",
+      "floorKey": "FB1002A",
+      "startPosX": 89,
+      "startPosY": 50,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "hideStageViewer": true,
+      "stageCompletedQuestKeys": [
+        "Q-2004"
+      ]
+    },
+    {
+      "objectKey": "THA_083",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4150",
+      "floorKey": "F1003A",
+      "startPosX": 61,
+      "startPosY": 104,
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THA_084",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4160",
+      "floorKey": "F1003A",
+      "startPosX": -29,
+      "startPosY": 73,
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "objectKey": "THA_086",
+      "stageLeaderId": 5,
+      "dialogueKey": "D41610",
+      "floorKey": "F1003A",
+      "startPosX": -30,
+      "startPosY": 71,
+      "routeKey": "A",
+      "stagePartyIds": [
+        5,
+        13,
+        11,
+        10
+      ],
+      "steps": [
+        {
+          "dialogueKey": "D41610"
+        },
+        {
+          "cutsceneKey": "C4162"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_087",
+      "stageLeaderId": 5,
+      "dialogueKey": "D3156",
+      "stageTargetNpcKey": "N103005",
+      "floorKey": "F1003A",
+      "startPosX": 141,
+      "startPosY": 70,
+      "startDirection": "Up",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_088",
+      "stageLeaderId": 5,
+      "stageFocusNpcActorName": "guard",
+      "cutsceneKey": "C2003",
+      "floorKey": "F1002A",
+      "startPosX": 14,
+      "startPosY": 67,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "stageNpcs": [
+        {
+          "npcKey": "N102041",
+          "actorName": "guard",
+          "tileX": 14,
+          "tileY": 68,
+          "stepIndex": -1
+        }
+      ],
+      "stagePartyIds": [
+        5,
+        13,
+        7,
+        2
+      ]
+    },
+    {
+      "objectKey": "THA_090",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2020",
+      "floorKey": "F1002A",
+      "startPosX": 65,
+      "startPosY": 148,
+      "startDirection": "Right",
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_089",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2004",
+      "floorKey": "F1002A",
+      "startPosX": 68,
+      "startPosY": 128,
+      "routeKey": "A"
+    },
+    {
+      "objectKey": "THA_091",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2005",
+      "floorKey": "F1002A",
+      "startPosX": 69,
+      "startPosY": 234,
+      "startDirection": "Up",
+      "routeKey": "A",
+      "steps": [
+        {
+          "dialogueKey": "D2014"
+        },
+        {
+          "cutsceneKey": "C2005",
+          "requiredPreviousChoiceKey": "DC2001"
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_092",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2006",
+      "floorKey": "F1002A",
+      "startPosX": 69,
+      "startPosY": 234,
+      "routeKey": "A",
+      "stageNpcs": [
+        {
+          "npcKey": "N102047",
+          "tileX": 68,
+          "tileY": 234,
+          "background": true,
+          "asCorpse": true
+        }
+      ]
+    },
+    {
+      "objectKey": "THA_093",
+      "endingKey": "A",
+      "floorKey": "F1002A",
+      "startPosX": 69,
+      "startPosY": 234,
+      "routeKey": "A"
+    }
+  ]
+}
