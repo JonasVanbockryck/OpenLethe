@@ -2,7 +2,6 @@
   "list": [
     {
       "comboKey": "MeurBasic3Combo",
-      "memo": "",
       "conditionType": "Item",
       "conditionValue": ["I990915"],
       "steps": [
@@ -13,7 +12,6 @@
     },
     {
       "comboKey": "MeurBasicCombo",
-      "memo": "",
       "conditionType": "Item",
       "conditionValue": ["I990004"],
       "steps": [

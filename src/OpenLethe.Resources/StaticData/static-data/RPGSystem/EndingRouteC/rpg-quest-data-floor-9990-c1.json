@@ -1,0 +1,13 @@
+{
+  "list": [
+    {
+      "key": "Q9990_C1",
+      "tag": "rpg_quest_tag_battle",
+      "exclusiveDisplay": true,
+      "acquireConditionType": "Event",
+      "acquireConditionValue": "EC-WDN-QUEST",
+      "requiredQuestKey": "",
+      "completeEventKey": ""
+    }
+  ]
+}

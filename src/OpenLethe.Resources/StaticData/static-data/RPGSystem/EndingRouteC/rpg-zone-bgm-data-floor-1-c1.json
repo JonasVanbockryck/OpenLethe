@@ -1,0 +1,15 @@
+{
+    "list": [
+        { "zoneId": 999999, "bgmAudioId": "bgm_toilet" },
+        { "zoneId": 110200, "bgmAudioId": "bgm_spa" },
+        { "zoneId": 110300, "bgmAudioId": "bgm_spa" },
+        { "zoneId": 110400, "bgmAudioId": "bgm_spa" },
+        { "zoneId": 110500, "bgmAudioId": "bgm_spa" },
+        { "zoneId": 110600, "bgmAudioId": "bgm_spa" },
+        { "zoneId": 110700, "bgmAudioId": "bgm_spa" },
+        { "zoneId": 110800, "bgmAudioId": "bgm_spa" },
+        { "zoneId": 110900, "bgmAudioId": "bgm_floor1stRouge" },
+        { "zoneId": 111000, "bgmAudioId": "bgm_floor1stRouge" },
+        { "zoneId": 111100, "bgmAudioId": "bgm_floor1stRouge" }
+    ]
+}

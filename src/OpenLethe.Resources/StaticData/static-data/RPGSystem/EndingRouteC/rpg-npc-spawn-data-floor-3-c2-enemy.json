@@ -1,0 +1,52 @@
+{
+  "list": [
+    {
+      "spawnId": 99000301,
+      "npcKey": "N990001_C2",
+      "mapId": 0,
+      "spawnTileX": 56,
+      "spawnTileY": 62,
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "E1002_C2",
+      "despawnConditionType": "Event",
+      "despawnConditionParam": "EQ1002_C2",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 99000302,
+      "npcKey": "N990003_C2",
+      "mapId": 0,
+      "spawnTileX": 58,
+      "spawnTileY": 60,
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "E1002_C2",
+      "despawnConditionType": "Event",
+      "despawnConditionParam": "EQ1002_C2",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 99000303,
+      "npcKey": "N990003_C2",
+      "mapId": 0,
+      "spawnTileX": 60,
+      "spawnTileY": 62,
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "E1002_C2",
+      "despawnConditionType": "Event",
+      "despawnConditionParam": "EQ1002_C2",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 99000304,
+      "npcKey": "N990003_C2",
+      "mapId": 0,
+      "spawnTileX": 58,
+      "spawnTileY": 64,
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "E1002_C2",
+      "despawnConditionType": "Event",
+      "despawnConditionParam": "EQ1002_C2",
+      "patrolWaypoints": []
+    }
+  ]
+}

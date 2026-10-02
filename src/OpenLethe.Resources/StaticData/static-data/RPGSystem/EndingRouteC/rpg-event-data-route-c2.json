@@ -1,0 +1,140 @@
+﻿{
+  "list": [
+    {
+      "key": "EQ1002_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EKILL01_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "CKILL01_C2"
+    },
+    {
+      "key": "EOBJ3101_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3102_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3103_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3104_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3105_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3106_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3107_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3108_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3109_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ3110_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4101_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4102_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4103_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4104_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4105_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4106_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4107_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4108_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "EOBJ4109_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ERSC01_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "CRSC01_C2"
+    },
+    {
+      "key": "ERSC02_C2",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990931, 1"
+    },
+    {
+      "key": "ERSC03_C2",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990931, 1"
+    },
+    {
+      "key": "ERSC04_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "CRSC02_C2"
+    },
+    {
+      "key": "ERSC05_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ERSC06_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ERSC07_C2",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990935, 1"
+    },
+    {
+      "key": "ERSC08_C2",
+      "canRepeat": false,
+      "action1": "GiveItem",
+      "actionValue1": "I990936, 1"
+    },
+    {
+      "key": "EALLSHLD_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "CALLSHLD_C2"
+    }
+  ]
+}

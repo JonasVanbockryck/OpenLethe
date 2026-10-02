@@ -1,0 +1,15 @@
+{
+  "list": [
+    {
+      "key": "Lock_RestSpotExit_C-1A",
+      "floorKeys": [],
+      "lockActiveQuestKey": "Q-2002",
+      "excepts": [
+        {
+          "onFloorKey": "",
+          "openFloorKeys": ["FB1002A_C-1A"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "list": [
+    {
+      "dialogueKey": "D3543",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3582",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3581",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3572",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3517",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3520",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3563",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3560",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3557",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3555",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3550",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3550",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D3550",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D3551",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3544",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3539",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3529",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3536",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3530",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3527",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3527",
+      "index": 1
+    },
+    {
+      "dialogueKey": "D3527",
+      "index": 2
+    },
+    {
+      "dialogueKey": "D3527",
+      "index": 3
+    },
+    {
+      "dialogueKey": "D3527",
+      "index": 4,
+      "expression": "angry_R",
+      "portraitKey": "DP_Sinclair"
+    },
+    {
+      "dialogueKey": "D3527",
+      "index": 5,
+      "expression": "panic2_R",
+      "portraitKey": "DP_Outis"
+    },
+    {
+      "dialogueKey": "D3527",
+      "index": 6,
+      "expression": "angry2_R",
+      "portraitKey": "DP_Outis"
+    },
+    {
+      "dialogueKey": "D3528",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3525",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3525",
+      "index": 1,
+      "voice": "D_Normal",
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D3525",
+      "index": 2,
+      "voice": "LCB_05_EmotionVoice_3_A",
+      "portraitKey": "DP_Meursault"
+    },
+    {
+      "dialogueKey": "D3525",
+      "index": 3
+    },
+    {
+      "dialogueKey": "D3525",
+      "index": 4
+    },
+    {
+      "dialogueKey": "D3525",
+      "index": 5,
+      "voice": "D_Tok",
+      "portraitKey": "DP_Dante3"
+    },
+    {
+      "dialogueKey": "D3525",
+      "index": 6
+    },
+    {
+      "dialogueKey": "D3526",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3521",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3505",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3516",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3506",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3504",
+      "index": 0
+    },
+    {
+      "dialogueKey": "D3503",
+      "index": 0
+    }
+  ]
+}

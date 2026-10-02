@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "key": "Q1001_C2",
+      "isBackupCheckpoint": true,
+      "isBackupOnAcquire": true,
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "",
+      "completeEventKey": ""
+    }
+  ]
+}

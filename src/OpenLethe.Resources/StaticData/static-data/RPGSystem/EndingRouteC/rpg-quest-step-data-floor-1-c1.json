@@ -1,0 +1,63 @@
+{
+  "list": [
+    {
+      "questKey": "Q1000",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "999999"
+    },
+    {
+      "questKey": "Q1011",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "110202"
+    },
+    {
+      "questKey": "Q1012",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C1012"
+    },
+    {
+      "questKey": "Q1014",
+      "stepIndex": 0,
+      "goalType1": "InteractObject",
+      "goalValue1": "SO201917",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q1016",
+      "stepIndex": 0,
+      "goalType1": "InteractObject",
+      "goalValue1": "SO201948",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q1017",
+      "stepIndex": 0,
+      "goalType1": "InteractObject",
+      "goalValue1": "SO201949",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q1015",
+      "stepIndex": 0,
+      "goalType1": "Dialogue",
+      "goalValue1": "D1959",
+      "goalHidden1": true
+    },
+    {
+      "questKey": "Q1064",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "120100"
+    },
+    {
+      "questKey": "Q1018",
+      "stepIndex": 0,
+      "goalType1": "GetItem",
+      "goalValue1": "I990108, 1",
+      "goalHidden1": true
+    }
+  ]
+}

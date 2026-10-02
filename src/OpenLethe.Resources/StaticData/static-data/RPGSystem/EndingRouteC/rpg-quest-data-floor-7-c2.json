@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "key": "Q7001_C2",
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q5003_C2",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q7002_C2",
+      "tag": "rpg_quest_tag_dialogue",
+      "hideList": true,
+      "hideLog": true,
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q5003_C2",
+      "completeEventKey": "E7005_C2"
+    }
+  ]
+}

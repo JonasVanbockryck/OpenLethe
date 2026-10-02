@@ -1,0 +1,110 @@
+{
+  "list": [
+    {
+      "id": "Tiphereth_Heads",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 1,
+      "canBeDespelled": false,
+      "destroyableOnZero": true,
+      "list": [
+        {
+          "ability": "ForceCoinResultHead"
+        },
+        {
+          "ability": "ActivateBuffEffectSkin",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Tiphereth_Tails",
+      "iconId": "Tiphereth_Heads",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 1,
+      "canBeDespelled": false,
+      "destroyableOnZero": true,
+      "list": [
+        {
+          "ability": "ForceCoinResultTail"
+        },
+        {
+          "ability": "ActivateBuffEffectSkin",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "BulletWoundHole",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 5,
+      "list": [        
+      ]
+    },
+    {
+      "id": "BulletHole",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": false,
+      "maxStack": 5,
+      "categoryKeywordList": [ 
+        "BULLET", 
+        "RESOURCE",
+        "CAN_GET_ONLY_BY_SYSTEM"
+      ],
+      "list": [
+      ]
+    },
+    {
+      "id": "BlackWingHole",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 12,
+      "list": [
+        {
+          "ability": "GiveBuffOnRSPerStack",
+          "value": 4,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "target": "Self",
+            "stack": 0,
+            "turn": 1,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnRSPerStack",
+          "value": 4,
+          "buffData": {
+            "buffKeyword": "AttackUp",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "AtkDmgMultiplierViaCheckChargeAndBreathCategory",
+          "buffData": {
+            "buffKeyword": "BlackWingHole",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0,
+            "value": 1
+          }
+        }
+      ]
+    }
+  ]
+}

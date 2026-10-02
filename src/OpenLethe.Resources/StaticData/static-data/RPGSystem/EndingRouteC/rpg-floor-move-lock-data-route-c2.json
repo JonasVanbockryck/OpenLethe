@@ -1,0 +1,12 @@
+{
+  "list": [
+    {
+      "key": "Lock_ClimbTo5F_C2",
+      "floorKeys": ["F1001C-2", "F1002C-2", "F1003C-2", "F1004C-2", "F1005C-2"]
+    },
+    {
+      "key": "Lock_EmptyRoom_C2",
+      "floorKeys": ["F1007C-2"]
+    }
+  ]
+}

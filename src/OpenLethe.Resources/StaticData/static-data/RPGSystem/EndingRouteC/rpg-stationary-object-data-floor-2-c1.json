@@ -1,0 +1,40 @@
+{
+  "list": [
+    {
+      "key": "SO910002",
+      "type": "HiddenObject",
+      "x": 62,
+      "y": 61,
+      "width": 1,
+      "height": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "visualOffsetX": 0,
+      "visualOffsetY": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "blockConditionType": "NotBlock",
+      "appearance": "SephirahLogo/Prefabs/SephirahLogo_Tiphereth.prefab",
+      "dialogueKey": "D91002_B",
+      "syncGroupKey": "SG_TIPHERETH_C1_2"
+    },
+    {
+      "key": "SO910012",
+      "type": "HiddenObject",
+      "x": 7,
+      "y": 61,
+      "width": 1,
+      "height": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "visualOffsetX": 0,
+      "visualOffsetY": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "blockConditionType": "NotBlock",
+      "appearance": "SephirahLogo/Prefabs/SephirahLogo_Tiphereth.prefab",
+      "dialogueKey": "D91002_B",
+      "syncGroupKey": "SG_TIPHERETH_C1_2"
+    }
+  ]
+}

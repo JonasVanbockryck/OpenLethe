@@ -1,0 +1,48 @@
+{
+  "list": [
+    {
+      "id": 91901101,
+      "eventKey": "E1901_C1",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E2001"
+    },
+    {
+      "id": 110000402,
+      "eventKey": "EC-WDN-BATTLE",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-WDN-C"
+    },
+    {
+      "id": 110000403,
+      "eventKey": "EC2-ENTER",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "CC2-STORY"
+    },
+    {
+      "id": 110000404,
+      "eventKey": "EC-WDN-QUEST",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F9990C-1"
+    },
+    {
+      "id": 110000405,
+      "eventKey": "EC-WDN-QUEST",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F9990A_C-1A"
+    },
+    {
+      "id": 110000406,
+      "eventKey": "EC-WDN-QUEST",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F9990B_C-1B"
+    },
+    {
+      "id": 110000407,
+      "eventKey": "EC2-STORY",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11036"
+    }
+  ]
+}

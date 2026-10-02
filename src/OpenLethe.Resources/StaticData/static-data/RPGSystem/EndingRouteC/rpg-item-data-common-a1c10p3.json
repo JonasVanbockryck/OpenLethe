@@ -1,0 +1,184 @@
+{
+  "list": [
+    {
+      "itemKey": "I990931",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldAttackPowerAdd",
+          "controlValue": [
+            350
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990931.png"
+    },
+    {
+      "itemKey": "I990932",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 99,
+      "isDestroyable": false,
+      "hidden": true
+    },
+    {
+      "itemKey": "I990990",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 99,
+      "isDestroyable": false,
+      "hidden": true
+    },
+    {
+      "itemKey": "I990430",
+      "itemType": "Etc",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990430
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990430.png"
+    },
+    {
+      "itemKey": "I990502",
+      "itemType": "Etc",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990502
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990502.png"
+    },
+    {
+      "itemKey": "I990503",
+      "itemType": "Etc",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990503
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990503.png"
+    },
+    {
+      "itemKey": "I990003",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FieldAttackPowerAdd",
+          "controlValue": [
+            1
+          ]
+        },
+        {
+          "scriptId": "FieldDamageReducePercent",
+          "controlValue": [
+            10
+          ]
+        },
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990003
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990003.png"
+    },
+    {
+      "itemKey": "I990005",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "FlashChargeHoldSecondsCopy",
+          "controlValue": [
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "scriptId": "AttackIdHitAreaWingAdd",
+          "controlValue": [
+            1590543949,
+            1
+          ]
+        },
+        {
+          "scriptId": "WardenFieldDamageReduce",
+          "controlValue": [
+            25
+          ]
+        },
+        {
+          "scriptId": "FieldKillNpcHpRecover",
+          "controlValue": [
+            1,
+            177997894,
+            161220275,
+            144442656
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990005.png"
+    },
+    {
+      "itemKey": "I990935",
+      "itemType": "Etc",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990935
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990935.png"
+    },
+    {
+      "itemKey": "I990936",
+      "itemType": "Etc",
+      "canCarryOver": true,
+      "maxStack": 1,
+      "isDestroyable": false,
+      "inventoryEffects": [
+        {
+          "scriptId": "LimbusEgoGiftAdd",
+          "controlValue": [
+            990936
+          ]
+        }
+      ],
+      "image": "RPGSystem/Item/Icons/I990936.png"
+    }
+  ]
+}

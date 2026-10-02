@@ -1,0 +1,39 @@
+{
+  "list": [
+    {
+      "npcKey": "N999999",
+      "moveSpeed": 6,
+      "defaultState": "Approach",
+      "ignoreObstacleObjects": true,
+      "blocksEscapeWhileAggro": true,
+      "moveDurationBeforeDetect": 0.01,
+      "prefabKey": "Enemy_SuperGuard.prefab",
+      "spawnMotion": "SpawnEffect",
+      "interactionType": "Enemy",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "hitStaggerSeconds": 0,
+      "weaknessHitStaggerSeconds": 0,
+      "dealtHitStaggerAddSeconds": -0.15,
+      "knockbackImmune": true,
+      "fieldHp": 1000,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "useAmbushBattleEffect": false,
+      "attackEntersWardenArena": true,
+      "dropTableKey": "",
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0",
+      "attackPatternKey": "NA999999",
+      "deathMotion": "Dead_bittern1, Dead_bittern2, Dead_bittern3",
+      "ignoreZoneGate": true,
+      "stateSounds": [
+        {
+          "span": "Alive",
+          "audioId": "sfx_warden_amb"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "spawnId": 99000101,
+      "npcKey": "N990001_C2",
+      "mapId": 0,
+      "spawnTileX": 73,
+      "spawnTileY": 53,
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "E1002_C2",
+      "despawnConditionType": "Event",
+      "despawnConditionParam": "EQ1002_C2",
+      "patrolWaypoints": []
+    }
+  ]
+}

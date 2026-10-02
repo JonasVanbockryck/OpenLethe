@@ -1,0 +1,252 @@
+{
+  "list": [
+    {
+      "npcKey": "N101001",
+      "order": 1,
+      "conditionType": "Cutscene",
+      "conditionValue": "C1000_C2",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9516"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 2,
+      "conditionType": "Item",
+      "conditionValue": "I990932, 1",
+      "interactionType": "Dialogue",
+      "interactionKey": "DRSC10_C2"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 3,
+      "conditionType": "Item",
+      "conditionValue": "I990931",
+      "interactionType": "Dialogue",
+      "interactionKey": "DRSC11_C2"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 4,
+      "conditionType": "Cutscene",
+      "conditionValue": "C5001_C2",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1014"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 5,
+      "conditionType": "Item",
+      "conditionValue": "I990990, 1",
+      "interactionType": "Dialogue",
+      "interactionKey": "DRSC10_C2"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 6,
+      "conditionType": "Item",
+      "conditionValue": "I990931",
+      "interactionType": "Dialogue",
+      "interactionKey": "DRSC11_C2"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 7,
+      "conditionType": "Quest",
+      "conditionValue": "Q5001_C2",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1014"
+    },
+    {
+      "npcKey": "N1010210",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9501"
+    },
+    {
+      "npcKey": "N1010220",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9502"
+    },
+    {
+      "npcKey": "N1010230",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9509"
+    },
+    {
+      "npcKey": "N1010240",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9511"
+    },
+    {
+      "npcKey": "N1010250",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9504"
+    },
+    {
+      "npcKey": "N1010260",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9506"
+    },
+    {
+      "npcKey": "N1010270",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9510"
+    },
+    {
+      "npcKey": "N1010280",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9505"
+    },
+    {
+      "npcKey": "N1010290",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9503"
+    },
+    {
+      "npcKey": "N1010200",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9507"
+    },
+    {
+      "npcKey": "N1010190",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9508"
+    },
+    {
+      "npcKey": "N1010030",
+      "order": 10,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9512"
+    },
+    {
+      "npcKey": "N1010210",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9501",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010220",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9502",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010290",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9503",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010250",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9504",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010280",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9505",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010260",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9506",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010200",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9507",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010190",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9508",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010230",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9509",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010270",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9510",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010240",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9511",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    },
+    {
+      "npcKey": "N1010030",
+      "order": 11,
+      "conditionType": "Dialogue",
+      "conditionValue": "D9512",
+      "interactionType": "Dialogue",
+      "interactionKey": "D9500"
+    }
+  ]
+}

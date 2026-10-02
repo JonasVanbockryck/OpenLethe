@@ -1,0 +1,17 @@
+{
+  "list": [
+    {
+      "npcKey": "N102050",
+      "moveSpeed": 0,
+      "interactionType": "Dialogue",
+      "interactionKey": "",
+      "defaultState": "Idle",
+      "prefabKey": "NPC_DemianMom.prefab",
+      "hideOverheadMark": true,
+      "footstepType": "Surface",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "collisionType": "None"
+    }
+  ]
+}

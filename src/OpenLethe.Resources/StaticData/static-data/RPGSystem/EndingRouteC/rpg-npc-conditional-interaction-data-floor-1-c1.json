@@ -1,0 +1,36 @@
+{
+  "list": [
+    {
+      "npcKey": "N101012",
+      "order": 1,
+      "conditionType": "Dialogue",
+      "conditionValue": "D1015",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1925"
+    },
+    {
+      "npcKey": "N101031",
+      "order": 1,
+      "conditionType": "Dialogue",
+      "conditionValue": "D1083",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1086"
+    },
+    {
+      "npcKey": "N101032",
+      "order": 1,
+      "conditionType": "Dialogue",
+      "conditionValue": "D1084",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1086"
+    },
+    {
+      "npcKey": "N101033",
+      "order": 1,
+      "conditionType": "Dialogue",
+      "conditionValue": "D1085",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1086"
+    }
+  ]
+}

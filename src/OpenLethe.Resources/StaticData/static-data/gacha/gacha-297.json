@@ -7,8 +7,8 @@
       "category" : "TARGET_NEW",
       "bannerInfo": {
         "endDate": "2026-10-08T01:00:00.000Z",
-        "bannerType": "TEMPORARY_MAIN",
-        "priority": 100,
+        "bannerType": "TEMPORARY_SUB",
+        "priority": 99,
         "pickupIdList": [
           10917
         ],
@@ -204,6 +204,7 @@
             10311,
             10313,
             10314,
+            10315,
             10403,
             10405,
             10408,

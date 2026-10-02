@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "projectileKey": "Projectile_BisqueDoll",
+      "instakillOnHit": false
+    },
+    {
+      "projectileKey": "Projectile_BuffetNail",
+      "removableByPlayerAttack": false,
+      "passThroughNpc": true,
+      "passThroughTerrain": false,
+      "hitSizeTiles": 1
+    }
+  ]
+}
+   

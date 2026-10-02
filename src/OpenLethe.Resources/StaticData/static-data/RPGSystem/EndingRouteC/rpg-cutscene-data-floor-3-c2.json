@@ -1,0 +1,25 @@
+{
+  "list": [
+    {
+      "key": "C3001_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "Story",
+          "param": "S1047C"
+        }
+      ]
+    }
+  ]
+}

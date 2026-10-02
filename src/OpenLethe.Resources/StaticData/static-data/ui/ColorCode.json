@@ -115,6 +115,14 @@
     {
       "id": "CantBreak",
       "color": "#e30000"
+    },
+    {
+      "id": "CoinHead",
+      "color": "#ff59c2"
+    },
+    {
+      "id": "CoinTail",
+      "color": "#cb0080"
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "list": [
+    {
+      "key": "DCRSC01_C2",
+      "nextDialogueKey": "DRSC02_C2",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DCRSC02_C2",
+      "nextDialogueKey": "DRSC03_C2",
+      "iconKey": "X"
+    },
+    {
+      "key": "DCRSC03_C2",
+      "nextDialogueKey": "DRSC12_C2",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DCRSC04_C2",
+      "nextDialogueKey": "DRSC13_C2",
+      "iconKey": "X"
+    }
+  ]
+}

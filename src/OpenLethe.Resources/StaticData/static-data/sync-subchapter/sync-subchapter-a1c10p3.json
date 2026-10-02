@@ -1,0 +1,25 @@
+{
+  "list": [
+    {
+      "id": 9128,
+      "sourceMainChapterId": 91,
+      "sourceSubChapterId": 9128,
+      "targetMainChapterId": 1,
+      "targetSubChapterId": 110,
+      "requiredUnlockCodeId": 9127,
+      "nodeMappingList": [
+        { "sourceNodeId": 912801, "targetNodeId": 11001 },
+        { "sourceNodeId": 912802, "targetNodeId": 11002 },
+        { "sourceNodeId": 912803, "targetNodeId": 11003 },
+        { "sourceNodeId": 912804, "targetNodeId": 11004 },
+        { "sourceNodeId": 912805, "targetNodeId": 11005 },
+        { "sourceNodeId": 912806, "targetNodeId": 11006 },
+        { "sourceNodeId": 912807, "targetNodeId": 11007 }
+      ],
+      "unlockCodeMappingList": [
+        { "sourceUnlockCodeId": 9128, "targetUnlockCodeId": 110 },
+        { "sourceUnlockCodeId": 912806, "targetUnlockCodeId": 11006 }
+      ]
+    }
+  ]
+}

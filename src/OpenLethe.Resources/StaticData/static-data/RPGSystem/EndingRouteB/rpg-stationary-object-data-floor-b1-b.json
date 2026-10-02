@@ -66,12 +66,11 @@
       "dialogueCondValue2": "Q-1010",
       "condDialogueKey2": "D-1252",
       "visualOffsetX": -3,
-      "showQuestMark": true,
-      "interactEffect": "InteractSparkle",
       "interactEffectOnType": "Quest",
       "interactEffectOnValue": "Q-1009",
       "interactEffectOffType": "Quest",
-      "interactEffectOffValue": "Q-1010"
+      "interactEffectOffValue": "Q-1010",
+      "showQuestMark": true
     },
     {
       "key": "SO-1027",

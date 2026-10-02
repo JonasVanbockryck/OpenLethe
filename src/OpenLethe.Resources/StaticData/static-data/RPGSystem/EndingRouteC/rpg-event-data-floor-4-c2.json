@@ -1,0 +1,44 @@
+{
+  "list": [
+    {
+      "key": "E4001_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "E4002_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "E4003_C2",
+      "canRepeat": false,
+      "action1": "RemoveItem",
+      "actionValue1": "I990931, 1"
+    },
+    {
+      "key": "E4004_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C4003_C2"
+    },
+    {
+      "key": "ESHLD401_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ESHLD402_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ESHLD403_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ESHLD404_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ESHLD405_C2",
+      "canRepeat": false
+    }
+  ]
+}

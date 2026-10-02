@@ -1,0 +1,36 @@
+{
+  "list": [
+    {
+      "key": "E2050",
+      "canRepeat": false
+    },
+    {
+      "key": "E2051",
+      "canRepeat": false
+    },
+    {
+      "key": "E2052",
+      "canRepeat": true,
+      "action1": "SelectPathRoute",
+      "actionValue1": "0"
+    },
+    {
+      "key": "E2053",
+      "canRepeat": true,
+      "action1": "SelectPathRoute",
+      "actionValue1": "1"
+    },
+    {
+      "key": "E2001_C1",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2001_C1"
+    },
+    {
+      "key": "E2002_C1",
+      "canRepeat": false,
+      "action1": "Dialogue",
+      "actionValue1": "D2050"
+    }
+  ]
+}

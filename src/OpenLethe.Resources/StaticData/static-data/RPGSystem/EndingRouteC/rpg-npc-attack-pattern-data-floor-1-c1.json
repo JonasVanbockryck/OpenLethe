@@ -1,0 +1,60 @@
+{
+    "list": [
+        {
+            "patternKey": "NA9101",
+            "triggerRange": 1,
+            "cooldown": 1.0,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 1.5, "motion": "AttackReady" },
+                { "action": "MeleeHit", "hpDamage": 1, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+                { "action": "Wait", "duration": 1.0 }
+            ]
+        },
+        {
+            "patternKey": "NA9102",
+            "triggerRange": 1,
+            "cooldown": 0.5,
+            "steps": [
+                { "action": "MeleeHit", "hpDamage": 5, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front", "Left", "Right", "Back"], "motion": "Attack" }
+            ]
+        },
+        {
+            "patternKey": "NA9103",
+            "triggerRange": 5,
+            "cooldown": 3.0,
+            "steps": [
+                { "action": "Wait", "duration": 2, "motion": "AttackReady" },
+                { "action": "RangedShot", "hpDamage": 8, "mpDamage": 0, "projectileKey": "Projectile_GOGI", "projectileSpeed": 0.1, "maxDistance": 7, "motion": "Attack" }
+            ]
+        },
+        {
+            "patternKey": "NA9104",
+            "triggerRange": 0,
+            "cooldown": 1.0,
+            "steps": [
+                { "action": "Charge", "hpDamage": 10, "mpDamage": 0, "chargeSpeed": 75.0, "knockbackTiles": 2, "motion": "RushAttack", "impactEffectMotion": "ImpactEffect" },
+                { "action": "Wait", "duration": 0.5 },
+                { "action": "Flip", "motion": "BeforeDetect" }
+            ]
+        },
+        {
+            "patternKey": "NA9105",
+            "triggerRange": 1,
+            "cooldown": 0.33,
+            "steps": [
+                { "action": "ShowAttackRange", "duration": 0.15, "motion": "Ready" },
+                { "action": "MeleeHit", "hpDamage": 3, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+                { "action": "Wait", "duration": 0.2 }
+            ]
+        },
+        {
+            "patternKey": "NA9106",
+            "triggerRange": 1,
+            "cooldown": 1.0,
+            "steps": [
+                { "action": "MeleeHit", "hpDamage": 0, "mpDamage": 0, "hitRange": 1, "hitDirections": ["Front"], "motion": "Attack" },
+                { "action": "Wait", "duration": 1.0 }
+            ]
+        }
+    ]
+}

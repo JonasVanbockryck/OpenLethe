@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "key": "DC2050",
+      "nextDialogueKey": "D2051",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DC2051",
+      "nextDialogueKey": "D2052",
+      "iconKey": "Talk"
+    }
+  ]
+}

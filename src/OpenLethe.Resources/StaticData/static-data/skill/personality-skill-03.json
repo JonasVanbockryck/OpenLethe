@@ -10263,6 +10263,1813 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1031501,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 2,
+          "defaultValue": 3,
+          "range": 8,
+          "arearange": 3,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "GiveChargeTurnOnUseToSelfAndLeastChargeLeNoirAlly1031501_2"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderViaNailSumDivide1031501_2",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.2
+              }
+            },
+            {
+              "scriptName": "GiveChargeTurnOnUseToSelfAndLeastChargeLeNoirAlly1031501_3"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderViaNailSumDivide1031501_3",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.4
+              }
+            },
+            {
+              "scriptName": "GiveChargeTurnOnUseToSelfAndLeastChargeLeNoirAlly1031501_4"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 6,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031505,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 2,
+          "defaultValue": 5,
+          "range": 15,
+          "arearange": 3,
+          "specialDuelIndex": 0,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "skillMotion": "S5",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "IgnoreDefenseSkill"
+            },
+            {
+              "scriptName": "CannotReusedSkill"
+            },
+            {
+              "scriptName": "ImmortalTargetUntilSkillEnd1031505"
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaNailSumDivide1031501_2",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.2
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 6,
+          "abilityScriptList": [
+            {
+              "scriptName": "IgnoreDefenseSkill"
+            },
+            {
+              "scriptName": "CannotReusedSkill"
+            },
+            {
+              "scriptName": "ImmortalTargetUntilSkillEnd1031505"
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaNailSumDivide1031501_3",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.4
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031502,
+      "skillType": "SKILL",
+      "skillTier": 2,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 2,
+          "defaultValue": 6,
+          "range": 8,
+          "arearange": 3,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S2",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 6,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderViaNailSumDivide1031501_2",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.2
+              }
+            },
+            {
+              "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 7,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 7,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "SkillPowerResultAdderViaNailSumDivide1031501_3",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 4,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.3
+              }
+            },
+            {
+              "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 8,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031503,
+      "skillType": "SKILL",
+      "skillTier": 3,
+      "requireIDList": [
+        "CheckAwakenLevel3"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 3,
+          "attributeType": "AMBER",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 3,
+          "defaultValue": 4,
+          "range": 6,
+          "arearange": 3,
+          "specialDuelIndex": 0,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffOnBattleStart",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "OathFieldDonQuixote",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "ResonanceLevelUpToFastestLeNoirOBS1031503_2_2"
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaNailSumCheck1031502",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.2
+              }
+            },
+            {
+              "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "SwitchVibrationOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "VibrationFocusing",
+                    "buffOwner": "Target"
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackViaBuffCheckAndLoseTargetVibrationTurn1",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "buffOwner": "Target",
+                    "stack": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 5,
+          "range": 8,
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffOnBattleStart",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "OathFieldDonQuixote",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "ResonanceLevelUpToFastestLeNoirOBS1031503_2_2"
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaNailSumDivide1031502_2",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.4
+              }
+            },
+            {
+              "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 4,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "SwitchVibrationOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "VibrationFocusing",
+                    "buffOwner": "Target"
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackViaBuffCheckAndLoseTargetVibrationTurn1",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "buffOwner": "Target",
+                    "stack": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031506,
+      "skillType": "SKILL",
+      "skillTier": 3,
+      "requireIDList": [
+        "CheckAwakenLevel3"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 3,
+          "attributeType": "AMBER",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 3,
+          "mpUsage": 0,
+          "skillLevelCorrection": 4,
+          "defaultValue": 4,
+          "range": 8,
+          "arearange": 3,
+          "specialDuelIndex": 0,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S6",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "RegisterAsAttackOnSkillChange1031506"
+            },
+            {
+              "scriptName": "ResonanceLevelUpToAllLeNoirAlliesOBS1031506_2_2"
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaAllTargetNailSumCheck1031506",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgMultiplierOnUseDivideByLessThenTargetNum_1",
+              "value": 0.3
+            },
+            {
+              "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_2_8"
+            },
+            {
+              "scriptName": "UseBuffAllStackOnEndAttack",
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "target": "Self"
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "turnLimit": 1,
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "SwitchVibrationOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "VibrationFocusing",
+                    "buffOwner": "Target"
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                },
+                {
+                  "scriptName": "NoirNailBurst1031506_nail3_lose1_ratio150_cap4500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 6,
+          "abilityScriptList": [
+            {
+              "scriptName": "RegisterAsAttackOnSkillChange1031506"
+            },
+            {
+              "scriptName": "ResonanceLevelUpToAllLeNoirAlliesOBS1031506_2_2"
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaAllTargetNailSumDivide1031506_2",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgMultiplierOnUseDivideByLessThenTargetNum_1",
+              "value": 0.5
+            },
+            {
+              "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_2_8"
+            },
+            {
+              "scriptName": "UseBuffAllStackOnEndAttack",
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "target": "Self"
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "turnLimit": 1,
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "SwitchVibrationOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "VibrationFocusing",
+                    "buffOwner": "Target"
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                },
+                {
+                  "scriptName": "NoirNailBurst1031506_nail3_lose1_ratio300_cap9000"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1031504,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "AMBER",
+          "atkType": "HIT",
+          "defType": "COUNTER",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 4,
+          "defaultValue": 5,
+          "range": 8,
+          "arearange": 3,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "skillMotion": "S4",
+          "specialDuelIndex": 0,
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffBCC1031504",
+              "buffData": {
+                "buffKeyword": "OathFieldDonQuixote",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "HealMpBCCToSelfAndLowestMpLeNoirAlly1031504_4"
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStart",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffBCC1031504",
+              "buffData": {
+                "buffKeyword": "OathFieldDonQuixote",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "HealMpBCCToSelfAndLowestMpLeNoirAlly1031504_5"
+            },
+            {
+              "scriptName": "CommonSkillSlotEffect",
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "buffOwner": "Self",
+                "stack": 100,
+                "turn": 0
+              }
+            },
+            {
+              "scriptName": "SkillChangeSpecialBCC1031504",
+              "value": 1031506,
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "buffOwner": "Self",
+                "stack": 100,
+                "turn": 0
+              }
+            },
+            {
+              "scriptName": "ShieldByNoirShieldUpBCC1031504",
+              "value": 10,
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "buffOwner": "Self",
+                "stack": 100
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStart",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaNailSumCheck1031502",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffBCC1031504",
+              "buffData": {
+                "buffKeyword": "OathFieldDonQuixote",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "HealMpBCCToSelfAndLowestMpLeNoirAlly1031504_6"
+            },
+            {
+              "scriptName": "CommonSkillSlotEffect",
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "buffOwner": "Self",
+                "stack": 100,
+                "turn": 0
+              }
+            },
+            {
+              "scriptName": "SkillChangeSpecialBCC1031504",
+              "value": 1031506,
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "buffOwner": "Self",
+                "stack": 100,
+                "turn": 0
+              }
+            },
+            {
+              "scriptName": "ShieldByNoirShieldUpBCC1031504",
+              "value": 10,
+              "buffData": {
+                "buffKeyword": "NoirShieldUpDonQuixote",
+                "buffOwner": "Self",
+                "stack": 100
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStart",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 4,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaNailSumDivide1031502_2",
+              "buffData": {
+                "buffKeyword": "Vibration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioOnUseViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 0.2
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveNoirNailUseCharge1031502_over12_add1_use4_2",
+                  "buffData": {
+                    "buffKeyword": "NoirNailDonQuixote",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

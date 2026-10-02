@@ -1,0 +1,44 @@
+{
+  "list": [
+    {
+      "questKey": "Q5000_C2",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5005_C2"
+    },
+    {
+      "questKey": "Q5001_C2",
+      "stepIndex": 0,
+      "goalType1": "WinBattle",
+      "goalValue1": "11041"
+    },
+    {
+      "questKey": "Q5002_C2",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5003_C2",
+      "goalType2": "InteractObject",
+      "goalValue2": "SO150619",
+      "goalGuideOnly2": true,
+      "goalType3": "EnterLocation",
+      "goalValue3": "158010",
+      "goalGuideOnly3": true
+    },
+    {
+      "questKey": "Q5003_C2",
+      "stepIndex": 0,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5012_C2",
+      "goalType2": "EnterLocation",
+      "goalValue2": "158001",
+      "goalGuideOnly2": true
+    },
+    {
+      "questKey": "Q5004T_C2",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EL5011_C2",
+      "goalHidden1": true
+    }
+  ]
+}

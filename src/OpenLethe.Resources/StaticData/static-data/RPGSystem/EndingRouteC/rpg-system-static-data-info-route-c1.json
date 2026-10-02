@@ -1,0 +1,17 @@
+{
+    "dataFiles": [
+        { "type": "player", "fileName": "EndingRouteC/rpg-player-data-route-c.json" },
+        { "type": "npc", "fileName": "EndingRouteC/rpg-npc-data-route-c-warden.json" },
+        { "type": "drop-table", "fileName": "EndingRouteC/rpg-drop-table-data-route-c.json" },
+        { "type": "npc-attack-pattern", "fileName": "EndingRouteC/rpg-npc-attack-pattern-data-route-c.json" },
+        { "type": "npc-conditional-interaction", "fileName": "EndingRouteC/rpg-npc-conditional-interaction-data-route-c.json" },
+        { "type": "event", "fileName": "EndingRouteA/rpg-event-data-route-a.json", "fileNameArray": ["EndingRouteC/rpg-event-data-route-c.json"] },
+        { "type": "event-trigger", "fileName": "EndingRouteA/rpg-event-trigger-data-route-a.json", "fileNameArray": ["EndingRouteC/rpg-event-trigger-data-route-c.json"] },
+        { "type": "cutscene", "fileName": "EndingRouteA/rpg-cutscene-data-route-a.json", "fileNameArray": ["EndingRouteC/rpg-cutscene-data-route-c.json"] },
+        { "type": "dialogue", "fileName": "EndingRouteA/rpg-dialogue-data-route-a.json", "fileNameArray": ["EndingRouteC/rpg-dialogue-data-route-c.json"] },
+        { "type": "dialogue-text", "fileName": "EndingRouteA/rpg-dialogue-text-data-route-a.json", "fileNameArray": ["EndingRouteC/rpg-dialogue-text-data-route-c.json"] },
+        { "type": "dialogue-choice", "fileName": "EndingRouteC/rpg-dialogue-choice-data-route-c.json" },
+        { "type": "floor-move-lock", "fileName": "EndingRouteC/rpg-floor-move-lock-data-route-c1.json" },
+        { "type": "stationary-object", "fileName": "EndingRouteC/rpg-stationary-object-data-route-c.json" }
+    ]
+}

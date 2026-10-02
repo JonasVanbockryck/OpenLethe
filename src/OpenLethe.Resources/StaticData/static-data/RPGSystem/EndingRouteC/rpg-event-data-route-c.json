@@ -1,0 +1,39 @@
+{
+  "list": [
+    {
+      "key": "EC2-STORY",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "CC2-STORY"
+    },
+    {
+      "key": "EC2-ENTER",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "CC2-ENTER",
+      "action2": "EnterRouteC2"
+    },
+    {
+      "key": "E1901_C1",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1901_C1"
+    },
+    {
+      "key": "EC-WDN-FLOOR",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-WDN-C"
+    },
+    {
+      "key": "EC-WDN-BATTLE",
+      "canRepeat": true,
+      "action1": "Battle",
+      "actionValue1": "11036, N999999"
+    },
+    {
+      "key": "EC-WDN-QUEST",
+      "canRepeat": false
+    }
+  ]
+}

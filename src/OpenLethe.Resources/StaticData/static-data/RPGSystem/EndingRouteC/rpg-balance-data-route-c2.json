@@ -1,0 +1,1188 @@
+﻿{
+  "stalkerBoss": {
+    "npcKey": "N990001_C2",
+    "chaseStartEventKey": "E1002_C2",
+    "chaseEndEventKey": "EQ1002_C2",
+    "chaseStartDelaySeconds": 3.0,
+    "chaseBgmAudioId": "bgm_stalkerChase",
+    "killSfxAudioId": "",
+    "killedEventKey": "EKILL01_C2",
+    "killCamZoomScale": 0.7,
+    "killCamBlendInSeconds": 0.35,
+    "killCamBlendOutSeconds": 0.45,
+    "restSpotResetEnabled": true,
+    "restSpotResetTiles": [
+      {
+        "floorKey": "F1001C-2",
+        "x": 68,
+        "y": 45
+      },
+      {
+        "floorKey": "F1002C-2",
+        "x": 69,
+        "y": 54
+      },
+      {
+        "floorKey": "F1003C-2",
+        "x": 56,
+        "y": 62
+      },
+      {
+        "floorKey": "F1004C-2",
+        "x": 55,
+        "y": -60
+      }
+    ],
+    "teleportFollowEnabled": true,
+    "teleportFollowExtraSeconds": 0.0,
+    "teleportFollowMinSeconds": 1.0,
+    "teleportFollowMaxSeconds": 2.0,
+    "floorArrivalDistance": 4,
+    "attackGraceAfterRestSpotSeconds": 3.0,
+    "floorArrivals": [
+      {
+        "floorKey": "F1003C-2",
+        "x": 55,
+        "y": 63,
+        "delaySeconds": 1.8
+      },
+      {
+        "floorKey": "F1004C-2",
+        "x": 55,
+        "y": -57,
+        "delaySeconds": 1.8
+      },
+      {
+        "floorKey": "F1001C-2",
+        "fromFloorKey": "F1002C-2",
+        "x": 226,
+        "y": 139,
+        "delaySeconds": 1.8
+      },
+      {
+        "floorKey": "F1002C-2",
+        "fromFloorKey": "F1003C-2",
+        "x": 69,
+        "y": 54,
+        "delaySeconds": 1.8
+      },
+      {
+        "floorKey": "F1003C-2",
+        "fromFloorKey": "F1004C-2",
+        "x": 52,
+        "y": 66,
+        "delaySeconds": 1.8
+      }
+    ],
+    "warpIntoViewFloorKeys": [],
+    "warpIntoViewCooldownSeconds": 6.0,
+    "warpIntoViewGraceSeconds": 2.0,
+    "warpChaseBranchKey": "WarpChase",
+    "warpChaseFloorKeys": [
+      "F1003C-2",
+      "F1004C-2"
+    ],
+    "warpChaseCooldownSeconds": 4.0,
+    "shield": {
+      "layerCount": 5,
+      "layerEffectPrefabKey": "Stalker/StalkerShieldEffect.prefab",
+      "breakEffectPrefabKey": "Stalker/StalkerShieldLostEffect.prefab",
+      "breakEffectSeconds": 2.0,
+      "breakSfxAudioId": "sfx_stalker_shield_break",
+      "allBrokenEventKey": "EALLSHLD_C2",
+      "floorBreakEvents": [
+        {
+          "floorKey": "F1001C-2",
+          "breakEventKey": "ESHLD1_C2"
+        },
+        {
+          "floorKey": "F1002C-2",
+          "breakEventKey": "ESHLD2_C2"
+        },
+        {
+          "floorKey": "F1003C-2",
+          "breakEventKey": "ESHLD3_C2"
+        }
+      ],
+      "retreatEffectPrefabKey": "",
+      "retreatEffectSeconds": 1.0,
+      "retreatFadeDelaySeconds": 0.5,
+      "retreatFadeOutSeconds": 1.2,
+      "appearFadeInSeconds": 1.2
+    },
+    "redLightFloors": [
+      {
+        "floorKey": "F1002C-2",
+        "bgmAudioId": "bgm_stalkerChase",
+        "introOnly": false,
+        "introBeforeCycle": true,
+        "introDelaySeconds": 2.0,
+        "introPauseSeconds": 3.0,
+        "lightOffSfxAudioId": "sfx_stalker_light_off",
+        "lightOnSfxAudioId": "sfx_stalker_light_on",
+        "lightWarnSfxAudioId": "sfx_stalker_light_warn",
+        "violationSfxAudioId": "sfx_stalker_detected",
+        "playIntervalMinSeconds": 4.0,
+        "playIntervalMaxSeconds": 7.0,
+        "pauseDurationMinSeconds": 2.0,
+        "pauseDurationMaxSeconds": 3.0,
+        "violationArmDelaySeconds": 1.0,
+        "teleportGraceSeconds": 1.5,
+        "dodgeCountsAsViolation": true,
+        "bossMovesOnlyDuringBgm": true,
+        "cycleScaleStepPerLocation": 0,
+        "dimPrefabKey": "CameraLightDim.prefab",
+        "dimWarnSeconds": 1.0,
+        "dimFlickerStartIntervalSeconds": 0.15,
+        "dimFlickerEndIntervalSeconds": 0.06,
+        "dimFlickerAlpha": 0.55,
+        "dimPauseAlpha": 0.95,
+        "freshMoveArmDelaySeconds": 1.0
+      },
+      {
+        "floorKey": "F1003C-2",
+        "bgmAudioId": "bgm_stalkerChase",
+        "introOnly": false,
+        "introDelaySeconds": 2.0,
+        "introPauseSeconds": 3.0,
+        "lightOffSfxAudioId": "sfx_stalker_light_off",
+        "lightOnSfxAudioId": "sfx_stalker_light_on",
+        "lightWarnSfxAudioId": "sfx_stalker_light_warn",
+        "violationSfxAudioId": "sfx_stalker_detected",
+        "playIntervalMinSeconds": 4.0,
+        "playIntervalMaxSeconds": 7.0,
+        "pauseDurationMinSeconds": 2.0,
+        "pauseDurationMaxSeconds": 3.0,
+        "violationArmDelaySeconds": 1.0,
+        "teleportGraceSeconds": 1.5,
+        "dodgeCountsAsViolation": true,
+        "bossMovesOnlyDuringBgm": true,
+        "cycleScaleStepPerLocation": 0,
+        "dimPrefabKey": "CameraLightDim.prefab",
+        "dimWarnSeconds": 1.0,
+        "dimFlickerStartIntervalSeconds": 0.15,
+        "dimFlickerEndIntervalSeconds": 0.06,
+        "dimFlickerAlpha": 0.55,
+        "dimPauseAlpha": 0.95,
+        "freshMoveArmDelaySeconds": 1.0
+      },
+      {
+        "floorKey": "F1004C-2",
+        "bgmAudioId": "bgm_stalkerChase",
+        "introOnly": false,
+        "introDelaySeconds": 2.0,
+        "introPauseSeconds": 3.0,
+        "lightOffSfxAudioId": "sfx_stalker_light_off",
+        "lightOnSfxAudioId": "sfx_stalker_light_on",
+        "lightWarnSfxAudioId": "sfx_stalker_light_warn",
+        "violationSfxAudioId": "sfx_stalker_detected",
+        "playIntervalMinSeconds": 4.0,
+        "playIntervalMaxSeconds": 7.0,
+        "pauseDurationMinSeconds": 2.0,
+        "pauseDurationMaxSeconds": 3.0,
+        "violationArmDelaySeconds": 1.0,
+        "teleportGraceSeconds": 1.5,
+        "dodgeCountsAsViolation": true,
+        "bossMovesOnlyDuringBgm": true,
+        "cycleScaleStepPerLocation": 0,
+        "dimPrefabKey": "CameraLightDim.prefab",
+        "dimWarnSeconds": 1.0,
+        "dimFlickerStartIntervalSeconds": 0.15,
+        "dimFlickerEndIntervalSeconds": 0.06,
+        "dimFlickerAlpha": 0.55,
+        "dimPauseAlpha": 0.95,
+        "freshMoveArmDelaySeconds": 1.0
+      }
+    ],
+    "floor3": {
+      "floorKey": "F1003C-2",
+      "suppressZones": [
+        {
+          "minX": 53,
+          "minY": 54,
+          "maxX": 77,
+          "maxY": 67
+        }
+      ],
+      "obstacles": [],
+      "movingObstacles": [
+        {
+          "triggerMinX": -37,
+          "triggerMinY": 60,
+          "triggerMaxX": -37,
+          "triggerMaxY": 63,
+          "srcTiles": [
+            {
+              "x": -35,
+              "y": 63
+            },
+            {
+              "x": -34,
+              "y": 63
+            },
+            {
+              "x": -35,
+              "y": 64
+            },
+            {
+              "x": -34,
+              "y": 64
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": -35,
+              "y": 61
+            },
+            {
+              "x": -34,
+              "y": 61
+            },
+            {
+              "x": -35,
+              "y": 62
+            },
+            {
+              "x": -34,
+              "y": 62
+            }
+          ],
+          "moveEventKey": "EOBJ3101_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingRack_3.prefab",
+          "moveSeconds": 0.3,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": -31,
+          "triggerMinY": 62,
+          "triggerMaxX": -31,
+          "triggerMaxY": 63,
+          "srcTiles": [
+            {
+              "x": -29,
+              "y": 60
+            },
+            {
+              "x": -28,
+              "y": 60
+            },
+            {
+              "x": -29,
+              "y": 61
+            },
+            {
+              "x": -28,
+              "y": 61
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": -29,
+              "y": 62
+            },
+            {
+              "x": -28,
+              "y": 62
+            },
+            {
+              "x": -29,
+              "y": 63
+            },
+            {
+              "x": -28,
+              "y": 63
+            }
+          ],
+          "moveEventKey": "EOBJ3102_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingRack_2.prefab",
+          "moveSeconds": 0.3,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 129,
+          "triggerMinY": 71,
+          "triggerMaxX": 129,
+          "triggerMaxY": 73,
+          "srcTiles": [
+            {
+              "x": 131,
+              "y": 75
+            },
+            {
+              "x": 132,
+              "y": 75
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 131,
+              "y": 72
+            },
+            {
+              "x": 132,
+              "y": 72
+            }
+          ],
+          "moveEventKey": "EOBJ3103_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingSofa.prefab",
+          "moveSeconds": 0.3,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 146,
+          "triggerMinY": 63,
+          "triggerMaxX": 149,
+          "triggerMaxY": 63,
+          "srcTiles": [
+            {
+              "x": 147,
+              "y": 60
+            },
+            {
+              "x": 147,
+              "y": 61
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 149,
+              "y": 60
+            },
+            {
+              "x": 149,
+              "y": 61
+            }
+          ],
+          "moveEventKey": "EOBJ3104_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingSofa_2.prefab",
+          "moveSeconds": 0.3,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 147,
+          "triggerMinY": 60,
+          "triggerMaxX": 149,
+          "triggerMaxY": 60,
+          "srcTiles": [
+            {
+              "x": 150,
+              "y": 57
+            },
+            {
+              "x": 150,
+              "y": 58
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 148,
+              "y": 57
+            },
+            {
+              "x": 148,
+              "y": 58
+            }
+          ],
+          "moveEventKey": "EOBJ3105_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingSofa_3.prefab",
+          "moveSeconds": 0.3,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 50,
+          "triggerMinY": -45,
+          "triggerMaxX": 53,
+          "triggerMaxY": -45,
+          "srcTiles": [
+            {
+              "x": 53,
+              "y": -54
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 53,
+              "y": -48
+            }
+          ],
+          "moveEventKey": "EOBJ3106_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingBlock_1.prefab",
+          "moveSeconds": 0.6,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 52,
+          "triggerMinY": -48,
+          "triggerMaxX": 53,
+          "triggerMaxY": -48,
+          "srcTiles": [
+            {
+              "x": 61,
+              "y": -50
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 53,
+              "y": -50
+            }
+          ],
+          "moveEventKey": "EOBJ3107_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingBlock_1.prefab",
+          "moveSeconds": 0.8,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 52,
+          "triggerMinY": -48,
+          "triggerMaxX": 53,
+          "triggerMaxY": -48,
+          "srcTiles": [
+            {
+              "x": 60,
+              "y": -51
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 52,
+              "y": -51
+            }
+          ],
+          "moveEventKey": "EOBJ3108_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingBlock_2.prefab",
+          "moveSeconds": 0.8,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 67,
+          "triggerMinY": -60,
+          "triggerMaxX": 69,
+          "triggerMaxY": -60,
+          "srcTiles": [
+            {
+              "x": 69,
+              "y": -52
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 69,
+              "y": -57
+            }
+          ],
+          "moveEventKey": "EOBJ3109_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingBlock_3.prefab",
+          "moveSeconds": 0.5,
+          "sfxAudioId": "sfx_obstacle_drag"
+        },
+        {
+          "triggerMinX": 73,
+          "triggerMinY": -56,
+          "triggerMaxX": 73,
+          "triggerMaxY": -49,
+          "srcTiles": [
+            {
+              "x": 76,
+              "y": -53
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 76,
+              "y": -47
+            }
+          ],
+          "moveEventKey": "EOBJ3110_C2",
+          "prefabKey": "Object_C2_Floor_3_MovingBlock_2.prefab",
+          "moveSeconds": 0.6,
+          "sfxAudioId": "sfx_obstacle_drag"
+        }
+      ]
+    },
+    "floor4": {
+      "floorKey": "F1004C-2",
+      "debuffBranchKey": "DebuffCast",
+      "debuffCooldownSeconds": 8.0,
+      "cutsceneTriggerMinX": 19,
+      "cutsceneTriggerMinY": -65,
+      "cutsceneTriggerMaxX": 20,
+      "cutsceneTriggerMaxY": -63,
+      "cutsceneEventKey": "E4001_C2",
+      "cutsceneEventKeyWithItem": "E4003_C2",
+      "attackUnlockEventKey": "E4002_C2",
+      "chargeRooms": [
+        {
+          "minX": -54,
+          "minY": -101,
+          "maxX": -27,
+          "maxY": -88
+        },
+        {
+          "minX": -54,
+          "minY": -54,
+          "maxX": -27,
+          "maxY": -39
+        },
+        {
+          "minX": 31,
+          "minY": -142,
+          "maxX": 68,
+          "maxY": -121
+        },
+        {
+          "minX": 35,
+          "minY": 35,
+          "maxX": 43,
+          "maxY": 45
+        },
+        {
+          "minX": 71,
+          "minY": 45,
+          "maxX": 130,
+          "maxY": 78
+        },
+        {
+          "minX": 128,
+          "minY": -93,
+          "maxX": 149,
+          "maxY": -48
+        }
+      ],
+      "chargeBranchKey": "Charge",
+      "chargeCooldownSeconds": 8.0,
+      "chargeMinRange": 3,
+      "chargeRequireAxisAlign": true,
+      "movingObstacles": [
+        {
+          "triggerMinX": 134,
+          "triggerMinY": -61,
+          "triggerMaxX": 137,
+          "triggerMaxY": -61,
+          "srcTiles": [],
+          "dstTiles": [
+            {
+              "x": 137,
+              "y": -58
+            },
+            {
+              "x": 137,
+              "y": -57
+            },
+            {
+              "x": 137,
+              "y": -56
+            },
+            {
+              "x": 137,
+              "y": -55
+            },
+            {
+              "x": 138,
+              "y": -58
+            },
+            {
+              "x": 138,
+              "y": -57
+            },
+            {
+              "x": 138,
+              "y": -56
+            },
+            {
+              "x": 138,
+              "y": -55
+            }
+          ],
+          "moveEventKey": "EOBJ4101_C2",
+          "prefabKey": "Object_C2_Floor_4_Shoes_1.prefab",
+          "moveSeconds": 0,
+          "moveType": "Fall",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": 143,
+          "triggerMinY": -60,
+          "triggerMaxX": 149,
+          "triggerMaxY": -60,
+          "srcTiles": [],
+          "dstTiles": [
+            {
+              "x": 142,
+              "y": -65
+            },
+            {
+              "x": 142,
+              "y": -64
+            },
+            {
+              "x": 143,
+              "y": -65
+            },
+            {
+              "x": 143,
+              "y": -64
+            },
+            {
+              "x": 144,
+              "y": -65
+            },
+            {
+              "x": 144,
+              "y": -64
+            },
+            {
+              "x": 145,
+              "y": -65
+            },
+            {
+              "x": 145,
+              "y": -64
+            },
+            {
+              "x": 146,
+              "y": -65
+            },
+            {
+              "x": 146,
+              "y": -64
+            }
+          ],
+          "moveEventKey": "EOBJ4102_C2",
+          "prefabKey": "Object_C2_Floor_4_Shoes_2.prefab",
+          "moveSeconds": 0,
+          "moveType": "Fall",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": 142,
+          "triggerMinY": -69,
+          "triggerMaxX": 149,
+          "triggerMaxY": -69,
+          "srcTiles": [],
+          "dstTiles": [
+            {
+              "x": 145,
+              "y": -72
+            },
+            {
+              "x": 145,
+              "y": -71
+            },
+            {
+              "x": 146,
+              "y": -72
+            },
+            {
+              "x": 146,
+              "y": -71
+            },
+            {
+              "x": 147,
+              "y": -72
+            },
+            {
+              "x": 147,
+              "y": -71
+            },
+            {
+              "x": 148,
+              "y": -72
+            },
+            {
+              "x": 148,
+              "y": -71
+            },
+            {
+              "x": 149,
+              "y": -72
+            },
+            {
+              "x": 149,
+              "y": -71
+            }
+          ],
+          "moveEventKey": "EOBJ4103_C2",
+          "prefabKey": "Object_C2_Floor_4_Shoes_2.prefab",
+          "moveSeconds": 0,
+          "moveType": "Fall",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": 142,
+          "triggerMinY": -82,
+          "triggerMaxX": 149,
+          "triggerMaxY": -82,
+          "srcTiles": [],
+          "dstTiles": [
+            {
+              "x": 141,
+              "y": -85
+            },
+            {
+              "x": 141,
+              "y": -84
+            },
+            {
+              "x": 142,
+              "y": -85
+            },
+            {
+              "x": 142,
+              "y": -84
+            },
+            {
+              "x": 143,
+              "y": -85
+            },
+            {
+              "x": 143,
+              "y": -84
+            },
+            {
+              "x": 144,
+              "y": -85
+            },
+            {
+              "x": 144,
+              "y": -84
+            },
+            {
+              "x": 145,
+              "y": -85
+            },
+            {
+              "x": 145,
+              "y": -84
+            }
+          ],
+          "moveEventKey": "EOBJ4104_C2",
+          "prefabKey": "Object_C2_Floor_4_Shoes_2.prefab",
+          "moveSeconds": 0,
+          "moveType": "Fall",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": 60,
+          "triggerMinY": -142,
+          "triggerMaxX": 60,
+          "triggerMaxY": -135,
+          "srcTiles": [
+            {
+              "x": 58,
+              "y": -137
+            },
+            {
+              "x": 58,
+              "y": -136
+            },
+            {
+              "x": 58,
+              "y": -135
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 58,
+              "y": -139
+            },
+            {
+              "x": 58,
+              "y": -138
+            },
+            {
+              "x": 58,
+              "y": -137
+            }
+          ],
+          "moveEventKey": "EOBJ4105_C2",
+          "prefabKey": "Object_C2_Floor_4_Furniture_1.prefab",
+          "moveSeconds": 0.3,
+          "arriveDirection": "Down",
+          "moveType": "Move",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": 44,
+          "triggerMinY": -142,
+          "triggerMaxX": 44,
+          "triggerMaxY": -141,
+          "srcTiles": [
+            {
+              "x": 38,
+              "y": -140
+            },
+            {
+              "x": 38,
+              "y": -139
+            },
+            {
+              "x": 38,
+              "y": -138
+            },
+            {
+              "x": 39,
+              "y": -140
+            },
+            {
+              "x": 39,
+              "y": -139
+            },
+            {
+              "x": 39,
+              "y": -138
+            },
+            {
+              "x": 40,
+              "y": -140
+            },
+            {
+              "x": 40,
+              "y": -139
+            },
+            {
+              "x": 40,
+              "y": -138
+            },
+            {
+              "x": 41,
+              "y": -140
+            },
+            {
+              "x": 41,
+              "y": -139
+            },
+            {
+              "x": 41,
+              "y": -138
+            }
+          ],
+          "dstTiles": [
+            {
+              "x": 38,
+              "y": -142
+            },
+            {
+              "x": 38,
+              "y": -141
+            },
+            {
+              "x": 38,
+              "y": -140
+            },
+            {
+              "x": 39,
+              "y": -142
+            },
+            {
+              "x": 39,
+              "y": -141
+            },
+            {
+              "x": 39,
+              "y": -140
+            },
+            {
+              "x": 40,
+              "y": -142
+            },
+            {
+              "x": 40,
+              "y": -141
+            },
+            {
+              "x": 40,
+              "y": -140
+            },
+            {
+              "x": 41,
+              "y": -142
+            },
+            {
+              "x": 41,
+              "y": -141
+            },
+            {
+              "x": 41,
+              "y": -140
+            }
+          ],
+          "moveEventKey": "EOBJ4106_C2",
+          "prefabKey": "Object_C2_Floor_4_Furniture_2.prefab",
+          "moveSeconds": 0.3,
+          "arriveDirection": "Down",
+          "moveType": "Move",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": -36,
+          "triggerMinY": -53,
+          "triggerMaxX": -36,
+          "triggerMaxY": -44,
+          "srcTiles": [],
+          "dstTiles": [
+            {
+              "x": -39,
+              "y": -46
+            },
+            {
+              "x": -39,
+              "y": -45
+            },
+            {
+              "x": -39,
+              "y": -44
+            }
+          ],
+          "moveEventKey": "EOBJ4107_C2",
+          "prefabKey": "Object_C2_Floor_4_Rouge_Bag_1.prefab",
+          "moveSeconds": 0,
+          "moveType": "Fall",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": -54,
+          "triggerMinY": -100,
+          "triggerMaxX": -52,
+          "triggerMaxY": -100,
+          "srcTiles": [],
+          "dstTiles": [
+            {
+              "x": -51,
+              "y": -98
+            },
+            {
+              "x": -51,
+              "y": -97
+            },
+            {
+              "x": -51,
+              "y": -96
+            },
+            {
+              "x": -51,
+              "y": -95
+            },
+            {
+              "x": -50,
+              "y": -98
+            },
+            {
+              "x": -50,
+              "y": -97
+            },
+            {
+              "x": -50,
+              "y": -96
+            },
+            {
+              "x": -50,
+              "y": -95
+            }
+          ],
+          "moveEventKey": "EOBJ4108_C2",
+          "prefabKey": "Object_C2_Floor_4_Noir_Bag_1.prefab",
+          "moveSeconds": 0,
+          "moveType": "Fall",
+          "sfxAudioId": ""
+        },
+        {
+          "triggerMinX": -51,
+          "triggerMinY": -92,
+          "triggerMaxX": -51,
+          "triggerMaxY": -90,
+          "srcTiles": [],
+          "dstTiles": [
+            {
+              "x": -49,
+              "y": -94
+            },
+            {
+              "x": -49,
+              "y": -93
+            },
+            {
+              "x": -48,
+              "y": -94
+            },
+            {
+              "x": -48,
+              "y": -93
+            },
+            {
+              "x": -47,
+              "y": -94
+            },
+            {
+              "x": -47,
+              "y": -93
+            }
+          ],
+          "moveEventKey": "EOBJ4109_C2",
+          "prefabKey": "Object_C2_Floor_4_Noir_Bag_2.prefab",
+          "moveSeconds": 0,
+          "moveType": "Fall",
+          "sfxAudioId": ""
+        }
+      ],
+      "rooms": [
+        {
+          "roomKey": "ShoeNoir",
+          "breakEventKey": "ESHLD401_C2",
+          "minX": 126,
+          "minY": -70,
+          "maxX": 151,
+          "maxY": -43
+        },
+        {
+          "roomKey": "ShoeRouge",
+          "breakEventKey": "ESHLD402_C2",
+          "minX": 126,
+          "minY": -96,
+          "maxX": 151,
+          "maxY": -71
+        },
+        {
+          "roomKey": "Furniture",
+          "breakEventKey": "ESHLD403_C2",
+          "minX": 29,
+          "minY": -145,
+          "maxX": 70,
+          "maxY": -121
+        },
+        {
+          "roomKey": "BagNoir",
+          "breakEventKey": "ESHLD404_C2",
+          "minX": -56,
+          "minY": -101,
+          "maxX": -27,
+          "maxY": -83
+        },
+        {
+          "roomKey": "BagRouge",
+          "breakEventKey": "ESHLD405_C2",
+          "minX": -56,
+          "minY": -57,
+          "maxX": -27,
+          "maxY": -39
+        }
+      ]
+    },
+    "dodgeSealEnabled": false,
+    "warpIntoViewRadiusTiles": 4,
+    "floorSpeeds": [
+      {
+        "floorKey": "F1001C-2",
+        "startMoveSpeed": 3.0,
+        "speedUpPerLocation": 2.0,
+        "maxMoveSpeed": 15.0
+      },
+      {
+        "floorKey": "F1003C-2",
+        "startMoveSpeed": 5.0,
+        "speedUpPerLocation": 3.0,
+        "maxMoveSpeed": 15.0
+      }
+    ],
+    "floor3Clones": {
+      "cloneNpcKey": "N990003_C2",
+      "floorKey": "F1003C-2",
+      "groggySeconds": 3.0,
+      "killEventKeys": ["ECLONEK31_C2", "ECLONEK32_C2", "ECLONEK33_C2", "ECLONEK34_C2"],
+      "catchUpWarpRadiusTiles": 5,
+      "catchUpMinDistanceTiles": 12,
+      "revealStaggerSeconds": 0.4,
+      "scatterMinDistanceTiles": 10,
+      "scatterWalkGraceSeconds": 8.0,
+      "shieldEffectPrefabKey": "Stalker/StalkerCloneShieldEffect.prefab",
+      "areas": [
+        {
+          "areaKey": "Corridor",
+          "minX": 46,
+          "minY": 54,
+          "maxX": 77,
+          "maxY": 67,
+          "maxClones": 0
+        },
+        {
+          "areaKey": "Renoir",
+          "minX": 124,
+          "minY": 37,
+          "maxX": 151,
+          "maxY": 80,
+          "maxClones": 3
+        },
+        {
+          "areaKey": "Broadcast",
+          "minX": 46,
+          "minY": -65,
+          "maxX": 82,
+          "maxY": -29,
+          "maxClones": 2
+        },
+        {
+          "areaKey": "LaRouge",
+          "minX": -41,
+          "minY": 37,
+          "maxX": -17,
+          "maxY": 79,
+          "maxClones": 1
+        }
+      ]
+    }
+  },
+  "bossRescues": [
+    {
+      "bossNpcKey": "N990001_C2",
+      "battleStartEventKey": "E1002_C2",
+      "battleEndEventKey": "EQ1002_C2",
+      "triggerFloorKey": "",
+      "triggerMinX": 61,
+      "triggerMinY": 2,
+      "triggerMaxX": 61,
+      "triggerMaxY": 8,
+      "cutsceneEventKey": "ERSC01_C2",
+      "deathThreshold": 1,
+      "wardItemKey": "I990931",
+      "deathMarkerItemKey": "I990932",
+      "acceptDialogueKeys": [
+        "DRSC02_C2",
+        "DRSC12_C2"
+      ],
+      "shieldEffectPrefabKey": "Assets/Prefab/Effect/RPG/Item/Cp10_3/FX_RPG_Cp10_Buff_Muffler.prefab"
+    },
+    {
+      "bossNpcKey": "N105010_C2",
+      "battleStartEventKey": "EM5010_C2",
+      "battleEndEventKey": "E5002_C2",
+      "triggerFloorKey": "F1005C-2",
+      "triggerMinX": 61,
+      "triggerMinY": 2,
+      "triggerMaxX": 61,
+      "triggerMaxY": 8,
+      "cutsceneEventKey": "ERSC04_C2",
+      "deathThreshold": 1,
+      "wardItemKey": "I990931",
+      "deathMarkerItemKey": "I990990",
+      "acceptDialogueKeys": [
+        "DRSC02_C2",
+        "DRSC12_C2"
+      ],
+      "shieldEffectPrefabKey": "Assets/Prefab/Effect/RPG/Item/Cp10_3/FX_RPG_Cp10_Buff_Muffler.prefab"
+    }
+  ],
+  "buffetBossBgm": { "audioId": "bgm_fieldBossBattleCp10Boss9" },
+  "buffetThresholdHpPercents": [ 90, 60 ],
+  "buffetChargeBlastTriggerHpPercent": 75,
+  "buffetChargeBlastHitsPerShrink": 4,
+  "buffetChargeBlastHpDamage": 50,
+  "buffetChargeBlastCreepStepsToBind": 7,
+  "buffetChargeBlastCreepBindSeconds": 3.0,
+  "buffetChargeBlastCreepBindMashReduceSeconds": 0.5,
+  "sisyphus": {
+    "gripAssistPerFailPercent": 26.0,
+    "gripAssistMaxMultiplier": 0.0,
+    "gripAssistSuperThresholdMultiplier": 9.0,
+    "gripAssistSuperMultiplier": 10.0
+  }
+}

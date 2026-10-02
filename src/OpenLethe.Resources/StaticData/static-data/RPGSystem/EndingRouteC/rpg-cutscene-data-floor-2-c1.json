@@ -1,0 +1,157 @@
+{
+  "list": [
+    {
+      "key": "C2001_C1",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Player",
+          "actorKey": "2"
+        },
+        {
+          "actorName": "heath",
+          "kind": "Player",
+          "actorKey": "7"
+        },
+        {
+          "actorName": "lady",
+          "kind": "Npc",
+          "actorKey": "N102050"
+        }
+      ],
+      "commands": [
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 73, 57"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, 1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "faust, player, 2, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "heath, player, 3, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "8.0, 1.5, nowait"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "lady, 1.5"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "lady, player"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "heath, 67, 66"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "0.25"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "faust, 68, 66"
+                }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "0.5"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "dante, 69, 66"
+                }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "0.75"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "player, 70, 66"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heath, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "lady, Down"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0.6, nowait"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D2001_C1"
+        }
+      ]
+    }
+  ]
+}

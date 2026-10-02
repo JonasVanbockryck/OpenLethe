@@ -1,0 +1,76 @@
+{
+  "list": [
+    {
+      "key": "SO900013_C2",
+      "type": "Sign",
+      "x": 73,
+      "y": 8,
+      "width": 1,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D9513"
+    },
+    {
+      "key": "SO900012_C2",
+      "type": "Sign",
+      "x": 71,
+      "y": 8,
+      "width": 1,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D9513"
+    },
+    {
+      "key": "SO900011_C2",
+      "type": "Sign",
+      "x": 69,
+      "y": 8,
+      "width": 1,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D9513"
+    },
+    {
+      "key": "SO900010_C2",
+      "type": "Sign",
+      "x": 67,
+      "y": 8,
+      "width": 1,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D9513"
+    },
+    {
+      "key": "SO900009_C2",
+      "type": "Sign",
+      "x": 65,
+      "y": 8,
+      "width": 1,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D9513"
+    },
+    {
+      "key": "SO900008_C2",
+      "type": "Sign",
+      "x": 62,
+      "y": 9,
+      "width": 2,
+      "height": 1,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D9514"
+    }
+  ]
+}

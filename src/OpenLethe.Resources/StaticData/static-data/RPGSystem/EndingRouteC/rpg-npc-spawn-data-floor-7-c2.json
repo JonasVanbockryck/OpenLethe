@@ -1,0 +1,51 @@
+﻿{
+  "list": [
+    {
+      "spawnId": 99070001,
+      "npcKey": "N107001_C2",
+      "mapId": 0,
+      "spawnTileX": 88,
+      "spawnTileY": 105,
+      "spawnOffsetY": -0.5,
+      "direction": "Down",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "",
+      "despawnConditionParam": "",
+      "patrolWaypoints": [],
+      "visualOffsets": [
+        {
+          "target": "View",
+          "x": 0,
+          "y": -1.5
+        }
+      ]
+    },
+    {
+      "spawnId": 99070002,
+      "npcKey": "N107002_C2",
+      "mapId": 0,
+      "spawnTileX": 207,
+      "spawnTileY": 117,
+      "direction": "Up",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 99070012,
+      "npcKey": "N107002_C2",
+      "mapId": 0,
+      "spawnTileX": 258,
+      "spawnTileY": 95,
+      "direction": "Up",
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    }
+  ]
+}

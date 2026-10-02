@@ -1,0 +1,95 @@
+{
+  "list": [
+    {
+      "npcKey": "N107001_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Jeanne.prefab",
+      "detectType": "None",
+      "interactionType": "Dialogue",
+      "interactionKey": "D7003_C2",
+      "interactionRangeDown": 1,
+      "attackedEventKey": "E7050_C2",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "useAmbushBattleEffect": false,
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0",
+      "conditionalMotions": [
+        {
+          "conditionType": "Quest",
+          "conditionValue": "Q5003_C2",
+          "motionId": "Sit",
+          "direction": "Down"
+        }
+      ]
+    },
+    {
+      "npcKey": "N107002_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_MerusaultMom.prefab",
+      "detectType": "None",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0"
+    },
+    {
+      "npcKey": "N990004_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_OldMerusault_Jumpscare.prefab",
+      "detectType": "None",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0"
+    },
+    {
+      "npcKey": "N107004_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_PlaygroundChildA.prefab",
+      "detectType": "None",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0"
+    },
+    {
+      "npcKey": "N107005_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_PlaygroundChildB.prefab",
+      "detectType": "None",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0"
+    }
+  ]
+}

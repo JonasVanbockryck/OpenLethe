@@ -1,0 +1,37 @@
+{
+  "list": [
+    {
+      "key": "D2050",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": ["DC2050", "DC2051"]
+    },
+    {
+      "key": "D2051",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2052",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2053",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2001_C1",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D2054",
+      "trackCompletion": false,
+      "choiceKeys": []
+    }
+  ]
+}

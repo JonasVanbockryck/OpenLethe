@@ -1210,7 +1210,7 @@
     {
       "itemKey": "I990008",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1234,7 +1234,7 @@
     {
       "itemKey": "I990009",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1250,7 +1250,7 @@
     {
       "itemKey": "I990010",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1267,7 +1267,7 @@
     {
       "itemKey": "I990011",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1286,7 +1286,7 @@
     {
       "itemKey": "I990012",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1302,7 +1302,7 @@
     {
       "itemKey": "I990013",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1326,7 +1326,7 @@
     {
       "itemKey": "I990014",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1344,7 +1344,7 @@
     {
       "itemKey": "I990015",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1362,7 +1362,7 @@
     {
       "itemKey": "I990016",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1379,7 +1379,7 @@
     {
       "itemKey": "I990017",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [
@@ -1397,7 +1397,7 @@
     {
       "itemKey": "I990018",
       "itemType": "PrisonerEffect",
-      "canCarryOver": true,
+      "canCarryOver": false,
       "maxStack": 1,
       "isDestroyable": false,
       "inventoryEffects": [

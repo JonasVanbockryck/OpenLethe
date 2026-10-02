@@ -2,7 +2,6 @@
   "list": [
     {
       "patternKey": "NA-B3-SWARM-NEEDLE",
-      "memo": "",
       "triggerRange": 6,
       "cooldown": 1.0,
       "canStartWhileMoving": true,
@@ -31,7 +30,6 @@
     },
     {
       "patternKey": "NA-B3-SWARM-HEAL",
-      "memo": "",
       "triggerRange": 0,
       "cooldown": 2.0,
       "canStartWhileMoving": true,

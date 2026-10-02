@@ -1,0 +1,47 @@
+{
+  "list": [
+    {
+      "key": "Q5000_C2",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q1001_C2",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q5001_C2",
+      "isBackupCheckpoint": true,
+      "tag": "rpg_quest_tag_battle",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q5000_C2",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q5002_C2",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q5001_C2",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q5003_C2",
+      "tag": "rpg_quest_tag_move",
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "Q5002_C2",
+      "completeEventKey": ""
+    },
+    {
+      "key": "Q5004T_C2",
+      "tag": "rpg_quest_tag_battle",
+      "hideList": true,
+      "hideLog": true,
+      "acquireConditionType": "Always",
+      "acquireConditionValue": "",
+      "requiredQuestKey": "",
+      "completeEventKey": ""
+    }
+  ]
+}

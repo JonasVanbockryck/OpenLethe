@@ -2,7 +2,6 @@
   "list": [
     {
       "patternKey": "NA202201",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 1.0,
       "steps": [
@@ -29,7 +28,6 @@
     },
     {
       "patternKey": "NA202202",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 1.0,
       "steps": [
@@ -59,7 +57,6 @@
     },
     {
       "patternKey": "NA202203",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 0.7,
       "steps": [
@@ -86,7 +83,6 @@
     },
     {
       "patternKey": "NA202204",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 0.7,
       "steps": [
@@ -116,7 +112,6 @@
     },
     {
       "patternKey": "NA202205",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 0.35,
       "steps": [
@@ -143,7 +138,6 @@
     },
     {
       "patternKey": "NA202102",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 0,
       "canStartWhileMoving": true,
@@ -375,7 +369,6 @@
     },
     {
       "patternKey": "NA202206",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 1.0,
       "steps": [
@@ -402,7 +395,6 @@
     },
     {
       "patternKey": "NA202273",
-      "memo": "",
       "triggerRange": 1,
       "cooldown": 0.7,
       "steps": [

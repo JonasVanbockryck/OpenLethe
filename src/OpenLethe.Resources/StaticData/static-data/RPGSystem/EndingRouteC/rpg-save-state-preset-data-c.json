@@ -1,0 +1,84 @@
+{
+  "list": [
+    {
+      "presetKey": "SP_ROUTE_C1A_ENTER",
+      "description": "",
+      "targetEndingRoute": "C-1A",
+      "arrivalFloorKey": "F1002A_C-1A",
+      "arrivalPosX": -1,
+      "arrivalPosY": -1,
+      "arrivalPairId": -1,
+      "completeQuestKeys": [
+        "Q1000",
+        "Q1001",
+        "Q2001"
+      ],
+      "excludeRewardQuestKeys": [
+        "Q2001"
+      ],
+      "manualFiredEventKeys": [
+        "E1001",
+        "E1010",
+        "E1020",
+        "E1914",
+        "E1109",
+        "E2001"
+      ],
+      "manualEnteredLocationIds": [
+        110600,
+        111100
+      ],
+      "totalSpent": -1,
+      "suppressCurrencyGrants": true,
+      "skipPrisonerEffectItems": true
+    },
+    {
+      "presetKey": "SP_ROUTE_C1B_ENTER",
+      "description": "",
+      "targetEndingRoute": "C-1B",
+      "arrivalFloorKey": "F1002B_C-1B",
+      "arrivalPosX": -1,
+      "arrivalPosY": -1,
+      "arrivalPairId": -1,
+      "completeQuestKeys": [
+        "Q1000",
+        "Q1001",
+        "Q2001",
+        "Q1012S"
+      ],
+      "excludeRewardQuestKeys": [
+        "Q2001"
+      ],
+      "manualFiredEventKeys": [
+        "E1001",
+        "E1010",
+        "E1020",
+        "E1914",
+        "E1109",
+        "E2001"
+      ],
+      "manualEnteredLocationIds": [
+        110600,
+        111100
+      ],
+      "totalSpent": -1,
+      "suppressCurrencyGrants": true,
+      "skipPrisonerEffectItems": true
+    },
+    {
+      "presetKey": "SP_ROUTE_C2_ENTER",
+      "description": "",
+      "targetEndingRoute": "C-2",
+      "arrivalFloorKey": "F1001C-2",
+      "arrivalPosX": 73,
+      "arrivalPosY": 6,
+      "arrivalPairId": -1,
+      "completeQuestKeys": [],
+      "excludeRewardQuestKeys": [],
+      "manualFiredEventKeys": [],
+      "totalSpent": -1,
+      "giveReachedFloorItems": false,
+      "carryItemsFromPresetKey": ""
+    }
+  ]
+}

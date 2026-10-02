@@ -1,0 +1,11 @@
+{
+  "list": [
+    {
+      "key": "Q2001",
+      "tag": "rpg_quest_tag_dialogue",
+      "acquireConditionType": "Always",
+      "requiredQuestKey": "Q1064",
+      "completeEventKey": ""
+    }
+  ]
+}

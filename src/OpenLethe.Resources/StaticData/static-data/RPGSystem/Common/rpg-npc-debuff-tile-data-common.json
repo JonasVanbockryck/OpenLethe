@@ -2,7 +2,6 @@
   "list": [
     {
       "debuffKey": "HZ000001",
-      "memo": "",
       "effectType": "MoveSpeedDown",
       "prefabKey": "Hazard_Yellow",
       "lifetimeSeconds": 5,
@@ -10,7 +9,6 @@
     },
     {
       "debuffKey": "HZ000002",
-      "memo": "",
       "effectType": "HpDrain",
       "prefabKey": "Hazard_Red",
       "lifetimeSeconds": 5,
@@ -21,7 +19,6 @@
     },
     {
       "debuffKey": "HZ000003",
-      "memo": "",
       "effectType": "AttackPowerDown",
       "prefabKey": "Hazard_Blue",
       "lifetimeSeconds": 5,
@@ -30,7 +27,6 @@
     },
     {
       "debuffKey": "HZ000004",
-      "memo": "",
       "effectType": "EnemyHpDrain",
       "prefabKey": "Hazard_Red",
       "lifetimeSeconds": 5,
@@ -39,7 +35,6 @@
     },
     {
       "debuffKey": "HZ000005",
-      "memo": "",
       "effectType": "EnemyHpDrain",
       "prefabKey": "Fx_RPG_Mon_Cp10_LittleBuffet_BlackWater_Hit_Ground",
       "lifetimeSeconds": 5,
@@ -49,15 +44,13 @@
     },
     {
       "debuffKey": "HZ000006",
-      "memo": "",
-      "effectType": "MoveSpeedDown",
+      "effectType": "EnemyMoveSpeedDown",
       "prefabKey": "Hazard_Bupyo",
       "lifetimeSeconds": 3,
-      "moveSpeedScale": 0.7
+      "enemyMoveSpeedScale": 0.7
     },
     {
       "debuffKey": "HZ000007",
-      "memo": "",
       "effectType": "None",
       "prefabKey": "FX_RPG_Cp10_CapeLittleBuffet_Creep",
       "lifetimeSeconds": 3

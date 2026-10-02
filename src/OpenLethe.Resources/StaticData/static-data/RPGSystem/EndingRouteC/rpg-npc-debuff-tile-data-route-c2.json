@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "debuffKey": "HZ000010",
+      "effectType": "MoveSpeedDown",
+      "prefabKey": "BisqueDollDebuffTile",
+      "lifetimeSeconds": 6,
+      "moveSpeedScale": 0.5
+    },
+    {
+      "debuffKey": "HZ000011",
+      "effectType": "MoveSpeedDown",
+      "prefabKey": "Fx_RPG_Mon_Cp10_Buffet_Creep",
+      "lifetimeSeconds": 15,
+      "moveSpeedScale": 0.15,
+      "banDodge": true
+    }
+  ]
+}

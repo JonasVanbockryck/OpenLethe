@@ -54,7 +54,7 @@
     "openChapterData": {
       "unlockCode": 100
     },
-    "duration": 105.00000762939453,
+    "duration": 107.25300598144531,
     "bank": ""
   },{
     "id": 100006,
@@ -3586,11 +3586,11 @@
     "bank": ""
   }, {
     "id": 300011,
-    "uiImage": "28_1",
+    "uiImage": "999_1",
     "fileName": "event:/BGM/Battle/Battle_LOR_ChurchOfGears_Normal",
     "acquireType": "VENDING",
     "acquireIntType": 2,
-    "uiCategoryId": 28,
+    "uiCategoryId": 999,
     "openChapterData": {
       "unlockCode": 9113
     },
@@ -3598,11 +3598,11 @@
     "bank": ""
   }, {
     "id": 300012,
-    "uiImage": "28_1",
+    "uiImage": "999_1",
     "fileName": "event:/BGM/Battle/Battle_LOR_ChurchOfGears_Hard",
     "acquireType": "VENDING",
     "acquireIntType": 2,
-    "uiCategoryId": 28,
+    "uiCategoryId": 999,
     "openChapterData": {
       "unlockCode": 9113
     },

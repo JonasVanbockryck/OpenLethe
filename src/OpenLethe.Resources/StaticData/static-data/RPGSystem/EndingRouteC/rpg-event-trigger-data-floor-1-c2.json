@@ -1,0 +1,28 @@
+{
+  "list": [
+    {
+      "id": 91100101,
+      "eventKey": "E1000_C2",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1001C-2"
+    },
+    {
+      "id": 91100102,
+      "eventKey": "E1001_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "118002"
+    },
+    {
+      "id": 91100103,
+      "eventKey": "E1002_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C1001_C2"
+    },
+    {
+      "id": 91100104,
+      "eventKey": "E1003_C2",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": "F1001C-2"
+    }
+  ]
+}

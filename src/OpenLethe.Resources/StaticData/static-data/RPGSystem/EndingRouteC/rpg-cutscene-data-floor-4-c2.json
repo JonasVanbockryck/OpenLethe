@@ -1,0 +1,159 @@
+{
+  "list": [
+    {
+      "key": "C4001_C2",
+      "showUnboundNpcs": false,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "player, 29, -63"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 29, -64"
+            }
+          ]
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N990002_C2, boss, 0, 21, -63"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "boss, 25, -63"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "boss, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D4001_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "boss"
+        }
+      ]
+    },
+    {
+      "key": "C4002_C2",
+      "showUnboundNpcs": false,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "player, 29, -63"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 29, -64"
+            }
+          ]
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N990002_C2, boss, 0, 21, -63"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "boss, 25, -63"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "boss, player"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D4002_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "boss"
+        }
+      ]
+    },
+    {
+      "key": "C4003_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "Story",
+          "param": "S1048C"
+        }
+      ]
+    }
+  ]
+}

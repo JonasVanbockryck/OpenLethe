@@ -1,0 +1,9 @@
+{
+    "dataFiles": [
+        { "type": "stationary-object", "fileName": "TheaterC/rpg-stationary-object-data-theater-c.json" },
+        { "type": "theater-list", "fileName": "TheaterC/rpg-theater-list-data-c.json" },
+        { "type": "dialogue", "fileName": "TheaterC/rpg-dialogue-data-theater-c.json" },
+        { "type": "dialogue-text", "fileName": "TheaterC/rpg-dialogue-text-data-theater-c.json" },
+        { "type": "zone-bgm", "fileName": "TheaterC/rpg-zone-bgm-data-theater-c.json" }
+    ]
+}

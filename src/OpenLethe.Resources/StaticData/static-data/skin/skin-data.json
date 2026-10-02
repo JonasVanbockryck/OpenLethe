@@ -6846,6 +6846,66 @@
           "defType": "ATTACK"
         }
       ]
+    },
+    {
+      "skinId": 10315,
+      "characterId": 3,
+      "promotionId": 0,
+      "defaultId": -1,
+      "rank": 1,
+      "unitScriptName": "",
+      "appearanceID": "",
+      "isAcquirable": true,
+      "canCrafted": true,
+      "isDefaultIdVoice": false,
+      "unlockType": 0,
+      "skinNameId": "",
+      "useIllustEffect": false,
+      "skinType": 0,
+      "skillDataList": [
+        {
+          "skillId": 1031501,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S1",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1031502,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S2",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1031503,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S3",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1031504,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S4",
+          "defType": "COUNTER"
+        },
+        {
+          "skillId": 1031505,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S5",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1031506,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S6",
+          "defType": "ATTACK"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,1281 @@
+{
+  "list": [
+    {
+      "key": "C5001_C2",
+      "bindings": [],
+      "commands": []
+    },
+    {
+      "key": "C5002_C2",
+      "showUnboundNpcs": false,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Story",
+          "param": "S1035A",
+          "commands": [
+            {
+              "type": "KeepBgmThroughDialogue",
+              "param": "D5002B_C2"
+            },
+            {
+              "type": "IsNotStopBgm",
+              "param": "False"
+            },
+            {
+              "type": "IsStopSfx",
+              "param": "True"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "1.5"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N105010_C2, buffet, 0, -82, -315"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -86, -314"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -87, -315"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N1010210, yisang, 0, -87, -313"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N1010240, gregor, 0, -90, -316"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffet, Left"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "buffet, Cutscene_Dead_Idle"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-83, -314, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "11.5, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "6.5, 22, linear, nowait"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5002B_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "buffet, Cutscene_Dead"
+        },
+        {
+          "type": "Wait",
+          "param": "1.1"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_don_repelled_splash"
+        },
+        {
+          "type": "Die",
+          "param": "buffet"
+        },
+        {
+          "type": "Wait",
+          "param": "1.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "buffet"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "yisang"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "gregor"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.1"
+        }
+      ]
+    },
+    {
+      "key": "C5003_C2",
+      "showUnboundNpcs": false,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "tablecloth",
+          "kind": "Npc",
+          "actorKey": "N105031_C2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_table_light, 1"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "MoveCharacter",
+                  "param": "player, -65, -295"
+                }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Wait",
+                  "param": "0.4"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "dante, -66, -296"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, tablecloth"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, tablecloth"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "12, 1.5, nowait"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-62, -293, 1.5"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N105030_C2, kromer, 0, -71, -309"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, kromer"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "10, 2.0, nowait"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "kromer, 2.0"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "FaceCharacter",
+                  "param": "kromer, Up"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "kromer, -70, -308"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "kromer, -69, -306"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.35"
+                },
+                {
+                  "type": "MoveCamera",
+                  "param": "-66, -299, 0"
+                },
+                {
+                  "type": "TeleportCharacter",
+                  "param": "kromer, -66, -299"
+                },
+                {
+                  "type": "CenterCameraToCharacter",
+                  "param": "kromer, 0"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "kromer, Right"
+                },
+                {
+                  "type": "MoveCharacter",
+                  "param": "kromer, -62, -296"
+                },
+                {
+                  "type": "FaceCharacterToward",
+                  "param": "kromer, player"
+                }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "Dialogue",
+                  "param": "D5037_C2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -64, -295"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -65, -294"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "kromer, -62, -296"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150617"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "player, Idle_Kromer"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, kromer"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "kromer, Left"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-62, -294, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "11, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "10.0, 1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5030_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150611"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "player, Sit_Kromer2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5031_C2"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150611"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5038_C2"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_dish_clatter"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_table_light, 0"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_recall_stage, 1"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5031A_C2"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_recall_stage, 0"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_table_light, 1"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5031B_C2"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150612"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5031C_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5032_C2"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_table_light, 0"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_dish_clatter"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_recall_stage, 2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5032A_C2"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_recall_stage, 0"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_table_light, 1"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5032B_C2"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150613"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5033_C2"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_table_light, 0"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_dish_clatter"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_recall_stage, 3"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5033A_C2"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_recall_stage, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5033B_C2"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150614"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5033C_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "kromer, 0.5"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0.8"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5034_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5035_C2"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 1.0"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-37, -286, 1.0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150618"
+        },
+        {
+          "type": "Wait",
+          "param": "0.8"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_recall_sunshine"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5036_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "tablecloth, SetSilent, 1.6"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "kromer"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -53, -287"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        }
+      ]
+    },
+    {
+      "key": "C5010_C2",
+      "showUnboundNpcs": true,
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D5010_C2"
+        }
+      ]
+    },
+    {
+      "key": "C5011_C2",
+      "showUnboundNpcs": true,
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D5011_C2"
+        }
+      ]
+    },
+    {
+      "key": "C5012_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "PlayProduce",
+          "param": "a1c10p3_RPG,, signal, bgm_floor6th, sisyphe"
+        },
+        {
+          "type": "FireEvent",
+          "param": "E5028_C2"
+        },
+        {
+          "type": "WarpFloor",
+          "param": "F1007C-2, 181, 21"
+        }
+      ]
+    },
+    {
+      "key": "C-PB-BUFFET",
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "boss",
+          "kind": "Npc",
+          "actorKey": "N105010_C2"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "yisang",
+          "kind": "Player",
+          "actorKey": "1"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Player",
+          "actorKey": "12"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FireEvent",
+          "param": "E5030_C2"
+        },
+        {
+          "type": "EndSwarmMode",
+          "param": ""
+        },
+        {
+          "type": "SetBgm",
+          "param": "bgm_fieldBossBattleCp10Boss9, N105010_C2"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "player, boss, -3, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "dante, player, 0, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "yisang, player, 0, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "gregor, player, 0, 2"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Right"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "boss, Cutscene_Idle1"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "boss, 0.5, 1, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "7.0, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "5.5, 20, linear, nowait"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "floor_5_gate"
+        },
+        {
+          "type": "Wait",
+          "param": "3"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.25"
+        },        {
+          "type": "Story",
+          "param": "S1035B"
+        }
+      ],
+      "hideUnboundParty": true
+    },
+    {
+      "key": "C5005_C2",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "buffet",
+          "kind": "Npc",
+          "actorKey": "N105010S_C2"
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -82, -330"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -80, -322"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N1010210, yisang, 0, -82, -322"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N1010240, gregor, 0, -78, -322"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "buffet, Cutscene7f_SitEating_NoSound"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-80, -321, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "5.5, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5020_C2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5020B_C2",
+          "commands": [
+            {
+              "type": "Sequential",
+              "commands": []
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "PlayMotion",
+                  "param": "buffet, Cutscene7f_SitEating"
+                },
+                {
+                  "type": "ZoomCamera",
+                  "param": "8, 2.5, nowait"
+                },
+                {
+                  "type": "MoveCamera",
+                  "param": "-81.5, -314, 2.5"
+                }
+              ]
+            },
+            {
+              "type": "MoveCamera",
+              "param": "-81.5, -314, 0.8"
+            },
+            {
+              "type": "Sequential",
+              "commands": []
+            },
+            {
+              "type": "Sequential",
+              "commands": []
+            },
+            {
+              "type": "Sequential",
+              "commands": []
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "5.5, 2.4"
+            }
+          ]
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-81.5, -314, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "5.5, 0"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -82, -320"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -80, -320"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "yisang, -86, -322"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "gregor, -76, -322"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "dante, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "8, 1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5041_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "buffet, Down"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "buffet, Cutscene7f_Sit"
+        },
+        {
+          "type": "Wait",
+          "param": "1.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5021_C2",
+          "commands": [
+            {
+              "type": "Parallel",
+              "commands": [
+                {
+                  "type": "ZoomCamera",
+                  "param": "14, 4.0, nowait"
+                },
+                {
+                  "type": "MoveCamera",
+                  "param": "-81.5, -317, 4.0"
+                }
+              ]
+            },
+            {
+              "type": "MoveCamera",
+              "param": "-81.5, -317, 1.0"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 1.0"
+            },
+            {
+              "type": "MoveCamera",
+              "param": "-81.5, -313, 1.0"
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "PlayMotion",
+                  "param": "buffet, Cutscene7f_StandUp"
+                },
+                {
+                  "type": "PlaySfx",
+                  "param": "sfx_leather_stretch"
+                },
+                {
+                  "type": "Wait",
+                  "param": "2.5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5021B_C2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "ZoomCamera",
+              "param": "16, 2.0"
+            },
+            {
+              "type": "MoveCamera",
+              "param": "-81.5, -317, 2.0"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5022_C2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "-81.5, -313, 1.5"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 1.5"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D5023_C2"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "yisang"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "gregor"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "14, 0"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "-81, -315, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.9"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "11, 1.5, nowait"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 1.5"
+        }
+      ],
+      "hideUnboundParty": true
+    },
+    {
+      "key": "C5013_C2",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "MoveCamera",
+          "param": "-62, -293, 2.0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N105031_C2, tableclone, 0, -62, -293, false, , , Set"
+        },
+        {
+          "type": "Wait",
+          "param": "0.9"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_dish_clatter"
+        },
+        {
+          "type": "Wait",
+          "param": "0.7"
+        },
+        {
+          "type": "FireEvent",
+          "param": "EL5037_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.7"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.4"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "tableclone"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO150619"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -71, -305"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.1"
+        }
+      ]
+    },
+    {
+      "key": "C5014_C2",
+      "repeatable": true,
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "tablecloth",
+          "kind": "Npc",
+          "actorKey": "N105031_C2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, tablecloth"
+        },
+        {
+          "type": "Wait",
+          "param": "0.25"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -67, -300"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "dante, -66, -301"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, tablecloth"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, tablecloth"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "9.5, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        }
+      ]
+    }
+  ]
+}

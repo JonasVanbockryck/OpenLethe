@@ -36,8 +36,8 @@
     {
       "npcKey": "N103003",
       "order": 10,
-      "conditionType": "Item",
-      "conditionValue": "I990319",
+      "conditionType": "Quest",
+      "conditionValue": "Q3023",
       "interactionType": "Cutscene",
       "interactionKey": "C3204"
     },

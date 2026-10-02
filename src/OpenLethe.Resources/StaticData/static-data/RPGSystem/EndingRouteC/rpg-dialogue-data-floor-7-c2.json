@@ -1,0 +1,176 @@
+{
+  "list": [
+    {
+      "key": "D7006_C2",
+      "trackCompletion": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7002_C2",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7003_C2",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7004_C2",
+      "trackCompletion": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7011_C2",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7012_C2",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7013_C2",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7005_C2",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7022_C2",
+      "trackCompletion": true,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7023_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7024_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7026_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7028_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7040_C2",
+      "trackCompletion": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7050_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": [
+        "DC7050_C2",
+        "DC7054_C2",
+        "DC7055_C2"
+      ]
+    },
+    {
+      "key": "D7051_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": [
+        "DC7052_C2",
+        "DC7056_C2",
+        "DC7057_C2"
+      ]
+    },
+    {
+      "key": "D7052_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": [
+        "DC7051_C2",
+        "DC7058_C2",
+        "DC7059_C2"
+      ]
+    },
+    {
+      "key": "D7053_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": [
+        "DC7053_C2"
+      ]
+    },
+    {
+      "key": "D7060_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7061_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7062_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7063_C2",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7064_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7070_C2",
+      "trackCompletion": false,
+      "letterbox": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7029_C2",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7081_C2",
+      "trackCompletion": false,
+      "letterbox": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7082_C2",
+      "trackCompletion": false,
+      "letterbox": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D7083_C2",
+      "trackCompletion": false,
+      "letterbox": false,
+      "choiceKeys": []
+    }
+  ]
+}

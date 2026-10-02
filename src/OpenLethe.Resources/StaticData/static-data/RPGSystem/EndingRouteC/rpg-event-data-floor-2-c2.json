@@ -1,0 +1,14 @@
+{
+  "list": [
+    {
+      "key": "E2001_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C2001_C2"
+    },
+    {
+      "key": "ESHLD2_C2",
+      "canRepeat": false
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+﻿{
+  "list": [
+    {
+      "id": 11036,
+      "stageLevel": 65,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0.0677,
+        "defaultPosY": 0.0677,
+        "defaultPosZ": -10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10_C_WardenPhase1"
+          },
+          "unitList": [
+            {
+              "unitID": 1485,
+              "unitCount": 1,
+              "unitLevel": 90
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 1520,
+              "unitCount": 1,
+              "unitLevel": 1
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Boss_2-1",
+            "Battle_Cp10_Boss_7",
+            "Battle_Cp10_Boss_8",
+            "Battle_Cp10_Boss_13"
+          ],
+          "enemyPositionID": 250,
+          "allyPositionID": 279
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "story": {
+        "enter": [
+        ],
+        "exit": [
+        ],
+        "others": [
+          {
+            "phase": "BEFORE_END_WAVE",
+            "storyID":  "S1034A",
+            "storyIndex": 1
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1032B",
+            "storyIndex": 1
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1033B",
+            "storyIndex": 2
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1034B",
+            "storyIndex": 3
+          }
+        ]
+      },
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1485", "VipGradeForRpg", "1485ProduceSystem", "1485Story"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      }
+    },
+    {
+      "id": 11039,
+      "stageLevel": 65,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0.57,
+        "defaultPosY": 0.18,
+        "defaultPosZ": 38.5
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10_C_JeannePhase1",
+            "mapSize": 40
+          },
+          "unitList": [
+            {
+              "unitID": 1522,
+              "unitCount": 1,
+              "unitLevel": 90
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 1525,
+              "unitCount": 3,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 1526,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 1527,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Boss_4"
+          ],
+          "enemyPositionID": 270,
+          "allyPositionID": 269
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "story": {
+        "enter": [
+        ],
+        "others": [
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1038B",
+            "storyIndex": 1
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1038A",
+            "storyIndex": 2
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1039B",
+            "storyIndex": 3
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1039A",
+            "storyIndex": 4
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1040B",
+            "storyIndex": 5
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1040A",
+            "storyIndex": 6
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1041B",
+            "storyIndex": 7
+          },
+          {
+            "phase": "STORY_AFTER_ABNORMALITY_CHOICE",
+            "storyID": "S1041A",
+            "storyIndex": 8
+          }
+        ]
+      },
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1522",
+        "CantRetreatMeursault_Abnormality", 
+        "VipGradeForRpg",
+        "1522ProduceSystem",
+        "11039Interlude",
+        "ImmortalMeursaultJeanne"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 1
+      },
+      "includeBoss": 1
+    },
+    {
+      "id": 11041,
+      "stageLevel": 65,
+      "stageType": "Abnormality",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.5,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10_C_5F_GreatHall",
+            "mapSize": 35
+          },
+          "unitList": [
+            {
+              "unitID": 1517,
+              "unitCount": 1,
+              "unitLevel": 90
+            },
+            {
+              "unitID": 1518,
+              "unitCount": 3,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 1518,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 1521,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Boss_10",
+            "Battle_Cp10_Boss_11"
+          ],
+          "enemyPositionID": 272,
+          "allyPositionID": 271
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "1517", "ImmortalMeursaultFinal", "VipGradeForRpg"
+      ],
+      "stageContinueInfo":{
+        "continueDataId": 1,
+        "isContinueEnabled": true,
+        "isContinueAssist": true,
+        "ver": 2
+      }
+    }
+  ]
+}

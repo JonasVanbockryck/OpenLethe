@@ -1,0 +1,1166 @@
+{
+  "list": [
+    {
+      "key": "reference_data_for_ai_camera_move",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "MoveCamera",
+          "param": "67, 62, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "67, 58, 4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.4"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "kromer, 0, 3, 1.0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.4"
+        }
+      ]
+    },
+    {
+      "key": "C1001",
+      "blockLocationBanner": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 67, 40"
+        },
+        {
+          "type": "Story",
+          "param": "S1030B",
+          "commands": [
+            {
+              "type": "IsNoStartFadeAnimation",
+              "param": "True"
+            }
+          ]
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        },
+        {
+          "type": "ShowLocationBanner",
+          "param": "110200"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "player, 67, 42"
+        }
+      ]
+    },
+    {
+      "key": "C1010",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Wait",
+          "param": "0.1"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 78, 110"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101019, rodya, 0,76, 109"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101020, ishmael, 0, 76, 108"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101026, heathcliff, 0, 76, 107"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101023, sinclair, 0, 78, 108"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101027, outis, 0, 78, 107"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101022, faust, 0, 79, 109"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101021, yisang, 0, 77, 110"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101025, ryoshu, 0, 79, 107"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101029, don, 0, 79, 110"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101024, gregor, 0, 79, 108"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101028, honglu, 0, 80, 108"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "rodya, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heathcliff, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Left"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1010"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "rodya"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "ishmael"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "heathcliff"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "sinclair"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "outis"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "faust"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "yisang"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "ryoshu"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "don"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "gregor"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "honglu"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 78, 110"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        }
+      ]
+    },
+    {
+      "key": "C1011",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "guest1",
+          "kind": "Npc",
+          "actorKey": "N101031"
+        },
+        {
+          "actorName": "guest2",
+          "kind": "Npc",
+          "actorKey": "N101032"
+        },
+        {
+          "actorName": "guest3",
+          "kind": "Npc",
+          "actorKey": "N101033"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101019, rodya, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101020, ishmael, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101026, heathcliff, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101023, sinclair, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101027, outis, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101022, faust, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101021, yisang, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101025, ryoshu, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101029, don, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101024, gregor, 0, 67, 50"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101028, honglu, 0, 67, 50"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "rodya, player, -3, 1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ishmael, player, -2, 2"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "heathcliff, player, -2, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "sinclair, player, 1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "outis, player, -3, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "faust, player, 0, -1"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "yisang, player, 2, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ryoshu, player, -3, -2"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "don, player, -1, -2"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "gregor, player, 1, -2"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "honglu, player, 4, -2"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "rodya, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heathcliff, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Up"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.7"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacterRelative",
+              "param": "player, player, 0, 3"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "heathcliff, heathcliff, 0, 3"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "sinclair, sinclair, 0, 3"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "faust, faust, 0, 3"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "yisang, yisang, 1, 3"
+            },
+            {
+              "type": "MoveCharacterRelative",
+              "param": "don, don, 0, 3"
+            }
+          ]
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "FaceCharacter",
+                  "param": "player, Left"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.7"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "player, Right"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.7"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "player, Left"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.6"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "player, Up"
+                }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "FaceCharacter",
+                  "param": "rodya, Right"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.8"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "rodya, Left"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.7"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "rodya, Right"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.5"
+                }
+              ]
+            },
+            {
+              "type": "Sequential",
+              "commands": [
+                {
+                  "type": "FaceCharacter",
+                  "param": "ishmael, Up"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.6"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "ishmael, Down"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.7"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "ishmael, Up"
+                },
+                {
+                  "type": "Wait",
+                  "param": "0.6"
+                },
+                {
+                  "type": "FaceCharacter",
+                  "param": "ishmael, Left"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1090"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "SpawnObject",
+              "param": "SO201916"
+            },
+            {
+              "type": "PlayVfx",
+              "param": "CorpseFall, 74, 53"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_heavy_body_fall"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_flesh_explode"
+            },
+            {
+              "type": "CameraShake",
+              "param": "0.5, 0.6, 15"
+            }
+          ]
+        },
+        {
+          "type": "Knockback",
+          "param": "yisang, Left, 1, 0.05"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "rodya, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heathcliff, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "3.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1091"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "guest2, 71, 53"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "guest1, 76, 54"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "guest3, 76, 52"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "guest2, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "guest1, Down"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "guest3, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "guest1, pick"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "guest2, pick, 0.1, true"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "guest3, pick, 0.2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "PlaySfx",
+              "param": "sfx_flesh_find"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1092"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1093"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1019"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1011"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "rodya, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ishmael, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "heathcliff, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "sinclair, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "outis, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "faust, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "yisang, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ryoshu, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "don, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "gregor, Up"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "honglu, Up"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101002, kromer, 0, 67, 60"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "kromer, player, 0, 1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "kromer, Down"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D10111"
+        },
+        {
+          "type": "Story",
+          "param": "S1031B"
+        }
+      ]
+    },
+    {
+      "key": "C1012",
+      "hideUnboundParty": true,
+      "restoreNpcConditionalMotion": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "kromer",
+          "kind": "Npc",
+          "actorKey": "N101002"
+        },
+        {
+          "actorName": "rodya",
+          "kind": "Npc",
+          "actorKey": "N101019"
+        },
+        {
+          "actorName": "ishmael",
+          "kind": "Npc",
+          "actorKey": "N101020"
+        },
+        {
+          "actorName": "heathcliff",
+          "kind": "Npc",
+          "actorKey": "N101026"
+        },
+        {
+          "actorName": "sinclair",
+          "kind": "Npc",
+          "actorKey": "N101023"
+        },
+        {
+          "actorName": "outis",
+          "kind": "Npc",
+          "actorKey": "N101027"
+        },
+        {
+          "actorName": "faust",
+          "kind": "Npc",
+          "actorKey": "N101022"
+        },
+        {
+          "actorName": "yisang",
+          "kind": "Npc",
+          "actorKey": "N101021"
+        },
+        {
+          "actorName": "ryoshu",
+          "kind": "Npc",
+          "actorKey": "N101025"
+        },
+        {
+          "actorName": "don",
+          "kind": "Npc",
+          "actorKey": "N101029"
+        },
+        {
+          "actorName": "gregor",
+          "kind": "Npc",
+          "actorKey": "N101024"
+        },
+        {
+          "actorName": "honglu",
+          "kind": "Npc",
+          "actorKey": "N101028"
+        },
+        {
+          "actorName": "guest1",
+          "kind": "Npc",
+          "actorKey": "N101031"
+        },
+        {
+          "actorName": "guest2",
+          "kind": "Npc",
+          "actorKey": "N101032"
+        },
+        {
+          "actorName": "guest3",
+          "kind": "Npc",
+          "actorKey": "N101033"
+        }
+      ],
+      "commands": [
+       {
+          "type": "FaceCharacter",
+          "param": "guest2, Right"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "guest1, pick"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "guest2, pick, 0.1, true"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "guest3, pick, 0.2"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "kromer"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "rodya"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "ishmael"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "heathcliff"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "sinclair"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "outis"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "faust"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "yisang"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "ryoshu"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "don"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "gregor"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "honglu"
+        },
+        {
+          "type": "WarpFloor",
+          "param": "F1002C-1, 72, 57"
+        }
+      ]
+      
+    },
+    {
+      "key": "C1020",
+      "hideUnboundParty": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Wait",
+          "param": "0.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 165, 126"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101020, ish, 0, 162, 127"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101019, roja, 0, 163, 127"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "roja, player, -1, 0"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "ish, player, -2, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "roja, Right"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish, Right"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "player, 168, 127"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "roja, 167, 127"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "ish, 165, 127"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish, Left"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D10201"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Left"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "roja, Left"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "ish, 163, 125"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish, Down"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "ish, 166, 127"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish, Right"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D10202"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "ish, 163, 127"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "ish"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D10203"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacterRelative",
+          "param": "roja, player, 0, 1"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "roja, Left"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N101020, ish2, 0, 163, 127"
+        },
+        {
+          "type": "MoveCharacterRelative",
+          "param": "ish2, player, -1, 0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "ish2, Right"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.5"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1020"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D10400"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.3"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "ish2"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "roja"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.3"
+        }
+      ]
+    }
+  ]
+}

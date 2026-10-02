@@ -1,0 +1,131 @@
+{
+  "list": [
+    {
+      "key": "C1000_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D1000_C2"
+        }
+      ]
+    },
+    {
+      "key": "C1001_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "dante",
+          "kind": "Player",
+          "actorKey": "13"
+        },
+        {
+          "actorName": "rodya",
+          "kind": "Player",
+          "actorKey": "9"
+        },
+        {
+          "actorName": "ishmael",
+          "kind": "Player",
+          "actorKey": "8"
+        }
+      ],
+      "commands": [
+        {
+          "type": "SpawnNpc",
+          "param": "N990001_C2, boss, 99000101, 73, 53"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCharacter",
+              "param": "player, 68, 53"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "dante, 67, 52"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "rodya, 67, 54"
+            },
+            {
+              "type": "MoveCharacter",
+              "param": "ishmael, 66, 53"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1001_C2"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "dante, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "rodya, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "ishmael, boss"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "boss, player"
+        },
+        {
+          "type": "PlayMotion",
+          "param": "boss, Appear"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D1002_C2"
+        }
+      ]
+    },
+    {
+      "key": "C1002_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.2"
+        },
+        {
+          "type": "Story",
+          "param": "S1045C"
+        }
+      ]
+    }
+  ]
+}

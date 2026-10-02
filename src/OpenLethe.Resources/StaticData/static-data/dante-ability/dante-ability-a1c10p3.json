@@ -1,0 +1,54 @@
+{
+  "list":[
+    {
+      "id": 50101,
+      "sepira": "TIPHERETH",
+      "name": "LUXURIA",
+      "limit": 1,
+      "abilityList": [
+        {
+          "scriptName": "ForceCoinResult"
+        }
+      ],
+      "deactivateList": [
+
+      ],
+      "optionList": [
+        {
+          "iconPath": "Assets/Sprites/UI/BattleUI/BattleUI_DanteAbility/Coin_F.png",
+          "textKey": "danteAbility_50101_Option_0"
+        },
+        {
+          "iconPath": "Assets/Sprites/UI/BattleUI/BattleUI_DanteAbility/Coin_B.png",
+          "textKey": "danteAbility_50101_Option_1"
+        }
+      ],
+      "unlockCondition": {
+        "unlockCode": 11006
+      },
+      "soundConfig": {
+        "soundList": [
+          {
+            "soundType": 0,
+            "soundId": "UI/UI_GeburaSlowdown"
+          }
+        ]
+      }
+    },
+    {
+      "id": 50102,
+      "sepira": "TIPHERETH_IMPERFECT",
+      "name": "T@!P%#TH",
+      "limit": 1,
+      "vignetteTurn": 99,
+      "abilityList": [
+      ],
+      "deactivateList": [
+
+      ],
+      "unlockCondition": {
+        "unlockCode": 11006
+      }
+    }
+  ]
+}

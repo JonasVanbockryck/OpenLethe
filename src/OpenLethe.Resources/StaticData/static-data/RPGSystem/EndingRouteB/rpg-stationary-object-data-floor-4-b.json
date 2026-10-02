@@ -458,7 +458,7 @@
       "condDialogueKey1": "D42072",
       "showQuestMark": true,
       "questMarkOffsetY": 3.2,
-      "interactEffect": "default",
+      "interactEffect": "InteractSparkleLv3",
       "interactEffectOnType": "Quest",
       "interactEffectOnValue": "Q4024",
       "interactEffectOffType": "Quest",

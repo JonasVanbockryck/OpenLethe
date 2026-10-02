@@ -354,6 +354,9 @@
   "isSolve1272": true,
   "onEndTurnBuffTypo": true,
   "isUseNextButton": true,
-  "isAbleToRetryOnRpg": true
+  "isAbleToRetryOnRpg": true,
+  "rpgSisyphusSkipRetryCount": 33,
+  "rpgSisyphusSkipElapsedSeconds": 600,
+  "storyAutoEndSignalCleanup": true
 }
 

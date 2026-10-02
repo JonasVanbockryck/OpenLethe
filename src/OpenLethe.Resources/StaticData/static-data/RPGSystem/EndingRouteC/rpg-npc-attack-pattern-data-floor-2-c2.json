@@ -1,0 +1,51 @@
+﻿{
+  "list": [
+    {
+      "patternKey": "NA990001_C2",
+      "triggerRange": 2,
+      "canStartWhileMoving": true,
+      "cooldown": 0.5,
+      "staggerBreakBranchKey": "Sweep",
+      "branches": [
+        {
+          "branchKey": "Sweep",
+          "entryType": "Trigger",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Sweep"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.8,
+              "motion": "MeleeAttackReady"
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 44,
+              "mpDamage": 0,
+              "instakillOnHit": false,
+              "parryImmune": true,
+              "hidePrecursor": true,
+              "hitShape": [
+                ".X.",
+                "XXX",
+                ".N."
+              ],
+              "motion": "MeleeAttack"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "list": [
+    {
+      "key": "C-PB-WARDEN",
+      "repeatable": true,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "warden",
+          "kind": "Npc",
+          "actorKey": "N999997"
+        }
+      ],
+      "commands": [
+        {
+          "type": "PlayMotion",
+          "param": "warden, Swing"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, warden"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.66"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_just_guard"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.35, 0.6"
+        },
+        {
+          "type": "Wait",
+          "param": "0.55"
+        },
+        {
+          "type": "EndSlowMo"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-PB-WARDEN"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        }
+      ]
+    }
+  ]
+}

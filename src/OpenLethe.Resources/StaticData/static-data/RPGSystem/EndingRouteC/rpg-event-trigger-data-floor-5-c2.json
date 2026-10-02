@@ -1,0 +1,279 @@
+{
+  "list": [
+    {
+      "id": 91500101,
+      "eventKey": "E5001_C2",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1005C-2"
+    },
+    {
+      "id": 91500102,
+      "eventKey": "E5002_C2",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11041"
+    },
+    {
+      "id": 91500104,
+      "eventKey": "EW5001_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158002",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q5001_C2",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5008_C2"
+    },
+    {
+      "id": 91500105,
+      "eventKey": "E5004_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5001_C2",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EQ1002_C2"
+    },
+    {
+      "id": 91500106,
+      "eventKey": "E5005_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5001_C2",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EQ1002_C2"
+    },
+    {
+      "id": 91500107,
+      "eventKey": "EQ1002_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5010_C2"
+    },
+    {
+      "id": 91500108,
+      "eventKey": "E5006_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158001",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q5003_C2"
+    },
+    {
+      "id": 91500109,
+      "eventKey": "E5007_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5012_C2"
+    },
+    {
+      "id": 91500110,
+      "eventKey": "E5008_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158003",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q5001_C2"
+    },
+    {
+      "id": 91500114,
+      "eventKey": "EL5011_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5005_C2"
+    },
+    {
+      "id": 91500111,
+      "eventKey": "E5009_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5005_C2"
+    },
+    {
+      "id": 91500112,
+      "eventKey": "E5009_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158005",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EM5010_C2",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q5001_C2",
+      "passiveCondition3": "QuestCompleted",
+      "passiveConditionValue3": "Q5004T_C2",
+      "fireIfAlreadyInside": true
+    },
+    {
+      "id": 91500113,
+      "eventKey": "EM5010_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5005_C2"
+    },
+    {
+      "id": 91500115,
+      "eventKey": "E5012_C2",
+      "activeCondition": "EnterLocationPlayer",
+      "activeConditionValue": "999999",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5004T_C2",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q5001_C2"
+    },
+    {
+      "id": 91500116,
+      "eventKey": "EL5013_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5031B_C2"
+    },
+    {
+      "id": 91500117,
+      "eventKey": "EL5014_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5032B_C2"
+    },
+    {
+      "id": 91500118,
+      "eventKey": "EL5015_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5033B_C2"
+    },
+    {
+      "id": 91500119,
+      "eventKey": "EM5013_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158006"
+    },
+    {
+      "id": 91500120,
+      "eventKey": "E5016_C2",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11041"
+    },
+    {
+      "id": 91500121,
+      "eventKey": "E5017_C2",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1005C-2",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EL5011_C2"
+    },
+    {
+      "id": 91500122,
+      "eventKey": "E5018_C2",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1005C-2",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EL5011_C2"
+    },
+    {
+      "id": 91500123,
+      "eventKey": "E5019_C2",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1005C-2",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EL5011_C2"
+    },
+    {
+      "id": 91500124,
+      "eventKey": "E5020_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5005_C2"
+    },
+    {
+      "id": 91500125,
+      "eventKey": "E5021_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5005_C2"
+    },
+    {
+      "id": 91500126,
+      "eventKey": "E5022_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5005_C2"
+    },
+    {
+      "id": 91500127,
+      "eventKey": "E5023_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "158010",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q5001_C2",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q5002_C2"
+    },
+    {
+      "id": 91500129,
+      "eventKey": "E5024_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5039_C2"
+    },
+    {
+      "id": 91500130,
+      "eventKey": "E5003_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5040_C2",
+      "passiveCondition1": "QuestNotCompleted",
+      "passiveConditionValue1": "Q5002_C2"
+    },
+    {
+      "id": 91500131,
+      "eventKey": "E5003_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C5014_C2"
+    },
+    {
+      "id": 91500132,
+      "eventKey": "E5025_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150301",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EL5011_C2"
+    },
+    {
+      "id": 91500133,
+      "eventKey": "E5026_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150302",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EL5011_C2"
+    },
+    {
+      "id": 91500134,
+      "eventKey": "E5027_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "150303",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "EL5011_C2"
+    },
+    {
+      "id": 91500135,
+      "eventKey": "EL5031_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5031_C2"
+    },
+    {
+      "id": 91500136,
+      "eventKey": "EL5032_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5031A_C2"
+    },
+    {
+      "id": 91500137,
+      "eventKey": "EL5033_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5032_C2"
+    },
+    {
+      "id": 91500138,
+      "eventKey": "EL5034_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5032A_C2"
+    },
+    {
+      "id": 91500139,
+      "eventKey": "EL5035_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5033_C2"
+    },
+    {
+      "id": 91500140,
+      "eventKey": "EL5036_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5033A_C2"
+    },
+    {
+      "id": 91500141,
+      "eventKey": "E5029_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D5035_C2"
+    }
+  ]
+}

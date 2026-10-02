@@ -53,10 +53,22 @@
         },
         {
           "id": 6,
+          "nodeId": 11006,
+          "syncNodeId": 912806,
+          "fullBannerId": "Story_BG/story_N_towerout",
           "rpgDetailInfo":
           {
-            "storyTitle": "??"
+            "storyTitle": "C",
+            "storyGroup": 2
           }
+        },
+        {
+          "id": 7,
+          "storyId": "S1044B",
+          "nodeId": 11007,
+          "syncNodeId": 912807,
+          "stageDetail": "Before",
+          "fullBannerId": "Story_BG/story_N_towerout"
         }
       ]
     }

@@ -1,0 +1,444 @@
+﻿{
+  "list": [
+    {
+      "key": "CRSC01_C2",
+      "showUnboundNpcs": true,
+      "waitTeleportEnd": true,
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "DRSC01_C2"
+        }
+      ]
+    },
+    {
+      "key": "CRSC02_C2",
+      "showUnboundNpcs": true,
+      "waitTeleportEnd": true,
+      "noLetterbox":true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "Dialogue",
+          "param": "DRSC01_C2"
+        }
+      ]
+    },
+    {
+      "key": "CKILL01_C2",
+      "showUnboundNpcs": true,
+      "noLetterbox": true,
+      "bindings": [],
+      "commands": []
+    },
+    {
+      "key": "CINT01_C2",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": true,
+      "repeatable": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "SetBgm",
+          "param": "bgm_cp10_boss4,label:Meursault=Battle_1,global:AbSelect=0"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "228, 8, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "5.5, 0, fitwidth:9.7"
+        },
+        {
+          "type": "CameraOverlayFx",
+          "param": "on"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.4"
+        },
+        {
+          "type": "Wait",
+          "param": "1.4"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "222, 8, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "1.2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "229, 7, 1.5"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "10, 1.5, linear, fitwidth:17.7"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "DINT01_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.0"
+        }
+      ]
+    },
+    {
+      "key": "CINT02_C2",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": true,
+      "repeatable": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "SetBgm",
+          "param": "bgm_cinemaAmb, interlude:Cinema_Amb"
+        },
+        {
+          "type": "SetInterludeBgmVolume",
+          "param": "1"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater, off"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater_leads, off"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater_late, off"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater_leads, motion, Sit, NPC_Jeanne"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater_leads, motion, SidOld, NPC_OldMerusault"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "131, 5, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "8, 0"
+        },
+        {
+          "type": "CameraOverlayFx",
+          "param": "on"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Wait",
+          "param": "2.0"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "c2f7_cinema_movie_end"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater, freeze"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater_late, freeze"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater, on, sfx_cinema_lot"
+        },
+        {
+          "type": "StageExit",
+          "param": "theater_leads, freeze"
+        },
+        {
+          "type": "Wait",
+          "param": "4.0"
+        },
+        {
+          "type": "DialogueOverFade",
+          "param": "DINT02B_C2",
+          "commands": [
+            { "type": "Wait", "param": "0" },
+            {
+              "type": "Sequential",
+              "commands": [
+                { "type": "FadeOut", "param": "0.15" },
+                { "type": "StageExit", "param": "theater_leads, motion, SitCoat, NPC_Jeanne" },
+                { "type": "StageExit", "param": "theater_leads, motion, Eating, NPC_OldMerusault" },
+                { "type": "Wait", "param": "0.1" },
+                { "type": "FadeIn", "param": "0.3" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "2.0"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "StageExit",
+              "param": "theater_late, on, sfx_cinema_lot"
+            },
+            {
+              "type": "MoveCamera",
+              "param": "132, 5, 3.0"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "5.5, 3.0, linear"
+            }
+          ]
+        },
+        {
+          "type": "StageExit",
+          "param": "theater_leads, freeze, 0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "DINT02C_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.0"
+        }
+      ]
+    },
+    {
+      "key": "CINT04_C2",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": true,
+      "repeatable": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "299, 9, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "12, 0"
+        },
+        {
+          "type": "CameraOverlayFx",
+          "param": "on"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "SetBgm",
+          "param": "bgm_cp10_boss4,global:AbSelect=1"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "DINT04_C2"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.0"
+        }
+      ]
+    },
+    {
+      "key": "CINT05_C2",
+      "showUnboundNpcs": true,
+      "hideUnboundParty": true,
+      "repeatable": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "StageExit",
+          "param": "sunset_leads, off"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "298.4, 11.8, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "4.5, 0"
+        },
+        {
+          "type": "CameraOverlayFx",
+          "param": "on"
+        },
+        {
+          "type": "Wait",
+          "param": "0.4"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Dialogue",
+          "param": "DINT05_C2",
+          "commands": [
+            { "type": "ZoomCamera", "param": "5.2, 2.0" },
+            {
+              "type": "Parallel",
+              "commands": [
+                { "type": "MoveCamera", "param": "298.4, 9.9, 4.0" },
+                { "type": "ZoomCamera", "param": "6.0, 4.0" }
+              ]
+            },
+            {
+              "type": "Parallel",
+              "commands": [
+                { "type": "MoveCamera", "param": "298.4, 10.1, 2.5" },
+                { "type": "ZoomCamera", "param": "6.4, 2.5" }
+              ]
+            },
+            {
+              "type": "Parallel",
+              "commands": [
+                { "type": "MoveCamera", "param": "298.4, 9.6, 2.5" },
+                { "type": "ZoomCamera", "param": "6.0, 2.5" }
+              ]
+            },
+            {
+              "type": "Parallel",
+              "commands": [
+                { "type": "MoveCamera", "param": "298.4, 9.4, 2.5" },
+                { "type": "ZoomCamera", "param": "5.2, 2.5" },
+                {
+                  "type": "Sequential",
+                  "commands": [
+                    { "type": "Wait", "param": "1.2" },
+                    { "type": "StageExit", "param": "sunset_leads, motion, Sit_Cinema, NPC_OldMerusault" },
+                    { "type": "Wait", "param": "1.1" },
+                    { "type": "StageExit", "param": "sunset_leads, motion, Sit_Cinema, NPC_Jeanne" }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.0"
+        }
+      ]
+    },
+    {
+      "key": "CALLSHLD_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D4000_C2"
+        }
+      ]
+    }
+  ]
+}

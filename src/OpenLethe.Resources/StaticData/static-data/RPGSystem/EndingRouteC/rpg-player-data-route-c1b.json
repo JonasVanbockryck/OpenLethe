@@ -1,0 +1,279 @@
+{
+  "list": [
+    {
+      "playerId": 1,
+      "prefabKey": "Player_Yisang_Variant",
+      "portraitKey": "DP_YiSang",
+      "groupDeathSkin": "01YIsang",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 2,
+      "prefabKey": "Player_Faust_Variant",
+      "portraitKey": "DP_Faust",
+      "groupDeathSkin": "02Faust",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 3,
+      "prefabKey": "Player_Donquixote_Variant",
+      "portraitKey": "DP_DonQuixote",
+      "groupDeathSkin": "03Don",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 4,
+      "prefabKey": "Player_Ryoshu_Variant",
+      "portraitKey": "DP_Ryushu_Smoke",
+      "groupDeathSkin": "04Ryoshu",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 5,
+      "prefabKey": "Player_Merusault_C",
+      "portraitKey": "DP_Meursault",
+      "groupDeathSkin": "05Meur",
+      "faction": "LaRouge",
+      "factionRequireQuest": "Q4026",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "attackCooldownSeconds": 0.25,
+      "attackReadySeconds": 0.0,
+      "attackRecoverySeconds": 0.15,
+      "fieldComboKeys": ["MeurBasic3Combo", "MeurBasicCombo"],
+      "hitStaggerSeconds": 0,
+      "recruitQuestKey": "Q1022"
+    },
+    {
+      "playerId": 6,
+      "prefabKey": "Player_Honglu_Variant",
+      "portraitKey": "DP_HongLu",
+      "groupDeathSkin": "06Honglu",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 7,
+      "prefabKey": "Player_Heathcliff_Variant",
+      "portraitKey": "DP_Heathcliff2",
+      "groupDeathSkin": "07Heath_Head",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 8,
+      "prefabKey": "Player_Ishmael_Variant",
+      "portraitKey": "DP_Ishmael",
+      "groupDeathSkin": "08Ishmae",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 9,
+      "prefabKey": "Player_Rodion_Variant",
+      "portraitKey": "DP_Rodion",
+      "groupDeathSkin": "09Rodya",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 10,
+      "prefabKey": "Player_Sinclair_Variant",
+      "portraitKey": "DP_Sinclair",
+      "groupDeathSkin": "10Sinc",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 11,
+      "prefabKey": "Player_Outis_Variant",
+      "portraitKey": "DP_Outis",
+      "groupDeathSkin": "11Outis",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 12,
+      "prefabKey": "Player_Gregor_Variant",
+      "portraitKey": "DP_Gregor",
+      "groupDeathSkin": "12Gregor",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "fieldDamageInvulnSeconds": 0.2,
+      "hitStaggerSeconds": 0.3
+    },
+    {
+      "playerId": 13,
+      "prefabKey": "Player_Dante2",
+      "portraitKey": "DP_Dante3",
+      "moveSpeed": 12.0,
+      "maxHp": 1,
+      "canFieldAttack": false,
+      "immortal": true,
+      "invincibleType": "IgnoreDetect"
+    },
+    {
+      "playerId": 400041,
+      "prefabKey": "Player_400041_LittleBuffe",
+      "moveSpeed": 12.0,
+      "maxHp": 1,
+      "canFieldAttack": false,
+      "immortal": true,
+      "invincibleType": "IgnoreHit",
+      "lagBehindOnRun": true,
+      "followerAbilityList": [
+        {
+          "abilityId": "40004101",
+          "controlValueArray": [
+            0.1
+          ]
+        },
+        {
+          "abilityId": "40004102",
+          "controlValueArray": [
+            1, 2.5, 5, 7, 5, 0, 20, 0
+          ]
+        }
+      ]
+    },
+    {
+      "playerId": 400042,
+      "prefabKey": "Player_400042_BootsLittleBuffe",
+      "moveSpeed": 12.0,
+      "maxHp": 1,
+      "canFieldAttack": false,
+      "immortal": true,
+      "invincibleType": "IgnoreHit",
+      "lagBehindOnRun": true,
+      "followerAbilityList": [
+        {
+          "abilityId": "40004101",
+          "controlValueArray": [
+            0.1
+          ]
+        },
+        {
+          "abilityId": "40004102",
+          "controlValueArray": [
+            1, 2.5, 5, 7, 5, 0, 20, 0
+          ]
+        },
+        {
+          "abilityId": "40004102_1",
+          "controlValueArray": [
+            1, 2.5, 5, 7, 5, 0.2, 24, 15
+          ]
+        },
+        {
+          "abilityId": "40004103",
+          "controlValueArray": [
+            5, 2.5, 6, 2, 3, 1
+          ],
+          "stringValueArray": [
+            "I990812", "I990813"
+          ]
+        },
+        {
+          "abilityId": "40004104",
+          "controlValueArray": [
+            3, 3, 10, 3, 0.5, 3, 2
+          ],
+          "stringValueArray": [
+            "I990916", "I990918"
+          ]
+        }
+      ]
+    },
+    {
+      "playerId": 400043,
+      "prefabKey": "Player_400043_CapeLittleBuffe",
+      "moveSpeed": 12.0,
+      "maxHp": 1,
+      "canFieldAttack": false,
+      "immortal": true,
+      "invincibleType": "IgnoreHit",
+      "lagBehindOnRun": true,
+      "followerAbilityList": [
+        {
+          "abilityId": "40004101",
+          "controlValueArray": [
+            0.1
+          ]
+        },
+        {
+          "abilityId": "40004102",
+          "controlValueArray": [
+            1, 2.5, 5, 7, 5, 0, 20, 0
+          ]
+        },
+        {
+          "abilityId": "40004102_1",
+          "controlValueArray": [
+            1, 2.5, 5, 7, 5, 0.2, 24, 15
+          ]
+        },
+        {
+          "abilityId": "40004103",
+          "controlValueArray": [
+            5, 2.5, 6, 2, 3, 1
+          ],
+          "stringValueArray": [
+            "I990812", "I990813"
+          ]
+        },
+        {
+          "abilityId": "40004104",
+          "controlValueArray": [
+            3, 3, 10, 3, 0.5, 3, 2
+          ],
+          "stringValueArray": [
+            "I990916", "I990918"
+          ]
+        },
+        {
+          "abilityId": "40004105",
+          "controlValueArray": [
+            1, 2, 4, 1, 4, 0.1
+          ],
+          "stringValueArray": [
+            "I991012"
+          ]
+        },
+        {
+          "abilityId": "40004106",
+          "controlValueArray": [
+            5, 2.5, 6, 3, 0.1, 1, 2
+          ],
+          "stringValueArray": [
+            "I991016", "I991018"
+          ]
+        }
+      ]
+    }
+  ]
+}

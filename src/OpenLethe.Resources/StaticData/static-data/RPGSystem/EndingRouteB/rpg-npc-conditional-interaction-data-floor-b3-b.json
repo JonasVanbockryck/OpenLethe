@@ -7,8 +7,7 @@
       "conditionValue": "C-3101",
       "interactionType": "Cutscene",
       "interactionKey": "C-3102",
-      "skipIfComplete": false,
-      "interactEffect": "InteractSparkle"
+      "skipIfComplete": false
     },
     {
       "npcKey": "N203007",
@@ -16,8 +15,7 @@
       "conditionType": "Quest",
       "conditionValue": "Q-3000",
       "interactionType": "Cutscene",
-      "interactionKey": "C-3109",
-      "interactEffect": "InteractSparkle"
+      "interactionKey": "C-3109"
     },
     {
       "npcKey": "N203007",
@@ -63,8 +61,7 @@
       "conditionType": "Quest",
       "conditionValue": "Q-3006",
       "interactionType": "Cutscene",
-      "interactionKey": "C-3110",
-      "interactEffect": "InteractSparkle"
+      "interactionKey": "C-3110"
     },
     {
       "npcKey": "N203004",

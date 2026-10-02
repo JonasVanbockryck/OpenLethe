@@ -1,0 +1,35 @@
+{
+  "list": [
+    {
+      "id": "BlackStigmata",
+      "isPanicBuff": false,
+      "buffA": {
+        "id": "BlackStigmata_Main",
+        "iconId": "BlackStigmata",
+        "subIdList": [ "BlackStigmata" ],
+        "buffClass": "ChangePanicTypeBuff",
+        "buffType": "Negative",
+        "canBeDespelled": true,
+        "list": [
+          {
+            "ability": "OverwritePanicType_BLACKSTIGMATA"
+          }
+        ]
+      },
+      "buffB": {
+        "id": "BlackStigmata_Sub",
+        "iconId": "BlackStigmata",
+        "subIdList": [ "BlackStigmata" ],
+        "buffClass": "ChangePanicTypeBuff",
+        "buffType": "Negative",
+        "canBeDespelled": true,
+        "list": [
+          {
+            "ability": "TakeAtkDamageMultiplierIfAttackerFasterThanSelfBlackStigmata",
+            "value": 0.1
+          }
+        ]
+      }
+    }
+  ]
+}

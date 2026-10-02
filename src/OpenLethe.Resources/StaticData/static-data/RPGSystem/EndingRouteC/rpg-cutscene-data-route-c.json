@@ -1,0 +1,69 @@
+{
+  "list": [
+    {
+      "key": "C1901_C1",
+      "showUnboundNpcs": true,
+      "waitTeleportEnd": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D1901_C1"
+        }
+      ]
+    },
+    {
+      "key": "C-WDN-C",
+      "bindings": [
+        { "actorName": "player", "kind": "Player" },
+        { "actorName": "warden", "kind": "Npc", "actorKey": "N999999" }
+      ],
+      "commands": [
+        { "type": "FaceCharacterToward", "param": "warden, player" },
+        { "type": "FaceCharacterToward", "param": "player, warden" },
+        { "type": "CenterCameraToCharacter", "param": "warden, 0.5" },
+        { "type": "Wait", "param": "0.4" },
+        { "type": "PlayMotion", "param": "warden, AttackReady" },
+        { "type": "Wait", "param": "1.2" },
+        { "type": "PlayMotion", "param": "warden, Attack" },
+        { "type": "Wait", "param": "0.25" },
+        { "type": "CameraShake", "param": "0.35, 0.45" },
+        { "type": "VignetteFocus", "param": "player, on, 0.3" },
+        { "type": "Wait", "param": "1.2" },
+        { "type": "CenterCameraToCharacter", "param": "player, 0.3" }
+      ]
+    },
+    {
+      "key": "CC2-STORY",
+      "bindings": [],
+      "commands": [
+        { "type": "FadeOut", "param": "0.01" },
+        { 
+          "type": "Story", 
+          "param": "S1034A2",
+          "commands": [
+            {
+              "type": "HideFloorObject",
+              "param": "FX_RPG_Cp10_BG_Warden"
+            }
+          ]
+        },
+        { "type": "FadeOut", "param": "0.01" }
+      ]
+    },
+    {
+      "key": "CC2-ENTER",
+      "repeatable": true,
+      "bindings": [],
+      "commands": [
+        { "type": "FadeOut", "param": "0.01" }
+      ]
+    }
+  ]
+}

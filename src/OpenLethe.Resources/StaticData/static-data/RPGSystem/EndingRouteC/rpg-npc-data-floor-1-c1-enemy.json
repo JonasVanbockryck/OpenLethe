@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "npcKey": "N101010",
+      "moveSpeed": 2,
+      "defaultState": "Patrol",
+      "prefabKey": "Enemy_Shopper_B.prefab",
+      "footstepType": "Surface",
+      "patrolWaitTime": "0.3",
+      "detectType": "Chase",
+      "detectRange": "2",
+      "maxRangeOnDetect": "8",
+      "speedOnDetect": "2",
+      "returnType": "AreaExit",
+      "interactionType": "",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "fieldHp": 20,
+      "battleId": 11002,
+      "startBattleBelowHpPercent": 0,
+      "dropTableKey": "DT101010",
+      "corpseDialogueKey": "D1942",
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0",
+      "attackPatternKey": "NA9106"
+    }
+  ]
+}

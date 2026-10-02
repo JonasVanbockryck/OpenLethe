@@ -190,11 +190,12 @@
       "uiBackgroundColor": "cb7b2f"
     },
     {
-      "id": 28,
+      "id": 999,
       "season": 0,
       "uiTagTextColor": "00000000",
       "uiTagBackgroundColor": "00000000",
-      "uiBackgroundColor": "5fdf00"
+      "uiBackgroundColor": "5fdf00",
+      "beforeCategoryId": 28
     }
   ]
 }

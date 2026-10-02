@@ -1,0 +1,27 @@
+{
+  "list": [
+    {
+      "spawnId": 99050003,
+      "npcKey": "N105011_C2",
+      "mapId": 0,
+      "spawnTileX": -82,
+      "spawnTileY": -315,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "E5002_C2",
+      "despawnConditionType": "Event",
+      "despawnConditionParam": "E5003_C2"
+    },
+    {
+      "spawnId": 99050004,
+      "npcKey": "N105031_C2",
+      "mapId": 0,
+      "spawnTileX": -62,
+      "spawnTileY": -293,
+      "spawnOffsetY": 0.76,
+      "direction": "Down",
+      "spawnConditionType": "Event",
+      "spawnConditionParam": "E5023_C2"
+    }
+  ]
+}

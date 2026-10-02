@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "key": "DP_Priest",
+      "portrait": "Story_StandingSprite/10Priest.png",
+      "background": ""
+    },
+    {
+      "key": "DP_Cromer_Sister_noise",
+      "portrait": "Story_StandingModel/Cromer_Sister.psb",
+      "size": 216,
+      "background": "",
+      "hasNoise": true
+    },
+    {
+      "key": "DP_Priest_noise",
+      "portrait": "Story_StandingSprite/10Priest.png",
+      "background": "",
+      "hasNoise": true
+    },
+    {
+      "key": "narration_Light_noise",
+      "portrait": "Story_StandingSprite/narration_Light.png",
+      "background": "#E1B643",
+      "hasNoise": true,
+      "narrationFontMaterial": 3
+    }
+  ]
+}

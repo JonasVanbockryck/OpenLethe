@@ -1,0 +1,27 @@
+{
+    "dataFiles": [
+        { "type": "npc", "fileNameArray": ["EndingRouteA/rpg-npc-data-floor-b1-a.json", "EndingRouteA/rpg-npc-data-floor-b1-a-enemy.json"] },
+        { "type": "npc-attack-pattern", "fileName": "EndingRouteA/rpg-npc-attack-pattern-data-floor-b1-a.json" },
+        { "type": "npc-spawn", "fileNameArray": ["EndingRouteA/rpg-npc-spawn-data-floor-b1-a.json", "EndingRouteA/rpg-npc-spawn-data-floor-b1-a-enemy.json"] },
+        { "type": "party-edit", "fileName": "EndingRouteA/rpg-party-edit-data-floor-b1-a.json" },
+        { "type": "item", "fileName": "EndingRouteA/rpg-item-data-floor-b1-a.json" },
+        { "type": "quest", "fileName": "EndingRouteA/rpg-quest-data-floor-b1-a.json" },
+        { "type": "quest-step", "fileName": "EndingRouteA/rpg-quest-step-data-floor-b1-a.json" },
+        { "type": "stationary-object", "fileName": "EndingRouteA/rpg-stationary-object-data-floor-b1-a.json" },
+        { "type": "dialogue", "fileName": "EndingRouteA/rpg-dialogue-data-floor-b1-a.json" },
+        { "type": "dialogue-text", "fileName": "EndingRouteA/rpg-dialogue-text-data-floor-b1-a.json" },
+        { "type": "dialogue-choice", "fileName": "EndingRouteA/rpg-dialogue-choice-data-floor-b1-a.json" },
+        { "type": "npc-conditional-interaction", "fileNameArray": ["EndingRouteA/rpg-npc-conditional-interaction-data-floor-b1-a.json", "EndingRouteA/rpg-npc-conditional-interaction-data-floor-b1-a-enemy.json"] },
+        { "type": "cutscene", "fileName": "EndingRouteA/rpg-cutscene-data-floor-b1-a.json" },
+        { "type": "drop-table", "fileName": "EndingRouteA/rpg-drop-table-data-floor-b1-a.json" },
+        { "type": "shop", "fileName": "EndingRouteA/rpg-shop-data-floor-b1-a.json" },
+        { "type": "shop-item", "fileName": "EndingRouteA/rpg-shop-item-data-floor-b1-a.json" },
+        { "type": "zone-bgm", "fileName": "EndingRouteA/rpg-zone-bgm-data-floor-b1-a.json" },
+        { "type": "event", "fileName": "EndingRouteA/rpg-event-data-floor-b1-a.json" },
+        { "type": "event-trigger", "fileName": "EndingRouteA/rpg-event-trigger-data-floor-b1-a.json" },
+        { "type": "restricted-location", "fileName": "EndingRouteA/rpg-restricted-location-data-floor-b1-a.json" },
+        { "type": "crowd-config", "fileName": "EndingRouteA/rpg-crowd-config-data-floor-b1-a.json" },
+        { "type": "crowd-exclusion", "fileName": "EndingRouteA/rpg-crowd-exclusion-data-floor-b1-a.json" },
+        { "type": "swarm-mob", "fileName": "EndingRouteA/rpg-swarm-mob-data-floor-b1-a.json" }
+    ]
+}

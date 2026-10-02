@@ -1503,6 +1503,24 @@
       "condition": "GetEGO",
       "conditionRefId": 20910,
       "sortingOrder": 1
+    },
+    {
+      "id": 266,
+      "condition": "GetPersonality",
+      "conditionRefId": 10315,
+      "sortingOrder": 1
+    },
+    {
+      "id": 267,
+      "condition": "GetEGO",
+      "conditionRefId": 20211,
+      "sortingOrder": 1
+    },
+    {
+      "id": 268,
+      "condition": "GetEGO",
+      "conditionRefId": 20510,
+      "sortingOrder": 1
     }
   ]
 }

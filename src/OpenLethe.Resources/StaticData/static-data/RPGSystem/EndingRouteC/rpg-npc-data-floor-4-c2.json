@@ -1,0 +1,72 @@
+{
+  "list": [
+    {
+      "npcKey": "N990002_C2",
+      "moveSpeed": 4,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_C_1F_BisqueDoll.prefab",
+      "footstepType": "Surface",
+      "interactionType": "",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "invincibleType": "IgnoreHit",
+      "fieldHp": 1,
+      "battleId": 0,
+      "collisionType": "None",
+      "collisionHpDamage": "",
+      "collisionMpDamage": ""
+    },
+    {
+      "npcKey": "N104001_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeA.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N104002_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeB.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N104003_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeC.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N10201",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeA.prefab",
+      "interactionType": "Dialogue",
+      "interactionKey": "D4515"
+    },
+    {
+      "npcKey": "N10202",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_UnboundBagwareNpcA.prefab",
+      "interactionType": "Dialogue",
+      "interactionKey": "D4514"
+    }
+  ]
+}

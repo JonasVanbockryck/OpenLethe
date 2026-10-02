@@ -63,6 +63,7 @@
       "returnTimeLimit": 9999,
       "attackPatternKey": "NA201003",
       "canTakeFieldDamage": true,
+      "hideHpBarValue": true,
       "hitStaggerImmune": true,
       "knockbackImmune": true,
       "fieldHp": 800,
@@ -71,6 +72,7 @@
       "battleId": 11033,
       "preBattleCutsceneKey": "C-PB-SOUSCHEF",
       "startBattleBelowHpPercent": 30,
+      "useAmbushBattleEffect": false,
       "attackEntersBattleOnlyWhenLowHp": true,
       "enrageEffectKey": "SabsalPuppetRage",
       "enrageEffectAnchor": 1,
@@ -151,6 +153,7 @@
       "battleId": 11055,
       "preBattleDialogueKey": "D-1391",
       "startBattleBelowHpPercent": 50,
+      "useAmbushBattleEffect": false,
       "collisionType": "None",
       "deathMotion": "Dead_Sapsaree1, Dead_Sapsaree2",
       "mustNeedQuestKeys": [

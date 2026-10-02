@@ -7973,6 +7973,107 @@
           "value": 0.01
         }
       ]
+    },
+
+    {
+      "id": "NoirShieldUpDonQuixote",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 100,
+      "list": [
+        {
+          "ability": "NoirShieldUpDonQuixote",
+          "value": 5
+        },
+        {
+          "ability": "ChangeToSuperCoinIfDefaultAttackSkillViaBuffCheck",
+          "buffData": {
+            "buffKeyword": "NoirShieldUpDonQuixote",
+            "buffOwner": "Self",
+            "stack": 25,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "IgnoreBreakExceptForcedCaseViaBuffCheck",
+          "buffData": {
+            "buffKeyword": "NoirShieldUpDonQuixote",
+            "buffOwner": "Self",
+            "stack": 40,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "NoirHaloEffectDonQuixote"
+        }
+      ]
+    },
+    {
+      "id": "NoirNailDonQuixote",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": true,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 30,
+      "list": [
+        {
+          "ability": "NoirNailSlothDamageDonQuixote",
+          "value": 1,
+          "buffData": {
+            "limit": 10
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundEndIfStackOver",
+          "value": 4,
+          "buffData": {
+            "buffKeyword": "Binding",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 1
+          }
+        },
+        {
+          "ability": "DestroyOnRoundStartIfUnitAbsent",
+          "value": 10315
+        },
+        {
+          "ability": "NoirNailVibrationEffectDonQuixote"
+        }
+      ]
+    },
+    {
+      "id": "OathFieldDonQuixote",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "OathFieldAuraToAlly"
+        },
+        {
+          "ability": "OathFieldAuraToLeNoirAlly"
+        },
+        {
+          "ability": "OathFieldAuraToEnemy"
+        },
+        {
+          "ability": "OathFieldMapEffect",
+          "value": 3
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
     }
   ]
 }

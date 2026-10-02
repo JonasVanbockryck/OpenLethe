@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "key": "D1901_C1",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "D1014_C1",
+      "trackCompletion": false,
+      "choiceKeys": ["DC11_C1", "DC12_C1", "DC13_C1", "DC15_C1", "DC14"]
+    },
+    {
+      "key": "D10141_C1",
+      "trackCompletion": false,
+      "choiceKeys": ["DC11_C1", "DC12_C1", "DC13_C1", "DC15_C1", "DC14"]
+    },
+    {
+      "key": "D10142_C1",
+      "trackCompletion": false,
+      "choiceKeys": ["DC11_C1", "DC12_C1", "DC13_C1", "DC15_C1", "DC14"]
+    },
+    {
+      "key": "D10143_C1",
+      "trackCompletion": false,
+      "choiceKeys": ["DC11_C1", "DC12_C1", "DC13_C1", "DC15_C1", "DC14"]
+    },
+    {
+      "key": "D1902_C1",
+      "trackCompletion": false,
+      "choiceKeys": ["DC11_C1", "DC12_C1", "DC13_C1", "DC15_C1", "DC14"]
+    }
+  ]
+}

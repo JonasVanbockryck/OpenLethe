@@ -1,0 +1,40 @@
+{
+  "list": [
+    {
+      "npcKey": "N103001_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeA.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N103002_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeB.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N103003_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeC.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    }
+  ]
+}

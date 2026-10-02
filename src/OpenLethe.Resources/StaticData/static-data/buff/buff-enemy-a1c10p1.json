@@ -975,7 +975,7 @@
           }
         },
         {
-          "ability": "GiveBuffOnGetOrUseBuff_Charge",
+          "ability": "NoirSuitGetBySkillAndPassiveBuff_Charge",
           "value": 30,
           "buffData": {
             "buffKeyword": "NoirSuit",

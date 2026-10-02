@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "questKey": "Q7001_C2",
+      "stepIndex": 0,
+      "goalType1": "EnterLocation",
+      "goalValue1": "170100"
+    },
+    {
+      "questKey": "Q7001_C2",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C7001_C2"
+    },
+    {
+      "questKey": "Q7001_C2",
+      "stepIndex": 2,
+      "goalType1": "WinBattle",
+      "goalValue1": "11039"
+    },
+    {
+      "questKey": "Q7002_C2",
+      "stepIndex": 0,
+      "goalType1": "InteractObjectAny",
+      "goalValue1": "SO701001, SO701002, SO701003, 1",
+      "goalHidden1": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "key": "E1000_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1000_C2",
+      "action2": "GiveItem",
+      "actionValue2": "I990004, 1",
+      "action3": "GiveItem",
+      "actionValue3": "I990005, 1"
+    },
+    {
+      "key": "E1001_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1001_C2"
+    },
+    {
+      "key": "E1002_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "E1003_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C1002_C2"
+    },
+    {
+      "key": "ESHLD1_C2",
+      "canRepeat": false
+    }
+  ]
+}

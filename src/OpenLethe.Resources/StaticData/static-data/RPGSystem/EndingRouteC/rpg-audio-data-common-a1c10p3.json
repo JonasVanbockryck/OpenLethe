@@ -1,0 +1,197 @@
+{
+  "list": [
+    {
+      "audioId": "bgm_cp10_boss4",
+      "category": "BGM",
+      "fmodEvent": "event:/BGM/Battle/Battle_Cp10_Boss_4"
+    },
+    {
+      "audioId": "bgm_cinemaAmb",
+      "category": "BGM",
+      "fmodEvent": "event:/BGM/Story/Cinema_Amb"
+    },
+    {
+      "audioId": "bgm_mysteryNervousAmbience",
+      "category": "BGM",
+      "fmodEvent": "event:/BGM/Story/Mystery_Nervous_Ambience"
+    },
+    {
+      "audioId": "bgm_afterlife",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Afterlife"
+    },
+    {
+      "audioId": "bgm_bossPlaying",
+      "category": "BGM",
+      "displayName": "무궁화(적색광) 기믹 BGM",
+      "fmodEvent": "event:/BGM/Story/Please_Follow_Nobody"
+    },
+    {
+      "audioId": "bgm_stalkerChase",
+      "category": "BGM",
+      "displayName": "무궁화 추격(2~4층) BGM",
+      "fmodEvent": "event:/BGM/Story/Please_Follow_Nobody"
+    },
+    {
+      "audioId": "bgm_stalkerCalm",
+      "category": "BGM",
+      "displayName": "추격 보스 처치 후 정적(1~4층)",
+      "fmodEvent": "event:/BGM/Story/Mystery_Horror_Ambience"
+    },
+    {
+      "audioId": "bgm_fieldBossBattleCp10Boss9",
+      "category": "BGM",
+      "displayName": "필드 보스전 BGM (Battle_Cp10_Boss_9)",
+      "fmodEvent": "event:/BGM/Battle/Battle_Cp10_Boss_9"
+    },
+    {
+      "audioId": "sfx_stalker_light_off",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Shh"
+    },
+    {
+      "audioId": "sfx_stalker_light_on",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Clap"
+    },
+    {
+      "audioId": "sfx_stalker_detected",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Detected"
+    },
+    {
+      "audioId": "sfx_stalker_shield_break",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Doll_Solid"
+    },
+    {
+      "audioId": "sfx_obstacle_drag",
+      "category": "SFX",
+      "displayName": "이동형 장애물 끌림 (3층 옷걸이·소파·블록 10건 공용)",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Chair_Drag"
+    },
+    {
+      "audioId": "sfx_eye_jumpscare",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": ""
+    },
+    {
+      "audioId": "sfx_dish_clatter",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": ""
+    },
+    {
+      "audioId": "sfx_stalker_light_warn",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/UI/UI_TV_Off"
+    },
+    {
+      "audioId": "sfx_larouge_eat_stamp",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Dead_Stamp"
+    },
+    {
+      "audioId": "sfx_floor5_c2_door_open",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Dead_Door_Open"
+    },
+    {
+      "audioId": "sfx_recall_curtain_creak",
+      "category": "SFX",
+      "displayName": "",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Balloon_Rub"
+    },
+    {
+      "audioId": "sfx_recall_sunshine",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/Story/SFX_Sunshine"
+    },
+    {
+      "audioId": "sfx_recall_room_sequence",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/Story/SFX_RoomSeq_1"
+    },
+    {
+      "audioId": "sfx_cinema_lot",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/Story/SFX_Cinema_Lot",
+      "volumeRatio": 0.6
+    },
+    {
+      "audioId": "sfx_recall_eye_reveal",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/Story/SFX_RoomSeq_2"
+    },
+    {
+      "audioId": "sfx_recall_eye_reveal_voice",
+      "category": "SFX",
+      "fmodEvent": "event:/Voice_Story/Chapter10/S1003V-1058"
+    },
+    {
+      "audioId": "bgm_dungeon_01",
+      "category": "BGM",
+      "displayName": "던전 BGM",
+      "fmodEvent": "event:/BGM/LimbusCompany_BGM_Dungeon"
+    },
+    {
+      "audioId": "bgm_zone_clear",
+      "category": "BGM",
+      "displayName": "구역 BGM(클리어)",
+      "fmodEvent": "event:/BGM/LimbusCompany_BGM_Clear"
+    },
+    {
+      "audioId": "bgm_zone_event",
+      "category": "BGM",
+      "displayName": "구역 BGM(이벤트)",
+      "fmodEvent": "event:/BGM/LimbusCompany_BGM_Event_3_5"
+    },
+    {
+      "audioId": "bgm_zone_gacha",
+      "category": "BGM",
+      "displayName": "구역 BGM(가챠)",
+      "fmodEvent": "event:/BGM/LimbusCompany_BGM_Gatcha"
+    },
+    {
+      "audioId": "bgm_zone_pv",
+      "category": "BGM",
+      "displayName": "구역 BGM(PV)",
+      "fmodEvent": "event:/BGM/LimbusCompany_BGM_PV"
+    },
+    {
+      "audioId": "bgm_floor6th",
+      "category": "BGM",
+      "displayName": "",
+      "fmodEvent": "event:/BGM/Story/Soleil"
+    },
+    {
+      "audioId": "sfx_topatk_spoon_drop",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Spoon_Drop"
+    },
+    {
+      "audioId": "sfx_topatk_bubble",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Bubble"
+    },
+    {
+      "audioId": "sfx_topatk_bowl_drop",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Bowl_Drop"
+    },
+    {
+      "audioId": "sfx_topatk_room_range",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_TopAtk_Room_Range"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "list": [
+    {
+      "npcKey": "N105030_C2",
+      "moveSpeed": 3,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Shabby_Sis_Kromer.prefab",
+      "footstepType": "Fixed",
+      "footstepAudioId": "sfx_floor_walk_cromer",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N105011_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_PerfectBuffet_C2.prefab",
+      "spawnMotion": "Dead",
+      "footprintWidth": 3,
+      "footprintHeight": 3,
+      "invincibleType": "IgnoreHit",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N105031_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_TableCloth.prefab",
+      "spawnMotion": "SetForCut_Loop",
+      "invincibleType": "IgnoreHit",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N105051_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeA.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N105052_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeB.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    },
+    {
+      "npcKey": "N105053_C2",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeC.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "canTakeFieldDamage": false,
+      "fieldHp": 0,
+      "battleId": 0,
+      "collisionType": "None"
+    }
+  ]
+}

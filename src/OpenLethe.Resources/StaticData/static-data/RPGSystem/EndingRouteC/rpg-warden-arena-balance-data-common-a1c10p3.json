@@ -1,0 +1,148 @@
+{
+  "list": [
+    {
+      "key": "C",
+      "routes": [
+        "C-1",
+        "C-1A",
+        "C-1B",
+        "C-2"
+      ],
+      "floorKeys": [
+        "F9990C-1",
+        "F9990A_C-1A",
+        "F9990B_C-1B",
+        "F9990C-2"
+      ],
+      "unlockRoutes": [
+        "C-1",
+        "C-1A",
+        "C-1B",
+        "C-2"
+      ],
+      "phase1FirstHideNarrationKey": "",
+      "phaseThresholds": [
+        {
+          "hpPercent": 80,
+          "phase": 1
+        },
+        {
+          "hpPercent": 60,
+          "phase": 1
+        },
+        {
+          "hpPercent": 51,
+          "phase": 2
+        }
+      ],
+      "routeSpecs": [
+        {
+          "routes": [
+            "C-1",
+            "C-1A",
+            "C-1B",
+            "C-2"
+          ],
+          "finaleBranchKey": "Finale",
+          "winExitByEvent": true
+        }
+      ],
+      "playerEnterTile": {
+        "x": 17,
+        "y": 4
+      },
+      "bossSpawnTile": {
+        "x": 17,
+        "y": 18
+      },
+      "bossNpcKey": "N999997C",
+      "bossTakeDamageReducePercent": 50,
+      "unlockCutsceneKey": "",
+      "unlockItemKeys": [
+        "I990004"
+      ],
+      "groggySeconds": [
+        6.0,
+        6.0
+      ],
+      "volumeProfileAddress": "RPGSystem/Volume/WardenVolume_Backup.asset",
+      "bgmAudioId": "bgm_wardenArena",
+      "battleId": 11036,
+      "introProduceAddress": "RPGSystem/UI/RouteC/RpgWardenArenaIntro.prefab",
+      "introRewardItemKeys": [
+        "I990008",
+        "I990009",
+        "I990010",
+        "I990011",
+        "I990012",
+        "I990013",
+        "I990014",
+        "I990015",
+        "I990016",
+        "I990017",
+        "I990018"
+      ],
+      "introDelaySeconds": 0,
+      "cameraZoomOutScale": 0,
+      "cameraZoomSeconds": 0,
+      "hitEnterSlowFloor": 0.15,
+      "hitEnterSlowRampDownSeconds": 0.03,
+      "hitEnterSlowHoldSeconds": 0.3,
+      "hitEnterSlowRampUpSeconds": 0.25,
+      "hitEnterZoomOutScale": 1.12,
+      "hitEnterZoomOutSeconds": 0.14,
+      "hitEnterZoomTargetScale": 0.55,
+      "hitEnterZoomInSeconds": 0.75,
+      "hitEnterFadeOutSeconds": 0.22,
+      "wardenBossCandleBossNpcKey": "N999997C",
+      "wardenBossCandleNormalNpcKey": "N999996",
+      "wardenBossCandleMadNpcKey": "N999995",
+      "wardenBossCandleYellowNpcKey": "N999994",
+      "wardenBossCandleExplodeEffectKey": "JustGuardBurst",
+      "wardenBossCandleMadEffectKey": "",
+      "wardenBossCandleYellowEffectKey": "",
+      "bossInvincibleShieldEffectKey": "WardenShield",
+      "wardenBossCandleMarkNarrationKey": "NAR_WARDEN_CANDLE_MARK",
+      "wardenBossCandleYellowNarrationKey": "NAR_WARDEN_CANDLE_YELLOW",
+      "wardenBossCandleMarkMinTiles": 6,
+      "wardenBossCandleMarkMaxTiles": 10,
+      "wardenBossCandleMarkEdgeMarginTiles": 2,
+      "wardenBossCandleMarkPointerPrefabKey": "",
+      "wardenBossCandleExplodeShakeStrength": 0.5,
+      "wardenBossCandleExplodeShakeSeconds": 0.35,
+      "wardenBossCandleExplodeFlashAlpha": 0.55,
+      "wardenBossCandleExplodeFlashSeconds": 0.25,
+      "wardenBossCandleFirstDelaySeconds": 5.0,
+      "wardenBossCandleIntervalSeconds": 5.0,
+      "wardenBossCandleInitialCount": 1,
+      "wardenBossCandleCountStepPerWave": 1,
+      "wardenBossCandleCountLogScale": 3.5,
+      "wardenBossCandleMaxCountPerWave": 0,
+      "wardenBossCandleMaxAliveOnField": 0,
+      "wardenBossCandleTelegraphSeconds": 0,
+      "wardenBossCandleStaggerSeconds": 0.5,
+      "wardenBossCandleRadiusTiles": 12,
+      "wardenBossCandleRingMinTiles": 3,
+      "wardenBossCandleRingMaxTiles": 8,
+      "wardenBossCandleForwardWeight": 1.5,
+      "wardenBossCandleRingWeight": 1.0,
+      "wardenBossCandleChokeWeight": 5.0,
+      "wardenBossCandleKeepEscapeTiles": 0,
+      "wardenBossCandleBlockFirstCount": 1,
+      "finaleSlowFloor": 0.3,
+      "finaleSlowRampSeconds": 2.0,
+      "finaleSlowHoldSeconds": 15,
+      "finaleZoomTargetScale": 0.6,
+      "finaleZoomSeconds": 2.0,
+      "finalBlowCameraClipMotionId": "Smash",
+      "finalBlowCameraReleaseSeconds": 0.35,
+      "finalBlowEndEffectKey": "WardenEndBG",
+      "finalBlowEndEffectSortingOrder": 100,
+      "finalBlowImpactMotionSeconds": 0.783,
+      "finalBlowKillDelaySeconds": 4.0,
+      "finalBlowLandShakeStrength": 0.5,
+      "finalBlowLandShakeSeconds": 1.1,
+      "finalBlowLandShakeFrequencyHz": 55
+    }
+  ]
+}

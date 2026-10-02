@@ -177,6 +177,14 @@
       "isDestroyable": false
     },
     {
+      "itemKey": "I990926",
+      "image": "RPGSystem/Item/Icons/I990926.png",
+      "itemType": "KeyItem",
+      "canCarryOver": false,
+      "maxStack": 1,
+      "isDestroyable": false
+    },
+    {
       "itemKey": "I990423",
       "itemType": "Survival",
       "canCarryOver": true,
@@ -731,14 +739,6 @@
         }
       ],
       "image": "RPGSystem/Item/Icons/I990916.png"
-    },
-    {
-      "itemKey": "I990926",
-      "itemType": "KeyItem",
-      "canCarryOver": false,
-      "maxStack": 1,
-      "isDestroyable": false,
-      "image": "RPGSystem/Item/Icons/I990926.png"
     },
     {
       "itemKey": "I990422",

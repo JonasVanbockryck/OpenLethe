@@ -132,6 +132,7 @@
       "canTakeFieldDamage": false,
       "fieldHp": 0,
       "battleId": 11027,
+      "useAmbushBattleEffect": false,
       "attackedEventKey": "E3242",
       "dropTableKey": "DT103004",
       "corpseDialogueKey": "D3862",

@@ -156,6 +156,7 @@
       "excludeFromSave": true,
       "spawnWorldOffsetX": -500,
       "spawnWorldOffsetY": -500,
+      "floorStaticData": "EndingRouteB/rpg-system-static-data-info-floor-9990-b.json",
       "floorPrefab": "RpgWardenBossArenaFloor"
     },
     {

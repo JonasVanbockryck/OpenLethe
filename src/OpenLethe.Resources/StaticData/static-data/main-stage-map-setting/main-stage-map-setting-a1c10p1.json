@@ -9,11 +9,72 @@
       "zoomInScale": 1.4,
       "stageIconSlotScale": 0.5,
       "selectedIconScale": 1.0,
-      "isUseEffectPositionData": true,
-      "effectPosition": {
-        "positionX": 0,
-        "positionY": 0
-      }
+      "clearedNodeImageStageList": [
+        {
+          "level": 1,
+          "index": 4,
+          "positionX": 0,
+          "positionY": 0,
+          "sizeX": 2048,
+          "sizeY": 2048
+        },
+        {
+          "level": 1,
+          "index": 5,
+          "positionX": 2028,
+          "positionY": 0,
+          "sizeX": 2048,
+          "sizeY": 2048
+        },
+        {
+          "level": 1,
+          "index": 0,
+          "positionX": 4056,
+          "positionY": 0,
+          "sizeX": 2048,
+          "sizeY": 2048
+        },
+        {
+          "level": 1,
+          "index": 1,
+          "positionX": 6084,
+          "positionY": 0,
+          "sizeX": 2048,
+          "sizeY": 2048
+        },
+        {
+          "level": 1,
+          "index": 6,
+          "positionX": 0,
+          "positionY": 2028,
+          "sizeX": 2048,
+          "sizeY": 2048
+        },
+        {
+          "level": 1,
+          "index": 7,
+          "positionX": 2028,
+          "positionY": 2028,
+          "sizeX": 2048,
+          "sizeY": 2048
+        },
+        {
+          "level": 1,
+          "index": 2,
+          "positionX": 4056,
+          "positionY": 2028,
+          "sizeX": 2048,
+          "sizeY": 2048
+        },
+        {
+          "level": 1,
+          "index": 3,
+          "positionX": 6084,
+          "positionY": 2028,
+          "sizeX": 2048,
+          "sizeY": 2048
+        }
+      ]
     }
   ]
 }

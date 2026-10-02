@@ -1,0 +1,1467 @@
+{
+  "list": [
+    {
+      "id": "JeanneDesign",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 3,
+      "enemyImportanceLevel": 3,
+      "list": [
+        {
+          "ability": "OverwriteCoinProb",
+          "value": 0.95
+        },
+        {
+          "ability": "JeanneDesignOpponentParryingAdder_2",
+          "value": -2
+        },
+        {
+          "ability": "JeanneDesignGetManagerBuff_3",
+          "buffData": {
+            "buffKeyword": "JeanneManager",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 1
+          }
+        },
+        {
+          "ability": "JeanneDesignLoseStackOnRoundEnd"
+        },
+        {
+          "ability": "ActivateBuffEffectBack"
+        }
+      ]
+    },
+    {
+      "id": "JeanneManager",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "enemyImportanceLevel": 3,
+      "list": [
+        {
+          "ability": "ForceCoinResultHead"
+        },
+        {
+          "ability": "JeanneManagerOpponentProb"
+        },
+        {
+          "ability": "JeanneManagerDestroyBuff",
+          "value": 152205
+        },
+        {
+          "ability": "CantGetBuff",
+          "buffData": {
+            "buffKeyword": "JeanneDesign"
+          }
+        },
+        {
+          "ability": "ActivateBuffEffectBack"
+        }
+      ]
+    },
+    {
+      "id": "JeannePartner",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "JeannePartnerCleanse"
+        },
+        {
+          "ability": "JeannePartnerRecoverPanic"
+        },
+        {
+          "ability": "JeannePartnerPlusMp",
+          "value": 45
+        },
+        {
+          "ability": "JeannePartnerMinusMp",
+          "value": -30
+        },
+        {
+          "ability": "JeannePartnerRecoverBreak"
+        }
+      ]
+    },
+    {
+      "id": "JeannePathos",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 100,
+      "enemyImportanceLevel": 3,
+      "list": [
+        {
+          "ability": "GiveBuffOnWinDuel",
+          "buffData": {
+            "buffKeyword": "JeannePathos",
+            "target": "Self",
+            "stack": 3,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnLoseDuel",
+          "buffData": {
+            "buffKeyword": "JeannePathos",
+            "target": "Self",
+            "stack": 5,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffAfterParrying",
+          "buffData": {
+            "buffKeyword": "JeannePathos",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "JeanneLogos",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 100,
+      "playerImportanceLevel": 3,
+      "list": [
+        {
+          "ability": "GiveBuffOnWinDuel",
+          "buffData": {
+            "buffKeyword": "JeanneLogos",
+            "target": "Self",
+            "stack": 5,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffAfterParrying",
+          "buffData": {
+            "buffKeyword": "JeanneLogos",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "AtkAdderPerStack",
+          "value": 10
+        },
+        {
+          "ability": "ParryingResultAdderDevideByStack",
+          "buffData": {
+            "stack": 20,
+            "value": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "JeanneCheat",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "list": [
+        {
+          "ability": "JeanneCheatCoinProb"
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        },
+        {
+          "ability": "ActivateBuffEffectSkin"
+        }
+      ]
+    },
+    {
+      "id": "JeanneBlueprint",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "ParryingResultAdderAsStack",
+          "value": 1
+        },
+        {
+          "ability": "TakeAtkDamageMultiplierByStack",
+          "value": 0.1
+        },
+        {
+          "ability": "JeanneBlueprint",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "JeannePartnerTwo",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "JeannePartnerTwo",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "id": "BoneNail",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "SpeedAdderAsStack",
+          "value": -1
+        },
+        {
+          "ability": "BoneNail",
+          "value": 0.2
+        },
+        {
+          "ability": "GiveBuffOnUseDefaultAttackSkill",
+          "value": 2,
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "target": "Self",
+            "stack": 0,
+            "turn": -1,
+            "activeRound": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "BuffetDreamEnd",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "DefaultLevelAdder",
+          "value": -30
+        },
+        {
+          "ability": "OverwriteAtkResistResult",
+          "value": 2.0
+        },
+        {
+          "ability": "OverwriteAttributeResistResult",
+          "value": 2.0
+        },
+        {
+          "ability": "TakeAtkDamageMultiplier",
+          "value": 1
+        },
+        {
+          "ability": "BuffetDreamEnd",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "id": "BuffetDream",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "DefaultLevelAdderByStack",
+          "value": -5
+        },
+        {
+          "ability": "ParryingPowerResultAdderAsStack",
+          "value": -1
+        },
+        {
+          "ability": "RecoverSelfMpByStackOnRoundStart",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "BuffetDream1",
+      "iconId": "BuffetDreamStep1",
+      "subIdList": [ "BuffetDream" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "DefaultLevelAdderByStack",
+          "value": -5
+        },
+        {
+          "ability": "ParryingPowerResultAdderAsStack",
+          "value": -1
+        },
+        {
+          "ability": "RecoverSelfMpByStackOnRoundStart",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "BuffetDream2",
+      "iconId": "BuffetDreamStep2",
+      "subIdList": [ "BuffetDream" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "DefaultLevelAdderByStack",
+          "value": -5
+        },
+        {
+          "ability": "ParryingPowerResultAdderAsStack",
+          "value": -1
+        },
+        {
+          "ability": "RecoverSelfMpByStackOnRoundStart",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "BuffetDream3",
+      "iconId": "BuffetDreamStep3",
+      "subIdList": [ "BuffetDream" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "DefaultLevelAdderByStack",
+          "value": -5
+        },
+        {
+          "ability": "ParryingPowerResultAdderAsStack",
+          "value": -1
+        },
+        {
+          "ability": "RecoverSelfMpByStackOnRoundStart",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "BuffetDream4",
+      "iconId": "BuffetDreamStep4",
+      "subIdList": [ "BuffetDream" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "DefaultLevelAdderByStack",
+          "value": -5
+        },
+        {
+          "ability": "ParryingPowerResultAdderAsStack",
+          "value": -1
+        },
+        {
+          "ability": "RecoverSelfMpByStackOnRoundStart",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "BuffetDream5",
+      "iconId": "BuffetDreamStep5",
+      "subIdList": [ "BuffetDream" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "DefaultLevelAdderByStack",
+          "value": -5
+        },
+        {
+          "ability": "ParryingPowerResultAdderAsStack",
+          "value": -1
+        },
+        {
+          "ability": "RecoverSelfMpByStackOnRoundStart",
+          "value": 8
+        },
+        {
+          "ability": "MinMpOnTakeMpDamage",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "BuffetRevival",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 3,
+      "list": [
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "BuffetRouge",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 3,
+      "list": [
+        {
+          "ability": "MinSpeedAdder",
+          "value": 1
+        },
+        {
+          "ability": "MaxSpeedAdder",
+          "value": 1
+        },
+        {
+          "ability": "ParryingPowerResultAdderAsStack",
+          "value": 1
+        },
+        {
+          "ability": "TakeSinBuffDamageMultiplier",
+          "value": -0.5,
+          "buffData": {
+            "buffKeyword": "Laceration"
+          }
+        },
+        {
+          "ability": "BuffetRouge"
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        },
+        {
+          "ability": "ActivateBuffEffectSkin",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "BuffetScruple",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "list": [
+        {
+          "ability": "MinSpeedAdder",
+          "value": 3
+        },
+        {
+          "ability": "MaxSpeedAdder",
+          "value": 3
+        },
+        {
+          "ability": "TakeFinalDmgMultiplierFromUnit1517",
+          "value": -0.5
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "BuffetResolve",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "RecoverSelfMpOnRoundStart",
+          "value": 5
+        },
+        {
+          "ability": "BuffetResolve_30_30",
+          "value": 0.3
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "MeursaultBuffetEnd",
+      "iconId": "MeursaultBuffet",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "MinSpeedAdder",
+          "value": 3
+        },
+        {
+          "ability": "MaxSpeedAdder",
+          "value": 3
+        },
+        {
+          "ability": "AddSinStockOnStartTurnBySkillAttributeTypeLimit",
+          "buffData": {
+            "value": 2,
+            "limit": 2
+          }
+        },
+        {
+          "ability": "CanNotRetreat"
+        },
+        {
+          "ability": "TakingOtherStoryImmortalAbility"
+        }
+      ]
+    },
+    {
+      "id": "UnstableConnection",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 2,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundStart",
+          "value": 4,
+          "buffData": {
+            "buffKeyword": "ParryingResultDown",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundStart",
+          "value": 4,
+          "buffData": {
+            "buffKeyword": "Vulnerable",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "RecoverMpByGapToMaxOnRoundEndUnstableConnection",
+          "value": 2
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "GoldenFabricWarderFirstPhase",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "SkillPowerResultAdder",
+          "value": 1
+        },
+        {
+          "ability": "AtkDamageMultiplier",
+          "value": 0.15
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "GoldenHideWarderFirstPhase",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "ParryingResultAdder",
+          "value": 1
+        },
+        {
+          "ability": "TakeAtkDamageMultiplier",
+          "value": -0.25
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "Dominion",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 25,
+      "list": [
+        {
+          "ability": "AtkDamageMultiplierByStack",
+          "value": 0.01
+        },
+        {
+          "ability": "TakeAtkDamageMultiplierByStack",
+          "value": -0.01
+        }
+      ]
+    },
+    {
+      "id": "BlackStigmata",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "GoldenFabricWarderSecondPhase",
+      "iconId": "GoldenFabricWarderFirstPhase",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "SkillPowerResultAdder",
+          "value": 2
+        },
+        {
+          "ability": "AtkDamageMultiplier",
+          "value": 0.25
+        },
+        {
+          "ability": "1486TargetingBonusReceiver"
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "GoldenHideWarderSecondPhase",
+      "iconId": "GoldenHideWarderFirstPhase",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "ParryingResultAdder",
+          "value": 2
+        },
+        {
+          "ability": "TakeAtkDamageMultiplier",
+          "value": -0.25
+        },
+        {
+          "ability": "AddShieldOnWinDuelWithForcedEjectionSkillGoldenHideWarderSecondPhase",
+          "value": 250
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "EncompassingVoiceSecondPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 100,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundStartDivideByStack",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "AttackUp",
+            "target": "Self",
+            "stack": 20,
+            "turn": 0,
+            "activeRound": 0,
+            "limit": 4
+          }
+        },
+        {
+          "ability": "GiveBuffOnGetOrUseBuffBySkillEncompassingVoiceSecondPhase_ChargeNoir",
+          "value": 40,
+          "buffData": {
+            "buffKeyword": "EncompassingVoiceSecondPhase",
+            "target": "Self",
+            "buffOwner": "Self",
+            "stack": 1,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundEnd",
+          "buffData": {
+            "buffKeyword": "EncompassingVoiceSecondPhase",
+            "target": "Self",
+            "stack": 10,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "ChangeBuffViaStackAtLeastCheckOnRoundEndEncompassingVoiceSecondPhase",
+          "value": 100,
+          "buffData": {
+            "buffKeyword": "SpreadingVoiceSecondPhase",
+            "target": "Self",
+            "stack": 100,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "SpreadingVoiceSecondPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 100,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundStartDivideByStack",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "AttackUp",
+            "target": "Self",
+            "stack": 20,
+            "turn": 0,
+            "activeRound": 0,
+            "limit": 4
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundStartDivideByStack",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "DefenseUp",
+            "target": "Self",
+            "stack": 20,
+            "turn": 0,
+            "activeRound": 0,
+            "limit": 4
+          }
+        },
+        {
+          "ability": "ChangeToSuperCoin"
+        },
+        {
+          "ability": "ChangeBuffOnRoundEndSpreadingVoiceSecondPhase",
+          "buffData": {
+            "buffKeyword": "EncompassingVoiceSecondPhase",
+            "target": "Self",
+            "stack": 0,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "LeaderVoiceSecondPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "AtkAdderByStack",
+          "value": 1
+        },
+        {
+          "ability": "DefAdderByStack",
+          "value": 2
+        },
+        {
+          "ability": "BuffAdderAtNotZeroIfCheckSelfStack",
+          "value": 3,
+          "buffData": {
+            "buffKeyword": "CeremonialNail",
+            "stack": 1,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "BuffAdderAtNotZeroIfCheckSelfStack",
+          "value": 3,
+          "buffData": {
+            "buffKeyword": "MarkingNail",
+            "stack": 1,
+            "turn": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ConfessionSecondPhase",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "ExecutionNailSecondPhase",
+      "subIdList": [ "ConfessionSecondPhase", "RestrainingNailSecondPhase", "CeremonialNail", "MarkingNail" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 9,
+      "list": [
+        {
+          "ability": "ExecutionNailActive_min10",
+          "value": 0.05
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "RestrainingNailSecondPhase",
+      "subIdList": [ "ConfessionSecondPhase", "ExecutionNailSecondPhase", "CeremonialNail", "MarkingNail" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 9,
+      "list": [
+        {
+          "ability": "RestrainingNailSecondPhase"
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "CeremonialNail",
+      "subIdList": [ "ConfessionSecondPhase", "ExecutionNailSecondPhase", "RestrainingNailSecondPhase", "MarkingNail" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 9,
+      "list": [
+        {
+          "ability": "CeremonialNailActive",
+          "buffData": {
+            "buffKeyword": "Sinking",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "MarkingNail",
+      "subIdList": [ "ConfessionSecondPhase", "ExecutionNailSecondPhase", "RestrainingNailSecondPhase", "CeremonialNail" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 9,
+      "list": [
+        {
+          "ability": "MarkingNailActive",
+          "value": 2
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "GoldenFabricWarderThirdPhase",
+      "iconId": "GoldenFabricWarderFirstPhase",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "SkillPowerResultAdder",
+          "value": 2
+        },
+        {
+          "ability": "AtkDamageMultiplier",
+          "value": 0.25
+        },
+        {
+          "ability": "GiveBuffOnSAWithLimitCount_9",
+          "buffData": {
+            "buffKeyword": "DefenseDown",
+            "target": "Target",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "1486TargetingBonusReceiver"
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "GoldenHideWarderThirdPhase",
+      "iconId": "GoldenHideWarderFirstPhase",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "ParryingResultAdder",
+          "value": 3
+        },
+        {
+          "ability": "TakeAtkDamageMultiplier",
+          "value": -0.5
+        },
+        {
+          "ability": "GiveBuffOnSAWithLimitCount_9",
+          "buffData": {
+            "buffKeyword": "AttackDown",
+            "target": "Target",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "AddShieldOnWinDuelWithForcedEjectionSkillGoldenHideWarderSecondPhase",
+          "value": 250
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "EncompassingVoiceThirdPhase",
+      "iconId": "EncompassingVoiceSecondPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 100,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundStartDivideByStack",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "AttackUp",
+            "target": "Self",
+            "stack": 20,
+            "turn": 0,
+            "activeRound": 0,
+            "limit": 4
+          }
+        },
+        {
+          "ability": "GiveBuffOnGetOrUseBuffBySkillEncompassingVoiceSecondPhase_ChargeNoir",
+          "value": 40,
+          "buffData": {
+            "buffKeyword": "EncompassingVoiceThirdPhase",
+            "target": "Self",
+            "buffOwner": "Self",
+            "stack": 1,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundEnd",
+          "buffData": {
+            "buffKeyword": "EncompassingVoiceThirdPhase",
+            "target": "Self",
+            "stack": 10,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "ChangeBuffViaStackAtLeastCheckOnRoundEndEncompassingVoiceSecondPhase",
+          "value": 100,
+          "buffData": {
+            "buffKeyword": "SpreadingVoiceThirdPhase",
+            "target": "Self",
+            "stack": 100,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "SpreadingVoiceThirdPhase",
+      "iconId": "SpreadingVoiceSecondPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 100,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundStartDivideByStack",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "AttackUp",
+            "target": "Self",
+            "stack": 20,
+            "turn": 0,
+            "activeRound": 0,
+            "limit": 4
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundStartDivideByStack",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "DefenseUp",
+            "target": "Self",
+            "stack": 20,
+            "turn": 0,
+            "activeRound": 0,
+            "limit": 4
+          }
+        },
+        {
+          "ability": "ChangeToSuperCoin"
+        },
+        {
+          "ability": "ChangeBuffOnRoundEndSpreadingVoiceSecondPhase",
+          "buffData": {
+            "buffKeyword": "EncompassingVoiceThirdPhase",
+            "target": "Self",
+            "stack": 0,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "LeaderVoiceThirdPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnZero": false,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "AtkAdderByStack",
+          "value": 2
+        },
+        {
+          "ability": "DefAdderByStack",
+          "value": 3
+        },
+        {
+          "ability": "BuffAdderAtNotZeroIfCheckSelfStack",
+          "value": 3,
+          "buffData": {
+            "buffKeyword": "GoldenNail",
+            "stack": 1,
+            "turn": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ConfessionThirdPhase",
+      "buffClass": "TypoOnlyBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "list": []
+    },
+    {
+      "id": "ExecutionNailThirdPhase",
+      "subIdList": [ "ConfessionThirdPhase", "RestrainingNailThirdPhase", "GoldenNail" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 9,
+      "list": [
+        {
+          "ability": "ExecutionNailActive_min10",
+          "value": 0.1
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "RestrainingNailThirdPhase",
+      "subIdList": [ "ConfessionThirdPhase", "ExecutionNailThirdPhase", "GoldenNail" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 9,
+      "list": [
+        {
+          "ability": "RestrainingNailThirdPhase",
+          "value": 0.5
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "GoldenNail",
+      "subIdList": [ "ConfessionThirdPhase", "ExecutionNailThirdPhase", "RestrainingNailThirdPhase" ],
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 9,
+      "list": [
+        {
+          "ability": "GoldenNailLaceration",
+          "value": 0.02
+        },
+        {
+          "ability": "GoldenNailActive",
+          "value": 2,
+          "buffData": {
+            "buffKeyword": "Sinking",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "VibrationFocusing",
+      "subIdList": [
+        "Vibration"
+      ],
+      "buffClass": "SinBuff",
+      "attributeType": "AMBER",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "Vibration"
+        },
+        {
+          "ability": "LoseTurnOnRoundEnd",
+          "value": 1
+        },
+        {
+          "ability": "VibrationFocusing",
+          "value": 60,
+          "buffData": {
+            "value": 8,
+            "limit": 120
+          }
+        }
+      ],
+      "categoryKeywordList": [
+        "SIN",
+        "VIBRATION",
+        "VIBRATION_CONVERTED"
+      ]
+    },
+    {
+      "id": "MeursaultBuffWarderFirstPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "TakingOtherStoryImmortalAbility"
+        },
+        {
+          "ability": "CanNotRetreat"
+        },
+        {
+          "ability": "ParryingResultAdderOnWarderDuelMeursaultBuffWarderFirstPhase",
+          "value": 1
+        },
+        {
+          "ability": "AtkDamageMultiplierByLostHpDivWithMaxOnWarderDuelMeursaultBuffWarderFirstPhase",
+          "buffData": {
+            "stack": 2,
+            "limit": 20
+          }
+        },
+        {
+          "ability": "AddSinStockLowestOnWinDuelWithWarderMeursaultBuffWarderFirstPhase",
+          "value": 2
+        },
+        {
+          "ability": "BlockNaturalBreakAndGetBuffWithoutRoundLimitMeursaultBuffWarderFirstPhase",
+          "buffData": {
+            "buffKeyword": "Enhancement",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "MeursaultBuffWarderSecondPhase",
+      "iconId": "MeursaultBuffWarderFirstPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "TakingOtherStoryImmortalAbility"
+        },
+        {
+          "ability": "CanNotRetreat"
+        },
+        {
+          "ability": "MinSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "MaxSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "ParryingResultAdderOnWarderDuelMeursaultBuffWarderFirstPhase",
+          "value": 2
+        },
+        {
+          "ability": "AtkDamageMultiplierByLostHpDivWithMaxOnWarderDuelMeursaultBuffWarderFirstPhase",
+          "buffData": {
+            "stack": 2,
+            "limit": 40
+          }
+        },
+        {
+          "ability": "AddSinStockLowestOnWinDuelWithWarderMeursaultBuffWarderFirstPhase",
+          "value": 3
+        },
+        {
+          "ability": "BlockNaturalBreakAndGetBuffWithoutRoundLimitMeursaultBuffWarderFirstPhase",
+          "buffData": {
+            "buffKeyword": "Enhancement",
+            "target": "Self",
+            "stack": 2,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "MeursaultBuffWarderThirdPhase",
+      "iconId": "MeursaultBuffWarderFirstPhase",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "TakingOtherStoryImmortalAbility"
+        },
+        {
+          "ability": "CanNotRetreat"
+        },
+        {
+          "ability": "MinSpeedAdderIncludeFirstTurn",
+          "value": 3
+        },
+        {
+          "ability": "MaxSpeedAdderIncludeFirstTurn",
+          "value": 3
+        },
+        {
+          "ability": "RecoverSelfMpOnWinDuelDivideByParryingCount_8",
+          "value": 8
+        },
+        {
+          "ability": "SkillPowerResultAdder",
+          "value": 3
+        },
+        {
+          "ability": "AtkDamageMultiplier",
+          "value": 0.3
+        },
+        {
+          "ability": "AtkDamageMultiplierByLostHpDivWithMaxOnWarderDuelMeursaultBuffWarderFirstPhase",
+          "buffData": {
+            "stack": 1,
+            "limit": 90
+          }
+        },
+        {
+          "ability": "AddSinStockLowestOnWinDuelWithWarderMeursaultBuffWarderFirstPhase",
+          "value": 5
+        },
+        {
+          "ability": "BlockNaturalBreakAndGetBuffWithoutRoundLimitMeursaultBuffWarderFirstPhase",
+          "buffData": {
+            "buffKeyword": "Enhancement",
+            "target": "Self",
+            "stack": 3,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    }
+  ]
+}

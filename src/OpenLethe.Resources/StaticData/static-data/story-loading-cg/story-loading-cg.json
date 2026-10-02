@@ -24,7 +24,8 @@
                 "CG/S0_4"
             ],
             "uiConfigFormerIdForOrder": 0,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 101,
@@ -111,7 +112,8 @@
                 "CG/S19"
             ],
             "uiConfigFormerIdForOrder": 100,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 102,
@@ -187,7 +189,8 @@
                 "CG/S219"
             ],
             "uiConfigFormerIdForOrder": 101,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 103,
@@ -278,7 +281,8 @@
                 "BG/story_B3_Fathoms_of_the_Ego__peak"
             ],
             "uiConfigFormerIdForOrder": 102,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9103,
@@ -321,7 +325,8 @@
                 "CG/E305"
             ],
             "uiConfigFormerIdForOrder": 103,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9010,
@@ -336,7 +341,8 @@
                 "CG/E020X_Corridor"
             ],
             "uiConfigFormerIdForOrder": 9103,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9010,
@@ -352,7 +358,8 @@
                 "CG/E020X_Corridor_Un"
             ],
             "uiConfigFormerIdForOrder": 9010,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 104,
@@ -531,7 +538,8 @@
                 "CG/S436"
             ],
             "uiConfigFormerIdForOrder": 9010,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9104,
@@ -576,7 +584,8 @@
                 "CG/S405_3_6_2"
             ],
             "uiConfigFormerIdForOrder": 104,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9011,
@@ -595,7 +604,8 @@
                 "CG/E041X_2"
             ],
             "uiConfigFormerIdForOrder": 9104,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9011,
@@ -610,7 +620,8 @@
                 "BG/E042X_greenboat"
             ],
             "uiConfigFormerIdForOrder": 9011,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 105,
@@ -822,7 +833,8 @@
                 "CG/S535_2"
             ],
             "uiConfigFormerIdForOrder": 9011,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9012,
@@ -838,7 +850,8 @@
                 "BG/story_lakemirror_close"
             ],
             "uiConfigFormerIdForOrder": 105,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9105,
@@ -878,7 +891,8 @@
                 "CG/S505_6_1"
             ],
             "uiConfigFormerIdForOrder": 9012,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9106,
@@ -896,7 +910,8 @@
                 "BG/story_corridor_lobo_red"
             ],
             "uiConfigFormerIdForOrder": 9105,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9107,
@@ -935,7 +950,8 @@
                 "BG/story_satgatkim"
             ],
             "uiConfigFormerIdForOrder": 9106,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 106,
@@ -1089,7 +1105,8 @@
                 "BG/story_backstreet_epilogue"
             ],
             "uiConfigFormerIdForOrder": 9107,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9108,
@@ -1109,7 +1126,8 @@
                 "BG/E061X_3"
             ],
             "uiConfigFormerIdForOrder": 106,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9109,
@@ -1167,7 +1185,8 @@
                 "CG/S605_1_9_1"
             ],
             "uiConfigFormerIdForOrder": 9108,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9017,
@@ -1182,7 +1201,8 @@
                 "BG/story_E063X_1"
             ],
             "uiConfigFormerIdForOrder": 9109,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9110,
@@ -1226,7 +1246,8 @@
                 "BG/story_P_platform"
             ],
             "uiConfigFormerIdForOrder": 9017,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9111,
@@ -1244,7 +1265,8 @@
                 "BG/story_educationteam"
             ],
             "uiConfigFormerIdForOrder": 9110,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 107,
@@ -1422,7 +1444,8 @@
                 "CG/S722_2"
             ],
             "uiConfigFormerIdForOrder": 9111,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9113,
@@ -1440,7 +1463,8 @@
                 "BG/E071X_Corridor"
             ],
             "uiConfigFormerIdForOrder": 107,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9114,
@@ -1488,7 +1512,8 @@
                 "CG/E702_1"
             ],
             "uiConfigFormerIdForOrder": 9113,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9116,
@@ -1535,7 +1560,8 @@
                 "CG/E707"
             ],
             "uiConfigFormerIdForOrder": 9114,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 108,
@@ -1722,7 +1748,8 @@
                 "BG/story_private_room_v1_h"
             ],
             "uiConfigFormerIdForOrder": 9116,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9117,
@@ -1744,7 +1771,8 @@
                 "BG/story_central_command_team_broken2"
             ],
             "uiConfigFormerIdForOrder": 108,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9119,
@@ -1830,7 +1858,8 @@
                 "BG/story_lastexam"
             ],
             "uiConfigFormerIdForOrder": 9117,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 109,
@@ -2037,7 +2066,8 @@
                 "BG/story_n_corridor"
             ],
             "uiConfigFormerIdForOrder": 9119,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9123,
@@ -2058,7 +2088,8 @@
                 "CG/E090X_1"
             ],
             "uiConfigFormerIdForOrder": 109,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9125,
@@ -2115,7 +2146,8 @@
                 "CG/E906_2"
             ],
             "uiConfigFormerIdForOrder": 9123,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         },
         {
             "id": 9127,
@@ -2161,7 +2193,8 @@
                 "BG/story_screening room_off"
             ],
             "uiConfigFormerIdForOrder": 9125,
-            "isLoadFromThumbnail": true
+            "isLoadFromThumbnail": true,
+            "isFixed": true
         }
     ]
 }

@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "spawnId": 99000202,
+      "npcKey": "N10200",
+      "mapId": 0,
+      "spawnTileX": 69,
+      "spawnTileY": 67,
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    }
+  ]
+}

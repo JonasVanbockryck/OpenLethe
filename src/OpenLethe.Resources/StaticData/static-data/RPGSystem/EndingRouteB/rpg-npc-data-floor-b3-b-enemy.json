@@ -97,6 +97,7 @@
       "fieldHp": 0,
       "knockbackImmune": true,
       "battleId": 11038,
+      "useAmbushBattleEffect": false,
       "collisionType": "None",
       "deathMotion": "Dead_BlackThread"
     },

@@ -1,0 +1,179 @@
+﻿{
+  "list": [
+    {
+      "patternKey": "NA990001_C2",
+      "triggerRange": 2,
+      "canStartWhileMoving": true,
+      "cooldown": 0.5,
+      "staggerBreakBranchKey": "Sweep",
+      "branches": [
+        {
+          "branchKey": "Sweep",
+          "entryType": "Trigger",
+          "branchConditions": [
+            {
+              "conditionType": "OnDamage",
+              "damageThreshold": 210,
+              "transitionAtSequenceEnd": true,
+              "transitionCooldownSeconds": 3,
+              "nextBranchKey": "RetreatShot"
+            },
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Sweep"
+            }
+          ],
+          "steps": [
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.8,
+              "motion": "MeleeAttackReady"
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 44,
+              "mpDamage": 0,
+              "instakillOnHit": false,
+              "parryImmune": true,
+              "hidePrecursor": true,
+              "hitShape": [
+                ".X.",
+                "XXX",
+                ".N."
+              ],
+              "motion": "MeleeAttack"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.4
+            }
+          ]
+        },
+        {
+          "branchKey": "WarpChase",
+          "entryType": "Forced",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Sweep"
+            }
+          ],
+          "steps": [
+            {
+              "action": "WarpNearPlayer",
+              "warpDistanceFromPlayer": 3,
+              "warpAnchor": "PlayerFacing"
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.6
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 30,
+              "mpDamage": 0,
+              "parryImmune": true,
+              "hitShape": [
+                "XXX",
+                "XNX",
+                "XXX"
+              ],
+              "motion": "SpinAttack"
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.6
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 20,
+              "mpDamage": 0,
+              "parryImmune": true,
+              "continueMotion": true,
+              "hitShape": [
+                "XXXXX",
+                "X...X",
+                "X.N.X",
+                "X...X",
+                "XXXXX"
+              ]
+            },
+            {
+              "action": "ShowAttackRange",
+              "duration": 0.6
+            },
+            {
+              "action": "MeleeHit",
+              "hpDamage": 10,
+              "mpDamage": 0,
+              "parryImmune": true,
+              "continueMotion": true,
+              "hitShape": [
+                "XXXXXXX",
+                "X.....X",
+                "X.....X",
+                "X..N..X",
+                "X.....X",
+                "X.....X",
+                "XXXXXXX"
+              ]
+            },
+            {
+              "action": "Wait",
+              "duration": 0.8
+            }
+          ]
+        },
+        {
+          "branchKey": "RetreatShot",
+          "entryType": "Forced",
+          "branchConditions": [
+            {
+              "conditionType": "SequenceEnd",
+              "nextBranchKey": "Sweep"
+            }
+          ],
+          "steps": [
+            {
+              "action": "WarpNearPlayer",
+              "warpDistanceFromPlayer": 5,
+              "warpAnchor": "PlayerFacing"
+            },
+            {
+              "action": "FacePlayer"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.5,
+              "trackPlayer": true
+            },
+            {
+              "action": "Wait",
+              "duration": 0.4
+            },
+            {
+              "action": "RangedShot",
+              "hpDamage": 8,
+              "mpDamage": 0,
+              "projectileKey": "Projectile_BisqueDoll",
+              "parryImmune": true,
+              "projectileSpeed": 4,
+              "maxDistance": 10,
+              "motion": "RangedShoot"
+            },
+            {
+              "action": "Wait",
+              "duration": 0.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

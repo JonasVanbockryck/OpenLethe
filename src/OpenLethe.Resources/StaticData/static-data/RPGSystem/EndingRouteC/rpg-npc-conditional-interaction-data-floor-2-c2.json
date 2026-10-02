@@ -1,0 +1,12 @@
+{
+  "list": [
+    {
+      "npcKey": "N10200",
+      "order": 1,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2503"
+    }
+  ]
+}

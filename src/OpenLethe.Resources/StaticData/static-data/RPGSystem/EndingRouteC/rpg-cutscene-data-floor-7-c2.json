@@ -1,0 +1,994 @@
+﻿{
+  "list": [
+    {
+      "key": "C7003_C2",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.5"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 88, 26"
+        },
+        {
+          "type": "MoveCameraRelative",
+          "param": "player, 0, 0, 0.8"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.3"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.5"
+        },
+        {
+          "type": "PlayVfx",
+          "param": "WhiteRoomWarpFlare, 88, 26"
+        },
+        {
+          "type": "Wait",
+          "param": "2.5"
+        }
+      ]
+    },
+    {
+      "key": "C7005_C2",
+      "showUnboundNpcs": true,
+      "repeatable": true,
+      "noLetterbox": true,
+      "commands": [
+        {
+          "type": "PlayVfx",
+          "param": "WhiteRoomWarpFlare, 88, 31"
+        },
+        {
+          "type": "Wait",
+          "param": "2.5"
+        }
+      ]
+    },
+    {
+      "key": "C7001_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "jeanne",
+          "kind": "Npc",
+          "actorKey": "N107001_C2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.25"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 88, 103"
+        },
+        {
+          "type": "SpawnObject",
+          "param": "SO701004"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, jeanne"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "jeanne, player"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_obstacle_drag"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.35"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "88, 104, 0.8"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "7.6, 0.8, linear"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7005_C2"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.35"
+        },
+        {
+          "type": "Story",
+          "param": "S1037B"
+        }
+      ]
+    },
+    {
+      "key": "C7002_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Dialogue",
+          "param": "D7002_C2"
+        }
+      ]
+    },
+    {
+      "key": "C7004_C2",
+      "bindings": [],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "Story",
+          "param": "S1041A2"
+        },
+        {
+          "type": "Story",
+          "param": "S1043B"
+        }
+      ]
+    },
+    {
+      "key": "C7010_C2",
+      "blockLocationBanner": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "1.2"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 207, 110"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "207, 110, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "4.5, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.6"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "7.6, 2.0"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "player, 0.8"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C7011_C2",
+      "blockLocationBanner": true,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.7"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 207, 87"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "207, 87, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "4.5, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.4"
+        },
+        {
+          "type": "Wait",
+          "param": "0.7"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "207, 83, 2.4"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "8.5, 2.4"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "207, 81, 7.0"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "4.0, 7.0"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.45, 0.55"
+        },
+        {
+          "type": "Wait",
+          "param": "1.4"
+        }
+      ]
+    },
+    {
+      "key": "C7012_C2",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeOut",
+          "param": "1.4"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 88, 103"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "88, 104, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "7.6, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.2"
+        }
+      ],
+      "showUnboundNpcs": true
+    },
+    {
+      "key": "C7013_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "jeanne",
+          "kind": "Npc",
+          "actorKey": "N107001_C2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, jeanne"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "jeanne, player"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "88, 104, 0.8"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "7.6, 0.8, linear"
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7006_C2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7004_C2"
+        }
+      ]
+    },
+    {
+      "key": "C7020_C2",
+      "showUnboundNpcs": true,
+      "repeatable": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "Wait",
+          "param": "5.0"
+        }
+      ]
+    },
+    {
+      "key": "C7021_C2",
+      "blockLocationBanner": true,
+      "showUnboundNpcs": true,
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 207, 103"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "207, 104, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "4.5, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.6"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 2.4, linear"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 2.4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "C7022_C2",
+      "showUnboundNpcs": true,
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "207, 114, 1.6"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9, 1.6, linear"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "3.5"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "MoveCamera",
+              "param": "207, 117, 5.0"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "5.5, 5.0, linear"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_eye_jumpscare"
+        },
+        {
+          "type": "CameraOverlayFx",
+          "param": "on, eye"
+        },
+        {
+          "type": "CameraShake",
+          "param": "0.45, 0.55"
+        },
+        {
+          "type": "Wait",
+          "param": "3.0"
+        }
+      ]
+    },
+    {
+      "key": "C7031_C2",
+      "blockLocationBanner": true,
+      "showUnboundNpcs": true,
+      "repeatable": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "SetBgm",
+          "param": "bgm_afterlife"
+        },
+        {
+          "type": "SetInterludeBgm",
+          "param": "bgm_afterlife"
+        },
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 258, 109"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "258, 109, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "4.5, 0"
+        },
+        {
+          "type": "Wait",
+          "param": "0.5"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.6"
+        },
+        {
+          "type": "Wait",
+          "param": "0.6"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "ZoomCamera",
+              "param": "9.5, 2.4, linear"
+            },
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 2.4"
+            },
+            {
+              "type": "Dialogue",
+              "param": "D7070_C2"
+            }
+          ]
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Down"
+        }
+      ]
+    },
+    {
+      "key": "C7032_C2",
+      "repeatable": true,
+      "hideUnboundParty": true,
+      "bindings": [],
+      "commands": [
+        {
+          "type": "SetBgm",
+          "param": "bgm_afterlife"
+        },
+        {
+          "type": "SetInterludeBgm",
+          "param": "bgm_afterlife"
+        },
+        {
+          "type": "SpawnNpc",
+          "param": "N990004_C2, bigMe, 0, 258, 101"
+        },
+        {
+          "type": "CenterCameraToCharacter",
+          "param": "bigMe, 1.0"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "bigMe, Down"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "258, 100, 4.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7050_C2"
+        },
+        {
+          "type": "SetInterludeBgmVolume",
+          "param": "0.75"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "258, 96, 4.0"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_recall_curtain_creak"
+        },
+        {
+          "type": "PlaySfx",
+          "param": "sfx_recall_sunshine"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "c2f7_whiteroom_reveal"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "c2f7_recall_room_swap"
+        },
+        {
+          "type": "Wait",
+          "param": "2.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7060_C2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "258, 101, 3.0"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "c2f7_recall_upper_dim1"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7051_C2"
+        },
+        {
+          "type": "SetInterludeBgmVolume",
+          "param": "0.5"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "7, 0"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "PlaySfx",
+              "param": "sfx_recall_room_sequence, loop"
+            },
+            {
+              "type": "SetAnimatorParameter",
+              "param": "c2f7_whiteroom_swap"
+            },
+            {
+              "type": "SetAnimatorParameter",
+              "param": "c2f7_recall_lights_descend"
+            },
+            {
+              "type": "MoveCamera",
+              "param": "258, 95, 3.0"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "2.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7061_C2"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "258, 102, 3.0"
+        },
+        {
+          "type": "SetAnimatorParameter",
+          "param": "c2f7_recall_upper_dim2"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7052_C2"
+        },
+        {
+          "type": "SetInterludeBgmVolume",
+          "param": "0.25"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "SetAnimatorParameter",
+              "param": "c2f7_recall_lights_dim"
+            },
+            {
+              "type": "SetAnimatorParameter",
+              "param": "c2f7_whiteroom_eye_ramp"
+            },
+            {
+              "type": "MoveCamera",
+              "param": "258, 95, 3.0"
+            }
+          ]
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7062_C2",
+          "commands": [
+            {
+              "type": "Parallel",
+              "commands": [
+                {
+                  "type": "ZoomCamera",
+                  "param": "3.741657, 1.6"
+                },
+                {
+                  "type": "MoveCamera",
+                  "param": "258, 95.155556, 1.6"
+                }
+              ]
+            },
+            {
+              "type": "Parallel",
+              "commands": [
+                {
+                  "type": "ZoomCamera",
+                  "param": "2.0, 1.6"
+                },
+                {
+                  "type": "MoveCamera",
+                  "param": "258, 95.311111, 1.6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Dialogue",
+          "param": "D7053_C2"
+        },
+        {
+          "type": "SetInterludeBgmVolume",
+          "param": "0.1"
+        },
+        {
+          "type": "Wait",
+          "param": "1.0"
+        },
+        {
+          "type": "HideUi",
+          "commands": [
+            {
+              "type": "SetInterludeBgmVolume",
+              "param": "0"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "3.5, 0"
+            },
+            {
+              "type": "MoveCamera",
+              "param": "258, 95, 0"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_recall_room_sequence, stop"
+            },
+            {
+              "type": "SetAnimatorParameter",
+              "param": "c2f7_whiteroom_eye"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_recall_eye_reveal"
+            },
+            {
+              "type": "PlaySfx",
+              "param": "sfx_recall_eye_reveal_voice"
+            },
+            {
+              "type": "SetAnimatorParameter",
+              "param": "c2f7_recall_spots_off"
+            },
+            {
+              "type": "CameraShake",
+              "param": "0.45, 0.55"
+            },
+            {
+              "type": "Wait",
+              "param": "1.5"
+            },
+            {
+              "type": "FadeOut",
+              "param": "1.0"
+            }
+          ]
+        },
+        {
+          "type": "DialogueOverFade",
+          "param": "D7064_C2"
+        },
+        {
+          "type": "DespawnNpc",
+          "param": "bigMe"
+        }
+      ]
+    },
+    {
+      "key": "C7006_C2",
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        }
+      ],
+      "commands": [
+        {
+          "type": "Story",
+          "param": "S1036B"
+        },
+        {
+          "type": "FadeIn",
+          "param": "1.0"
+        }
+      ]
+    },
+    {
+      "key": "C7014_C2",
+      "repeatable": true,
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.25"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 88, 102"
+        },
+        {
+          "type": "FaceCharacter",
+          "param": "player, Up"
+        },
+        {
+          "type": "MoveCamera",
+          "param": "88.5, 104, 0"
+        },
+        {
+          "type": "ZoomCamera",
+          "param": "36, 0"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.25"
+        },
+        {
+          "type": "Wait",
+          "param": "1.2"
+        },
+        {
+          "type": "Parallel",
+          "commands": [
+            {
+              "type": "CenterCameraToCharacter",
+              "param": "player, 0.8"
+            },
+            {
+              "type": "ZoomCamera",
+              "param": "9.47, 0.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "C7015_C2",
+      "showUnboundNpcs": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player"
+        },
+        {
+          "actorName": "jeanne",
+          "kind": "Npc",
+          "actorKey": "N107001_C2"
+        }
+      ],
+      "commands": [
+        {
+          "type": "FadeOut",
+          "param": "0.01"
+        },
+        {
+          "type": "TeleportCharacter",
+          "param": "player, 88, 103"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "player, jeanne"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "jeanne, player"
+        },
+        {
+          "type": "FadeIn",
+          "param": "0.35"
+        }
+      ]
+    },
+    {
+      "key": "C7016_C2",
+      "bindings": [],
+      "commands": [
+        {
+          "type": "Story",
+          "param": "S1042B"
+        }
+      ]
+    }
+  ]
+}

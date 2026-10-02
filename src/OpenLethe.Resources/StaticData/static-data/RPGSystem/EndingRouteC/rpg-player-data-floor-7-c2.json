@@ -1,0 +1,13 @@
+{
+  "list": [
+    {
+      "playerId": 999999,
+      "prefabKey": "Player_OldMerusault",
+      "portraitKey": "DP_Meursault",
+      "moveSpeed": 12.0,
+      "maxHp": 10,
+      "canFieldAttack": false,
+      "fieldDamageInvulnSeconds": 0.2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "list": [
+    {
+      "questKey": "Q1001_C2",
+      "stepIndex": 0,
+      "goalType1": "TriggerEvent",
+      "goalValue1": "EQ1002_C2",
+      "navGoalFloorKey": "F1005C-2"
+    },
+    {
+      "questKey": "Q1001_C2",
+      "stepIndex": 1,
+      "goalType1": "Cutscene",
+      "goalValue1": "C5001_C2",
+      "navGoalFloorKey": "F1005C-2"
+    }
+  ]
+}

@@ -3356,6 +3356,1077 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2051011,
+      "skillType": "EGO_AWAKEN",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "additionalSkillKeywordList": [
+            "AddBullet"
+          ],
+          "attributeType": "INDIGO",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 7,
+          "mpUsage": 20,
+          "skillLevelCorrection": 3,
+          "defaultValue": 10,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "isManyCoinSkill": true,
+          "abilityScriptList": [
+            {
+              "scriptName": "2051011ParryResultPowerAdder_4_1_5"
+            },
+            {
+              "scriptName": "ParryingPowerResultAdderSelfViaBuffDevide",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "value": 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "2051011GiveBuffByUseMpOnBeforeAttack",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "target": "Self",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttack",
+              "buffData": {
+                "buffKeyword": "BlackWingHole",
+                "target": "Self",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeepLaterOriginCoinsLastOnReroll"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "2051011LowerHpValuePriority"
+                },
+                {
+                  "scriptName": "UseBullet[optional:BulletHole:1]"
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatio10"
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledFirst",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "limit": 100,
+                    "value": 5
+                  }
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledSecond",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "limit": 100
+                  }
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledThird",
+                  "value": 2.0
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "2051011Reroll",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  },
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatio30"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "defaultValue": 12,
+          "abilityScriptList": [
+            {
+              "scriptName": "2051011ParryResultPowerAdder_4_1_7"
+            },
+            {
+              "scriptName": "ParryingPowerResultAdderSelfViaBuffDevide",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "value": 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "2051011GiveBuffByUseMpOnBeforeAttack",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "target": "Self",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttack",
+              "buffData": {
+                "buffKeyword": "BlackWingHole",
+                "target": "Self",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeepLaterOriginCoinsLastOnReroll"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "2051011LowerHpValuePriority"
+                },
+                {
+                  "scriptName": "UseBullet[optional:BulletHole:1]"
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatio15"
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledFirst",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "limit": 100,
+                    "value": 5
+                  }
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledSecond",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "limit": 100
+                  }
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledThird",
+                  "value": 2.0
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "LastCoinScaleAdderOnSAC",
+                  "value": 1
+                },
+                {
+                  "scriptName": "2051011Reroll",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  },
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatio50"
+                },
+                {
+                  "scriptName": "AttackDmgMultiplierOnStartCoinIfSingleTarget",
+                  "value": 0.5
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 12,
+          "abilityScriptList": [
+            {
+              "scriptName": "2051011ParryResultPowerAdder_4_1_10"
+            },
+            {
+              "scriptName": "ParryingPowerResultAdderSelfViaBuffDevide",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "value": 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Breath",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffBeforeAttack",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "2051011GiveBuffByUseMpOnBeforeAttack",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "target": "Self",
+                "stack": 5,
+                "turn": 0,
+                "activeRound": 0,
+                "value": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttack",
+              "buffData": {
+                "buffKeyword": "BlackWingHole",
+                "target": "Self",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeepLaterOriginCoinsLastOnReroll"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "2051011LowerHpValuePriority"
+                },
+                {
+                  "scriptName": "UseBullet[optional:BulletHole:1]"
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatio20"
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledFirst",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "limit": 100,
+                    "value": 5
+                  }
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledSecond",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "limit": 100
+                  }
+                },
+                {
+                  "scriptName": "2051011IfNotRerolledThird",
+                  "value": 2.0
+                },
+                {
+                  "scriptName": "GiveBuffOnSAOnce2051011",
+                  "buffData": {
+                    "buffKeyword": "PenetrateTakeDamageUp",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0,
+                    "limit": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "LastCoinScaleAdderOnSAC",
+                  "value": 1
+                },
+                {
+                  "scriptName": "2051011Reroll",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  },
+                  "value": 4
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatio50"
+                },
+                {
+                  "scriptName": "AttackDmgMultiplierOnStartCoinIfSingleTarget",
+                  "value": 1
+                },
+                {
+                  "scriptName": "CoinScaleAdderOnStartCoinDivideByBuffTurn",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 4,
+                    "value": 1,
+                    "limit": 5
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2051021,
+      "skillType": "EGO_EROSION",
+      "skillTier": 3,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "additionalSkillKeywordList": [
+            "AddBullet"
+          ],
+          "attributeType": "INDIGO",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "skillTargetType": "RANDOM",
+          "targetNum": 7,
+          "mpUsage": 25,
+          "skillLevelCorrection": 5,
+          "defaultValue": 14,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "SKILL",
+          "parryingCloseType": "NEAR",
+          "isManyCoinSkill": true,
+          "abilityScriptList": [
+            {
+              "scriptName": "IgnoreDefenseSkillIncludeCanDuelDefense"
+            },
+            {
+              "scriptName": "2051011ParryResultPowerAdder_4_1_5"
+            },
+            {
+              "scriptName": "2051021GiveBuffBeforeAttackIfHasNotStack",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "buffOwner": "Self",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerReducerBB2ByBrokenCoinWithLimit4"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "BlackWingHole",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "2051021OverwriteCoinProb",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "value": 20
+                  },
+                  "value": 100
+                },
+                {
+                  "scriptName": "DealNoTargetIfIsHead"
+                },
+                {
+                  "scriptName": "GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "2051021GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "ReturnUsedSinStockHalfOnEndCoinIfIsHead"
+                },
+                {
+                  "scriptName": "2051021AttackDmgMultiplier",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "limit": 60,
+                    "value": 3
+                  }
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatioIfIsTail70"
+                },
+                {
+                  "scriptName": "GiveAdditionalPenetrateDmgOnSATargetByRatioIfIsTail",
+                  "value": 0.1
+                },
+                {
+                  "scriptName": "ConsumeAllBullet2051021",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self"
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "defaultValue": 16,
+          "abilityScriptList": [
+            {
+              "scriptName": "IgnoreDefenseSkillIncludeCanDuelDefense"
+            },
+            {
+              "scriptName": "2051011ParryResultPowerAdder_4_1_7"
+            },
+            {
+              "scriptName": "AttackDmgUpIfSingleTarget2081011",
+              "value": 1
+            },
+            {
+              "scriptName": "2051021GiveBuffBeforeAttackIfHasNotStack",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "buffOwner": "Self",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerReducerBB2ByBrokenCoinWithLimit4"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "BlackWingHole",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "2051021OverwriteCoinProb",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "value": 20
+                  },
+                  "value": 100
+                },
+                {
+                  "scriptName": "DealNoTargetIfIsHead"
+                },
+                {
+                  "scriptName": "GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "2051021GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "ReturnUsedSinStockHalfOnEndCoinIfIsHead"
+                },
+                {
+                  "scriptName": "2051021AttackDmgMultiplier",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "limit": 80,
+                    "value": 4
+                  }
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatioIfIsTail100"
+                },
+                {
+                  "scriptName": "GiveAdditionalPenetrateDmgOnSATargetByRatioIfIsTail",
+                  "value": 0.15
+                },
+                {
+                  "scriptName": "ConsumeAllBullet2051021",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self"
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "IgnoreDefenseSkillIncludeCanDuelDefense"
+            },
+            {
+              "scriptName": "2051011ParryResultPowerAdder_4_1_10"
+            },
+            {
+              "scriptName": "AttackDmgUpIfSingleTarget2081011",
+              "value": 2
+            },
+            {
+              "scriptName": "SkillPowerResultAdderOnBAViaBuffCheckDivideByStack",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "2051021GiveBuffBeforeAttackIfHasNotStack",
+              "buffData": {
+                "buffKeyword": "BulletHole",
+                "buffOwner": "Self",
+                "target": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerReducerBB2ByBrokenCoinWithLimit4"
+            },
+            {
+              "scriptName": "2051021RecoverMp",
+              "value": 5
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "BlackWingHole",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnStartCoin",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Binding",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "2051021OverwriteCoinProb",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "value": 20
+                  },
+                  "value": 100
+                },
+                {
+                  "scriptName": "DealNoTargetIfIsHead"
+                },
+                {
+                  "scriptName": "GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "Breath",
+                    "target": "Self",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "DestroyRandomNegativeBuffOnEndCoinIfIsHead"
+                },
+                {
+                  "scriptName": "2051021GiveBuffOnEndCoinHead",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "ReturnUsedSinStockHalfOnEndCoinIfIsHead"
+                },
+                {
+                  "scriptName": "2051021AttackDmgMultiplier",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "limit": 100,
+                    "value": 5
+                  }
+                },
+                {
+                  "scriptName": "CriticalDmgUpByRatioIfIsTail130"
+                },
+                {
+                  "scriptName": "GiveAdditionalPenetrateDmgOnSATargetByRatioIfIsTail",
+                  "value": 0.2
+                },
+                {
+                  "scriptName": "2051021RecoverHpIfIsTail",
+                  "value": 0.05
+                },
+                {
+                  "scriptName": "ConsumeAllBullet2051021",
+                  "buffData": {
+                    "buffKeyword": "BulletHole",
+                    "target": "Self"
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 5,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Sinking",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

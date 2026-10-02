@@ -1,0 +1,164 @@
+﻿{
+  "list": [
+    {
+      "id": 91700101,
+      "eventKey": "E7020_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178001"
+    },
+    {
+      "id": 91700107,
+      "eventKey": "E7021_C2",
+      "activeCondition": "UseMapGate",
+      "activeConditionValue": "2"
+    },
+    {
+      "id": 91700102,
+      "eventKey": "E7002_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C7001_C2"
+    },
+    {
+      "id": 91700103,
+      "eventKey": "E7003_C2",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11039"
+    },
+    {
+      "id": 91700150,
+      "eventKey": "EPI-CLEAR-C2-1",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11039"
+    },
+    {
+      "id": 91700151,
+      "eventKey": "EPI-CLEAR-C2-2",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11039"
+    },
+    {
+      "id": 91700104,
+      "eventKey": "E7004_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C7004_C2"
+    },
+    {
+      "id": 91700105,
+      "eventKey": "E7016_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C7001_C2"
+    },
+    {
+      "id": 91700110,
+      "eventKey": "E7010_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178002",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7017_C2"
+    },
+    {
+      "id": 91700111,
+      "eventKey": "E7011_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178003",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7017_C2"
+    },
+    {
+      "id": 91700112,
+      "eventKey": "E7012_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178004",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7017_C2"
+    },
+    {
+      "id": 91700113,
+      "eventKey": "E7013_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178005",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7017_C2"
+    },
+    {
+      "id": 91700114,
+      "eventKey": "E7014_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178006",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7017_C2"
+    },
+    {
+      "id": 91700115,
+      "eventKey": "E7015_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178007",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7017_C2"
+    },
+    {
+      "id": 91700116,
+      "eventKey": "E7017_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178008"
+    },
+    {
+      "id": 91700106,
+      "eventKey": "E7005_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D7005_C2",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7030_C2"
+    },
+    {
+      "id": 91700130,
+      "eventKey": "E7031_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D7022_C2",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "E7002_C2"
+    },
+    {
+      "id": 91700131,
+      "eventKey": "E7032_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C7011_C2"
+    },
+    {
+      "id": 91700132,
+      "eventKey": "E7030_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C7001_C2"
+    },
+    {
+      "id": 91700133,
+      "eventKey": "E7033_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C7012_C2"
+    },
+    {
+      "id": 91700140,
+      "eventKey": "E7040_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D7003_C2"
+    },
+    {
+      "id": 91700141,
+      "eventKey": "E7041_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D7022_C2"
+    },
+    {
+      "id": 91700120,
+      "eventKey": "E7006_C2",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F1007C-2"
+    },
+    {
+      "id": 91700108,
+      "eventKey": "E7022_C2",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "178009"
+    }
+  ]
+}

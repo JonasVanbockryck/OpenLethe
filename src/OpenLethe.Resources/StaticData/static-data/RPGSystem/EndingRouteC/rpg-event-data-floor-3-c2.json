@@ -1,0 +1,30 @@
+{
+  "list": [
+    {
+      "key": "E3001_C2",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "C3001_C2"
+    },
+    {
+      "key": "ECLONEK31_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ECLONEK32_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ECLONEK33_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ECLONEK34_C2",
+      "canRepeat": false
+    },
+    {
+      "key": "ESHLD3_C2",
+      "canRepeat": false
+    }
+  ]
+}

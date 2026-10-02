@@ -1,0 +1,264 @@
+{
+  "list": [
+    {
+      "id": "CONNECTION_ERROR",
+      "buffA": {
+        "id": "ConnectionError_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "TakeAtkDamageMultiplier",
+            "value": 0.125
+          },
+          {
+            "ability": "MinSpeedAdder",
+            "value": -1
+          },
+          {
+            "ability": "MaxSpeedAdder",
+            "value": -1
+          },
+          {
+            "ability": "RefreshSpeedOnPanicOrLowMorale"
+          },
+          {
+            "ability": "UseChargeNoirTurnSelfAttackSkillAtkDamageMultiplierConnectionError",
+            "value": -0.15
+          }
+        ]
+      },
+      "buffB": {
+        "id": "ConnectionError_Panic",
+        "iconId": "ConnectionError_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "TakeAtkDamageMultiplier",
+            "value": 0.2
+          },
+          {
+            "ability": "MinSpeedAdder",
+            "value": -2
+          },
+          {
+            "ability": "MaxSpeedAdder",
+            "value": -2
+          },
+          {
+            "ability": "RefreshSpeedOnPanicOrLowMorale"
+          },
+          {
+            "ability": "UseChargeNoirTurnSelfAttackSkillAtkDamageMultiplierConnectionError",
+            "value": -0.25
+          }
+        ]
+      }
+    },
+    {
+      "id": "BLACKSTIGMATA",
+      "buffA": {
+        "id": "BlackStigmata_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "MinSpeedAdder",
+            "value": -1
+          },
+          {
+            "ability": "MaxSpeedAdder",
+            "value": -1
+          },
+          {
+            "ability": "RefreshSpeedOnPanicOrLowMorale"
+          },
+          {
+            "ability": "TakeAtkDamageMultiplierIfAttackerFasterThanSelfBlackStigmata",
+            "value": 0.1
+          }
+        ]
+      },
+      "buffB": {
+        "id": "BlackStigmata_Panic",
+        "iconId": "BlackStigmata_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "MinSpeedAdder",
+            "value": -2
+          },
+          {
+            "ability": "MaxSpeedAdder",
+            "value": -2
+          },
+          {
+            "ability": "RefreshSpeedOnPanicOrLowMorale"
+          },
+          {
+            "ability": "TakeAtkDamageMultiplierIfAttackerFasterThanSelfBlackStigmata",
+            "value": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "id": "PRIEST_REFUSAL",
+      "buffA": {
+        "id": "PriestRefusal_LowMoral",
+        "iconId": "PriestRefusal_LowMoral",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+        ]
+      },
+      "buffB": {
+        "id": "PriestRefusal_Panic",
+        "iconId": "PriestRefusal_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+        ]
+      }
+    },
+    {
+      "id": "GRANDBUFFET",
+      "buffA": {
+        "id": "GrandBuffet_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": 3
+          },
+          {
+            "ability": "DefAdder",
+            "value": 3
+          }
+        ]
+      },
+      "buffB": {
+        "id": "GrandBuffet_Panic",
+        "iconId": "GrandBuffet_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkAdder",
+            "value": 5
+          },
+          {
+            "ability": "DefAdder",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "id": "LAROUGE_SUPERIOR",
+      "buffA": {
+        "id": "LaRougeSuperior_LowMorale",
+        "iconId": "Normal_Lowmorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "DefAdder",
+            "value": -2
+          },
+          {
+            "ability": "AtkAdder",
+            "value": 2
+          }
+        ]
+      },
+      "buffB": {
+        "id": "LaRougeSuperior_Panic",
+        "iconId": "LaRougeSuperior_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "DefAdder",
+            "value": -5
+          },
+          {
+            "ability": "AtkAdder",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "JEANNE",
+      "buffA": {
+        "id": "Jeanne_LowMorale",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "AtkDamageMultiplier",
+            "value": -0.1
+          }
+        ]
+      },
+      "buffB": {
+        "id": "Jeanne_Panic",
+        "stack": 1,
+        "turn": 0,
+        "buffClass": "VolatileBuff",
+        "buffType": "Neutral",
+        "canBeDespelled": false,
+        "list": [
+          {
+            "ability": "SkillPowerAdder",
+            "value": -1
+          },
+          {
+            "ability": "AtkDamageMultiplier",
+            "value": -0.1
+          }
+        ]
+      }
+    }
+  ]
+}

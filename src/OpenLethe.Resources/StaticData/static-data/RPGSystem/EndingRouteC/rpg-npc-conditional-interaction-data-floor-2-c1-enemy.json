@@ -1,0 +1,28 @@
+{
+  "list": [
+    {
+      "npcKey": "N102050",
+      "order": 1,
+      "conditionType": "InteractionCount",
+      "conditionValue": "1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2050"
+    },
+    {
+      "npcKey": "N102050",
+      "order": 2,
+      "conditionType": "Dialogue",
+      "conditionValue": "D2051",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2053"
+    },
+    {
+      "npcKey": "N102050",
+      "order": 3,
+      "conditionType": "Dialogue",
+      "conditionValue": "D2052",
+      "interactionType": "Dialogue",
+      "interactionKey": "D2054"
+    }
+  ]
+}

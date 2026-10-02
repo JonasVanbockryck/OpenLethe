@@ -1,0 +1,52 @@
+{
+  "list": [
+    {
+      "id": 110202050,
+      "eventKey": "E2050",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2051"
+    },
+    {
+      "id": 110202051,
+      "eventKey": "E2051",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2052"
+    },
+    {
+      "id": 110202052,
+      "eventKey": "E2052",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2051"
+    },
+    {
+      "id": 110202053,
+      "eventKey": "E2053",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2052"
+    },
+    {
+      "id": 110202054,
+      "eventKey": "E2052",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2053"
+    },
+    {
+      "id": 110202055,
+      "eventKey": "E2053",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D2054"
+    },
+    {
+      "id": 91200101,
+      "eventKey": "E2001_C1",
+      "activeCondition": "EnterEventTriggerZone",
+      "activeConditionValue": "128021"
+    },
+    {
+      "id": 91200102,
+      "eventKey": "E2002_C1",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C2001_C1"
+    }
+  ]
+}

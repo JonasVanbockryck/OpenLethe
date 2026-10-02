@@ -1,0 +1,339 @@
+{
+  "list": [
+    {
+      "objectKey": "THC_001",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1001",
+      "floorKey": "F1001C-1",
+      "startPosX": 67,
+      "startPosY": 40,
+      "routeKey": "C"
+    },
+    {
+      "objectKey": "THC_002",
+      "stageLeaderId": 13,
+      "cutsceneKey": "C1011",
+      "floorKey": "F1001C-1",
+      "startPosX": 67,
+      "startPosY": 50,
+      "startDirection": "Left",
+      "routeKey": "C",
+      "steps": [
+        {
+          "cutsceneKey": "C1011"
+        },
+        {
+          "cutsceneKey": "C1012"
+        }
+      ],
+      "stageNpcs": [
+        {
+          "npcKey": "N101031",
+          "actorName": "guest1",
+          "tileX": 76,
+          "tileY": 58,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101032",
+          "actorName": "guest2",
+          "tileX": 80,
+          "tileY": 58,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101033",
+          "actorName": "guest3",
+          "tileX": 84,
+          "tileY": 50,
+          "stepIndex": -1
+        },
+        {
+          "npcKey": "N101031",
+          "actorName": "guest1",
+          "tileX": 76,
+          "tileY": 54,
+          "stepIndex": 1
+        },
+        {
+          "npcKey": "N101032",
+          "actorName": "guest2",
+          "tileX": 71,
+          "tileY": 53,
+          "stepIndex": 1
+        },
+        {
+          "npcKey": "N101033",
+          "actorName": "guest3",
+          "tileX": 76,
+          "tileY": 52,
+          "stepIndex": 1
+        }
+      ]
+    },
+    {
+      "objectKey": "THC_003",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2001_C1",
+      "stageTargetNpcKey": "N102050",
+      "floorKey": "F1002C-1",
+      "startPosX": 73,
+      "startPosY": 57,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "steps": [
+        {
+          "cutsceneKey": "C2001_C1"
+        },
+        {
+          "dialogueKey": "D2050"
+        }
+      ],
+      "stagePartyIds": [
+        13,
+        2,
+        7
+      ]
+    },
+    {
+      "objectKey": "THC_004",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1001_C2",
+      "floorKey": "F1001C-2",
+      "startPosX": 68,
+      "startPosY": 46,
+      "routeKey": "C",
+      "stagePartyIds": [
+        13,
+        9,
+        8
+      ]
+    },
+    {
+      "objectKey": "THC_005",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C1002_C2",
+      "floorKey": "F1001C-2",
+      "startPosX": 226,
+      "startPosY": 138,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "stagePartyIds": [
+        13,
+        9,
+        8
+      ],
+      "stageCompletedEventKeys": [
+        "ESHLD1_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_006",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C2001_C2",
+      "floorKey": "F1002C-2",
+      "routeKey": "C",
+      "stagePartyIds": [
+        13,
+        2,
+        7
+      ],
+      "stageCompletedEventKeys": [
+        "ESHLD2_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_007",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C3001_C2",
+      "floorKey": "F1003C-2",
+      "startPosX": 52,
+      "startPosY": 65,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "stagePartyIds": [
+        13,
+        11,
+        10
+      ],
+      "stageCompletedEventKeys": [
+        "ESHLD3_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_008",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C4003_C2",
+      "floorKey": "F1004C-2",
+      "startPosX": 44,
+      "startPosY": -56,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "stagePartyIds": [
+        13,
+        3,
+        6
+      ],
+      "stageCompletedEventKeys": [
+        "EKILL01_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_009",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5005_C2",
+      "floorKey": "F1005C-2",
+      "startPosX": -82,
+      "startPosY": -320,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "stagePartyIds": [
+        13,
+        12,
+        1
+      ]
+    },
+    {
+      "objectKey": "THC_010",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5002_C2",
+      "floorKey": "F1005C-2",
+      "startPosX": -86,
+      "startPosY": -314,
+      "startDirection": "Right",
+      "routeKey": "C",
+      "stagePartyIds": [
+        13
+      ],
+      "stageCompletedEventKeys": [
+        "EL5011_C2",
+        "E5002_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_011",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C5003_C2",
+      "floorKey": "F1005C-2",
+      "startPosX": -64,
+      "startPosY": -298,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "stagePartyIds": [
+        13,
+        12,
+        1
+      ],
+      "stageCompletedEventKeys": [
+        "EL5011_C2",
+        "E5002_C2",
+        "EL5037_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_012",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C7006_C2",
+      "floorKey": "F1007C-2",
+      "startPosX": 181,
+      "startPosY": 21,
+      "startDirection": "Up",
+      "routeKey": "C"
+    },
+    {
+      "objectKey": "THC_013",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C7001_C2",
+      "floorKey": "F1007C-2",
+      "startPosX": 88,
+      "startPosY": 102,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "stageCompletedEventKeys": [
+        "E7022_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_014",
+      "stageLeaderId": 5,
+      "cutsceneKey": "CINT01_C2",
+      "floorKey": "F1007C-2",
+      "routeKey": "C",
+      "hideStageViewer": true,
+      "activateInterludeStages": true,
+      "stageCompletedEventKeys": [
+        "E7022_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_015",
+      "stageLeaderId": 5,
+      "cutsceneKey": "CINT02_C2",
+      "floorKey": "F1007C-2",
+      "routeKey": "C",
+      "hideStageViewer": true,
+      "activateInterludeStages": true,
+      "stageCompletedEventKeys": [
+        "E7022_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_016",
+      "keepBgmBetweenSteps": true,
+      "stageLeaderId": 999999,
+      "cutsceneKey": "C7031_C2",
+      "floorKey": "F1007C-2",
+      "startPosX": 258,
+      "startPosY": 109,
+      "startDirection": "Down",
+      "routeKey": "C",
+      "steps": [
+        {
+          "cutsceneKey": "C7031_C2"
+        },
+        {
+          "dialogueKey": "D7022_C2"
+        },
+        {
+          "cutsceneKey": "C7032_C2"
+        }
+      ],
+      "stageCompletedEventKeys": [
+        "E7022_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_017",
+      "stageLeaderId": 5,
+      "cutsceneKey": "CINT04_C2",
+      "floorKey": "F1007C-2",
+      "routeKey": "C",
+      "hideStageViewer": true,
+      "activateInterludeStages": true,
+      "stageCompletedEventKeys": [
+        "E7022_C2"
+      ]
+    },
+    {
+      "objectKey": "THC_018",
+      "stageLeaderId": 5,
+      "cutsceneKey": "C7016_C2",
+      "floorKey": "F1007C-2",
+      "startPosX": 88,
+      "startPosY": 102,
+      "startDirection": "Up",
+      "routeKey": "C",
+      "steps": [
+        {
+          "cutsceneKey": "C7016_C2"
+        },
+        {
+          "cutsceneKey": "C7004_C2"
+        }
+      ],
+      "stageCompletedEventKeys": [
+        "E7022_C2"
+      ]
+    }
+  ]
+}

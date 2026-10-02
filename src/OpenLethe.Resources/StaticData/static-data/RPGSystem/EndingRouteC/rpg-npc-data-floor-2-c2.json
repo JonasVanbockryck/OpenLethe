@@ -1,0 +1,18 @@
+{
+  "list": [
+    {
+      "npcKey": "N10200",
+      "moveSpeed": 0,
+      "defaultState": "Idle",
+      "prefabKey": "NPC_Leneant_TypeC.prefab",
+      "interactionType": "None",
+      "interactionKey": "",
+      "hitDialogues": [
+        {
+          "dialogueKey": "D2502",
+          "hitCount": 1
+        }
+      ]
+    }
+  ]
+}

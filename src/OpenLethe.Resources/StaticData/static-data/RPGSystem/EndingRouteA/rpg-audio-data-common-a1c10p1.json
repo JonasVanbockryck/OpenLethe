@@ -328,6 +328,12 @@
       "fmodEvent": "event:/SFX/TopOper/SFX_FloorWalk"
     },
     {
+      "audioId": "sfx_floor_walk_cromer",
+      "category": "SFX",
+      "fmodEvent": "event:/SFX/TopOper/SFX_FloorWalk_Cromer",
+      "volumeRatio": 0.7
+    },
+    {
       "audioId": "sfx_floor_walk_mannequin",
       "category": "SFX",
       "displayName": "",

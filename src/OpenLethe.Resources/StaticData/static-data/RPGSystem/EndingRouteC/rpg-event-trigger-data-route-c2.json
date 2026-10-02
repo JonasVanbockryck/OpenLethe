@@ -1,0 +1,72 @@
+{
+  "list": [
+    {
+      "id": 91902101,
+      "eventKey": "ERSC02_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "DRSC02_C2"
+    },
+    {
+      "id": 91902102,
+      "eventKey": "ERSC03_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "DRSC12_C2"
+    },
+    {
+      "id": 91902103,
+      "eventKey": "ERSC05_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "DRSC02_C2",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1002_C2",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EQ1002_C2"
+    },
+    {
+      "id": 91902104,
+      "eventKey": "ERSC05_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "DRSC12_C2",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "E1002_C2",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EQ1002_C2"
+    },
+    {
+      "id": 91902105,
+      "eventKey": "ERSC06_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "DRSC02_C2",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EM5010_C2",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5002_C2"
+    },
+    {
+      "id": 91902106,
+      "eventKey": "ERSC06_C2",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "DRSC12_C2",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "EM5010_C2",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "E5002_C2"
+    },
+    {
+      "id": 91902107,
+      "eventKey": "ERSC07_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "CKILL01_C2",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "ERSC05_C2"
+    },
+    {
+      "id": 91902108,
+      "eventKey": "ERSC08_C2",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11041",
+      "passiveCondition1": "EventNotCompleted",
+      "passiveConditionValue1": "ERSC06_C2"
+    }
+  ]
+}

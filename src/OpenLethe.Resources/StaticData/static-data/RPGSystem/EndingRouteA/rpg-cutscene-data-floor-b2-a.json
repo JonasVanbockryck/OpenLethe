@@ -309,15 +309,15 @@
         },
         {
           "type": "TeleportCharacter",
+          "param": "player, 86, 42"
+        },
+        {
+          "type": "TeleportCharacter",
           "param": "outis, 84, 42"
         },
         {
           "type": "TeleportCharacter",
           "param": "dante, 85, 42"
-        },
-        {
-          "type": "TeleportCharacter",
-          "param": "player, 86, 42"
         },
         {
           "type": "FaceCharacter",

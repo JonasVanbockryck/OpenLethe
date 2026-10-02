@@ -1,0 +1,236 @@
+{
+  "list": [
+    {
+      "keyword": "EvadeBanEffect",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/BanEvade/FX_RPG_Cp10_C_1F_BisqueDoll_EvadeCut.prefab"
+    },
+    {
+      "keyword": "ZombieRangeEffect",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_Zombi_Range.prefab"
+    },
+    {
+      "keyword": "SisypCheckpointFlash",
+      "address": "Assets/Prefab/Effect/RPG/BG/Fx_RPG_Cp10_BG_SisypCheckpointFlash.prefab"
+    },
+    {
+      "keyword": "BuffetScruple",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/Fx_Mon_Cp10_PerfectBuffet_Buff_BuffetScruple.prefab"
+    },
+    {
+      "keyword": "BuffetRouge",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Buffet/Fx_Mon_Cp10_PerfectBuffet_Buff_BuffetRouge.prefab"
+    },
+    {
+      "keyword": "BoneNail",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/PerfectBuffet_Buff_BoneNail_Effect.prefab"
+    },
+    {
+      "keyword": "ZombieFeedLine",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_ZombiLine.prefab"
+    },
+    {
+      "keyword": "ZombieLost",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_Zombi_Lost.prefab"
+    },
+    {
+      "keyword": "BuffetHeal",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_Buff_Recover.prefab"
+    },
+    {
+      "keyword": "ZombieFlare",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_Zombi_Flare.prefab"
+    },
+    {
+      "keyword": "BuffetBind",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_Bind.prefab"
+    },
+    {
+      "keyword": "PerfectBuffetS8Burst",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_S8_Burst.prefab"
+    },
+    {
+      "keyword": "JeanneDesign",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/Fx_Mon_Cp10_Jeanne_Buff_JeanneDesign.prefab"
+    },
+    {
+      "keyword": "JeannePathos",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/Fx_Mon_Cp10_Jeanne_Buff_JeannePathosObject.prefab"
+    },
+    {
+      "keyword": "JeanneLogos",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/Fx_Mon_Cp10_Jeanne_Buff_JeanneLogosObject.prefab"
+    },
+    {
+      "keyword": "JeanneCheat",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/Fx_Mon_Cp10_Jeanne_Buff_JeanneCheatObject.prefab"
+    },
+    {
+      "keyword": "JeanneSpotlight",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/Fx_Mon_Cp10_Jeanne_Buff_SpotLight.prefab"
+    },
+    {
+      "keyword": "JeanneManager",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Ch10_3/Fx_Mon_Cp10_Jeanne_Buff_JeanneManager.prefab"
+    },
+    {
+      "keyword": "JeanneSubUnitDieEffect",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_Jeanne_Buff_BluePrint_Die_Hit.prefab"
+    },
+    {
+      "keyword": "JeanneBlueprint",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_Jeanne_Buff_BluePrint_Piece.prefab"
+    },
+    {
+      "keyword": "JeanneMapEffect",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_Jeanne_Buff_BG_SIl.prefab"
+    },
+    {
+      "keyword": "ParryingTypoBeat",
+      "address": "Assets/Prefab/Battle/UI/Controller/Typo/Parrying/ParryingTypoBeat.prefab"
+    },
+    {
+      "keyword": "OathField1",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_BG_Team_1.prefab"
+    },
+    {
+      "keyword": "OathField2",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_BG_Team_2.prefab"
+    },
+    {
+      "keyword": "NoirShieldDonQuixote",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_Buff_NoirShieldPiece_Self.prefab"
+    },
+    {
+      "keyword": "NoirShieldDonQuixoteHit",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_Buff_NoirShieldPiece_Self_Hit.prefab"
+    },
+    {
+      "keyword": "NoirShieldDonQuixoteBroken",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_Buff_NoirShieldPiece_Self_Broken.prefab"
+    },
+    {
+      "keyword": "NoirAttackDonQuixote",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_Buff_Halo_Team.prefab"
+    },
+    {
+      "keyword": "NoirNailTargetDonQuixote",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_Buff_NoirNail_Target.prefab"
+    },
+    {
+      "keyword": "NoirNailVibrationDonQuixote",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_Buff_Shock_Burst.prefab"
+    },
+    {
+      "keyword": "NoirHaloDonQuixote",
+      "address": "Assets/Prefab/Effect/PC/Cp10_3/Fx_PC_Cp10_Donquixote_LanoirCaptain_Buff_Halo_Self.prefab"
+    },
+    {
+      "keyword": "BuffetResolve",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_PerfectBuffet_Buff_BuffetResolve.prefab"
+    },
+    {
+      "keyword": "PerfectBuffetS7Tentacle",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Cp10_3/Fx_RPG_Mon_Cp10_PerfectBuffet_S7_Ground_Tentacle.prefab"
+    },
+    {
+      "keyword": "GoldenHideWarderFirstPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenHide_BuffEffect.prefab"
+    },
+    {
+      "keyword": "GoldenHideWarderSecondPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenHide_BuffEffect_Phase2.prefab"
+    },
+    {
+      "keyword": "GoldenHideWarderThirdPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenHide_BuffEffect_Phase3.prefab"
+    },
+    {
+      "keyword": "GoldenFabricWarderFirstPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenFabric_BuffEffect.prefab"
+    },
+    {
+      "keyword": "GoldenFabricWarderSecondPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenFabric_BuffEffect_Phase2.prefab"
+    },
+    {
+      "keyword": "GoldenFabricWarderThirdPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenFabric_BuffEffect_Phase3.prefab"
+    },
+    {
+      "keyword": "GoldenNailEffect",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenNailFall.prefab"
+    },
+    {
+      "keyword": "WarderDualReadyP2_1",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_WardenP2_DualReady1.prefab"
+    },
+    {
+      "keyword": "WarderDualReadyP2_2",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_WardenP2_DualReady2.prefab"
+    },
+    {
+      "keyword": "WarderDualReadyP3_1",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_WardenP3_DualReady1.prefab"
+    },
+    {
+      "keyword": "WarderDualReadyP3_2",
+      "address": "Assets/Prefab/Effect/Mon/Cp10/Cp10_3/Fx_Mon_Cp10_WardenP3_DualReady2.prefab"
+    },
+    {
+      "keyword": "Tiphereth_Heads",
+      "address": "Assets/Prefab/Effect/UI/Battle/Dante/Fx_UI_Battle_Dante_S5_Mark.prefab"
+    },
+    {
+      "keyword": "Tiphereth_Tails",
+      "address": "Assets/Prefab/Effect/UI/Battle/Dante/Fx_UI_Battle_Dante_S5_Mark.prefab"
+    },
+    {
+      "keyword": "BulletHole",
+      "address": "Assets/Prefab/Effect/PC/10_Meursault/Hole/Fx_Pc_Meursault_Hole_BulletCylinder1.prefab"
+    },
+    {
+      "keyword": "GoldenShieldEffect",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenShield.prefab"
+    },
+    {
+      "keyword": "RestrainingNailSecondPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/RestrainingNail.prefab"
+    },
+    {
+      "keyword": "RestrainingNailThirdPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/RestrainingNail.prefab"
+    },
+    {
+      "keyword": "ExecutionNailSecondPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/ExecutionNail.prefab"
+    },
+    {
+      "keyword": "ExecutionNailThirdPhase",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/ExecutionNail.prefab"
+    },
+    {
+      "keyword": "CeremonialNail",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/CeremonialNail.prefab"
+    },
+    {
+      "keyword": "MarkingNail",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/MarkingNail.prefab"
+    },
+    {
+      "keyword": "GoldenNail",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenNail.prefab"
+    },
+    {
+      "keyword": "WardenShield",
+      "address": "Assets/Prefab/Effect/RPG/Mon/Fx_RPG_Mon_Cp10_Warden_Shield.prefab"
+    },
+    {
+      "keyword": "GoldenShieldEffectHit",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenShieldEffectHit.prefab"
+    },
+    {
+      "keyword": "GoldenShieldEffectBroken",
+      "address": "Assets/Resources_moved/Prefab/Effect/Battle/a1c10p3/GoldenShieldEffectBroken.prefab"
+    }
+  ]
+}

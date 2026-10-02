@@ -1,0 +1,15 @@
+{
+  "list": [
+    {
+      "npcKey": "N105031_C2",
+      "order": 1,
+      "conditionType": "Cutscene",
+      "conditionValue": "C5013_C2",
+      "interactionType": "Event",
+      "interactionKey": "E5003_C2",
+      "skipIfComplete": true,
+      "interactEffect": "default",
+      "showQuestMark": false
+    }
+  ]
+}

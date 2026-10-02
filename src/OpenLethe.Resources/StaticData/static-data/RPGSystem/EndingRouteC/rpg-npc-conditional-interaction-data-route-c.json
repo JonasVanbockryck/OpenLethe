@@ -1,0 +1,12 @@
+{
+  "list": [
+    {
+      "npcKey": "N101001",
+      "order": 1,
+      "conditionType": "Cutscene",
+      "conditionValue": "C1901_C1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1014_C1"
+    }
+  ]
+}

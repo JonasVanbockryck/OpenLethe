@@ -727,6 +727,7 @@
       "key": "C-PB-CONTROLLER",
       "repeatable": true,
       "noLetterbox":true,
+      "showUnboundNpcs": true,
       "bindings": [
         {
           "actorName": "player",

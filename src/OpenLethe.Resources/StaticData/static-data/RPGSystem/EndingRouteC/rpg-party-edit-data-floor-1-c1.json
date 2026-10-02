@@ -1,0 +1,15 @@
+{
+    "list": [
+        {
+            "triggerQuestKey": "Q1012",
+            "targetFloorList": [
+              {
+                "floor": "1",
+                "leaderId": 5,
+                "followerList": [13, 9, 8],
+                "order": 1
+              }
+            ]
+        }
+    ]
+}

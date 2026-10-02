@@ -1,0 +1,33 @@
+{
+  "list": [
+    {
+      "key": "SO910002",
+      "type": "HiddenObject",
+      "x": 62,
+      "y": 61,
+      "width": 1,
+      "height": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "visualOffsetX": 0,
+      "visualOffsetY": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "blockConditionType": "NotBlock",
+      "appearance": "SephirahLogo/Prefabs/SephirahLogo_Tiphereth.prefab",
+      "dialogueKey": "D91002_C2"
+    },
+    {
+      "key": "SO910006",
+      "type": "Sign",
+      "x": 59,
+      "y": 67,
+      "width": 2,
+      "height": 2,
+      "direction": "Down",
+      "defaultState": 0,
+      "appearance": "Object_Floor_1_Sign_3",
+      "dialogueKey": "D2501"
+    }
+  ]
+}

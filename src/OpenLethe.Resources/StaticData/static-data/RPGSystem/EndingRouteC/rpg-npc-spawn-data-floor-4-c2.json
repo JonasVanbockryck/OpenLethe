@@ -1,0 +1,28 @@
+{
+  "list": [
+    {
+      "spawnId": 99000402,
+      "npcKey": "N10201",
+      "mapId": 0,
+      "spawnTileX": 62,
+      "spawnTileY": -59,
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    },
+    {
+      "spawnId": 99000403,
+      "npcKey": "N10202",
+      "mapId": 0,
+      "spawnTileX": -38,
+      "spawnTileY": -44,
+      "spawnConditionType": "None",
+      "spawnConditionParam": "",
+      "despawnConditionType": "",
+      "despawnConditionParam": "",
+      "patrolWaypoints": []
+    }
+  ]
+}

@@ -183,6 +183,7 @@
       "singleTileMovement": true,
       "corpseSortingOrder": 0,
       "canTakeFieldDamage": true,
+      "hideHpBarValue": true,
       "fieldHp": 1000,
       "fieldHpFloor": 1,
       "knockbackImmune": true,
@@ -194,6 +195,7 @@
       "chargeGroggyOnJustGuard": false,
       "battleId": 11034,
       "startBattleBelowHpPercent": 50,
+      "useAmbushBattleEffect": false,
       "attackEntersBattleOnlyWhenLowHp": true,
       "dropTableKey": "DT103016",
       "corpseDialogueKey": "D3921",
@@ -203,7 +205,6 @@
       "isBoss": true,
       "bossBgmAudioId": "bgm_fieldBossEndlessPain",
       "deathMotion": "Dead_FloorMaster",
-      "hideHpBarValue": true,
       "mustNeedQuestKeys": [
         "Q-2010A"
       ],

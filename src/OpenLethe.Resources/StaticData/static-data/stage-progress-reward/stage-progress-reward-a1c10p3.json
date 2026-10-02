@@ -1,0 +1,178 @@
+{
+    "list": [
+      {
+        "mainchapterid": 1,
+        "subchapterlist": [
+          {
+            "subchapterid": 110,
+            "progressRewardList": [
+              {
+                "type": "NORMALCLEAR_ONETHIRD",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 850
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 214,
+                    "num": 30
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 213,
+                    "num": 15
+                  }
+                ]
+              },
+              {
+                "type": "NORMALCLEAR_TWOTHIRD",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 850
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 214,
+                    "num": 30
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 213,
+                    "num": 15
+                  }
+                ]
+              },
+              {
+                "type": "NORMALCLEAR_ALLCLEAR",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 850
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 214,
+                    "num": 30
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 213,
+                    "num": 15
+                  }
+                ]
+              },
+              {
+                "type": "EXCLEAR_ALLCLEAR",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 260
+                  }
+                ]
+              }
+            ],
+            "excludedNodeIdList": [
+              11001, 11002, 11003, 11007
+            ]
+          }
+        ]
+      },
+      {
+        "mainchapterid": 91,
+        "subchapterlist": [
+          {
+            "subchapterid": 9128,
+            "progressRewardList": [
+              {
+                "type": "NORMALCLEAR_ONETHIRD",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 850
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 214,
+                    "num": 30
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 213,
+                    "num": 15
+                  }
+                ]
+              },
+              {
+                "type": "NORMALCLEAR_TWOTHIRD",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 850
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 214,
+                    "num": 30
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 213,
+                    "num": 15
+                  }
+                ]
+              },
+              {
+                "type": "NORMALCLEAR_ALLCLEAR",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 850
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 214,
+                    "num": 30
+                  },
+                  {
+                    "type": "ITEM",
+                    "id": 213,
+                    "num": 15
+                  }
+                ]
+              },
+              {
+                "type": "EXCLEAR_ALLCLEAR",
+                "uiIconConfig": "SEASON8_package_item",
+                "rewardList": [
+                  {
+                    "type": "ITEM",
+                    "id": 2,
+                    "num": 260
+                  }
+                ]
+              }
+            ],
+            "excludedNodeIdList": [
+              912801, 912802, 912803, 912807
+            ]
+          }
+        ]
+      }
+    ]
+  }

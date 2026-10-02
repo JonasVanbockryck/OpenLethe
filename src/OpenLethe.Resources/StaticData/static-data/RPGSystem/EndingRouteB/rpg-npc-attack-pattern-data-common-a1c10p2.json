@@ -88,8 +88,8 @@
                         },
                         {
                             "action": "ShowAttackRange",
-                            "duration": 0.7,
-                            "debugLabel": "② 휘두르기 예고(Attack 갭 구간 — 마커 1.333s)"
+                            "duration": 1.0,
+                            "debugLabel": "② 휘두르기 예고"
                         },
                         {
                             "action": "MeleeHit",
@@ -118,7 +118,7 @@
                         },
                         {
                             "action": "Wait",
-                            "duration": 0.5,
+                            "duration": 1.0,
                             "debugLabel": "② 후딜"
                         }
                     ]

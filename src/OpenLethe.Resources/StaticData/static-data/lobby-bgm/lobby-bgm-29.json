@@ -1,0 +1,676 @@
+{
+  "dataList": [
+    {
+      "id": 200303,
+      "uiImage": "Rendezvous",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_4_Vanilla",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 207.88700866699219,
+      "bank": ""
+    },
+    {
+      "id": 200304,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Credit/Credit_110",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 227.14700317382813,
+      "bank": ""
+    },
+    {
+      "id": 200305,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Story/Punctum",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 64.0,
+      "bank": ""
+    },
+    {
+      "id": 200306,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Affliction",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200307,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Floor_Nobody",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200308,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Precious_Than_Your_Brain",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 144.0,
+      "bank": ""
+    },
+    {
+      "id": 200309,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/And_There",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 115.20000457763672,
+      "bank": ""
+    },
+    {
+      "id": 200310,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Passion_Red",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200311,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Run_Not_Walk",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 72.0,
+      "bank": ""
+    },
+    {
+      "id": 200312,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Timewalker",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 85.3330078125,
+      "bank": ""
+    },
+    {
+      "id": 200313,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Reason_Black",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200314,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Never_Look_Back",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 115.20000457763672,
+      "bank": ""
+    },
+    {
+      "id": 200315,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Good_Sinew_To_Cut",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 144.0,
+      "bank": ""
+    },
+    {
+      "id": 200316,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/I_Said_Run",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 59.076004028320313,
+      "bank": ""
+    },
+    {
+      "id": 200317,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Enough_Height_To_Fall",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 123.42800903320313,
+      "bank": ""
+    },
+    {
+      "id": 200318,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Sisyphe Emporium",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 69.818000793457031,
+      "bank": ""
+    },
+    {
+      "id": 200319,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Rust_Free_Chair",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200320,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Please_Follow_Nobody",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 76.800003051757813,
+      "bank": ""
+    },
+    {
+      "id": 200321,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Story/Fresh_Meal",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200322,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Soleil",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 134.40000915527344,
+      "bank": ""
+    },
+    {
+      "id": 200323,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Faint_Aroma",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 88.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200324,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Intruder",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 125.53800964355469,
+      "bank": ""
+    },
+    {
+      "id": 200325,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Endless_Pain",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 119.17200469970703,
+      "bank": ""
+    },
+    {
+      "id": 200326,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Story/Calvary",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 186.35200500488281,
+      "bank": ""
+    },
+    {
+      "id": 200327,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Story/Endless_Death",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 86.4000015258789,
+      "bank": ""
+    },
+    {
+      "id": 200328,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Story/You_Can_Be_Good_Leather",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200329,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Story/Studium",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 76.800003051757813,
+      "bank": ""
+    },
+    {
+      "id": 200330,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Story/Le_Rouge_et_Le_Noir",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 112.00000762939453,
+      "bank": ""
+    },
+    {
+      "id": 200331,
+      "uiImage": "28_1",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Enemy_1",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 90.225006103515625,
+      "bank": ""
+    },
+    {
+      "id": 200332,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Enemy_2",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 99.310005187988281,
+      "bank": ""
+    },
+    {
+      "id": 200333,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Enemy_3",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 92.160003662109375,
+      "bank": ""
+    },
+    {
+      "id": 200334,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Enemy_5",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 90.857002258300781,
+      "bank": ""
+    },
+    {
+      "id": 200335,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Enemy_4",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 90.566001892089844,
+      "bank": ""
+    },
+    {
+      "id": 200336,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_1",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 185.80601501464844,
+      "bank": ""
+    },
+    {
+      "id": 200337,
+      "uiImage": "28_2",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_5",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 93.913002014160156,
+      "bank": ""
+    },
+    {
+      "id": 200338,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_6-1",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 205.06300354003906,
+      "bank": ""
+    },
+    {
+      "id": 200339,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_2-1",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 92.3070068359375,
+      "bank": ""
+    },
+    {
+      "id": 200340,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_7",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 94.488006591796875,
+      "bank": ""
+    },
+    {
+      "id": 200341,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_8",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 166.95600891113281,
+      "bank": ""
+    },
+    {
+      "id": 200342,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_9",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 96.000007629394531,
+      "bank": ""
+    },
+    {
+      "id": 200343,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_10",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 101.37900543212891,
+      "bank": ""
+    },
+    {
+      "id": 200344,
+      "uiImage": "28_3",
+      "fileName": "event:/BGM/Battle/Battle_Cp10_Boss_11",
+      "acquireType": "CHAPTER_CLEAR",
+      "acquireIntType": 1,
+      "uiCategoryId": 28,
+      "openChapterData": {
+        "unlockCode": 110
+      },
+      "alternativeUnlockCodes": [
+        9128
+      ],
+      "duration": 101.37900543212891,
+      "bank": ""
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+﻿{
+  "list": [
+    {
+      "npcKey": "N990001_C2",
+      "useFieldLightmapInBattle": true,
+      "moveSpeed": 3,
+      "defaultState": "Chase",
+      "prefabKey": "NPC_C_1F_BisqueDoll.prefab",
+      "detectType": "Chase",
+      "detectRange": "6",
+      "maxRangeOnDetect": "0",
+      "speedOnDetect": "3",
+      "returnType": "None",
+      "detectBeyondHomeLocation": true,
+      "interactionType": "Enemy",
+      "interactionKey": "",
+      "canTakeFieldDamage": true,
+      "invincibleType": "None",
+      "knockbackImmune": true,
+      "hitStaggerSeconds": 0.2,
+      "weaknessHitStaggerSeconds": 0.4,
+      "hitStaggerImmune": true,
+      "appearMotion": "Appear",
+      "groggyMotion": "ShieldBroken",
+      "killedMotion": "DeadWithMerusault",
+      "fieldHp": 400,
+      "fieldHpFloor": 1,
+      "battleId": 0,
+      "startBattleBelowHpPercent": 0,
+      "dropTableKey": "",
+      "collisionType": "None",
+      "collisionHpDamage": "0",
+      "collisionMpDamage": "0",
+      "attackPatternKey": "NA990001_C2",
+      "deathMotion": "Dead_BisqueDoll, Dead_BisqueDoll2, Dead_BisqueDoll3",
+      "deathEventKey": "EQ1002_C2",
+      "corpseDialogueKey": "D9515"
+    }
+  ]
+}

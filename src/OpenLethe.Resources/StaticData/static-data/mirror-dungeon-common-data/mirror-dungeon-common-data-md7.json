@@ -65,26 +65,26 @@
 	"specialRestingTable": [
 		{
 			"dataChecker":{
-					"gachaId": 296
-				},
-				"desc": "신규 인격 특정 추출 오트쿠튀르::르루주 부티크 이스마엘 · 오트쿠튀르::르누아르 신발관 료슈",
-				"startDate": "2026-09-17T01:00:00.000Z",
-				"endDate": "2026-10-01T01:00:00.000Z",
-				"personalities": [10816, 10416]
-		},
-		{
-			"dataChecker":{
 					"gachaId": 297
 				},
 				"desc": "신규 인격 특정 추출 오트쿠튀르::수선실 로쟈",
 				"startDate": "2026-09-24T01:00:00.000Z",
 				"endDate": "2026-10-08T01:00:00.000Z",
 				"personalities": [10917]
+		},
+		{
+			"dataChecker":{
+					"gachaId": 299
+				},
+				"desc": "신규 인격 특정 추출 오트쿠튀르::르누아르 브랜드 매니저 돈키호테",
+				"startDate": "2026-10-01T01:00:00.000Z",
+				"endDate": "2026-10-14T21:00:00.000Z",
+				"personalities": [10315]
 		}
 	],
 	"specialRestingTableDataChecker": {
 		"excludeGachaId": [
-			295
+			295, 298
 		],
 		"excludeEventId": [
 			

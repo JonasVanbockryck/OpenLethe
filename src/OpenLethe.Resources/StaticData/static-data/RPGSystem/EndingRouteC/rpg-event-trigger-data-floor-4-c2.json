@@ -1,0 +1,22 @@
+{
+  "list": [
+    {
+      "id": 91400101,
+      "eventKey": "E4002_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4001_C2"
+    },
+    {
+      "id": 91400102,
+      "eventKey": "E4002_C2",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C4002_C2"
+    },
+    {
+      "id": 91400103,
+      "eventKey": "E4004_C2",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": "F1004C-2"
+    }
+  ]
+}

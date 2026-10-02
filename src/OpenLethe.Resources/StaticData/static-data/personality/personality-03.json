@@ -1400,6 +1400,140 @@
           "number": 1
         }
       ]
+    },
+
+    {
+      "id": 10315,
+      "updatedDate": 20261001,
+      "appearance": "10315_Donquixote_LeNoir_CaptainAppearance",
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "associationList": [
+        "LE_NOIR",
+        "SISYPHE"
+      ],
+      "skillKeywordList": [
+        "Charge",
+        "Vibration"
+      ],
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "ChargeNoirAlly",
+              "stack": 1,
+              "turn": 10
+            },
+            {
+              "buff": "NoirShieldUpDonQuixote",
+              "stack": 25
+            }
+          ]
+        }
+      ],
+      "characterId": 3,
+      "panicType": 9999,
+      "season": 8,
+      "defenseSkillIDList": [
+        1031504
+      ],
+      "unitScriptID": "10315",
+      "panicSkillOnErosion": 1000104,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "hp": {
+        "defaultStat": 88,
+        "incrementByLevel": 3.05
+      },
+      "defCorrection": 4,
+      "minSpeedList": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "maxSpeedList": [
+        6,
+        7,
+        7,
+        7
+      ],
+      "uniqueAttribute": "INDIGO",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          40
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 2
+          },
+          {
+            "type": "HIT",
+            "value": 0.5
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 1031501,
+          "number": 3
+        },
+        {
+          "skillId": 1031502,
+          "number": 2
+        },
+        {
+          "skillId": 1031503,
+          "number": 1
+        },
+        {
+          "skillId": 1031505,
+          "number": 0
+        },
+        {
+          "skillId": 1031506,
+          "number": 0
+        }
+      ]
     }
   ]
 }
