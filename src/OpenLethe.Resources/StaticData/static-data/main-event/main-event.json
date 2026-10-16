@@ -1,19 +1,19 @@
 {
   "list": [
     {
+      "eventId": "MirrorDungeon",
+      "mainUIPhaseTypeList": [
+        "Lobby"
+      ],
+      "bannerSpriteId": "banner_MirrorDungeon8",
+      "isBannerVisible": true
+    },
+    {
       "eventId": "RailwayDungeonBanner",
       "mainUIPhaseTypeList": [
         "Lobby"
       ],
       "bannerSpriteId": "banner_RailwayLine2",
-      "isBannerVisible": true
-    },
-    {
-      "eventId": "MirrorDungeon",
-      "mainUIPhaseTypeList": [
-        "Lobby"
-      ],
-      "bannerSpriteId": "banner_MirrorDungeon7",
       "isBannerVisible": true
     },
     {

@@ -14,7 +14,7 @@
     {
       "id": 9841,
       "name": "C型整理要員装備セット",
-      "desc": "[Charge]回数または特殊充電を獲得するスキルの使用が終了したとき、獲得した数値だけ[EmergencyChargeForceField]を得る (人格ごとに最大7)\n\n[Charge]回数または特殊充電を消耗するスキルのダメージ量 +([Charge]回数または特殊充電を獲得・消耗するスキルを保有した人格が編成された数)% (編成人員を含む)\n\n[Charge]回数または特殊充電を獲得・消耗するスキル1のマッチ威力 +3, ダメージ量 +15%\n- 該当スキル使用時、[Charge]回数4, [ChargeForceField]1を得る (人格ごとに1ターンにつき1回)\n\nW社所属人格なら、下記の効果を適用\n- スキル(E.G.Oスキルを含む)で敵にダメージを与えたなら、[TakeHpHealReduce]2を付与 (重複不可)\n- 戦闘中、スキルからの直接ダメージを除いた効果によって体力ダメージを受けたなら、[ChargeForceField]5を得る (人格ごとに1ターンにつき1回)\n- スキル2のマッチ威力 +3, ダメージ量 +15%\n- ターン開始時、このターンの間スキル3のダメージ量 +(戦闘に参加したW社所属人格数 × 6.25)%\n- ターン開始時、W社2級職員へ[PlusCoinValueUp]1を付与\n- ターン開始時、[ChargeLoad]を(戦闘に参加したW社所属人格数 ÷ 3)だけ獲得 (最大2, 小数点切り捨て)",
+      "desc": "[Charge]回数または特殊充電を獲得するスキルの使用が終了したとき、獲得した数値だけ[EmergencyChargeForceField]を得る (人格ごとに最大7)\n\n[Charge]回数または特殊充電を消耗するスキルのダメージ量 +([Charge]回数または特殊充電を獲得・消耗するスキルを保有した人格が編成された数)% (編成人員を含む)\n\n[Charge]回数または特殊充電を獲得・消耗するスキル1のマッチ威力 +3, ダメージ量 +15%\n- 該当スキル使用時、[Charge]回数4, [ChargeForceField]1を得る (人格ごとに1ターンにつき1回)\n\nW社所属人格なら、下記の効果を適用\n- スキル(E.G.Oスキルを含む)で敵にダメージを与えたなら、[TakeHpHealReduce]2を付与 (重複不可)\n- 戦闘中、スキルからの直接ダメージを除いた効果によって体力ダメージを受けたなら、[ChargeForceField]5を得る (人格ごとに1ターンにつき1回)\n- スキル2のマッチ威力 +3, ダメージ量 +15%\n- ターン開始時、このターンの間スキル3のダメージ量 +(戦闘に参加したW社所属人格数 × 6.25)%\n- ターン開始時、W社2級職員へ[PlusCoinValueUp]1を付与\n- ターン開始時、[ChargeLoad]を(戦闘に参加したW社所属人格数 ÷ 3)だけ獲得 (最大2, 小数点切り捨て)\n編成順が最も早い、自分の基本スキルで[DimensionRift]を付与する人格のうち、W社所属でない人格1名をW社所属として扱う",
       "simpleDesc": [
         {
           "abilityID": 9841,
@@ -150,7 +150,7 @@
     {
       "id": 9817,
       "name": "青い星の欠片",
-      "desc": "士気低下またはパニック状態の敵のスキル最終威力 -1 (精神力が無い敵は[Sinking]威力が25以上のときに発動)\n- 該当する敵に[Sinking]威力、[Sinking]回数または特殊沈潜を付与するスキルでダメージを与える場合、[DefenseDown]2を付与 (1ターンにつき最大2回)",
+      "desc": "士気低下またはパニック状態の敵のスキル最終威力 -1 (精神力が無い敵は[Sinking]威力が25以上のときに発動)\n- 該当する敵に[Sinking]威力、[Sinking]回数または特殊沈潜を付与するスキルでダメージを与える場合、次のターンに[DefenseDown]2を付与 (1ターンにつき最大2回)",
       "simpleDesc": [
         {
           "abilityID": 9817,
@@ -161,7 +161,7 @@
     {
       "id": 19817,
       "name": "青い星の欠片+",
-      "desc": "士気低下またはパニック状態の敵のスキル最終威力 <style=\"upgradeHighlight\">-2</style> (精神力が無い敵は[Sinking]威力が<style=\"upgradeHighlight\">15</style>以上のときに発動)\n- 該当する敵に[Sinking]威力、[Sinking]回数または特殊沈潜を付与するスキルでダメージを与える場合、[DefenseDown]<style=\"upgradeHighlight\">3</style>を付与 (1ターンにつき最大2回)",
+      "desc": "士気低下またはパニック状態の敵のスキル最終威力 <style=\"upgradeHighlight\">-2</style> (精神力が無い敵は[Sinking]威力が<style=\"upgradeHighlight\">15</style>以上のときに発動)\n- 該当する敵に[Sinking]威力、[Sinking]回数または特殊沈潜を付与するスキルでダメージを与える場合、次のターンに[DefenseDown]<style=\"upgradeHighlight\">3</style>を付与 (1ターンにつき最大2回)",
       "simpleDesc": [
         {
           "abilityID": 19817,
@@ -172,7 +172,7 @@
     {
       "id": 29817,
       "name": "青い星の欠片++",
-      "desc": "士気低下またはパニック状態の敵のスキル最終威力 <style=\"upgradeHighlight\">-3</style> (精神力が無い敵は[Sinking]威力が<style=\"upgradeHighlight\">10</style>以上のときに発動)\n- 該当する敵に[Sinking]威力、[Sinking]回数または特殊沈潜を付与するスキルでダメージを与える場合、[DefenseDown]3を付与 (1ターンにつき最大<style=\"upgradeHighlight\">3</style>回)",
+      "desc": "士気低下またはパニック状態の敵のスキル最終威力 <style=\"upgradeHighlight\">-3</style> (精神力が無い敵は[Sinking]威力が<style=\"upgradeHighlight\">10</style>以上のときに発動)\n- 該当する敵に[Sinking]威力、[Sinking]回数または特殊沈潜を付与するスキルでダメージを与える場合、次のターンに[DefenseDown]3を付与 (1ターンにつき最大<style=\"upgradeHighlight\">3</style>回)",
       "simpleDesc": [
         {
           "abilityID": 29817,

@@ -1,0 +1,56 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "ALL:-1, 그레고르:2,뫼르소:7",
+      "feeling": "shork",
+      "bg": "story_b1_foodcourt",
+      "bgm": "And_There",
+      "soundeffect": "SFX_Fountain:loop",
+      "voice": "S1001V-2376"
+    },
+    {
+      "id": 1,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1001V-2377"
+    },
+    {
+      "id": 2,
+      "characterlist": "ALL:-1,단테:5",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 3,
+      "characterlist": "뫼르소:7",
+      "voice": "S1001V-2379"
+    },
+    {
+      "id": 4,
+      "emotion": "Question",
+      "voice": "D_Click"
+    },
+    {
+      "id": 5,
+      "feeling": "close",
+      "voice": "S1001V-2381"
+    },
+    {
+      "id": 6,
+      "feeling": "angry",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1001V-2382"
+    },
+    {
+      "id": 7,
+      "characterlist": "파우스트:2",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1001V-2383"
+    },
+    {
+      "id": 8,
+      "characterlist": "ALL:-1,수셰프:5 : mode=Fade_In",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1001V-2384"
+    }
+  ]
+}

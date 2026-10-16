@@ -1,0 +1,231 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "카르멘진짜:5",
+      "feeling": "smile2",
+      "bg": "story_collapsing_sisyphus",
+      "bgm": "Soleil",
+      "voice": "S1003V-1306"
+    },
+    {
+      "id": 1,
+      "feeling": "smile",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1307"
+    },
+    {
+      "id": 2,
+      "characterlist": "단테 : 5 : mode=Fade_In",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 3,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 4,
+      "voice": "D_Click"
+    },
+    {
+      "id": 5,
+      "characterlist": "카르멘진짜:5",
+      "feeling": "close",
+      "voice": "S1003V-1311"
+    },
+    {
+      "id": 6,
+      "feeling": "smile",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1312"
+    },
+    {
+      "id": 7,
+      "feeling": "smile2",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1003V-1313"
+    },
+    {
+      "id": 8,
+      "characterlist": "단테:5",
+      "voice": "D_FastTickTok"
+    },
+    {
+      "id": 9,
+      "characterlist": "카르멘진짜:5",
+      "feeling": "smile",
+      "voice": "S1003V-1315"
+    },
+    {
+      "id": 10,
+      "feeling": "close",
+      "voice": "S1003V-1316"
+    },
+    {
+      "id": 11,
+      "feeling": "sad",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1003V-1317"
+    },
+    {
+      "id": 12,
+      "characterlist": "단테:5",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 13,
+      "characterlist": "카르멘진짜:5",
+      "feeling": "smile2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1319"
+    },
+    {
+      "id": 14,
+      "feeling": "smile",
+      "voice": "S1003V-1320"
+    },
+    {
+      "id": 15,
+      "voice": "S1003V-1321"
+    },
+    {
+      "id": 16,
+      "feeling": "close",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1322"
+    },
+    {
+      "id": 17,
+      "characterlist": "단테:5",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 18,
+      "characterlist": "카르멘진짜:5",
+      "feeling": "shock",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-1324"
+    },
+    {
+      "id": 19,
+      "feeling": "smile2",
+      "voice": "S1003V-1325"
+    },
+    {
+      "id": 20,
+      "feeling": "close",
+      "voice": "S1003V-1326"
+    },
+    {
+      "id": 21,
+      "feeling": "sad2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1327"
+    },
+    {
+      "id": 22,
+      "characterlist": "ALL:-1,단테:2,카르멘진짜:8",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 23,
+      "feeling": "smile",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1003V-1329"
+    },
+    {
+      "id": 24,
+      "feeling": "happy",
+      "voice": "S1003V-1330"
+    },
+    {
+      "id": 25,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 26,
+      "voice": "D_Click"
+    },
+    {
+      "id": 27,
+      "feeling": "thinking",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1333"
+    },
+    {
+      "id": 28,
+      "voice": "D_Tok"
+    },
+    {
+      "id": 29,
+      "characterlist": "ALL:-1,카르멘진짜:5",
+      "feeling": "shock",
+      "voice": "S1003V-1335"
+    },
+    {
+      "id": 30,
+      "feeling": "smile",
+      "voice": "S1003V-1336"
+    },
+    {
+      "id": 31,
+      "feeling": "smile2",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1003V-1337"
+    },
+    {
+      "id": 32,
+      "feeling": "close",
+      "voice": "S1003V-1338"
+    },
+    {
+      "id": 33,
+      "feeling": "smile",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1339"
+    },
+    {
+      "id": 34,
+      "feeling": "smile2",
+      "voice": "S1003V-1340"
+    },
+    {
+      "id": 35,
+      "feeling": "smile",
+      "voice": "S1003V-1341"
+    },
+    {
+      "id": 36,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1342"
+    },
+    {
+      "id": 37,
+      "feeling": "shock",
+      "voice": "S1003V-1343"
+    },
+    {
+      "id": 38,
+      "feeling": "smile2",
+      "voice": "S1003V-1344"
+    },
+    {
+      "id": 39,
+      "characterlist": "단테:5",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 40,
+      "characterlist": "카르멘진짜:5",
+      "feeling": "smile",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1346"
+    },
+    {
+      "id": 41,
+      "feeling": "happy",
+      "voice": "S1003V-1347"
+    }
+  ]
+}

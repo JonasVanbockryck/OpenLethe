@@ -54,6 +54,41 @@
       "dialogueKey": "D1902_C1",
       "index": 0,
       "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "DRSCW01_C1",
+      "index": 0,
+      "portraitKey": ""
+    },
+    {
+      "dialogueKey": "DRSCW01_C1",
+      "index": 1,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "DRSCW01_C1",
+      "index": 2,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "DRSCW02_C1",
+      "index": 0,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "DRSCW02_C1",
+      "index": 1,
+      "portraitKey": ""
+    },
+    {
+      "dialogueKey": "DRSCW03_C1",
+      "index": 0,
+      "portraitKey": "DP_Lady_InBlue"
+    },
+    {
+      "dialogueKey": "DRSCW04_C1",
+      "index": 0,
+      "portraitKey": "DP_Lady_InBlue"
     }
   ]
 }

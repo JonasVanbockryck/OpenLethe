@@ -1,0 +1,119 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "오티스 : 5",
+      "bg": "story_b2_coilednest",
+      "bgm": "Endless_Death",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1001V-2741"
+    },
+    {
+      "id": 1,
+      "characterlist": "B2층플로어매니저:5 : mode=Fade_In",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1001V-2742"
+    },
+    {
+      "id": 2,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2744"
+    },
+    {
+      "id": 3,
+      "voice": "S1001V-2745"
+    },
+    {
+      "id": 4,
+      "characterlist": "뫼르소 : 5 : mode=Fade_In",
+      "soundeffect": "SFX_ClothNCoin_Crumble, SFX_Paper_Multi_2",
+      "voice": "S1001V-2746"
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6,
+      "characterlist": "B2층플로어매니저:5",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1001V-2748"
+    },
+    {
+      "id": 7,
+      "voice": "S1001V-2749"
+    },
+    {
+      "id": 8,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1001V-2750"
+    },
+    {
+      "id": 9,
+      "characterlist": "ALL:-1,료슈 : 7,단테:5",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2752"
+    },
+    {
+      "id": 11,
+      "characterlist": "뫼르소:3",
+      "voice": "S1001V-2753"
+    },
+    {
+      "id": 12,
+      "feeling": "angry3",
+      "emotion": "Angry",
+      "soundeffect": "SFX_Cigarette_Fire",
+      "voice": "S1001V-2754"
+    },
+    {
+      "id": 13,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1001V-2755"
+    },
+    {
+      "id": 14,
+      "characterlist": "ALL:-1, B2층플로어매니저 : 5",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1001V-2756"
+    },
+    {
+      "id": 15,
+      "voice": "S1001V-2757"
+    },
+    {
+      "id": 16,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1001V-2758"
+    },
+    {
+      "id": 17,
+      "characterlist": "ALL:-1, 오티스 : 7, 뫼르소:5",
+      "feeling": "panic2",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1001V-2759"
+    },
+    {
+      "id": 18,
+      "characterlist": "단테 : 2",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 19,
+      "voice": "D_Click"
+    },
+    {
+      "id": 20,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1001V-2762"
+    },
+    {
+      "id": 21,
+      "voice": "D_Normal"
+    }
+  ]
+}

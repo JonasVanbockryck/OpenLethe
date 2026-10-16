@@ -1,0 +1,150 @@
+{
+  "list": [
+    {
+      "id": 9286,
+      "attributeType": "VIOLET",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9286,
+          "abilityIDList": [ 9286, 92861 ]
+        }
+      ],
+      "tag": [
+        "TIER_3"
+      ],
+      "keyword": "Vibration",
+      "lockType": false,
+      "price": 258
+    },
+    {
+      "id": 9287,
+      "attributeType": "AMBER",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9287,
+          "abilityIDList": [ 9287 ]
+        }
+      ],
+      "tag": [
+        "TIER_3"
+      ],
+      "keyword": "Charge",
+      "lockType": false,
+      "price": 254
+    },
+    {
+      "id": 9284,
+      "attributeType": "CRIMSON",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9284,
+          "abilityIDList": [ 9284, 92841 ]
+        }
+      ],
+      "tag": [
+        "TIER_3"
+      ],
+      "keyword": "None",
+      "lockType": false,
+      "price": 258
+    },
+    {
+      "id": 9285,
+      "attributeType": "AMBER",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9285,
+          "abilityIDList": [ 9285 ]
+        }
+      ],
+      "tag": [
+        "TIER_2"
+      ],
+      "keyword": "None",
+      "lockType": false,
+      "price": 201
+    },
+    {
+      "id": 9288,
+      "attributeType": "SCARLET",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9288,
+          "abilityIDList": [ 9288 ]
+        }
+      ],
+      "tag": [
+        "TIER_3"
+      ],
+      "keyword": "Charge",
+      "lockType": false,
+      "price": 249
+    },
+    {
+      "id": 9289,
+      "attributeType": "VIOLET",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9289,
+          "abilityIDList": [ 9289 ]
+        }
+      ],
+      "tag": [
+        "TIER_3"
+      ],
+      "keyword": "Charge",
+      "lockType": false,
+      "price": 256
+    },
+    {
+      "id": 9290,
+      "attributeType": "AMBER",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9290,
+          "abilityIDList": [ 9290 ]
+        }
+      ],
+      "tag": [
+        "TIER_2"
+      ],
+      "keyword": "Charge",
+      "lockType": false,
+      "price": 199
+    },
+    {
+      "id": 9291,
+      "attributeType": "VIOLET",
+      "upgradeDataList": [
+        {
+          "upgradeLevel": 0,
+          "localizeID": 9291,
+          "abilityIDList": [ 9291 ]
+        },
+        {
+          "upgradeLevel": 1,
+          "localizeID": 19291,
+          "abilityIDList": [ 19291 ]
+        },
+        {
+          "upgradeLevel": 2,
+          "localizeID": 29291,
+          "abilityIDList": [ 29291 ]
+        }
+      ],
+      "tag": [
+        "TIER_2"
+      ],
+      "keyword": "Charge",
+      "lockType": false,
+      "price": 204
+    }
+  ]
+}

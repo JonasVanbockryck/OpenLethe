@@ -5491,6 +5491,10 @@
                 "turn": 0,
                 "activeRound": 0
               }
+            },
+            {
+              "scriptName": "1495SuperCoinSkill",
+              "value": 1
             }
           ],
           "coinList": [
@@ -5614,6 +5618,10 @@
                 "turn": 0,
                 "activeRound": 0
               }
+            },
+            {
+              "scriptName": "1495SuperCoinSkill",
+              "value": 1
             }
           ],
           "coinList": [
@@ -6178,6 +6186,7 @@
       "skillType": "SKILL",
       "skillData": [
         {
+          "actionScript": "149506",
           "attributeType": "AMBER",
           "atkType": "SLASH",
           "defType": "ATTACK",

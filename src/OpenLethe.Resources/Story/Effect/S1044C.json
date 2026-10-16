@@ -1,0 +1,60 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "cg": "floor3_info_01:On:LayerName=Ch10Tv",
+      "effect": "Ch10TvUiEffect",
+      "monologue": true
+    },
+    {
+      "id": 1,
+      "monologue": true
+    },
+    {
+      "id": 2,
+      "monologue": true
+    },
+    {
+      "id": 3,
+      "monologue": true
+    },
+    {
+      "id": 4,
+      "cg": "floor3_info_02:On:LayerName=Ch10Tv",
+      "monologue": true
+    },
+    {
+      "id": 5,
+      "monologue": true
+    },
+    {
+      "id": 6,
+      "monologue": true
+    },
+    {
+      "id": 7,
+      "monologue": true
+    },
+    {
+      "id": 8,
+      "monologue": true
+    },
+    {
+      "id": 9,
+      "cg": "floor3_info_03:On:LayerName=Ch10Tv",
+      "monologue": true
+    },
+    {
+      "id": 10,
+      "monologue": true
+    },
+    {
+      "id": 11,
+      "monologue": true
+    },
+    {
+      "id": 12,
+      "monologue": true
+    }
+  ]
+}

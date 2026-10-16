@@ -1,0 +1,113 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "잔느변신2:5",
+      "bg": "story_7f_dance3",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1033",
+      "produce": "bgmEvent:BGM/Battle/Battle_Cp10_Boss_4,bgmLabel:Meursault=Battle_3,bgmGlobal:AbSelect=1,initProduce:a1c10p3_Phase3_2,disableBG:on,disableEndFade:on,act:0"
+    },
+    {
+      "id": 1,
+      "characterlist": "뫼르소다침:5",
+      "voice": "S1003V-1034"
+    },
+    {
+      "id": 2,
+      "characterlist": "잔느변신2:5",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1035"
+    },
+    {
+      "id": 3,
+      "voice": "S1003V-1036",
+      "produce": "act:1"
+    },
+    {
+      "id": 4,
+      "voice": "S1003V-1037"
+    },
+    {
+      "id": 5,
+      "voice": "S1003V-1038"
+    },
+    {
+      "id": 6,
+      "characterlist": "뫼르소다침:5",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-1039",
+      "produce": "act:3"
+    },
+    {
+      "id": 7,
+      "voice": "S1003V-1040"
+    },
+    {
+      "id": 8,
+      "voice": "S1003V-1041"
+    },
+    {
+      "id": 9,
+      "voice": "S1003V-1042"
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-1043",
+      "produce": "act:4"
+    },
+    {
+      "id": 11,
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1003V-1044"
+    },
+    {
+      "id": 12,
+      "characterlist": "잔느변신2:5",
+      "voice": "S1003V-1045"
+    },
+    {
+      "id": 13,
+      "characterlist": "뫼르소다침:5",
+      "produce": "act:5"
+    },
+    {
+      "id": 14,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-1047",
+      "produce": "act:6"
+    },
+    {
+      "id": 15,
+      "characterlist": "잔느변신2:5",
+      "voice": "S1003V-1048",
+      "produce": "act:2"
+    },
+    {
+      "id": 16,
+      "voice": "S1003V-1049"
+    },
+    {
+      "id": 17,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1050"
+    },
+    {
+      "id": 18,
+      "voice": "S1003V-1051"
+    },
+    {
+      "id": 19,
+      "voice": "S1003V-1052"
+    },
+    {
+      "id": 20,
+      "characterlist": "뫼르소다침:-1",
+      "bg": "blackbg",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-1053",
+      "produce": "signal:fadeOut"
+    }
+  ]
+}

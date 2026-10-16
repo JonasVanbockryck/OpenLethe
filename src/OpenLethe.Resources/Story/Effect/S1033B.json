@@ -1,0 +1,104 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "히스클리프 : 2",
+      "feeling": "shork",
+      "emotion": "Question",
+      "bg": "story_grave",
+      "effect": "CustomCamShake:[15][10][0.3]",
+      "soundeffect": "SFX_Reaper_Amb:loop, SFX_Jean_Crumble_Light",
+      "voice": "S1003V-193"
+    },
+    {
+      "id": 1,
+      "characterlist": "홍루 : 5",
+      "feeling": "idle4",
+      "voice": "S1003V-194"
+    },
+    {
+      "id": 2,
+      "characterlist": "싱클레어 : 8",
+      "feeling": "sad",
+      "effect": "CustomCamShake:[15][3][0.3]",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-195"
+    },
+    {
+      "id": 3,
+      "characterlist": "단테 : 1",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 4,
+      "characterlist": "ALL : -1, 간수 : 7",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right,CustomCamShake:[10][15][2],",
+      "soundeffect": "SFX_Walk_Reaper",
+      "voice": "S1003V-197"
+    },
+    {
+      "id": 5,
+      "effect": "CustomCamShake:[14][6][0.3],",
+      "voice": "S1003V-198"
+    },
+    {
+      "id": 6,
+      "effect": "CustomCamShake:[12][10][1],",
+      "soundeffect": "SFX_Walk_Reaper, SFX_Reaper_Drag",
+      "voice": "S1003V-199"
+    },
+    {
+      "id": 7,
+      "effect": "CustomCamShake:[10][15][2],",
+      "voice": "S1003V-200"
+    },
+    {
+      "id": 8,
+      "characterlist": "ALL:-1,뫼르소:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-201"
+    },
+    {
+      "id": 9,
+      "characterlist": "ALL:-1,간수:7",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left,CustomCamShake:[10][15][2],",
+      "voice": "S1003V-202"
+    },
+    {
+      "id": 10,
+      "characterlist": "ALL:-1,뫼르소:5",
+      "feeling": "angry",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-203"
+    },
+    {
+      "id": 11,
+      "characterlist": "ALL:-1,간수:7",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left,CustomCamShake:[14][6][0.3],",
+      "soundeffect": "SFX_Walk_Reaper",
+      "voice": "S1003V-204"
+    },
+    {
+      "id": 12,
+      "effect": "CustomCamShake:[15][3][2]",
+      "voice": "S1003V-205"
+    },
+    {
+      "id": 13,
+      "voice": "S1003V-206"
+    },
+    {
+      "id": 14,
+      "effect": "CustomCamShake:[12][10][1],",
+      "soundeffect": "SFX_Walk_Reaper",
+      "voice": "S1003V-207"
+    },
+    {
+      "id": 15,
+      "effect": "CustomCamShake:[15][20][2]",
+      "soundeffect": "SFX_5Impact_1",
+      "voice": "S1003V-208"
+    }
+  ]
+}

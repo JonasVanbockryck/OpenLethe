@@ -1,0 +1,221 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "B2층염색실주인 : 5",
+      "bg": "story_b2_color",
+      "bgm": "Good_Sinew_To_Cut",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2764"
+    },
+    {
+      "id": 1,
+      "voice": "S1001V-2765"
+    },
+    {
+      "id": 2,
+      "soundeffect": "PaperSlap2",
+      "voice": "S1001V-2766"
+    },
+    {
+      "id": 3,
+      "characterlist": "ALL:-1,료슈 :3",
+      "feeling": "idle",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2767"
+    },
+    {
+      "id": 4,
+      "characterlist": "ALL:-1,B2층염색실주인:5",
+      "voice": "S1001V-2768"
+    },
+    {
+      "id": 5,
+      "characterlist": "단테:5",
+      "emotion": "Exclame",
+      "effect": "CustomCamShake:[35][10][0.4]",
+      "soundeffect": "SFX_Ryoshu_Sword_Ready",
+      "voice": "D_Angry"
+    },
+    {
+      "id": 6,
+      "voice": "D_Click"
+    },
+    {
+      "id": 7,
+      "characterlist": "ALL:-1, 오티스 : 1",
+      "feeling": "sigh",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1001V-2771"
+    },
+    {
+      "id": 8,
+      "characterlist": "B2층염색실주인 : 8",
+      "voice": "S1001V-2772"
+    },
+    {
+      "id": 9,
+      "feeling": "angry",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2773"
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2774"
+    },
+    {
+      "id": 11,
+      "characterlist": "ALL:-1,퍼티 : 9 : mode=Fade_In",
+      "voice": "S1001V-2775"
+    },
+    {
+      "id": 12,
+      "characterlist": "료슈 : 3",
+      "feeling": "angry3",
+      "voice": "S1001V-2776"
+    },
+    {
+      "id": 13,
+      "characterlist": "B2층염색실주인:7",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2777"
+    },
+    {
+      "id": 14,
+      "voice": "S1001V-2778"
+    },
+    {
+      "id": 15,
+      "characterlist": "단테 : 4",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 16,
+      "characterlist": "ALL:-1,퍼티:9,료슈:2"
+    },
+    {
+      "id": 17,
+      "characterlist": "ALL:-1,료슈:2,오티스:8",
+      "feeling": "idle",
+      "soundeffect": "SFX_Cigarette_Fire",
+      "voice": "S1001V-2781"
+    },
+    {
+      "id": 18,
+      "feeling": "smile",
+      "voice": "S1001V-2782"
+    },
+    {
+      "id": 19,
+      "soundeffect": "SFX_Araya_Shake_4"
+    },
+    {
+      "id": 20,
+      "feeling": "serious",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2784"
+    },
+    {
+      "id": 21,
+      "feeling": "smile",
+      "voice": "S1001V-2785"
+    },
+    {
+      "id": 22,
+      "characterlist": "ALL:-1,B2층염색실주인 : 7",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1001V-2786"
+    },
+    {
+      "id": 23,
+      "characterlist": "단테 : 3",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 24,
+      "characterlist": "ALL : -1, 뫼르소 : 2",
+      "feeling": "idle",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1001V-2788"
+    },
+    {
+      "id": 25,
+      "characterlist": "B2층염색실주인 : 8",
+      "voice": "S1001V-2789"
+    },
+    {
+      "id": 26,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2790"
+    },
+    {
+      "id": 27,
+      "characterlist": "ALL : -1, 오티스 : 2",
+      "feeling": "angry2",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1001V-2791"
+    },
+    {
+      "id": 28,
+      "characterlist": "단테 : 5",
+      "voice": "D_Wick"
+    },
+    {
+      "id": 29,
+      "characterlist": "뫼르소 : 8",
+      "voice": "S1001V-2793"
+    },
+    {
+      "id": 30,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 31,
+      "soundeffect": "SFX_Metal_Clank, SFX_Small_Metal_Clank_2:delay=0.5"
+    },
+    {
+      "id": 32,
+      "characterlist": "ALL : -1, 오티스 : 2 : mode=Fade_In",
+      "feeling": "surprise",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2796"
+    },
+    {
+      "id": 33,
+      "feeling": "idle",
+      "voice": "S1001V-2797"
+    },
+    {
+      "id": 34,
+      "characterlist": "B2층염색실주인 : 8 : mode=Fade_In",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2798"
+    },
+    {
+      "id": 35,
+      "characterlist": "ALL : -1, 단테 : 2",
+      "voice": "D_Wick"
+    },
+    {
+      "id": 36,
+      "characterlist": "오티스 : 7",
+      "feeling": "angry2",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1001V-2800"
+    },
+    {
+      "id": 37,
+      "feeling": "serious",
+      "voice": "S1001V-2801"
+    },
+    {
+      "id": 38,
+      "voice": "D_Click"
+    },
+    {
+      "id": 39,
+      "voice": "D_Normal"
+    }
+  ]
+}

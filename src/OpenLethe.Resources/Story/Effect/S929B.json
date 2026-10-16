@@ -84,7 +84,7 @@
     {
       "id": 16,
       "characterlist": "싱클레어:1:mode=FADE_IN,파우스트:2:mode=FADE_IN,오티스:3:mode=FADE_IN,로쟈:4:mode=FADE_IN,이스마엘:5:mode=FADE_IN,돈키호테:6:mode=FADE_IN,홍루:7:mode=FADE_IN,히스클리프:8:mode=FADE_IN",
-      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left,Feeling:싱클레어=dark:이스마엘=dark:파우스트=dark:돈키호테=dark:홍루=dark:오티스=dark:로쟈=dark:히스클리프2=dark",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left,Feeling:싱클레어=dark:이스마엘=dark:파우스트=dark:돈키호테=dark:홍루=dark:오티스=dark:로쟈=dark:히스클리프2=dark3",
       "soundeffect": "SFX_Scene_Change_Whoosh"
     },
     {

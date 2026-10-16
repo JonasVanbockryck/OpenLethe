@@ -1,0 +1,21 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "뫼르소다침:5",
+      "feeling": "close",
+      "bg": "story_7f_dance3",
+      "cg": "white:FadeOut",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-1062",
+      "produce": "interludeBgm:Off,interludeBgmVolume:0.3=1.5"
+    },
+    {
+      "id": 1,
+      "feeling": "angry",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1063",
+      "produce": "interludeBgmVolume:0.6=1.5"
+    }
+  ]
+}

@@ -1,6 +1,72 @@
 {
   "list": [
     {
+      "skinId": 10401,
+      "characterId": 4,
+      "promotionId": 0,
+      "rank": 1,
+      "unitScriptName": "10401",
+      "skillDataList": [
+        {
+          "skillId": 1040101,
+          "actionScript": "",
+          "skillMotion": "S1",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1040102,
+          "actionScript": "",
+          "skillMotion": "S2",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1040103,
+          "actionScript": "",
+          "skillMotion": "S3",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1040104,
+          "actionScript": "",
+          "skillMotion": "Default",
+          "defType": "EVADE"
+        }
+      ]
+    },
+    {
+      "skinId": 10701,
+      "characterId": 7,
+      "promotionId": 0,
+      "rank": 1,
+      "unitScriptName": "10701",
+      "skillDataList": [
+        {
+          "skillId": 1070101,
+          "actionScript": "",
+          "skillMotion": "S1",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1070102,
+          "actionScript": "",
+          "skillMotion": "S2",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1070103,
+          "actionScript": "",
+          "skillMotion": "S3",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1070104,
+          "actionScript": "",
+          "skillMotion": "Default",
+          "defType": "COUNTER"
+        }
+      ]
+    },
+    {
       "skinId": 10101,
       "characterId": 1,
       "promotionId": 0,
@@ -6904,6 +6970,115 @@
           "actionScript": "",
           "skillMotion": "S6",
           "defType": "ATTACK"
+        }
+      ]
+    },
+    {
+      "skinId": 11016,
+      "characterId": 10,
+      "promotionId": 0,
+      "defaultId": -1,
+      "rank": 1,
+      "unitScriptName": "",
+      "appearanceID": "",
+      "isAcquirable": true,
+      "canCrafted": true,
+      "isDefaultIdVoice": false,
+      "unlockType": 0,
+      "skinNameId": "",
+      "useIllustEffect": false,
+      "skinType": 0,
+      "skillDataList": [
+        {
+          "skillId": 1101601,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S1",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101602,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S2",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101603,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S3",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101604,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "Default",
+          "defType": "EVADE"
+        },
+        {
+          "skillId": 1101605,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S4",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101606,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S1",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101607,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S2",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101608,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S4",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101609,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S13",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101610,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S3",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101611,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S5",
+          "defType": "ATTACK"
+        },
+        {
+          "skillId": 1101612,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S1",
+          "defType": "GUARD"
+        },
+        {
+          "skillId": 1101613,
+          "originSkillId": -1,
+          "actionScript": "",
+          "skillMotion": "S6",
+          "defType": "COUNTER"
         }
       ]
     }

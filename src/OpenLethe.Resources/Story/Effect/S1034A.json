@@ -1,0 +1,314 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "bg": "story_warden2"
+    },
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5,
+      "characterlist": "뫼르소 : 5 : mode=Fade_In",
+      "feeling": "close"
+    },
+    {
+      "id": 6,
+      "characterlist": "신부거인 : 5",
+      "bg": "story_warden3",
+      "effect": "CustomCamShake:[45][8][0.3]",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-344"
+    },
+    {
+      "id": 7,
+      "voice": "S1003V-345"
+    },
+    {
+      "id": 8,
+      "characterlist": "뫼르소:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=down",
+      "voice": "S1003V-346"
+    },
+    {
+      "id": 9,
+      "characterlist": "신부거인:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-347"
+    },
+    {
+      "id": 10,
+      "voice": "S1003V-348"
+    },
+    {
+      "id": 11,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-349"
+    },
+    {
+      "id": 12,
+      "cg": "S1006_3:FadeIn",
+      "effect": "ClosedEyes:mode=on:type=side:duration=0,CustomCamShake:[15][10][0.2],CameraMoveZoom:mode=on:duration=0:zoom=1.7:delay=0",
+      "soundeffect": "SFX_Door_Squeak"
+    },
+    {
+      "id": 13,
+      "effect": "ClosedEyes:mode=off:type=side:duration=3:delay=0.2,CustomCamShake:[3][10][3],CameraMoveZoom:mode=on:zoom=1.5:duration=3:delay=0",
+      "bgm": "Punctum:0"
+    },
+    {
+      "id": 14,
+      "effect": "CameraMoveZoom:mode=on:zoom=1.3:duration=3:delay=0,CustomCamShake:[6][18][3]",
+      "voice": "S1003V-388"
+    },
+    {
+      "id": 15,
+      "effect": "CameraMoveZoom:mode=on:zoom=1.2:duration=3:delay=0,CustomCamShake:[4][18][3]"
+    },
+    {
+      "id": 16,
+      "characterlist": "ALL: -1",
+      "bg": "blackbg",
+      "cg": "white:FadeIn_Long,",
+      "effect": "CameraMoveZoom:mode=off:duration=3:delay=0,,CustomCamShake:[3][18][3]"
+    },
+    {
+      "id": 17,
+      "cg": "S1006_3:off,white:off",
+      "bgm": "Punctum:80",
+      "voice": "S1003V-354",
+      "monologue": true
+    },
+    {
+      "id": 18,
+      "cg": "S1023_2:FadeIn",
+      "effect": "CameraMoveZoom:mode=on:duration=0:vertical=0.5:zoom=3:delay=0,CustomCamShake:[10][1][5]",
+      "voice": "S1003V-355",
+      "monologue": true
+    },
+    {
+      "id": 19,
+      "cg": "fov_01:FadeIn_Continue",
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0.4:zoom=2.5:delay=0,CustomCamShake:[10][1][5]",
+      "voice": "S1003V-356",
+      "monologue": true
+    },
+    {
+      "id": 20,
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0.3:zoom=2:delay=0,CustomCamShake:[10][1][5]",
+      "soundeffect": "SFX_Cinema_Lot_Loop:loop",
+      "voice": "S1003V-357",
+      "monologue": true
+    },
+    {
+      "id": 21,
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0.2:zoom=1.7:delay=0,CustomCamShake:[10][1][5]",
+      "voice": "S1003V-358",
+      "monologue": true
+    },
+    {
+      "id": 22,
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0.2:zoom=1.5:delay=0,CustomCamShake:[10][1][5]",
+      "voice": "S1003V-359",
+      "monologue": true
+    },
+    {
+      "id": 23,
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0.2:zoom=1.3:delay=0,CustomCamShake:[10][1][5]",
+      "voice": "S1003V-360",
+      "monologue": true
+    },
+    {
+      "id": 24,
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0.15:zoom=1.2:delay=0,CustomCamShake:[10][1][5]",
+      "voice": "S1003V-361",
+      "monologue": true
+    },
+    {
+      "id": 25,
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0.1:zoom=1.1:delay=0,CustomCamShake:[10][1][5]",
+      "voice": "S1003V-362",
+      "monologue": true
+    },
+    {
+      "id": 26,
+      "cg": "black",
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=0:zoom=1:delay=0,CustomCamShake:[10][1][5]",
+      "soundeffect": "SFX_Cinema_Lot_Loop:end",
+      "voice": "S1003V-363",
+      "monologue": true
+    },
+    {
+      "id": 27,
+      "characterlist": "ALL : -1, 료슈9장이후노담배:5",
+      "feeling": "happy",
+      "bg": "story_b2_coilednest",
+      "cg": "S1023_2:off,fov_01:off,black:FadeOut:[0~1]",
+      "effect": ",Filter:[IN][MonoChrome]",
+      "soundeffect": "SFX_Scene_Change_Whoosh",
+      "voice": "S1002V-2418"
+    },
+    {
+      "id": 28,
+      "voice": "S1002V-2419"
+    },
+    {
+      "id": 29,
+      "feeling": "close",
+      "voice": "S1002V-2420"
+    },
+    {
+      "id": 30,
+      "feeling": "idle",
+      "voice": "S1002V-2421"
+    },
+    {
+      "id": 31,
+      "feeling": "angry3",
+      "voice": "S1002V-2422"
+    },
+    {
+      "id": 32,
+      "feeling": "smile",
+      "voice": "S1002V-2423"
+    },
+    {
+      "id": 33,
+      "cg": "black",
+      "effect": ",Filter:[OUT][MonoChrome]",
+      "voice": "S1003V-370",
+      "monologue": true
+    },
+    {
+      "id": 34,
+      "cg": "S1023_1:FadeIn:[0~0],fov_01:FadeIn_Continue:[0~0]",
+      "effect": "CustomCamShake:[8][3][5]",
+      "voice": "S1003V-371",
+      "monologue": true
+    },
+    {
+      "id": 35,
+      "cg": "fov_02:FadeIn_Continue",
+      "effect": "CustomCamShake:[8][6][5]",
+      "voice": "S1003V-372",
+      "monologue": true
+    },
+    {
+      "id": 36,
+      "cg": "fov_03:FadeIn_Continue",
+      "effect": "CustomCamShake:[8][8][5]",
+      "voice": "S1003V-373",
+      "monologue": true
+    },
+    {
+      "id": 37,
+      "characterlist": "ALL : -1, 단테 : 1",
+      "emotion": "Serious",
+      "bg": "story_sisyphe_corridor2",
+      "cg": "ALL:FadeOut,white:FadeIn:[0~0.1],white:FadeOut:[0.1~0.2]",
+      "effect": ",Filter:[IN][MonoChrome]",
+      "soundeffect": "SFX_Scene_Change_Whoosh",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 38,
+      "characterlist": "단테 : 5",
+      "cg": "white:FadeIn:[0~0.1],white:FadeOut:[0.1~0.2]",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 39,
+      "characterlist": "단테 : 1",
+      "cg": "white:FadeIn:[0~0.1],white:FadeOut:[0.1~0.2]",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 40,
+      "characterlist": "ALL:-1,단테:2,뷔페어린이신발:8",
+      "bg": "story_b1_escalator",
+      "cg": "white:FadeIn:[0~0.1],white:FadeOut:[0.1~0.2]",
+      "effect": "Feeling:뷔페어린이신발=idle2",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 41,
+      "cg": "black",
+      "effect": ",Filter:[OUT][MonoChrome]",
+      "voice": "S1003V-378",
+      "monologue": true
+    },
+    {
+      "id": 42,
+      "voice": "S1003V-379",
+      "monologue": true
+    },
+    {
+      "id": 43,
+      "voice": "S1003V-380",
+      "monologue": true
+    },
+    {
+      "id": 44,
+      "voice": "S1003V-381",
+      "monologue": true
+    },
+    {
+      "id": 45,
+      "voice": "S1003V-382",
+      "monologue": true
+    },
+    {
+      "id": 46,
+      "cg": "S1006_2:FadeIn:[0~2]",
+      "effect": "CameraMoveZoom:mode=on:duration=2:zoom=1.3:delay=0",
+      "voice": "S1003V-383",
+      "effectv2": "{\"controlCG\": {\"IsBlockToKillCG\":true}}",
+      "waittime": 2,
+      "monologue": true
+    },
+    {
+      "id": 47,
+      "effect": "CameraMoveZoom:mode=on:duration=0:zoom=1.5:delay=0",
+      "voice": "S1003V-384",
+      "effectv2": "{\"controlCG\": {\"IsBlockToKillCG\":true}}",
+      "waittime": 1,
+      "monologue": true
+    },
+    {
+      "id": 48,
+      "cg": "S1006_3:FadeIn_Continue,black:FadeIn:[0.7~1.2]",
+      "effect": "CameraMoveZoom:mode=on:duration=0:zoom=2:delay=0",
+      "soundeffect": "SFX_Door_Squeak",
+      "voice": "S1003V-385",
+      "effectv2": "{\"controlCG\": {\"IsBlockToKillCG\":true}}",
+      "waittime": 1,
+      "monologue": true
+    },
+    {
+      "id": 49,
+      "cg": "BlackScreen",
+      "bgm": "BattleBgm:Resume",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-386"
+    },
+    {
+      "id": 50,
+      "voice": "S1003V-387"
+    },
+    {
+      "id": 51,
+      "effect": "Typo:name=unlockdanteability",
+      "soundeffect": "SFX_Magical_Magica_Sound, SFX_UI_ClockChain:delay=0.5, SFX_UI_ChainRuttle:delay=0.5, SFX_UI_ChainShot:delay=2.3, "
+    }
+  ]
+}

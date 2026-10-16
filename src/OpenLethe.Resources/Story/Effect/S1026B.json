@@ -1,0 +1,320 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "맨얼굴크로머언니:5",
+      "feeling": "smile",
+      "bg": "story_5f_corridor",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-1869"
+    },
+    {
+      "id": 1,
+      "characterlist": "단테:5",
+      "voice": "D_Wick"
+    },
+    {
+      "id": 2,
+      "characterlist": "ALL:-1,그레고르:2,맨얼굴크로머언니:7",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1871"
+    },
+    {
+      "id": 3,
+      "feeling": "angry",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1872"
+    },
+    {
+      "id": 4,
+      "feeling": "smile2",
+      "emotion": "Angry",
+      "effect": "Shake:standing:strength=3:vibrato=25:randomness=50:standingIndexes=[2]",
+      "soundeffect": "SFX_Leather_Crumble_Light, SFX_Walk_Iron_Once",
+      "voice": "S1002V-1873"
+    },
+    {
+      "id": 5,
+      "feeling": "smile",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1002V-1874"
+    },
+    {
+      "id": 6,
+      "characterlist": "ALL:-1,단테:2",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 7,
+      "characterlist": "맨얼굴크로머언니:8",
+      "feeling": "sigh",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1876"
+    },
+    {
+      "id": 8,
+      "characterlist": "이상:4",
+      "feeling": "shock2",
+      "emotion": "Exclame",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1877"
+    },
+    {
+      "id": 9,
+      "feeling": "angry",
+      "voice": "S1002V-1878"
+    },
+    {
+      "id": 10,
+      "feeling": "idle",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1002V-1879"
+    },
+    {
+      "id": 11,
+      "characterlist": "뫼르소:2",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1880"
+    },
+    {
+      "id": 12,
+      "characterlist": "ALL:-1,맨얼굴크로머언니:5",
+      "feeling": "sigh",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1881"
+    },
+    {
+      "id": 13,
+      "feeling": "smile",
+      "voice": "S1002V-1882"
+    },
+    {
+      "id": 14,
+      "characterlist": "맨얼굴크로머언니:-1:mode=FADE_OUT",
+      "soundeffect": "SFX_Walk_Iron",
+      "voice": "S1002V-1883"
+    },
+    {
+      "id": 15,
+      "characterlist": "ALL:-1,뷔페어린이신발:5",
+      "feeling": "surprise",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1884"
+    },
+    {
+      "id": 16,
+      "characterlist": "ALL:-1,단테:2,이상:8",
+      "emotion": "Sweat",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 17,
+      "voice": "D_Click"
+    },
+    {
+      "id": 18,
+      "feeling": "sad",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-1887"
+    },
+    {
+      "id": 19,
+      "characterlist": "그레고르:2",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1888"
+    },
+    {
+      "id": 20,
+      "voice": "S1002V-1889"
+    },
+    {
+      "id": 21,
+      "characterlist": "ALL:-1,뷔페어린이신발:5",
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1890"
+    },
+    {
+      "id": 22,
+      "voice": "S1002V-1891"
+    },
+    {
+      "id": 23,
+      "characterlist": "이상:2",
+      "feeling": "shock",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1892"
+    },
+    {
+      "id": 24,
+      "feeling": "sad2",
+      "voice": "S1002V-1893"
+    },
+    {
+      "id": 25,
+      "feeling": "surprise",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1894"
+    },
+    {
+      "id": 26,
+      "feeling": "idle2",
+      "emotion": "Question",
+      "voice": "S1002V-1895"
+    },
+    {
+      "id": 27,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1896"
+    },
+    {
+      "id": 28,
+      "characterlist": "ALL:-1,그레고르:5",
+      "feeling": "smile",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-1897"
+    },
+    {
+      "id": 29,
+      "characterlist": "ALL:-1,뷔페어린이신발:5",
+      "effect": "Feeling:뷔페어린이신발=idle2",
+      "voice": "S1002V-1898"
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31,
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1900"
+    },
+    {
+      "id": 32,
+      "feeling": "sad2",
+      "voice": "S1002V-1901"
+    },
+    {
+      "id": 33,
+      "feeling": "surprise",
+      "emotion": "Exclame",
+      "effect": "CustomCamShake:[15][12][0.3]",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1902"
+    },
+    {
+      "id": 34,
+      "characterlist": "ALL:-1,단테:3,뫼르소:8",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 35,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1904"
+    },
+    {
+      "id": 36,
+      "characterlist": "ALL:-1,뷔페어린이신발:5",
+      "feeling": "idle2",
+      "voice": "S1002V-1905"
+    },
+    {
+      "id": 37,
+      "characterlist": "이상:5",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1906"
+    },
+    {
+      "id": 38,
+      "characterlist": "뷔페어린이신발:5",
+      "feeling": "idle2",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1907"
+    },
+    {
+      "id": 39,
+      "voice": "S1002V-1908"
+    },
+    {
+      "id": 40,
+      "voice": "S1002V-1909"
+    },
+    {
+      "id": 41,
+      "characterlist": "ALL:-1,단테:3",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 42,
+      "characterlist": "뫼르소:8",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1911"
+    },
+    {
+      "id": 43,
+      "voice": "D_Click"
+    },
+    {
+      "id": 44,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 45,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-1914"
+    },
+    {
+      "id": 46,
+      "characterlist": "ALL:-1,뷔페어린이신발:5",
+      "feeling": "idle2",
+      "emotion": "Question",
+      "voice": "S1002V-1899"
+    },
+    {
+      "id": 47,
+      "characterlist": "뫼르소:5",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1916"
+    },
+    {
+      "id": 48,
+      "characterlist": "뷔페어린이신발:5",
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1917"
+    },
+    {
+      "id": 49,
+      "feeling": "idle",
+      "voice": "S1002V-1918"
+    },
+    {
+      "id": 50,
+      "characterlist": "단테:5",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 51,
+      "characterlist": "그레고르:2",
+      "feeling": "surprise",
+      "emotion": "Question",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1920"
+    },
+    {
+      "id": 52,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 53,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 54,
+      "characterlist": "이상:8",
+      "feeling": "sad2",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1923"
+    }
+  ]
+}

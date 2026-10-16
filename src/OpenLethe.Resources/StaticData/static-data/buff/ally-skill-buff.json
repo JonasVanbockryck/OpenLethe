@@ -8074,6 +8074,283 @@
           "value": 1
         }
       ]
+    },
+    {
+      "id": "BuffetFriendShield",
+      "buffClass": "VolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "SupportProtect"
+        },
+        {
+          "ability": "BuffetSinclairSupportProtectDefenseSkillOverwriter",
+          "value": 1101612
+        }
+      ],
+      "categoryKeywordList": [
+        "SUPPORTIVE_PROTECT"
+      ]
+    },
+    {
+      "id": "BuffetThirst",
+      "buffClass": "VolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "AtkAdder",
+          "value": 2
+        },
+        {
+          "ability": "BuffetThirst_1",
+          "value": 0.05,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "stack": 0,
+            "turn": 1,
+            "value": 0.1
+          }
+        },
+        {
+          "ability": "ActivateBuffEffectSkin"
+        }
+      ]
+    },
+    {
+      "id": "HungrySinclair",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 150,
+      "stackLimitPerTurn": 50,
+      "list": [
+      ]
+    },
+    {
+      "id": "TransformSinclair",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "MinSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "MaxSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "TakeSinBuffDamageMultiplierViaBuffCheck_Laceration",
+          "value": -0.25,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "buffOwner": "Self",
+            "stack": 2,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "GiveBuffStackAdderIfDefaultSkillNotZeroViaBuffCheck_Laceration",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "buffOwner": "Self",
+            "stack": 3,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "GiveBuffTurnAdderIfDefaultSkillNotZeroViaBuffCheck_Laceration",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "buffOwner": "Self",
+            "stack": 3,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "DefaultSkillPowerAdderViaBuffCheck",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "Charge",
+            "buffOwner": "Self",
+            "stack": 4,
+            "turn": 0
+          }
+        },
+        {
+          "ability": "ActivateDinnerField"
+        },
+        {
+          "ability": "GiveAllyAbilityTransformSinclair"
+        },
+        {
+          "ability": "ImmortalThisRoundOncePerBattleTransformSinclair"
+        }
+      ]
+    },
+    {
+      "id": "BoneNailSinclair",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnZero": true,
+      "maxStack": 5,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundEndDivideByStack",
+          "buffData": {
+            "buffKeyword": "Binding",
+            "target": "Self",
+            "stack": 2,
+            "activeRound": 1,
+            "value": 1
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundStart",
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "target": "Self",
+            "stack": 0,
+            "turn": 1,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "TakeAttackDmgMultiplierFromAssociationByStackWithLimit_LE_ROUGE",
+          "value": 0.02,
+          "buffData": {
+            "buffKeyword": "BoneNailSinclair",
+            "target": "Self",
+            "limit": 10
+          }
+        },
+        {
+          "ability": "BoneNailSinclairDestroyViaCheckUnit"
+        },
+        {
+          "ability": "ActivateBuffEffectSkin"
+        }
+      ],
+      "categoryKeywordList": [ "LACERATION" ]
+    },
+    {
+      "id": "BuffetSinclair",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 3,
+      "list": [
+        {
+          "ability": "AtkAdderByStack",
+          "value": 1
+        },
+        {
+          "ability": "IgnoreBreakExceptForcedCase"
+        },
+        {
+          "ability": "MinSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "MaxSpeedAdderIncludeFirstTurn",
+          "value": 1
+        },
+        {
+          "ability": "AtkDamageMultiplierViaBuffCheckDevideByStack",
+          "value": 0.01,
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "buffOwner": "Self",
+            "stack": 1,
+            "turn": 0,
+            "limit": 15
+          }
+        },
+        {
+          "ability": "GiveBuffOnUseDefaultAttackSkill",
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "target": "Self",
+            "stack": 0,
+            "turn": 3,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "GiveBuffOnSAByDefaultSkill",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "TakeSinBuffDamageMultiplier",
+          "value": -0.5,
+          "buffData": {
+            "buffKeyword": "Laceration"
+          }
+        },
+        {
+          "ability": "BuffetSinclairImmortal"
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        },
+        {
+          "ability": "ActivateBuffEffectSkin"
+        }
+      ]
+    },
+    {
+      "id": "DinnerField",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "canBeDespelled": false,
+      "destroyableOnZero": false,
+      "maxStack": 999,
+      "list": [
+      ],
+      "categoryKeywordList": [ ]
+    },
+    {
+      "id": "RougeFamilySinclair",
+      "buffClass": "OverlappingBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnZero": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "list": [
+        {
+          "ability": "RougeFamilySinclairAddText"
+        }
+      ]
     }
   ]
 }

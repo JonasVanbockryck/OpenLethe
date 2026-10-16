@@ -1,0 +1,23 @@
+{
+  "list": [
+    {
+      "id": "SewingKingMark",
+      "iconId": "NiddleExpected",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": true,
+      "destroyableOnRetreat": true,
+      "destroyableOnDie": true,
+      "maxStack": 1,
+      "list": [
+        {
+          "ability": "ActivateBuffEffect"
+        },
+        {
+          "ability": "SewingKingMark",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

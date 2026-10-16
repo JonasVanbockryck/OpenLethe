@@ -34,6 +34,34 @@
     {
       "key": "EC-WDN-QUEST",
       "canRepeat": false
+    },
+    {
+      "key": "ERSCW01_C1",
+      "canRepeat": false
+    },
+    {
+      "key": "ERSCW02_C1",
+      "canRepeat": true,
+      "action1": "GiveItem",
+      "actionValue1": "I990931, 1"
+    },
+    {
+      "key": "ERSCW03_C1",
+      "canRepeat": true,
+      "action1": "RemoveItem",
+      "actionValue1": "I990931, 1"
+    },
+    {
+      "key": "ERSCW04_C1",
+      "canRepeat": false,
+      "action1": "PlayCutscene",
+      "actionValue1": "CRSCW01_C1"
+    },
+    {
+      "key": "ERSCW05_C1",
+      "canRepeat": true,
+      "action1": "Dialogue",
+      "actionValue1": "DRSCW04_C1"
     }
   ]
 }

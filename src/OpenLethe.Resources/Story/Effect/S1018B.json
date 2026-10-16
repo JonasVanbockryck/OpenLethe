@@ -1,0 +1,349 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "로쟈 : 1, 크로머언니 :8",
+      "feeling": "shock 3",
+      "bg": "story_beauty",
+      "bgm": "And_There",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-729"
+    },
+    {
+      "id": 1,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-120"
+    },
+    {
+      "id": 2,
+      "feeling": "smile3",
+      "effect": "CustomCamShake:[35][15][0.3]",
+      "soundeffect": "SFX_5Impact_1",
+      "voice": "S1002V-121"
+    },
+    {
+      "id": 3,
+      "feeling": "close",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-122"
+    },
+    {
+      "id": 4,
+      "characterlist": "ALL:-1, 단테:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 5,
+      "characterlist": "ALL:-1, 로쟈 : 1, 크로머언니 :8",
+      "feeling": "smile4",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right,Feeling:로쟈=shock 3",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-124"
+    },
+    {
+      "id": 6,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-734"
+    },
+    {
+      "id": 7,
+      "feeling": "surprise",
+      "voice": "S1002V-126"
+    },
+    {
+      "id": 8,
+      "feeling": "smile4",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1001V-736"
+    },
+    {
+      "id": 9,
+      "feeling": "close",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-137"
+    },
+    {
+      "id": 10,
+      "feeling": "sigh",
+      "emotion": "Serious",
+      "soundeffect": "SFX_Hair_Care_3",
+      "voice": "S1001V-738"
+    },
+    {
+      "id": 11,
+      "feeling": "idle",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-130"
+    },
+    {
+      "id": 12,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-131"
+    },
+    {
+      "id": 13,
+      "characterlist": "크로머언니 : 8, 로쟈 : 1",
+      "feeling": "surprise",
+      "emotion": "Question",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-745"
+    },
+    {
+      "id": 14,
+      "feeling": "smile",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-133"
+    },
+    {
+      "id": 15,
+      "feeling": "smile4",
+      "voice": "S1001V-748"
+    },
+    {
+      "id": 16,
+      "feeling": "shock",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-135"
+    },
+    {
+      "id": 17,
+      "feeling": "smile2",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1002V-136"
+    },
+    {
+      "id": 18,
+      "characterlist": "ALL : -1, 단테 : 5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left"
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20,
+      "voice": "D_Tok"
+    },
+    {
+      "id": 21,
+      "characterlist": "그레고르 : 3 : mode=Fade_In",
+      "feeling": "shork2",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-770"
+    },
+    {
+      "id": 22,
+      "characterlist": "ALL : -1, 크로머언니 : 5",
+      "feeling": "surprise",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right",
+      "voice": "S1002V-141"
+    },
+    {
+      "id": 23,
+      "feeling": "smile",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-142"
+    },
+    {
+      "id": 24,
+      "characterlist": "ALL:-1, 히스클리프 : 2, 이스마엘:4",
+      "feeling": "surprise",
+      "soundeffect": "SFX_Hair_Care_3",
+      "voice": "S1001V-773"
+    },
+    {
+      "id": 25,
+      "feeling": "sigh",
+      "emotion": "Serious",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-774"
+    },
+    {
+      "id": 26,
+      "characterlist": "ALL:-1, 크로머언니:8, 오티스 :1",
+      "feeling": "angry",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1001V-775"
+    },
+    {
+      "id": 27,
+      "voice": "S1001V-776"
+    },
+    {
+      "id": 28,
+      "feeling": "close",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-147"
+    },
+    {
+      "id": 29,
+      "feeling": "smile",
+      "voice": "S1002V-148"
+    },
+    {
+      "id": 30,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 31,
+      "characterlist": "로쟈 : 3",
+      "feeling": "surprise",
+      "voice": "S1001V-780"
+    },
+    {
+      "id": 32,
+      "feeling": "smile",
+      "voice": "S1002V-151"
+    },
+    {
+      "id": 33,
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-152"
+    },
+    {
+      "id": 34,
+      "characterlist": "ALL : -1, 싱클레어 : 5 : mode=Fade_In",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right,Feeling:싱클레어=serious",
+      "soundeffect": "SFX_Rope_Hard"
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36,
+      "characterlist": "단테 : 2 : mode=Fade_In",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 37,
+      "feeling": "serious_R",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-156"
+    },
+    {
+      "id": 38,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40,
+      "feeling": "idle2",
+      "soundeffect": "SFX_Stretch_HardGrab",
+      "voice": "S1001V-803"
+    },
+    {
+      "id": 41,
+      "effect": "CustomCamShake:[10][10][1]"
+    },
+    {
+      "id": 42,
+      "characterlist": "이상 : 1",
+      "feeling": "shock",
+      "voice": "S1001V-805"
+    },
+    {
+      "id": 43,
+      "characterlist": "ALL : -1, 맨얼굴크로머언니 : 5 : mode=Fade_In",
+      "feeling": "close",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.2:direction=left",
+      "soundeffect": "SFX_Scene_Change_Whoosh",
+      "voice": "S1002V-162"
+    },
+    {
+      "id": 44,
+      "characterlist": "ALL : -1, 로쟈 : 3",
+      "feeling": "surprise",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.2:direction=right",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1001V-812"
+    },
+    {
+      "id": 45,
+      "feeling": "angry",
+      "voice": "S1001V-813"
+    },
+    {
+      "id": 46,
+      "feeling": "angry"
+    },
+    {
+      "id": 47,
+      "characterlist": "돈키호테 : 5",
+      "feeling": "angry6",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1001V-815"
+    },
+    {
+      "id": 48,
+      "effect": "Shake:standing:strength=10:vibrato=10:randomness=50:standingIndexes=[5]",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1001V-816"
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50,
+      "characterlist": "ALL : -1, 맨얼굴크로머언니 : 8",
+      "feeling": "close",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.2:direction=left",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-169"
+    },
+    {
+      "id": 51,
+      "characterlist": "싱클레어 : 3",
+      "feeling": "angry4",
+      "effect": "Shake:standing:strength=10:vibrato=10:randomness=50:standingIndexes=[6]",
+      "voice": "S1001V-819"
+    },
+    {
+      "id": 52,
+      "feeling": "angry3",
+      "effect": "CustomCamShake:[20][15][1]",
+      "soundeffect": "SFX_Rope_Hard",
+      "voice": "S1001V-820"
+    },
+    {
+      "id": 53,
+      "feeling": "sigh",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-172"
+    },
+    {
+      "id": 54,
+      "feeling": "angry3",
+      "effect": "Shake:standing:strength=8:vibrato=20:randomness=50:standingIndexes=[3]",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1001V-822"
+    },
+    {
+      "id": 55,
+      "feeling": "sigh",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-174"
+    },
+    {
+      "id": 56,
+      "feeling": "serious_R",
+      "soundeffect": "SFX_Stretch_HardGrab",
+      "voice": "S1001V-840"
+    },
+    {
+      "id": 57,
+      "feeling": "close",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-176"
+    },
+    {
+      "id": 58,
+      "characterlist": "ALL:-1, 맨얼굴크로머언니 : 5",
+      "feeling": "smile2",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.2:direction=upRight",
+      "soundeffect": "SFX_Walk_Iron",
+      "voice": "S1002V-177"
+    }
+  ]
+}

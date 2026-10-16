@@ -84,7 +84,7 @@
       },
       "isBatonPassOn": "TRUE",
       "stageScriptList": [
-        "1485", "VipGradeForRpg", "1485ProduceSystem", "1485Story"
+        "1485", "VipGradeForRpg", "1485ProduceSystem", "1485Story", "1485ImmortalMeursault"
       ],
       "stageContinueInfo":{
         "continueDataId": 1,
@@ -289,7 +289,7 @@
         "continueDataId": 1,
         "isContinueEnabled": true,
         "isContinueAssist": true,
-        "ver": 2
+        "ver": 3
       }
     }
   ]

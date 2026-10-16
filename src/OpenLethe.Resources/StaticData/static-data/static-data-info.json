@@ -137,6 +137,7 @@
         "abnormality-refraction6-part",
         "abnormality-part-a1c972-bokgak",
         "abnormality-mirror7-extreme-part",
+        "abnormality-mirror8-part",
         "abnormality-part-exme",
         "abnormality-part-bossraid-exme",
         "abnormality-refraction2-bokgak-part",
@@ -209,6 +210,7 @@
         "abnormality-refraction6-unit",
         "abnormality-unit-a1c972-bokgak",
         "abnormality-mirror7-extreme-unit",
+        "abnormality-mirror8-unit",
         "abnormality-unit-exme",
         "abnormality-unit-bossraid-exme",
         "abnormality-refraction2-bokgak-unit",
@@ -306,7 +308,8 @@
         "buff-enemy-a1c10p2",
         "buff-enemy-a1c10p3",
         "buff-assistant-a1c10p2",
-        "ally-skill-buff-a1c10p3"
+        "ally-skill-buff-a1c10p3",
+        "buff-mirrordungeon8"
       ]
     },
     {
@@ -444,7 +447,8 @@
         "ego-gift-story-twth",
         "ego-gift-story-7-5-2-BokGak",
         "ego-gift-mirrordungeon-extreme",
-        "ego-gift-story-exme"
+        "ego-gift-story-exme",
+        "ego-gift-mirrordungeon8"
       ]
     },
     {
@@ -489,6 +493,7 @@
         "enemy-twth",
         "enemy-a1c972-bokgak",
         "enemy-mirrordungeon7-extreme",
+        "enemy-mirrordungeon8",
         "enemy-exme",
         "enemy-a1c10p1",
         "enemy-a1c10p2"
@@ -508,10 +513,9 @@
         "gacha-9",
         "gacha-10",
         "gacha-11",
-        "gacha-295",
-        "gacha-297",
-        "gacha-298",
-        "gacha-299"
+        "gacha-300",
+        "gacha-301",
+        "gacha-302"
       ]
     },
     {
@@ -645,7 +649,8 @@
         "passive-enemy-a1c10p2",
         "passive-enemy-a1c10p3",
         "passive-assistant-a1c10p2",
-        "passive-a1c10p3"
+        "passive-a1c10p3",
+        "passive-enemy-mirror8"
       ]
     },
     {
@@ -835,6 +840,8 @@
         "skill-abnormality-a1c972-bokgak",
         "abnormality-mirror7-extreme-skill",
         "skill-enemy-mirror7-extreme",
+        "abnormality-mirror8-skill",
+        "skill-enemy-mirror8",
         "skill-enemy-exme",
         "skill-abnormality-exme",
         "skill-assistant-exme",
@@ -977,7 +984,9 @@
         "mirrordungeon-abbattle7-0",
         "mirrordungeon-abbattle7-hidden",
         "mirrordungeon-abbattle7-extreme",
-        "mirrordungeon-battle7-extreme"
+        "mirrordungeon-battle7-extreme",
+        "mirrordungeon-battle8-0",
+        "mirrordungeon-abbattle8-0"
       ]
     },
     {
@@ -1185,28 +1194,28 @@
     {
       "dataClass": "mirrordungeon",
       "fileList": [
-        "mirrordungeon-07",
-        "mirrordungeon-07-hard",
-        "mirrordungeon-07-infinite",
-        "mirrordungeon-07-extreme"
+        "mirrordungeon-08",
+        "mirrordungeon-08-hard",
+        "mirrordungeon-08-infinite",
+        "mirrordungeon-08-extreme"
       ]
     },
     {
       "dataClass": "mirrordungeon-encounterinfo",
       "fileList": [
-        "mirrordungeon-encounterinfos-07-normal",
-        "mirrordungeon-encounterinfos-07-hard",
-        "mirrordungeon-encounterinfos-07-infinite",
-        "mirrordungeon-encounterinfos-07-extreme"
+        "mirrordungeon-encounterinfos-08-normal",
+        "mirrordungeon-encounterinfos-08-hard",
+        "mirrordungeon-encounterinfos-08-infinite",
+        "mirrordungeon-encounterinfos-08-extreme"
       ]
     },
     {
       "dataClass": "mirrordungeon-global-encounterinfo",
       "fileList": [
-        "mirrordungeon-global-encounterinfos-7-0",
-        "mirrordungeon-global-encounterinfos-7-1",
-        "mirrordungeon-global-encounterinfos-7-2",
-        "mirrordungeon-global-encounterinfos-7-3"
+        "mirrordungeon-global-encounterinfos-8-0",
+        "mirrordungeon-global-encounterinfos-8-1",
+        "mirrordungeon-global-encounterinfos-8-2",
+        "mirrordungeon-global-encounterinfos-8-3"
       ]
     },
     {
@@ -1359,7 +1368,7 @@
     {
       "dataClass": "mirrordungeon-egogift-droppool",
       "fileList": [
-        "mirrordungeon-egogift-droppool-7"
+        "mirrordungeon-egogift-droppool-8"
       ]
     },
     {
@@ -1788,16 +1797,16 @@
     {
       "dataClass": "mirrordungeon-start-buffs",
       "fileList": [
-        "mirrordungeon-start-buffs-07"
+        "mirrordungeon-start-buffs-08"
       ]
     },
     {
       "dataClass": "mirrordungeon-acquire-cost-in-battle",
       "fileList": [
-        "mirrordungeon-acquire-cost-in-battle-7-0",
-        "mirrordungeon-acquire-cost-in-battle-7-1",
-        "mirrordungeon-acquire-cost-in-battle-7-2",
-        "mirrordungeon-acquire-cost-in-battle-7-3"
+        "mirrordungeon-acquire-cost-in-battle-8-0",
+        "mirrordungeon-acquire-cost-in-battle-8-1",
+        "mirrordungeon-acquire-cost-in-battle-8-2",
+        "mirrordungeon-acquire-cost-in-battle-8-3"
       ]
     },
     {
@@ -1805,9 +1814,6 @@
       "fileList": [
         "returninguser-event",
         "newuser-event",
-        "mirrordungeon7-mission-event",
-        "mirrordungeon7-additional-reward-event",
-        "mirrordungeon7-mission-purchase-event",
         "boss-raid-permanent-shop-event"
       ]
     },
@@ -1865,7 +1871,7 @@
     {
       "dataClass": "mirror-dungeon-common-data",
       "fileList": [
-        "mirror-dungeon-common-data-md7"
+        "mirror-dungeon-common-data-md8"
       ]
     },
     {
@@ -1880,21 +1886,11 @@
     },
     {
       "dataClass": "event-mission",
-      "fileList": [
-        "event-mirrordungeon7-mission"
-      ]
+      "fileList": []
     },
     {
       "dataClass": "mission",
       "fileList": [
-        "mirrordungeon7-mission-clear",
-        "mirrordungeon7-mission-collection",
-        "mirrordungeon7-mission-deck",
-        "mirrordungeon7-mission-shop",
-        "mirrordungeon7-mission-extreme",
-        "mirrordungeon7-mission-hidden",
-        "mirrordungeon7-mission-battle",
-        "mirrordungeon7-mission-all",
         "boss-raid-01-mission",
         "boss-raid-02-mission",
         "boss-raid-03-mission",
@@ -1904,14 +1900,6 @@
     {
       "dataClass": "mission-condition",
       "fileList": [
-        "mirrordungeon7-mission-condition-clear",
-        "mirrordungeon7-mission-condition-collection",
-        "mirrordungeon7-mission-condition-deck",
-        "mirrordungeon7-mission-condition-shop",
-        "mirrordungeon7-mission-condition-extreme",
-        "mirrordungeon7-mission-condition-hidden",
-        "mirrordungeon7-mission-condition-battle",
-        "mirrordungeon7-mission-condition-all",
         "boss-raid-01-mission-condition",
         "boss-raid-02-mission-condition",
         "boss-raid-03-mission-condition",
@@ -2064,13 +2052,13 @@
     {
       "dataClass": "mirror-dungeon-egogift-observation-data",
       "fileList": [
-        "mirror-dungeon-egogift-observation-data-md7"
+        "mirror-dungeon-egogift-observation-data-md8"
       ]
     },
     {
       "dataClass": "mirror-dungeon-rental-formation",
       "fileList": [
-        "mirror-dungeon-rental-formation-md7"
+        "mirror-dungeon-rental-formation-md8"
       ]
     },
     {
@@ -2100,7 +2088,7 @@
     {
       "dataClass": "mirrordungeon-constraint",
       "fileList": [
-        "mirrordungeon-constraint-07"
+        "mirrordungeon-constraint-08"
       ]
     },
     {
@@ -2191,7 +2179,8 @@
         "battle-effect-bossraid",
         "battle-effect-a1c10p1",
         "battle-effect-a1c10p2",
-        "battle-effect-a1c10p3"
+        "battle-effect-a1c10p3",
+        "battle-effect-mirrordungeon8"
       ]
     },
     {
@@ -2215,6 +2204,12 @@
         "stagenode-ending-map-a1c10p1",
         "stagenode-ending-map-a1c10p2",
         "stagenode-ending-map-a1c10p3"
+      ]
+    },
+    {
+      "dataClass": "manual",
+      "fileList": [
+        "manual"
       ]
     }
   ]

@@ -1,0 +1,135 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "뫼르소다침:5",
+      "bg": "story_7f_dance2",
+      "effect": "CustomCamShake:[11][2][5]",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-960",
+      "produce": "bgmEvent:BGM/Battle/Battle_Cp10_Boss_4,bgmLabel:Meursault=Battle_2,bgmGlobal:AbSelect=1"
+    },
+    {
+      "id": 1,
+      "feeling": "upset2",
+      "voice": "S1003V-961"
+    },
+    {
+      "id": 2,
+      "voice": "S1003V-962"
+    },
+    {
+      "id": 3,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1003V-963"
+    },
+    {
+      "id": 4,
+      "voice": "S1003V-964"
+    },
+    {
+      "id": 5,
+      "feeling": "upset",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-965"
+    },
+    {
+      "id": 6,
+      "voice": "S1003V-966"
+    },
+    {
+      "id": 7,
+      "feeling": "close",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-967"
+    },
+    {
+      "id": 8,
+      "feeling": "angry",
+      "voice": "S1003V-968"
+    },
+    {
+      "id": 9,
+      "voice": "S1003V-969"
+    },
+    {
+      "id": 10,
+      "characterlist": "잔느변신2:5",
+      "feeling": "idle2",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "soundeffect": "SFX_Cloth_Crumble,SFX_Scene_Change_Whoosh",
+      "voice": "S1003V-970"
+    },
+    {
+      "id": 11,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-971"
+    },
+    {
+      "id": 12,
+      "voice": "S1003V-972"
+    },
+    {
+      "id": 13,
+      "feeling": "idle",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-973"
+    },
+    {
+      "id": 14,
+      "characterlist": "뫼르소다침:5",
+      "feeling": "close",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right",
+      "soundeffect": "SFX_Scene_Change_Whoosh_Slow",
+      "voice": "S1003V-974"
+    },
+    {
+      "id": 15,
+      "characterlist": "잔느변신2:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "soundeffect": "SFX_Walk_Iron_Once,SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-975"
+    },
+    {
+      "id": 16,
+      "characterlist": "ALL:-1",
+      "cg": "black:FadeIn",
+      "voice": "S1003V-976"
+    },
+    {
+      "id": 17,
+      "bg": "story_cinema:mode=Fade_In",
+      "cg": "black:FadeOut",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-977",
+      "produce": "interludeBgmVolume:0.8=1.5"
+    },
+    {
+      "id": 18,
+      "voice": "S1003V-978",
+      "produce": "interludeBgmVolume:0.6=1.5"
+    },
+    {
+      "id": 19,
+      "soundeffect": "sFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-979",
+      "produce": "interludeBgmVolume:0.45=1.5"
+    },
+    {
+      "id": 20,
+      "voice": "S1003V-980",
+      "produce": "interludeBgmVolume:0.3=1.5"
+    },
+    {
+      "id": 21,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-981",
+      "produce": "interludeBgmVolume:0.15=1.5"
+    },
+    {
+      "id": 22,
+      "voice": "S1003V-982",
+      "produce": "interludeBgmVolume:0=1.5"
+    }
+  ]
+}

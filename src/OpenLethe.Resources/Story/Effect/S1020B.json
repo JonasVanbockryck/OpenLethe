@@ -1,0 +1,91 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "싱클레어:1:mode=FADE_IN",
+      "feeling": "sad3",
+      "bg": "story_3f_repairRoom",
+      "soundeffect": "SFX_Walk_Iron_Once, SFX_Scissors_Amb_Near:loop",
+      "voice": "S1001V-1432"
+    },
+    {
+      "id": 1,
+      "characterlist": "3층가위:5",
+      "soundeffect": "SFX_Jean_Crumble_Light, SFX_Scissors_Amb_Near:end",
+      "voice": "S1001V-1433"
+    },
+    {
+      "id": 2,
+      "characterlist": "뫼르소:9",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1002V-489"
+    },
+    {
+      "id": 3,
+      "feeling": "surprise",
+      "emotion": "Question",
+      "voice": "S1002V-490"
+    },
+    {
+      "id": 4,
+      "characterlist": "ALL:-1,3층가위:5",
+      "soundeffect": "SFX_Scissors_Once",
+      "voice": "S1002V-491"
+    },
+    {
+      "id": 5,
+      "voice": "S1002V-492"
+    },
+    {
+      "id": 6,
+      "characterlist": "ALL:-1,싱클레어:1,3층가위:5",
+      "feeling": "sad3",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-493"
+    },
+    {
+      "id": 7,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-494"
+    },
+    {
+      "id": 8,
+      "voice": "S1002V-495"
+    },
+    {
+      "id": 9,
+      "soundeffect": "SFX_Scissors_Amb_Near:loop",
+      "voice": "S1002V-496"
+    },
+    {
+      "id": 10,
+      "characterlist": "ALL:-1,뫼르소:5,단테:8",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "voice": "D_FastTickTok"
+    },
+    {
+      "id": 11,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-498"
+    },
+    {
+      "id": 12,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 13,
+      "characterlist": "ALL:-1,싱클레어:5",
+      "feeling": "angry",
+      "emotion": "Question",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-500"
+    },
+    {
+      "id": 14,
+      "characterlist": "오티스:2",
+      "feeling": "close",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-501"
+    }
+  ]
+}

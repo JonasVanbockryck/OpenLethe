@@ -1,0 +1,55 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "cg": "S1000_5:On:LayerName=Ch10Tv",
+      "effect": "Ch10TvUiEffect,CgCodeMaterial:code=S1000_5:material=uidefault",
+      "bgm": "Corporation",
+      "soundeffect": "SFX_Projector_Loop:loop",
+      "voice": "S1003V-436",
+      "monologue": true
+    },
+    {
+      "id": 1,
+      "voice": "S1003V-437",
+      "monologue": true
+    },
+    {
+      "id": 2,
+      "voice": "S1003V-438",
+      "monologue": true
+    },
+    {
+      "id": 3,
+      "voice": "S1003V-439",
+      "monologue": true
+    },
+    {
+      "id": 4,
+      "cg": "black:FadeIn:LayerName=Ch10Tv",
+      "soundeffect": "SFX_TV_Off, SFX_Projector_Loop:end",
+      "voice": "S1003V-440",
+      "monologue": true
+    },
+    {
+      "id": 5,
+      "cg": "black:FadeOut,floor2_info_02:FadeIn:LayerName=Ch10Tv",
+      "soundeffect": "SFX_Projector_Loop:loop",
+      "voice": "S1003V-441",
+      "monologue": true
+    },
+    {
+      "id": 6,
+      "cg": "floor2_info_04:FadeIn:LayerName=Ch10Tv",
+      "voice": "S1003V-442",
+      "monologue": true
+    },
+    {
+      "id": 7,
+      "cg": "floor2_info_03:FadeIn:LayerName=Ch10Tv",
+      "soundeffect": "SFX_Projector_Loop:end, SFX_Projector_SceneChange",
+      "voice": "S1003V-443",
+      "monologue": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "cg": "S1000_2:On:LayerName=Ch10Tv",
+      "effect": "Ch10TvUiEffect,CgCodeMaterial:code=S1000_2:material=uidefault",
+      "bgm": "Corporation",
+      "soundeffect": "SFX_Projector_Loop:loop",
+      "voice": "S1003V-467",
+      "monologue": true
+    },
+    {
+      "id": 1,
+      "voice": "S1003V-468",
+      "monologue": true
+    },
+    {
+      "id": 2,
+      "voice": "S1003V-469",
+      "monologue": true
+    },
+    {
+      "id": 3,
+      "cg": "S1000_3:FadeIn:LayerName=Ch10Tv",
+      "effect": "CgCodeMaterial:code=S1000_3:material=uidefault",
+      "voice": "S1003V-472",
+      "monologue": true
+    },
+    {
+      "id": 4,
+      "soundeffect": "SFX_TV_Off, SFX_Projector_Loop:end",
+      "voice": "S1003V-473",
+      "monologue": true
+    }
+  ]
+}

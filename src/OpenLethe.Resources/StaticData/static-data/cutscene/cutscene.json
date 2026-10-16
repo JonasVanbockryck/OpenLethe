@@ -3223,6 +3223,23 @@
           "closeUp": 0.69
         }
       ]
+    },
+    {
+      "id": 11016,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": -0.055,
+          "offsetY": 0.2,
+          "closeUp": 0.65
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": -0.065,
+          "offsetY": 0.35,
+          "closeUp": 0.28
+        }
+      ]
     }
   ]
 }

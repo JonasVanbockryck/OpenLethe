@@ -1,0 +1,644 @@
+{
+  "list": [
+    {
+      "id": 35,
+      "startDate": "2026-10-08T01:00:00.000Z",
+      "startDateForUI": "2026-10-08T03:00:00.000Z",
+      "endDate": "2026-10-21T21:00:00.000Z",
+      "units": [
+        {
+          "personality": {
+            "id":10105,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20101,
+              "gacksung": 4
+            },
+            {
+              "id": 20103,
+              "gacksung": 4
+            },
+            {
+              "id": 20104,
+              "gacksung": 4
+            },
+            {
+              "id": 20105,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10210,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20201,
+              "gacksung": 4
+            },
+            {
+              "id": 20203,
+              "gacksung": 4
+            },
+            {
+              "id": 20202,
+              "gacksung": 4
+            },
+            {
+              "id": 20206,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10315,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20310,
+              "gacksung": 4
+            },
+            {
+              "id": 20305,
+              "gacksung": 4
+            },
+            {
+              "id": 20302,
+              "gacksung": 4
+            },
+            {
+              "id": 20307,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10416,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20401,
+              "gacksung": 4
+            },
+            {
+              "id": 20403,
+              "gacksung": 4
+            },
+            {
+              "id": 20404,
+              "gacksung": 4
+            },
+            {
+              "id": 20409,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10505,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20501,
+              "gacksung": 4
+            },
+            {
+              "id": 20502,
+              "gacksung": 4
+            },
+            {
+              "id": 20504,
+              "gacksung": 4
+            },
+            {
+              "id": 20508,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10609,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20610,
+              "gacksung": 4
+            },
+            {
+              "id": 20606,
+              "gacksung": 4
+            },
+            {
+              "id": 20603,
+              "gacksung": 4
+            },
+            {
+              "id": 20608,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10708,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20705,
+              "gacksung": 4
+            },
+            {
+              "id": 20709,
+              "gacksung": 4
+            },
+            {
+              "id": 20708,
+              "gacksung": 4
+            },
+            {
+              "id": 20706,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10810,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20809,
+              "gacksung": 4
+            },
+            {
+              "id": 20804,
+              "gacksung": 4
+            },
+            {
+              "id": 20808,
+              "gacksung": 4
+            },
+            {
+              "id": 20805,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10917,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20901,
+              "gacksung": 4
+            },
+            {
+              "id": 20910,
+              "gacksung": 4
+            },
+            {
+              "id": 20905,
+              "gacksung": 4
+            },
+            {
+              "id": 20908,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":11010,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 21006,
+              "gacksung": 4
+            },
+            {
+              "id": 21002,
+              "gacksung": 4
+            },
+            {
+              "id": 21005,
+              "gacksung": 4
+            },
+            {
+              "id": 21008,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":11113,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 21101,
+              "gacksung": 4
+            },
+            {
+              "id": 21104,
+              "gacksung": 4
+            },
+            {
+              "id": 21105,
+              "gacksung": 4
+            },
+            {
+              "id": 21106,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":11205,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 21201,
+              "gacksung": 4
+            },
+            {
+              "id": 21210,
+              "gacksung": 4
+            },
+            {
+              "id": 21208,
+              "gacksung": 4
+            },
+            {
+              "id": 21205,
+              "gacksung": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "startDate": "2026-10-15T01:00:00.000Z",
+      "startDateForUI": "2026-10-15T03:00:00.000Z",
+      "endDate": "2026-10-28T21:00:00.000Z",
+      "units": [
+        {
+          "personality": {
+            "id":10109,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20101,
+              "gacksung": 4
+            },
+            {
+              "id": 20102,
+              "gacksung": 4
+            },
+            {
+              "id": 20107,
+              "gacksung": 4
+            },
+            {
+              "id": 20108,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10215,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20201,
+              "gacksung": 4
+            },
+            {
+              "id": 20203,
+              "gacksung": 4
+            },
+            {
+              "id": 20204,
+              "gacksung": 4
+            },
+            {
+              "id": 20206,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10310,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20301,
+              "gacksung": 4
+            },
+            {
+              "id": 20304,
+              "gacksung": 4
+            },
+            {
+              "id": 20303,
+              "gacksung": 4
+            },
+            {
+              "id": 20307,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10404,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20401,
+              "gacksung": 4
+            },
+            {
+              "id": 20403,
+              "gacksung": 4
+            },
+            {
+              "id": 20408,
+              "gacksung": 4
+            },
+            {
+              "id": 20409,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10515,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20501,
+              "gacksung": 4
+            },
+            {
+              "id": 20506,
+              "gacksung": 4
+            },
+            {
+              "id": 20503,
+              "gacksung": 4
+            },
+            {
+              "id": 20507,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10614,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20610,
+              "gacksung": 4
+            },
+            {
+              "id": 20602,
+              "gacksung": 4
+            },
+            {
+              "id": 20603,
+              "gacksung": 4
+            },
+            {
+              "id": 20608,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10712,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20701,
+              "gacksung": 4
+            },
+            {
+              "id": 20707,
+              "gacksung": 4
+            },
+            {
+              "id": 20704,
+              "gacksung": 4
+            },
+            {
+              "id": 20706,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10811,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20801,
+              "gacksung": 4
+            },
+            {
+              "id": 20802,
+              "gacksung": 4
+            },
+            {
+              "id": 20803,
+              "gacksung": 4
+            },
+            {
+              "id": 20805,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":10915,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 20909,
+              "gacksung": 4
+            },
+            {
+              "id": 20910,
+              "gacksung": 4
+            },
+            {
+              "id": 20907,
+              "gacksung": 4
+            },
+            {
+              "id": 20908,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":11015,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 21001,
+              "gacksung": 4
+            },
+            {
+              "id": 21003,
+              "gacksung": 4
+            },
+            {
+              "id": 21005,
+              "gacksung": 4
+            },
+            {
+              "id": 21008,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":11109,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 21101,
+              "gacksung": 4
+            },
+            {
+              "id": 21103,
+              "gacksung": 4
+            },
+            {
+              "id": 21105,
+              "gacksung": 4
+            },
+            {
+              "id": 21106,
+              "gacksung": 4
+            }
+          ]
+        },
+        {
+          "personality": {
+            "id":11215,
+            "level":65,
+            "gacksung": 4,
+            "isGacksungIllust" : true
+          },
+          "egos": [
+            {
+              "id": 21202,
+              "gacksung": 4
+            },
+            {
+              "id": 21210,
+              "gacksung": 4
+            },
+            {
+              "id": 21204,
+              "gacksung": 4
+            },
+            {
+              "id": 21205,
+              "gacksung": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

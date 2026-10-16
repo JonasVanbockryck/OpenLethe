@@ -1,0 +1,399 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "cg": "10616_normal",
+      "bgm": "Backstreet",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 1,
+      "soundeffect": "SFX_Pencil_Write"
+    },
+    {
+      "id": 2,
+      "effect": "CustomCamShake:[5][9][2]",
+      "soundeffect": "SFX_Leather_Crumble_Hard"
+    },
+    {
+      "id": 3,
+      "soundeffect": "SFX_Attack_Passby_1"
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 6,
+      "effect": "CustomCamShake:[65][11][0.4]",
+      "soundeffect": "SFX_Kick_Hard, SFX_Table_Hit:delay=0.2, SFX_Wooden_Crash:delay=0.5"
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8,
+      "soundeffect": "SFX_Nanjangpan"
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 14,
+      "soundeffect": "PaperSlap3"
+    },
+    {
+      "id": 15,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 16,
+      "soundeffect": "SFX_Ceramic_Cup_Down"
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 20,
+      "soundeffect": "SFX_Newspaper_2"
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25,
+      "soundeffect": "SFX_Paper_Multi_3"
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 28,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33,
+      "soundeffect": "SFX_Pencil_Write_3"
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37,
+      "soundeffect": "SFX_Plastic_Button_One"
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 40,
+      "soundeffect": "SFX_Paper_Multi_2"
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 45,
+      "soundeffect": "SFX_Pencil_Write_2"
+    },
+    {
+      "id": 46,
+      "soundeffect": "SFX_Paper_Multi_1"
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49,
+      "soundeffect": "SFX_Hair_Care_3, SFX_Pencil_Write_3"
+    },
+    {
+      "id": 50,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 51,
+      "soundeffect": "SFX_Pencil_Write_1"
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "id": 54
+    },
+    {
+      "id": 55,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 56,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 57
+    },
+    {
+      "id": 58,
+      "soundeffect": "SFX_Pencil_Write_2"
+    },
+    {
+      "id": 59,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 60
+    },
+    {
+      "id": 61,
+      "soundeffect": "SFX_Hair_Care_3"
+    },
+    {
+      "id": 62
+    },
+    {
+      "id": 63,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 64,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 65,
+      "soundeffect": "SFX_Pencil_Write_3"
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 68,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 69,
+      "soundeffect": "SFX_Ceramic_Cup_Down"
+    },
+    {
+      "id": 70
+    },
+    {
+      "id": 71
+    },
+    {
+      "id": 72,
+      "bgm": "Backstreet:50",
+      "soundeffect": "SFX_Chair_Hard"
+    },
+    {
+      "id": 73,
+      "bgm": "Backstreet:0"
+    },
+    {
+      "id": 74,
+      "cg": "10616_gacksung:FadeIn_Continue:[0.1~0.2],white:FadeIn_Continue:[0~0.1],white:FadeOut_Continue:[0.1~0.2]",
+      "effect": "CustomCamShake:[65][11][0.4]",
+      "bgm": "Casino2",
+      "soundeffect": "SFX_Grab_The_Neck, SFX_Rope_Hard, SFX_Nanjangpan"
+    },
+    {
+      "id": 75
+    },
+    {
+      "id": 76,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 77,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 78
+    },
+    {
+      "id": 79,
+      "soundeffect": "SFX_Pencil_Write_2"
+    },
+    {
+      "id": 80
+    },
+    {
+      "id": 81,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 82,
+      "soundeffect": "SFX_Stretch_HardGrab"
+    },
+    {
+      "id": 83,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 84
+    },
+    {
+      "id": 85,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 86,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 87,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 88,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 89
+    },
+    {
+      "id": 90,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 91,
+      "soundeffect": "SFX_Jean_Crumble_Hard"
+    },
+    {
+      "id": 92,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 93
+    },
+    {
+      "id": 94
+    },
+    {
+      "id": 95,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 96,
+      "soundeffect": "SFX_5Impact_1"
+    },
+    {
+      "id": 97,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 98
+    },
+    {
+      "id": 99
+    },
+    {
+      "id": 100,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 101
+    },
+    {
+      "id": 102,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 103,
+      "soundeffect": "SFX_Rope_Hard, SFX_Black_Fire_Burn"
+    },
+    {
+      "id": 104
+    },
+    {
+      "id": 105
+    },
+    {
+      "id": 106
+    },
+    {
+      "id": 107
+    }
+  ]
+}

@@ -267,6 +267,18 @@
     {
       "id": "boss_raid_shop_infinite_item_warning_text",
       "content": "※ 선택한 재화는 다른 재화보다 교환 효율이 낮습니다.\n※ 현재 교환 가능한 다른 재화가 남아 있습니다.\n\n위 사항에도 불구하고 해당 재화로 교환하시겠습니까?"
+    },
+    {
+      "id": "boss_raid_limited_coin_converted",
+      "content": "이벤트 기간이 종료되어, 사용하지 않은 {0} {1}개가 {2} {3}개로 변환되었습니다."
+    },
+    {
+      "id": "boss_raid_ui_max_level_adjusted",
+      "content": "초과 레벨이 {0}으로 조정되었습니다."
+    },
+    {
+      "id": "boss_raid_ui_recommend_state_desc_with_max_level_adjust",
+      "content": "- 인격 : 동기화 <color=#ff0000>{1}단계</color>·레벨 <color=#ff0000>{0}</color>\n(최대 레벨 <color=#ff0000>{2}</color>)\n- E.G.O : 환상 해석 <color=#ff0000>{1}단계</color>"
     }
   ]
 }

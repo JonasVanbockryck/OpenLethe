@@ -12,3 +12,5 @@ modfiles/
 
 # Local build config (e.g. StaticDataSourceDir)
 *.user
+/.vs/OpenLethe
+/.vs

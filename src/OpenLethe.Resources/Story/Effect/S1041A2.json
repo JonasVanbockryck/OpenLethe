@@ -1,0 +1,84 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "잔느 : 7 : mode=Fade_IN:duration=2",
+      "feeling": "sad3",
+      "bg": "story_7f_dance_dark",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right,CustomCamShake:[15][2][3]",
+      "voice": "S1003V-1172",
+      "produce": "bgmEvent:BGM/Battle/Battle_Cp10_Boss_4,bgmLabel:Meursault=EGO_8,Lyrics Init:Rendezvous=#293B95,bgmTimeline:900000"
+    },
+    {
+      "id": 1,
+      "characterlist": "뫼르소:3:mode=FADE_IN",
+      "feeling": "smile",
+      "voice": "S1003V-1173"
+    },
+    {
+      "id": 2,
+      "feeling": "close",
+      "effect": "StandingMove:who=3:to=4:duration=1.2:ease=OutSine,뫼르소=smile",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-1174"
+    },
+    {
+      "id": 3,
+      "characterlist": "ALL:-1",
+      "cg": "black",
+      "effect": "CameraMoveZoom:mode=on:horizontal=0.5:duration=0:vertical=0.4:zoom=2.5:delay=0,CustomCamShake:[5][2][3]",
+      "voice": "S1003V-1175"
+    },
+    {
+      "id": 4,
+      "cg": "S1026:FadeIn_Long",
+      "effect": ",CustomCamShake:[5][2][3]",
+      "voice": "S1003V-1176"
+    },
+    {
+      "id": 5,
+      "effect": "CameraMoveZoom:mode=on:horizontal=0.45:duration=3:vertical=0.4:zoom=2.4:delay=0,CustomCamShake:[5][2][3]",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1177"
+    },
+    {
+      "id": 6,
+      "effect": "CameraMoveZoom:mode=on:horizontal=0.45:duration=3:vertical=0.4:zoom=2.3:delay=0,CustomCamShake:[5][2][3]",
+      "voice": "S1003V-1178"
+    },
+    {
+      "id": 7,
+      "effect": "CameraMoveZoom:mode=on:horizontal=-0.35:duration=1.5:vertical=0.6:zoom=2.5:delay=0,CustomCamShake:[7][2][3]",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-1179"
+    },
+    {
+      "id": 8,
+      "effect": "CameraMoveZoom:mode=on:horizontal=-0.35:duration=3:vertical=0.6:zoom=2.3:delay=0,CustomCamShake:[5][2][3]",
+      "voice": "S1003V-1180"
+    },
+    {
+      "id": 9,
+      "cg": "black",
+      "effect": "CameraMoveZoom:mode=on:horizontal=0:duration=0:vertical=0:zoom=2.4:delay=0,CustomCamShake:[5][2][3]",
+      "voice": "S1003V-1181"
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1182"
+    },
+    {
+      "id": 11,
+      "cg": "black:FadeOut_Long",
+      "effect": "CameraMoveZoom:mode=on:duration=2:vertical=0.25:zoom=1.5:delay=0,CustomCamShake:[5][2][3]",
+      "voice": "S1003V-1183"
+    },
+    {
+      "id": 12,
+      "effect": "CameraMoveZoom:mode=off:duration=2:delay=0,CustomCamShake:[5][2][3]",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-1184"
+    }
+  ]
+}

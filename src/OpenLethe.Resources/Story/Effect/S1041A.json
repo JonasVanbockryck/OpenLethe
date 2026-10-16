@@ -1,0 +1,68 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "bg": "stroy_7f_dance_sun",
+      "cg": "black",
+      "voice": "S1003V-1156",
+      "produce": "bgmEvent:BGM/Battle/Battle_Cp10_Boss_4,bgmGlobal:AbSelect=1,interludeBgmVolume:0.1=1.5",
+      "monologue": true
+    },
+    {
+      "id": 1,
+      "voice": "S1003V-1157",
+      "monologue": true
+    },
+    {
+      "id": 2,
+      "voice": "S1003V-1158",
+      "monologue": true
+    },
+    {
+      "id": 3,
+      "cg": "black:FadeOut:[0~0.2]",
+      "soundeffect": "SFX_Sunshine",
+      "voice": "S1003V-1159",
+      "monologue": true
+    },
+    {
+      "id": 4,
+      "feeling": "smile2",
+      "cg": "BlackScreen:FadeIn:[0~0.2]",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-1160",
+      "produce": "interludeBgmVolume:0.2=1.5"
+    },
+    {
+      "id": 5,
+      "feeling": "idle2",
+      "voice": "S1003V-1161"
+    },
+    {
+      "id": 6,
+      "characterlist": "뫼르소다침:5",
+      "feeling": "close",
+      "cg": "BlackScreen:FadeOut:[0~0.2]",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-1162",
+      "produce": "interludeBgmVolume:0.3=1.5"
+    },
+    {
+      "id": 7,
+      "feeling": "idle",
+      "voice": "S1003V-1163"
+    },
+    {
+      "id": 8,
+      "voice": "S1003V-1164",
+      "produce": "interludeBgmVolume:0.4=1.5"
+    },
+    {
+      "id": 9,
+      "feeling": "idle2",
+      "cg": "BlackScreen:FadeIn:[0~0.2]",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-1165"
+    }
+  ]
+}

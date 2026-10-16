@@ -1,0 +1,146 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "bg": "story_b1_escalator",
+      "bgm": "And_There",
+      "voice": "S1001V-2569",
+      "monologue": true
+    },
+    {
+      "id": 1,
+      "voice": "S1001V-2570",
+      "monologue": true
+    },
+    {
+      "id": 2,
+      "characterlist": "뫼르소 : 5 : mode=Fade_In",
+      "feeling": "close",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1001V-2571"
+    },
+    {
+      "id": 3,
+      "feeling": "idle",
+      "voice": "S1001V-2572"
+    },
+    {
+      "id": 4,
+      "voice": "S1001V-2573",
+      "monologue": true
+    },
+    {
+      "id": 5,
+      "voice": "S1001V-2574",
+      "monologue": true
+    },
+    {
+      "id": 6,
+      "voice": "S1001V-2575",
+      "monologue": true
+    },
+    {
+      "id": 7,
+      "characterlist": "그레고르:2",
+      "feeling": "surprise",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2576"
+    },
+    {
+      "id": 8,
+      "voice": "S1001V-2577",
+      "monologue": true
+    },
+    {
+      "id": 9,
+      "voice": "S1001V-2578",
+      "monologue": true
+    },
+    {
+      "id": 10,
+      "voice": "S1001V-2579",
+      "monologue": true
+    },
+    {
+      "id": 11,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1001V-2580"
+    },
+    {
+      "id": 12,
+      "voice": "S1001V-2581",
+      "monologue": true
+    },
+    {
+      "id": 13,
+      "voice": "S1001V-2582",
+      "monologue": true
+    },
+    {
+      "id": 14,
+      "voice": "S1001V-2583",
+      "monologue": true
+    },
+    {
+      "id": 15,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2584"
+    },
+    {
+      "id": 16,
+      "voice": "S1001V-2585",
+      "monologue": true
+    },
+    {
+      "id": 17,
+      "voice": "S1001V-2586",
+      "monologue": true
+    },
+    {
+      "id": 18,
+      "soundeffect": "SFXLeather_Crumble_Light",
+      "voice": "S1001V-2587"
+    },
+    {
+      "id": 19,
+      "voice": "S1001V-2588",
+      "monologue": true
+    },
+    {
+      "id": 20,
+      "voice": "S1001V-2589",
+      "monologue": true
+    },
+    {
+      "id": 21,
+      "voice": "S1001V-2590",
+      "monologue": true
+    },
+    {
+      "id": 22,
+      "characterlist": "그레고르 :-1",
+      "feeling": "sigh",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1001V-2591"
+    },
+    {
+      "id": 23,
+      "voice": "S1001V-2592",
+      "monologue": true
+    },
+    {
+      "id": 24,
+      "voice": "S1001V-2593"
+    },
+    {
+      "id": 25,
+      "voice": "S1001V-2594",
+      "monologue": true
+    },
+    {
+      "id": 26,
+      "voice": "S1001V-2595",
+      "monologue": true
+    }
+  ]
+}

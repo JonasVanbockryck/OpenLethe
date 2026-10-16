@@ -1,0 +1,131 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "뷔페어린이:5",
+      "feeling": "idle2",
+      "bg": "story_4f_lostshelter",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1565"
+    },
+    {
+      "id": 1,
+      "feeling": "surprise",
+      "emotion": "Question",
+      "voice": "S1002V-1566"
+    },
+    {
+      "id": 2,
+      "characterlist": "ALL:-1,돈키호테:5",
+      "feeling": "surprise2",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-1567"
+    },
+    {
+      "id": 3,
+      "feeling": "smile",
+      "emotion": "Fun",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1568"
+    },
+    {
+      "id": 4,
+      "characterlist": "뷔페어린이:5",
+      "feeling": "idle2",
+      "voice": "S1002V-1569"
+    },
+    {
+      "id": 5,
+      "feeling": "sad2",
+      "emotion": "Question",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1570"
+    },
+    {
+      "id": 6,
+      "characterlist": "돈키호테:5",
+      "feeling": "idle3",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-1571"
+    },
+    {
+      "id": 7,
+      "feeling": "sad2",
+      "voice": "S1002V-1572"
+    },
+    {
+      "id": 8,
+      "feeling": "sad3",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1573"
+    },
+    {
+      "id": 9,
+      "characterlist": "뷔페어린이:5",
+      "feeling": "idle2",
+      "emotion": "Question",
+      "voice": "S1002V-1574"
+    },
+    {
+      "id": 10,
+      "characterlist": "돈키호테:5",
+      "feeling": "idle",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1575"
+    },
+    {
+      "id": 11,
+      "voice": "S1002V-1576"
+    },
+    {
+      "id": 12,
+      "feeling": "close",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-1577"
+    },
+    {
+      "id": 13,
+      "characterlist": "뷔페어린이:5",
+      "feeling": "idle2",
+      "voice": "S1002V-1580"
+    },
+    {
+      "id": 14,
+      "cg": "S1007:FadeIn"
+    },
+    {
+      "id": 15,
+      "effect": "CameraMoveZoom:mode=on:duration=3:vertical=-1.3:zoom=3.5:delay=0"
+    },
+    {
+      "id": 16,
+      "characterlist": "뷔페어린이신발:5",
+      "feeling": "smile",
+      "effect": "CameraMoveZoom:mode=on:duration=4:delay=0",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-1581"
+    },
+    {
+      "id": 17,
+      "characterlist": "돈키호테:8",
+      "feeling": "smile",
+      "soundeffect": "SFX_Jean_Crumble_Hard",
+      "voice": "S1002V-1582"
+    },
+    {
+      "id": 18,
+      "characterlist": "ALL:-1,단테:2,뫼르소:5",
+      "cg": "S1007:FadeOut",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 19,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 20,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1585"
+    }
+  ]
+}

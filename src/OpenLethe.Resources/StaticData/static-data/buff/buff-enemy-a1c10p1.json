@@ -199,8 +199,10 @@
       "maxStack": 999,
       "list": [
         {
-          "ability": "RougeThreeCocoonShield",
-          "value": 1
+          "ability": "RougeThreeCocoonShield"
+        },
+        {
+          "ability": "CopyFakeShieldToAbnormality"
         }
       ],
       "categoryKeywordList": [

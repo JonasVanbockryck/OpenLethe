@@ -1,0 +1,302 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "bg": "blackbg",
+      "bgm": "Precious_Than_Your_Brain:10"
+    },
+    {
+      "id": 1
+    },
+    {
+      "id": 2,
+      "bgm": "Precious_Than_Your_Brain:20"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4,
+      "bgm": "Precious_Than_Your_Brain:30"
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6,
+      "bgm": "Precious_Than_Your_Brain:40"
+    },
+    {
+      "id": 7,
+      "bgm": "Precious_Than_Your_Brain:0",
+      "soundeffect": "SFX_Chicken_Bite"
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9,
+      "cg": "11016_normal:FadeIn",
+      "bgm": "Precious_Than_Your_Brain:100",
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 15,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 22,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 28,
+      "soundeffect": "SFX_Walk_Wood_2StepONly"
+    },
+    {
+      "id": 29,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33,
+      "cg": "11016_normal:FadeOut"
+    },
+    {
+      "id": 34,
+      "cg": "10315_normal:FadeIn",
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36,
+      "cg": "11016_normal:FadeIn,10315_normal:FadeOut",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42,
+      "cg": "11016_normal:FadeOut,10315_normal:FadeIn",
+      "soundeffect": "SFX_Walk_Wood_2StepONly"
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44,
+      "soundeffect": "SFX_Mid_Armor_Shiver"
+    },
+    {
+      "id": 45,
+      "cg": "11016_normal:FadeIn,10315_normal:FadeOut",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "id": 54,
+      "cg": "11016_normal:FadeOut"
+    },
+    {
+      "id": 55,
+      "soundeffect": "SFX_Execution_9"
+    },
+    {
+      "id": 56
+    },
+    {
+      "id": 57,
+      "soundeffect": "SFX_Execution_11"
+    },
+    {
+      "id": 58
+    },
+    {
+      "id": 59
+    },
+    {
+      "id": 60
+    },
+    {
+      "id": 61
+    },
+    {
+      "id": 62,
+      "cg": "11016_gacksung:FadeIn",
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 63
+    },
+    {
+      "id": 64
+    },
+    {
+      "id": 65,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67
+    },
+    {
+      "id": 68
+    },
+    {
+      "id": 69
+    },
+    {
+      "id": 70,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 71
+    },
+    {
+      "id": 72,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 73
+    },
+    {
+      "id": 74
+    },
+    {
+      "id": 75,
+      "soundeffect": "SFX_Muscle_Over_1"
+    },
+    {
+      "id": 76,
+      "cg": "black:FadeIn",
+      "soundeffect": "SFX_Bite_Flesh"
+    },
+    {
+      "id": 77
+    },
+    {
+      "id": 78
+    },
+    {
+      "id": 79
+    },
+    {
+      "id": 80
+    },
+    {
+      "id": 81
+    },
+    {
+      "id": 82
+    },
+    {
+      "id": 83,
+      "soundeffect": "SFX_Walk_Iron"
+    }
+  ]
+}

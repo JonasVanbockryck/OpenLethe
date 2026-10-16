@@ -3,7 +3,7 @@
     {
       "id": 1,
       "bgm": "Backstreet_LOR",
-      "soundeffect": "SFX_Tape_Play"
+      "soundeffect": "SFX_Tape_Play, SFX_Phone_GetCall"
     },
     {
       "id": 2,
@@ -109,26 +109,32 @@
       "soundeffect": "SFX_Walk_Iron_Once"
     },
     {
-      "id": 29
+      "id": 29,
+      "bgm": "Backstreet_LOR:80"
     },
     {
-      "id": 30
+      "id": 30,
+      "bgm": "Backstreet_LOR:60"
     },
     {
-      "id": 31
+      "id": 31,
+      "bgm": "Backstreet_LOR:50"
     },
     {
       "id": 32,
       "cg": "10216_normal:FadeOut",
+      "bgm": "Backstreet_LOR:0",
       "soundeffect": "SFX_Tape_Stop"
     },
     {
       "id": 33,
+      "bgm": "LOR_StoryNervous",
       "soundeffect": "SFX_Tape_Play"
     },
     {
       "id": 34,
-      "cg": "10216_gacksung:FadeIn_Continue"
+      "cg": "10216_gacksung:FadeIn_Continue",
+      "soundeffect": "SFX_Parry_Large, SFX_Parry_Large:delay=0.3, SFX_LCE_Fire_2:delay=0.3, SFX_Fire_Water_Sizzle:delay=0.3"
     },
     {
       "id": 35
@@ -201,7 +207,7 @@
     {
       "id": 53,
       "bg": "blackbg",
-      "soundeffect": "SFX_Flesh_5, SFX_Blood_Splash"
+      "soundeffect": "SFX_Phone_GetCall, SFX_Tape_Play,SFX_Flesh_5:delay=0.6, SFX_Blood_Splash:delay=0.6"
     }
   ]
 }

@@ -1,0 +1,348 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "bg": "story_4f_rougebag",
+      "cg": "BlackScreen",
+      "soundeffect": "SFX_Sunshine",
+      "voice": "S1002V-1635"
+    },
+    {
+      "id": 1,
+      "voice": "S1002V-1636"
+    },
+    {
+      "id": 2,
+      "characterlist": "단테:8",
+      "emotion": "Exclame",
+      "cg": "BlackScreen:FadeOut",
+      "effect": "CustomCamShake:[35][15][0.4]",
+      "voice": "D_Surprise"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5,
+      "characterlist": "뫼르소:2",
+      "feeling": "angry",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1640"
+    },
+    {
+      "id": 6,
+      "feeling": "angry2",
+      "voice": "S1002V-1641"
+    },
+    {
+      "id": 7,
+      "feeling": "close",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1642"
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10,
+      "cg": "BlackScreen:FadeIn",
+      "voice": "S1002V-1645"
+    },
+    {
+      "id": 11,
+      "voice": "S1002V-1646"
+    },
+    {
+      "id": 12,
+      "characterlist": "ALL:-1",
+      "bg": "blackbg",
+      "cg": "BlackScreen:off",
+      "voice": "S1002V-1646-1"
+    },
+    {
+      "id": 13,
+      "cg": "S1018:FadeIn",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1646-2"
+    },
+    {
+      "id": 14,
+      "voice": "S1002V-1647"
+    },
+    {
+      "id": 15,
+      "cg": "S1017:FadeIn_Long",
+      "voice": "S1002V-1648"
+    },
+    {
+      "id": 16,
+      "feeling": "angry",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1649"
+    },
+    {
+      "id": 17,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1650"
+    },
+    {
+      "id": 18,
+      "feeling": "close",
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-1654"
+    },
+    {
+      "id": 19,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1655"
+    },
+    {
+      "id": 20,
+      "voice": "S1002V-1656"
+    },
+    {
+      "id": 21,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1657"
+    },
+    {
+      "id": 22,
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1658"
+    },
+    {
+      "id": 23,
+      "voice": "S1002V-1659"
+    },
+    {
+      "id": 24,
+      "voice": "S1002V-1643"
+    },
+    {
+      "id": 25,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1661"
+    },
+    {
+      "id": 26,
+      "voice": "S1002V-1662"
+    },
+    {
+      "id": 27,
+      "voice": "S1002V-1663"
+    },
+    {
+      "id": 28,
+      "feeling": "idle",
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1664"
+    },
+    {
+      "id": 29,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1665"
+    },
+    {
+      "id": 30,
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1666"
+    },
+    {
+      "id": 31,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1667"
+    },
+    {
+      "id": 32,
+      "feeling": "angry",
+      "effect": "CustomCamShake:[3][26][0.5]",
+      "voice": "S1002V-1668"
+    },
+    {
+      "id": 33,
+      "effect": "CustomCamShake:[4][16][0.5]",
+      "voice": "S1002V-1669"
+    },
+    {
+      "id": 34,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1670"
+    },
+    {
+      "id": 35,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1671"
+    },
+    {
+      "id": 36,
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1672"
+    },
+    {
+      "id": 37,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1673"
+    },
+    {
+      "id": 38,
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1674"
+    },
+    {
+      "id": 39,
+      "feeling": "idle",
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1675"
+    },
+    {
+      "id": 40,
+      "voice": "S1002V-1676"
+    },
+    {
+      "id": 41,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1677"
+    },
+    {
+      "id": 42,
+      "feeling": "close",
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1678"
+    },
+    {
+      "id": 43,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1679"
+    },
+    {
+      "id": 44,
+      "feeling": "angry",
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1680"
+    },
+    {
+      "id": 45,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1681"
+    },
+    {
+      "id": 46,
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1682"
+    },
+    {
+      "id": 47,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1683"
+    },
+    {
+      "id": 48,
+      "voice": "S1002V-1684"
+    },
+    {
+      "id": 49,
+      "feeling": "close",
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1685"
+    },
+    {
+      "id": 50,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1686"
+    },
+    {
+      "id": 51,
+      "feeling": "idle",
+      "cg": "BlackScreen:FadeOut:[0~0.3],S1018:FadeIn",
+      "voice": "S1002V-1687"
+    },
+    {
+      "id": 52,
+      "feeling": "angry",
+      "soundeffect": "SFX_Cotton_Crumble",
+      "voice": "S1002V-1688"
+    },
+    {
+      "id": 53,
+      "voice": "S1002V-1689"
+    },
+    {
+      "id": 54,
+      "cg": "black",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-1690"
+    },
+    {
+      "id": 55,
+      "characterlist": "단테 : 8, 뫼르소 : 2",
+      "feeling": "angry",
+      "bg": "story_4f_rougebag",
+      "cg": "ALL:FadeOut:[0~0.5]",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-1691"
+    },
+    {
+      "id": 56,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1692"
+    },
+    {
+      "id": 57,
+      "voice": "S1002V-1693"
+    },
+    {
+      "id": 58,
+      "voice": "S1002V-1694"
+    },
+    {
+      "id": 59,
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "voice": "S1002V-1695"
+    },
+    {
+      "id": 60,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1696"
+    },
+    {
+      "id": 61,
+      "voice": "S1002V-1697"
+    },
+    {
+      "id": 62,
+      "emotion": "Question",
+      "cg": "BlackScreen:FadeOut:[0~0.3]",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "D_Tok"
+    },
+    {
+      "id": 63,
+      "feeling": "angry2",
+      "voice": "S1002V-1699"
+    },
+    {
+      "id": 64,
+      "emotion": "Sweat",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 65,
+      "cg": "BlackScreen:FadeIn:[0~0.3]",
+      "voice": "S1002V-1701"
+    },
+    {
+      "id": 66,
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-1702"
+    }
+  ]
+}

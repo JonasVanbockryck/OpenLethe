@@ -1,0 +1,131 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "뷔페어린이옷:5",
+      "bg": "story_anthouse",
+      "effect": "Feeling:뷔페어린이옷=idle2"
+    },
+    {
+      "id": 1,
+      "characterlist": "단테:5",
+      "emotion": "Sweat",
+      "voice": "D_Wick"
+    },
+    {
+      "id": 2,
+      "characterlist": "이스마엘:3",
+      "feeling": "smile",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-2856"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5,
+      "characterlist": "ALL:-1,뷔페어린이옷:5",
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-2859"
+    },
+    {
+      "id": 6,
+      "voice": "S1002V-2860"
+    },
+    {
+      "id": 7,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-2861"
+    },
+    {
+      "id": 8,
+      "voice": "S1002V-2862"
+    },
+    {
+      "id": 9,
+      "feeling": "sad2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-2863"
+    },
+    {
+      "id": 10,
+      "characterlist": "이스마엘:5",
+      "feeling": "angry",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-2864"
+    },
+    {
+      "id": 11,
+      "feeling": "sad2",
+      "voice": "S1002V-2865"
+    },
+    {
+      "id": 12,
+      "characterlist": "ALL:-1,뷔페어린이옷:5",
+      "feeling": "sad",
+      "effect": "CustomCamShake:[6][20][1]",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-2854"
+    },
+    {
+      "id": 13,
+      "characterlist": "이스마엘:3,이상:8",
+      "feeling": "sink2",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-2867"
+    },
+    {
+      "id": 14,
+      "feeling": "idle3",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1002V-2868"
+    },
+    {
+      "id": 15,
+      "characterlist": "뷔페어린이옷:5",
+      "effect": "Feeling:뷔페어린이옷=idle2"
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17,
+      "characterlist": "ALL:-1,이스마엘:5",
+      "feeling": "surprise",
+      "emotion": "Exclame",
+      "soundeffect": "SFX_Cocoon_Scream_Far, SFX_Building_Destroy_Far_1",
+      "voice": "S1002V-2871"
+    },
+    {
+      "id": 18,
+      "characterlist": "이상:8",
+      "feeling": "shock2",
+      "voice": "S1002V-2872"
+    },
+    {
+      "id": 19,
+      "characterlist": "ALL:-1,뷔페어린이옷:5",
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-2873"
+    },
+    {
+      "id": 20,
+      "voice": "S1002V-2874"
+    },
+    {
+      "id": 21,
+      "characterlist": "ALL:-1,단테:3,뫼르소:7",
+      "voice": "D_Click"
+    },
+    {
+      "id": 22,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-2876"
+    }
+  ]
+}

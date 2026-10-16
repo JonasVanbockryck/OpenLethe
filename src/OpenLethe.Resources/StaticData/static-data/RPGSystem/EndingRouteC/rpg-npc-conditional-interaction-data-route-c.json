@@ -7,6 +7,22 @@
       "conditionValue": "C1901_C1",
       "interactionType": "Dialogue",
       "interactionKey": "D1014_C1"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 2,
+      "conditionType": "Deadscene",
+      "conditionValue": "N999997C",
+      "interactionType": "Event",
+      "interactionKey": "ERSCW05_C1"
+    },
+    {
+      "npcKey": "N101001",
+      "order": 3,
+      "conditionType": "Dialogue",
+      "conditionValue": "DRSCW02_C1",
+      "interactionType": "Dialogue",
+      "interactionKey": "D1014_C1"
     }
   ]
 }

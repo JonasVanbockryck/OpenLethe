@@ -584,7 +584,8 @@
                   "desc": "[OnSucceedAttack] 다음 턴에 파열 2 부여"
                 }
               ]
-            },{
+            },
+            {
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 다음 턴에 파열 2 부여"
@@ -1793,7 +1794,7 @@
             {
               "coindescs": [
                 {
-                  "desc": "[OnSucceedAttack] 진동 횟수 2 증가"
+                  "desc": "[OnSucceedAttack] 진동 8 부여"
                 },
                 {
                   "desc": "[OnSucceedAttackHead] 진동 폭발"
@@ -1867,7 +1868,7 @@
         {
           "level": 1,
           "name": "쉼 없는 탐식",
-          "desc": "[WhenUse] 대상에게 파열 이 있으면 회복량 +50%",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -2016,7 +2017,7 @@
         {
           "level": 1,
           "name": "날 선 오만",
-          "desc": "자신의 호흡 이 5 이상일 때 코인 위력 +3",
+          "desc": "",
           "coinlist": [
             {
               "coindescs": [
@@ -2154,7 +2155,8 @@
                   "desc": "[OnSucceedAttack] 다음 턴에 파열 2 부여"
                 }
               ]
-            },{
+            },
+            {
               "coindescs": [
                 {
                   "desc": "[OnSucceedAttack] 다음 턴에 파열 2 부여"

@@ -1,0 +1,732 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "간수:7",
+      "bg": "story_wardenField",
+      "effect": "CustomCamShake:[10][15][2],",
+      "soundeffect": "SFX_Sunshine",
+      "produce": "initProduce:a1c10p3_WardenPhase2.prefab,disableBG:on,act:0"
+    },
+    {
+      "id": 1,
+      "characterlist": "간수:-1:mode=FADE_OUT:duration=1"
+    },
+    {
+      "id": 2,
+      "produce": "disableUI:on,cutscene:1"
+    },
+    {
+      "id": 3,
+      "characterlist": "신부거인 : 5 : mode=Fade_In:duration=1",
+      "effect": "CustomCamShake:[3][10][2],",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-211",
+      "produce": "disableUI:off,act:2"
+    },
+    {
+      "id": 4,
+      "characterlist": "ALL:-1,단테 : 5 ",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 5,
+      "characterlist": "신부거인:5",
+      "voice": "S1003V-213",
+      "produce": "disableBG:off"
+    },
+    {
+      "id": 6,
+      "characterlist": "단테:5,파우스트:7",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=down",
+      "soundeffect": "SFX_Scene_Change_Whoosh_Slow",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 7,
+      "feeling": "idle3",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1003V-215"
+    },
+    {
+      "id": 8,
+      "characterlist": "ALL:-1, 신부거인:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Walk_Iron_Once,SFX_Scene_Change_Whoosh",
+      "voice": "S1003V-216"
+    },
+    {
+      "id": 9,
+      "soundeffect": "SFX_Paper_Fly",
+      "voice": "S1003V-217"
+    },
+    {
+      "id": 10,
+      "characterlist": "신부거인:-1:mode=FADE_OUT"
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12,
+      "characterlist": "ALL:-1,뫼르소:5,단테:2",
+      "feeling": "angry",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-220"
+    },
+    {
+      "id": 13,
+      "characterlist": "신부거인:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "voice": "S1003V-221"
+    },
+    {
+      "id": 14,
+      "characterlist": "ALL:-1,단테:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=down",
+      "voice": "D_Tok"
+    },
+    {
+      "id": 15,
+      "characterlist": "오티스:2",
+      "feeling": "angry",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-223"
+    },
+    {
+      "id": 16,
+      "characterlist": "ALL:-1,신부거인:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-224"
+    },
+    {
+      "id": 17,
+      "voice": "S1003V-225"
+    },
+    {
+      "id": 18,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-226"
+    },
+    {
+      "id": 19,
+      "voice": "S1003V-227"
+    },
+    {
+      "id": 20,
+      "characterlist": "ALL:-1,싱클레어 : 5",
+      "feeling": "surprise3",
+      "emotion": "Exclame",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=down",
+      "soundeffect": "SFX_Walk_Iron_Once,SFX_Scene_Change_Whoosh",
+      "voice": "S1003V-228"
+    },
+    {
+      "id": 21,
+      "characterlist": "신부거인:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-229"
+    },
+    {
+      "id": 22,
+      "effect": "CustomCamShake:[10][15][6],",
+      "voice": "S1003V-230"
+    },
+    {
+      "id": 23,
+      "characterlist": "홍루 : 5",
+      "feeling": "idle5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=down",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1003V-231"
+    },
+    {
+      "id": 24,
+      "characterlist": "신부거인:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1003V-232"
+    },
+    {
+      "id": 25,
+      "voice": "S1003V-233"
+    },
+    {
+      "id": 26,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-234"
+    },
+    {
+      "id": 27,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-235"
+    },
+    {
+      "id": 28,
+      "voice": "S1003V-236"
+    },
+    {
+      "id": 29,
+      "characterlist": "싱클레어:5",
+      "feeling": "angry",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=down",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-237"
+    },
+    {
+      "id": 30,
+      "characterlist": "ALL : -1, 신부거인 : 5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-238"
+    },
+    {
+      "id": 31,
+      "characterlist": "신부거인 : -1 :mode=Fade_Out:duration=2",
+      "soundeffect": "SFX_Walk_Iron",
+      "voice": "S1003V-239"
+    },
+    {
+      "id": 32,
+      "characterlist": "단테 : 5",
+      "emotion": "Exclame",
+      "voice": "D_Angry"
+    },
+    {
+      "id": 33,
+      "characterlist": "그레고르 : 7",
+      "effect": "ClosedEyes:mode=on:type=side:duration=0.2,CustomCamShake:[15][10][0.2]",
+      "soundeffect": "SFX_Large_Metal_Door",
+      "voice": "S1003V-241"
+    },
+    {
+      "id": 34,
+      "characterlist": "ALL : -1, 뫼르소엄마 : 5",
+      "cg": "S1006_1:FadeIn:[0~0.2]",
+      "effect": "ClosedEyes:mode=off:type=side:duration=2:delay=0.2,CustomCamShake:[3][10][3]",
+      "bgm": "Sisyphe_Emporium:0",
+      "soundeffect": "SFX_Scene_Change_Whoosh",
+      "voice": "S1003V-242"
+    },
+    {
+      "id": 35,
+      "characterlist": "ALL : -1, 신부거인 : 5",
+      "cg": "BlackScreen:FadeIn",
+      "voice": "S1003V-243"
+    },
+    {
+      "id": 36,
+      "characterlist": "ALL : -1, 뫼르소엄마 : 5",
+      "cg": "BlackScreen:FadeOut,S1020_1:FadeIn",
+      "effect": "CameraMoveZoom:mode=on:horizontal=-1.5:duration=0:vertical=0.1:zoom=6:delay=0, CustomCamShake:[10][25][3]",
+      "soundeffect": "SFX_Scene_Change_Whoosh, SFX_Rope_Hard",
+      "voice": "S1003V-244"
+    },
+    {
+      "id": 37,
+      "characterlist": "ALL : -1, 뫼르소 : 5",
+      "bgm": "Afterlife",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-245"
+    },
+    {
+      "id": 38,
+      "cg": "black",
+      "voice": "S1003V-246",
+      "monologue": true
+    },
+    {
+      "id": 39,
+      "cg": "BlackScreen:FadeIn",
+      "effect": "CameraMoveZoom:mode=on:zoom=1:delay=0:duration=0,CustomCamShake:[25][15][0.3]",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-247"
+    },
+    {
+      "id": 40,
+      "voice": "S1003V-248"
+    },
+    {
+      "id": 41,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-249"
+    },
+    {
+      "id": 42,
+      "voice": "S1003V-250"
+    },
+    {
+      "id": 43,
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1003V-251"
+    },
+    {
+      "id": 44,
+      "characterlist": "ALL:-1",
+      "bg": "blackbg",
+      "cg": "BlackScreen:FadeOut,ALL:off",
+      "voice": "S1003V-252",
+      "monologue": true
+    },
+    {
+      "id": 45,
+      "soundeffect": "SFX_Window_Close_Multi",
+      "voice": "S1003V-253",
+      "monologue": true
+    },
+    {
+      "id": 46,
+      "soundeffect": "SFX_Curtain_Heavy",
+      "voice": "S1003V-254",
+      "monologue": true
+    },
+    {
+      "id": 47,
+      "characterlist": "과거뫼르소:1:mode=FADE_IN",
+      "bg": "story_house_dark",
+      "voice": "S1003V-255"
+    },
+    {
+      "id": 48,
+      "characterlist": "뫼르소엄마안경 : 9:mode=FADE_IN",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-256"
+    },
+    {
+      "id": 49,
+      "voice": "S1003V-257"
+    },
+    {
+      "id": 50,
+      "voice": "S1003V-258",
+      "monologue": true
+    },
+    {
+      "id": 51,
+      "characterlist": "ALL:-1,뫼르소엄마안경:5",
+      "voice": "S1003V-259",
+      "monologue": true
+    },
+    {
+      "id": 52,
+      "characterlist": "ALL:-1",
+      "voice": "S1003V-260",
+      "monologue": true
+    },
+    {
+      "id": 53,
+      "cg": "S1005_2:FadeIn:[0~1]",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-261"
+    },
+    {
+      "id": 54,
+      "voice": "S1003V-262"
+    },
+    {
+      "id": 55,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-263"
+    },
+    {
+      "id": 56,
+      "cg": "S1005_1:FadeIn:[0~0.3]",
+      "effect": "CustomCamShake:[25][10][0.5]",
+      "voice": "S1003V-264"
+    },
+    {
+      "id": 57,
+      "voice": "S1003V-265",
+      "monologue": true
+    },
+    {
+      "id": 58,
+      "effect": "CustomCamShake:[8][20][1]",
+      "voice": "S1003V-266"
+    },
+    {
+      "id": 59,
+      "effect": "CustomCamShake:[5][20][2]",
+      "voice": "S1003V-267"
+    },
+    {
+      "id": 60,
+      "effect": "CustomCamShake:[3][20][3]",
+      "voice": "S1003V-268"
+    },
+    {
+      "id": 61,
+      "voice": "S1003V-269",
+      "monologue": true
+    },
+    {
+      "id": 62,
+      "voice": "S1003V-270",
+      "monologue": true
+    },
+    {
+      "id": 63,
+      "voice": "S1003V-271",
+      "monologue": true
+    },
+    {
+      "id": 64,
+      "voice": "S1003V-272",
+      "monologue": true
+    },
+    {
+      "id": 65,
+      "voice": "S1003V-273",
+      "monologue": true
+    },
+    {
+      "id": 66,
+      "cg": "S1013 : FadeIn",
+      "voice": "S1003V-274",
+      "monologue": true
+    },
+    {
+      "id": 67,
+      "voice": "S1003V-275",
+      "monologue": true
+    },
+    {
+      "id": 68,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-276"
+    },
+    {
+      "id": 69,
+      "voice": "S1003V-277"
+    },
+    {
+      "id": 70,
+      "voice": "S1003V-278"
+    },
+    {
+      "id": 71,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-279"
+    },
+    {
+      "id": 72,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-280"
+    },
+    {
+      "id": 73,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1003V-281"
+    },
+    {
+      "id": 74,
+      "voice": "S1003V-282"
+    },
+    {
+      "id": 75,
+      "voice": "S1003V-283",
+      "monologue": true
+    },
+    {
+      "id": 76,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-284"
+    },
+    {
+      "id": 77,
+      "voice": "S1003V-285"
+    },
+    {
+      "id": 78,
+      "cg": "S1012 : FadeIn:[0~0.3]_Continue",
+      "voice": "S1003V-286",
+      "monologue": true
+    },
+    {
+      "id": 79,
+      "voice": "S1003V-287",
+      "monologue": true
+    },
+    {
+      "id": 80,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-288"
+    },
+    {
+      "id": 81,
+      "voice": "S1003V-289"
+    },
+    {
+      "id": 82,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-290"
+    },
+    {
+      "id": 83,
+      "voice": "S1003V-291"
+    },
+    {
+      "id": 84,
+      "voice": "S1003V-292",
+      "monologue": true
+    },
+    {
+      "id": 85,
+      "cg": "BlackScreen",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-293"
+    },
+    {
+      "id": 86,
+      "cg": "BlackScreen:FadeOut,S1006_1 : FadeIn",
+      "effect": "CustomCamShake:[10][20][0.5]",
+      "voice": "S1003V-294"
+    },
+    {
+      "id": 87,
+      "effect": "CustomCamShake:[3][20][3]",
+      "voice": "S1003V-295"
+    },
+    {
+      "id": 88,
+      "voice": "S1003V-296",
+      "monologue": true
+    },
+    {
+      "id": 89,
+      "voice": "S1003V-297",
+      "monologue": true
+    },
+    {
+      "id": 90,
+      "voice": "S1003V-298",
+      "monologue": true
+    },
+    {
+      "id": 91,
+      "voice": "S1003V-299",
+      "monologue": true
+    },
+    {
+      "id": 92,
+      "characterlist": "뫼르소:5",
+      "feeling": "close",
+      "voice": "S1003V-300"
+    },
+    {
+      "id": 93,
+      "cg": "BlackScreen",
+      "voice": "S1003V-301"
+    },
+    {
+      "id": 94,
+      "characterlist": "ALL:-1",
+      "bg": "blackbg",
+      "cg": "BlackScreen:FadeOut,S1006_1 : FadeIn",
+      "voice": "S1003V-302",
+      "monologue": true
+    },
+    {
+      "id": 95,
+      "voice": "S1003V-303",
+      "monologue": true
+    },
+    {
+      "id": 96,
+      "voice": "S1003V-304",
+      "monologue": true
+    },
+    {
+      "id": 97,
+      "voice": "S1003V-305",
+      "monologue": true
+    },
+    {
+      "id": 98,
+      "voice": "S1003V-306",
+      "monologue": true
+    },
+    {
+      "id": 99,
+      "soundeffect": "SFX_Door_Squeak",
+      "voice": "S1003V-307",
+      "monologue": true
+    },
+    {
+      "id": 100,
+      "characterlist": "뫼르소엄마아픔:5",
+      "bg": "story_innerroom",
+      "cg": "ALL:off,black:FadeIn:[1~2.5]",
+      "soundeffect": "SFX_Chair_Hard",
+      "voice": "S1003V-308"
+    },
+    {
+      "id": 101,
+      "cg": "black:off,black:FadeIn:[1~2.5]",
+      "soundeffect": "SFX_Human_Fall_Lot",
+      "voice": "S1003V-309"
+    },
+    {
+      "id": 102,
+      "characterlist": "ALL:-1",
+      "voice": "S1003V-310",
+      "monologue": true
+    },
+    {
+      "id": 103,
+      "voice": "S1003V-311",
+      "monologue": true
+    },
+    {
+      "id": 104,
+      "voice": "S1003V-312",
+      "monologue": true
+    },
+    {
+      "id": 105,
+      "voice": "S1003V-313",
+      "monologue": true
+    },
+    {
+      "id": 106,
+      "cg": "S1006_1 : FadeIn",
+      "effect": "CustomCamShake:[5][20][3]",
+      "voice": "S1003V-314"
+    },
+    {
+      "id": 107,
+      "cg": "black",
+      "voice": "S1003V-315",
+      "monologue": true
+    },
+    {
+      "id": 108,
+      "voice": "S1003V-316",
+      "monologue": true
+    },
+    {
+      "id": 109,
+      "voice": "S1003V-317",
+      "monologue": true
+    },
+    {
+      "id": 110,
+      "voice": "S1003V-318",
+      "monologue": true
+    },
+    {
+      "id": 111,
+      "voice": "S1003V-319",
+      "monologue": true
+    },
+    {
+      "id": 112,
+      "characterlist": "과거뫼르소:5",
+      "feeling": "sick2",
+      "bg": "story_house_dark",
+      "cg": "ALL:off",
+      "voice": "S1003V-320"
+    },
+    {
+      "id": 113,
+      "cg": "black:FadeIn:[0~3]",
+      "voice": "S1003V-321",
+      "monologue": true
+    },
+    {
+      "id": 114,
+      "voice": "S1003V-322",
+      "monologue": true
+    },
+    {
+      "id": 115,
+      "cg": "S1022_2:FadeIn",
+      "voice": "S1003V-323"
+    },
+    {
+      "id": 116,
+      "voice": "S1003V-324",
+      "monologue": true
+    },
+    {
+      "id": 117,
+      "voice": "S1003V-325",
+      "monologue": true
+    },
+    {
+      "id": 118,
+      "cg": "S1022_1:FadeIn_Continue",
+      "voice": "S1003V-326",
+      "monologue": true
+    },
+    {
+      "id": 119,
+      "characterlist": "뫼르소 : 5 : mode=Fade_In",
+      "feeling": "shock2",
+      "bg": "story_wardenField",
+      "cg": "ALL:off",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-327"
+    },
+    {
+      "id": 120,
+      "characterlist": "신부거인:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-328"
+    },
+    {
+      "id": 121,
+      "voice": "S1003V-329"
+    },
+    {
+      "id": 122,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-330"
+    },
+    {
+      "id": 123,
+      "voice": "S1003V-331"
+    },
+    {
+      "id": 124,
+      "cg": "black",
+      "voice": "S1003V-332",
+      "monologue": true
+    },
+    {
+      "id": 125,
+      "voice": "S1003V-333",
+      "monologue": true
+    },
+    {
+      "id": 126,
+      "produce": "disableBG:on,disableUI:on,cutscene:3"
+    },
+    {
+      "id": 127,
+      "cg": "black:off",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=up,CustomCamShake:[5][20][3]",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-334",
+      "produce": "disableUI:off,act:4,battleBgm:Battle_Cp10_Boss_8"
+    },
+    {
+      "id": 128,
+      "voice": "S1003V-335"
+    },
+    {
+      "id": 129,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-336"
+    },
+    {
+      "id": 130,
+      "effect": "CustomCamShake:[35][14][0.3]",
+      "voice": "S1003V-337",
+      "produce": "actWait:5"
+    }
+  ]
+}

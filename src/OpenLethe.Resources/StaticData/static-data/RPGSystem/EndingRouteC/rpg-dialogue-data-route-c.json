@@ -29,6 +29,26 @@
       "key": "D1902_C1",
       "trackCompletion": false,
       "choiceKeys": ["DC11_C1", "DC12_C1", "DC13_C1", "DC15_C1", "DC14"]
+    },
+    {
+      "key": "DRSCW01_C1",
+      "trackCompletion": false,
+      "choiceKeys": ["DCRSCW01_C1", "DCRSCW02_C1"]
+    },
+    {
+      "key": "DRSCW02_C1",
+      "trackCompletion": true,
+      "choiceKeys": []
+    },
+    {
+      "key": "DRSCW03_C1",
+      "trackCompletion": false,
+      "choiceKeys": []
+    },
+    {
+      "key": "DRSCW04_C1",
+      "trackCompletion": false,
+      "choiceKeys": ["DCRSCW01_C1", "DCRSCW02_C1"]
     }
   ]
 }

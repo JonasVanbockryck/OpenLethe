@@ -43,6 +43,60 @@
       "eventKey": "EC2-STORY",
       "activeCondition": "WinBattle",
       "activeConditionValue": "11036"
+    },
+    {
+      "id": 91901201,
+      "eventKey": "ERSCW01_C1",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "DRSCW02_C1"
+    },
+    {
+      "id": 91901202,
+      "eventKey": "ERSCW02_C1",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F9990C-1",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "ERSCW01_C1"
+    },
+    {
+      "id": 91901203,
+      "eventKey": "ERSCW02_C1",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F9990A_C-1A",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "ERSCW01_C1"
+    },
+    {
+      "id": 91901204,
+      "eventKey": "ERSCW02_C1",
+      "activeCondition": "EnterFloor",
+      "activeConditionValue": "F9990B_C-1B",
+      "passiveCondition1": "EventCompleted",
+      "passiveConditionValue1": "ERSCW01_C1"
+    },
+    {
+      "id": 91901205,
+      "eventKey": "ERSCW03_C1",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": "F9990C-1"
+    },
+    {
+      "id": 91901206,
+      "eventKey": "ERSCW03_C1",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": "F9990A_C-1A"
+    },
+    {
+      "id": 91901207,
+      "eventKey": "ERSCW03_C1",
+      "activeCondition": "ExitFloor",
+      "activeConditionValue": "F9990B_C-1B"
+    },
+    {
+      "id": 91901208,
+      "eventKey": "ERSCW03_C1",
+      "activeCondition": "WinBattle",
+      "activeConditionValue": "11036"
     }
   ]
 }

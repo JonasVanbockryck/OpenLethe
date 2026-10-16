@@ -11334,6 +11334,7 @@
           "range" : 8,
           "arearange" : 2.5,
           "skillMotion": "S4",
+          "specialDuelIndex": 0,
           "viewType": "ENCOUNTER",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [

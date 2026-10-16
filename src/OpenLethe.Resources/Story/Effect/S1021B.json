@@ -1,0 +1,97 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "히스클리프 : 7, 뷔페어린이 : 5",
+      "bg": "story_2f_cocoon_B",
+      "effect": "StandingMove:who=5:to=1:duration=0.4:ease=OutSine, Feeling:히스클리프=surprise:뷔페어린이=sad,CustomCamShake:[15][15][0.6]",
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 1,
+      "characterlist": "뷔페어린이:1",
+      "effect": "Shake:standing:strength=3:vibrato=25:randomness=50:standingIndexes=[1],Feeling:뷔페어린이=sad",
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 2,
+      "characterlist": "ALL:-1, 파우스트 : 5",
+      "feeling": "surprise",
+      "emotion": "Silence",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.2:direction=down",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1002V-818"
+    },
+    {
+      "id": 3,
+      "characterlist": "단테: 5",
+      "emotion": "Silence",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.2:direction=down",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 4,
+      "characterlist": "뫼르소 : 5",
+      "feeling": "close",
+      "emotion": "Silence",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.2:direction=down",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-820"
+    },
+    {
+      "id": 5,
+      "characterlist": "히스클리프 : 5",
+      "feeling": "surprise",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-821"
+    },
+    {
+      "id": 6,
+      "feeling": "shork",
+      "effect": "CustomCamShake:[8][10][0.3]",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-822"
+    },
+    {
+      "id": 7,
+      "emotion": "Angry",
+      "effect": "CustomCamShake:[45][12][1]",
+      "soundeffect": "SFX_5Impact_1",
+      "voice": "S1002V-823"
+    },
+    {
+      "id": 8,
+      "characterlist": "파우스트 : 1 : mode=FADE_IN",
+      "feeling": "close",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-824"
+    },
+    {
+      "id": 9,
+      "characterlist": "뫼르소 : 9 : mode=FADE_IN",
+      "feeling": "close",
+      "voice": "S1002V-825"
+    },
+    {
+      "id": 10,
+      "feeling": "angry3",
+      "emotion": "Angry",
+      "effect": "Shake:standing:strength=9:vibrato=12:randomness=50:standingIndexes=[5]",
+      "soundeffect": "SFX_Hair_Care_3",
+      "voice": "S1002V-826"
+    },
+    {
+      "id": 11,
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1002V-827"
+    },
+    {
+      "id": 12,
+      "characterlist": "ALL:-1, 뷔페어린이:5",
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-828"
+    }
+  ]
+}

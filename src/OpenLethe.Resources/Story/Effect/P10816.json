@@ -1,0 +1,282 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "bg": "blackbg"
+    },
+    {
+      "id": 1,
+      "cg": "10816_normal",
+      "bgm": "Passion_Red",
+      "soundeffect": "SFX_Walk_Iron"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 6,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 17,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 25,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 26,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 36,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 41,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 42,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 43,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 44
+    },
+    {
+      "id": 45,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 49
+    },
+    {
+      "id": 50,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52
+    },
+    {
+      "id": 53
+    },
+    {
+      "id": 54,
+      "soundeffect": "SFX_Grab_The_Neck"
+    },
+    {
+      "id": 55
+    },
+    {
+      "id": 56,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 57
+    },
+    {
+      "id": 58,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 59,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 60
+    },
+    {
+      "id": 61
+    },
+    {
+      "id": 62,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 63,
+      "cg": "10816_normal_FadeOut",
+      "soundeffect": "SFX_Walk_Iron"
+    },
+    {
+      "id": 64,
+      "cg": "10816_gacksung:FadeIn_Continue",
+      "effect": "CustomCamShake:[35][4][0.3]",
+      "soundeffect": "SFX_Stab_Branch, SFX_Blood_Splatter:delay=0.14"
+    },
+    {
+      "id": 65,
+      "effect": "CustomCamShake:[45][10][1]",
+      "soundeffect": "SFX_Blood_Splash, SFX_Blood_Drip"
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 68
+    },
+    {
+      "id": 69,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 70,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 71
+    },
+    {
+      "id": 72
+    },
+    {
+      "id": 73
+    },
+    {
+      "id": 74,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 75
+    },
+    {
+      "id": 76,
+      "soundeffect": "SFX_Walk_Iron"
+    },
+    {
+      "id": 77,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    }
+  ]
+}

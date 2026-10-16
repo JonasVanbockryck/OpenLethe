@@ -1,6 +1,10 @@
 {
   "list": [
     {
+      "keyword": "DinnerField",
+      "address": "Assets/Prefab/Effect/PC/3_Sinclair/Sinclair_Buffet/Fx_PC_Sinclair_Buffet_Buff_Map_Creep.prefab"
+    },
+    {
       "keyword": "FireFieldBuff",
       "address": "Assets/Prefab/Effect/PC/3_Sinclair/Pilip/FX_PC_3_Sinclair_Pilip2_BGBurningField1.prefab"
     },
@@ -11,6 +15,18 @@
     {
       "keyword": "FireFieldBuffStart",
       "address": "Assets/Prefab/Effect/PC/3_Sinclair/Pilip/FX_PC_3_Sinclair_Pilip2_BGBurningField1_Start.prefab"
+    },
+    {
+      "keyword": "BoneNailSinclair",
+      "address": "Assets/Prefab/Effect/PC/3_Sinclair/Sinclair_Buffet/PerfectBuffet_Buff_BoneNail_Effect.prefab"
+    },
+    {
+      "keyword": "BuffetThirst",
+      "address": "Assets/Prefab/Effect/PC/3_Sinclair/Sinclair_Buffet/Fx_PC_Sinclair_Buffet_Buff_Hungry.prefab"
+    },
+    {
+      "keyword": "BuffetSinclair",
+      "address": "Assets/Prefab/Effect/PC/3_Sinclair/Sinclair_Buffet/Fx_PC_Sinclair_Buffet_Buff_Rouge.prefab"
     }
   ]
 }

@@ -1,0 +1,137 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "뫼르소:5",
+      "feeling": "close",
+      "bg": "story_3f_larouge",
+      "bgm": "Mystery_Horror_Ambience",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1001V-2959"
+    },
+    {
+      "id": 1,
+      "feeling": "idle",
+      "voice": "S1001V-2960"
+    },
+    {
+      "id": 2,
+      "voice": "S1001V-2961"
+    },
+    {
+      "id": 3,
+      "voice": "S1001V-2962"
+    },
+    {
+      "id": 4,
+      "feeling": "angry",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2963"
+    },
+    {
+      "id": 5,
+      "voice": "S1001V-2964"
+    },
+    {
+      "id": 6,
+      "voice": "S1001V-2965"
+    },
+    {
+      "id": 7,
+      "feeling": "idle",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2966"
+    },
+    {
+      "id": 8,
+      "voice": "S1001V-2967"
+    },
+    {
+      "id": 9,
+      "voice": "S1001V-2968"
+    },
+    {
+      "id": 10,
+      "voice": "S1001V-2969"
+    },
+    {
+      "id": 11,
+      "voice": "S1001V-2970"
+    },
+    {
+      "id": 12,
+      "characterlist": "3층하이도메루주번데기:5"
+    },
+    {
+      "id": 13,
+      "effect": "Shake:standing:strength=6:vibrato=13:randomness=50:standingIndexes=[5]",
+      "bgm": "BGM_DestoryedLab",
+      "soundeffect": "SFX_Big_Bell_1",
+      "voice": "S1001V-2972"
+    },
+    {
+      "id": 14,
+      "voice": "S1001V-2973"
+    },
+    {
+      "id": 15,
+      "voice": "S1001V-2974"
+    },
+    {
+      "id": 16,
+      "voice": "S1001V-2975"
+    },
+    {
+      "id": 17,
+      "characterlist": "ALL:-1,오티스 : 1",
+      "feeling": "angry2",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2976"
+    },
+    {
+      "id": 18,
+      "voice": "S1001V-2977"
+    },
+    {
+      "id": 19,
+      "characterlist": "ALL:-1,3층하이도메루주번데기:5",
+      "effect": "Shake:standing:strength=6:vibrato=13:randomness=50:standingIndexes=[5]",
+      "soundeffect": "SFX_Big_Bell_2",
+      "voice": "S1001V-2978"
+    },
+    {
+      "id": 20,
+      "soundeffect": "SFX_Muscle_Over_1",
+      "voice": "S1001V-2979"
+    },
+    {
+      "id": 21,
+      "characterlist": "단테:5",
+      "voice": "D_Click"
+    },
+    {
+      "id": 22,
+      "voice": "D_FastTickTok"
+    },
+    {
+      "id": 23,
+      "characterlist": "3층하이도메루주번데기:5",
+      "cg": "black:FadeIn_Long",
+      "effect": "CustomCamShake:[70][10][0.7]",
+      "soundeffect": "SFX_Distortion_Mutate, SFX_Distortion_ShowUp",
+      "voice": "S1001V-2982"
+    },
+    {
+      "id": 24,
+      "characterlist": "3층하이도메루주:5:mode=Fade_In",
+      "cg": "black:FadeOut",
+      "voice": "S1001V-2983"
+    },
+    {
+      "id": 25,
+      "effect": "CustomCamShake:[50][15][1]",
+      "soundeffect": "SFX_Step_Stamp_Hard, SFX_Blood_Up_2, SFX_Blood_Drip:delay=0.3",
+      "voice": "S1001V-2984"
+    }
+  ]
+}

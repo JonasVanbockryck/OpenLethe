@@ -1,5 +1,6 @@
 {
     "dataFiles": [
+        { "type": "tentacle-feeding-pattern", "fileName": "EndingRouteB/rpg-tentacle-feeding-pattern-data-floor-5-b.json" },
         { "type": "npc", "fileNameArray": ["EndingRouteB/rpg-npc-data-floor-5-b.json", "EndingRouteB/rpg-npc-data-floor-5-b-enemy.json"] },
         { "type": "npc-attack-pattern", "fileName": "EndingRouteB/rpg-npc-attack-pattern-data-floor-5-b.json" },
         { "type": "npc-spawn", "fileNameArray": ["EndingRouteB/rpg-npc-spawn-data-floor-5-b.json", "EndingRouteB/rpg-npc-spawn-data-floor-5-b-enemy.json"] },

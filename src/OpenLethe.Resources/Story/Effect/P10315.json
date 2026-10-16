@@ -1,0 +1,320 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "bg": "blackbg",
+      "cg": "10315_normal",
+      "bgm": "Reason_Black",
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 1,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 4,
+      "soundeffect": "SFX_Leather_Crumble_Light"
+    },
+    {
+      "id": 5,
+      "soundeffect": "SFX_Armor_Shake"
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 18,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20,
+      "soundeffect": "SFX_Armor_Shake"
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 33,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40,
+      "soundeffect": "SFX_Cloth_Rubbed_Move"
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42,
+      "soundeffect": "SFX_Armor_Shake"
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44,
+      "soundeffect": "SFX_Metalarm"
+    },
+    {
+      "id": 45
+    },
+    {
+      "id": 46,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "id": 49,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 50
+    },
+    {
+      "id": 51
+    },
+    {
+      "id": 52,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly"
+    },
+    {
+      "id": 53,
+      "soundeffect": "SFX_Leather_Crumble_Hard"
+    },
+    {
+      "id": 54
+    },
+    {
+      "id": 55
+    },
+    {
+      "id": 56
+    },
+    {
+      "id": 57,
+      "soundeffect": "SFX_Jean_Crumble_Hard"
+    },
+    {
+      "id": 58,
+      "soundeffect": "SFX_Run_For_Attack"
+    },
+    {
+      "id": 59
+    },
+    {
+      "id": 60,
+      "soundeffect": "SFX_Cotton_Crumble_Light"
+    },
+    {
+      "id": 61
+    },
+    {
+      "id": 62
+    },
+    {
+      "id": 63
+    },
+    {
+      "id": 64,
+      "cg": "10315_gacksung:FadeIn",
+      "soundeffect": "SFX_Ego_Impact_2, SFX_Sunshine"
+    },
+    {
+      "id": 65
+    },
+    {
+      "id": 66
+    },
+    {
+      "id": 67,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 68
+    },
+    {
+      "id": 69,
+      "soundeffect": "SFX_Metalarm"
+    },
+    {
+      "id": 70
+    },
+    {
+      "id": 71,
+      "soundeffect": "SFX_Jean_Crumble_Light"
+    },
+    {
+      "id": 72,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 73,
+      "soundeffect": "SFX_Char_Hover_2"
+    },
+    {
+      "id": 74,
+      "soundeffect": "SFX_SwordShower, SFX_Blood_Splash:delay=0.18, SFX_Blood_Splatter:delay=0.22, SFX_Blood_Splash:delay=0.47, SFX_SeaTerror_Kill:delay=0.7, SFX_Blood_Splash:delay=0.97"
+    },
+    {
+      "id": 75,
+      "soundeffect": "SFX_Mace_Human_Kill"
+    },
+    {
+      "id": 76
+    },
+    {
+      "id": 77,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 78
+    },
+    {
+      "id": 79,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 80,
+      "soundeffect": "SFX_Walk_Iron_Once"
+    },
+    {
+      "id": 81,
+      "soundeffect": "SFX_Cloth_Crumble"
+    },
+    {
+      "id": 82
+    },
+    {
+      "id": 83
+    },
+    {
+      "id": 84,
+      "soundeffect": "SFX_Walk_Wood_2StepOnly, SFX_Armor_Shake"
+    },
+    {
+      "id": 85
+    },
+    {
+      "id": 86,
+      "cg": "ALL:FadeOut"
+    },
+    {
+      "id": 87,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew"
+    },
+    {
+      "id": 88
+    },
+    {
+      "id": 89
+    }
+  ]
+}

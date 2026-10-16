@@ -1,0 +1,109 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "cg": "black:FadeIn",
+      "bgm": "Soleil:70",
+      "soundeffect": "SFX_Earthquake:loop, SFX_Stone_Debris_Far"
+    },
+    {
+      "id": 1,
+      "characterlist": "뫼르소다침:5",
+      "bg": "story_6f_stone",
+      "cg": "black:FadeOut:[0~0.2]",
+      "effect": "CustomCamShake:[45][8][0.3],Feeling:뫼르소=hot",
+      "soundeffect": "SFX_Earthquake:end"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4,
+      "characterlist": "단테 : 5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "voice": "D_Click"
+    },
+    {
+      "id": 5,
+      "characterlist": "뫼르소다침:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-742"
+    },
+    {
+      "id": 6,
+      "feeling": "close",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-743"
+    },
+    {
+      "id": 7,
+      "characterlist": "단테:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 8,
+      "characterlist": "뫼르소다침:5",
+      "feeling": "upset2",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-745"
+    },
+    {
+      "id": 9,
+      "voice": "S1003V-746"
+    },
+    {
+      "id": 10,
+      "characterlist": "단테:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "voice": "D_Wick"
+    },
+    {
+      "id": 11,
+      "characterlist": "뫼르소다침:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-748"
+    },
+    {
+      "id": 12,
+      "voice": "S1003V-749"
+    },
+    {
+      "id": 13,
+      "feeling": "peace",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-750"
+    },
+    {
+      "id": 14,
+      "characterlist": "단테:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 15,
+      "characterlist": "뫼르소다침:5",
+      "feeling": "idle",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1003V-752"
+    },
+    {
+      "id": 16,
+      "feeling": "close",
+      "voice": "S1003V-753"
+    },
+    {
+      "id": 17,
+      "feeling": "peace",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-754"
+    }
+  ]
+}

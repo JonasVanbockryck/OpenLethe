@@ -3971,7 +3971,8 @@
         9438,
         9439,
         9440,
-        9795
+        9795,
+        9205
       ],
       "mapGenSequence": [
         {
@@ -4163,7 +4164,8 @@
         9438,
         9439,
         9440,
-        9795
+        9795,
+        9205
       ],
       "mapGenSequence": [
         {
@@ -4358,7 +4360,8 @@
         9438,
         9439,
         9440,
-        9795
+        9795,
+        9205
       ],
       "mapGenSequence": [
         {
@@ -6050,6 +6053,910 @@
             "key": "MirrorDungeon4_Base"
           }
         ]
+      }
+    },
+    {
+      "id": 1028,
+      "unlockCondition": {
+        "unlockCode": 110
+      },
+      "type": "STORY",
+      "desc": "오픈런",
+      "exceptionConditions": [
+        {
+          "dungeonIdx": 0,
+          "selectableFloors": [
+            2,
+            3
+          ]
+        },
+        {
+          "dungeonIdx": 1,
+          "selectableFloors": [
+            2,
+            3
+          ]
+        }
+      ],
+      "mapGenOption": {
+        "bossPool": [
+          2080026,
+          2080027
+        ],
+        "battlePool": [
+          2080001,
+          2080002,
+          2080003,
+          2080004,
+          2080005,
+          2080006,
+          2080007,
+          2080008,
+          2080009,
+          2080010,
+          2080011,
+          2080012,
+          2080013,
+          2080014,
+          2080015
+        ],
+        "abBattlePool": [
+          2080016,
+          2080017,
+          2080018,
+          2080019,
+          2080020
+        ],
+        "hardBattlePool": [],
+        "hardAbBattlePool": [
+          2080021,
+          2080022,
+          2080023,
+          2080024,
+          2080025
+        ],
+        "eventPool": [
+          901009,
+          901014,
+          901001,
+          901002,
+          901018,
+          901024,
+          901016,
+          901019,
+          901031,
+          901030,
+          901011,
+          901059,
+          901010,
+          901013,
+          901034,
+          901033,
+          901021,
+          901063,
+          901085
+        ],
+        "specialEventPool": [
+          971120
+        ],
+        "specialEventProb": 0.75
+      },
+      "egoGiftPool": [
+        9290,
+        9291,
+        9001,
+        9003,
+        9005,
+        9008,
+        9009,
+        9012,
+        9013,
+        9016,
+        9018,
+        9019,
+        9020,
+        9023,
+        9024,
+        9027,
+        9029,
+        9030,
+        9031,
+        9032,
+        9033,
+        9034,
+        9041,
+        9042,
+        9043,
+        9044,
+        9045,
+        9046,
+        9047,
+        9048,
+        9049,
+        9050,
+        9051,
+        9052,
+        9053,
+        9054,
+        9055,
+        9056,
+        9057,
+        9058,
+        9059,
+        9060,
+        9061,
+        9062,
+        9063,
+        9064,
+        9065,
+        9066,
+        9067,
+        9068,
+        9069,
+        9070,
+        9071,
+        9072,
+        9073,
+        9074,
+        9075,
+        9076,
+        9077,
+        9078,
+        9079,
+        9080,
+        9081,
+        9082,
+        9083,
+        9084,
+        9085,
+        9086,
+        9087,
+        9089,
+        9091,
+        9093,
+        9095,
+        9097,
+        9099
+      ],
+      "specificEgoGiftPool": [
+        9290,
+        9291
+      ],
+      "mapGenSequence": [
+        {
+          "type": "CREATE_EMPTY_MD4_FLOOR",
+          "numberList": [
+            5,
+            3,
+            1
+          ]
+        },
+        {
+          "type": "FILL_MAP_BY_THEMEFLOOR_MAPGENOPTION",
+          "numberValue": 1028
+        },
+        {
+          "type": "OVERRIDE_RANDOM_EVENT_BY_CURSE_EVENT",
+          "numberList": [
+            971085,
+            971086,
+            971087
+          ]
+        }
+      ],
+      "uiConfigs": {
+        "showBossIds": [
+          1551,
+          1578
+        ],
+        "packSpriteId": "Canto_X",
+        "isShowWarning": true,
+"textColor": "1b3ee9",        
+"mapOptions": [
+          {
+            "key": "SetColor_Basic",
+            "value": "1b3ee9"
+          },
+          {
+            "key": "SetColor_Cleared",
+            "value": "09175b"
+          },
+{
+            "key": "NormalLineColor",
+ "value": "1b3ee9"
+          },
+{
+            "key": "PassedLineColor",
+ "value": "09175b"
+          },
+
+{
+            "key": "MirrorDungeon4_Base"
+          }
+        ],
+        "unlockHintTextKey": "mirrordungeon_theme_pack_blocked_short_110",
+        "sidePopupUnlockHintTextKey": "mirror_dungeon_detect_theme_pack_side_popup_locked_by_unlockcode_110"
+      }
+    },
+    {
+      "id": 1029,
+      "unlockCondition": {
+        "unlockCode": 110
+      },
+      "type": "STORY",
+      "desc": "번잡한 색채",
+      "exceptionConditions": [
+        {
+          "dungeonIdx": 1,
+          "selectableFloors": [
+            3,
+            4
+          ]
+        },
+        {
+          "dungeonIdx": 2
+        }
+      ],
+      "mapGenOption": {
+        "bossPool": [
+          2080126,
+          2080127
+        ],
+        "battlePool": [
+          2080101,
+          2080102,
+          2080103,
+          2080104,
+          2080105,
+          2080106,
+          2080107,
+          2080108,
+          2080109,
+          2080110,
+          2080111,
+          2080112,
+          2080113,
+          2080114,
+          2080115
+        ],
+        "abBattlePool": [
+          2080116,
+          2080117,
+          2080118,
+          2080119,
+          2080120
+        ],
+        "hardBattlePool": [],
+        "hardAbBattlePool": [
+          2080121,
+          2080122,
+          2080123,
+          2080124,
+          2080125
+        ],
+        "eventPool": [
+          901009,
+          901014,
+          901001,
+          901002,
+          901018,
+          901024,
+          901016,
+          901019,
+          901031,
+          901030,
+          901011,
+          901059,
+          901010,
+          901013,
+          901034,
+          901033,
+          901021,
+          901063,
+          901085,
+          901100,
+          901101,
+          901102,
+          901103,
+          901104
+        ],
+        "specialEventPool": [
+          971119
+        ],
+        "specialEventProb": 0.75
+      },
+      "egoGiftPool": [
+        9288,
+        9289,
+        9001,
+        9003,
+        9005,
+        9008,
+        9009,
+        9012,
+        9013,
+        9016,
+        9018,
+        9019,
+        9020,
+        9023,
+        9024,
+        9027,
+        9029,
+        9030,
+        9031,
+        9032,
+        9033,
+        9034,
+        9041,
+        9042,
+        9043,
+        9044,
+        9045,
+        9046,
+        9047,
+        9048,
+        9049,
+        9050,
+        9051,
+        9052,
+        9053,
+        9054,
+        9055,
+        9056,
+        9057,
+        9058,
+        9059,
+        9060,
+        9061,
+        9062,
+        9063,
+        9064,
+        9065,
+        9066,
+        9067,
+        9068,
+        9069,
+        9070,
+        9071,
+        9072,
+        9073,
+        9074,
+        9075,
+        9076,
+        9077,
+        9078,
+        9079,
+        9080,
+        9081,
+        9082,
+        9083,
+        9084,
+        9085,
+        9086,
+        9087,
+        9089,
+        9091,
+        9093,
+        9095,
+        9097,
+        9099
+      ],
+      "specificEgoGiftPool": [
+        9288,
+        9289
+      ],
+      "mapGenSequence": [
+        {
+          "type": "CREATE_EMPTY_MD4_FLOOR",
+          "numberList": [
+            5,
+            3,
+            1
+          ]
+        },
+        {
+          "type": "FILL_MAP_BY_THEMEFLOOR_MAPGENOPTION",
+          "numberValue": 1029
+        },
+        {
+          "type": "OVERRIDE_RANDOM_EVENT_BY_CURSE_EVENT",
+          "numberList": [
+            971085,
+            971086,
+            971087
+          ]
+        }
+      ],
+      "uiConfigs": {
+        "showBossIds": [
+          1553,
+          1557
+        ],
+        "packSpriteId": "Canto_X_mid",
+        "isShowWarning": true,
+"textColor": "1b3ee9",        
+"mapOptions": [
+          {
+            "key": "SetColor_Basic",
+            "value": "1b3ee9"
+          },
+          {
+            "key": "SetColor_Cleared",
+            "value": "09175b"
+          },
+{
+            "key": "NormalLineColor",
+ "value": "1b3ee9"
+          },
+{
+            "key": "PassedLineColor",
+ "value": "09175b"
+          },
+          {
+            "key": "MirrorDungeon4_Base"
+          }
+        ],
+        "unlockHintTextKey": "mirrordungeon_theme_pack_blocked_short_110",
+        "sidePopupUnlockHintTextKey": "mirror_dungeon_detect_theme_pack_side_popup_locked_by_unlockcode_110"
+      }
+    },
+    {
+      "id": 1030,
+      "unlockCondition": {
+        "unlockCode": 110
+      },
+      "type": "STORY",
+      "desc": "보존의 신념",
+      "exceptionConditions": [
+        {
+          "dungeonIdx": 1,
+          "selectableFloors": [
+            3,
+            4
+          ]
+        },
+        {
+          "dungeonIdx": 2
+        }
+      ],
+      "mapGenOption": {
+        "bossPool": [
+          2080226
+        ],
+        "battlePool": [],
+        "abBattlePool": [
+          2080216
+        ],
+        "hardBattlePool": [],
+        "hardAbBattlePool": [],
+        "eventPool": [],
+        "specialEventPool": [
+          971117,
+          971118
+        ],
+        "specialEventProb": 1
+      },
+      "egoGiftPool": [
+        9286,
+        9287,
+        9001,
+        9003,
+        9005,
+        9008,
+        9009,
+        9012,
+        9013,
+        9016,
+        9018,
+        9019,
+        9020,
+        9023,
+        9024,
+        9027,
+        9029,
+        9030,
+        9031,
+        9032,
+        9033,
+        9034,
+        9041,
+        9042,
+        9043,
+        9044,
+        9045,
+        9046,
+        9047,
+        9048,
+        9049,
+        9050,
+        9051,
+        9052,
+        9053,
+        9054,
+        9055,
+        9056,
+        9057,
+        9058,
+        9059,
+        9060,
+        9061,
+        9062,
+        9063,
+        9064,
+        9065,
+        9066,
+        9067,
+        9068,
+        9069,
+        9070,
+        9071,
+        9072,
+        9073,
+        9074,
+        9075,
+        9076,
+        9077,
+        9078,
+        9079,
+        9080,
+        9081,
+        9082,
+        9083,
+        9084,
+        9085,
+        9086,
+        9087,
+        9089,
+        9091,
+        9093,
+        9095,
+        9097,
+        9099
+      ],
+      "specificEgoGiftPool": [
+        9286,
+        9287
+      ],
+      "mapGenSequence": [
+        {
+          "type": "CREATE_FIXED_FLOOR",
+          "numberList": [
+            4,
+            3,
+            1
+          ],
+          "nodeList": [
+            {
+              "sector": 0,
+              "idx": 0,
+              "encounterType": 0,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 1,
+              "idx": 0,
+              "encounterType": 3,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 2,
+              "idx": 0,
+              "encounterType": 3,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 3,
+              "idx": 0,
+              "encounterType": 2,
+              "encounterId": 2080216,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 4,
+              "idx": 0,
+              "encounterType": 10,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 5,
+              "idx": 0,
+              "encounterType": 6,
+              "encounterId": 2080226,
+              "connectedNextNodeIdxList": []
+            }
+          ]
+        },
+        {
+          "type": "FILL_EMPTY_EVENT",
+          "numberList": [
+            971117,
+            971118
+          ]
+        },
+        {
+          "type": "OVERRIDE_RANDOM_EVENT_BY_CURSE_EVENT",
+          "numberList": [
+            971085,
+            971086,
+            971087
+          ]
+        }
+      ],
+      "uiConfigs": {
+        "showBossIds": [
+          1563,
+          1564
+        ],
+        "packSpriteId": "Canto_X_mid2",
+        "isShowWarning": true,
+"textColor": "1b3ee9",        
+"mapOptions": [
+          {
+            "key": "SetColor_Basic",
+            "value": "1b3ee9"
+          },
+          {
+            "key": "SetColor_Cleared",
+            "value": "09175b"
+          },
+{
+            "key": "NormalLineColor",
+ "value": "1b3ee9"
+          },
+{
+            "key": "PassedLineColor",
+ "value": "09175b"
+          },
+          {
+            "key": "MirrorDungeon4_Base"
+          }
+        ],
+        "unlockHintTextKey": "mirrordungeon_theme_pack_blocked_short_110",
+        "sidePopupUnlockHintTextKey": "mirror_dungeon_detect_theme_pack_side_popup_locked_by_unlockcode_110"
+      }
+    },
+    {
+      "id": 1031,
+      "unlockCondition": {
+        "unlockCode": 110
+      },
+      "type": "STORY",
+      "desc": "탐식의 재림",
+      "exceptionConditions": [
+        {
+          "dungeonIdx": 1,
+          "selectableFloors": [
+            3,
+            4
+          ]
+        },
+        {
+          "dungeonIdx": 2
+        }
+      ],
+      "mapGenOption": {
+        "bossPool": [
+          2080326
+        ],
+        "battlePool": [],
+        "abBattlePool": [
+          2080316
+        ],
+        "hardBattlePool": [],
+        "hardAbBattlePool": [],
+        "eventPool": [],
+        "specialEventPool": [
+          971115,
+          971116
+        ],
+        "specialEventProb": 1
+      },
+      "egoGiftPool": [
+        9284,
+        9285,
+        9001,
+        9003,
+        9005,
+        9008,
+        9009,
+        9012,
+        9013,
+        9016,
+        9018,
+        9019,
+        9020,
+        9023,
+        9024,
+        9027,
+        9029,
+        9030,
+        9031,
+        9032,
+        9033,
+        9034,
+        9041,
+        9042,
+        9043,
+        9044,
+        9045,
+        9046,
+        9047,
+        9048,
+        9049,
+        9050,
+        9051,
+        9052,
+        9053,
+        9054,
+        9055,
+        9056,
+        9057,
+        9058,
+        9059,
+        9060,
+        9061,
+        9062,
+        9063,
+        9064,
+        9065,
+        9066,
+        9067,
+        9068,
+        9069,
+        9070,
+        9071,
+        9072,
+        9073,
+        9074,
+        9075,
+        9076,
+        9077,
+        9078,
+        9079,
+        9080,
+        9081,
+        9082,
+        9083,
+        9084,
+        9085,
+        9086,
+        9087,
+        9089,
+        9091,
+        9093,
+        9095,
+        9097,
+        9099
+      ],
+      "specificEgoGiftPool": [
+        9284,
+        9285
+      ],
+      "mapGenSequence": [
+        {
+          "type": "CREATE_FIXED_FLOOR",
+          "numberList": [
+            4,
+            3,
+            1
+          ],
+          "nodeList": [
+            {
+              "sector": 0,
+              "idx": 0,
+              "encounterType": 0,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 1,
+              "idx": 0,
+              "encounterType": 3,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 2,
+              "idx": 0,
+              "encounterType": 3,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 3,
+              "idx": 0,
+              "encounterType": 2,
+              "encounterId": 2080316,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 4,
+              "idx": 0,
+              "encounterType": 10,
+              "encounterId": 0,
+              "connectedNextNodeIdxList": [
+                0
+              ]
+            },
+            {
+              "sector": 5,
+              "idx": 0,
+              "encounterType": 6,
+              "encounterId": 2080326,
+              "connectedNextNodeIdxList": []
+            }
+          ]
+        },
+        {
+          "type": "FILL_EMPTY_EVENT",
+          "numberList": [
+            971115,
+            971116
+          ]
+        },
+        {
+          "type": "OVERRIDE_RANDOM_EVENT_BY_CURSE_EVENT",
+          "numberList": [
+            971085,
+            971086,
+            971087
+          ]
+        }
+      ],
+      "uiConfigs": {
+        "showBossIds": [
+          1567,
+          1568
+        ],
+        "packSpriteId": "Canto_X_hard",
+        "isShowWarning": true,
+"textColor": "1b3ee9",        
+"mapOptions": [
+          {
+            "key": "SetColor_Basic",
+            "value": "1b3ee9"
+          },
+          {
+            "key": "SetColor_Cleared",
+            "value": "09175b"
+          },
+{
+            "key": "NormalLineColor",
+ "value": "1b3ee9"
+          },
+{
+            "key": "PassedLineColor",
+ "value": "09175b"
+          },
+          {
+            "key": "MirrorDungeon4_Base"
+          }
+        ],
+        "unlockHintTextKey": "mirrordungeon_theme_pack_blocked_short_110",
+        "sidePopupUnlockHintTextKey": "mirror_dungeon_detect_theme_pack_side_popup_locked_by_unlockcode_110"
       }
     }
   ]

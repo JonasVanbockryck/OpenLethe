@@ -1,0 +1,64 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "cg": "floor2_info_02:On:LayerName=Ch10Tv",
+      "effect": "Ch10TvUiEffect",
+      "monologue": true
+    },
+    {
+      "id": 1,
+      "monologue": true
+    },
+    {
+      "id": 2,
+      "monologue": true
+    },
+    {
+      "id": 3,
+      "monologue": true
+    },
+    {
+      "id": 4,
+      "monologue": true
+    },
+    {
+      "id": 5,
+      "monologue": true
+    },
+    {
+      "id": 6,
+      "cg": "floor2_info_03:On:LayerName=Ch10Tv",
+      "monologue": true
+    },
+    {
+      "id": 7,
+      "monologue": true
+    },
+    {
+      "id": 8,
+      "monologue": true
+    },
+    {
+      "id": 9,
+      "monologue": true
+    },
+    {
+      "id": 10,
+      "cg": "floor2_info_04:On:LayerName=Ch10Tv",
+      "monologue": true
+    },
+    {
+      "id": 11,
+      "monologue": true
+    },
+    {
+      "id": 12,
+      "monologue": true
+    },
+    {
+      "id": 13,
+      "monologue": true
+    }
+  ]
+}

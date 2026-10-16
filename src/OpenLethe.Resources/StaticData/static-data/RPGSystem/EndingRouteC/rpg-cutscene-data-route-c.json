@@ -64,6 +64,19 @@
       "commands": [
         { "type": "FadeOut", "param": "0.01" }
       ]
+    },
+    {
+      "key": "CRSCW01_C1",
+      "showUnboundNpcs": true,
+      "waitTeleportEnd": true,
+      "noLetterbox": true,
+      "bindings": [
+        { "actorName": "player", "kind": "Player", "actorKey": "" }
+      ],
+      "commands": [
+        { "type": "Wait", "param": "0.4" },
+        { "type": "Dialogue", "param": "DRSCW01_C1" }
+      ]
     }
   ]
 }

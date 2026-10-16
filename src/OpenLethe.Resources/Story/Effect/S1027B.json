@@ -1,0 +1,184 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "뷔페어린이신발:2",
+      "feeling": "idle2",
+      "bg": "story_b2_coilednest",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1002V-2393"
+    },
+    {
+      "id": 1,
+      "characterlist": "뫼르소:9",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-2394"
+    },
+    {
+      "id": 2,
+      "characterlist": "료슈9장이후노담배:7",
+      "feeling": "idle",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-2395"
+    },
+    {
+      "id": 3,
+      "feeling": "sad2",
+      "voice": "S1002V-2396"
+    },
+    {
+      "id": 4,
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-2397"
+    },
+    {
+      "id": 5,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-2398"
+    },
+    {
+      "id": 6,
+      "characterlist": "오티스:9",
+      "feeling": "angry2",
+      "emotion": "Question",
+      "soundeffect": "SFX_Sweat_Crumble_Light",
+      "voice": "S1002V-2399"
+    },
+    {
+      "id": 7,
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-2400"
+    },
+    {
+      "id": 8,
+      "feeling": "sad2",
+      "voice": "S1002V-2401"
+    },
+    {
+      "id": 9,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1002V-2402"
+    },
+    {
+      "id": 10,
+      "voice": "S1002V-2403"
+    },
+    {
+      "id": 11,
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1002V-2404"
+    },
+    {
+      "id": 12,
+      "characterlist": "ALL:-1,단테:5",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 13,
+      "characterlist": "료슈9장이후노담배:2",
+      "feeling": "close",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-2406"
+    },
+    {
+      "id": 14,
+      "feeling": "idle2",
+      "voice": "S1002V-2407"
+    },
+    {
+      "id": 15,
+      "characterlist": "뷔페어린이신발:8",
+      "feeling": "idle2",
+      "emotion": "Question",
+      "voice": "S1002V-2408"
+    },
+    {
+      "id": 16,
+      "feeling": "idle",
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-2409"
+    },
+    {
+      "id": 17,
+      "characterlist": "ALL:-1,단테:7,료슈9장이후노담배:2",
+      "voice": "D_Tick"
+    },
+    {
+      "id": 18,
+      "feeling": "angry3",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-2411"
+    },
+    {
+      "id": 19,
+      "voice": "D_Normal"
+    },
+    {
+      "id": 20,
+      "emotion": "Angry",
+      "voice": "S1002V-2413"
+    },
+    {
+      "id": 21,
+      "emotion": "Sweat",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 22,
+      "characterlist": "뫼르소:5",
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-2415"
+    },
+    {
+      "id": 23,
+      "feeling": "angry",
+      "voice": "S1002V-2416"
+    },
+    {
+      "id": 24,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1002V-2417"
+    },
+    {
+      "id": 25,
+      "feeling": "happy",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1002V-2418"
+    },
+    {
+      "id": 26,
+      "voice": "S1002V-2419"
+    },
+    {
+      "id": 27,
+      "feeling": "close",
+      "soundeffect": "SFX_Leather_Crumble_Light",
+      "voice": "S1002V-2420"
+    },
+    {
+      "id": 28,
+      "feeling": "idle",
+      "voice": "S1002V-2421"
+    },
+    {
+      "id": 29,
+      "feeling": "angry3",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1002V-2422"
+    },
+    {
+      "id": 30,
+      "feeling": "smile",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1002V-2423"
+    },
+    {
+      "id": 31,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1002V-2424"
+    }
+  ]
+}

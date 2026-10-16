@@ -1574,6 +1574,152 @@
           "number": 1
         }
       ]
+    },
+    {
+      "id": 11016,
+      "updatedDate": 20261015,
+      "appearance": "11016_Sinclair_BuffetAppearance",
+      "unitKeywordList": [ "SMALL" ],
+      "associationList": [
+        "LE_ROUGE",
+        "SISYPHE"
+      ],
+      "skillKeywordList": [ "Charge", "Laceration" ],
+      "unitScriptID" : "11016",
+      "characterId": 10,
+      "panicType": 9999,
+      "season": 8,
+      "defenseSkillIDList": [
+        1101604,
+        1101612,
+        1101613
+      ],
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "ChargeRougeAlly",
+              "stack": 1,
+              "turn": 0
+            }
+          ]
+        }
+      ],
+      "panicSkillOnErosion": 1000104,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "hp": {
+        "defaultStat": 77,
+        "incrementByLevel": 2.9
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        3,
+        4,
+        4,
+        4
+      ],
+      "maxSpeedList": [
+        6,
+        6,
+        7,
+        7
+      ],
+      "uniqueAttribute": "SHAMROCK",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyMp10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAlly5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          55
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 0.5
+          },
+          {
+            "type": "HIT",
+            "value": 2
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 1101601,
+          "number": 3
+        },
+        {
+          "skillId": 1101602,
+          "number": 2
+        },
+        {
+          "skillId": 1101603,
+          "number": 1
+        },
+        {
+          "skillId": 1101605,
+          "number": 0
+        },
+        {
+          "skillId": 1101606,
+          "number": 0
+        },
+        {
+          "skillId": 1101607,
+          "number": 0
+        },
+        {
+          "skillId": 1101608,
+          "number": 0
+        },
+        {
+          "skillId": 1101609,
+          "number": 0
+        },
+        {
+          "skillId": 1101610,
+          "number": 0
+        },
+        {
+          "skillId": 1101611,
+          "number": 0
+        }
+      ]
     }
   ]
 }

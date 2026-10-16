@@ -1,0 +1,96 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "3층가위 : 5",
+      "bg": "story_3f_repairRoom",
+      "soundeffect": "SFX_Scissors_Amb_Near:loop",
+      "voice": "S1001V-2930"
+    },
+    {
+      "id": 1,
+      "characterlist": "싱클레어 : 5",
+      "feeling": "surprise",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1001V-2931"
+    },
+    {
+      "id": 2,
+      "characterlist": "3층가위 : 5",
+      "voice": "S1001V-2932"
+    },
+    {
+      "id": 3,
+      "voice": "S1001V-2933"
+    },
+    {
+      "id": 4,
+      "soundeffect": "SFX_Scissors_Once",
+      "voice": "S1001V-2934"
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6,
+      "characterlist": "단테:5",
+      "soundeffect": "D_Normal"
+    },
+    {
+      "id": 7,
+      "characterlist": "ALL : -1, 3층가위:5",
+      "soundeffect": "SFX_Scissors_Amb_Near:end"
+    },
+    {
+      "id": 8,
+      "voice": "S1001V-2938"
+    },
+    {
+      "id": 9,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2939"
+    },
+    {
+      "id": 10,
+      "soundeffect": "SFX_Scissors_Amb_Near:loop"
+    },
+    {
+      "id": 11,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-2941"
+    },
+    {
+      "id": 12,
+      "voice": "S1001V-2942"
+    },
+    {
+      "id": 13,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-2943"
+    },
+    {
+      "id": 14,
+      "voice": "S1001V-2944"
+    },
+    {
+      "id": 15,
+      "characterlist": "싱클레어:2",
+      "feeling": "idle",
+      "soundeffect": "SFX_Cloth_Rubbed_Move",
+      "voice": "S1001V-2945"
+    },
+    {
+      "id": 16,
+      "soundeffect": "SFX_Scissors_Amb_Near:end",
+      "voice": "S1001V-2946"
+    },
+    {
+      "id": 17,
+      "voice": "S1001V-2947"
+    },
+    {
+      "id": 18,
+      "soundeffect": "SFX_Scissors_Amb_Near:loop"
+    }
+  ]
+}

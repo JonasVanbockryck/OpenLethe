@@ -99,17 +99,17 @@
         1,
         2,
         10,
-        2
-      ],
-      "importanceLevel": 2
+        1
+      ]
     },
     {
       "id": 151706,
       "controlValueList": [
         5,
-        151707
+        151707,
+        1
       ],
-      "importanceLevel": 2
+      "importanceLevel": 3
     },
     {
       "id": 151707,
@@ -140,8 +140,7 @@
         2,
         2,
         -1
-      ],
-      "importanceLevel": 3
+      ]
     },
     {
       "id": 151801,
@@ -158,14 +157,14 @@
       "controlValueList": [
         10,
         1,
-        2,
+        0,
+        0,
+        3,
         1,
-        4,
-        2,
-        10,
-        5,
         20,
-        100
+        3,
+        20,
+        60
       ],
       "importanceLevel": 3
     },
@@ -173,7 +172,7 @@
       "id": 152102,
       "controlValueList": [
         1,
-        2,
+        3,
         0
       ],
       "importanceLevel": 1
@@ -253,6 +252,12 @@
       ]
     },
     {
+      "id": 148514,
+      "controlValueList": [
+        1
+      ]
+    },
+    {
       "id": 148512
     },
     {
@@ -319,6 +324,12 @@
     },
     {
       "id": 148611,
+      "controlValueList": [
+        1
+      ]
+    },
+    {
+      "id": 148614,
       "controlValueList": [
         1
       ]
@@ -391,6 +402,12 @@
         3,
         3,
         5
+      ]
+    },
+    {
+      "id": 148714,
+      "controlValueList": [
+        1
       ]
     },
     {

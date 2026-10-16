@@ -60,11 +60,11 @@
           "occupancyCaseList": [
             {
               "occupancyCase": "DEFAULT",
-              "occupancy": 8300
+              "occupancy": 8170
             },
             {
               "occupancyCase": "COMPLETE_EGO_DEFAULT",
-              "occupancy": 8400
+              "occupancy": 8270
             }
           ],
           "elementType": "PERSONALITY",
@@ -92,7 +92,7 @@
             },
             {
               "occupancyCase": "TENTH",
-              "occupancy": 9580
+              "occupancy": 9450
             },
             {
               "occupancyCase": "COMPLETE_EGO_DEFAULT",
@@ -100,7 +100,7 @@
             },
             {
               "occupancyCase": "COMPLETE_EGO_TENTH",
-              "occupancy": 9700
+              "occupancy": 9570
             }
           ],
           "elementType": "PERSONALITY",
@@ -244,6 +244,7 @@
             11012,
             11013,
             11015,
+            11016,
             11104,
             11108,
             11110,
@@ -258,6 +259,31 @@
             11211,
             11212,
             11214
+          ]
+        },
+        {
+          "groupType": "ANNOUNCER",
+          "occupancyCaseList": [
+            {
+              "occupancyCase": "DEFAULT",
+              "occupancy": 130
+            },
+            {
+              "occupancyCase": "TENTH",
+              "occupancy": 130
+            },
+            {
+              "occupancyCase": "COMPLETE_EGO_DEFAULT",
+              "occupancy": 130
+            },
+            {
+              "occupancyCase": "COMPLETE_EGO_TENTH",
+              "occupancy": 130
+            }
+          ],
+          "elementType": "ANNOUNCER",
+          "elementIdList": [
+            58
           ]
         },
         {

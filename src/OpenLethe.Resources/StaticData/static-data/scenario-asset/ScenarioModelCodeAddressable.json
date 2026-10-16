@@ -92,26 +92,6 @@
       "autoGlitch": {}
     },
     {
-      "name": "뫼마지막임시",
-      "krname": "뫼르소",
-      "jpname": "ムルソー",
-      "enname": "Meursault",
-      "fileName": "Meursault",
-      "nickName": "5번 수감자",
-      "jpNickName": "囚人5番",
-      "enNickName": "Sinner #5",
-      "staringSide": "right",
-      "headPosX": 90.0,
-      "headPosY": 500.0,
-      "bottomYPos": -100.0,
-      "portraitSpritePath": "StoryLog_Meursault",
-      "nameTagColor": "#293b95",
-      "nameFontColor": "",
-      "cropForLog": [],
-      "bloodDust": {},
-      "autoGlitch": {}
-    },
-    {
       "name": "홍루",
       "krname": "홍루",
       "jpname": "ホンル",

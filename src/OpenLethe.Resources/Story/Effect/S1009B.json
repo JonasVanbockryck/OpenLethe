@@ -1,0 +1,97 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "3층가위:5",
+      "bg": "story_3f_repairRoom",
+      "soundeffect": "SFX_Scissors_Amb_Near:loop"
+    },
+    {
+      "id": 1,
+      "characterlist": "싱클레어:1:mode=FADE_IN",
+      "feeling": "sad3",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1001V-1432"
+    },
+    {
+      "id": 2,
+      "soundeffect": "SFX_Jean_Crumble_Light, SFX_Scissors_Amb_Near:end",
+      "voice": "S1001V-1433"
+    },
+    {
+      "id": 3,
+      "voice": "S1001V-1434"
+    },
+    {
+      "id": 4,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1001V-1435"
+    },
+    {
+      "id": 5,
+      "characterlist": "오티스 : 1 : mode=Fade_In",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1001V-1436"
+    },
+    {
+      "id": 6,
+      "voice": "S1001V-1437"
+    },
+    {
+      "id": 7,
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1001V-1438"
+    },
+    {
+      "id": 8,
+      "characterlist": "ALL:-1,단테:5",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 9,
+      "characterlist": "뫼르소 : 2 : mode=Fade_In",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1001V-1440"
+    },
+    {
+      "id": 10,
+      "characterlist": "ALL:-1,3층가위:5",
+      "voice": "S1001V-1441"
+    },
+    {
+      "id": 11,
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1001V-1442"
+    },
+    {
+      "id": 12,
+      "voice": "S1001V-1443"
+    },
+    {
+      "id": 13,
+      "soundeffect": "SFX_Jean_Crumble_Light",
+      "voice": "S1001V-1444"
+    },
+    {
+      "id": 14,
+      "characterlist": "ALL : -1, 단테 : 5 : mode=Fade_In",
+      "voice": "D_Normal"
+    },
+    {
+      "id": 15,
+      "characterlist": "3층가위 : 5",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1001V-1446"
+    },
+    {
+      "id": 16,
+      "soundeffect": "SFX_Walk_Wood_2StepONly",
+      "voice": "S1001V-1447"
+    },
+    {
+      "id": 17,
+      "soundeffect": "SFX_Scissors_Amb_Near:loop",
+      "voice": "S1001V-1448"
+    }
+  ]
+}

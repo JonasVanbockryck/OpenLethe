@@ -11636,7 +11636,7 @@
               }
             },
             {
-              "scriptName": "CoinScaleAdderOnUseViaBuffCheckAndUse",
+              "scriptName": "RougeCoinScaleAdderOnUseViaBuffTurnCheckAndUse",
               "value": 1,
               "buffData": {
                 "buffKeyword": "Charge",
@@ -11830,7 +11830,7 @@
               }
             },
             {
-              "scriptName": "CoinScaleAdderOnUseViaBuffCheckAndUse",
+              "scriptName": "RougeCoinScaleAdderOnUseViaBuffTurnCheckAndUse",
               "value": 1,
               "buffData": {
                 "buffKeyword": "Charge",
@@ -11987,7 +11987,7 @@
               }
             },
             {
-              "scriptName": "CoinScaleAdderOnUseViaBuffCheckAndUse",
+              "scriptName": "RougeCoinScaleAdderOnUseViaBuffTurnCheckAndUse",
               "value": 3,
               "buffData": {
                 "buffKeyword": "Charge",
@@ -12116,7 +12116,7 @@
               }
             },
             {
-              "scriptName": "CoinScaleAdderOnUseViaBuffCheckAndUse",
+              "scriptName": "RougeCoinScaleAdderOnUseViaBuffTurnCheckAndUse",
               "value": 3,
               "buffData": {
                 "buffKeyword": "Charge",

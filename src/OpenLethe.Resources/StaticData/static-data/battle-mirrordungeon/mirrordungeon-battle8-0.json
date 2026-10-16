@@ -1,0 +1,5368 @@
+{
+  "list": [
+    {
+      "id": 2080001,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Beauty"
+          },
+          "unitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 288,
+          "allyPositionID": 285
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080002,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Beauty"
+          },
+          "unitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 288,
+          "allyPositionID": 285
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080003,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Beauty"
+          },
+          "unitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 288,
+          "allyPositionID": 285
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080004,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Beauty"
+          },
+          "unitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 288,
+          "allyPositionID": 285
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080005,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Beauty"
+          },
+          "unitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71061,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71062,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 288,
+          "allyPositionID": 285
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080006,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 289,
+          "allyPositionID": 287
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080007,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Grocery",
+            "mapSize": 34
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 293,
+          "allyPositionID": 292
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080008,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 289,
+          "allyPositionID": 287
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080009,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Grocery",
+            "mapSize": 34
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 293,
+          "allyPositionID": 292
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080010,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080011,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080012,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080013,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080014,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080015,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080101,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Grocery",
+            "mapSize": 34
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 293,
+          "allyPositionID": 292
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080102,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Grocery",
+            "mapSize": 34
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 293,
+          "allyPositionID": 292
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080103,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 289,
+          "allyPositionID": 287
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080104,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_FoodCourt",
+            "mapSize": 30
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 289,
+          "allyPositionID": 287
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080105,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 25
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Grocery",
+            "mapSize": 34
+          },
+          "unitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71063,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71064,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 293,
+          "allyPositionID": 292
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080106,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080107,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080108,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080109,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080110,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 5
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 283,
+          "allyPositionID": 286
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080111,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080112,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080113,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080114,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080115,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080201,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080202,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080203,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080204,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080205,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0.6,
+        "defaultPosZ": 10
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_RenoirHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 261,
+          "allyPositionID": 262
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080206,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080207,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080208,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080209,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080210,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080211,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 5
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 283,
+          "allyPositionID": 286
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080212,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 5
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 283,
+          "allyPositionID": 286
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080213,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 5
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 283,
+          "allyPositionID": 286
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080214,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 5
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 283,
+          "allyPositionID": 286
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080215,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 5
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_1F_Renoir",
+            "mapSize": 20
+          },
+          "unitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71066,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 283,
+          "allyPositionID": 286
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080301,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080302,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080303,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080304,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080305,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_3F_LaRougeHighDomestic"
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 265,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080306,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080307,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080308,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080309,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    },
+    {
+      "id": 2080310,
+      "stageLevel": 65,
+      "stageType": "Normal",
+      "participantInfo": {
+        "min": 7,
+        "max": 7
+      },
+      "battleCameraInfo": {
+        "defaultPosX": 0,
+        "defaultPosY": 0,
+        "defaultPosZ": 15
+      },
+      "waveList": [
+        {
+          "battleMapInfo": {
+            "mapName": "Cp10RPG_B1F_Corridor",
+            "mapSize": 28
+          },
+          "unitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "subUnitList": [
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            },
+            {
+              "unitID": 71065,
+              "unitCount": 1,
+              "unitLevel": 65
+            }
+          ],
+          "bgmList": [
+            "Battle_Cp10_Enemy_1"
+          ],
+          "enemyPositionID": 232,
+          "allyPositionID": 242
+        }
+      ],
+      "staminaCost": 0,
+      "recommendedLevel": 65,
+      "turnLimit": 99,
+      "questlist": [
+        {
+          "args": [
+            "10"
+          ],
+          "localizeId": 1
+        }
+      ],
+      "rewardList": [],
+      "isBatonPassOn": "TRUE",
+      "stageScriptList": [
+        "Refill",
+        "SubUnitDefaultSlotAdder"
+      ]
+    }
+  ]
+}

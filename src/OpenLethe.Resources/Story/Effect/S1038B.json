@@ -1,0 +1,82 @@
+{
+  "dataList": [
+    {
+      "id": 0,
+      "characterlist": "잔느변신:5",
+      "feeling": "smile2",
+      "bg": "story_7f_room2",
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-882",
+      "produce": "bgmEvent:BGM/Battle/Battle_Cp10_Boss_4,bgmLabel:Meursault=Battle_1,bgmGlobal:AbSelect=0"
+    },
+    {
+      "id": 1,
+      "voice": "S1003V-883"
+    },
+    {
+      "id": 2,
+      "feeling": "surprise",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-884"
+    },
+    {
+      "id": 3,
+      "characterlist": "뫼르소:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right"
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5,
+      "soundeffect": "SFX_ClothNCoin_Crumble",
+      "voice": "S1003V-887"
+    },
+    {
+      "id": 6,
+      "characterlist": "잔느변신:5",
+      "feeling": "idle2",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "soundeffect": "SFX_Cloth_Crumble",
+      "voice": "S1003V-888"
+    },
+    {
+      "id": 7,
+      "feeling": "smile2",
+      "voice": "S1003V-889"
+    },
+    {
+      "id": 8,
+      "soundeffect": "SFX_Walk_Iron_Once",
+      "voice": "S1003V-890"
+    },
+    {
+      "id": 9,
+      "characterlist": "뫼르소:5",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=right",
+      "voice": "S1003V-891"
+    },
+    {
+      "id": 10,
+      "characterlist": "잔느변신:5",
+      "feeling": "smile2",
+      "effect": "Transition:type=black:startDuration=0.1:endDuration=0.3:direction=left",
+      "soundeffect": "SFX_Walk_Wood_2StepOnly",
+      "voice": "S1003V-892"
+    },
+    {
+      "id": 11,
+      "voice": "S1003V-893"
+    },
+    {
+      "id": 12,
+      "feeling": "idle2",
+      "soundeffect": "SFX_Cotton_Crumble_SoftNew",
+      "voice": "S1003V-894"
+    },
+    {
+      "id": 13,
+      "voice": "S1003V-895"
+    }
+  ]
+}

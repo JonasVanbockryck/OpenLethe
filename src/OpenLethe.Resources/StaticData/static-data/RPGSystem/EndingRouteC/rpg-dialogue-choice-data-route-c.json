@@ -19,6 +19,16 @@
       "key": "DC15_C1",
       "nextDialogueKey": "D1902_C1",
       "iconKey": "Talk"
+    },
+    {
+      "key": "DCRSCW01_C1",
+      "nextDialogueKey": "DRSCW02_C1",
+      "iconKey": "Talk"
+    },
+    {
+      "key": "DCRSCW02_C1",
+      "nextDialogueKey": "DRSCW03_C1",
+      "iconKey": "X"
     }
   ]
 }

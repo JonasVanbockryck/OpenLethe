@@ -12287,6 +12287,7 @@
           "canDuel": true,
           "canChangeTarget": true,
           "skillMotion": "S3",
+          "specialDuelIndex": 0,
           "viewType": "ENCOUNTER",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [
@@ -12761,6 +12762,7 @@
           "canDuel": true,
           "canChangeTarget": true,
           "skillMotion": "S4",
+          "specialDuelIndex": 0,
           "viewType": "ENCOUNTER",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [
@@ -12997,6 +12999,7 @@
           "canDuel": true,
           "canChangeTarget": true,
           "skillMotion": "S4",
+          "specialDuelIndex": 0,
           "viewType": "ENCOUNTER",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [

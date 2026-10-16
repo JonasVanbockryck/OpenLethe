@@ -58,6 +58,7 @@
       "collisionType": "None",
       "breakableByNpcAttack": false,
       "friendlyToPlayer": false,
+      "directAttackDamageOnly": true,
       "deathBurstMotion": "Destroy",
       "ignoreZoneGate": true
     },

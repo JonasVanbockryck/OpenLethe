@@ -248,6 +248,21 @@
               "reward":{"type":"ITEM","id":2,"num":40}
             }
           ]
+        },
+        {
+          "personalityId": 11016,
+          "releaseDay": 20261015,
+          "cv_Id": "",
+          "personalityStoryList": [
+            {
+              "storyId": "P11016",
+              "lockCondition": [
+                {"condition": "gacksung"}
+              ],
+              "order": 5,
+              "reward":{"type":"ITEM","id":2,"num":40}
+            }
+          ]
         }
         ]
     }

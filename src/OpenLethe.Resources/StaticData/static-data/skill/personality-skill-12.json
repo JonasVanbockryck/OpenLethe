@@ -9117,7 +9117,7 @@
           "canChangeTarget": true,
           "skillMotion": "S1",
           "range" : 9,
-          "specialDuelIndex" : 1,
+          "specialDuelIndex" : 0,
           "viewType": "BATTLE",
           "parryingCloseType": "NEAR",
           "abilityScriptList": [
