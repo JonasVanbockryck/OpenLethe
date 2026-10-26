@@ -20,7 +20,7 @@ public static class Effects
         run.Gifts.Items.Any(g => g.Id == discountGiftId) ? price * 70 / 100 : price;
 
     // Verbatim port of Handlers/MirrorDungeon.cs StartingCost (:189-190).
-    public static long StartingCost(long dungeonId) => dungeonId == 7 ? 200 : 500;
+    public static long StartingCost(long dungeonId) => dungeonId >= 7 ? 200 : 500; // 7 and the current season 8 share the MD7 rules
 
     // Verbatim port of Handlers/MirrorDungeonMap.cs IsHiddenConfirmedGift (:156). Confirmed-gift
     // ids split into "normal" (9xxx, deferred to ExitMapNode's e==3 realization) and "hidden"

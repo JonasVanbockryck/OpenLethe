@@ -74,6 +74,7 @@ public static class WireMapper
             LevelAdders = c.leveladders,
             StartKeyword = c.startKeyword,
             StartBuffPoint = c.startBufPoint,
+            StartBuffIds = c.enabledStartbufIds ?? new(),
             ConstraintScores = c.cfs.Select(f => new ConstraintScore { Floor = f.floor, Difficulty = f.difficulty }).ToList(),
             LevelOffsets = new LevelOffsets
             {
@@ -86,7 +87,9 @@ public static class WireMapper
                     Id = g.id, Pids = g.pids, Un = g.un, Ul = g.ul, Oid = g.oid,
                 }).ToList(),
             },
-            Pnids = c.pnids,
+            // Distinct() also repairs saves written before the site stopped appending duplicate ids:
+            // a repeated node id made the client think the run had not advanced past that node.
+            Pnids = c.pnids.Distinct().ToList(),
             Nr = c.nr,
             ChoiceEvents = c.pce.Select(p => new ChoiceEvent { Sl = p.sl, Cs = p.cs, Ri = p.ri, Nei = p.nei }).ToList(),
             SkillStocks = c.ess.Select(e => new SkillStock { T = e.t, N = e.n }).ToList(),
@@ -176,6 +179,7 @@ public static class WireMapper
             leveladders = r.LevelAdders,
             startKeyword = r.StartKeyword,
             startBufPoint = r.StartBuffPoint,
+            enabledStartbufIds = r.StartBuffIds.Count == 0 ? null : r.StartBuffIds,
             cfs = r.ConstraintScores.Select(c => new Cfs { floor = c.Floor, difficulty = c.Difficulty }).ToList(),
             cn = new Currentnode { f = r.Floor.Current.F, s = r.Floor.Current.S, nid = r.Floor.Current.Nid },
             efs = new Efs

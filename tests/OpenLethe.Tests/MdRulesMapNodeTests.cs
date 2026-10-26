@@ -94,25 +94,35 @@ public class MdRulesMapNodeTests
     }
 
     [Fact]
-    public void EnterNode_NormalShopNode_GeneratesFiveSlots()
+    public void EnterNode_NormalShopNode_UsesRetailSlotTable()
     {
-        var run = RunWithNode(nid: 100, e: 10, eid: 0); // eid==0 -> normal shop (ShopGiftCount==5)
+        // eid==0 -> normal shop: shopInfoByType[0] = 1 named "up" slot + 4 gift slots.
+        var run = RunWithNode(nid: 100, e: 10, eid: 0);
+        run.Party.Add(new PartyUnit { PersonalityId = 11 });
+        run.Party.Add(new PartyUnit { PersonalityId = 12 });
 
         MapNodeRules.EnterNode(run, new Currentnode { f = 0, s = 0, nid = 100 });
 
-        Assert.Equal(5, run.Shop.Slots.Count);
-        Assert.All(run.Shop.Slots, s => Assert.Equal("eg", s.T));
+        Assert.Equal(new[] { "up", "eg", "eg", "eg", "eg" }, run.Shop.Slots.Select(s => s.T));
+        Assert.Equal(11, run.Shop.Slots[0].Id);
         Assert.All(run.Shop.Slots, s => Assert.Equal(1, s.S));
     }
 
     [Fact]
-    public void EnterNode_SuperShopNode_GeneratesTenSlots()
+    public void EnterNode_SuperShopNode_UsesRetailSlotTable()
     {
-        var run = RunWithNode(nid: 100, e: 10, eid: 1); // eid!=0 -> super shop (ShopGiftCount==10)
+        // eid!=0 -> super shop: shopInfoByType[1] = 1 "upt" + 2 named "up" + 7 gift slots,
+        // targeting slot first (md-extreme-run seq67/96).
+        var run = RunWithNode(nid: 100, e: 10, eid: 1);
+        run.Party.Add(new PartyUnit { PersonalityId = 11 });
+        run.Party.Add(new PartyUnit { PersonalityId = 12 });
+        run.Party.Add(new PartyUnit { PersonalityId = 13 });
 
         MapNodeRules.EnterNode(run, new Currentnode { f = 0, s = 0, nid = 100 });
 
-        Assert.Equal(10, run.Shop.Slots.Count);
+        Assert.Equal(new[] { "upt", "up", "up" }, run.Shop.Slots.Take(3).Select(s => s.T));
+        Assert.Equal(new long[] { 11, 12 }, run.Shop.Slots.Skip(1).Take(2).Select(s => s.Id));
+        Assert.Equal(7, run.Shop.Slots.Count(s => s.T == "eg"));
     }
 
     [Fact]

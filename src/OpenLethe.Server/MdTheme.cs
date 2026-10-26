@@ -87,6 +87,8 @@ public sealed class MdDungeonInfo
 {
     public List<MdDungeonFloorInfo> floors = new();
     public MdDungeonShopInfo shop = new();
+    // The pre-run rest menu (heal / changeFormation / upgrade toggles) - same file, same slice.
+    public MdRestingEventTable restingEvent = new();
 }
 
 // One personality-upgrade option offered by the MD shop. `index` == the request's idx;
@@ -101,7 +103,9 @@ public sealed class MdUpgradePersonalityOption
     public long detectingStarLight;
 }
 
-public sealed class MdDungeonShopInfo
+// The shop slice of the same file. MdShopTableInfo (MdShopData.cs) adds the retail economics this
+// model originally left out: heal options, changeFormation, refreshShop and shopInfoByType.
+public sealed class MdDungeonShopInfo : MdShopTableInfo
 {
     public List<MdUpgradePersonalityOption> upgradePersonality = new();
 }
@@ -114,8 +118,20 @@ public static class MdUpgradePersonalityCost
         return lst.Count > 0 ? lst[0].shop.upgradePersonality : new List<MdUpgradePersonalityOption>();
     });
 
-    public static MdUpgradePersonalityOption? ForIndex(long idx) =>
-        Options.Value.FirstOrDefault(o => o.index == idx);
+    // A modded identity can carry more skill slots than the retail table lists (idx 0-2), and the
+    // client sends the real slot index when a skill gets replaced. Unknown indices used to return
+    // null, which made ShopRules refuse the whole purchase - the client had already drawn its own
+    // swap, so the bought skill vanished on the next reload instead. Fall back to the highest
+    // listed row (and, for a gap, the nearest lower one) so every slot index stays purchasable.
+    public static MdUpgradePersonalityOption? ForIndex(long idx)
+    {
+        var opts = Options.Value;
+        if (opts.Count == 0 || idx < 0) return null;
+        return opts.FirstOrDefault(o => o.index == idx)
+            ?? (idx >= opts.Max(o => o.index)
+                ? opts.OrderBy(o => o.index).Last()
+                : opts.Where(o => o.index <= idx).OrderBy(o => o.index).LastOrDefault());
+    }
 }
 
 public static class MdEnemyBuffPool
@@ -131,28 +147,74 @@ public static class MdEnemyBuffPool
 }
 
 // MD floor-boundary constraints (995xxx ids). GetConstraints on an e==6 exit takes every
-// entry whose flooridx == cn.f + 1, in file order, unfiltered. Only floors 10-14 define any.
+// entry whose flooridx == cn.f + 1, in file order. Only floors 10-14 define any.
+// The client builds the same list from its own copy of the table (dumpedData/limbus_data/
+// mirrordungeon-constraint/0.json) and then applies the file's replacementRules before showing
+// it, so the server must apply them too: AcquireMirrorDungeonConstraints maps the client's
+// selected indices straight back into this list, and without the rules a swap shifted every
+// following entry onto the wrong constraint (pick one, get another).
 public sealed class MdConstraintEntry
 {
     public long id;
     public long flooridx;
+    // 1-3 in the shipped table. The run's Starlight/MDPass payout is multiplied by the sum of the
+    // picked constraints' score, so this column drives the exit reward (see
+    // RewardResolution.PreviewExitReward / MdConstraints.TotalScore).
+    public long score;
+}
+
+// One "if you do not own ifNotOwned, replaceFrom shows up as replaceTo instead" swap.
+public sealed class MdConstraintReplacementRule
+{
+    public long ifNotOwned;
+    public long replaceFrom;
+    public long replaceTo;
+}
+
+public sealed class MdConstraintReplacementFloor
+{
+    public long floorIdx;
+    public List<MdConstraintReplacementRule> rules = new();
 }
 
 public sealed class MdConstraintFile
 {
     public List<MdConstraintEntry> constraints = new();
+    public List<MdConstraintReplacementFloor> replacementRules = new();
 }
 
 public static class MdConstraints
 {
-    private static readonly Lazy<List<MdConstraintEntry>> All = new(() =>
-    {
-        var lst = StaticData.GetListFromFile<MdConstraintFile>("static-data/mirrordungeon-constraint/mirrordungeon-constraint-07.json");
-        return lst.Count > 0 ? lst[0].constraints : new List<MdConstraintEntry>();
-    });
+    private static readonly Lazy<MdConstraintFile> File = new(() =>
+        StaticData.GetListFromFile<MdConstraintFile>("static-data/mirrordungeon-constraint/mirrordungeon-constraint-07.json")
+            .FirstOrDefault() ?? new MdConstraintFile());
 
-    public static List<long> ForFloor(long flooridx) =>
-        All.Value.Where(c => c.flooridx == flooridx).Select(c => c.id).ToList();
+    /// The floor's constraint ids in file order with the table's replacementRules applied against
+    /// the ids the run already owns (i.e. already picked on an earlier floor). This exact list is
+    /// what the client renders, so indices coming back from it must be resolved against it.
+    public static List<long> ForFloor(long flooridx, IEnumerable<long>? owned = null)
+    {
+        var ids = File.Value.constraints.Where(c => c.flooridx == flooridx).Select(c => c.id).ToList();
+        if (owned is null) return ids;
+
+        var ownedSet = owned.ToHashSet();
+        foreach (var flo in File.Value.replacementRules.Where(r => r.floorIdx == flooridx))
+            foreach (var rule in flo.rules)
+            {
+                if (ownedSet.Contains(rule.ifNotOwned)) continue; // already owned -> keep the base id
+                var at = ids.IndexOf(rule.replaceFrom);
+                if (at >= 0) ids[at] = rule.replaceTo;
+            }
+        return ids;
+    }
+
+    // Sum of the score column over the picked constraint ids. 0 when nothing was picked; unknown
+    // ids are ignored (they keep the run playable instead of throwing).
+    public static long TotalScore(IEnumerable<long> ids)
+    {
+        var set = ids.ToHashSet();
+        return set.Count == 0 ? 0 : File.Value.constraints.Where(c => set.Contains(c.id)).Sum(c => c.score);
+    }
 }
 
 // EGO id -> skill-slot index. A unit's es[*].idx is the EGO's GRADE ordinal (ZAYIN=0, TETH=1,

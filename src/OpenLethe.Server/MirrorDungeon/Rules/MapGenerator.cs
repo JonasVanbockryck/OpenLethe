@@ -13,10 +13,13 @@ namespace OpenLethe.Server.MirrorDungeon.Rules;
 // touch. See the Task 5 brief - "the SAFE default is WRAP, leave MdMapGen where it is."
 public static class MapGenerator
 {
-    // The MD7 start buffs that grant personality level-cap offsets (verbatim port of
-    // MirrorDungeonMap.cs LevelOffsets :30 / StartRunRules.cs :20 - same fixed set, see there
-    // for why it's fixed rather than read from the per-run enabled buffs).
-    private static readonly MdLevelOffsets LevelOffsets = MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
+    // The level-cap offsets now come from the buffs THIS run enabled (Run.StartBuffIds, persisted
+    // by EnableStartBuff). The old fixed {106,102} set was a replay-only crutch: both captured
+    // runs enable exactly those two, so the golden stayed green while any other pick did nothing.
+    // Fallback for a run that never stored its picks.
+    private static MdLevelOffsets LevelOffsetsOf(Run run) => run.StartBuffIds.Count > 0
+        ? MdStartBuffs.LevelOffsets(run.StartBuffIds)
+        : MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
 
     // Port of the RecreateThemeFloorPoolMirrorDungeon handler body (:208-219). Re-rolls
     // run.ThemePools for the NEXT floor (Floor.Current.F + 1) and bumps the per-floor re-roll
@@ -84,7 +87,7 @@ public static class MapGenerator
         {
             efs.Snft += 1;
             efs.Csnft = 1;
-            efs.Sbmlos += LevelOffsets.PerNewTheme;
+            efs.Sbmlos += LevelOffsetsOf(run).PerNewTheme;
             var cap = efs.Sbmlos + efs.Egmlos;
             foreach (var u in run.Party) u.Mlos = cap;
         }

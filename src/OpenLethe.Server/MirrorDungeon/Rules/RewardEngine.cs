@@ -14,10 +14,13 @@ namespace OpenLethe.Server.MirrorDungeon.Rules;
 // See the handler-migration Task 7 brief.
 public static class RewardEngine
 {
-    // The MD7 start buffs that grant personality level-cap offsets (verbatim port of
-    // MirrorDungeonMap.cs LevelOffsets :30 / StartRunRules.cs :20 / MapGenerator.cs :20 - same
-    // fixed set, see there for why it's fixed rather than read from the per-run enabled buffs).
-    private static readonly MdLevelOffsets LevelOffsets = MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
+    // The level-cap offsets now come from the buffs THIS run enabled (Run.StartBuffIds, persisted
+    // by EnableStartBuff). The old fixed {106,102} set was a replay-only crutch: both captured
+    // runs enable exactly those two, so the golden stayed green while any other pick did nothing.
+    // Fallback for a run that never stored its picks.
+    private static MdLevelOffsets LevelOffsetsOf(Run run) => run.StartBuffIds.Count > 0
+        ? MdStartBuffs.LevelOffsets(run.StartBuffIds)
+        : MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
 
     // Owned ego gift 9187 "Special Catalogue" - verbatim port of
     // Handlers/MirrorDungeonMap.cs EncounterCardBonusGift (:84).
@@ -131,7 +134,10 @@ public static class RewardEngine
         SharedRules.RecomputeEgmlos(run);
 
         // Record the cleared node; event nodes (e==3) also record their event id.
-        run.Pnids.Add(matchingNode.Nid);
+        // Deduped: while an event battle finishes, the client re-exits the very same node, and the
+        // retail save never repeats an id here (run-2 keeps pnids unique). The repeated entries made
+        // the client believe it had not advanced.
+        if (!run.Pnids.Contains(matchingNode.Nid)) run.Pnids.Add(matchingNode.Nid);
         if (matchingNode.E == 3) run.Peids.Add(matchingNode.Eid);
 
         // Event nodes (e==3) realize the deferred confirmed-gift chain here. The exit request
@@ -222,13 +228,31 @@ public static class RewardEngine
             // Raise the per-run personality level cap. Sbmlos = base + min(clears, cap)*perClear
             // + snft*perNewTheme, all read from the enabled start buffs' effects. Clearing floor
             // cnf means cnf+1 floors cleared. Absolute (idempotent).
-            run.LevelOffsets.Sbmlos = LevelOffsets.SbmlosAt(cnf + 1, run.LevelOffsets.Snft);
+            run.LevelOffsets.Sbmlos = LevelOffsetsOf(run).SbmlosAt(cnf + 1, run.LevelOffsets.Snft);
             var levelCap = run.LevelOffsets.Sbmlos + run.LevelOffsets.Egmlos;
             foreach (var u in run.Party) u.Mlos = levelCap;
 
-            // Record the cleared floor. Difficulty steps every 5 floors: floor/5 + 1, capped at 3.
-            var clearedFloor = run.ConstraintScores.Count - 1;
-            run.ConstraintScores.Add(new ConstraintScore { Floor = clearedFloor, Difficulty = Math.Min(clearedFloor / 5 + 1, 3) });
+            // Record the cleared floor. The number comes from the run's own position (cnf), NOT from
+            // the list length: a floor that was jumped over never clears, so counting entries drifts
+            // and leaves the client with a cfs whose floors do not match where the run actually is.
+            // A floor the player spent Adversity picks on keeps THAT score: AcquireConstraints wrote
+            // it onto this floor's entry, and the old code overwrote it with the act tier here, which
+            // is why the running total collapsed back to 1/2/3 after every clear. Floors without a
+            // pick fall back to the act tier (floor/5 + 1, capped at 3 - matches the retail capture:
+            // the act-1 boss at floor 4 records difficulty 1, the act-2 boss at floor 9 records 2).
+            var clearedFloor = cnf;
+            var pickedHere = run.ConstraintSelections
+                .Where(s => s.Flooridx == clearedFloor)
+                .SelectMany(s => s.Ids)
+                .ToList();
+            var clearedDifficulty = pickedHere.Count > 0
+                ? MdConstraints.TotalScore(pickedHere)
+                : Math.Min(clearedFloor / 5 + 1, 3);
+            var clearedEntry = run.ConstraintScores.FirstOrDefault(c => c.Floor == clearedFloor);
+            if (clearedEntry is null)
+                run.ConstraintScores.Add(new ConstraintScore { Floor = clearedFloor, Difficulty = clearedDifficulty });
+            else
+                clearedEntry.Difficulty = clearedDifficulty;
 
             // RewardEvents order (verified): [ leadingConfirmed?, GetBattleRewardCase,
             // GetEgogiftWithEnemyBuf, GetConstraints? ].
@@ -248,8 +272,12 @@ public static class RewardEngine
             });
 
             // Floor-boundary constraints: every entry whose flooridx == cn.F + 1, file order,
-            // unfiltered. Only floors 10-14 define any (Se == Sh == pool length).
-            var constraints = OpenLethe.Server.MdConstraints.ForFloor(cnf + 1);
+            // unfiltered by the pool itself - but the table's replacementRules are applied against
+            // what the run already picked, exactly like the client does before rendering the list.
+            // Skipping that step made the server offer base ids while the client showed the swapped
+            // ones, so a pick landed on a different constraint (pick one, get another).
+            var ownedConstraints = run.ConstraintSelections.SelectMany(s => s.Ids);
+            var constraints = OpenLethe.Server.MdConstraints.ForFloor(cnf + 1, ownedConstraints);
             if (constraints.Count > 0)
                 rre.Add(new RewardEvent { Rt = "GetConstraints", Se = constraints.Count, Sh = constraints.Count, Pool = constraints, PoolV2 = new(), PoolV3 = new() });
 
@@ -294,7 +322,12 @@ public static class RewardEngine
             };
         }
 
-        run.Cost += OpenLethe.Server.MdCost.GetDefaultCost(matchingNode.E, floor);
+        // The payout the client shows on the map is that stage's cost in
+        // mirrordungeon-acquire-cost-in-battle; pay that (plus the 9079 Golden Urn / 9242 Bongy
+        // Plush bonuses) and fall back to the per-node-type default only for unlisted stages.
+        var stageCost = MdCost.CostForStage(matchingNode.Eid);
+        var costGain = stageCost >= 0 ? stageCost : MdCost.GetDefaultCost(matchingNode.E, floor);
+        run.Cost += MdCost.ApplyCostGifts(run, matchingNode.E, costGain);
 
         // Echo the client's abno logs sorted by id. The server regenerates the RNG content
         // (k, s, p, ps[*].atrr/atkr) which the replay masks; the deterministic outer length +

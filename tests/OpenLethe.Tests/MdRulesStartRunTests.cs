@@ -20,10 +20,10 @@ public class MdRulesStartRunTests
     }
 
     [Fact]
-    public void EnterMode_IncrementsIdx()
+    public void EnterMode_SetsIdxToMode()
     {
         var run = new Run { Idx = 2 };
-        StartRunRules.EnterMode(run);
+        StartRunRules.EnterMode(run, 3);
         Assert.Equal(3, run.Idx);
     }
 

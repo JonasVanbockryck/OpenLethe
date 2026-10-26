@@ -148,20 +148,33 @@ public static class RewardResolution
 
                     run.SkillStocks = stock.Select(kv => new SkillStock { T = kv.Key, N = kv.Value }).ToList();
                     break;
+
+                case "STARLIGHT_MIN_MAX":
+                    // group-D cards 401-407, whose EN text is "Gain additional {0} Starlight upon
+                    // clearing the Mirror Dungeon" (limbus_locale EN uiList.json ->
+                    // dungeon_battle_reward_case_format_chip_acquisition). The roll is banked in the
+                    // run's starlight tally (scc) - the same field EnableStartBuff adds leftover
+                    // start-buff points to - and settles into the account's owned Starlight (pslp)
+                    // when the run ends (AcquireExitReward). Upstream's Reward enum had only 4
+                    // variants, so a picked group-D card fell off the end of this switch and
+                    // silently did nothing.
+                    if (rp.bonusStarlight is { } sl && sl.max >= sl.min)
+                        run.Starlight.Scc += Random.Shared.NextInt64(sl.min, sl.max + 1);
+                    break;
             }
         }
 
         run.RewardEvents.RemoveAll(re => re.Rt == "GetBattleRewardCase");
     }
 
-    // Verbatim port of PreviewMirrorDungeonExitReward (Handlers/MirrorDungeonShop.cs :260-278).
+    // Port of PreviewMirrorDungeonExitReward (Handlers/MirrorDungeonShop.cs :260-278).
     // The 4-option table math itself lives in MdExitReward.BuildOptions (MdTheme.cs) and stays
-    // there per the migration brief - this just calls through. totalConstraintScore is hardcoded
-    // 0 in the pre-migration handler too: no constraint-score formula is wired anywhere in this
-    // codebase yet, and the run's scinfos never selects any ids either, so 0 is correct for the
-    // captured record regardless of run state (see MdExitReward.BuildOptions doc comment).
+    // there per the migration brief - this just calls through. totalConstraintScore used to be a
+    // hardcoded 0 (the captured record has no constraints selected, so 0 was right for it); it is
+    // now the sum of the picked constraints' score column, which is what the client multiplies the
+    // run's Starlight/MDPass payout by (mirrordungeon-constraint-07.json rewardMultiplier = 15).
     public static (List<Wire.ExitRewardOption> Options, long TotalConstraintScore) PreviewExitReward(Run run) =>
-        (OpenLethe.Server.MdExitReward.BuildOptions(), 0);
+        (OpenLethe.Server.MdExitReward.BuildOptions(), MdConstraints.TotalScore(run.ConstraintSelections.SelectMany(s => s.Ids)));
 
     // Verbatim port of AcquireMirrorDungeonExitReward (Handlers/MirrorDungeonShop.cs :280-323).
     // Run end: every party unit's isp flips to 1, uniformly for participants and
@@ -172,6 +185,13 @@ public static class RewardResolution
     public static List<Wire.Element> AcquireExitReward(Run run, bool useEnkephalinModule, long chanceConsumption)
     {
         foreach (var unit in run.Party) unit.Isp = 1;
+
+        // Settle the run's banked starlight (scc: the group-D "additional Starlight upon clearing"
+        // cards plus leftover start-buff points) into the account's owned Starlight (pslp). The
+        // handler snapshots the tally before this call for starlightChangeAmount; the run save is
+        // wiped right after this response, so this is the last place it can be consumed.
+        run.Starlight.Pslp += run.Starlight.Scc;
+        run.Starlight.Scc = 0;
 
         // The client applies EXP/BATTLEPASS_POINT/USERBANNER_RECORD elements via `updated`
         // (masked wholesale in the replay) - only ITEM-type elements are echoed back here
@@ -189,16 +209,14 @@ public static class RewardResolution
     private static long RollCost(MdRewardParams rp) =>
         Random.Shared.NextInt64(rp.acquireCostMin ?? 0, (rp.acquireCostMax ?? 0) + 1);
 
-    /// Port of acquire_mirror_dungeon_battle_reward.rs reward_random_ego_gift.
-    /// ponytail: UPSTREAM QUIRK, PRESERVED - Rust looks for the drop pool with dungeonId == 5,
-    /// but the only shipped file is mirrordungeon-egogift-droppool-7.json (dungeonId 7). So this
-    /// always returns null on real data and EGOGIFT / COST_EGOGIFT_START_CATEGORY rewards never
-    /// grant a gift. Do not "fix" it to the max-dungeon-id lookup MdThemePool uses - that is a
-    /// different code path. The full roll below stays ported so the behaviour is right if a
-    /// dungeon-5 pool ever ships.
+    /// Port of acquire_mirror_dungeon_battle_reward.rs reward_random_ego_gift, minus one upstream
+    /// quirk: Rust looks for the drop pool with dungeonId == 5, which no shipped file has (only 7
+    /// and 8), so EGOGIFT / COST_EGOGIFT_START_CATEGORY reward cards never granted a gift. Use the
+    /// newest pool instead, the same lookup MdThemePool.ShopEgoGiftsPool makes.
     private static long? RewardRandomEgoGift(double acquirableProb, MdTierRange? tierRange)
     {
-        var pool = OpenLethe.Server.MdThemeData.DropPools().FirstOrDefault(p => p.dungeonId == 5);
+        var pools = OpenLethe.Server.MdThemeData.DropPools();
+        var pool = pools.OrderByDescending(p => p.dungeonId).FirstOrDefault();
         if (pool is null || tierRange is null) return null;
         if (Random.Shared.NextDouble() > acquirableProb) return null;
 

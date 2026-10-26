@@ -20,6 +20,19 @@ public static class CustomUploadEndpoints
         Upload<CustomIdentity>(app, "/custom/upload/personality",
             (a, v) => a.CustomIdentities = v, "Successfully updated theme floors");
 
+        // The client mod posts about a dozen more kinds at startup (skin, lobby-bgm,
+        // battle-effect, error-code-table, mirrordungeon-constraint, ...). Rust has a route for
+        // each; this port models only the two above, and the rest used to hit the framework's
+        // empty-body 404, which Lethe's HTTP patch throws on (ArgumentOutOfRangeException in
+        // Patches.Request.PostWebRequest) and the game shows as an error. Acknowledge every other
+        // kind with the same bare {"message": ...}; nothing reads them, so nothing is stored.
+        // Literal routes above win over this parameterized one.
+        app.MapPost("/custom/upload/{kind}", async (HttpContext ctx, string kind) =>
+        {
+            if (await HandlerContext.ResolveAsync(ctx) is null) return Results.Unauthorized();
+            return Results.Json(new { message = $"Successfully updated {kind}" }, global::PacketJson.Options);
+        });
+
         return app;
     }
 

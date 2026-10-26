@@ -36,9 +36,10 @@ public static class MirrorDungeonShopEndpoints
             var p = await HandlerContext.ReadParamsAsync<PurchaseHealMirrorDungeonParams>(ctx);
             if (p is null) return Results.BadRequest();
 
-            // No matching branch in Rust for any other idx: default response, no domain
-            // round-trip, no save (ShopRules.Heal only models idx 0/1).
-            if (p.idx != 0 && p.idx != 1)
+            // Any idx the retail table does not define gets the empty default response, no domain
+            // round-trip and no save - the reference server's "no matching branch" case. The real
+            // options are 0 (50% hp / 45 cm, one unit), 1 (20% / 15 cm, party) and 2 (revive).
+            if (MdShopTable.Heal(p.idx) is null)
                 return Results.Json(global::ResponsePacket<PurchaseHealMirrorDungeonResult>.Ok(new PurchaseHealMirrorDungeonResult(), purchaseHealId), global::PacketJson.Options);
 
             var run = WireMapper.ToDomain(loaded);
@@ -96,12 +97,10 @@ public static class MirrorDungeonShopEndpoints
             var p = await HandlerContext.ReadParamsAsync<PurchaseUpgradePersonalityMirrorDungeonParams>(ctx);
             if (p is null) return Results.BadRequest();
 
-            // ponytail: capture only exercises isDetected=false/useStarlight=false, so
-            // ShopRules.PurchaseUpgradePersonality only models the base-price path -
-            // detectingPrice/detectingStarLight are not modelled (p.isDetected/p.useStarlight
-            // unread here, same as the old handler).
+            // isDetected (the buyer picks the skill back) and useStarlight (pay the run's starlight
+            // instead of funds) are both real paths now, not capture-only fields.
             var run = WireMapper.ToDomain(loaded);
-            ShopRules.PurchaseUpgradePersonality(run, p.pid, p.idx);
+            ShopRules.PurchaseUpgradePersonality(run, p.pid, p.idx, p.isDetected, p.useStarlight);
             var save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = OpenLethe.Server.AccountFields.Set(save);
@@ -259,6 +258,9 @@ public static class MirrorDungeonShopEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
+            // Snapshot the run's banked starlight before AcquireExitReward settles it into pslp -
+            // this is what the client shows as "Starlight +N" on the run-end screen.
+            var starlightGain = run.Starlight.Scc;
             var granted = RewardResolution.AcquireExitReward(run, p.useEnkephalinModule, p.chanceConsumption);
             var save = WireMapper.ToWire(run);
 
@@ -275,8 +277,11 @@ public static class MirrorDungeonShopEndpoints
                 startBuffInfo = new StartBuffInfo { dungeonid = save.dungeonId },
                 mdpassOriginalAmount = 0, // masked
                 mdpassCurrentChanceUsage = 0, // masked
-                totalConstraintScore = 0,
-                starlightChangeAmount = 0, // masked
+                // The run's accumulated Adversity score: the picks' own score, same formula as
+                // PreviewExitReward (RewardResolution.cs:176). Summing ConstraintScores added the
+                // per-floor act tiers (1/2/3) on top and disagreed with the preview.
+                totalConstraintScore = OpenLethe.Server.MdConstraints.TotalScore(run.ConstraintSelections.SelectMany(s => s.Ids)),
+                starlightChangeAmount = starlightGain,
                 currentClearedConstraintIds = save.currentInfo.scinfos.SelectMany(s => s.ids).ToList(),
                 lastclearedFloor = save.currentInfo.cn.f,
             };
@@ -293,7 +298,9 @@ public static class MirrorDungeonShopEndpoints
             var account = await HandlerContext.ResolveAsync(ctx);
             if (account is null) return Results.Unauthorized();
             var loaded = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
-            if (loaded is null) return Results.StatusCode(500);
+            // No save yet (the column is empty right after Enter): start a normal run instead of a
+            // 500 - the new client retries SelectFormation on a 500 and hangs on the formation screen.
+            loaded ??= WireMapper.ToWire(StartRunRules.NewRun(StartRunRules.CurrentDungeonId, 0));
             var p = await HandlerContext.ReadParamsAsync<SelectFormationMirrorDungeonParams>(ctx);
             if (p is null) return Results.BadRequest();
 
@@ -323,9 +330,8 @@ public static class MirrorDungeonShopEndpoints
             var p = await HandlerContext.ReadParamsAsync<PurchaseFormationMirrorDungeonParams>(ctx);
             if (p is null) return Results.BadRequest();
 
-            const long usedCost = 100;
             var run = WireMapper.ToDomain(loaded);
-            StartRunRules.PurchaseFormation(run, p.formation);
+            var applied = StartRunRules.PurchaseFormation(run, p.formation);
             var save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = OpenLethe.Server.AccountFields.Set(save);
@@ -336,7 +342,9 @@ public static class MirrorDungeonShopEndpoints
                 dungeonUnitList = save.currentInfo.dul,
                 shopInfo = save.currentInfo.shop,
                 prevUnitInfo = new(),
-                usedcost = usedCost,
+                // The reference server always reported the flat 100; a refused swap (allowance
+                // used up) reports 0 so the client does not show a charge that never happened.
+                usedcost = applied ? MdShopTable.ChangeFormationPrice : 0,
             };
             return Results.Json(global::ResponsePacket<PurchaseFormationMirrorDungeonResult>.Ok(result, purchaseFormationId), global::PacketJson.Options);
         });

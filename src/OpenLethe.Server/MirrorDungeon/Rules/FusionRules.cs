@@ -78,8 +78,9 @@ public static class FusionRules
         {
             var desiredUl = ego.Ul + 1;
             if (desiredUl < 0 || desiredUl >= egoInfo.upgradeDataList.Count) return (null, false);
-            var price = Effects.ApplyShopDiscount(run, ShopDiscountUpgradeGift,
-                OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, desiredUl));
+            // 9800 "Wealth" fixes enhancement cost to 1 as well (see ShopRules.WealthFix).
+            var price = ShopRules.WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountUpgradeGift,
+                OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, desiredUl)));
             run.Cost -= price;
             run.UsedCost += price; // cumulative shop-spend this floor.
             ego.Ul = desiredUl;

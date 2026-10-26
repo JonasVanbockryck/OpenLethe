@@ -37,6 +37,11 @@ public sealed class Run
     public List<long> LevelAdders { get; set; } = new();
     public string StartKeyword { get; set; } = "";
     public long StartBuffPoint { get; set; }
+
+    /// Start-buff ids this run enabled (mirrordungeon-start-buffs-07.json). Persisted in the
+    /// save so every floor/reward step can derive the effects from the real picks instead of
+    /// the capture's hardcoded pair. Empty when the player enabled none.
+    public List<long> StartBuffIds { get; set; } = new();
     public List<ConstraintScore> ConstraintScores { get; set; } = new();  // was RawCfs
     public LevelOffsets LevelOffsets { get; set; } = new(); // was RawEfs
     public EgoGiftInventory Gifts { get; set; } = new();   // was RawEgs (egs[*])

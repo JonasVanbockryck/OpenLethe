@@ -22,11 +22,13 @@ public static class SharedRules
         return node.Eid != 0;
     }
 
-    // Port of map/mod.rs shop_gift_count (MirrorDungeonMap.cs:50-55).
+    // Port of map/mod.rs shop_gift_count (MirrorDungeonMap.cs:50-55), but the counts come from
+    // the retail table now (shopInfoByType.egoGiftSlotNum: 4 regular / 7 super) instead of the
+    // reference server's hardcoded 5/10.
     public static long ShopGiftCount(Run run) => IsSuperShop(run) switch
     {
-        true => 10,
-        false => 5,
+        true => MdShopTable.GiftSlots(true),
+        false => MdShopTable.GiftSlots(false),
         null => 0,
     };
 

@@ -46,10 +46,15 @@ public static class EventEngine
     public static void UpdateNode(Run run, Currentnode currentNode, ChoiceEventData choiceEventData, List<Dungeonunitlist1> dungeonUnitList)
     {
         // Rust: pce.first().and_then(|e| e.nei).or_else(|| dungeonMap.ns node lookup).
-        // ponytail: FirstOrDefault is only the still-open chain head while pce.Count <= 2 (true
-        // for every record in the 321-record md-extreme capture) - see the wire twin's comment.
+        // NOTE: the port appends to the TAIL (see the Add at the bottom of this method), so the
+        // entry whose Nei points at the still-open chain head is the LAST one, not the first.
+        // Reading FirstOrDefault() here only agreed with the capture while pce.Count <= 2; on a
+        // three-step event it re-resolved the second step's eid, so the server processed (and
+        // echoed back) an event the client had already finished - which is what left the event
+        // screen stuck. Do not change this back to FirstOrDefault without also flipping the
+        // append below to an Insert(0, ...).
         long? eid = null;
-        var pe = run.ChoiceEvents.FirstOrDefault();
+        var pe = run.ChoiceEvents.LastOrDefault();
         if (pe is not null && pe.Nei.HasValue) eid = pe.Nei.Value;
         if (eid is null)
             eid = run.Floor.Nodes.FirstOrDefault(n => n.Nid == currentNode.nid)?.Eid;

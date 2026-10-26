@@ -46,6 +46,12 @@ public sealed class MdRewardParams
     public MdTierRange? egoGiftTierRange;
     public MdEgoStock? leastEgoStock;
     public MdEgoStock? randomEgoStock;
+
+    // group-D ("STARLIGHT_MIN_MAX", ids 401-407) stores its roll as
+    // "rewardParams": { "bonusStarlight": { "min": 10, "max": 12 } } - the same {min,max}
+    // shape the tier range uses, hence MdTierRange. Missing here until now, so the whole
+    // group deserialized with a null params object and the picked card did nothing.
+    public MdTierRange? bonusStarlight;
 }
 
 public sealed class MdTierRange

@@ -139,12 +139,12 @@ public class MdRulesSharedTests
         var normal = new Run();
         normal.Floor.Current.Nid = 1;
         normal.Floor.Nodes.Add(new MapNode { Nid = 1, E = 10, Eid = 0 });
-        Assert.Equal(5, SharedRules.ShopGiftCount(normal));
+        Assert.Equal(4, SharedRules.ShopGiftCount(normal)); // shopInfoByType[0].egoGiftSlotNum
 
         var super = new Run();
         super.Floor.Current.Nid = 1;
         super.Floor.Nodes.Add(new MapNode { Nid = 1, E = 10, Eid = 1 });
-        Assert.Equal(10, SharedRules.ShopGiftCount(super));
+        Assert.Equal(7, SharedRules.ShopGiftCount(super)); // shopInfoByType[1].egoGiftSlotNum
 
         var notShop = new Run();
         notShop.Floor.Current.Nid = 1;

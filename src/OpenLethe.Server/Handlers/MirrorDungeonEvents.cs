@@ -38,6 +38,7 @@ public static class MirrorDungeonEventsEndpoints
                 prevChoiceEvent = save.currentInfo.pce,
                 currentEgoGifts = save.currentInfo.egs,
                 dungeonUnitList = save.currentInfo.dul,
+                cels = save.currentInfo.cels,
             };
             return Results.Json(global::ResponsePacket<UpdateMirrorDungeonMapNodeResult>.Ok(result, updateMapNodeId), global::PacketJson.Options);
         });

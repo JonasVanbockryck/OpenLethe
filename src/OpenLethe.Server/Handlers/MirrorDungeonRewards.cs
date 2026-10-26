@@ -58,7 +58,9 @@ public static class MirrorDungeonRewardsEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
-            ShopRules.RefreshShop(run);
+            // The request's keyword now reaches the shop rules (a plain refresh sends ""/"None";
+            // a keyword refresh sends the real keyword and pays the extra adder).
+            ShopRules.RefreshShop(run, p.keyword);
             var save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = AccountFields.Set(save);

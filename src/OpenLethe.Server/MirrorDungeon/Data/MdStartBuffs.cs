@@ -84,6 +84,23 @@ public static class MdStartBuffs
             .Sum(b => b.effects.Where(e => e.type == "ADDITIONAL_START_COST").Sum(e => e.value));
     }
 
+    // ADDITIONAL_START_COST carried by the enabled buffs themselves (buff 103's +400). Used when
+    // the run persisted its picks (Run.StartBuffIds); see AdditionalStartCost below for the
+    // replay-only fallback that this replaces.
+    public static long StartCostOf(IEnumerable<long> buffIds)
+    {
+        var d = Data.Value;
+        if (d is null) return 0;
+        long sum = 0;
+        foreach (var id in buffIds)
+        {
+            var b = d.buffs.FirstOrDefault(x => x.id == id);
+            if (b is null) continue;
+            sum += b.effects.Where(e => e.type == "ADDITIONAL_START_COST").Sum(e => e.value);
+        }
+        return sum;
+    }
+
     // Reads the personality level-cap offsets from the enabled buffs' effects[]. Generalizes
     // over the three level-offset effect types (any unrecognized effect is ignored). Verified
     // against buffs [106,102]: ENTER_1ST_FLOOR 3, CLEAR_FLOOR value 1 / value2 5, and

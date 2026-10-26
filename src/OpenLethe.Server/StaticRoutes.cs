@@ -37,7 +37,6 @@ public static class StaticRoutes
         app.MapPacket<ReqPacket_ConfirmedSeasonLog, ResPacket_ConfirmedSeasonLog>("/api/ConfirmedSeasonLog");
         app.MapPacket<ReqPacket_DeleteFriend, ResPacket_DeleteFriend>("/api/DeleteFriend");
         app.MapPacket<ReqPacket_EgoGacksungWithItems, ResPacket_EgoGacksungWithItems>("/api/EgoGacksungWithItems");
-        app.MapPacket<ReqPacket_EnableSpecialStartBuffMirrorDungeon, ResPacket_EnableSpecialStartBuffMirrorDungeon>("/api/EnableSpecialStartBuffMirrorDungeon");
         app.MapPacket<ReqPacket_EnterExpDungeon, ResPacket_EnterExpDungeon>("/api/EnterExpDungeon");
         app.MapPacket<ReqPacket_EnterExpDungeon, ResPacket_EnterExpDungeon>("/api/EnterExpDungeonv2");
         app.MapPacket<ReqPacket_EnterStageBattle, ResPacket_EnterStageBattle>("/api/EnterStageBattle");
@@ -104,7 +103,9 @@ public static class StaticRoutes
         app.MapPacket<ReqPacket_RejectReceivedFriendRequest, ResPacket_RejectReceivedFriendRequest>("/api/RejectReceivedFriendRequest");
         app.MapPacket<ReqPacket_RejectRewardEgoGiftsStoryMirrorDungeon, ResPacket_RejectRewardEgoGiftsStoryMirrorDungeon>("/api/RejectRewardEgoGiftsStoryMirrorDungeon");
         app.MapPacket<ReqPacket_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon, ResPacket_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon>("/api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon");
-        app.MapPacket<ReqPacket_RemoveMirrorDungeonEgoGift, ResPacket_RemoveMirrorDungeonEgoGift>("/api/RemoveMirrorDungeonEgoGift");
+        // /api/RemoveMirrorDungeonEgoGift is NOT a stateless stub any more: the client removes the gift
+        // locally and expects the save to follow, so dropping the request left the two permanently out of
+        // sync (UI empty, save still full). The real handler lives in Handlers/MirrorDungeon.cs.
         app.MapPacket<ReqPacket_RemoveStoryMirrorDungeonEgoGift, ResPacket_RemoveStoryMirrorDungeonEgoGift>("/api/RemoveStoryMirrorDungeonEgoGift");
         app.MapPacket<ReqPacket_ReportError, ResPacket_ReportError>("/api/ReportError");
         app.MapPacket<ReqPacket_ReportModifiedHashCatalog, ResPacket_ReportModifiedHashCatalog>("/log/ReportModifiedHash");

@@ -13,6 +13,17 @@ public sealed class EgoGiftCombineFixedTable
 public sealed class CombineFixed
 {
     public List<FixedCombination> combineFixed = new();
+    // Mixed recipe: N gifts from group A plus M from group B (e.g. 2 A + 3 B => 9083).
+    public List<MixedCombination> combineMixed = new();
+}
+
+public sealed class MixedCombination
+{
+    public List<long> aEgoGiftIds = new();
+    public long aEgoGiftRequiredNum;
+    public List<long> bEgoGiftIds = new();
+    public long bEgoGiftRequiredNum;
+    public long resultEgoGiftId;
 }
 
 public sealed class FixedCombination
@@ -65,6 +76,12 @@ public static class MdEgoFusion
             .SelectMany(t => t.egoGiftCombineFixedTable!.combineFixed)
             .ToList());
 
+    private static readonly Lazy<List<MixedCombination>> MixedCombinations = new(() =>
+        StaticData.GetUnlisted<EgoGiftCombineFixedTable>("static-data/mirror-dungeon-common-data")
+        .Where(t => t.egoGiftCombineFixedTable is not null)
+        .SelectMany(t => t.egoGiftCombineFixedTable!.combineMixed)
+        .ToList());
+
     private static readonly Lazy<Dictionary<long, long>> RecipeMapping = new(() =>
     {
         var map = new Dictionary<long, long>();
@@ -114,6 +131,30 @@ public static class MdEgoFusion
 
     public static long? FuseGiftFixed(IReadOnlyList<long> inputGifts)
     {
+        // Match the retail requiredEgoGiftIds as an exact multiset first (covers 2-, 3- and
+        // 4-gift recipes), then the mixed A+B recipes, and only then the old a/b/c hash.
+        var ids = inputGifts.Where(i => i != 0).OrderBy(i => i).ToList();
+        if (ids.Count > 0)
+        {
+            foreach (var c in FixedCombinations.Value)
+            {
+                var req = (c.requiredEgoGiftIds ?? new List<long>()).Where(i => i != 0).OrderBy(i => i).ToList();
+                if (req.Count == 0 || req.Count != ids.Count) continue;
+                var same = true;
+                for (var i = 0; i < req.Count; i++) if (req[i] != ids[i]) { same = false; break; }
+                if (same) return c.resultEgoGiftId;
+            }
+
+            foreach (var m in MixedCombinations.Value)
+            {
+                var needA = m.aEgoGiftRequiredNum; var needB = m.bEgoGiftRequiredNum;
+                if (ids.Count != needA + needB) continue;
+                var setA = new HashSet<long>(m.aEgoGiftIds); var setB = new HashSet<long>(m.bEgoGiftIds);
+                var cntA = ids.Count(i => setA.Contains(i)); var cntB = ids.Count(i => setB.Contains(i));
+                if (cntA == needA && cntB == needB) return m.resultEgoGiftId;
+            }
+        }
+
         var hash = Hash3(
             inputGifts.Count > 0 ? inputGifts[0] : 0,
             inputGifts.Count > 1 ? inputGifts[1] : 0,

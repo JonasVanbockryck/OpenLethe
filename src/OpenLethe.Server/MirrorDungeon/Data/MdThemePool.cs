@@ -28,18 +28,20 @@ public sealed class MdThemePool
         _ => new[] { .42, .26, .18, .13, .01 },
     };
 
-    public static List<long> EgoGiftWeighted(long floor, long egoId)
+    // weightMultiplier is the shop-keyword boost (shopKeywordRefreshWeightMultiplier, 12.5): an
+    // on-keyword gift weighs that much more than its tier share alone would give it.
+    public static List<long> EgoGiftWeighted(long floor, long egoId, double weightMultiplier = 1.0)
     {
         var tier = (MdEgoData.DetermineEgoTier(egoId) ?? 1) - 1;
         var weights = GetEgoGiftWeights(floor);
         var prob = tier >= 0 && tier < weights.Length ? weights[tier] : 0;
-        var weight = (int)(100 * prob);
+        var weight = (int)(100 * prob * weightMultiplier);
         return Enumerable.Repeat(egoId, weight).ToList();
     }
 
-    public static long? SelectRandomEgoFromPool(List<long> pool, long floor, Func<long, bool> filter)
+    public static long? SelectRandomEgoFromPool(List<long> pool, long floor, Func<long, bool> filter, double weightMultiplier = 1.0)
     {
-        var weighted = pool.Where(filter).SelectMany(id => EgoGiftWeighted(floor, id)).ToList();
+        var weighted = pool.Where(filter).SelectMany(id => EgoGiftWeighted(floor, id, weightMultiplier)).ToList();
         return weighted.Count == 0 ? null : weighted[Random.Shared.Next(weighted.Count)];
     }
 
@@ -90,11 +92,18 @@ public sealed class MdThemePool
         var giftPool = ShopEgoGiftsPool(themeId);
         var chosen = new List<long>();
 
+        // A real keyword (anything but empty / the literal "None" a plain refresh sends) weights
+        // on-keyword gifts by the retail table's shopKeywordRefreshWeightMultiplier on top of
+        // their tier weight.
+        var keywordBoost = string.IsNullOrEmpty(keyword) || keyword == "None"
+            ? 1.0
+            : MdCommonTable.KeywordRefreshWeightMultiplier;
+
         var matchingCount = (count + 1) / 2; // div_ceil(2)
         for (var i = 0; i < matchingCount; i++)
         {
             var picked = SelectRandomEgoFromPool(giftPool, floor, id =>
-                !chosen.Contains(id) && MdEgoData.GetById(id) is { } g && g.keyword == keyword);
+                !chosen.Contains(id) && MdEgoData.GetById(id) is { } g && g.keyword == keyword, keywordBoost);
             if (picked is { } id2) chosen.Add(id2);
         }
 
