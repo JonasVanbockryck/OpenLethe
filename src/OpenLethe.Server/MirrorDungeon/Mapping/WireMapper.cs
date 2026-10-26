@@ -107,7 +107,7 @@ public static class WireMapper
             Cels = c.cels,
             Starlight = new StarlightState
             {
-                Pslp = c.slinfo.pslp, Rsbp = c.slinfo.rsbp, Rucc = c.slinfo.rucc, Dpp = c.slinfo.dpp,
+                Pslp = StarlightState.ClampPslp(c.slinfo.pslp), Rsbp = c.slinfo.rsbp, Rucc = c.slinfo.rucc, Dpp = c.slinfo.dpp,
                 Brcp = c.slinfo.brcp, Pfb = c.slinfo.pfb, Scc = c.slinfo.scc, Ieedt = c.slinfo.ieedt,
                 Degids = c.slinfo.degids, Segr = c.slinfo.segr, Ds = c.slinfo.ds,
             },
@@ -209,7 +209,7 @@ public static class WireMapper
             cels = r.Cels,
             slinfo = new Slinfo
             {
-                pslp = r.Starlight.Pslp, rsbp = r.Starlight.Rsbp, rucc = r.Starlight.Rucc, dpp = r.Starlight.Dpp,
+                pslp = StarlightState.ClampPslp(r.Starlight.Pslp), rsbp = r.Starlight.Rsbp, rucc = r.Starlight.Rucc, dpp = r.Starlight.Dpp,
                 brcp = r.Starlight.Brcp, pfb = r.Starlight.Pfb, scc = r.Starlight.Scc, ieedt = r.Starlight.Ieedt,
                 degids = r.Starlight.Degids, segr = r.Starlight.Segr, ds = r.Starlight.Ds,
             },

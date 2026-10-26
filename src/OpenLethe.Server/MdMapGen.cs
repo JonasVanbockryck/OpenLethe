@@ -231,6 +231,108 @@ public static class MdMapGen
     // changedHiddenNode flips true (i.e. the client just entered it).
     public const long HiddenBattleNodeType = 15;
 
+    // Hidden stages of the late floors (ported from the Mirror Dungeon fork).
+    // static-data/battle-mirrordungeon/mirrordungeon-abbattle7-hidden.json defines four abnormality
+    // battles (9000005-9000008), each awarding its own exclusive E.G.O gift, and
+    // mission-condition.json gates the MIRROR_DUNGEON_CLEAR_HIDDEN_BATTLE missions on exactly those
+    // ids. The act-3 fixed-floor packs used from floor 11 on never point at them, so a bonus node
+    // is added in the middle of the map that fights one of them.
+    public static readonly long[] HiddenBattleIds = { 9000007, 9000006, 9000008, 9000005 };
+
+    // The bonus node is drawn as a plain abnormality battle (e==5 in retail) but fights a
+    // hidden boss.
+    public const long BonusBattleNodeType = 5;
+
+    // The hand-made 16th-floor pack: its layout already contains the hidden stages.
+    public const long ExhardbagThemeId = 3001;
+
+    // Stage ids from here up are hand-made (the exhardbag pack's 9500001), not retail.
+    private const long CustomBattleStage = 9500000;
+
+    // Packs whose routes their authors drew by hand; no bonus node is added to them.
+    private static readonly long[] SelfMadeThemes = { 1122, 1517, 1520, 3001, 3002, 9505 };
+
+    public static bool IsHiddenBattle(long encounterId) => HiddenBattleIds.Contains(encounterId);
+
+    // The hidden bosses this run has not beaten yet; owning a boss's exclusive gift means it
+    // was beaten. (The fork refilled beaten slots with a battle from its own data mod; without
+    // that mod the pool just shrinks, and an empty pool places no node.)
+    public static List<long> LateBattlePool(MirrorOriginSaveInfo save)
+    {
+        var ownedGifts = new HashSet<long>(save.currentInfo?.egs?.Select(e => e.id) ?? Enumerable.Empty<long>());
+        return HiddenBattleIds.Where(id => !ownedGifts.Contains(HiddenGiftOf(id))).ToList();
+    }
+
+    // Each hidden boss's exclusive gift (its battle file's rewardList).
+    public static long HiddenGiftOf(long stageId) => stageId switch
+    {
+        9000005 => 9257,
+        9000006 => 9259,
+        9000007 => 9256,
+        9000008 => 9258,
+        _ => 0,
+    };
+
+    // From floor index 10 (floor 11) on: shift the pack's rows from sector 2 down by one and put
+    // the bonus battle in the freed middle row, reachable from both sector-1 nodes and leading on
+    // to the next row, so it is an optional branch:
+    //   start -> two "?" -> bonus battle (2,1) -> two "?" -> shop -> boss.
+    private static List<Ns> AddHiddenBattleNode(List<Ns> graph, long floor, long themeId, MirrorOriginSaveInfo save)
+    {
+        if (floor < 10 || graph.Count == 0) return graph;
+        if (themeId >= 3000 || SelfMadeThemes.Contains(themeId)) return graph;
+        if (graph.Any(n => IsHiddenBattle(n.eid) || (n.e == 6 && n.eid >= CustomBattleStage))) return graph;
+
+        var pool = LateBattlePool(save);
+        if (pool.Count == 0) return graph;
+        var encounterId = pool[Random.Shared.Next(pool.Count)];
+
+        // Every stock layout has a shop; when one doesn't, the node hangs off the boss instead.
+        var tail = graph.FirstOrDefault(n => n.e == 10)
+            ?? graph.FirstOrDefault(n => n.e == 6)
+            ?? graph.Last();
+
+        var nid = NodeId(floor, 2, 1);
+        if (graph.Any(n => n.nid == nid)) return graph;
+
+        // nid encodes the row (f*10000 + s*100 + idx), so shifted nodes get new ids and every
+        // edge pointing at them is rewritten.
+        var remap = new Dictionary<long, long>();
+        foreach (var n in graph.Where(n => n.s >= 2).ToList())
+        {
+            var oldNid = n.nid;
+            n.s += 1;
+            n.nid = NodeId(floor, n.s, oldNid % 100);
+            remap[oldNid] = n.nid;
+        }
+        foreach (var n in graph)
+            for (var i = 0; i < n.nnids.Count; i++)
+                if (remap.TryGetValue(n.nnids[i], out var fresh)) n.nnids[i] = fresh;
+
+        // The bonus node leads only into the row below (not the shop), so it stays optional.
+        var lower = graph.Where(n => n.s == 3 && n.e != 10 && n.e != 6).ToList();
+        var bonus = new Ns
+        {
+            f = floor,
+            s = 2,
+            nid = nid,
+            e = BonusBattleNodeType,
+            eid = encounterId,
+            nnids = lower.Select(n => n.nid).ToList(),
+        };
+        if (bonus.nnids.Count == 0) bonus.nnids.Add(tail.nid);
+        graph.Add(bonus);
+
+        // Each sector-1 node gets an extra edge into it (its existing edges stay); never the shop.
+        foreach (var n in graph.Where(n => n.s == 1 && n.e != 10 && n.nid != nid))
+            if (!n.nnids.Contains(nid)) n.nnids.Add(nid);
+
+        if (!graph.Any(n => n.nnids.Contains(nid)))
+            foreach (var n in graph.Where(n => n.e != 10).Take(1)) n.nnids.Add(nid);
+
+        return graph;
+    }
+
     private static long PickFallbackEventId()
     {
         var pool = DungeonEventPool.Value;
@@ -294,6 +396,8 @@ public static class MdMapGen
                 };
             }).ToList();
 
+            // Act-3 fixed floors: add the hidden-boss bonus node (floor 11 on).
+            graph = AddHiddenBattleNode(graph, floor, themeId, save);
         }
         else
         {

@@ -158,8 +158,15 @@ public static class RewardResolution
                     // when the run ends (AcquireExitReward). Upstream's Reward enum had only 4
                     // variants, so a picked group-D card fell off the end of this switch and
                     // silently did nothing.
+                    // With owned starlight pinned (StarlightState.PinnedPslp) the banked gain would be
+                    // invisible, so the pin is raised by the roll as well (from the Mirror Dungeon fork).
                     if (rp.bonusStarlight is { } sl && sl.max >= sl.min)
-                        run.Starlight.Scc += Random.Shared.NextInt64(sl.min, sl.max + 1);
+                    {
+                        var rolled = Random.Shared.NextInt64(sl.min, sl.max + 1);
+                        run.Starlight.Scc += rolled;
+                        if (StarlightState.PinnedPslp is long pin && run.Starlight.Pslp < pin + rolled)
+                            run.Starlight.Pslp = pin + rolled;
+                    }
                     break;
             }
         }

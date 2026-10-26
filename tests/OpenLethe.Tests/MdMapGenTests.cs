@@ -103,4 +103,46 @@ public class MdMapGenTests
             }
         }
     }
+
+    // Theme 1501 (theme-floor-t6): an act-3 fixed floor - start, two sector-1 events, ... shop, boss.
+    private const long FixedAct3ThemeId = 1501;
+
+    [Fact]
+    public void GenerateNewFloor_Floor11_AddsHiddenBossBonusNodeInTheMiddleRow()
+    {
+        var save = new MirrorOriginSaveInfo();
+
+        MdMapGen.GenerateNewFloor(10, FixedAct3ThemeId, save); // floor index 10 = floor 11
+
+        var ns = save.dungeonMap.ns;
+        var bonus = Assert.Single(ns, n => MdMapGen.IsHiddenBattle(n.eid));
+        Assert.Equal(MdMapGen.BonusBattleNodeType, bonus.e);
+        Assert.Equal(MdMapGen.NodeId(10, 2, 1), bonus.nid);
+        Assert.NotEmpty(bonus.nnids);
+        // Reachable from the sector-1 row, and every edge still lands on a real node.
+        Assert.Contains(ns, n => n.s == 1 && n.nnids.Contains(bonus.nid));
+        Assert.All(ns.SelectMany(n => n.nnids), id => Assert.Contains(ns, n => n.nid == id));
+    }
+
+    [Fact]
+    public void GenerateNewFloor_BeforeFloor11_AddsNoHiddenBoss()
+    {
+        var save = new MirrorOriginSaveInfo();
+
+        MdMapGen.GenerateNewFloor(9, FixedAct3ThemeId, save);
+
+        Assert.DoesNotContain(save.dungeonMap.ns, n => MdMapGen.IsHiddenBattle(n.eid));
+    }
+
+    [Fact]
+    public void GenerateNewFloor_AllHiddenBossesBeaten_AddsNoHiddenBoss()
+    {
+        var save = new MirrorOriginSaveInfo();
+        foreach (var id in MdMapGen.HiddenBattleIds)
+            save.currentInfo.egs.Add(new AcquiredEgogifts { id = MdMapGen.HiddenGiftOf(id) });
+
+        MdMapGen.GenerateNewFloor(10, FixedAct3ThemeId, save);
+
+        Assert.DoesNotContain(save.dungeonMap.ns, n => MdMapGen.IsHiddenBattle(n.eid));
+    }
 }

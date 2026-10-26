@@ -32,9 +32,27 @@ public sealed class StartEgoGiftPool
 // Starlight/season progression state (wire currentInfo.slinfo / Slinfo).
 public sealed class StarlightState
 {
-    // ponytail: pslp is taken verbatim from the capture (383, constant across the run);
-    // its derivation is unknown (likely a prev-season/account value, not a per-run constant).
-    public long Pslp { get; set; } = 383;
+    // pslp is the account's owned Starlight ("Owned" on the Grace of the Star screen). Upstream
+    // took 383 verbatim from a capture; its derivation is unknown.
+    public const long CapturePslp = 383;
+
+    // Owned starlight is pinned (ported from the Mirror Dungeon fork): the pin is both the
+    // default for a new save and the floor every read and write is clamped to (ClampPslp), so
+    // whatever the client spends comes back on the next response. 99999 unless MD_STARLIGHT
+    // says otherwise; MD_STARLIGHT=off turns the pin off (the test host does, so the replay
+    // goldens keep comparing against the captures' 383).
+    public static readonly long? PinnedPslp = Environment.GetEnvironmentVariable("MD_STARLIGHT") switch
+    {
+        "off" => null,
+        { } v when long.TryParse(v, out var n) => n,
+        _ => 99999,
+    };
+
+    public static long DefaultPslp => PinnedPslp ?? CapturePslp;
+
+    public static long ClampPslp(long v) => PinnedPslp is long p && v < p ? p : v;
+
+    public long Pslp { get; set; } = DefaultPslp;
     public long Rsbp { get; set; }
     public long Rucc { get; set; }
     public List<long> Dpp { get; set; } = new();

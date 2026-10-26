@@ -252,4 +252,18 @@ public class MdRulesRewardEngineTests
 
         Assert.Equal(70, run.Cost);
     }
+
+    [Fact]
+    public void ResolveNodeExit_HiddenBoss_GrantsExclusiveGiftAndPays2100()
+    {
+        // The bonus node (e==5) fighting hidden boss 9000007, whose exclusive gift is 9256.
+        var run = RunWithNode(nid: 100201, e: 5, eid: 9000007, f: 10);
+        run.Cost = 575;
+
+        Exit(run, 100201);
+
+        Assert.Contains(run.Gifts.Items, g => g.Id == 9256);
+        Assert.Equal(575 + 2100, run.Cost);
+        Assert.Equal("GetBattleRewardCase", Assert.Single(run.RewardEvents).Rt);
+    }
 }

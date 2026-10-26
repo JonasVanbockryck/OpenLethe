@@ -22,6 +22,11 @@ public static class RewardEngine
         ? MdStartBuffs.LevelOffsets(run.StartBuffIds)
         : MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
 
+    // Bonus cost for beating a hidden boss (the fork paid 1000). The hidden stages are not in
+    // mirrordungeon-acquire-cost-in-battle, so the node's default cost (100 for e==5) comes on top:
+    // 2100 in total.
+    private const long HiddenBattleCost = 2000;
+
     // Owned ego gift 9187 "Special Catalogue" - verbatim port of
     // Handlers/MirrorDungeonMap.cs EncounterCardBonusGift (:84).
     private const long EncounterCardBonusGift = 9187;
@@ -304,8 +309,29 @@ public static class RewardEngine
             }
         }
 
+        // Hidden boss (9000005-9000008, see MdMapGen.HiddenBattleIds), on the fork's bonus node
+        // (e==5) or a retail hidden node (e==15). Ported from the Mirror Dungeon fork: the stage's
+        // own battle file names its exclusive E.G.O gift, which goes straight into egs (no confirm
+        // popup - the client refuses one for a gift the account already got), plus the hidden
+        // battle's cost bonus; only the battle reward case is queued.
+        if (OpenLethe.Server.MdMapGen.IsHiddenBattle(matchingNode.Eid)
+            && (matchingNode.E == OpenLethe.Server.MdMapGen.HiddenBattleNodeType
+                || matchingNode.E == OpenLethe.Server.MdMapGen.BonusBattleNodeType))
+        {
+            var hiddenGiftIds = MdAbRewards.GetByNodeId(matchingNode.Eid)?
+                .Where(r => r.rewardType == "EGO_GIFT")
+                .Select(r => r.rewardId)
+                .Where(id => !run.Gifts.Items.Any(g => g.Id == id))
+                .ToList() ?? new List<long>();
+            run.Gifts.Items.AddRange(hiddenGiftIds.Select(id => new EgoGift { Id = id }));
+
+            run.Cost += HiddenBattleCost;
+
+            run.RewardEvents = new() { BuildBattleRewardCase(cnf, EncounterCardBonus(run)) };
+        }
+
         // Abno battle or hard battle: RewardEvents order (verified) [ GetEgogift, GetBattleRewardCase ].
-        if (matchingNode.E == 5 || matchingNode.E == 2)
+        if ((matchingNode.E == 5 && !OpenLethe.Server.MdMapGen.IsHiddenBattle(matchingNode.Eid)) || matchingNode.E == 2)
         {
             run.RewardEvents = new()
             {
