@@ -308,7 +308,7 @@ public static class RewardEngine
             }
         }
 
-        // Hidden battle (e==15, placed by MdMapGen.PlaceHiddenBattle from hiddenBattleInfo). From
+        // Hidden battle (e==15, an event revealed on entry by MapNodeRules.TryRevealHiddenBattle). From
         // the Mirror Dungeon fork: the stage's own battle file names its exclusive E.G.O gift, which
         // goes straight into egs (no confirm popup - the client refuses one for a gift the account
         // already got); only the battle reward case is queued. Its cost is the common table's

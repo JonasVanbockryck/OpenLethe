@@ -163,19 +163,9 @@ public static class MdMapGen
         var bossPool = theme.mapGenOption.bossPool;
         var bossEncounterId = bossPool.Count > 0 ? bossPool[Random.Shared.Next(bossPool.Count)] : 2060101;
 
-        var superShopProb = floor switch
-        {
-            0 => 0.03,
-            1 => 0.25,
-            2 => 0.50,
-            3 => 0.75,
-            _ => 1.00,
-        };
-        graph.nodes[floorWidth, 1] = new DungeonNode
-        {
-            node_type = 10,
-            encounter_id = Random.Shared.NextDouble() < superShopProb ? 1 : 0,
-        };
+        // Always a regular shop here: whether it becomes a super shop depends on the run's shop
+        // spend and difficulty, which MapGenerator.RollSuperShop decides once the floor exists.
+        graph.nodes[floorWidth, 1] = new DungeonNode { node_type = 10, encounter_id = 0 };
         graph.nodes[floorWidth + 1, 1] = new DungeonNode { node_type = 6, encounter_id = bossEncounterId };
 
         graph.AddEdge(new DungeonCoordinate(floorWidth, 1), new DungeonCoordinate(floorWidth + 1, 1));
@@ -226,15 +216,16 @@ public static class MdMapGen
             .OrderBy(id => id)
             .ToList());
 
-    // e==15 is the client's hidden-node type: retail draws it as the "?" that reveals into the
-    // hidden boss. Verified against md-extreme-run-2 seq335/437, the two rows where
-    // changedHiddenNode flips true (i.e. the client just entered it).
+    // e==15 is the client's hidden-node type. Floors are never generated with one: retail turns an
+    // event node (e==3) into it at the moment the player enters that node (md-extreme-run-2
+    // seq334 -> 335 and 436 -> 437: the same nid flips from e 3 to e 15) - see
+    // MapNodeRules.TryRevealHiddenBattle.
     public const long HiddenBattleNodeType = 15;
 
     // Hidden battles, driven by mirror-dungeon-common-data's hiddenBattleInfo (see
     // MdCommonTable.HiddenBattle): its pool names the hidden-boss stages (the shipped files list
     // 9000005-9000008, whose battle files each reward an exclusive E.G.O gift), minFloorCondition
-    // the first floor they appear on, and probInfo each floor's chance of one.
+    // the first floor they appear on, and probInfo each floor's chance per event entered.
     public static bool IsHiddenBattle(long encounterId) => MdCommonTable.HiddenBattle.pool.Contains(encounterId);
 
     // A hidden stage's exclusive gifts: the EGO_GIFT entries of its own battle file's rewardList.
@@ -246,33 +237,10 @@ public static class MdMapGen
 
     // The pool's stages this run has not beaten yet - owning a stage's exclusive gift means the
     // run already won that fight, so it is not offered again.
-    public static List<long> UnbeatenHiddenBattles(MdHiddenBattleInfo info, MirrorOriginSaveInfo save)
-    {
-        var owned = new HashSet<long>(save.currentInfo?.egs?.Select(e => e.id) ?? Enumerable.Empty<long>());
-        return info.pool.Where(id => !HiddenGiftsOf(id).Any(owned.Contains)).ToList();
-    }
+    public static List<long> UnbeatenHiddenBattles(MdHiddenBattleInfo info, IReadOnlyCollection<long> ownedGiftIds) =>
+        info.pool.Where(id => !HiddenGiftsOf(id).Any(ownedGiftIds.Contains)).ToList();
 
-    // One roll per floor at that floor's prob; a hit turns one of the floor's event nodes into a
-    // hidden node (e==15) against a random unbeaten pool stage, keeping the node's edges. Sector-1
-    // events are preferred: that is where retail put it (md-extreme-run-2 floor 10 - the start
-    // fans out to an event, 100100, and the hidden node, 100102 e=15 eid 9000007).
-    public static void PlaceHiddenBattle(List<Ns> graph, long floor, MirrorOriginSaveInfo save, MdHiddenBattleInfo info)
-    {
-        if (Random.Shared.NextDouble() >= info.ProbForFloor(floor)) return;
-
-        var pool = UnbeatenHiddenBattles(info, save);
-        if (pool.Count == 0) return;
-
-        var slots = graph.Where(n => n.s == 1 && n.e == 3).ToList();
-        if (slots.Count == 0) slots = graph.Where(n => n.e == 3).ToList();
-        if (slots.Count == 0) return;
-
-        var node = slots[Random.Shared.Next(slots.Count)];
-        node.e = HiddenBattleNodeType;
-        node.eid = pool[Random.Shared.Next(pool.Count)];
-    }
-
-    private static long PickFallbackEventId()
+    public static long PickFallbackEventId()
     {
         var pool = DungeonEventPool.Value;
         return pool.Count > 0 ? pool[Random.Shared.Next(pool.Count)] : 0;
@@ -344,7 +312,6 @@ public static class MdMapGen
             graph = new List<Ns>();
         }
 
-        PlaceHiddenBattle(graph, floor, save, MdCommonTable.HiddenBattle);
         save.dungeonMap.ns.AddRange(graph);
         UpdateResult(save, floor, themeId);
     }

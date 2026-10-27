@@ -33,6 +33,70 @@ public class MdRulesMapGeneratorTests
         Assert.Equal(0, run.Eid);
     }
 
+    [Theory]
+    [InlineData(0, 3)]
+    [InlineData(19, 3)]
+    [InlineData(20, 4)]
+    [InlineData(563, 31)]
+    [InlineData(1940, 100)]
+    [InlineData(5000, 100)]
+    public void SuperShopPercent_Is3PlusOnePer20CostSpent(long usedCost, long expected)
+    {
+        Assert.Equal(expected, MapGenerator.SuperShopPercent(usedCost));
+    }
+
+    [Fact]
+    public void GenerateFloor_HardFloorAtFullOdds_GeneratesSuperShopAndResetsSpend()
+    {
+        var run = new Run { UsedCost = 1940 };
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1001 });
+
+        MapGenerator.GenerateFloor(run, EmptyMd4ThemeId, selectedIdx: 1);
+
+        var shops = run.Floor.Nodes.Where(n => n.F == 1 && n.E == 10).ToList();
+        Assert.NotEmpty(shops);
+        Assert.All(shops, n => Assert.Equal(1, n.Eid));
+        Assert.Equal(0, run.UsedCost);
+    }
+
+    [Fact]
+    public void GenerateFloor_NormalFloor_NeverGeneratesSuperShopAndKeepsSpend()
+    {
+        var run = new Run { UsedCost = 5000 };
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 0, Tfid = 1001 });
+
+        MapGenerator.GenerateFloor(run, EmptyMd4ThemeId, selectedIdx: 0);
+
+        var shops = run.Floor.Nodes.Where(n => n.F == 1 && n.E == 10).ToList();
+        Assert.NotEmpty(shops);
+        Assert.All(shops, n => Assert.Equal(0, n.Eid));
+        Assert.Equal(5000, run.UsedCost);
+    }
+
+    [Fact]
+    public void RollSuperShop_RegularShop_KeepsSpendForTheNextFloor()
+    {
+        var run = new Run { UsedCost = 0 };
+        run.Floor.Nodes.Add(new MapNode { F = 3, E = 10, Eid = 1 });
+        run.Floor.Nodes.Add(new MapNode { F = 2, E = 10, Eid = 1 }); // an earlier floor: untouched
+
+        // At 3% a regular shop turns up within a few rolls; any super shop rolled before it resets the spend.
+        var sawRegular = false;
+        for (var i = 0; i < 500 && !sawRegular; i++)
+        {
+            run.UsedCost = 10;
+            MapGenerator.RollSuperShop(run, floor: 3, hard: true);
+            if (run.Floor.Nodes[0].Eid == 0)
+            {
+                sawRegular = true;
+                Assert.Equal(10, run.UsedCost);
+            }
+            else Assert.Equal(0, run.UsedCost);
+        }
+        Assert.True(sawRegular);
+        Assert.Equal(1, run.Floor.Nodes[1].Eid);
+    }
+
     [Fact]
     public void GenerateFloor_NonZeroFloor_FloorIndexFromThemeFloorsCount_NotLevelAdders()
     {

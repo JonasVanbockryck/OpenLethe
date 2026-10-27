@@ -17,6 +17,7 @@ public static class MirrorDungeonMapEndpoints
         var selectThemeFloorId = global::PacketRouting.ResolvePacketId<global::ResPacket_SelectThemeFloorMirrorDungeon>();
         var enterMapNodeId = global::PacketRouting.ResolvePacketId<global::ResPacket_EnterMirrorDungeonMapNode>();
         var exitMapNodeId = global::PacketRouting.ResolvePacketId<global::ResPacket_ExitMirrorDungeonMapNode>();
+        var escapeHiddenNodeId = global::PacketRouting.ResolvePacketId<global::ResPacket_EscapeMirrorDungeonHiddenNode>();
 
         app.MapPost("/api/AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon", async (HttpContext ctx) =>
         {
@@ -118,8 +119,31 @@ public static class MirrorDungeonMapEndpoints
                 cels = save.currentInfo.cels,
                 cost = save.currentInfo.cost,
                 changedHiddenNode = changedHiddenNode,
+                dungeonMap = changedHiddenNode ? save.dungeonMap : null,
             };
             return Results.Json(global::ResponsePacket<EnterMirrorDungeonMapNodeResult>.Ok(result, enterMapNodeId), global::PacketJson.Options);
+        });
+
+        // The hidden boss's "skip": the revealed node turns back into the event it was
+        // (MapNodeRules.EscapeHiddenNode) and the client gets the run's currentInfo, the only
+        // field ResPacket_EscapeMirrorDungeonHiddenNode carries.
+        app.MapPost("/api/EscapeMirrorDungeonHiddenNode", async (HttpContext ctx) =>
+        {
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md);
+            if (account is null) return Results.Unauthorized();
+            var loaded = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
+            if (loaded is null) return Results.StatusCode(500);
+            var p = await HandlerContext.ReadParamsAsync<EscapeMirrorDungeonHiddenNodeParams>(ctx);
+            if (p is null) return Results.BadRequest();
+
+            var run = WireMapper.ToDomain(loaded);
+            if (!MapNodeRules.EscapeHiddenNode(run, p.currentnode)) return Results.BadRequest();
+            var save = WireMapper.ToWire(run);
+
+            account.MdSaveInfo = OpenLethe.Server.AccountFields.Set(save);
+            await HandlerContext.SaveAsync(ctx);
+            var result = new EscapeMirrorDungeonHiddenNodeResult { currentInfo = save.currentInfo };
+            return Results.Json(global::ResponsePacket<EscapeMirrorDungeonHiddenNodeResult>.Ok(result, escapeHiddenNodeId), global::PacketJson.Options);
         });
 
         // No client packet exists for this route (see StaticRoutes.cs) - resolve the packetId

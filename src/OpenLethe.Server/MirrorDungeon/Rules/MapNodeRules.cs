@@ -14,19 +14,28 @@ public static class MapNodeRules
     // Port of the EnterMirrorDungeonMapNode handler body. Caller (the handler) is responsible for
     // validating the entered node exists in run.Floor.Nodes before calling this - request
     // validation, not game logic.
-    public static (bool changedHiddenNode, long nr) EnterNode(Run run, Currentnode enteredNode)
+    // hiddenBattle: the hiddenBattleInfo to roll against (the current season's table by default).
+    public static (bool changedHiddenNode, long nr) EnterNode(Run run, Currentnode enteredNode,
+        MdHiddenBattleInfo? hiddenBattle = null)
     {
         var node = run.Floor.Nodes.First(n => n.Nid == enteredNode.nid);
+        // Only a step onto a new node can reveal one. The client enters the same node again to
+        // start its fight (md-extreme-run-2 seq336/338), and a revealed or skipped node must not
+        // roll a second time.
+        var firstEntry = run.Floor.Current.Nid != node.Nid && !run.Pnids.Contains(node.Nid);
+        var changedHiddenNode = firstEntry
+            && TryRevealHiddenBattle(run, node, hiddenBattle ?? MdCommonTable.HiddenBattle);
 
         run.Floor.Current = new CurrentPosition { F = enteredNode.f, S = enteredNode.s, Nid = enteredNode.nid };
         // Capture-confirmed (md-extreme seq316/317 -> seq321): entering a node updates eid the
         // same way ExitMirrorDungeonMapNode does on exit, just to the ENTERED node's own value.
         run.Eid = node.Eid;
         // Event/shop nodes (e==3/10) are worth 3 "node results"; every battle-type node
-        // (e in {1,2,5,6,14}) is worth 4. Capture-verified 77/77.
-        // The hidden node (e==15) is the exception: entering one records 5 - md-extreme-run-2 seq335/437
-        // are the only rows whose changedHiddenNode flips true, and both carry "nr": 5.
-        var nr = node.E == MdMapGen.HiddenBattleNodeType ? 5
+        // (e in {1,2,5,6,14,15}) is worth 4. Capture-verified 77/77.
+        // The entry that reveals a hidden node is the exception: it records 5 - md-extreme-run-2
+        // seq335/437 are the only rows whose changedHiddenNode flips true, and both carry "nr": 5,
+        // while the re-entries that start the hidden fight (seq336/338/438) carry 4.
+        var nr = changedHiddenNode ? 5
                : (node.E == 3 || node.E == 10) ? 3
                : 4;
         run.Nr = nr;
@@ -63,10 +72,48 @@ public static class MapNodeRules
             run.Shop = new ShopState { Slots = slots };
         }
 
-        // The retail capture flips changedHiddenNode to true on exactly the two rows that ENTER a
-        // hidden node (md-extreme-run-2 seq335/437: both "e": 15, both "nr": 5); every other entry is
-        // false. The client reads this flag to present the node as the hidden one, so hardcoding
-        // false here made an e=15 node look like an ordinary fight.
-        return (node.E == MdMapGen.HiddenBattleNodeType, nr);
+        // True only on the entry that revealed the node: the client then reloads its map from the
+        // response's dungeonMap and offers the fight or the skip.
+        return (changedHiddenNode, nr);
+    }
+
+    // Hidden bosses (mirror-dungeon-common-data hiddenBattleInfo): from minFloorCondition on,
+    // entering an event node has the floor's prob (10% on floors 11-15) of turning it into a
+    // hidden boss - an unbeaten pool stage, keeping the node's edges. Both retail reveals
+    // (md-extreme-run-2 seq335, seq437) were event nodes, and skipping one turns it back into an
+    // event, so only event nodes qualify. The event it replaced is kept for that skip.
+    public static bool TryRevealHiddenBattle(Run run, MapNode node, MdHiddenBattleInfo info)
+    {
+        if (node.E != 3) return false;
+        if (Random.Shared.NextDouble() >= info.ProbForFloor(node.F)) return false;
+
+        var pool = MdMapGen.UnbeatenHiddenBattles(info, SharedRules.OwnedGiftIds(run));
+        if (pool.Count == 0) return false;
+
+        run.HiddenNodeOrigins.RemoveAll(o => o.Nid == node.Nid);
+        run.HiddenNodeOrigins.Add(new HiddenNodeOrigin { Nid = node.Nid, Eid = node.Eid });
+        node.E = MdMapGen.HiddenBattleNodeType;
+        node.Eid = pool[Random.Shared.Next(pool.Count)];
+        return true;
+    }
+
+    // EscapeMirrorDungeonHiddenNode: the player skipped the hidden boss, so the node goes back to
+    // the event it was and the party stands on it. A node with no recorded origin (one a save
+    // pre-placed before reveals happened on entry) gets an event from the dungeon's pool.
+    // Returns false when the node is not a hidden node.
+    public static bool EscapeHiddenNode(Run run, Currentnode at)
+    {
+        var node = run.Floor.Nodes.FirstOrDefault(n => n.Nid == at.nid);
+        if (node is null || node.E != MdMapGen.HiddenBattleNodeType) return false;
+
+        var origin = run.HiddenNodeOrigins.FirstOrDefault(o => o.Nid == node.Nid);
+        node.E = 3;
+        node.Eid = origin?.Eid ?? MdMapGen.PickFallbackEventId();
+        run.HiddenNodeOrigins.RemoveAll(o => o.Nid == node.Nid);
+
+        run.Floor.Current = new CurrentPosition { F = node.F, S = node.S, Nid = node.Nid };
+        run.Eid = node.Eid;
+        run.Nr = 3;
+        return true;
     }
 }

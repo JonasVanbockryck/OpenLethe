@@ -34,3 +34,11 @@ public sealed class LevelOffsets
     public long Snft { get; set; }
     public long Csnft { get; set; }
 }
+
+// An event node that turned into a hidden boss on entry, and the event it was. Skipping the
+// boss (EscapeMirrorDungeonHiddenNode) turns the node back into exactly that event.
+public sealed class HiddenNodeOrigin
+{
+    public long Nid { get; set; }
+    public long Eid { get; set; }
+}

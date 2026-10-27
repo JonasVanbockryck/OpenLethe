@@ -211,6 +211,11 @@ public sealed class CurrentInfo
     // byte-identical to the capture's.
     [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
     public List<long>? enabledStartbufIds;
+
+    // Server-only, like enabledStartbufIds: the event each revealed hidden node replaced, so
+    // EscapeMirrorDungeonHiddenNode can turn it back. Null (omitted) while none is revealed.
+    [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+    public List<HiddenNodeOriginInfo>? hiddenNodeOrigins;
     public List<Cfs> cfs = new();
     public Efs efs = new();
     public Currentnode cn = new();
@@ -234,6 +239,12 @@ public sealed class CurrentInfo
     public List<Scinfo> scinfos = new();
     public EgAbilityInfo egabilityinfo = new();
     public long isegr;
+}
+
+public sealed class HiddenNodeOriginInfo
+{
+    public long nid;
+    public long eid;
 }
 
 public sealed class MirrorOriginSaveInfo
@@ -604,6 +615,21 @@ public sealed class EnterMirrorDungeonMapNodeResult
     public List<object> cels = new();
     public long cost;
     public bool changedHiddenNode;
+    // The whole map, sent only with changedHiddenNode: the client rebuilds its map from it to
+    // show the revealed node (md-extreme-run-2 seq335/437 carry every floor's ns). Without it
+    // the client's SetMap finds no nodes for the floor and throws.
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public DungeonMap? dungeonMap;
+}
+
+public sealed class EscapeMirrorDungeonHiddenNodeParams
+{
+    public Currentnode currentnode = new();
+}
+
+public sealed class EscapeMirrorDungeonHiddenNodeResult
+{
+    public CurrentInfo currentInfo = new();
 }
 
 public sealed class ExitMirrorDungeonMapNodeResult

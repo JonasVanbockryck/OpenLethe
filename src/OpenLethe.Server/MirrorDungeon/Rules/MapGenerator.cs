@@ -91,6 +91,8 @@ public static class MapGenerator
             .ToList();
         run.IsEndDungeon = save.isEndDungeon;
         run.SepsCreated = save.currentInfo.sepsCreated;
+        RollSuperShop(run, floor, hard: selectedIdx != 0);
+        run.HiddenNodeOrigins = new();
 
         // New-floor start: full-heal the party. Every unit's CurrentHp -> 10000; a unit revived
         // from 0 HP also has its Cm (corrosion) cleared - live units keep their Cm unchanged.
@@ -125,5 +127,21 @@ public static class MapGenerator
             .Where(n => n.F == floor && n.E == 3).Select(n => n.Eid).ToList();
 
         run.Idx = selectedIdx;
+    }
+
+    // Super shop odds, in percent: 3% plus 1% per 20 Cost spent at shops (run.UsedCost, wire
+    // currentInfo.usedcost - the same number the client turns into the "next floor" chance).
+    public static long SuperShopPercent(long usedCost) => Math.Min(100, 3 + Math.Max(0, usedCost) / 20);
+
+    // Turns the new floor's shop(s) into a super shop (eid 1) or a regular one (eid 0). Only hard
+    // floors can roll one. The spend carries over from floor to floor and resets only when a
+    // super shop generates - both captured runs (md-extreme-run*.jsonl) show usedcost dropping to
+    // 0 on exactly the SelectThemeFloor responses whose new shop is eid 1, and kept otherwise.
+    public static void RollSuperShop(Run run, long floor, bool hard)
+    {
+        var superShop = hard && Random.Shared.Next(100) < SuperShopPercent(run.UsedCost);
+        foreach (var node in run.Floor.Nodes.Where(n => n.F == floor && n.E == 10))
+            node.Eid = superShop ? 1 : 0;
+        if (superShop) run.UsedCost = 0;
     }
 }

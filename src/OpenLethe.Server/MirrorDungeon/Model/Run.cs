@@ -42,6 +42,10 @@ public sealed class Run
     /// save so every floor/reward step can derive the effects from the real picks instead of
     /// the capture's hardcoded pair. Empty when the player enabled none.
     public List<long> StartBuffIds { get; set; } = new();
+
+    /// The current floor's event nodes that turned into hidden bosses, with the event each one
+    /// was - what EscapeMirrorDungeonHiddenNode restores. Cleared on every new floor.
+    public List<HiddenNodeOrigin> HiddenNodeOrigins { get; set; } = new();
     public List<ConstraintScore> ConstraintScores { get; set; } = new();  // was RawCfs
     public LevelOffsets LevelOffsets { get; set; } = new(); // was RawEfs
     public EgoGiftInventory Gifts { get; set; } = new();   // was RawEgs (egs[*])

@@ -72,13 +72,137 @@ public class MdRulesMapNodeTests
     }
 
     [Fact]
-    public void EnterNode_AlwaysReturnsChangedHiddenNodeFalse()
+    public void EnterNode_BelowHiddenBattleFloors_NeverRevealsOne()
     {
-        var run = RunWithNode(nid: 100, e: 1);
+        var run = RunWithNode(nid: 100, e: 3, eid: 901091);
 
         var (changedHiddenNode, _) = MapNodeRules.EnterNode(run, new Currentnode { f = 0, s = 0, nid = 100 });
 
         Assert.False(changedHiddenNode);
+        Assert.Equal(3, run.Floor.Nodes[0].E);
+    }
+
+    // hiddenBattleInfo that always hits on floor 11 (index 10).
+    private static OpenLethe.Server.MdHiddenBattleInfo AlwaysHidden(params long[] pool) => new()
+    {
+        minFloorCondition = 11,
+        pool = pool.ToList(),
+        probInfo = new() { new OpenLethe.Server.MdHiddenBattleProb { floor = 11, prob = 1.0 } },
+    };
+
+    private static Run Floor10Run()
+    {
+        var run = new Run();
+        run.Floor.Current = new CurrentPosition { F = 10, S = 0, Nid = 100000 };
+        run.Floor.Nodes.Add(new MapNode { F = 10, S = 1, Nid = 100102, E = 3, Eid = 901091, Nnids = new() { 100202 } });
+        run.Floor.Nodes.Add(new MapNode { F = 10, S = 1, Nid = 100101, E = 1, Eid = 2066431 });
+        return run;
+    }
+
+    [Fact]
+    public void EnterNode_EventOnHiddenFloor_RevealsHiddenBossLikeRetail()
+    {
+        // md-extreme-run-2 seq334 -> 335: 100102 goes e 3 eid 901091 -> e 15 eid 9000007,
+        // keeps its edges, and the entry answers changedHiddenNode true with nr 5.
+        var run = Floor10Run();
+
+        var (changedHiddenNode, nr) = MapNodeRules.EnterNode(run,
+            new Currentnode { f = 10, s = 1, nid = 100102 }, AlwaysHidden(9000007));
+
+        Assert.True(changedHiddenNode);
+        Assert.Equal(5, nr);
+        var node = run.Floor.Nodes[0];
+        Assert.Equal(15, node.E);
+        Assert.Equal(9000007, node.Eid);
+        Assert.Equal(new long[] { 100202 }, node.Nnids);
+        Assert.Equal(9000007, run.Eid);
+        var origin = Assert.Single(run.HiddenNodeOrigins);
+        Assert.Equal((100102L, 901091L), (origin.Nid, origin.Eid));
+    }
+
+    [Fact]
+    public void EnterNode_BattleNodeOnHiddenFloor_IsNeverRevealed()
+    {
+        var run = Floor10Run();
+
+        var (changedHiddenNode, nr) = MapNodeRules.EnterNode(run,
+            new Currentnode { f = 10, s = 1, nid = 100101 }, AlwaysHidden(9000007));
+
+        Assert.False(changedHiddenNode);
+        Assert.Equal(4, nr);
+        Assert.Equal(1, run.Floor.Nodes[1].E);
+    }
+
+    [Fact]
+    public void EnterNode_ReenteringRevealedNode_StartsTheFightWithoutRerolling()
+    {
+        // seq336/338: the client enters the revealed node again with its party - nr 4, no flag.
+        var run = Floor10Run();
+        var at = new Currentnode { f = 10, s = 1, nid = 100102 };
+        MapNodeRules.EnterNode(run, at, AlwaysHidden(9000007));
+
+        var (changedHiddenNode, nr) = MapNodeRules.EnterNode(run, at, AlwaysHidden(9000006));
+
+        Assert.False(changedHiddenNode);
+        Assert.Equal(4, nr);
+        Assert.Equal(9000007, run.Floor.Nodes[0].Eid);
+    }
+
+    [Fact]
+    public void EnterNode_AllHiddenBossesBeaten_RevealsNothing()
+    {
+        var run = Floor10Run();
+        run.Gifts.Items.Add(new EgoGift { Id = 9256 }); // 9000007's exclusive gift
+
+        var (changedHiddenNode, _) = MapNodeRules.EnterNode(run,
+            new Currentnode { f = 10, s = 1, nid = 100102 }, AlwaysHidden(9000007));
+
+        Assert.False(changedHiddenNode);
+        Assert.Equal(3, run.Floor.Nodes[0].E);
+    }
+
+    [Fact]
+    public void EscapeHiddenNode_RestoresTheOriginalEvent()
+    {
+        var run = Floor10Run();
+        var at = new Currentnode { f = 10, s = 1, nid = 100102 };
+        MapNodeRules.EnterNode(run, at, AlwaysHidden(9000007));
+
+        Assert.True(MapNodeRules.EscapeHiddenNode(run, at));
+
+        var node = run.Floor.Nodes[0];
+        Assert.Equal((3L, 901091L), (node.E, node.Eid));
+        Assert.Equal(901091, run.Eid);
+        Assert.Equal(100102, run.Floor.Current.Nid);
+        Assert.Empty(run.HiddenNodeOrigins);
+
+        // Entering the restored event plays it - no second reveal.
+        var (changedHiddenNode, nr) = MapNodeRules.EnterNode(run, at, AlwaysHidden(9000007));
+        Assert.False(changedHiddenNode);
+        Assert.Equal(3, nr);
+        Assert.Equal(3, node.E);
+    }
+
+    [Fact]
+    public void EscapeHiddenNode_NodeWithoutOrigin_BecomesAnEvent()
+    {
+        // A save from before reveals happened on entry has the hidden node pre-placed.
+        var run = new Run();
+        run.Floor.Nodes.Add(new MapNode { F = 12, S = 1, Nid = 120102, E = 15, Eid = 9000006 });
+
+        Assert.True(MapNodeRules.EscapeHiddenNode(run, new Currentnode { f = 12, s = 1, nid = 120102 }));
+
+        Assert.Equal(3, run.Floor.Nodes[0].E);
+        Assert.NotEqual(0, run.Floor.Nodes[0].Eid);
+    }
+
+    [Fact]
+    public void EscapeHiddenNode_NotAHiddenNode_ChangesNothing()
+    {
+        var run = Floor10Run();
+
+        Assert.False(MapNodeRules.EscapeHiddenNode(run, new Currentnode { f = 10, s = 1, nid = 100102 }));
+        Assert.Equal(3, run.Floor.Nodes[0].E);
     }
 
     [Fact]
