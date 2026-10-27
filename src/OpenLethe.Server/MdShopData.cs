@@ -128,6 +128,25 @@ public sealed class MdCommonData
     public List<long> acquireChipPerFloor = new();
     public double shopKeywordRefreshWeightMultiplier = 12.5;
     public MdHiddenBattleInfo? hiddenBattleInfo;
+    // Battle-victory cost: a base per encounter type (normal / hard difficulty), scaled by the
+    // floor's weight row - see MdCost.BattleVictoryCost.
+    public List<MdBattleVictoryCost> originbattlevictorycostvalueList = new();
+    public List<MdBattleVictoryCost> originbattlevictorycostvalueListHardLevel = new();
+    public List<MdBattleCostWeights> battleCostWeightsByFloor = new();
+}
+
+public sealed class MdBattleVictoryCost
+{
+    public string encounterType = "";
+    public long cost;
+    // Index into the floor's battleCostWeightsByFloor[*].weights.
+    public int battleCostWeightsByFloorIdx;
+}
+
+public sealed class MdBattleCostWeights
+{
+    public long floor;
+    public List<double> weights = new();
 }
 
 // hiddenBattleInfo: the hidden-boss stages (pool), the first floor they can appear on
@@ -169,6 +188,14 @@ public static class MdCommonTable
 
     // The current season's hiddenBattleInfo; empty (no hidden battles) when the file has none.
     public static MdHiddenBattleInfo HiddenBattle => Current.Value.hiddenBattleInfo ?? new MdHiddenBattleInfo();
+
+    // The current season's battle-victory cost tables (originbattlevictorycostvalueList /
+    // ...ListHardLevel and battleCostWeightsByFloor).
+    public static List<MdBattleVictoryCost> VictoryCosts(bool hard) => hard
+        ? Current.Value.originbattlevictorycostvalueListHardLevel
+        : Current.Value.originbattlevictorycostvalueList;
+
+    public static List<MdBattleCostWeights> CostWeightsByFloor => Current.Value.battleCostWeightsByFloor;
 
     // Module points charged per shop refresh, multiplied by how many refreshes this floor already
     // had (shop.rc) - the reference server hardcoded the same 15, now it is read.

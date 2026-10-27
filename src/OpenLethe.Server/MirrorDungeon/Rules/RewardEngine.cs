@@ -22,11 +22,6 @@ public static class RewardEngine
         ? MdStartBuffs.LevelOffsets(run.StartBuffIds)
         : MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
 
-    // Cost for beating a hidden battle (the same 1000 the fork paid). The hidden stages are not in
-    // mirrordungeon-acquire-cost-in-battle and an e==15 node has no default cost, so this is the
-    // whole payout.
-    private const long HiddenBattleCost = 1000;
-
     // Owned ego gift 9187 "Special Catalogue" - verbatim port of
     // Handlers/MirrorDungeonMap.cs EncounterCardBonusGift (:84).
     private const long EncounterCardBonusGift = 9187;
@@ -316,7 +311,8 @@ public static class RewardEngine
         // Hidden battle (e==15, placed by MdMapGen.PlaceHiddenBattle from hiddenBattleInfo). From
         // the Mirror Dungeon fork: the stage's own battle file names its exclusive E.G.O gift, which
         // goes straight into egs (no confirm popup - the client refuses one for a gift the account
-        // already got), plus the hidden battle's cost; only the battle reward case is queued.
+        // already got); only the battle reward case is queued. Its cost is the common table's
+        // HIDDEN_BATTLE entry, paid with every other battle's below.
         if (matchingNode.E == OpenLethe.Server.MdMapGen.HiddenBattleNodeType
             && OpenLethe.Server.MdMapGen.IsHiddenBattle(matchingNode.Eid))
         {
@@ -324,8 +320,6 @@ public static class RewardEngine
                 .Where(id => !run.Gifts.Items.Any(g => g.Id == id))
                 .ToList();
             run.Gifts.Items.AddRange(hiddenGiftIds.Select(id => new EgoGift { Id = id }));
-
-            run.Cost += HiddenBattleCost;
 
             run.RewardEvents = new() { BuildBattleRewardCase(cnf, EncounterCardBonus(run)) };
         }
@@ -348,11 +342,11 @@ public static class RewardEngine
             };
         }
 
-        // The payout the client shows on the map is that stage's cost in
-        // mirrordungeon-acquire-cost-in-battle; pay that (plus the 9079 Golden Urn / 9242 Bongy
-        // Plush bonuses) and fall back to the per-node-type default only for unlisted stages.
-        var stageCost = MdCost.CostForStage(matchingNode.Eid);
-        var costGain = stageCost >= 0 ? stageCost : MdCost.GetDefaultCost(matchingNode.E, floor);
+        // Pay what the client shows on the node: the common table's victory cost for this
+        // encounter type and difficulty, weighted by the floor being cleared (cnf - `floor` runs
+        // ahead of it, which paid the wrong row and nothing at all for bosses past floor 4), plus
+        // the 9079 Golden Urn / 9242 Bongy Plush bonuses.
+        var costGain = MdCost.BattleVictoryCost(matchingNode.E, cnf, hard: !MapGenerator.IsNormalMode(run));
         run.Cost += MdCost.ApplyCostGifts(run, matchingNode.E, costGain);
 
         // Echo the client's abno logs sorted by id. The server regenerates the RNG content

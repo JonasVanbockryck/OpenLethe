@@ -1,46 +1,56 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using OpenLethe.Resources;
 using OpenLethe.Server.MirrorDungeon.Model;
 
 namespace OpenLethe.Server;
 
-// Port of lethe-server/server/src/api/md/md_cost.rs CostManager::get_default_cost.
-// load_from_dir is dead code in Rust (never called) - not ported.
-//
-// The payout the client shows on the map comes from mirrordungeon-acquire-cost-in-battle
-// ({dungeonId, typeIndex, stageList: [{id, cost}]}), while the server only paid a fixed amount per
-// node type (0 for e=6 past floor 3). Look the stage up first; fall back to the fixed amount.
+// Mirror Dungeon battle-victory cost. The payout the client shows on a map node is the generic
+// table in mirror-dungeon-common-data: originbattlevictorycostvalueList (normal difficulty) /
+// originbattlevictorycostvalueListHardLevel (hard), one base cost per encounter type, times that
+// type's weight in the floor's battleCostWeightsByFloor row. Retail (normal / hard):
+//   battle 75 / 85, abno 100 / 120, hard battle 120 / 150, hard abno 150 / 180,
+//   boss 200 / 250 x {1, 1.2, 1.5, 2, 2} for floors 1-5 (6+ keep the floor-5 row).
+// The per-stage mirrordungeon-acquire-cost-in-battle table is deprecated and no longer read: its
+// amounts did not match what the client shows, and its boss stages past floor 4 paid nothing.
 public static class MdCost
 {
-    private static readonly long[] BossFloorCosts = { 200, 240, 300, 400 };
-
-    // stage id -> cost (one table per typeIndex 0..3; the first occurrence of an id wins).
-    private static readonly Lazy<Dictionary<long, long>> StageCosts = new(LoadStageCosts);
-
-    private static Dictionary<long, long> LoadStageCosts()
+    // Map node kind (e) -> the common table's encounterType.
+    private static string? EncounterType(long nodeE) => nodeE switch
     {
-        var map = new Dictionary<long, long>();
-        try
-        {
-            foreach (var g in StaticData.GetList<MdCostGroup>("static-data/mirrordungeon-acquire-cost-in-battle"))
-            {
-                if (g?.stageList is null) continue;
-                foreach (var s in g.stageList)
-                {
-                    if (s is null) continue;
-                    if (!map.ContainsKey(s.id)) map[s.id] = s.cost;
-                }
-            }
-        }
-        catch { }
-        return map;
+        1 => "BATTLE",
+        5 => "AB_BATTLE",
+        2 => "HARD_BATTLE",
+        14 => "HARD_AB_BATTLE",
+        6 => "BOSS",
+        MdMapGen.HiddenBattleNodeType => "HIDDEN_BATTLE",
+        _ => null,
+    };
+
+    /// The cost for winning a node of kind `nodeE` on the 0-based floor `floor`, before the
+    /// cost gifts (ApplyCostGifts). 0 for a node that is not a battle.
+    public static long BattleVictoryCost(long nodeE, long floor, bool hard)
+    {
+        var type = EncounterType(nodeE);
+        if (type is null) return 0;
+        var entry = MdCommonTable.VictoryCosts(hard).FirstOrDefault(c => c.encounterType == type);
+        if (entry is null) return 0;
+
+        // The floor's weight row; past the last listed floor the last row keeps applying.
+        var row = MdCommonTable.CostWeightsByFloor
+            .Where(w => w.floor <= floor)
+            .OrderByDescending(w => w.floor)
+            .FirstOrDefault();
+        var weight = row is not null && entry.battleCostWeightsByFloorIdx >= 0
+            && entry.battleCostWeightsByFloorIdx < row.weights.Count
+            ? row.weights[entry.battleCostWeightsByFloorIdx]
+            : 1.0;
+        return (long)Math.Round(entry.cost * weight, MidpointRounding.AwayFromZero);
     }
 
-    /// The stage's cost from the client table, or -1 when unlisted (caller falls back to GetDefaultCost).
-    public static long CostForStage(long stageId)
-        => StageCosts.Value.TryGetValue(stageId, out var c) ? c : -1;
+    // Story Mirror Dungeon only (port of lethe-server md_cost.rs CostManager::get_default_cost);
+    // the Mirror Dungeon itself pays BattleVictoryCost.
+    private static readonly long[] BossFloorCosts = { 200, 240, 300, 400 };
 
     public static long GetDefaultCost(long nodeE, long floor) => nodeE switch
     {
@@ -65,18 +75,4 @@ public static class MdCost
         if (nodeE == 6 && run.Gifts.Items.Any(g => g.Id == BongyPlushGift)) cost = cost * 3 / 2;
         return cost;
     }
-}
-
-// One row of mirrordungeon-acquire-cost-in-battle (public fields, matching the client table).
-public sealed class MdCostGroup
-{
-    public long dungeonId;
-    public long typeIndex;
-    public List<MdCostStage> stageList = new();
-}
-
-public sealed class MdCostStage
-{
-    public long id;
-    public long cost;
 }

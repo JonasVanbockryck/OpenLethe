@@ -258,14 +258,48 @@ public class MdRulesRewardEngineTests
     }
 
     [Fact]
-    public void ResolveNodeExit_AddsDefaultCostForNodeKind()
+    public void ResolveNodeExit_AddsVictoryCostForNodeKind()
     {
-        var run = RunWithNode(nid: 100, e: 1, eid: 0); // e==1 normal battle -> cost 60
+        var run = RunWithNode(nid: 100, e: 1, eid: 0); // e==1 battle, hard -> 85
+        run.Idx = 1;
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1202 });
         run.Cost = 10;
 
         Exit(run, 100);
 
-        Assert.Equal(70, run.Cost);
+        Assert.Equal(95, run.Cost);
+    }
+
+    [Fact]
+    public void ResolveNodeExit_NormalRun_PaysNormalTable()
+    {
+        var run = RunWithNode(nid: 100, e: 5, eid: 0); // e==5 abno battle, normal -> 100
+        run.Idx = 0;
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1001 });
+        run.Cost = 10;
+
+        Exit(run, 100);
+
+        Assert.Equal(110, run.Cost);
+    }
+
+    [Theory]
+    [InlineData(1, 300)]  // floor 2 boss, hard
+    [InlineData(7, 500)]  // floor 8 boss, hard: past the old 4-floor table, used to pay 0
+    [InlineData(12, 500)] // floor 13 (extreme)
+    public void ResolveNodeExit_BossClear_PaysFloorWeightedBossCost(long f, long expected)
+    {
+        var run = RunWithNode(nid: 600, e: 6, eid: 2067134, f: f);
+        run.Idx = f >= 10 ? 3 : f >= 5 ? 2 : 1;
+        for (long i = 0; i <= f; i++)
+            run.ThemeFloors.Add(new ThemeFloor { F = i, Idx = i / 5 + 1, Tfid = 1202, Egs = new List<long> { 111 } });
+        run.Cost = 0;
+
+        RewardEngine.ResolveNodeExit(
+            run, new Currentnode { f = f, s = 0, nid = 600 }, new List<Dungeonunitlist1>(), 0,
+            new ChoiceEventData(), false, new List<EgoSkillStock>(), new List<JsonNode>());
+
+        Assert.Equal(expected, run.Cost);
     }
 
     [Fact]
