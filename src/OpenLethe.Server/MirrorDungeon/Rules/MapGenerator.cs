@@ -28,15 +28,28 @@ public static class MapGenerator
     // capture-verified (see MdMapGen.PickThemes/RecreateThemes doc comments).
     public static void RecreateThemePool(Run run)
     {
-        var tfps = run.ThemeFloors.Count == 0
+        run.ThemePools = run.ThemeFloors.Count == 0
             ? OpenLethe.Server.MdMapGen.PickThemes(SharedRules.CurrentFloor(run))
-            : OpenLethe.Server.MdMapGen.RecreateThemes(run.Floor.Current.F + 1);
-        run.ThemePools = tfps
-            .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
-            .ToList();
+                .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
+                .ToList()
+            : NextFloorPools(run);
         run.TfpsCreated += 1;
         run.StartPools = new();
     }
+
+    // A normal-difficulty run: its first pack came from the start offer's normal group (wire idx
+    // 0), and SelectThemeFloor stores that pick's idx in run.Idx. Hard runs select idx 1 on
+    // floor 0 and only climb from there (Infinite 2, Extreme 3), so idx 0 past floor 0 is normal.
+    public static bool IsNormalMode(Run run) => run.ThemeFloors.Count > 0 && run.Idx == 0;
+
+    // The 4-pack pool for the floor after the current one - every re-roll path (refresh, the boss
+    // reward pick or skip, a normal run's floor clear) goes through here, so all of them keep the
+    // run's difficulty and skip the packs it already played.
+    public static List<ThemePool> NextFloorPools(Run run) =>
+        OpenLethe.Server.MdMapGen.RecreateThemes(run.Floor.Current.F + 1, IsNormalMode(run),
+                run.ThemeFloors.Select(t => t.Tfid).ToHashSet())
+            .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
+            .ToList();
 
     // Port of the SelectThemeFloorMirrorDungeon handler body (:236-291). `selectedIdx` is the
     // request's act/mode selector (used for the extreme-act new-theme gating below AND to set

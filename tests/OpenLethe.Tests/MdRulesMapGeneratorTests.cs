@@ -109,7 +109,7 @@ public class MdRulesMapGeneratorTests
     [Fact]
     public void RecreateThemePool_AfterFloorsSelected_RerollsFourThemesForNextFloor()
     {
-        var run = new Run();
+        var run = new Run { Idx = 1 }; // floor 0 picked from the hard group
         run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1001 });
         run.Floor.Current.F = 0;
         var tfpsCreatedBefore = run.TfpsCreated;
@@ -119,5 +119,67 @@ public class MdRulesMapGeneratorTests
         Assert.Equal(4, run.ThemePools.Count);
         Assert.All(run.ThemePools, t => Assert.Equal(1, t.Idx)); // act = 0/5 + 1
         Assert.Equal(tfpsCreatedBefore + 1, run.TfpsCreated);
+    }
+
+    [Fact]
+    public void RecreateThemePool_NormalRun_StaysOnNormalTierEveryFloor()
+    {
+        var normalTier = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().pools.Values;
+        for (long floor = 0; floor < 4; floor++)
+        {
+            var run = new Run { Idx = 0 }; // floor 0 picked from the normal (idx 0) group
+            for (long f = 0; f <= floor; f++)
+                run.ThemeFloors.Add(new ThemeFloor { F = f, Idx = 1, Tfid = 1001 });
+            run.Floor.Current.F = floor;
+
+            MapGenerator.RecreateThemePool(run);
+
+            Assert.Equal(4, run.ThemePools.Count);
+            Assert.All(run.ThemePools, t =>
+            {
+                Assert.Equal(0, t.Idx);
+                Assert.Equal(3, t.Egs.Count);
+                var theme = normalTier.Single(x => x.id == t.Tfid);
+                Assert.Contains(theme.exceptionConditions, c => c.dungeonIdx == 0
+                    && (c.selectableFloors.Count == 0 || c.selectableFloors.Contains((floor + 1) % 5)));
+            });
+        }
+    }
+
+    [Fact]
+    public void RecreateThemePool_NeverOffersAPackTheRunAlreadyPlayed()
+    {
+        // Hard act 2 (floors 5-9): 1110 is in its tier. Played on floor 5, it must not come back.
+        for (var i = 0; i < 200; i++)
+        {
+            var run = new Run { Idx = 2 };
+            for (long f = 0; f <= 5; f++)
+                run.ThemeFloors.Add(new ThemeFloor { F = f, Idx = f / 5 + 1, Tfid = f == 5 ? 1110 : 1001 });
+            run.Floor.Current.F = 5;
+
+            MapGenerator.RecreateThemePool(run);
+
+            Assert.Equal(4, run.ThemePools.Count);
+            Assert.DoesNotContain(run.ThemePools, t => t.Tfid == 1110);
+        }
+    }
+
+    [Theory]
+    [InlineData(9)]
+    [InlineData(10)]
+    [InlineData(13)]
+    [InlineData(14)]
+    [InlineData(19)]
+    public void RecreateThemePool_ExtremeFloors_AlwaysOffersFourActThreePacks(long currentFloor)
+    {
+        var run = new Run { Idx = 3 };
+        for (long f = 0; f <= currentFloor; f++)
+            run.ThemeFloors.Add(new ThemeFloor { F = f, Idx = f / 5 + 1, Tfid = 1001 });
+        run.Floor.Current.F = currentFloor;
+
+        MapGenerator.RecreateThemePool(run);
+
+        Assert.Equal(4, run.ThemePools.Count);
+        Assert.All(run.ThemePools, t => Assert.Equal(3, t.Idx));
     }
 }

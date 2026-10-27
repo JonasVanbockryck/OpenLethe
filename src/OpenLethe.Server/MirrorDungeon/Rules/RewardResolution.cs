@@ -83,11 +83,27 @@ public static class RewardResolution
         // ...: tfpsCreated stays whatever it already was, seps is never touched here). Using the
         // shared helper wholesale would regress the byte-green replay, so this inlines just the
         // tfps assignment.
-        run.ThemePools = OpenLethe.Server.MdMapGen.RecreateThemes(run.Floor.Current.F + 1)
-            .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
-            .ToList();
+        run.ThemePools = MapGenerator.NextFloorPools(run);
 
         return (granted, run.LevelAdders);
+    }
+
+    // /api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon: the boss reward skipped. It used to be a
+    // stateless stub, so the popup stayed queued and - since the next floor's packs are rolled by
+    // the acquire above - the theme selection that followed a skip offered nothing. A skip is the
+    // same floor clear minus the gifts: the boss-clear level adders, the popup consumed, the next
+    // pool rolled.
+    public static List<long> RejectWithEnemyBuf(Run run)
+    {
+        var popup = run.RewardEvents.FirstOrDefault(re => re.Rt == "GetEgogiftWithEnemyBuf");
+        if (popup is not null)
+        {
+            run.LevelAdders.Add(1);
+            run.LevelAdders.Add(1);
+            run.RewardEvents.Remove(popup);
+        }
+        run.ThemePools = MapGenerator.NextFloorPools(run);
+        return run.LevelAdders;
     }
 
     // Verbatim port of AcquireMirrorDungeonBattleReward (Handlers/MirrorDungeonRewards.cs

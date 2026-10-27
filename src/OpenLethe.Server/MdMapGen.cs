@@ -415,7 +415,15 @@ public static class MdMapGen
     // the act). Verified against all 19 captured RecreateThemeFloorPool records (floors 0-9):
     // count == 4, idx == act, and dungeonIdx-eligibility hold every time. tfid/egs/upegs are
     // RNG (masked in replay) - only count and idx are byte-verified.
-    public static List<Tfps> RecreateThemes(long selectionFloor)
+    // normalMode: the run picked its first pack from the start offer's normal (idx 0) group. The
+    // client lists only packs whose idx matches that difficulty, so a normal run stays on tier 0
+    // (wire idx 0, the d0[] packs keyed by selectableFloors) for every floor - handing it act-tier
+    // idx-1 packs left the floor-2 selection empty.
+    // visited: packs this run already played (tfs). They are never offered again, like the
+    // client's own Pack Search; only when nothing else is eligible do they come back, so the
+    // selection can never end up empty.
+    public static List<Tfps> RecreateThemes(long selectionFloor, bool normalMode = false,
+        IReadOnlyCollection<long>? visited = null)
     {
         // Conventions (settled against the capture + the client's own table):
         //   * the wire idx IS the price-1 act: floor / 5 + 1 (1-based) - byte-verified;
@@ -427,20 +435,33 @@ public static class MdMapGen
         //     1204 are d1[0,1], 1303 is d1[1]; empty = any floor of the act).
         // Tier 0 exists only for the run-start "easy" group (PickThemes) - those packs carry a d1
         // condition too, so they stay reachable once the run is under way.
-        var act = selectionFloor / 5 + 1;   // wire idx AND dungeonIdx
         var offset = selectionFloor % 5;    // selectableFloors
         var themePool = new MdThemePool();
+        // A floor past the table's last act (dungeonIdx 3, the extreme floors) keeps drawing from
+        // that last act instead of an empty tier.
+        var lastAct = themePool.pools.Values
+            .SelectMany(t => t.exceptionConditions)
+            .Select(c => c.dungeonIdx)
+            .DefaultIfEmpty(0)
+            .Max();
+        var act = normalMode ? 0 : Math.Min(selectionFloor / 5 + 1, lastAct);   // wire idx AND dungeonIdx
         var eligible = themePool.pools.Values
             .Where(t => t.exceptionConditions.Any(c => c.dungeonIdx == act
                 && (c.selectableFloors.Count == 0 || c.selectableFloors.Contains(offset))))
             .ToList();
+        if (visited is { Count: > 0 })
+        {
+            var unvisited = eligible.Where(t => !visited.Contains(t.id)).ToList();
+            if (unvisited.Count > 0) eligible = unvisited;
+        }
 
         return ChooseMultiple(eligible, 4)
             .Select(theme => new Tfps
             {
                 idx = act,
                 tfid = theme.id,
-                egs = themePool.SelectRandomEgosFromPool(theme.id, 4, selectionFloor),
+                // Normal packs carry 3 reward gifts, as the start offer's normal group does.
+                egs = themePool.SelectRandomEgosFromPool(theme.id, normalMode ? 3 : 4, selectionFloor),
                 upegs = new List<long> { 9051, 9048, 9001, 9066 },
             })
             .ToList();

@@ -137,6 +137,31 @@ public class MdRulesRewardResolutionTests
     }
 
     [Fact]
+    public void RejectWithEnemyBuf_ConsumesPopupAddsLevelAddersAndRollsNextFloorPool()
+    {
+        var run = new Run { Idx = 1 };
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1202 });
+        run.Floor.Current.F = 0;
+        var popup = new RewardEvent { Rt = "GetEgogiftWithEnemyBuf", Pool = new() { 9001 }, PoolV2 = new() };
+        var trailing = new RewardEvent { Rt = "GetConstraints", Pool = new() { 1 } };
+        run.RewardEvents.Add(popup);
+        run.RewardEvents.Add(trailing);
+
+        var levelAdders = RewardResolution.RejectWithEnemyBuf(run);
+
+        Assert.Equal(new[] { trailing }, run.RewardEvents);
+        Assert.Equal(2, levelAdders.Count);
+        Assert.Empty(run.Gifts.Items);
+        Assert.Equal(4, run.ThemePools.Count);
+        Assert.All(run.ThemePools, t => Assert.Equal(1, t.Idx));
+        Assert.DoesNotContain(run.ThemePools, t => t.Tfid == 1202);
+
+        // A repeated skip must not stack another floor's level adders.
+        RewardResolution.RejectWithEnemyBuf(run);
+        Assert.Equal(2, run.LevelAdders.Count);
+    }
+
+    [Fact]
     public void AcquireBattleReward_ConsumesGetBattleRewardCase_KeepingSiblings()
     {
         var run = new Run();

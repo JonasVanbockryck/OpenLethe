@@ -54,12 +54,20 @@ public static class MirrorDungeonEndpoints
         {
             var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md);
             if (account is null) return Results.Unauthorized();
-            var loaded = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo) ?? new MirrorOriginSaveInfo();
-            var run = WireMapper.ToDomain(loaded);
+            var stored = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
+            var run = WireMapper.ToDomain(stored ?? new MirrorOriginSaveInfo());
             // Forced, not incremented: the capture shows saveInfo.idx == 3 exactly on this call
             // (seq295) and == 2 on EnterInfiniteMode - the client picks its mode off that value.
             StartRunRules.EnterMode(run, 3);
             var save = WireMapper.ToWire(run);
+            // Persisted, not just echoed: retail's next RecreateThemeFloorPool still reports idx 3
+            // (run-2 seq333). An echo-only idx fell back to the stored 2 on that refresh, and the
+            // client, now in infinite mode on floor 11, offered no theme packs at all.
+            if (stored is not null)
+            {
+                account.MdSaveInfo = OpenLethe.Server.AccountFields.Set(save);
+                await HandlerContext.SaveAsync(ctx);
+            }
             var result = new ReEnterMirrorDungeonResult { saveInfo = save };
             return Results.Json(global::ResponsePacket<ReEnterMirrorDungeonResult>.Ok(result, enterExtremeId), global::PacketJson.Options);
         });
@@ -69,13 +77,19 @@ public static class MirrorDungeonEndpoints
         {
             var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md);
             if (account is null) return Results.Unauthorized();
-            var loaded = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo) ?? new MirrorOriginSaveInfo();
-            var run = WireMapper.ToDomain(loaded);
+            var stored = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
+            var run = WireMapper.ToDomain(stored ?? new MirrorOriginSaveInfo());
             // Forced, not incremented: the client calls this mid-run at every act boundary (floor 5,
             // 10, ...) and wants saveInfo.idx == 2 (capture seq165); a drifting +1 left it at the
             // "run just started" value, so the client settled the run instead of opening the next act.
             StartRunRules.EnterMode(run, 2);
             var save = WireMapper.ToWire(run);
+            // Persisted for the same reason as EnterExtremeMode (retail run-1 seq168 refresh: idx 2).
+            if (stored is not null)
+            {
+                account.MdSaveInfo = OpenLethe.Server.AccountFields.Set(save);
+                await HandlerContext.SaveAsync(ctx);
+            }
             var result = new ReEnterMirrorDungeonResult { saveInfo = save };
             return Results.Json(global::ResponsePacket<ReEnterMirrorDungeonResult>.Ok(result, enterInfiniteId), global::PacketJson.Options);
         });

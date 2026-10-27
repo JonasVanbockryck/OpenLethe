@@ -719,6 +719,14 @@ public sealed class AcquireRewardEgoGiftsWithEnemyBufResult
     public MirrorOriginSaveInfo saveinfo = new();
 }
 
+public sealed class RejectRewardEgoGiftWithEnemyBufsResult
+{
+    public List<AcquiredEgogifts> egoGifts = new();
+    public List<long> levelAdders = new();
+    public List<RemainRewardEvent> remainRewardEvent = new();
+    public MirrorOriginSaveInfo saveinfo = new();
+}
+
 public sealed class AcquireMirrorDungeonBattleRewardParams
 {
     public List<long> selectIndexList = new();

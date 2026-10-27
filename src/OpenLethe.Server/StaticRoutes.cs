@@ -102,7 +102,9 @@ public static class StaticRoutes
         app.MapPacket<ReqPacket_RefreshStartEgoGiftsStoryMirrorDungeon, ResPacket_RefreshStartEgoGiftsStoryMirrorDungeon>("/api/RefreshStartEgoGiftsStoryMirrorDungeon");
         app.MapPacket<ReqPacket_RejectReceivedFriendRequest, ResPacket_RejectReceivedFriendRequest>("/api/RejectReceivedFriendRequest");
         app.MapPacket<ReqPacket_RejectRewardEgoGiftsStoryMirrorDungeon, ResPacket_RejectRewardEgoGiftsStoryMirrorDungeon>("/api/RejectRewardEgoGiftsStoryMirrorDungeon");
-        app.MapPacket<ReqPacket_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon, ResPacket_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon>("/api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon");
+        // /api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon is NOT a stateless stub any more: skipping the
+        // boss reward must still consume it and roll the next floor's theme packs. The real handler lives in
+        // Handlers/MirrorDungeonRewards.cs.
         // /api/RemoveMirrorDungeonEgoGift is NOT a stateless stub any more: the client removes the gift
         // locally and expects the save to follow, so dropping the request left the two permanently out of
         // sync (UI empty, save still full). The real handler lives in Handlers/MirrorDungeon.cs.

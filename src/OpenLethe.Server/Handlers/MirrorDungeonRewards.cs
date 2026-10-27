@@ -17,6 +17,7 @@ public static class MirrorDungeonRewardsEndpoints
         var exitId = global::PacketRouting.ResolvePacketId<global::ResPacket_ExitMirrorDungeon>();
         var enemyBufId = global::PacketRouting.ResolvePacketId<global::ResPacket_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon>();
         var battleRewardId = global::PacketRouting.ResolvePacketId<global::ResPacket_AcquireMirrorDungeonBattleReward>();
+        var rejectEnemyBufId = global::PacketRouting.ResolvePacketId<global::ResPacket_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon>();
 
         app.MapPost("/api/CombineEgoGiftMirrorDungeon", async (HttpContext ctx) =>
         {
@@ -147,6 +148,33 @@ public static class MirrorDungeonRewardsEndpoints
                 saveinfo = save,
             };
             return Results.Json(global::ResponsePacket<AcquireRewardEgoGiftsWithEnemyBufResult>.Ok(body, enemyBufId), global::PacketJson.Options);
+        });
+
+        app.MapPost("/api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon", async (HttpContext ctx) =>
+        {
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md);
+            if (account is null) return Results.Unauthorized();
+            var loaded = AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
+            if (loaded is null) return Results.StatusCode(500);
+            // The request carries no parameters - read+discard just to 400 on an unparseable body.
+            var p = await HandlerContext.ReadParamsAsync<object>(ctx);
+            if (p is null) return Results.BadRequest();
+
+            var run = WireMapper.ToDomain(loaded);
+            RewardResolution.RejectWithEnemyBuf(run);
+            var save = WireMapper.ToWire(run);
+
+            account.MdSaveInfo = AccountFields.Set(save);
+            await HandlerContext.SaveAsync(ctx);
+
+            var body = new RejectRewardEgoGiftWithEnemyBufsResult
+            {
+                egoGifts = save.currentInfo.egs,
+                levelAdders = save.currentInfo.leveladders,
+                remainRewardEvent = save.currentInfo.rre,
+                saveinfo = save,
+            };
+            return Results.Json(global::ResponsePacket<RejectRewardEgoGiftWithEnemyBufsResult>.Ok(body, rejectEnemyBufId), global::PacketJson.Options);
         });
 
         app.MapPost("/api/AcquireMirrorDungeonBattleReward", async (HttpContext ctx) =>

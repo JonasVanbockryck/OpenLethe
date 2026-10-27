@@ -227,8 +227,10 @@ public static class RewardEngine
             var n = egoRewards.Count;
             var levelupValues = Enumerable.Range(0, n).Select(_ => (long)Random.Shared.Next(1, 3)).ToList();
 
-            // The theme-floor pool is consumed on clear; the next floor re-rolls it.
-            run.ThemePools = new();
+            // The theme-floor pool is consumed on clear; the next floor re-rolls it. Hard runs roll
+            // it in the boss-reward step (retail: tfps empty here, verified). A normal run rolls it
+            // right away, so its next selection never hinges on that hard-mode enemy-buff popup.
+            run.ThemePools = MapGenerator.IsNormalMode(run) ? MapGenerator.NextFloorPools(run) : new();
 
             // Raise the per-run personality level cap. Sbmlos = base + min(clears, cap)*perClear
             // + snft*perNewTheme, all read from the enabled start buffs' effects. Clearing floor

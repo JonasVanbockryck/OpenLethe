@@ -167,7 +167,8 @@ public static class StartRunRules
         {
             run.ThemePools.Add(new ThemePool
             {
-                Idx = floor / 5 + 1,
+                // Same difficulty tier as the pool it joins (MapGenerator.NextFloorPools).
+                Idx = MapGenerator.IsNormalMode(run) ? 0 : floor / 5 + 1,
                 Tfid = detectThemeFloorId,
                 Egs = themePool.SelectRandomEgosFromPool(detectThemeFloorId, 4, floor),
                 Upegs = new List<long> { 9051, 9048, 9001, 9066 },
