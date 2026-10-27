@@ -37,19 +37,28 @@ public static class MapGenerator
         run.StartPools = new();
     }
 
-    // A normal-difficulty run: its first pack came from the start offer's normal group (wire idx
-    // 0), and SelectThemeFloor stores that pick's idx in run.Idx. Hard runs select idx 1 on
-    // floor 0 and only climb from there (Infinite 2, Extreme 3), so idx 0 past floor 0 is normal.
+    // A normal-difficulty run: its latest pack came from an offer's normal group (wire idx 0), and
+    // SelectThemeFloor stores that pick's idx in run.Idx. Once a hard pack (idx 1) is picked, the
+    // offers carry no normal group any more, and idx only climbs (Infinite 2, Extreme 3) - so idx
+    // 0 past floor 0 is normal.
     public static bool IsNormalMode(Run run) => run.ThemeFloors.Count > 0 && run.Idx == 0;
 
-    // The 4-pack pool for the floor after the current one - every re-roll path (refresh, the boss
-    // reward pick or skip, a normal run's floor clear) goes through here, so all of them keep the
-    // run's difficulty and skip the packs it already played.
-    public static List<ThemePool> NextFloorPools(Run run) =>
-        OpenLethe.Server.MdMapGen.RecreateThemes(run.Floor.Current.F + 1, IsNormalMode(run),
-                run.ThemeFloors.Select(t => t.Tfid).ToHashSet())
+    // The pool for the floor after the current one - every re-roll path (refresh, the boss reward
+    // pick or skip, a normal run's floor clear) goes through here, so all of them keep the run's
+    // difficulty and skip the packs it already played. A normal run gets the same 8-pack shape as
+    // the run start (4 normal idx 0 + 4 hard idx 1), so the screen's Normal/Hard switch works on
+    // every floor; picking a hard pack sets run.Idx to 1 and the run is hard from then on (4 packs).
+    public static List<ThemePool> NextFloorPools(Run run)
+    {
+        var selectionFloor = run.Floor.Current.F + 1;
+        var visited = run.ThemeFloors.Select(t => t.Tfid).ToHashSet();
+        var tfps = IsNormalMode(run)
+            ? OpenLethe.Server.MdMapGen.PickThemes(selectionFloor, visited)
+            : OpenLethe.Server.MdMapGen.RecreateThemes(selectionFloor, visited);
+        return tfps
             .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
             .ToList();
+    }
 
     // Port of the SelectThemeFloorMirrorDungeon handler body (:236-291). `selectedIdx` is the
     // request's act/mode selector (used for the extreme-act new-theme gating below AND to set

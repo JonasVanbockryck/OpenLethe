@@ -269,7 +269,9 @@ public static class RewardEngine
             rre.Add(new RewardEvent
             {
                 Rt = "GetEgogiftWithEnemyBuf",
-                Se = 2,
+                // Picks allowed: a hard pack's clear bonus offers 2 (capture-verified), a normal
+                // pack's offers only 1.
+                Se = MapGenerator.IsNormalMode(run) ? 1 : 2,
                 Sh = n,
                 Pool = egoRewards,
                 // Random n-of-N subset+order of the floor's static enemy-buff pool (masked); the

@@ -168,6 +168,21 @@ public class MdRulesRewardEngineTests
         Assert.Single(run.ConstraintScores);
     }
 
+    [Theory]
+    [InlineData(0, 1)] // normal pack: pick 1 clear-bonus gift
+    [InlineData(1, 2)] // hard pack: pick 2 (capture-verified)
+    public void ResolveNodeExit_BossClear_ClearBonusPickCountFollowsDifficulty(long idx, long picks)
+    {
+        var run = RunWithNode(nid: 600, e: 6, eid: 2067134, f: 1);
+        run.Idx = idx;
+        run.ThemeFloors.Add(new ThemeFloor { Idx = 1, F = 1, Tfid = 1001, Egs = new List<long> { 111, 222, 333 } });
+
+        Exit(run, 600);
+
+        var popup = Assert.Single(run.RewardEvents, e => e.Rt == "GetEgogiftWithEnemyBuf");
+        Assert.Equal(picks, popup.Se);
+    }
+
     [Fact]
     public void ResolveNodeExit_BossClear_AlreadyOwnedBossGift_LeadingConfirmedPoolIsEmpty()
     {

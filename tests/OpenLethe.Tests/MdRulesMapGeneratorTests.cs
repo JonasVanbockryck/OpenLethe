@@ -122,9 +122,9 @@ public class MdRulesMapGeneratorTests
     }
 
     [Fact]
-    public void RecreateThemePool_NormalRun_StaysOnNormalTierEveryFloor()
+    public void RecreateThemePool_NormalRun_OffersNormalAndHardGroupsEveryFloor()
     {
-        var normalTier = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().pools.Values;
+        var themes = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().pools.Values;
         for (long floor = 0; floor < 4; floor++)
         {
             var run = new Run { Idx = 0 }; // floor 0 picked from the normal (idx 0) group
@@ -134,16 +134,33 @@ public class MdRulesMapGeneratorTests
 
             MapGenerator.RecreateThemePool(run);
 
-            Assert.Equal(4, run.ThemePools.Count);
+            // Both groups present, so the Normal/Hard switch can flip on this very menu.
+            Assert.Equal(8, run.ThemePools.Count);
+            Assert.Equal(4, run.ThemePools.Count(t => t.Idx == 0));
+            Assert.Equal(4, run.ThemePools.Count(t => t.Idx == 1));
+            Assert.DoesNotContain(run.ThemePools, t => t.Tfid == 1001);
             Assert.All(run.ThemePools, t =>
             {
-                Assert.Equal(0, t.Idx);
-                Assert.Equal(3, t.Egs.Count);
-                var theme = normalTier.Single(x => x.id == t.Tfid);
-                Assert.Contains(theme.exceptionConditions, c => c.dungeonIdx == 0
+                Assert.Equal(t.Idx == 0 ? 3 : 4, t.Egs.Count);
+                var theme = themes.Single(x => x.id == t.Tfid);
+                Assert.Contains(theme.exceptionConditions, c => c.dungeonIdx == t.Idx
                     && (c.selectableFloors.Count == 0 || c.selectableFloors.Contains((floor + 1) % 5)));
             });
         }
+    }
+
+    [Fact]
+    public void RecreateThemePool_RunSwitchedToHard_GetsOnlyHardPacks()
+    {
+        var run = new Run { Idx = 1 }; // floor 0 normal, floor 1 switched to a hard pack
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1001 });
+        run.ThemeFloors.Add(new ThemeFloor { F = 1, Idx = 1, Tfid = 1303 });
+        run.Floor.Current.F = 1;
+
+        MapGenerator.RecreateThemePool(run);
+
+        Assert.Equal(4, run.ThemePools.Count);
+        Assert.All(run.ThemePools, t => Assert.Equal(1, t.Idx));
     }
 
     [Fact]
