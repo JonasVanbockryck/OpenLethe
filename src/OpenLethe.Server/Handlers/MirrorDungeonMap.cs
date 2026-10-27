@@ -69,7 +69,8 @@ public static class MirrorDungeonMapEndpoints
             var run = WireMapper.ToDomain(loaded);
             try
             {
-                MapGenerator.GenerateFloor(run, p.selectedThemeFoorId, p.selectedIdx);
+                MapGenerator.GenerateFloor(run, p.selectedThemeFoorId, p.selectedIdx,
+                    await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             }
             catch (KeyNotFoundException)
             {

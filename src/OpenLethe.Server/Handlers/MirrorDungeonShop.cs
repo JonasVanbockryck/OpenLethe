@@ -151,7 +151,7 @@ public static class MirrorDungeonShopEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
-            var (gift, charged) = FusionRules.UpgradeGift(run, p.egoGiftId);
+            var (gift, charged) = FusionRules.UpgradeGift(run, p.egoGiftId, p.to);
             if (gift is null) return Results.StatusCode(500);
             var save = WireMapper.ToWire(run);
             var egoWire = save.currentInfo.egs.First(e => e.id == p.egoGiftId);
@@ -253,9 +253,27 @@ public static class MirrorDungeonShopEndpoints
             var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md);
             if (account is null) return Results.Unauthorized();
             var loaded = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
-            if (loaded is null) return Results.StatusCode(500);
             var p = await HandlerContext.ReadParamsAsync<AcquireMirrorDungeonExitRewardParams>(ctx);
             if (p is null) return Results.BadRequest();
+
+            // No run left (already claimed, or ended elsewhere): answer with the "no run" marker
+            // and nothing granted instead of a 500, so a client retrying the claim can leave the
+            // reward screen rather than being stuck on it.
+            if (loaded is null)
+            {
+                var none = new MirrorOriginSaveInfo { dungeonId = -1, idx = -1 };
+                none.currentInfo.eid = -1;
+                return Results.Json(global::ResponsePacket<AcquireMirrorDungeonExitRewardResult>.Ok(
+                    new AcquireMirrorDungeonExitRewardResult
+                    {
+                        rewardList = new(),
+                        saveInfo = none,
+                        history = new MirrorDungeonHistories { dungeonid = -1 },
+                        enabledStartbufIds = new(),
+                        startBuffInfo = new StartBuffInfo { dungeonid = -1 },
+                        currentClearedConstraintIds = new(),
+                    }, acquireExitRewardId), global::PacketJson.Options);
+            }
 
             var run = WireMapper.ToDomain(loaded);
             // Snapshot the run's banked starlight before AcquireExitReward settles it into pslp -

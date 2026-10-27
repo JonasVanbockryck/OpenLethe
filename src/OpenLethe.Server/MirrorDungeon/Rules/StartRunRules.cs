@@ -20,13 +20,16 @@ public static class StartRunRules
     /// </summary>
     public const long CurrentDungeonId = 8;
 
-    /// Normalizes a dungeonId from any source to the current season; Enter and ReEnter share it.
+    /// Normalizes a dungeonId from any source to the current season (Enter: every new run is one).
     public static long NormalizeDungeonIdValue(long dungeonId) =>
         dungeonId == CurrentDungeonId ? dungeonId : CurrentDungeonId;
 
+    /// ReEnter: moves a stored run of an older season onto the current one. A save with no run
+    /// (dungeonId <= 0, the -1 "no dungeon" marker) is left alone - reporting it as dungeon 8 made
+    /// the client believe a run was still open after a forfeit had already ended it.
     public static void NormalizeDungeonId(MirrorOriginSaveInfo save)
     {
-        if (save is not null) save.dungeonId = NormalizeDungeonIdValue(save.dungeonId);
+        if (save is not null && save.dungeonId > 0) save.dungeonId = NormalizeDungeonIdValue(save.dungeonId);
     }
 
     // The level-cap offsets now come from the buffs THIS run enabled (Run.StartBuffIds, persisted
@@ -136,12 +139,16 @@ public static class StartRunRules
     // (not sent, or already swapped) the pack is appended instead so the button never no-ops.
     // The swap is never refused for lack of points - a deliberate deviation from vanilla's
     // affordability check, since the capture never exercises the refused branch.
-    public static long DetectThemeFloor(Run run, long originThemeFloorId, long detectThemeFloorId)
+    // customThemes: the account's uploaded custom packs (Account.CustomTheme). The client offers
+    // those as detection targets too; without them the lookup below missed every custom pack and
+    // the detect silently did nothing.
+    public static long DetectThemeFloor(Run run, long originThemeFloorId, long detectThemeFloorId,
+        IReadOnlyList<ThemeStatic>? customThemes = null)
     {
         if (detectThemeFloorId == 0) return 0;
         if (run.ThemePools.Any(t => t.Tfid == detectThemeFloorId)) return 0;
 
-        var themePool = new MdThemePool(); // namespace OpenLethe.Server.MirrorDungeon.Data (using above)
+        var themePool = new MdThemePool(customThemes); // namespace OpenLethe.Server.MirrorDungeon.Data (using above)
         if (!themePool.pools.ContainsKey(detectThemeFloorId)) return 0;
 
         // The floor being selected == the number of floors the run has built so far.

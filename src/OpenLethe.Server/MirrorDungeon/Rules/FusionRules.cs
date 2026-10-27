@@ -67,7 +67,12 @@ public static class FusionRules
     // to Results.StatusCode(500). Charged tells the caller whether to echo the cumulative
     // run.UsedCost or the handler's old "usedCost stays 0" no-charge case (egoInfo has no
     // upgradeDataList - a valid, chargeless success).
-    public static (EgoGift? Gift, bool Charged) UpgradeGift(Run run, long egoGiftId)
+    //
+    // `to` is the request's target level. Client 1.117 sends a double upgrade as ONE request
+    // (from 0, to 2); the captured 1.110 client only ever sent single steps. Each level on the
+    // way costs its own TierUpgradeCost entry, as the captured single steps do (9005: 0->1 60,
+    // 1->2 120). A `to` at or below the current level means one step, as before.
+    public static (EgoGift? Gift, bool Charged) UpgradeGift(Run run, long egoGiftId, long to = 0)
     {
         var egoInfo = OpenLethe.Server.MdEgoData.GetById(egoGiftId);
         if (egoInfo is null) return (null, false);
@@ -76,14 +81,17 @@ public static class FusionRules
 
         if (egoInfo.upgradeDataList is not null)
         {
-            var desiredUl = ego.Ul + 1;
-            if (desiredUl < 0 || desiredUl >= egoInfo.upgradeDataList.Count) return (null, false);
-            // 9800 "Wealth" fixes enhancement cost to 1 as well (see ShopRules.WealthFix).
-            var price = ShopRules.WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountUpgradeGift,
-                OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, desiredUl)));
-            run.Cost -= price;
-            run.UsedCost += price; // cumulative shop-spend this floor.
-            ego.Ul = desiredUl;
+            var targetUl = to > ego.Ul ? to : ego.Ul + 1;
+            if (targetUl < 0 || targetUl >= egoInfo.upgradeDataList.Count) return (null, false);
+            for (var ul = ego.Ul + 1; ul <= targetUl; ul++)
+            {
+                // 9800 "Wealth" fixes enhancement cost to 1 as well (see ShopRules.WealthFix).
+                var price = ShopRules.WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountUpgradeGift,
+                    OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, ul)));
+                run.Cost -= price;
+                run.UsedCost += price; // cumulative shop-spend this floor.
+            }
+            ego.Ul = targetUl;
             return (ego, true);
         }
 

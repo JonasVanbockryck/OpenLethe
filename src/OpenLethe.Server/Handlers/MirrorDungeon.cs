@@ -268,7 +268,8 @@ public static class MirrorDungeonEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(save);
-            StartRunRules.DetectThemeFloor(run, p.originThemeFloorId, p.detectThemeFloorId);
+            StartRunRules.DetectThemeFloor(run, p.originThemeFloorId, p.detectThemeFloorId,
+                await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = OpenLethe.Server.AccountFields.Set(save);

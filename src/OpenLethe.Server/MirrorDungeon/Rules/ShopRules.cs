@@ -71,6 +71,9 @@ public static class ShopRules
         var slot = egSlots[(int)idx];
         var bought = OpenLethe.Server.MdEgoData.GetById(slot.Id);
         if (bought is null) return new();
+        // Never sell a gift the run already owns (it can arrive by other means - fusion, an
+        // event - after the shop rolled): nothing is charged and the slot stays as it was.
+        if (run.Gifts.Items.Any(g => g.Id == bought.id)) return new();
 
         var price = WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountPurchaseGift, bought.price));
         run.Cost -= price;
@@ -170,7 +173,8 @@ public static class ShopRules
     {
         var giftSlots = run.Shop.Slots.Where(s => s.T == "eg" && s.S == 1).ToList();
         var randomGifts = new MdThemePool().SelectRandomShopEgos(
-            SharedRules.ThemePackId(run), Math.Min(giftSlots.Count, 30), SharedRules.CurrentFloor(run), keyword);
+            SharedRules.ThemePackId(run), Math.Min(giftSlots.Count, 30), SharedRules.CurrentFloor(run), keyword,
+            SharedRules.OwnedGiftIds(run));
 
         var giftQueue = new Queue<long>(randomGifts);
         foreach (var slot in giftSlots)

@@ -106,13 +106,14 @@ public class MdRulesShopTests
     {
         var run = new Run { Cost = 1000, UsedCost = 0 };
         run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9001, S = 1 });
-        run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9001, S = 1 });
+        run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9002, S = 1 }); // a second, different gift: owned ones are never sold
+        var spent = 198 + OpenLethe.Server.MdEgoData.GetById(9002)!.price;
 
         ShopRules.PurchaseEgoGift(run, 0);
         ShopRules.PurchaseEgoGift(run, 1);
 
-        Assert.Equal(396, run.UsedCost); // 198 + 198
-        Assert.Equal(604, run.Cost);     // 1000 - 396
+        Assert.Equal(spent, run.UsedCost);
+        Assert.Equal(1000 - spent, run.Cost);
         Assert.Equal(2, run.Gifts.Items.Count);
     }
 
@@ -127,6 +128,35 @@ public class MdRulesShopTests
         Assert.Empty(granted);
         Assert.Equal(1000, run.Cost);
         Assert.Empty(run.Gifts.Items);
+    }
+
+    [Fact]
+    public void PurchaseEgoGift_AlreadyOwned_IsRefusedWithoutCharging()
+    {
+        var run = new Run { Cost = 1000 };
+        run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9001, S = 1 });
+        run.Gifts.Items.Add(new EgoGift { Id = 9001 }); // e.g. fused after the shop rolled
+
+        var granted = ShopRules.PurchaseEgoGift(run, 0);
+
+        Assert.Empty(granted);
+        Assert.Equal(1000, run.Cost);
+        Assert.Single(run.Gifts.Items);
+        Assert.Equal(1, run.Shop.Slots[0].S);
+    }
+
+    [Fact]
+    public void RefreshShop_NeverRollsOwnedGifts()
+    {
+        // Own the whole shop pool except three gifts: a refresh can only draw those three.
+        var pool = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().ShopEgoGiftsPool(1001);
+        var run = new Run { Cost = 1000 };
+        run.Gifts.Items.AddRange(pool.Skip(3).Select(id => new EgoGift { Id = id }));
+        for (var i = 0; i < 3; i++) run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 0, S = 1 });
+
+        ShopRules.RefreshShop(run, "None");
+
+        Assert.All(run.Shop.Slots, s => Assert.Contains(s.Id, pool.Take(3)));
     }
 
     [Fact]

@@ -38,10 +38,13 @@ public static class DungeonSaveInfoEndpoints
             var md = OpenLethe.Server.AccountFields.Get<global::MirrorDungeonSaveInfoFormat>(account.MdSaveInfo)
                 ?? new global::MirrorDungeonSaveInfoFormat
                 {
-                    // The current season's id, not -1: the entrance plate reads it (see
-                    // StartRunRules.CurrentDungeonId).
-                    dungeonId = (int)OpenLethe.Server.MirrorDungeon.Rules.StartRunRules.CurrentDungeonId,
-                    idx = 0,
+                    // -1/-1 is the "no run" marker, as in both captures. The port briefly sent the
+                    // current season (8/0) so the entrance plate showed a number instead of 00, but
+                    // the client then treats the account as mid-run: after a forfeit it shows
+                    // "unclaimed rewards" for a run the server has already ended, and neither
+                    // claiming nor re-entering gets out of it.
+                    dungeonId = -1,
+                    idx = -1,
                     currentInfo = new global::MirrorDungeonCurrentInfoFormat { eid = -1 },
                 };
 

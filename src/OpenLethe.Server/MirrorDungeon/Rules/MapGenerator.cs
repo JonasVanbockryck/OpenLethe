@@ -42,14 +42,16 @@ public static class MapGenerator
     // request's act/mode selector (used for the extreme-act new-theme gating below AND to set
     // the run's mode-enter counter, save.idx/run.Idx - the brief's one-arg signature omitted it,
     // but both are genuine game-state mutations that belong in Rules, not the handler).
-    public static void GenerateFloor(Run run, long selectedThemeFloorId, long selectedIdx)
+    // customThemes: the account's uploaded packs (see MdMapGen.GenerateNewFloor).
+    public static void GenerateFloor(Run run, long selectedThemeFloorId, long selectedIdx,
+        IReadOnlyList<OpenLethe.Server.ThemeStatic>? customThemes = null)
     {
         // The floor being selected == the count of floors already recorded (ThemeFloors), NOT
         // SharedRules.CurrentFloor (LevelAdders) - see MirrorDungeonMap.cs:236-239.
         var floor = run.ThemeFloors.Count;
 
         var save = WireMapper.ToWire(run);
-        OpenLethe.Server.MdMapGen.GenerateNewFloor(floor, selectedThemeFloorId, save);
+        OpenLethe.Server.MdMapGen.GenerateNewFloor(floor, selectedThemeFloorId, save, customThemes);
         // GenerateNewFloor (+ its UpdateResult) only ever touches: dungeonMap.ns, currentInfo.cn,
         // currentInfo.eid, currentInfo.tfps, currentInfo.tfs, isEndDungeon, sepsCreated - write
         // exactly those back into `run`, never a blind whole-run re-import.

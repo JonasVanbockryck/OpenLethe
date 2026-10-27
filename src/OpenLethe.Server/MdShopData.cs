@@ -117,21 +117,58 @@ public static class MdShopTable
 }
 
 // mirror-dungeon-common-data-md7.json is one unlisted object per file (StaticData.GetUnlisted):
-// only the shop-relevant subset is modelled, the rest of the file is ignored by name.
+// only the shop-relevant subset and hiddenBattleInfo are modelled, the rest of the file is
+// ignored by name.
 public sealed class MdCommonData
 {
+    public long currentDungeonId;
     public long maxRestingCountForPersonality = 5;
     public long shopRefreshCostPerCount = 15;
     public long shopRefreshChipForAnyCount = 10;
     public List<long> acquireChipPerFloor = new();
     public double shopKeywordRefreshWeightMultiplier = 12.5;
+    public MdHiddenBattleInfo? hiddenBattleInfo;
+}
+
+// hiddenBattleInfo: the hidden-boss stages (pool), the first floor they can appear on
+// (minFloorCondition) and, per floor, the chance that one of the floor's event nodes turns into a
+// hidden battle (probInfo). Floors are 1-based like the client's UI ("floor 11"); the server's
+// floor index is 0-based.
+public sealed class MdHiddenBattleInfo
+{
+    public long minFloorCondition;
+    public List<long> pool = new();
+    public List<MdHiddenBattleProb> probInfo = new();
+
+    public double ProbForFloor(long floorIndex)
+    {
+        var floor = floorIndex + 1;
+        if (floor < minFloorCondition) return 0;
+        return probInfo.FirstOrDefault(p => p.floor == floor)?.prob ?? 0;
+    }
+}
+
+public sealed class MdHiddenBattleProb
+{
+    public long floor;
+    public double prob;
 }
 
 public static class MdCommonTable
 {
-    private static readonly Lazy<MdCommonData> Data = new(() =>
-        StaticData.GetUnlisted<MdCommonData>("static-data/mirror-dungeon-common-data").FirstOrDefault()
-            ?? new MdCommonData());
+    private static readonly Lazy<List<MdCommonData>> Files = new(() =>
+        StaticData.GetUnlisted<MdCommonData>("static-data/mirror-dungeon-common-data"));
+
+    private static readonly Lazy<MdCommonData> Data = new(() => Files.Value.FirstOrDefault() ?? new MdCommonData());
+
+    // The current season's file (currentDungeonId 8 = mirror-dungeon-common-data-md8.json), or the
+    // first one when no file names it.
+    private static readonly Lazy<MdCommonData> Current = new(() =>
+        Files.Value.FirstOrDefault(d => d.currentDungeonId == OpenLethe.Server.MirrorDungeon.Rules.StartRunRules.CurrentDungeonId)
+            ?? Data.Value);
+
+    // The current season's hiddenBattleInfo; empty (no hidden battles) when the file has none.
+    public static MdHiddenBattleInfo HiddenBattle => Current.Value.hiddenBattleInfo ?? new MdHiddenBattleInfo();
 
     // Module points charged per shop refresh, multiplied by how many refreshes this floor already
     // had (shop.rc) - the reference server hardcoded the same 15, now it is read.

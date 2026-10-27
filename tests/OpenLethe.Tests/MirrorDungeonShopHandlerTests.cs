@@ -268,6 +268,41 @@ public class MirrorDungeonShopHandlerTests(PostgresFixture db)
     }
 
     [SkippableFact]
+    public async Task ForfeitFlow_ClaimTwice_SecondClaimSucceedsAndTheAccountReportsNoRun()
+    {
+        // Forfeit from the entrance: Exit, Preview, Acquire. A client that re-sends the claim (or
+        // claims after the run is gone) must get an answer, not a 500, and GetDungeonSaveInfoAll
+        // must then say "no run" (-1) - otherwise the client sits on "unclaimed rewards" forever.
+        db.RequireDb();
+        await using var f = new DbWebAppFactory(db.ConnectionString);
+        var (jwt, name) = await NewAccount(f);
+        var client = f.CreateClient();
+        await client.PostAsJsonAsync("/api/EnterMirrorDungeon", Body(jwt, new { dungeonid = 8, idx = 0 }));
+
+        await client.PostAsJsonAsync("/api/ExitMirrorDungeon", Body(jwt, new { }));
+        await client.PostAsJsonAsync("/api/PreviewMirrorDungeonExitReward", Body(jwt, new { }));
+        var first = await client.PostAsJsonAsync("/api/AcquireMirrorDungeonExitReward", Body(jwt, new { useEnkephalinModule = false, chanceConsumption = 0 }));
+        Assert.Equal(HttpStatusCode.OK, first.StatusCode);
+
+        var again = await client.PostAsJsonAsync("/api/AcquireMirrorDungeonExitReward", Body(jwt, new { useEnkephalinModule = false, chanceConsumption = 0 }));
+        Assert.Equal(HttpStatusCode.OK, again.StatusCode);
+        using (var doc = JsonDocument.Parse(await again.Content.ReadAsStringAsync()))
+            Assert.Equal(-1, doc.RootElement.GetProperty("result").GetProperty("saveInfo").GetProperty("dungeonId").GetInt64());
+
+        var info = await client.PostAsJsonAsync("/api/GetDungeonSaveInfoAll", Body(jwt, new { }));
+        using (var doc = JsonDocument.Parse(await info.Content.ReadAsStringAsync()))
+        {
+            var md = doc.RootElement.GetProperty("result").GetProperty("mirrorOriginSaveInfo");
+            Assert.Equal(-1, md.GetProperty("dungeonId").GetInt32());
+            Assert.Equal(-1, md.GetProperty("idx").GetInt32());
+        }
+
+        var reEnter = await client.PostAsJsonAsync("/api/ReEnterMirrorDungeon", Body(jwt, new { }));
+        using (var doc = JsonDocument.Parse(await reEnter.Content.ReadAsStringAsync()))
+            Assert.NotEqual(8, doc.RootElement.GetProperty("result").GetProperty("saveInfo").GetProperty("dungeonId").GetInt64());
+    }
+
+    [SkippableFact]
     public async Task SelectFormationMirrorDungeon_BuildsDulAndSetsStartBufPoint()
     {
         db.RequireDb();

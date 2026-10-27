@@ -104,45 +104,76 @@ public class MdMapGenTests
         }
     }
 
-    // Theme 1501 (theme-floor-t6): an act-3 fixed floor - start, two sector-1 events, ... shop, boss.
+    // Theme 1501 (theme-floor-t6): an act-3 fixed floor - start, sector-1 events at idx 0 and 2,
+    // ... shop, boss. md-extreme-run-2 played it at floor index 10.
     private const long FixedAct3ThemeId = 1501;
 
-    [Fact]
-    public void GenerateNewFloor_Floor11_AddsHiddenBossBonusNodeInTheMiddleRow()
+    private static MdHiddenBattleInfo Always(long floor, params long[] pool) => new()
+    {
+        minFloorCondition = 11,
+        pool = pool.ToList(),
+        probInfo = new() { new MdHiddenBattleProb { floor = floor, prob = 1.0 } },
+    };
+
+    private static List<Ns> Act3Floor(long floor)
     {
         var save = new MirrorOriginSaveInfo();
-
-        MdMapGen.GenerateNewFloor(10, FixedAct3ThemeId, save); // floor index 10 = floor 11
-
-        var ns = save.dungeonMap.ns;
-        var bonus = Assert.Single(ns, n => MdMapGen.IsHiddenBattle(n.eid));
-        Assert.Equal(MdMapGen.BonusBattleNodeType, bonus.e);
-        Assert.Equal(MdMapGen.NodeId(10, 2, 1), bonus.nid);
-        Assert.NotEmpty(bonus.nnids);
-        // Reachable from the sector-1 row, and every edge still lands on a real node.
-        Assert.Contains(ns, n => n.s == 1 && n.nnids.Contains(bonus.nid));
-        Assert.All(ns.SelectMany(n => n.nnids), id => Assert.Contains(ns, n => n.nid == id));
+        MdMapGen.GenerateNewFloor(floor, FixedAct3ThemeId, save);
+        // Generation itself rolls the shipped 10%: undo a hit so each test starts from plain events.
+        foreach (var n in save.dungeonMap.ns.Where(n => n.e == MdMapGen.HiddenBattleNodeType))
+            n.e = 3;
+        return save.dungeonMap.ns;
     }
 
     [Fact]
-    public void GenerateNewFloor_BeforeFloor11_AddsNoHiddenBoss()
+    public void HiddenBattleInfo_IsReadFromTheCurrentSeasonsCommonData()
     {
-        var save = new MirrorOriginSaveInfo();
-
-        MdMapGen.GenerateNewFloor(9, FixedAct3ThemeId, save);
-
-        Assert.DoesNotContain(save.dungeonMap.ns, n => MdMapGen.IsHiddenBattle(n.eid));
+        // mirror-dungeon-common-data-md8.json hiddenBattleInfo.
+        var info = MdCommonTable.HiddenBattle;
+        Assert.Equal(11, info.minFloorCondition);
+        Assert.Equal(new long[] { 9000005, 9000006, 9000007, 9000008 }, info.pool);
+        Assert.Equal(0.1, info.ProbForFloor(10)); // floor index 10 = floor 11
+        Assert.Equal(0, info.ProbForFloor(9));
+        Assert.True(MdMapGen.IsHiddenBattle(9000007));
+        Assert.Equal(new long[] { 9256 }, MdMapGen.HiddenGiftsOf(9000007));
     }
 
     [Fact]
-    public void GenerateNewFloor_AllHiddenBossesBeaten_AddsNoHiddenBoss()
+    public void PlaceHiddenBattle_Hit_TurnsOneSector1EventIntoHiddenNodeKeepingItsEdges()
+    {
+        var graph = Act3Floor(10);
+        var events = graph.Where(n => n.s == 1 && n.e == 3).Select(n => (n.nid, n.nnids.ToList())).ToList();
+
+        MdMapGen.PlaceHiddenBattle(graph, 10, new MirrorOriginSaveInfo(), Always(11, 9000007));
+
+        var hidden = Assert.Single(graph, n => n.e == MdMapGen.HiddenBattleNodeType);
+        Assert.Equal(1, hidden.s);
+        Assert.Equal(9000007, hidden.eid);
+        Assert.Equal(events.Single(e => e.nid == hidden.nid).Item2, hidden.nnids);
+    }
+
+    [Fact]
+    public void PlaceHiddenBattle_BelowMinFloor_PlacesNothing()
+    {
+        var graph = Act3Floor(9);
+
+        MdMapGen.PlaceHiddenBattle(graph, 9, new MirrorOriginSaveInfo(), Always(10, 9000007));
+
+        Assert.DoesNotContain(graph, n => n.e == MdMapGen.HiddenBattleNodeType);
+    }
+
+    [Fact]
+    public void PlaceHiddenBattle_SkipsBeatenStagesAndPlacesNothingOnceAllAreBeaten()
     {
         var save = new MirrorOriginSaveInfo();
-        foreach (var id in MdMapGen.HiddenBattleIds)
-            save.currentInfo.egs.Add(new AcquiredEgogifts { id = MdMapGen.HiddenGiftOf(id) });
+        save.currentInfo.egs.Add(new AcquiredEgogifts { id = 9256 }); // 9000007's exclusive gift
 
-        MdMapGen.GenerateNewFloor(10, FixedAct3ThemeId, save);
+        var graph = Act3Floor(10);
+        MdMapGen.PlaceHiddenBattle(graph, 10, save, Always(11, 9000007, 9000006));
+        Assert.Equal(9000006, Assert.Single(graph, n => n.e == MdMapGen.HiddenBattleNodeType).eid);
 
-        Assert.DoesNotContain(save.dungeonMap.ns, n => MdMapGen.IsHiddenBattle(n.eid));
+        var none = Act3Floor(10);
+        MdMapGen.PlaceHiddenBattle(none, 10, save, Always(11, 9000007));
+        Assert.DoesNotContain(none, n => n.e == MdMapGen.HiddenBattleNodeType);
     }
 }

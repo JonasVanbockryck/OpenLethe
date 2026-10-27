@@ -56,7 +56,8 @@ public static class MapNodeRules
                 slots.Add(new ShopSlotState { T = "up", Id = run.Party[i].PersonalityId, S = 1 });
 
             slots.AddRange(new MdThemePool().SelectRandomShopEgos(
-                    SharedRules.ThemePackId(run), (int)SharedRules.ShopGiftCount(run), SharedRules.CurrentFloor(run), null)
+                    SharedRules.ThemePackId(run), (int)SharedRules.ShopGiftCount(run), SharedRules.CurrentFloor(run), null,
+                    SharedRules.OwnedGiftIds(run))
                 .Select(id => new ShopSlotState { T = "eg", Id = id, S = 1 }));
 
             run.Shop = new ShopState { Slots = slots };

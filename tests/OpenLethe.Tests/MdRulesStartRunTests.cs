@@ -184,4 +184,34 @@ public class MdRulesStartRunTests
         Assert.All(run.Party, u => Assert.Equal(run.LevelOffsets.Sbmlos + run.LevelOffsets.Egmlos, u.Mlos));
         Assert.Equal(8, run.ThemePools.Count); // RNG-masked contents; only the count is guaranteed
     }
+
+    [Fact]
+    public void DetectThemeFloor_CustomPack_SwapsItIntoThePool()
+    {
+        // A pack the account uploaded (/custom/upload/mirrordungeon-theme-floor) - not in the static
+        // tables. Detecting it used to be a silent no-op.
+        var custom = new OpenLethe.Server.ThemeStatic { id = 900001, egoGiftPool = new() { 9001, 9002, 9003, 9004 } };
+        var run = new Run();
+        run.Starlight.Scc = 50;
+        run.ThemePools.Add(new ThemePool { Idx = 1, Tfid = 1001 });
+
+        StartRunRules.DetectThemeFloor(run, 1001, 900001, new List<OpenLethe.Server.ThemeStatic> { custom });
+
+        var slot = Assert.Single(run.ThemePools);
+        Assert.Equal(900001, slot.Tfid);
+        Assert.All(slot.Egs, id => Assert.Contains(id, custom.egoGiftPool));
+        Assert.Equal(30, run.Starlight.Scc); // paid detectThemeFloorDefaultPoint (20)
+    }
+
+    [Fact]
+    public void NormalizeDungeonId_LeavesTheNoRunMarkerAlone()
+    {
+        var none = new MirrorOriginSaveInfo { dungeonId = -1 };
+        StartRunRules.NormalizeDungeonId(none);
+        Assert.Equal(-1, none.dungeonId);
+
+        var old = new MirrorOriginSaveInfo { dungeonId = 7 };
+        StartRunRules.NormalizeDungeonId(old);
+        Assert.Equal(8, old.dungeonId);
+    }
 }

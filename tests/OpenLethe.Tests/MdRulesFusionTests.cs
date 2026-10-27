@@ -43,6 +43,35 @@ public class MdRulesFusionTests
     }
 
     [Fact]
+    public void UpgradeGift_DoubleUpgradeInOneRequest_ReachesTargetAndChargesEveryStep()
+    {
+        // Client 1.117 sends a double upgrade as ONE request: { egoGiftId: 9005, from: 0, to: 2 }.
+        // 9005 is TIER_2: the captured single steps cost 60 (0->1) and 120 (1->2).
+        var run = new Run { Cost = 1000, UsedCost = 0 };
+        run.Gifts.Items.Add(new EgoGift { Id = 9005, Ul = 0 });
+
+        var (gift, charged) = FusionRules.UpgradeGift(run, 9005, to: 2);
+
+        Assert.True(charged);
+        Assert.Equal(2, gift!.Ul);
+        Assert.Equal(820, run.Cost);      // 1000 - 60 - 120
+        Assert.Equal(180, run.UsedCost);
+    }
+
+    [Fact]
+    public void UpgradeGift_TargetPastMaxLevel_IsRefusedWithoutCharging()
+    {
+        var run = new Run { Cost = 1000 };
+        run.Gifts.Items.Add(new EgoGift { Id = 9005, Ul = 0 });
+
+        var (gift, _) = FusionRules.UpgradeGift(run, 9005, to: 3);
+
+        Assert.Null(gift);
+        Assert.Equal(1000, run.Cost);
+        Assert.Equal(0, run.Gifts.Items[0].Ul);
+    }
+
+    [Fact]
     public void UpgradeGift_ValidGift_BumpsUlAndChargesTierUpgradeCost()
     {
         // 9001 is TIER_2 (see MdShopDataTests): TierUpgradeCost(9001, 1) == 60.

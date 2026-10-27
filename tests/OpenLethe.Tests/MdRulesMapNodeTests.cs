@@ -109,6 +109,21 @@ public class MdRulesMapNodeTests
     }
 
     [Fact]
+    public void EnterNode_ShopNode_NeverOffersOwnedGifts()
+    {
+        // Own the whole shop pool except three gifts: those three are all that can show up.
+        var pool = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().ShopEgoGiftsPool(1001);
+        var run = RunWithNode(nid: 100, e: 10, eid: 0);
+        run.Gifts.Items.AddRange(pool.Skip(3).Select(id => new EgoGift { Id = id }));
+
+        MapNodeRules.EnterNode(run, new Currentnode { f = 0, s = 0, nid = 100 });
+
+        var offered = run.Shop.Slots.Where(s => s.T == "eg").Select(s => s.Id).ToList();
+        Assert.NotEmpty(offered);
+        Assert.All(offered, id => Assert.Contains(id, pool.Take(3)));
+    }
+
+    [Fact]
     public void EnterNode_SuperShopNode_UsesRetailSlotTable()
     {
         // eid!=0 -> super shop: shopInfoByType[1] = 1 "upt" + 2 named "up" + 7 gift slots,

@@ -330,6 +330,10 @@ public sealed class SellEgoGiftMirrorDungeonParams
 public sealed class UpgradeEgoGiftMirrorDungeonParams
 {
     public long egoGiftId;
+    // The upgrade levels the client goes from/to. Client 1.117 sends a double upgrade as ONE
+    // request with from 0 / to 2, so `to` is the target, not ul + 1.
+    public long from;
+    public long to;
 }
 
 public sealed class AcquireRewardEgoGiftsMirrorDungeonParams

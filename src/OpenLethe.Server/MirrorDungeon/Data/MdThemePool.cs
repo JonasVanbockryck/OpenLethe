@@ -5,13 +5,21 @@ public sealed class MdThemePool
 {
     public readonly Dictionary<long, ThemeStatic> pools;
 
-    // ponytail: vanilla static themes only. POST /custom/upload/mirrordungeon-theme-floor
+    // ponytail: vanilla static themes only here. POST /custom/upload/mirrordungeon-theme-floor
     // fills Account.CustomTheme, but Rust's per-user overlay (ThemePool::load_from_db_or_default)
     // would mean threading the account through all eight construction sites, most of them deep
-    // in the rules layer. Add it when a custom theme actually needs to affect map gen.
+    // in the rules layer. The overload below is that overlay for the two paths that need it:
+    // starlight detection (DetectThemeFloor) and floor generation (MdMapGen.GenerateNewFloor).
     public MdThemePool()
     {
         pools = MdThemeData.AllThemes().ToDictionary(t => t.id, t => t);
+    }
+
+    // The account's uploaded custom packs laid over the static ones (an uploaded id wins).
+    public MdThemePool(IEnumerable<ThemeStatic>? customThemes) : this()
+    {
+        foreach (var t in customThemes ?? Enumerable.Empty<ThemeStatic>())
+            if (t is not null && t.id != 0) pools[t.id] = t;
     }
 
     public static List<long> GetCombinedEgoGiftPool(ThemeStatic t)
@@ -87,9 +95,13 @@ public sealed class MdThemePool
         return giftPool.ToList();
     }
 
-    public List<long> SelectRandomShopEgos(long themeId, int count, long floor, string? keyword)
+    // owned: gifts the run already has. A shop never offers those, so they leave the pool up front
+    // (rather than being filtered out of the result) and every slot still fills with one the run lacks.
+    public List<long> SelectRandomShopEgos(long themeId, int count, long floor, string? keyword,
+        IReadOnlyCollection<long>? owned = null)
     {
         var giftPool = ShopEgoGiftsPool(themeId);
+        if (owned is { Count: > 0 }) giftPool.RemoveAll(owned.Contains);
         var chosen = new List<long>();
 
         // A real keyword (anything but empty / the literal "None" a plain refresh sends) weights
