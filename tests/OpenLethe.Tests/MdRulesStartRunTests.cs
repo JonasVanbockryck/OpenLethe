@@ -58,6 +58,57 @@ public class MdRulesStartRunTests
     }
 
     [Fact]
+    public void AcquireConstraints_WithSelection_GrantsHiddenGiftsAndLeavesCfsAlone()
+    {
+        var run = new Run();
+        run.Floor.Current.F = 9;
+        run.ConstraintScores.Add(new ConstraintScore { Floor = 9, Difficulty = 2 });
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetConstraints", Pool = OpenLethe.Server.MdConstraints.ForFloor(10, new List<long>()) });
+
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1, 2, 3, 4, 5 });
+
+        var all = new long[] { 995011, 995012, 995013, 995014, 995015, 995036 };
+        Assert.Equal(all, Assert.Single(run.ConstraintSelections).Ids);
+        Assert.Equal(all, run.Gifts.Items.Select(g => g.Id));
+        // Retail never writes cfs at pick time - the floor-clear does.
+        Assert.Equal(9, Assert.Single(run.ConstraintScores).Floor);
+    }
+
+    [Fact]
+    public void AcquireConstraints_RepeatedCall_KeepsThePickInsteadOfWipingIt()
+    {
+        var run = new Run();
+        run.Floor.Current.F = 9;
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetConstraints", Pool = OpenLethe.Server.MdConstraints.ForFloor(10, new List<long>()) });
+
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1, 2, 3, 4, 5 });
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1, 2, 3, 4, 5 });
+
+        var sel = Assert.Single(run.ConstraintSelections);
+        Assert.Equal(10, sel.Flooridx);
+        Assert.Equal(6, sel.Ids.Count);
+        Assert.Equal(6, run.Gifts.Items.Count);
+    }
+
+    [Fact]
+    public void AcquireConstraints_RepeatedCall_ReplacesThisFloorOnly()
+    {
+        var run = new Run();
+        run.ConstraintSelections.Add(new ConstraintSelection { Flooridx = 10, Ids = new() { 995011 } });
+        run.Gifts.Items.Add(new EgoGift { Id = 995011 });
+        run.Floor.Current.F = 10;
+        // Floor 11 with 995015 not owned: the replacement rule shows 995015 in 995016's place.
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetConstraints", Pool = OpenLethe.Server.MdConstraints.ForFloor(11, new List<long> { 995011 }) });
+
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1 });
+        StartRunRules.AcquireConstraints(run, new List<long> { 1 });
+
+        Assert.Equal(new long[] { 995011, 995017 }, run.Gifts.Items.Select(g => g.Id));
+        Assert.Equal(new long[] { 995017 }, run.ConstraintSelections.Single(s => s.Flooridx == 11).Ids);
+        Assert.Equal(new long[] { 995011 }, run.ConstraintSelections.Single(s => s.Flooridx == 10).Ids);
+    }
+
+    [Fact]
     public void AcquireConstraints_NoEventPresent_AppendsEmptySelectionWithoutThrowing()
     {
         var run = new Run();

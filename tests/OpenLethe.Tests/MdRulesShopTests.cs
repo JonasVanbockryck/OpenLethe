@@ -41,6 +41,31 @@ public class MdRulesShopTests
         Assert.Equal(0, run.UsedCost); // idx==0 doesn't persist a running usedcost (matches the handler)
     }
 
+    [Theory]
+    [InlineData(995014, 800)] // Adversity: shop prices x2 -> heal costs 200
+    [InlineData(995024, 700)] // Adversity: shop prices x3 -> heal costs 300
+    public void Heal_RaisedMarketPriceAdversity_MultipliesPrice(long adversity, long expectedCost)
+    {
+        var run = new Run { Cost = 1000 };
+        run.Gifts.Items.Add(new EgoGift { Id = adversity });
+        run.Party.Add(new PartyUnit { PersonalityId = 1, CurrentHp = 100 });
+
+        ShopRules.Heal(run, 1, 0);
+
+        Assert.Equal(expectedCost, run.Cost);
+        Assert.Equal(1000 - expectedCost, run.UsedCost);
+    }
+
+    [Fact]
+    public void RaisedMarketPrice_BothAdversitiesOwned_AppliesTheStrongerOnly()
+    {
+        var run = new Run();
+        run.Gifts.Items.Add(new EgoGift { Id = 995014 });
+        run.Gifts.Items.Add(new EgoGift { Id = 995024 });
+
+        Assert.Equal(300, Effects.ApplyRaisedMarketPrice(run, 100));
+    }
+
     [Fact]
     public void Heal_Idx2_RevivesOnlyDownedUnitToFullHp()
     {

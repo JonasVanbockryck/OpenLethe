@@ -32,8 +32,9 @@ public static class ShopRules
         var option = MdShopTable.Heal(idx);
         if (option is null) return; // no such option in the table - the handler answers with a default packet
 
-        run.Cost -= option.price;
-        if (idx != 0) run.UsedCost += option.price; // cumulative shop-spend this floor.
+        var price = Effects.ApplyRaisedMarketPrice(run, option.price);
+        run.Cost -= price;
+        if (idx != 0) run.UsedCost += price; // cumulative shop-spend this floor.
 
         var targets = option.isForAll
             ? run.Party
@@ -75,7 +76,8 @@ public static class ShopRules
         // event - after the shop rolled): nothing is charged and the slot stays as it was.
         if (run.Gifts.Items.Any(g => g.Id == bought.id)) return new();
 
-        var price = WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountPurchaseGift, bought.price));
+        var price = WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountPurchaseGift,
+            Effects.ApplyRaisedMarketPrice(run, bought.price)));
         run.Cost -= price;
         run.UsedCost += price; // cumulative shop-spend this floor.
         slot.S = 0; // buying flips the slot's s from 1 to 0 (sold out).
@@ -122,15 +124,16 @@ public static class ShopRules
             if (isDetected)
             {
                 if (targetSlot is not null) targetSlot.S = 0;
-                price = WealthFix(run, opt.detectingPrice);
+                price = WealthFix(run, Effects.ApplyRaisedMarketPrice(run, opt.detectingPrice));
             }
             else
             {
                 var slot = upSlot ?? targetSlot;
                 if (slot is not null) slot.S = 0;
+                var basePrice = Effects.ApplyRaisedMarketPrice(run, opt.price);
                 price = WealthFix(run, upSlot is not null
-                    ? Effects.ApplyShopDiscount(run, ShopDiscountUpgradePersonalityGift, opt.price)
-                    : opt.price * 2);
+                    ? Effects.ApplyShopDiscount(run, ShopDiscountUpgradePersonalityGift, basePrice)
+                    : basePrice * 2);
             }
 
             run.Cost -= price;
@@ -184,8 +187,10 @@ public static class ShopRules
         run.Shop.Rc += 1;
         // 9188 "Pre-order Discount" says "Shop Regular Refresh Cost -30%", so it covers the
         // regular part only; the keyword adder is a separate fee and stays full price.
-        var price = Effects.ApplyShopDiscount(run, ShopDiscountRefreshGift, MdCommonTable.RefreshCostPerCount * run.Shop.Rc);
-        if (!string.IsNullOrEmpty(keyword) && keyword != "None") price += MdShopTable.KeywordRefreshCostAdder;
+        var price = Effects.ApplyShopDiscount(run, ShopDiscountRefreshGift,
+            Effects.ApplyRaisedMarketPrice(run, MdCommonTable.RefreshCostPerCount * run.Shop.Rc));
+        if (!string.IsNullOrEmpty(keyword) && keyword != "None")
+            price += Effects.ApplyRaisedMarketPrice(run, MdShopTable.KeywordRefreshCostAdder);
         run.Cost -= price;
         run.UsedCost += price; // cumulative shop-spend this floor.
     }

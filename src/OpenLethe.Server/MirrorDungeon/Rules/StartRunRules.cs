@@ -99,37 +99,43 @@ public static class StartRunRules
     // finished and settle on the spot.
     public static void EnterMode(Run run, long mode) => run.Idx = mode;
 
-    // Port of the AcquireMirrorDungeonConstraints handler body (Handlers/MirrorDungeon.cs
-    // :172-177): consume the GetConstraints reward event, append a ConstraintSelection for the
-    // floor about to start.
+    // /api/AcquireMirrorDungeonConstraints: the Adversity pick for the floor about to start
+    // (cn.f + 1 - the client posts while still on the boss node it just cleared). selectIdxList
+    // holds positions in the offered list, not constraint ids. Retail (md-extreme-run seq298,
+    // run-2 seq332/375/404/432, all empty picks) consumes the GetConstraints popup and appends one
+    // scinfos entry; cfs is NOT touched here (the floor-clear writes it).
+    // Each picked id is also granted as an ego gift: 995xxx are hidden CONSTRAINT gifts
+    // (hidden-ego-gift-mirrordungeon), the same way the 992xxx HARDSHIP enemy buffs land in egs
+    // at AcquireRewardEgoGiftsWithEnemyBuf. The client applies an Adversity's effect from the gift
+    // it owns, so a pick recorded only in scinfos did nothing in game.
+    // The client can post the same pick more than once. The popup is gone after the first call,
+    // so a repeat resolves its indices against the floor's list rebuilt from the table, and it
+    // replaces this floor's pick instead of appending an empty one over it.
     public static void AcquireConstraints(Run run, List<long> selectIdxList)
     {
+        var floor = run.Floor.Current.F + 1;
         var ev = run.RewardEvents.FirstOrDefault(e => e.Rt == "GetConstraints");
         if (ev is not null) run.RewardEvents.Remove(ev);
-        // ponytail: non-empty selectIdxList is unexercised by the capture - derive ids from the
-        // consumed GetConstraints pool by index, same shape the client sends selections in.
+
+        // Undo an earlier pick for this floor before applying this one.
+        var earlier = run.ConstraintSelections.Where(s => s.Flooridx == floor).SelectMany(s => s.Ids).ToHashSet();
+        run.ConstraintSelections.RemoveAll(s => s.Flooridx == floor);
+        var keptElsewhere = run.ConstraintSelections.SelectMany(s => s.Ids).ToHashSet();
+        run.Gifts.Items.RemoveAll(g => earlier.Contains(g.Id) && !keptElsewhere.Contains(g.Id));
+
+        var pool = ev?.Pool ?? OpenLethe.Server.MdConstraints.ForFloor(floor, keptElsewhere);
         // Out-of-range indices are dropped instead of throwing, so a bogus index cannot 500 the
         // endpoint (same defensive stance AcquireBattleReward takes).
-        var ids = ev is not null
-            ? selectIdxList.Where(i => i >= 0 && i < ev.Pool.Count).Select(i => ev.Pool[(int)i]).ToList()
-            : new List<long>();
-        run.ConstraintSelections.Add(new ConstraintSelection { Flooridx = run.Floor.Current.F + 1, Ids = ids });
-        // Record the picked constraints' difficulty for this floor (wire cfs). Without it the run
-        // carried the selections but no score, so the exit reward had nothing to multiply by.
-        // Replace-or-add: a second call for the same floor (the client can re-open the popup) must
-        // update the entry instead of stacking a duplicate the floor-clear would then trip over.
-        AddOrUpdateScore(run, run.Floor.Current.F + 1, OpenLethe.Server.MdConstraints.TotalScore(ids));
-    }
+        var ids = selectIdxList
+            .Where(i => i >= 0 && i < pool.Count)
+            .Select(i => pool[(int)i])
+            .Distinct()
+            .ToList();
+        run.ConstraintSelections.Add(new ConstraintSelection { Flooridx = floor, Ids = ids });
 
-    // Writes (or refreshes) the cfs entry for one floor. Keeping this in one place is what makes the
-    // score survive the floor-clear pass in RewardEngine - both paths must touch the same entry.
-    private static void AddOrUpdateScore(Run run, long floor, long difficulty)
-    {
-        var existing = run.ConstraintScores.FirstOrDefault(c => c.Floor == floor);
-        if (existing is null)
-            run.ConstraintScores.Add(new ConstraintScore { Floor = floor, Difficulty = difficulty });
-        else
-            existing.Difficulty = difficulty;
+        foreach (var id in ids)
+            if (!run.Gifts.Items.Any(g => g.Id == id))
+                run.Gifts.Items.Add(new EgoGift { Id = id });
     }
 
     // /api/DetectMirrorDungeonThemeFloorByStarlight: swap the offered pack originThemeFloorId for
@@ -259,7 +265,7 @@ public static class StartRunRules
             : MdShopTable.ChangeFormationCount;
         if (run.Shop.Cf >= cap) return false;
 
-        var usedCost = MdShopTable.ChangeFormationPrice;
+        var usedCost = Effects.ApplyRaisedMarketPrice(run, MdShopTable.ChangeFormationPrice);
         var replaceMap = new Dictionary<long, Formation>();
         foreach (var f in formation) replaceMap[f.pervPersonalityId] = f; // last wins, matches Rust HashMap collect
 

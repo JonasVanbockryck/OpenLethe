@@ -242,11 +242,10 @@ public static class MirrorDungeonEndpoints
             return Results.Json(global::ResponsePacket<MirrorDungeonCurrentInfoResult>.Ok(result, detectStarlightId), global::PacketJson.Options);
         });
 
-        // Consumes the GetConstraints reward popup (same rt-remove pattern as
-        // AcquireRewardEgoGifts's GetEgogift) and records the pick as a new scinfos entry for
-        // the floor about to start. Capture-verified (seq298, the run's only record): the
-        // request's selectIdxList is empty (no constraint picked), so `ids` is empty too -
-        // the non-empty (constraint actually selected) branch is unexercised by the capture.
+        // The Adversity pick: consumes the GetConstraints reward popup, records the pick as the
+        // scinfos entry for the floor about to start and grants the picked Adversities as their
+        // hidden ego gifts (see StartRunRules.AcquireConstraints). Capture-verified for empty picks
+        // (seq298 and run-2's four records).
         var acquireConstraintsId = global::PacketRouting.ResolvePacketId<global::ResPacket_AcquireMirrorDungeonConstraints>();
         app.MapPost("/api/AcquireMirrorDungeonConstraints", async (HttpContext ctx) =>
         {

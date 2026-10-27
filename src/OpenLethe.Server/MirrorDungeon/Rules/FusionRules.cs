@@ -89,7 +89,7 @@ public static class FusionRules
             {
                 // 9800 "Wealth" fixes enhancement cost to 1 as well (see ShopRules.WealthFix).
                 var price = ShopRules.WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountUpgradeGift,
-                    OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, ul)));
+                    Effects.ApplyRaisedMarketPrice(run, OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, ul))));
                 run.Cost -= price;
                 run.UsedCost += price; // cumulative shop-spend this floor.
             }
