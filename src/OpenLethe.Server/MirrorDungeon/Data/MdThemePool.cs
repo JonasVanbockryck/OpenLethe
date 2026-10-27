@@ -5,11 +5,12 @@ public sealed class MdThemePool
 {
     public readonly Dictionary<long, ThemeStatic> pools;
 
-    // ponytail: vanilla static themes only here. POST /custom/upload/mirrordungeon-theme-floor
-    // fills Account.CustomTheme, but Rust's per-user overlay (ThemePool::load_from_db_or_default)
-    // would mean threading the account through all eight construction sites, most of them deep
-    // in the rules layer. The overload below is that overlay for the two paths that need it:
-    // starlight detection (DetectThemeFloor) and floor generation (MdMapGen.GenerateNewFloor).
+    // Vanilla static themes only. POST /custom/upload/mirrordungeon-theme-floor fills
+    // Account.CustomTheme; the overload below lays those packs over the static ones (Rust's
+    // ThemePool::load_from_db_or_default). Every rule that reads the CURRENT floor's pack -
+    // floor generation, starlight detection, the shop and its refresh, fusion, battle drops,
+    // reward cards - takes the account's packs from its handler and must use that overload, or a
+    // custom pack's floor finds no pack and every gift list comes back empty.
     public MdThemePool()
     {
         pools = MdThemeData.AllThemes().ToDictionary(t => t.id, t => t);
@@ -69,12 +70,23 @@ public sealed class MdThemePool
         return chosen;
     }
 
+    // The current season's drop pool (the newest dungeonId).
+    private static DungeonEgoGiftDropPool? SeasonDropPool() =>
+        MdThemeData.DropPools().OrderByDescending(p => p.dungeonId).FirstOrDefault();
+
+    // What the pack itself hands out: its egoGiftPool plus its exclusive (specific) gifts, minus
+    // the gifts the season's drop pool excludes - the fusion-only ones (9156, 9160, ...) that
+    // nearly every built-in pack lists but nothing may drop. Empty for an unknown pack.
+    public List<long> ThemeDropPool(long themeId)
+    {
+        if (!pools.TryGetValue(themeId, out var theme)) return new List<long>();
+        var excluded = new HashSet<long>(SeasonDropPool()?.excludeEgoGifts ?? new List<long>());
+        return GetCombinedEgoGiftPool(theme).Where(id => !excluded.Contains(id)).Distinct().ToList();
+    }
+
     public List<long> ShopEgoGiftsPool(long themeId)
     {
-        var dropPools = MdThemeData.DropPools();
-        if (dropPools.Count == 0) return new List<long>();
-        var maxDungeonId = dropPools.Max(p => p.dungeonId);
-        var dropPool = dropPools.FirstOrDefault(p => p.dungeonId == maxDungeonId);
+        var dropPool = SeasonDropPool();
         if (dropPool is null) return new List<long>();
 
         var giftPool = new HashSet<long>(dropPool.egoGifts);
@@ -88,6 +100,11 @@ public sealed class MdThemePool
         if (!pools.TryGetValue(themeId, out var theme)) return new List<long>();
         foreach (var id in theme.specificEgoGiftPool)
             giftPool.Add(id);
+
+        // The pack's own gifts are always on sale on its floor. For every built-in pack this adds
+        // nothing (its ThemeDropPool already sits inside the season pool plus its specific gifts);
+        // a custom pack's egoGiftPool is how its gifts reach the shop at all.
+        giftPool.UnionWith(ThemeDropPool(themeId));
 
         // Rust removes every fixed-recipe OUTPUT from the shop pool (those are craft-only).
         giftPool.ExceptWith(MdEgoFusion.EgoRecipeMapping.Values);

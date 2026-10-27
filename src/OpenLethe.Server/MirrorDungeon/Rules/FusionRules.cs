@@ -16,7 +16,9 @@ public static class FusionRules
     // Verbatim port of CombineEgoGiftMirrorDungeon (Handlers/MirrorDungeonRewards.cs :35-74).
     // `isOrigin` mirrors the request DTO 1:1 - unused here, same as the handler it replaces
     // (Rust never reads it either).
-    public static EgoGift Combine(Run run, System.Collections.Generic.List<long> materialEgoGiftIds, string keyword, long isOrigin)
+    // customThemes: the account's uploaded packs, so fusing on a custom pack's floor draws from it.
+    public static EgoGift Combine(Run run, System.Collections.Generic.List<long> materialEgoGiftIds, string keyword, long isOrigin,
+        IReadOnlyList<ThemeStatic>? customThemes = null)
     {
         // Remove the component egos - first match each, misses are ignored.
         foreach (var materialId in materialEgoGiftIds)
@@ -37,7 +39,7 @@ public static class FusionRules
         }
         else
         {
-            var themePool = new MdThemePool();
+            var themePool = new MdThemePool(customThemes);
             var candidates = themePool
                 .ShopEgoGiftsPool(SharedRules.ThemePackId(run))
                 .Where(g => OpenLethe.Server.MdEgoData.DetermineEgoTier(g) == fused.Tier && !owned.Contains(g))

@@ -29,7 +29,7 @@ public static class MirrorDungeonRewardsEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
-            FusionRules.Combine(run, p.materialEgoGiftIds, p.keyword, p.isOrigin);
+            FusionRules.Combine(run, p.materialEgoGiftIds, p.keyword, p.isOrigin, await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             var save = WireMapper.ToWire(run);
             // FusionRules.Combine always appends the fused result last.
             var resultWire = save.currentInfo.egs[^1];
@@ -61,7 +61,7 @@ public static class MirrorDungeonRewardsEndpoints
             var run = WireMapper.ToDomain(loaded);
             // The request's keyword now reaches the shop rules (a plain refresh sends ""/"None";
             // a keyword refresh sends the real keyword and pays the extra adder).
-            ShopRules.RefreshShop(run, p.keyword);
+            ShopRules.RefreshShop(run, p.keyword, await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             var save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = AccountFields.Set(save);
@@ -187,7 +187,7 @@ public static class MirrorDungeonRewardsEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
-            RewardResolution.AcquireBattleReward(run, p.selectIndexList);
+            RewardResolution.AcquireBattleReward(run, p.selectIndexList, await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             var save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = AccountFields.Set(save);

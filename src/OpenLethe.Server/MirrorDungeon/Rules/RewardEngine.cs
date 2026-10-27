@@ -76,7 +76,8 @@ public static class RewardEngine
         ChoiceEventData choiceEventData,
         bool isUpdatedEgoSkillStock,
         List<EgoSkillStock> egoSkillStockList,
-        List<JsonNode> abnormalityLogs)
+        List<JsonNode> abnormalityLogs,
+        IReadOnlyList<ThemeStatic>? customThemes = null)
     {
         run.Floor.Current = new CurrentPosition { F = node.f, S = node.s, Nid = node.nid };
 
@@ -334,7 +335,7 @@ public static class RewardEngine
                     Rt = "GetEgogift",
                     Se = 1,
                     Sh = 1,
-                    Pool = new MdThemePool().SelectRandomEgosFromPool(SharedRules.ThemePackId(run), 1, floor),
+                    Pool = new MdThemePool(customThemes).SelectRandomEgosFromPool(SharedRules.ThemePackId(run), 1, floor),
                     PoolV2 = new(),
                     PoolV3 = new(),
                 },

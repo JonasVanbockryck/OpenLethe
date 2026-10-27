@@ -162,11 +162,12 @@ public class MdRulesMapNodeTests
     }
 
     [Fact]
-    public void EscapeHiddenNode_RestoresTheOriginalEvent()
+    public void EscapeHiddenNode_RestoresTheEventAndClearsTheNodeWithoutRewards()
     {
         var run = Floor10Run();
         var at = new Currentnode { f = 10, s = 1, nid = 100102 };
         MapNodeRules.EnterNode(run, at, AlwaysHidden(9000007));
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetBattleRewardCase" }); // must not survive
 
         Assert.True(MapNodeRules.EscapeHiddenNode(run, at));
 
@@ -175,12 +176,17 @@ public class MdRulesMapNodeTests
         Assert.Equal(901091, run.Eid);
         Assert.Equal(100102, run.Floor.Current.Nid);
         Assert.Empty(run.HiddenNodeOrigins);
+        // Cleared like an exit, so the client moves on: in pnids, nr 1, nothing to collect.
+        Assert.Equal(new long[] { 100102 }, run.Pnids);
+        Assert.Equal(1, run.Nr);
+        Assert.Empty(run.RewardEvents);
+        Assert.Empty(run.Peids);
+        Assert.DoesNotContain(run.Gifts.Items, g => g.Id == 9256);
 
-        // Entering the restored event plays it - no second reveal.
-        var (changedHiddenNode, nr) = MapNodeRules.EnterNode(run, at, AlwaysHidden(9000007));
-        Assert.False(changedHiddenNode);
-        Assert.Equal(3, nr);
-        Assert.Equal(3, node.E);
+        // A second skip (client retry) does not record the node twice.
+        node.E = 15;
+        MapNodeRules.EscapeHiddenNode(run, at);
+        Assert.Equal(new long[] { 100102 }, run.Pnids);
     }
 
     [Fact]
@@ -245,6 +251,23 @@ public class MdRulesMapNodeTests
         var offered = run.Shop.Slots.Where(s => s.T == "eg").Select(s => s.Id).ToList();
         Assert.NotEmpty(offered);
         Assert.All(offered, id => Assert.Contains(id, pool.Take(3)));
+    }
+
+    [Fact]
+    public void EnterNode_ShopOnCustomPackFloor_StocksThePacksGifts()
+    {
+        // 9701 is pack 1101's exclusive; an uploaded pack listing it must get it on sale. Own every
+        // other shop gift so the custom pack's two are the only ones left to stock.
+        var custom = new OpenLethe.Server.ThemeStatic { id = 990001, egoGiftPool = new() { 9701, 9101 } };
+        var shopPool = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool(new[] { custom }).ShopEgoGiftsPool(990001);
+        var run = RunWithNode(nid: 100, e: 10, eid: 0);
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 990001 });
+        run.LevelAdders.AddRange(new long[] { 1, 1 }); // floor 3+: every gift tier has shop weight
+        run.Gifts.Items.AddRange(shopPool.Where(id => id is not (9701 or 9101)).Select(id => new EgoGift { Id = id }));
+
+        MapNodeRules.EnterNode(run, new Currentnode { f = 0, s = 0, nid = 100 }, customThemes: new[] { custom });
+
+        Assert.Equal(new long[] { 9101, 9701 }, run.Shop.Slots.Where(s => s.T == "eg").Select(s => s.Id).OrderBy(x => x));
     }
 
     [Fact]

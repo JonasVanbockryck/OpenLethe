@@ -15,8 +15,9 @@ public static class MapNodeRules
     // validating the entered node exists in run.Floor.Nodes before calling this - request
     // validation, not game logic.
     // hiddenBattle: the hiddenBattleInfo to roll against (the current season's table by default).
+    // customThemes: the account's uploaded packs, so a shop on a custom pack's floor stocks its gifts.
     public static (bool changedHiddenNode, long nr) EnterNode(Run run, Currentnode enteredNode,
-        MdHiddenBattleInfo? hiddenBattle = null)
+        MdHiddenBattleInfo? hiddenBattle = null, IReadOnlyList<ThemeStatic>? customThemes = null)
     {
         var node = run.Floor.Nodes.First(n => n.Nid == enteredNode.nid);
         // Only a step onto a new node can reveal one. The client enters the same node again to
@@ -64,7 +65,7 @@ public static class MapNodeRules
             for (var i = 0; i < namedUpgradeSlots && i < run.Party.Count; i++)
                 slots.Add(new ShopSlotState { T = "up", Id = run.Party[i].PersonalityId, S = 1 });
 
-            slots.AddRange(new MdThemePool().SelectRandomShopEgos(
+            slots.AddRange(new MdThemePool(customThemes).SelectRandomShopEgos(
                     SharedRules.ThemePackId(run), (int)SharedRules.ShopGiftCount(run), SharedRules.CurrentFloor(run), null,
                     SharedRules.OwnedGiftIds(run))
                 .Select(id => new ShopSlotState { T = "eg", Id = id, S = 1 }));
@@ -97,8 +98,10 @@ public static class MapNodeRules
         return true;
     }
 
-    // EscapeMirrorDungeonHiddenNode: the player skipped the hidden boss, so the node goes back to
-    // the event it was and the party stands on it. A node with no recorded origin (one a save
+    // EscapeMirrorDungeonHiddenNode: the player skipped the hidden boss. The node goes back to the
+    // event it was and counts as cleared - recorded in pnids with nr 1, exactly the bookkeeping an
+    // ExitMapNode does - so the client lets the party move on. Nothing is granted: no rewards, no
+    // peids entry (the event was not played). A node with no recorded origin (one a save
     // pre-placed before reveals happened on entry) gets an event from the dungeon's pool.
     // Returns false when the node is not a hidden node.
     public static bool EscapeHiddenNode(Run run, Currentnode at)
@@ -113,7 +116,11 @@ public static class MapNodeRules
 
         run.Floor.Current = new CurrentPosition { F = node.F, S = node.S, Nid = node.Nid };
         run.Eid = node.Eid;
-        run.Nr = 3;
+        if (!run.Pnids.Contains(node.Nid)) run.Pnids.Add(node.Nid);
+        run.Nr = 1;
+        run.RewardEvents = new();
+        run.ChoiceEvents.Clear();
+        run.Etype = -1;
         return true;
     }
 }

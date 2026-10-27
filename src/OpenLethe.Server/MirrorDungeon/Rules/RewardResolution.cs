@@ -112,7 +112,9 @@ public static class RewardResolution
     // GetConstraints) stays queued for the later reward endpoints. tfps is left untouched (it was
     // cleared on the floor clear and is re-rolled later by AcquireRewardEgoGiftsWithEnemyBuf -
     // verified 0 on all 12 records).
-    public static void AcquireBattleReward(Run run, List<long> selectIndexList)
+    // customThemes: the account's uploaded packs, so a card on a custom pack's floor draws from it.
+    public static void AcquireBattleReward(Run run, List<long> selectIndexList,
+        IReadOnlyList<OpenLethe.Server.ThemeStatic>? customThemes = null)
     {
         var cards = run.RewardEvents
             .Where(re => re.Rt == "GetBattleRewardCase")
@@ -135,7 +137,7 @@ public static class RewardResolution
                     // Gifts - NO reward event is queued here (capture-verified: no
                     // GetConfirmedEgogift is queued, unlike the confirmed-gift event path).
                     run.Cost += RollCost(rp);
-                    if (RewardRandomEgoGift(rp.egoGiftAcquirableProb ?? 0, rp.egoGiftTierRange) is { } startEgo)
+                    if (RewardRandomEgoGift(run, customThemes, rp.egoGiftAcquirableProb ?? 0, rp.egoGiftTierRange) is { } startEgo)
                         SharedRules.GrantEgoGift(run, startEgo);
                     break;
 
@@ -144,7 +146,7 @@ public static class RewardResolution
                     break;
 
                 case "EGOGIFT":
-                    if (RewardRandomEgoGift(rp.egoGiftAcquirableProb ?? 0, rp.egoGiftTierRange) is { } ego)
+                    if (RewardRandomEgoGift(run, customThemes, rp.egoGiftAcquirableProb ?? 0, rp.egoGiftTierRange) is { } ego)
                         SharedRules.GrantEgoGift(run, ego);
                     break;
 
@@ -232,18 +234,18 @@ public static class RewardResolution
     private static long RollCost(MdRewardParams rp) =>
         Random.Shared.NextInt64(rp.acquireCostMin ?? 0, (rp.acquireCostMax ?? 0) + 1);
 
-    /// Port of acquire_mirror_dungeon_battle_reward.rs reward_random_ego_gift, minus one upstream
-    /// quirk: Rust looks for the drop pool with dungeonId == 5, which no shipped file has (only 7
-    /// and 8), so EGOGIFT / COST_EGOGIFT_START_CATEGORY reward cards never granted a gift. Use the
-    /// newest pool instead, the same lookup MdThemePool.ShopEgoGiftsPool makes.
-    private static long? RewardRandomEgoGift(double acquirableProb, MdTierRange? tierRange)
+    /// Port of acquire_mirror_dungeon_battle_reward.rs reward_random_ego_gift. Rust looked for the
+    /// drop pool with dungeonId == 5, which no shipped file has, so these cards never granted a
+    /// gift; drawing from the whole season pool instead handed out other packs' exclusive gifts.
+    /// The gift comes from the current floor's pack (MdThemePool.ThemeDropPool - its egoGiftPool
+    /// and exclusives, custom packs included), within the card's tier range.
+    private static long? RewardRandomEgoGift(Run run, IReadOnlyList<OpenLethe.Server.ThemeStatic>? customThemes,
+        double acquirableProb, MdTierRange? tierRange)
     {
-        var pools = OpenLethe.Server.MdThemeData.DropPools();
-        var pool = pools.OrderByDescending(p => p.dungeonId).FirstOrDefault();
-        if (pool is null || tierRange is null) return null;
+        if (tierRange is null) return null;
         if (Random.Shared.NextDouble() > acquirableProb) return null;
 
-        var egos = pool.egoGifts
+        var egos = new MdThemePool(customThemes).ThemeDropPool(SharedRules.ThemePackId(run))
             .Where(id => tierRange.WithinRange(OpenLethe.Server.MdEgoData.DetermineEgoTier(id) ?? 0))
             .ToList();
         return egos.Count == 0 ? null : egos[Random.Shared.Next(egos.Count)];

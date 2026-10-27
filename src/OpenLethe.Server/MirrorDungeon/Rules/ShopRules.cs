@@ -169,10 +169,11 @@ public static class ShopRules
     // dropped are back: the request's `keyword` now reaches the gift picker (it always passed the
     // literal "None"), and the price comes from the tables - shopRefreshCostPerCount * rc, plus
     // shop.refreshShop.shopKeywordRefreshCostAdder for a keyword refresh.
-    public static void RefreshShop(Run run, string? keyword)
+    // customThemes: the account's uploaded packs (see MapNodeRules.EnterNode).
+    public static void RefreshShop(Run run, string? keyword, IReadOnlyList<ThemeStatic>? customThemes = null)
     {
         var giftSlots = run.Shop.Slots.Where(s => s.T == "eg" && s.S == 1).ToList();
-        var randomGifts = new MdThemePool().SelectRandomShopEgos(
+        var randomGifts = new MdThemePool(customThemes).SelectRandomShopEgos(
             SharedRules.ThemePackId(run), Math.Min(giftSlots.Count, 30), SharedRules.CurrentFloor(run), keyword,
             SharedRules.OwnedGiftIds(run));
 
