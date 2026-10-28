@@ -107,30 +107,41 @@ public static class MdMapGen
         return bools;
     }
 
-    // Port of DefaultMirrorDungeonMapGenerator::generate_battle_node.
-    public static DungeonNode GenerateBattleNode(ThemeStatic theme)
+    // Picks a random node's type from the floor's odds (mirrordungeon static data, floors[]):
+    // a regular battle unless the roll lands in one of the listed percentages. A type whose pack
+    // pool is empty is left out of the roll, its share going to the types that can still spawn.
+    public static DungeonNode GenerateBattleNode(ThemeStatic theme, MdFloorNodeOdds odds)
     {
         var opt = theme.mapGenOption;
-        while (true)
+        var candidates = new (List<long> pool, long nodeType, double weight)[]
         {
-            var p = Random.Shared.NextDouble();
-            List<long> pool;
-            long nodeType;
-            if (p < 0.45) { pool = opt.battlePool; nodeType = 1; }
-            else if (p < 0.70) { pool = opt.abBattlePool; nodeType = 5; }
-            else if (p < 0.80) { pool = opt.eventPool; nodeType = 3; }
-            else if (p < 0.90) { pool = opt.hardAbBattlePool; nodeType = 14; }
-            else { pool = opt.hardBattlePool; nodeType = 2; }
+            (opt.eventPool, 3, odds.eventNodePercentage),
+            (opt.abBattlePool, 5, odds.abnormalityBattlePercentage),
+            (opt.hardBattlePool, 2, odds.hardBattlePercentage),
+            (opt.hardAbBattlePool, 14, odds.hardAbBattlePercentage),
+            (opt.battlePool, 1, Math.Max(0, 1 - odds.eventNodePercentage - odds.abnormalityBattlePercentage
+                - odds.hardBattlePercentage - odds.hardAbBattlePercentage)),
+        }.Where(c => c.pool.Count > 0).ToList();
 
-            if (pool.Count == 0) continue;
-            var id = pool[Random.Shared.Next(pool.Count)];
-            return new DungeonNode { node_type = nodeType, encounter_id = id };
+        // Nothing weighted can spawn: any populated pool will do.
+        if (candidates.Count > 0 && candidates.All(c => c.weight <= 0))
+            candidates = candidates.Select(c => (c.pool, c.nodeType, 1.0)).ToList();
+        if (candidates.Count == 0) return new DungeonNode { node_type = 1, encounter_id = 0 };
+
+        var p = Random.Shared.NextDouble() * candidates.Sum(c => c.weight);
+        var pick = candidates[^1];
+        foreach (var c in candidates)
+        {
+            if (p < c.weight) { pick = c; break; }
+            p -= c.weight;
         }
+        return new DungeonNode { node_type = pick.nodeType, encounter_id = pick.pool[Random.Shared.Next(pick.pool.Count)] };
     }
 
     // Port of DefaultMirrorDungeonMapGenerator::generate_md4_graph.
-    public static DungeonGraph GenerateMd4Graph(ThemeStatic theme, long floor, int floorWidth)
+    public static DungeonGraph GenerateMd4Graph(ThemeStatic theme, long floor, int floorWidth, long dungeonId = MirrorDungeon.Rules.StartRunRules.CurrentDungeonId)
     {
+        var odds = MdFloorOdds.ForFloor(dungeonId, floor);
         var graph = new DungeonGraph();
 
         var layerPopulation = new[]
@@ -149,7 +160,7 @@ public static class MdMapGen
                 var beginning = x == 0 && y != 1;
                 if (layerPopulation[y][x] || middleNodeMissing || lastMiddleNodeMissing || beginning)
                 {
-                    graph.nodes[x, y] = GenerateBattleNode(theme);
+                    graph.nodes[x, y] = GenerateBattleNode(theme, odds);
                 }
             }
         }
@@ -265,13 +276,21 @@ public static class MdMapGen
             var floorWidth = seq.numberList.Count > 0
                 ? (int)seq.numberList[0]
                 : (int)(4 + floor / 3);
-            graph = GenerateMd4Graph(theme, floor, floorWidth).EncodeAsMd(floor);
+            graph = GenerateMd4Graph(theme, floor, floorWidth, save.dungeonId).EncodeAsMd(floor);
         }
         else if (seq?.type_ == "CREATE_FIXED_FLOOR")
         {
+            // A few fixed packs (1024 Charm, Wander, Doubt; 1118 Line 5) ship their boss node with
+            // encounterId 0 and name the candidates in a FILL_EMPTY_BOSS step instead - without it
+            // the floor ended in an e=6 node the client could not resolve, so it had no boss fight.
+            var bossFill = theme.mapGenSequence.FirstOrDefault(s => s.type_ == "FILL_EMPTY_BOSS")?.numberList;
+            var bossPool = bossFill is { Count: > 0 } ? bossFill : theme.mapGenOption.bossPool;
+
             graph = seq.nodeList.Select(node =>
             {
                 var eid = node.encounterId;
+                if (node.encounterType == 6 && eid == 0 && bossPool.Count > 0)
+                    eid = bossPool[Random.Shared.Next(bossPool.Count)];
                 if (node.encounterType == 3 && node.encounterId == 0)
                 {
                     var opt = theme.mapGenOption;

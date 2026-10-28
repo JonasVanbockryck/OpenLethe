@@ -29,6 +29,42 @@ public class MdMapGenTests
         }
     }
 
+    [Theory]
+    [InlineData(1024L)] // Charm, Wander, Doubt
+    [InlineData(1118L)] // Line 5
+    public void GenerateNewFloor_FixedFloorWithEmptyBoss_FillsItFromFillEmptyBoss(long themeId)
+    {
+        var fill = MdThemeData.GetThemeById(themeId)!.mapGenSequence.Single(s => s.type_ == "FILL_EMPTY_BOSS").numberList;
+        var save = new MirrorOriginSaveInfo();
+
+        MdMapGen.GenerateNewFloor(0, themeId, save);
+
+        var boss = Assert.Single(save.dungeonMap.ns, n => n.e == 6);
+        Assert.Contains(boss.eid, fill);
+    }
+
+    [Fact]
+    public void FloorOdds_ComeFromTheDungeonTable_AndFallBackToFloorFive()
+    {
+        var first = MdFloorOdds.ForFloor(8, 0);
+        Assert.Equal(0.25, first.eventNodePercentage);
+        Assert.Equal(0, first.abnormalityBattlePercentage);
+
+        // Unknown dungeon id -> newest table; floor past the table -> its count 4 row.
+        var deep = MdFloorOdds.ForFloor(-1, 999);
+        Assert.Equal(4, deep.count);
+        Assert.Equal(0.2, deep.eventNodePercentage);
+    }
+
+    [Fact]
+    public void GenerateBattleNode_ZeroOdds_OnlyRollsRegularBattles()
+    {
+        var theme = MdThemeData.GetThemeById(EmptyMd4ThemeId)!;
+        var odds = new MdFloorNodeOdds();
+        for (var i = 0; i < 50; i++)
+            Assert.Equal(1, MdMapGen.GenerateBattleNode(theme, odds).node_type);
+    }
+
     [Fact]
     public void GenerateNewFloor_EmptyMd4Theme_ProducesStructurallyValidGraph()
     {

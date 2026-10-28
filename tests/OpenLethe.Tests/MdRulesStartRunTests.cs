@@ -135,6 +135,21 @@ public class MdRulesStartRunTests
     }
 
     [Fact]
+    public void EnableStartBuff_ConvertedCost_OverspendTakesStarlightButNeverCost()
+    {
+        // Spending past startBufPoint leaves a negative remainder: it comes out of starlight,
+        // but the conversion only ever adds to the cost budget.
+        var run = new Run { Cost = 200, StartBuffPoint = 0 };
+
+        var cost = StartRunRules.EnableStartBuff(run, new List<long> { 106, 102 }, enableConvertedCost: true);
+
+        Assert.Equal(200, cost);
+        Assert.Equal(200, run.Cost);
+        Assert.True(run.Starlight.Scc < 0);
+        Assert.Equal(0, run.StartBuffPoint);
+    }
+
+    [Fact]
     public void EnableStartBuff_NotConverted_LeavesCostAndStartBufPointUntouched()
     {
         // Capture-verified run-2 shape: enableConvertedCost=false is a no-op beyond returning cost.

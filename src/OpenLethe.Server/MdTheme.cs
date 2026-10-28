@@ -134,6 +134,50 @@ public static class MdUpgradePersonalityCost
     }
 }
 
+// A floor's random-node odds (mirrordungeon-*.json list[0].floors[], keyed on `count` == the
+// 0-based floor). Each is the chance a random node is that type; the rest are regular battles.
+public sealed class MdFloorNodeOdds
+{
+    public long count;
+    public double eventNodePercentage;
+    public double abnormalityBattlePercentage;
+    public double hardBattlePercentage;
+    public double hardAbBattlePercentage;
+}
+
+public sealed class MdDungeonFloorOddsInfo
+{
+    public long id;
+    public long typeIndex;
+    public List<MdFloorNodeOdds> floors = new();
+}
+
+public static class MdFloorOdds
+{
+    // Every mode file of one dungeon id (normal/hard/infinite/extreme) shares the same odds; the
+    // highest typeIndex (extreme) is the one listing every floor, normal stops at count 4.
+    private static readonly Lazy<List<MdDungeonFloorOddsInfo>> Dungeons =
+        new(() => StaticData.GetList<MdDungeonFloorOddsInfo>("static-data/mirrordungeon"));
+
+    // Floor 5 (count 4) odds of the shipped tables - every floor past it uses the same ones.
+    private static readonly MdFloorNodeOdds Fallback = new()
+    {
+        count = 4, eventNodePercentage = 0.2, abnormalityBattlePercentage = 0.18,
+        hardBattlePercentage = 0.12, hardAbBattlePercentage = 0.1,
+    };
+
+    public static MdFloorNodeOdds ForFloor(long dungeonId, long floor)
+    {
+        var all = Dungeons.Value;
+        var dungeon = all.Where(d => d.id == dungeonId).MaxBy(d => d.typeIndex)
+            ?? all.OrderBy(d => d.id).ThenBy(d => d.typeIndex).LastOrDefault();
+        var floors = dungeon?.floors ?? new List<MdFloorNodeOdds>();
+        return floors.FirstOrDefault(f => f.count == floor)
+            ?? floors.FirstOrDefault(f => f.count == Fallback.count)
+            ?? Fallback;
+    }
+}
+
 public static class MdEnemyBuffPool
 {
     private static readonly Lazy<List<MdDungeonFloorInfo>> Floors = new(() =>

@@ -204,10 +204,11 @@ public static class StartRunRules
             // Capture-verified (the run's only branch): the SelectFormation bonus points
             // (startBufPoint minus the buffs' raw point cost) convert - the raw remainder into
             // starlight (scc) and its *multiplier into the cost budget - and startBufPoint
-            // zeroes out.
+            // zeroes out. An overspend (negative remainder) still comes out of starlight, but
+            // never out of the cost budget: the conversion only ever adds cost.
             var remaining = run.StartBuffPoint - MdStartBuffs.RawSpend(buffids);
             run.Starlight.Scc += remaining;
-            cost += remaining * MdStartBuffs.PointToCostMultiplier;
+            cost += Math.Max(0, remaining) * MdStartBuffs.PointToCostMultiplier;
             run.Cost = cost;
             run.StartBuffPoint = 0;
         }
