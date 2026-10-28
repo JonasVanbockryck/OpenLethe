@@ -38,6 +38,21 @@ builder.Services.AddRequestTimeouts(o => o.DefaultPolicy = new RequestTimeoutPol
 });
 
 var connString = builder.Configuration.GetConnectionString("Postgres");
+
+// Npgsql's default pool ceiling is 100 connections. Every one is a Postgres backend
+// holding its own memory, and on the 512MB DB VM a login burst that opens dozens of
+// them is what got Postgres OOM-killed. Past the cap, requests queue for a connection
+// instead. An explicit "Maximum Pool Size" in the connection string still wins.
+if (!string.IsNullOrWhiteSpace(connString))
+{
+    var csb = new Npgsql.NpgsqlConnectionStringBuilder(connString);
+    if (!connString.Contains("Pool Size", StringComparison.OrdinalIgnoreCase)
+        && !connString.Contains("MaxPoolSize", StringComparison.OrdinalIgnoreCase))
+    {
+        csb.MaxPoolSize = builder.Configuration.GetValue("Postgres:MaxPoolSize", 20);
+    }
+    connString = csb.ConnectionString;
+}
 builder.Services.AddDbContextPool<AppDbContext>(o => o.UseNpgsql(connString));
 builder.Services.AddScoped<AccountStore>();
 
@@ -118,10 +133,30 @@ var app = builder.Build();
 
 // Migrate on startup only when a database is actually configured, so tests that
 // exercise DB-free routes can boot without Postgres. (Rust migrates unconditionally.)
+//
+// Retried while the database is unreachable: a deploy or restart that lands while
+// Postgres is down used to abort the process here, and Fly gives up after ten quick
+// crashes. A SQL error from the migration itself (PostgresException) is not
+// transient and still fails immediately.
 if (!string.IsNullOrWhiteSpace(connString))
 {
-    using var scope = app.Services.CreateScope();
-    scope.ServiceProvider.GetRequiredService<AppDbContext>().Database.Migrate();
+    for (var attempt = 1; ; attempt++)
+    {
+        try
+        {
+            using var scope = app.Services.CreateScope();
+            scope.ServiceProvider.GetRequiredService<AppDbContext>().Database.Migrate();
+            break;
+        }
+        catch (Exception e) when (attempt < 12 && e is not Npgsql.PostgresException
+            && (e is Npgsql.NpgsqlException || e.InnerException is Npgsql.NpgsqlException
+                || e is System.Net.Sockets.SocketException || e is TimeoutException))
+        {
+            var delay = TimeSpan.FromSeconds(Math.Min(Math.Pow(2, attempt), 15));
+            app.Logger.LogWarning(e, "Database unreachable on startup (attempt {Attempt}); retrying in {Delay}", attempt, delay);
+            Thread.Sleep(delay);
+        }
+    }
 }
 
 app.UseForwardedHeaders();   // before the rate limiter: it needs the real client IP
