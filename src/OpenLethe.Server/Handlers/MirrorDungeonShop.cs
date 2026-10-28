@@ -311,9 +311,9 @@ public static class MirrorDungeonShopEndpoints
 
         app.MapPost("/api/SelectFormationMirrorDungeon", async (HttpContext ctx) =>
         {
-            // Unscoped on purpose: DerivePersonalities below reads CustomIdentities and
-            // Personalities as well as MdSaveInfo. Once per run, not per packet.
-            var account = await HandlerContext.ResolveAsync(ctx);
+            // DerivePersonalities below reads CustomIdentities and Personalities as well as MdSaveInfo.
+            var account = await HandlerContext.ResolveAsync(ctx,
+                SaveColumn.Md, SaveColumn.Personalities, SaveColumn.CustomIdentities);
             if (account is null) return Results.Unauthorized();
             var loaded = OpenLethe.Server.AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
             // No save yet (the column is empty right after Enter): start a normal run instead of a

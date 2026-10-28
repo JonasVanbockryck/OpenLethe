@@ -10,7 +10,7 @@ public static class BossRaidEndpoints
         var getSaveInfoId = global::PacketRouting.ResolvePacketId<global::ResPacket_GetBossRaidSaveInfo>();
         app.MapPost("/api/GetBossRaidSaveInfo", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.BossRaid);
             if (account is null) return Results.Unauthorized();
 
             var save = OpenLethe.Server.AccountFields.Get<global::BossRaidSaveDataFormat>(account.BossRaidSaveInfo);
@@ -27,7 +27,7 @@ public static class BossRaidEndpoints
         var getStatesId = global::PacketRouting.ResolvePacketId<global::ResPacket_GetBossRaidStates>();
         app.MapPost("/api/GetBossRaidStates", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.BossRaid);
             if (account is null) return Results.Unauthorized();
 
             var save = OpenLethe.Server.AccountFields.Get<global::BossRaidSaveDataFormat>(account.BossRaidSaveInfo);
@@ -42,7 +42,7 @@ public static class BossRaidEndpoints
         var enterId = global::PacketRouting.ResolvePacketId<global::ResPacket_EnterBossRaid>();
         app.MapPost("/api/EnterBossRaid", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.BossRaid);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_EnterBossRaid>(ctx);
             if (p is null) return Results.BadRequest();
@@ -70,7 +70,7 @@ public static class BossRaidEndpoints
         var endId = global::PacketRouting.ResolvePacketId<global::ResPacket_EndBossRaid>();
         app.MapPost("/api/EndBossRaid", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.BossRaid);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_EndBossRaid>(ctx);
             if (p is null) return Results.BadRequest();
@@ -94,7 +94,7 @@ public static class BossRaidEndpoints
         var startId = global::PacketRouting.ResolvePacketId<global::ResPacket_StartBossRaidBattle>();
         app.MapPost("/api/StartBossRaidBattle", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.BossRaid);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_StartBossRaidBattle>(ctx);
             if (p is null) return Results.BadRequest();
@@ -114,7 +114,7 @@ public static class BossRaidEndpoints
         var exitId = global::PacketRouting.ResolvePacketId<global::ResPacket_ExitBossRaidBattle>();
         app.MapPost("/api/ExitBossRaidBattle", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.BossRaid);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_ExitBossRaidBattle>(ctx);
             if (p is null) return Results.BadRequest();

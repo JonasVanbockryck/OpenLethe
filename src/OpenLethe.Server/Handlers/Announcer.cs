@@ -12,7 +12,7 @@ public static class AnnouncerEndpoints
         var packetId = global::PacketRouting.ResolvePacketId<global::ResPacket_UpdateAnnouncerPreset>();
         app.MapPost("/api/UpdateAnnouncerPreset", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Announcers);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_UpdateAnnouncerPreset>(ctx);
             if (p is null) return Results.BadRequest();

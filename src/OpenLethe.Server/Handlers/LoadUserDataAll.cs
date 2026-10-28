@@ -16,11 +16,11 @@ public static class LoadUserDataAllEndpoint
 
         app.MapPost("/api/LoadUserDataAll", async (HttpContext ctx) =>
         {
-            var sub = ctx.Items["sub"] as string;
-            if (sub is null) return Results.Unauthorized();
-
-            var store = ctx.RequestServices.GetRequiredService<AccountStore>();
-            var account = await store.FindByUsernameAsync(sub);
+            // Everything below except the run saves and uploaded MD themes, which are the
+            // big documents and are read by their own routes.
+            var account = await HandlerContext.ResolveAsync(ctx,
+                SaveColumn.Egos, SaveColumn.Chapter, SaveColumn.UserInfo, SaveColumn.Announcers,
+                SaveColumn.Formations, SaveColumn.Personalities, SaveColumn.CustomIdentities);
             if (account is null) return Results.Unauthorized();
 
             var dirty = false;
@@ -58,7 +58,7 @@ public static class LoadUserDataAllEndpoint
             }
 
             if (dirty)
-                await ctx.RequestServices.GetRequiredService<AppDbContext>().SaveChangesAsync();
+                await HandlerContext.SaveAsync(ctx);
 
             var announcers = AccountFields.Get<List<long>>(account.Announcers) ?? new List<long>();
             var formations = AccountFields.Get<List<System.Text.Json.Nodes.JsonNode>>(account.Formations)

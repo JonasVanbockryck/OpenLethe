@@ -7,7 +7,7 @@ public static class FormationEndpoints
         var packetId = global::PacketRouting.ResolvePacketId<global::ResPacket_UpdateFormation>();
         app.MapPost("/api/UpdateFormation", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Formations);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_UpdateFormation>(ctx);
             if (p?.formation is null) return Results.BadRequest();
