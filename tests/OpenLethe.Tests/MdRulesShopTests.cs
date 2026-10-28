@@ -28,17 +28,74 @@ public class MdRulesShopTests
     }
 
     [Fact]
-    public void Heal_Idx0_SingleUnitBandaid_NoCapAndNoUsedCostTracking()
+    public void Heal_Idx0_SingleUnit_RetailAmounts_NoUsedCostTracking()
     {
         var run = new Run { Cost = 500, UsedCost = 0 };
         run.Party.Add(new PartyUnit { PersonalityId = 5, CurrentHp = 100, Cm = 10 });
 
-        ShopRules.Heal(run, 0, 5);
+        ShopRules.Heal(run, 0, 5); // shop.heal[0]: +50% hp, +45 cm (capped at 45)
 
-        Assert.Equal(200, run.Party[0].CurrentHp);
-        Assert.Equal(40, run.Party[0].Cm);
+        Assert.Equal(5100, run.Party[0].CurrentHp);
+        Assert.Equal(45, run.Party[0].Cm);
         Assert.Equal(400, run.Cost);
         Assert.Equal(0, run.UsedCost); // idx==0 doesn't persist a running usedcost (matches the handler)
+    }
+
+    [Theory]
+    [InlineData(995014, 800)] // Adversity: shop prices x2 -> heal costs 200
+    [InlineData(995024, 700)] // Adversity: shop prices x3 -> heal costs 300
+    public void Heal_RaisedMarketPriceAdversity_MultipliesPrice(long adversity, long expectedCost)
+    {
+        var run = new Run { Cost = 1000 };
+        run.Gifts.Items.Add(new EgoGift { Id = adversity });
+        run.Party.Add(new PartyUnit { PersonalityId = 1, CurrentHp = 100 });
+
+        ShopRules.Heal(run, 1, 0);
+
+        Assert.Equal(expectedCost, run.Cost);
+        Assert.Equal(1000 - expectedCost, run.UsedCost);
+    }
+
+    [Fact]
+    public void RaisedMarketPrice_BothAdversitiesOwned_AppliesTheStrongerOnly()
+    {
+        var run = new Run();
+        run.Gifts.Items.Add(new EgoGift { Id = 995014 });
+        run.Gifts.Items.Add(new EgoGift { Id = 995024 });
+
+        Assert.Equal(300, Effects.ApplyRaisedMarketPrice(run, 100));
+    }
+
+    [Fact]
+    public void Heal_Idx2_RevivesOnlyDownedUnitToFullHp()
+    {
+        var run = new Run { Cost = 500 };
+        run.Party.Add(new PartyUnit { PersonalityId = 5, CurrentHp = 0, Cm = 10 });
+        run.Party.Add(new PartyUnit { PersonalityId = 6, CurrentHp = 0, Cm = 10 });
+
+        ShopRules.Heal(run, 2, 5); // shop.heal[2]: revive one unit
+
+        Assert.Equal(10000, run.Party[0].CurrentHp);
+        Assert.Equal(0, run.Party[1].CurrentHp);
+        Assert.Equal(400, run.Cost);
+    }
+
+    [Fact]
+    public void PurchaseUpgradePersonality_UseStarlight_PaysFromSccNotFunds()
+    {
+        var run = new Run { Cost = 1000, UsedCost = 0 };
+        run.Starlight.Scc = 100;
+        run.Shop.Slots.Add(new ShopSlotState { T = "upt", Id = 0, S = 1 });
+        run.Party.Add(new PartyUnit { PersonalityId = 77 });
+        var opt = OpenLethe.Server.MdUpgradePersonalityCost.ForIndex(0)!;
+
+        Assert.True(ShopRules.PurchaseUpgradePersonality(run, 77, 0, isDetected: true, useStarlight: true));
+
+        Assert.Equal(100 - opt.detectingStarLight, run.Starlight.Scc);
+        Assert.Equal(1000, run.Cost);
+        Assert.Equal(0, run.UsedCost);
+        Assert.Equal(0, run.Shop.Slots[0].S);
+        Assert.Contains(0L, run.Party[0].UpgradeIndices);
     }
 
     [Fact]
@@ -74,13 +131,14 @@ public class MdRulesShopTests
     {
         var run = new Run { Cost = 1000, UsedCost = 0 };
         run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9001, S = 1 });
-        run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9001, S = 1 });
+        run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9002, S = 1 }); // a second, different gift: owned ones are never sold
+        var spent = 198 + OpenLethe.Server.MdEgoData.GetById(9002)!.price;
 
         ShopRules.PurchaseEgoGift(run, 0);
         ShopRules.PurchaseEgoGift(run, 1);
 
-        Assert.Equal(396, run.UsedCost); // 198 + 198
-        Assert.Equal(604, run.Cost);     // 1000 - 396
+        Assert.Equal(spent, run.UsedCost);
+        Assert.Equal(1000 - spent, run.Cost);
         Assert.Equal(2, run.Gifts.Items.Count);
     }
 
@@ -98,6 +156,35 @@ public class MdRulesShopTests
     }
 
     [Fact]
+    public void PurchaseEgoGift_AlreadyOwned_IsRefusedWithoutCharging()
+    {
+        var run = new Run { Cost = 1000 };
+        run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 9001, S = 1 });
+        run.Gifts.Items.Add(new EgoGift { Id = 9001 }); // e.g. fused after the shop rolled
+
+        var granted = ShopRules.PurchaseEgoGift(run, 0);
+
+        Assert.Empty(granted);
+        Assert.Equal(1000, run.Cost);
+        Assert.Single(run.Gifts.Items);
+        Assert.Equal(1, run.Shop.Slots[0].S);
+    }
+
+    [Fact]
+    public void RefreshShop_NeverRollsOwnedGifts()
+    {
+        // Own the whole shop pool except three gifts: a refresh can only draw those three.
+        var pool = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().ShopEgoGiftsPool(1001);
+        var run = new Run { Cost = 1000 };
+        run.Gifts.Items.AddRange(pool.Skip(3).Select(id => new EgoGift { Id = id }));
+        for (var i = 0; i < 3; i++) run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 0, S = 1 });
+
+        ShopRules.RefreshShop(run, "None");
+
+        Assert.All(run.Shop.Slots, s => Assert.Contains(s.Id, pool.Take(3)));
+    }
+
+    [Fact]
     public void PurchaseUpgradePersonality_ConsumesMatchingUpSlot_At1xPrice()
     {
         var run = new Run { Cost = 1000, UsedCost = 0 };
@@ -105,7 +192,7 @@ public class MdRulesShopTests
         run.Shop.Slots.Add(new ShopSlotState { T = "upt", Id = 0, S = 1 });
         run.Party.Add(new PartyUnit { PersonalityId = 77 });
 
-        ShopRules.PurchaseUpgradePersonality(run, 77, 0); // index 0 -> price 45 (static data)
+        ShopRules.PurchaseUpgradePersonality(run, 77, 0, isDetected: false, useStarlight: false); // index 0 -> price 45 (static data)
 
         Assert.Equal(0, run.Shop.Slots[0].S); // "up" slot consumed
         Assert.Equal(1, run.Shop.Slots[1].S); // "upt" left untouched
@@ -122,7 +209,7 @@ public class MdRulesShopTests
         run.Shop.Slots.Add(new ShopSlotState { T = "upt", Id = 0, S = 1 });
         run.Party.Add(new PartyUnit { PersonalityId = 77 });
 
-        ShopRules.PurchaseUpgradePersonality(run, 77, 1); // index 1 -> price 75
+        ShopRules.PurchaseUpgradePersonality(run, 77, 1, isDetected: false, useStarlight: false); // index 1 -> price 75
 
         Assert.Equal(0, run.Shop.Slots[0].S);
         Assert.Equal(0, run.Shop.Slots[1].S); // "upt" consumed
@@ -132,12 +219,12 @@ public class MdRulesShopTests
     }
 
     [Fact]
-    public void PurchaseUpgradePersonality_UnknownIdx_IsNoOp()
+    public void PurchaseUpgradePersonality_NegativeIdx_IsNoOp()
     {
         var run = new Run { Cost = 1000 };
         run.Shop.Slots.Add(new ShopSlotState { T = "upt", Id = 0, S = 1 });
 
-        ShopRules.PurchaseUpgradePersonality(run, 1, 999999);
+        ShopRules.PurchaseUpgradePersonality(run, 1, -1, isDetected: false, useStarlight: false);
 
         Assert.Equal(1000, run.Cost);
         Assert.Equal(1, run.Shop.Slots[0].S);
@@ -176,7 +263,7 @@ public class MdRulesShopTests
         run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 2, S = 0 }); // sold out, must stay untouched
         run.Shop.Slots.Add(new ShopSlotState { T = "up", Id = 3, S = 1 });
 
-        ShopRules.RefreshShop(run);
+        ShopRules.RefreshShop(run, "None");
 
         Assert.Equal(1, run.Shop.Rc);
         Assert.Equal(985, run.Cost);     // 1000 - 15*1
@@ -198,8 +285,8 @@ public class MdRulesShopTests
         var run = new Run { Cost = 1000 };
         run.Shop.Slots.Add(new ShopSlotState { T = "eg", Id = 1, S = 1 });
 
-        ShopRules.RefreshShop(run);
-        ShopRules.RefreshShop(run);
+        ShopRules.RefreshShop(run, "None");
+        ShopRules.RefreshShop(run, "None");
 
         Assert.Equal(2, run.Shop.Rc);
         Assert.Equal(1000 - 15 - 30, run.Cost); // 1st refresh 15*1, 2nd 15*2

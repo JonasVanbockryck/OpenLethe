@@ -268,10 +268,14 @@ public class MirrorDungeonRewardsHandlerTests(PostgresFixture db)
         Assert.Equal(HttpStatusCode.OK, resp.StatusCode);
         var stored = AccountFields.Get<MirrorOriginSaveInfo>((await GetAccount(f, name)).MdSaveInfo)!;
         Assert.InRange(stored.currentInfo.cost, 40, 60);
-        // RewardRandomEgoGift always returns null on shipped data (its drop-pool lookup
-        // wants dungeonId == 5, which never exists - a preserved upstream quirk, not a bug).
-        // So this card grants no ego gift and rre stays empty (replaced by newRewards).
-        Assert.Empty(stored.currentInfo.egs);
+        // Card 201 grants a tier-1 gift from the floor's pack (1001 with no floor picked) a third
+        // of the time (egoGiftAcquirableProb 0.33), straight into egs; rre stays empty either way.
+        if (stored.currentInfo.egs.Count > 0)
+        {
+            var gift = Assert.Single(stored.currentInfo.egs).id;
+            Assert.Equal(1, MdEgoData.DetermineEgoTier(gift));
+            Assert.Contains(gift, new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().ThemeDropPool(1001));
+        }
         Assert.Empty(stored.currentInfo.rre);
     }
 

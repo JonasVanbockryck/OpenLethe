@@ -13,10 +13,13 @@ namespace OpenLethe.Server.MirrorDungeon.Rules;
 // touch. See the Task 5 brief - "the SAFE default is WRAP, leave MdMapGen where it is."
 public static class MapGenerator
 {
-    // The MD7 start buffs that grant personality level-cap offsets (verbatim port of
-    // MirrorDungeonMap.cs LevelOffsets :30 / StartRunRules.cs :20 - same fixed set, see there
-    // for why it's fixed rather than read from the per-run enabled buffs).
-    private static readonly MdLevelOffsets LevelOffsets = MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
+    // The level-cap offsets now come from the buffs THIS run enabled (Run.StartBuffIds, persisted
+    // by EnableStartBuff). The old fixed {106,102} set was a replay-only crutch: both captured
+    // runs enable exactly those two, so the golden stayed green while any other pick did nothing.
+    // Fallback for a run that never stored its picks.
+    private static MdLevelOffsets LevelOffsetsOf(Run run) => run.StartBuffIds.Count > 0
+        ? MdStartBuffs.LevelOffsets(run.StartBuffIds)
+        : MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
 
     // Port of the RecreateThemeFloorPoolMirrorDungeon handler body (:208-219). Re-rolls
     // run.ThemePools for the NEXT floor (Floor.Current.F + 1) and bumps the per-floor re-roll
@@ -25,28 +28,52 @@ public static class MapGenerator
     // capture-verified (see MdMapGen.PickThemes/RecreateThemes doc comments).
     public static void RecreateThemePool(Run run)
     {
-        var tfps = run.ThemeFloors.Count == 0
+        run.ThemePools = run.ThemeFloors.Count == 0
             ? OpenLethe.Server.MdMapGen.PickThemes(SharedRules.CurrentFloor(run))
-            : OpenLethe.Server.MdMapGen.RecreateThemes(run.Floor.Current.F + 1);
-        run.ThemePools = tfps
-            .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
-            .ToList();
+                .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
+                .ToList()
+            : NextFloorPools(run);
         run.TfpsCreated += 1;
         run.StartPools = new();
+    }
+
+    // A normal-difficulty run: its latest pack came from an offer's normal group (wire idx 0), and
+    // SelectThemeFloor stores that pick's idx in run.Idx. Once a hard pack (idx 1) is picked, the
+    // offers carry no normal group any more, and idx only climbs (Infinite 2, Extreme 3) - so idx
+    // 0 past floor 0 is normal.
+    public static bool IsNormalMode(Run run) => run.ThemeFloors.Count > 0 && run.Idx == 0;
+
+    // The pool for the floor after the current one - every re-roll path (refresh, the boss reward
+    // pick or skip, a normal run's floor clear) goes through here, so all of them keep the run's
+    // difficulty and skip the packs it already played. A normal run gets the same 8-pack shape as
+    // the run start (4 normal idx 0 + 4 hard idx 1), so the screen's Normal/Hard switch works on
+    // every floor; picking a hard pack sets run.Idx to 1 and the run is hard from then on (4 packs).
+    public static List<ThemePool> NextFloorPools(Run run)
+    {
+        var selectionFloor = run.Floor.Current.F + 1;
+        var visited = run.ThemeFloors.Select(t => t.Tfid).ToHashSet();
+        var tfps = IsNormalMode(run)
+            ? OpenLethe.Server.MdMapGen.PickThemes(selectionFloor, visited)
+            : OpenLethe.Server.MdMapGen.RecreateThemes(selectionFloor, visited);
+        return tfps
+            .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
+            .ToList();
     }
 
     // Port of the SelectThemeFloorMirrorDungeon handler body (:236-291). `selectedIdx` is the
     // request's act/mode selector (used for the extreme-act new-theme gating below AND to set
     // the run's mode-enter counter, save.idx/run.Idx - the brief's one-arg signature omitted it,
     // but both are genuine game-state mutations that belong in Rules, not the handler).
-    public static void GenerateFloor(Run run, long selectedThemeFloorId, long selectedIdx)
+    // customThemes: the account's uploaded packs (see MdMapGen.GenerateNewFloor).
+    public static void GenerateFloor(Run run, long selectedThemeFloorId, long selectedIdx,
+        IReadOnlyList<OpenLethe.Server.ThemeStatic>? customThemes = null)
     {
         // The floor being selected == the count of floors already recorded (ThemeFloors), NOT
         // SharedRules.CurrentFloor (LevelAdders) - see MirrorDungeonMap.cs:236-239.
         var floor = run.ThemeFloors.Count;
 
         var save = WireMapper.ToWire(run);
-        OpenLethe.Server.MdMapGen.GenerateNewFloor(floor, selectedThemeFloorId, save);
+        OpenLethe.Server.MdMapGen.GenerateNewFloor(floor, selectedThemeFloorId, save, customThemes);
         // GenerateNewFloor (+ its UpdateResult) only ever touches: dungeonMap.ns, currentInfo.cn,
         // currentInfo.eid, currentInfo.tfps, currentInfo.tfs, isEndDungeon, sepsCreated - write
         // exactly those back into `run`, never a blind whole-run re-import.
@@ -64,6 +91,8 @@ public static class MapGenerator
             .ToList();
         run.IsEndDungeon = save.isEndDungeon;
         run.SepsCreated = save.currentInfo.sepsCreated;
+        RollSuperShop(run, floor, hard: selectedIdx != 0);
+        run.HiddenNodeOrigins = new();
 
         // New-floor start: full-heal the party. Every unit's CurrentHp -> 10000; a unit revived
         // from 0 HP also has its Cm (corrosion) cleared - live units keep their Cm unchanged.
@@ -84,7 +113,7 @@ public static class MapGenerator
         {
             efs.Snft += 1;
             efs.Csnft = 1;
-            efs.Sbmlos += LevelOffsets.PerNewTheme;
+            efs.Sbmlos += LevelOffsetsOf(run).PerNewTheme;
             var cap = efs.Sbmlos + efs.Egmlos;
             foreach (var u in run.Party) u.Mlos = cap;
         }
@@ -98,5 +127,21 @@ public static class MapGenerator
             .Where(n => n.F == floor && n.E == 3).Select(n => n.Eid).ToList();
 
         run.Idx = selectedIdx;
+    }
+
+    // Super shop odds, in percent: 3% plus 1% per 20 Cost spent at shops (run.UsedCost, wire
+    // currentInfo.usedcost - the same number the client turns into the "next floor" chance).
+    public static long SuperShopPercent(long usedCost) => Math.Min(100, 3 + Math.Max(0, usedCost) / 20);
+
+    // Turns the new floor's shop(s) into a super shop (eid 1) or a regular one (eid 0). Only hard
+    // floors can roll one. The spend carries over from floor to floor and resets only when a
+    // super shop generates - both captured runs (md-extreme-run*.jsonl) show usedcost dropping to
+    // 0 on exactly the SelectThemeFloor responses whose new shop is eid 1, and kept otherwise.
+    public static void RollSuperShop(Run run, long floor, bool hard)
+    {
+        var superShop = hard && Random.Shared.Next(100) < SuperShopPercent(run.UsedCost);
+        foreach (var node in run.Floor.Nodes.Where(n => n.F == floor && n.E == 10))
+            node.Eid = superShop ? 1 : 0;
+        if (superShop) run.UsedCost = 0;
     }
 }

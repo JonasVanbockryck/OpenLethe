@@ -64,6 +64,31 @@ public class MdShopDataTests
         Assert.Equal(expected, MdCost.GetDefaultCost(nodeE, floor));
     }
 
+    // The retail payouts (normal / hard), read from mirror-dungeon-common-data's
+    // originbattlevictorycostvalueList(HardLevel) x battleCostWeightsByFloor.
+    [Theory]
+    [InlineData(1, 0, 75, 85)]      // battle
+    [InlineData(1, 7, 75, 85)]
+    [InlineData(5, 0, 100, 120)]    // abno battle
+    [InlineData(5, 7, 100, 120)]
+    [InlineData(2, 0, 120, 150)]    // hard battle
+    [InlineData(14, 0, 150, 180)]   // hard abno battle
+    [InlineData(6, 0, 200, 250)]    // boss, floor 1
+    [InlineData(6, 1, 240, 300)]    // floor 2
+    [InlineData(6, 2, 300, 375)]    // floor 3
+    [InlineData(6, 3, 400, 500)]    // floor 4
+    [InlineData(6, 4, 400, 500)]    // floor 5
+    [InlineData(6, 9, 400, 500)]    // floor 10: keeps the floor-5 row
+    [InlineData(6, 14, 400, 500)]   // floor 15
+    [InlineData(15, 10, 800, 1000)] // hidden battle
+    [InlineData(10, 0, 0, 0)]       // shop: not a battle
+    [InlineData(3, 0, 0, 0)]        // event: not a battle
+    public void BattleVictoryCost_MatchesRetailTable(long nodeE, long floor, long normal, long hard)
+    {
+        Assert.Equal(normal, MdCost.BattleVictoryCost(nodeE, floor, hard: false));
+        Assert.Equal(hard, MdCost.BattleVictoryCost(nodeE, floor, hard: true));
+    }
+
     [Fact]
     public void AcquireRewardEgoGiftsResult_SerializesLowercaseSaveinfo()
     {

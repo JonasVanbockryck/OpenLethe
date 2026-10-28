@@ -137,6 +137,31 @@ public class MdRulesRewardResolutionTests
     }
 
     [Fact]
+    public void RejectWithEnemyBuf_ConsumesPopupAddsLevelAddersAndRollsNextFloorPool()
+    {
+        var run = new Run { Idx = 1 };
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1202 });
+        run.Floor.Current.F = 0;
+        var popup = new RewardEvent { Rt = "GetEgogiftWithEnemyBuf", Pool = new() { 9001 }, PoolV2 = new() };
+        var trailing = new RewardEvent { Rt = "GetConstraints", Pool = new() { 1 } };
+        run.RewardEvents.Add(popup);
+        run.RewardEvents.Add(trailing);
+
+        var levelAdders = RewardResolution.RejectWithEnemyBuf(run);
+
+        Assert.Equal(new[] { trailing }, run.RewardEvents);
+        Assert.Equal(2, levelAdders.Count);
+        Assert.Empty(run.Gifts.Items);
+        Assert.Equal(4, run.ThemePools.Count);
+        Assert.All(run.ThemePools, t => Assert.Equal(1, t.Idx));
+        Assert.DoesNotContain(run.ThemePools, t => t.Tfid == 1202);
+
+        // A repeated skip must not stack another floor's level adders.
+        RewardResolution.RejectWithEnemyBuf(run);
+        Assert.Equal(2, run.LevelAdders.Count);
+    }
+
+    [Fact]
     public void AcquireBattleReward_ConsumesGetBattleRewardCase_KeepingSiblings()
     {
         var run = new Run();
@@ -150,6 +175,47 @@ public class MdRulesRewardResolutionTests
         RewardResolution.AcquireBattleReward(run, new() { 0 });
 
         Assert.Equal(new[] { leading, trailing }, run.RewardEvents);
+    }
+
+    // Every pack's exclusive (specificEgoGiftPool) gifts.
+    private static HashSet<long> AllExclusives() =>
+        new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().pools.Values
+            .SelectMany(t => t.specificEgoGiftPool).ToHashSet();
+
+    [Fact]
+    public void AcquireBattleReward_GiftCard_DrawsOnlyFromTheCurrentPack()
+    {
+        // Card 302: EGOGIFT, prob 1, tier 1-2. Pack 1101's exclusives are 9701-9705.
+        var packPool = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().ThemeDropPool(1101);
+        var foreign = AllExclusives().Except(packPool).ToHashSet();
+        Assert.NotEmpty(foreign);
+
+        for (var i = 0; i < 300; i++)
+        {
+            var run = new Run();
+            run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1101 });
+            run.RewardEvents.Add(new RewardEvent { Rt = "GetBattleRewardCase", Pool = new() { 302 } });
+
+            RewardResolution.AcquireBattleReward(run, new() { 0 });
+
+            var gift = Assert.Single(run.Gifts.Items).Id;
+            Assert.Contains(gift, packPool);
+            Assert.DoesNotContain(gift, foreign);
+        }
+    }
+
+    [Fact]
+    public void AcquireBattleReward_GiftCard_OnACustomPackDrawsFromItsEgoGiftPool()
+    {
+        // An uploaded pack whose only tier 1-2 gift is 9101 (TIER_1).
+        var custom = new OpenLethe.Server.ThemeStatic { id = 990001, egoGiftPool = new() { 9101 } };
+        var run = new Run();
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 990001 });
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetBattleRewardCase", Pool = new() { 302 } });
+
+        RewardResolution.AcquireBattleReward(run, new() { 0 }, new[] { custom });
+
+        Assert.Equal(9101, Assert.Single(run.Gifts.Items).Id);
     }
 
     [Fact]

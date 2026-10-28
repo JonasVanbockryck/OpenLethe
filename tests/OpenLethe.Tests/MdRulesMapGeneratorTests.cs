@@ -33,6 +33,70 @@ public class MdRulesMapGeneratorTests
         Assert.Equal(0, run.Eid);
     }
 
+    [Theory]
+    [InlineData(0, 3)]
+    [InlineData(19, 3)]
+    [InlineData(20, 4)]
+    [InlineData(563, 31)]
+    [InlineData(1940, 100)]
+    [InlineData(5000, 100)]
+    public void SuperShopPercent_Is3PlusOnePer20CostSpent(long usedCost, long expected)
+    {
+        Assert.Equal(expected, MapGenerator.SuperShopPercent(usedCost));
+    }
+
+    [Fact]
+    public void GenerateFloor_HardFloorAtFullOdds_GeneratesSuperShopAndResetsSpend()
+    {
+        var run = new Run { UsedCost = 1940 };
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1001 });
+
+        MapGenerator.GenerateFloor(run, EmptyMd4ThemeId, selectedIdx: 1);
+
+        var shops = run.Floor.Nodes.Where(n => n.F == 1 && n.E == 10).ToList();
+        Assert.NotEmpty(shops);
+        Assert.All(shops, n => Assert.Equal(1, n.Eid));
+        Assert.Equal(0, run.UsedCost);
+    }
+
+    [Fact]
+    public void GenerateFloor_NormalFloor_NeverGeneratesSuperShopAndKeepsSpend()
+    {
+        var run = new Run { UsedCost = 5000 };
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 0, Tfid = 1001 });
+
+        MapGenerator.GenerateFloor(run, EmptyMd4ThemeId, selectedIdx: 0);
+
+        var shops = run.Floor.Nodes.Where(n => n.F == 1 && n.E == 10).ToList();
+        Assert.NotEmpty(shops);
+        Assert.All(shops, n => Assert.Equal(0, n.Eid));
+        Assert.Equal(5000, run.UsedCost);
+    }
+
+    [Fact]
+    public void RollSuperShop_RegularShop_KeepsSpendForTheNextFloor()
+    {
+        var run = new Run { UsedCost = 0 };
+        run.Floor.Nodes.Add(new MapNode { F = 3, E = 10, Eid = 1 });
+        run.Floor.Nodes.Add(new MapNode { F = 2, E = 10, Eid = 1 }); // an earlier floor: untouched
+
+        // At 3% a regular shop turns up within a few rolls; any super shop rolled before it resets the spend.
+        var sawRegular = false;
+        for (var i = 0; i < 500 && !sawRegular; i++)
+        {
+            run.UsedCost = 10;
+            MapGenerator.RollSuperShop(run, floor: 3, hard: true);
+            if (run.Floor.Nodes[0].Eid == 0)
+            {
+                sawRegular = true;
+                Assert.Equal(10, run.UsedCost);
+            }
+            else Assert.Equal(0, run.UsedCost);
+        }
+        Assert.True(sawRegular);
+        Assert.Equal(1, run.Floor.Nodes[1].Eid);
+    }
+
     [Fact]
     public void GenerateFloor_NonZeroFloor_FloorIndexFromThemeFloorsCount_NotLevelAdders()
     {
@@ -109,7 +173,7 @@ public class MdRulesMapGeneratorTests
     [Fact]
     public void RecreateThemePool_AfterFloorsSelected_RerollsFourThemesForNextFloor()
     {
-        var run = new Run();
+        var run = new Run { Idx = 1 }; // floor 0 picked from the hard group
         run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1001 });
         run.Floor.Current.F = 0;
         var tfpsCreatedBefore = run.TfpsCreated;
@@ -119,5 +183,84 @@ public class MdRulesMapGeneratorTests
         Assert.Equal(4, run.ThemePools.Count);
         Assert.All(run.ThemePools, t => Assert.Equal(1, t.Idx)); // act = 0/5 + 1
         Assert.Equal(tfpsCreatedBefore + 1, run.TfpsCreated);
+    }
+
+    [Fact]
+    public void RecreateThemePool_NormalRun_OffersNormalAndHardGroupsEveryFloor()
+    {
+        var themes = new OpenLethe.Server.MirrorDungeon.Data.MdThemePool().pools.Values;
+        for (long floor = 0; floor < 4; floor++)
+        {
+            var run = new Run { Idx = 0 }; // floor 0 picked from the normal (idx 0) group
+            for (long f = 0; f <= floor; f++)
+                run.ThemeFloors.Add(new ThemeFloor { F = f, Idx = 1, Tfid = 1001 });
+            run.Floor.Current.F = floor;
+
+            MapGenerator.RecreateThemePool(run);
+
+            // Both groups present, so the Normal/Hard switch can flip on this very menu.
+            Assert.Equal(8, run.ThemePools.Count);
+            Assert.Equal(4, run.ThemePools.Count(t => t.Idx == 0));
+            Assert.Equal(4, run.ThemePools.Count(t => t.Idx == 1));
+            Assert.DoesNotContain(run.ThemePools, t => t.Tfid == 1001);
+            Assert.All(run.ThemePools, t =>
+            {
+                Assert.Equal(t.Idx == 0 ? 3 : 4, t.Egs.Count);
+                var theme = themes.Single(x => x.id == t.Tfid);
+                Assert.Contains(theme.exceptionConditions, c => c.dungeonIdx == t.Idx
+                    && (c.selectableFloors.Count == 0 || c.selectableFloors.Contains((floor + 1) % 5)));
+            });
+        }
+    }
+
+    [Fact]
+    public void RecreateThemePool_RunSwitchedToHard_GetsOnlyHardPacks()
+    {
+        var run = new Run { Idx = 1 }; // floor 0 normal, floor 1 switched to a hard pack
+        run.ThemeFloors.Add(new ThemeFloor { F = 0, Idx = 1, Tfid = 1001 });
+        run.ThemeFloors.Add(new ThemeFloor { F = 1, Idx = 1, Tfid = 1303 });
+        run.Floor.Current.F = 1;
+
+        MapGenerator.RecreateThemePool(run);
+
+        Assert.Equal(4, run.ThemePools.Count);
+        Assert.All(run.ThemePools, t => Assert.Equal(1, t.Idx));
+    }
+
+    [Fact]
+    public void RecreateThemePool_NeverOffersAPackTheRunAlreadyPlayed()
+    {
+        // Hard act 2 (floors 5-9): 1110 is in its tier. Played on floor 5, it must not come back.
+        for (var i = 0; i < 200; i++)
+        {
+            var run = new Run { Idx = 2 };
+            for (long f = 0; f <= 5; f++)
+                run.ThemeFloors.Add(new ThemeFloor { F = f, Idx = f / 5 + 1, Tfid = f == 5 ? 1110 : 1001 });
+            run.Floor.Current.F = 5;
+
+            MapGenerator.RecreateThemePool(run);
+
+            Assert.Equal(4, run.ThemePools.Count);
+            Assert.DoesNotContain(run.ThemePools, t => t.Tfid == 1110);
+        }
+    }
+
+    [Theory]
+    [InlineData(9)]
+    [InlineData(10)]
+    [InlineData(13)]
+    [InlineData(14)]
+    [InlineData(19)]
+    public void RecreateThemePool_ExtremeFloors_AlwaysOffersFourActThreePacks(long currentFloor)
+    {
+        var run = new Run { Idx = 3 };
+        for (long f = 0; f <= currentFloor; f++)
+            run.ThemeFloors.Add(new ThemeFloor { F = f, Idx = f / 5 + 1, Tfid = 1001 });
+        run.Floor.Current.F = currentFloor;
+
+        MapGenerator.RecreateThemePool(run);
+
+        Assert.Equal(4, run.ThemePools.Count);
+        Assert.All(run.ThemePools, t => Assert.Equal(3, t.Idx));
     }
 }

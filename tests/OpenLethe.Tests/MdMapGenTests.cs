@@ -29,6 +29,42 @@ public class MdMapGenTests
         }
     }
 
+    [Theory]
+    [InlineData(1024L)] // Charm, Wander, Doubt
+    [InlineData(1118L)] // Line 5
+    public void GenerateNewFloor_FixedFloorWithEmptyBoss_FillsItFromFillEmptyBoss(long themeId)
+    {
+        var fill = MdThemeData.GetThemeById(themeId)!.mapGenSequence.Single(s => s.type_ == "FILL_EMPTY_BOSS").numberList;
+        var save = new MirrorOriginSaveInfo();
+
+        MdMapGen.GenerateNewFloor(0, themeId, save);
+
+        var boss = Assert.Single(save.dungeonMap.ns, n => n.e == 6);
+        Assert.Contains(boss.eid, fill);
+    }
+
+    [Fact]
+    public void FloorOdds_ComeFromTheDungeonTable_AndFallBackToFloorFive()
+    {
+        var first = MdFloorOdds.ForFloor(8, 0);
+        Assert.Equal(0.25, first.eventNodePercentage);
+        Assert.Equal(0, first.abnormalityBattlePercentage);
+
+        // Unknown dungeon id -> newest table; floor past the table -> its count 4 row.
+        var deep = MdFloorOdds.ForFloor(-1, 999);
+        Assert.Equal(4, deep.count);
+        Assert.Equal(0.2, deep.eventNodePercentage);
+    }
+
+    [Fact]
+    public void GenerateBattleNode_ZeroOdds_OnlyRollsRegularBattles()
+    {
+        var theme = MdThemeData.GetThemeById(EmptyMd4ThemeId)!;
+        var odds = new MdFloorNodeOdds();
+        for (var i = 0; i < 50; i++)
+            Assert.Equal(1, MdMapGen.GenerateBattleNode(theme, odds).node_type);
+    }
+
     [Fact]
     public void GenerateNewFloor_EmptyMd4Theme_ProducesStructurallyValidGraph()
     {
@@ -102,5 +138,44 @@ public class MdMapGenTests
                 Assert.True(tfp.idx == 0 || tfp.idx == 1);
             }
         }
+    }
+
+    // Theme 1501 (theme-floor-t6): an act-3 fixed floor - start, sector-1 events at idx 0 and 2,
+    // ... shop, boss. md-extreme-run-2 played it at floor index 10.
+    private const long FixedAct3ThemeId = 1501;
+
+    [Fact]
+    public void HiddenBattleInfo_IsReadFromTheCurrentSeasonsCommonData()
+    {
+        // mirror-dungeon-common-data-md8.json hiddenBattleInfo.
+        var info = MdCommonTable.HiddenBattle;
+        Assert.Equal(11, info.minFloorCondition);
+        Assert.Equal(new long[] { 9000005, 9000006, 9000007, 9000008 }, info.pool);
+        Assert.Equal(0.1, info.ProbForFloor(10)); // floor index 10 = floor 11
+        Assert.Equal(0, info.ProbForFloor(9));
+        Assert.True(MdMapGen.IsHiddenBattle(9000007));
+        Assert.Equal(new long[] { 9256 }, MdMapGen.HiddenGiftsOf(9000007));
+    }
+
+    [Fact]
+    public void GenerateNewFloor_NeverPlacesAHiddenNode()
+    {
+        // Hidden bosses are revealed when an event is entered (MapNodeRules), never generated:
+        // at the shipped 10% a pre-placing generator would hit within a few hundred floors.
+        for (var i = 0; i < 300; i++)
+        {
+            var save = new MirrorOriginSaveInfo();
+            MdMapGen.GenerateNewFloor(10, FixedAct3ThemeId, save);
+            Assert.DoesNotContain(save.dungeonMap.ns, n => n.e == MdMapGen.HiddenBattleNodeType);
+        }
+    }
+
+    [Fact]
+    public void UnbeatenHiddenBattles_SkipsStagesWhoseGiftTheRunOwns()
+    {
+        var info = new MdHiddenBattleInfo { pool = new() { 9000007, 9000006 } };
+
+        Assert.Equal(new long[] { 9000006 }, MdMapGen.UnbeatenHiddenBattles(info, new long[] { 9256 })); // 9000007's gift
+        Assert.Equal(new long[] { 9000007, 9000006 }, MdMapGen.UnbeatenHiddenBattles(info, Array.Empty<long>()));
     }
 }

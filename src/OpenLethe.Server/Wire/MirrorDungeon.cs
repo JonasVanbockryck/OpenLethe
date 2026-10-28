@@ -201,6 +201,21 @@ public sealed class CurrentInfo
     public List<long> leveladders = new();
     public string startKeyword = "";
     public long startBufPoint;
+
+    // The run's enabled start-buff ids, written by EnableStartBuffMirrorDungeon. Lives on
+    // currentInfo because that is the run-state slice the client already echoes verbatim and the
+    // only place the enable step can stash "which buffs did this run buy" so the later steps can
+    // read it back: the personality level-cap offsets and ADDITIONAL_START_COST used to be
+    // reconstructed from the capture's fixed {106,102} pair, which silently did nothing for any
+    // other pick. Null (field omitted) while no buffs are enabled, so buff-less packets stay
+    // byte-identical to the capture's.
+    [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+    public List<long>? enabledStartbufIds;
+
+    // Server-only, like enabledStartbufIds: the event each revealed hidden node replaced, so
+    // EscapeMirrorDungeonHiddenNode can turn it back. Null (omitted) while none is revealed.
+    [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+    public List<HiddenNodeOriginInfo>? hiddenNodeOrigins;
     public List<Cfs> cfs = new();
     public Efs efs = new();
     public Currentnode cn = new();
@@ -224,6 +239,12 @@ public sealed class CurrentInfo
     public List<Scinfo> scinfos = new();
     public EgAbilityInfo egabilityinfo = new();
     public long isegr;
+}
+
+public sealed class HiddenNodeOriginInfo
+{
+    public long nid;
+    public long eid;
 }
 
 public sealed class MirrorOriginSaveInfo
@@ -277,9 +298,11 @@ public sealed class PrevPlayRecord
 public sealed class StartBuffInfo
 {
     public long dungeonid;
-    // Client wire type (MirrorDungeonStartBuffInfoFormat) declares a `bufstate` field too,
-    // but it never appears in the capture (GetStartBuffFInfo/EnableStartBuff both echo just
-    // {dungeonid, enabled}) - omitted rather than serialized-empty to byte-match.
+    // Client wire type (MirrorDungeonStartBuffInfoFormat) declares `bufstate` too. The
+    // 2026-10-15 client build dereferences it from the entrance UI (null ⇒
+    // MirrorDungeonEntranceUIObject.UpdateUI NRE), so it is emitted now; the replay masks it
+    // where the older capture never carried the field.
+    public List<long>? bufstate;
     public List<long> enabled = new();
 }
 
@@ -318,6 +341,10 @@ public sealed class SellEgoGiftMirrorDungeonParams
 public sealed class UpgradeEgoGiftMirrorDungeonParams
 {
     public long egoGiftId;
+    // The upgrade levels the client goes from/to. Client 1.117 sends a double upgrade as ONE
+    // request with from 0 / to 2, so `to` is the target, not ul + 1.
+    public long from;
+    public long to;
 }
 
 public sealed class AcquireRewardEgoGiftsMirrorDungeonParams
@@ -363,6 +390,15 @@ public sealed class DetectMirrorDungeonEgogiftByStarlightParams
 public sealed class AcquireMirrorDungeonConstraintsParams
 {
     public List<long> selectIdxList = new();
+}
+
+// Body of /api/DetectMirrorDungeonThemeFloorByStarlight (client packet dump
+// api_DetectMirrorDungeonThemeFloorByStarlight.cs): the pack the player pays starlight to reveal.
+public sealed class DetectMirrorDungeonThemeFloorByStarlightParams
+{
+    public long originThemeFloorId;
+    public long detectThemeFloorId;
+    public long difficulty;
 }
 
 public sealed class EnterMirrordungeonMapNodeBattleAfterChoiceParams
@@ -579,6 +615,21 @@ public sealed class EnterMirrorDungeonMapNodeResult
     public List<object> cels = new();
     public long cost;
     public bool changedHiddenNode;
+    // The whole map, sent only with changedHiddenNode: the client rebuilds its map from it to
+    // show the revealed node (md-extreme-run-2 seq335/437 carry every floor's ns). Without it
+    // the client's SetMap finds no nodes for the floor and throws.
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public DungeonMap? dungeonMap;
+}
+
+public sealed class EscapeMirrorDungeonHiddenNodeParams
+{
+    public Currentnode currentnode = new();
+}
+
+public sealed class EscapeMirrorDungeonHiddenNodeResult
+{
+    public CurrentInfo currentInfo = new();
 }
 
 public sealed class ExitMirrorDungeonMapNodeResult
@@ -625,6 +676,11 @@ public sealed class UpdateMirrorDungeonMapNodeResult
     public List<ChoiceEventData> prevChoiceEvent = new();
     public List<AcquiredEgogifts> currentEgoGifts = new();
     public List<Dungeonunitlist1> dungeonUnitList = new();
+    // ResPacket_UpdateMirrorDungeonMapNode declares `cels` after dungeonUnitList. The real
+    // server always sends it; on a fresh local account the list stays empty, but the client
+    // needs the *key* to be present or the field deserialises to null and the event-choice
+    // handler throws, leaving the event node stuck. Do not drop this back to a missing key.
+    public List<object> cels = new();
 }
 
 // ---- cycle 4e: rewards + fusion ----
@@ -686,6 +742,14 @@ public sealed class AcquireRewardEgoGiftsWithEnemyBufResult
     public List<RemainRewardEvent> remainRewardEvent = new();
     public List<Dungeonunitlist1> dungeonUnitList = new();
     public List<long> levelAdders = new();
+    public MirrorOriginSaveInfo saveinfo = new();
+}
+
+public sealed class RejectRewardEgoGiftWithEnemyBufsResult
+{
+    public List<AcquiredEgogifts> egoGifts = new();
+    public List<long> levelAdders = new();
+    public List<RemainRewardEvent> remainRewardEvent = new();
     public MirrorOriginSaveInfo saveinfo = new();
 }
 

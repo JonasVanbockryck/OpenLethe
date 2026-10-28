@@ -125,4 +125,39 @@ public class MdThemeDataTests
         var lo = MdStartBuffs.LevelOffsets(new long[] { 103, 107 });
         Assert.Equal(new MdLevelOffsets(0, 0, 0, 0), lo);
     }
+
+    [Fact]
+    public void ThemeDropPool_IsThePacksOwnGiftsWithoutSeasonExcludes()
+    {
+        var pool = new MdThemePool().ThemeDropPool(1018);
+
+        Assert.NotEmpty(pool);
+        Assert.All(pool, id => Assert.Contains(id, MdThemeData.GetThemeById(1018)!.egoGiftPool));
+        // 9156 Decamillennial Hearthflame: listed by pack 1018, excluded by the season drop pool.
+        Assert.DoesNotContain(9156L, pool);
+    }
+
+    [Fact]
+    public void ShopEgoGiftsPool_CustomPack_StocksItsEgoGiftPool()
+    {
+        // 9701 is pack 1101's exclusive: no shop stocks it unless the floor's pack lists it.
+        var custom = new ThemeStatic { id = 990001, egoGiftPool = new() { 9701, 9101 } };
+
+        Assert.Empty(new MdThemePool().ShopEgoGiftsPool(990001)); // the static-only pool cannot see it
+        var shop = new MdThemePool(new[] { custom }).ShopEgoGiftsPool(990001);
+
+        Assert.Contains(9701L, shop);
+        Assert.Contains(9101L, shop);
+        Assert.DoesNotContain(9702L, shop); // pack 1101's other exclusives stay out
+    }
+
+    [Fact]
+    public void ShopEgoGiftsPool_BuiltInPack_StillExcludesOtherPacksExclusives()
+    {
+        var shop = new MdThemePool().ShopEgoGiftsPool(1102);
+
+        Assert.Contains(9706L, shop);        // 1102's own exclusive
+        Assert.DoesNotContain(9701L, shop);  // 1101's
+        Assert.DoesNotContain(9156L, shop);  // season-excluded
+    }
 }

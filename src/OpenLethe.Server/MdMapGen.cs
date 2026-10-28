@@ -107,30 +107,41 @@ public static class MdMapGen
         return bools;
     }
 
-    // Port of DefaultMirrorDungeonMapGenerator::generate_battle_node.
-    public static DungeonNode GenerateBattleNode(ThemeStatic theme)
+    // Picks a random node's type from the floor's odds (mirrordungeon static data, floors[]):
+    // a regular battle unless the roll lands in one of the listed percentages. A type whose pack
+    // pool is empty is left out of the roll, its share going to the types that can still spawn.
+    public static DungeonNode GenerateBattleNode(ThemeStatic theme, MdFloorNodeOdds odds)
     {
         var opt = theme.mapGenOption;
-        while (true)
+        var candidates = new (List<long> pool, long nodeType, double weight)[]
         {
-            var p = Random.Shared.NextDouble();
-            List<long> pool;
-            long nodeType;
-            if (p < 0.45) { pool = opt.battlePool; nodeType = 1; }
-            else if (p < 0.70) { pool = opt.abBattlePool; nodeType = 5; }
-            else if (p < 0.80) { pool = opt.eventPool; nodeType = 3; }
-            else if (p < 0.90) { pool = opt.hardAbBattlePool; nodeType = 14; }
-            else { pool = opt.hardBattlePool; nodeType = 2; }
+            (opt.eventPool, 3, odds.eventNodePercentage),
+            (opt.abBattlePool, 5, odds.abnormalityBattlePercentage),
+            (opt.hardBattlePool, 2, odds.hardBattlePercentage),
+            (opt.hardAbBattlePool, 14, odds.hardAbBattlePercentage),
+            (opt.battlePool, 1, Math.Max(0, 1 - odds.eventNodePercentage - odds.abnormalityBattlePercentage
+                - odds.hardBattlePercentage - odds.hardAbBattlePercentage)),
+        }.Where(c => c.pool.Count > 0).ToList();
 
-            if (pool.Count == 0) continue;
-            var id = pool[Random.Shared.Next(pool.Count)];
-            return new DungeonNode { node_type = nodeType, encounter_id = id };
+        // Nothing weighted can spawn: any populated pool will do.
+        if (candidates.Count > 0 && candidates.All(c => c.weight <= 0))
+            candidates = candidates.Select(c => (c.pool, c.nodeType, 1.0)).ToList();
+        if (candidates.Count == 0) return new DungeonNode { node_type = 1, encounter_id = 0 };
+
+        var p = Random.Shared.NextDouble() * candidates.Sum(c => c.weight);
+        var pick = candidates[^1];
+        foreach (var c in candidates)
+        {
+            if (p < c.weight) { pick = c; break; }
+            p -= c.weight;
         }
+        return new DungeonNode { node_type = pick.nodeType, encounter_id = pick.pool[Random.Shared.Next(pick.pool.Count)] };
     }
 
     // Port of DefaultMirrorDungeonMapGenerator::generate_md4_graph.
-    public static DungeonGraph GenerateMd4Graph(ThemeStatic theme, long floor, int floorWidth)
+    public static DungeonGraph GenerateMd4Graph(ThemeStatic theme, long floor, int floorWidth, long dungeonId = MirrorDungeon.Rules.StartRunRules.CurrentDungeonId)
     {
+        var odds = MdFloorOdds.ForFloor(dungeonId, floor);
         var graph = new DungeonGraph();
 
         var layerPopulation = new[]
@@ -149,7 +160,7 @@ public static class MdMapGen
                 var beginning = x == 0 && y != 1;
                 if (layerPopulation[y][x] || middleNodeMissing || lastMiddleNodeMissing || beginning)
                 {
-                    graph.nodes[x, y] = GenerateBattleNode(theme);
+                    graph.nodes[x, y] = GenerateBattleNode(theme, odds);
                 }
             }
         }
@@ -163,19 +174,9 @@ public static class MdMapGen
         var bossPool = theme.mapGenOption.bossPool;
         var bossEncounterId = bossPool.Count > 0 ? bossPool[Random.Shared.Next(bossPool.Count)] : 2060101;
 
-        var superShopProb = floor switch
-        {
-            0 => 0.03,
-            1 => 0.25,
-            2 => 0.50,
-            3 => 0.75,
-            _ => 1.00,
-        };
-        graph.nodes[floorWidth, 1] = new DungeonNode
-        {
-            node_type = 10,
-            encounter_id = Random.Shared.NextDouble() < superShopProb ? 1 : 0,
-        };
+        // Always a regular shop here: whether it becomes a super shop depends on the run's shop
+        // spend and difficulty, which MapGenerator.RollSuperShop decides once the floor exists.
+        graph.nodes[floorWidth, 1] = new DungeonNode { node_type = 10, encounter_id = 0 };
         graph.nodes[floorWidth + 1, 1] = new DungeonNode { node_type = 6, encounter_id = bossEncounterId };
 
         graph.AddEdge(new DungeonCoordinate(floorWidth, 1), new DungeonCoordinate(floorWidth + 1, 1));
@@ -211,11 +212,60 @@ public static class MdMapGen
         return graph;
     }
 
+    // Fallback event ids for fixed-layout floors. Act-3 packs (theme-floor-t6, ids 1501-1520)
+    // ship a CREATE_FIXED_FLOOR node list whose event slots carry encounterId 0 - the real
+    // generator's FILL_EMPTY_EVENT sequence step is what gives them an id - but those packs also
+    // declare an EMPTY mapGenOption.eventPool, so GenerateNewFloor used to emit e=3/eid=0.
+    // The client has no event to resolve for eid 0, so the event screen opened and never
+    // advanced: that is the "events get stuck on floors 10+" bug. Fall back to every event id
+    // this dungeon already uses elsewhere; those come from the act-1/2 packs' pools (901xxx,
+    // 971xxx, ...), so the client is guaranteed to have the static data to render them.
+    private static readonly Lazy<List<long>> DungeonEventPool = new(() =>
+        MdThemeData.AllThemes()
+            .SelectMany(t => t.mapGenOption.eventPool)
+            .Distinct()
+            .OrderBy(id => id)
+            .ToList());
+
+    // e==15 is the client's hidden-node type. Floors are never generated with one: retail turns an
+    // event node (e==3) into it at the moment the player enters that node (md-extreme-run-2
+    // seq334 -> 335 and 436 -> 437: the same nid flips from e 3 to e 15) - see
+    // MapNodeRules.TryRevealHiddenBattle.
+    public const long HiddenBattleNodeType = 15;
+
+    // Hidden battles, driven by mirror-dungeon-common-data's hiddenBattleInfo (see
+    // MdCommonTable.HiddenBattle): its pool names the hidden-boss stages (the shipped files list
+    // 9000005-9000008, whose battle files each reward an exclusive E.G.O gift), minFloorCondition
+    // the first floor they appear on, and probInfo each floor's chance per event entered.
+    public static bool IsHiddenBattle(long encounterId) => MdCommonTable.HiddenBattle.pool.Contains(encounterId);
+
+    // A hidden stage's exclusive gifts: the EGO_GIFT entries of its own battle file's rewardList.
+    public static List<long> HiddenGiftsOf(long stageId) =>
+        MdAbRewards.GetByNodeId(stageId)?
+            .Where(r => r.rewardType == "EGO_GIFT")
+            .Select(r => r.rewardId)
+            .ToList() ?? new List<long>();
+
+    // The pool's stages this run has not beaten yet - owning a stage's exclusive gift means the
+    // run already won that fight, so it is not offered again.
+    public static List<long> UnbeatenHiddenBattles(MdHiddenBattleInfo info, IReadOnlyCollection<long> ownedGiftIds) =>
+        info.pool.Where(id => !HiddenGiftsOf(id).Any(ownedGiftIds.Contains)).ToList();
+
+    public static long PickFallbackEventId()
+    {
+        var pool = DungeonEventPool.Value;
+        return pool.Count > 0 ? pool[Random.Shared.Next(pool.Count)] : 0;
+    }
+
     // Port of DefaultMirrorDungeonMapGenerator::generate_new_floor. Throws if the theme id
     // is unknown (Rust returns diesel::NotFound); the handler layer maps that to a 500.
-    public static void GenerateNewFloor(long floor, long themeId, MirrorOriginSaveInfo save)
+    // customThemes: the account's uploaded packs, so a custom pack picked after a starlight
+    // detection can be entered (an uploaded id wins over a static one, as in MdThemePool).
+    public static void GenerateNewFloor(long floor, long themeId, MirrorOriginSaveInfo save,
+        IReadOnlyList<ThemeStatic>? customThemes = null)
     {
-        var theme = MdThemeData.GetThemeById(themeId)
+        var theme = customThemes?.FirstOrDefault(t => t is not null && t.id == themeId)
+            ?? MdThemeData.GetThemeById(themeId)
             ?? throw new KeyNotFoundException($"MD theme {themeId} not found");
 
         var seq = theme.mapGenSequence.FirstOrDefault();
@@ -226,19 +276,30 @@ public static class MdMapGen
             var floorWidth = seq.numberList.Count > 0
                 ? (int)seq.numberList[0]
                 : (int)(4 + floor / 3);
-            graph = GenerateMd4Graph(theme, floor, floorWidth).EncodeAsMd(floor);
+            graph = GenerateMd4Graph(theme, floor, floorWidth, save.dungeonId).EncodeAsMd(floor);
         }
         else if (seq?.type_ == "CREATE_FIXED_FLOOR")
         {
+            // A few fixed packs (1024 Charm, Wander, Doubt; 1118 Line 5) ship their boss node with
+            // encounterId 0 and name the candidates in a FILL_EMPTY_BOSS step instead - without it
+            // the floor ended in an e=6 node the client could not resolve, so it had no boss fight.
+            var bossFill = theme.mapGenSequence.FirstOrDefault(s => s.type_ == "FILL_EMPTY_BOSS")?.numberList;
+            var bossPool = bossFill is { Count: > 0 } ? bossFill : theme.mapGenOption.bossPool;
+
             graph = seq.nodeList.Select(node =>
             {
                 var eid = node.encounterId;
+                if (node.encounterType == 6 && eid == 0 && bossPool.Count > 0)
+                    eid = bossPool[Random.Shared.Next(bossPool.Count)];
                 if (node.encounterType == 3 && node.encounterId == 0)
                 {
                     var opt = theme.mapGenOption;
-                    if (opt.specialEventPool is { } specialEvents && opt.specialEventProb is { } specialEventProb)
+                    // A pack that carries a special-event pool but no probability means "always
+                    // take from that pool" - the old code required BOTH to be non-null, so such a
+                    // pack fell straight through with eid still 0.
+                    if (opt.specialEventPool is { Count: > 0 } specialEvents)
                     {
-                        if (Random.Shared.NextDouble() < specialEventProb && specialEvents.Count > 0)
+                        if (opt.specialEventProb is not { } prob || Random.Shared.NextDouble() < prob)
                         {
                             eid = specialEvents[Random.Shared.Next(specialEvents.Count)];
                         }
@@ -248,6 +309,10 @@ public static class MdMapGen
                     {
                         eid = opt.eventPool[Random.Shared.Next(opt.eventPool.Count)];
                     }
+
+                    // Never emit an e=3 node with eid 0: the client cannot resolve it and the
+                    // event screen hangs on entry (see DungeonEventPool above).
+                    if (eid == 0) eid = PickFallbackEventId();
                 }
 
                 return new Ns
@@ -299,15 +364,28 @@ public static class MdMapGen
     }
 
     // Port of ThemeFloorPoolSelector::random_from_pool (ego_reward_count=4, theme_floor_count=4).
-    public static List<Tfps> PickThemes(long floor)
+    // Also the offer for every floor of a normal run: the selection screen's Normal/Hard switch
+    // needs both groups in the pool to flip instantly. With only the normal group the client
+    // showed "Hard unlocks from the next Theme Pack menu" and never offered it.
+    // visited: packs this run already played - see Unvisited.
+    public static List<Tfps> PickThemes(long floor, IReadOnlyCollection<long>? visited = null)
     {
         var themePool = new MdThemePool();
-        var pools = themePool.pools.Values
-            .Where(t => t.exceptionConditions.Any(c => c.selectableFloors.Contains(floor)))
-            .ToList();
+        // The client's theme-floor table (dumpedData/limbus_data/mirrordungeon-theme-floor/<n>.json)
+        // writes exceptionConditions with the act in dungeonIdx (same 1-based value the wire uses)
+        // and a 0-based offset inside that act in selectableFloors (empty = any floor of the act).
+        // The capture's 8-pack offer is 4 x d0[offset] (wire idx 0, the "easy"/normal group) +
+        // 4 x d1[offset] (wire idx 1, the "hard" one). Each group checks the offset on its OWN
+        // tier's condition (every captured start offer obeys this): a pack listed as d0[2] and
+        // d1[0] belongs to the floor-1 hard group, not the floor-1 normal one.
+        var startTier = floor / 5;   // 0 for the normal floors - the easy group
+        var startAct = startTier + 1;   // the tier of the act being entered
+        var startOffset = floor % 5;
+        bool Fits(ThemeStatic t, long tier) => t.exceptionConditions.Any(c => c.dungeonIdx == tier
+            && (c.selectableFloors.Count == 0 || c.selectableFloors.Contains(startOffset)));
 
-        var easy = pools.Where(t => t.exceptionConditions.Any(c => c.dungeonIdx == 0)).ToList();
-        var hard = pools.Where(t => t.exceptionConditions.Any(c => c.dungeonIdx == 1)).ToList();
+        var easy = Unvisited(themePool.pools.Values.Where(t => Fits(t, startTier)).ToList(), visited);
+        var hard = Unvisited(themePool.pools.Values.Where(t => Fits(t, startAct)).ToList(), visited);
 
         var result = new List<Tfps>();
         foreach (var theme in ChooseMultiple(easy, 4))
@@ -317,6 +395,16 @@ public static class MdMapGen
         return result;
     }
 
+    // Packs this run already played (tfs) are never offered again, like the client's own Pack
+    // Search; only when nothing else is eligible do they come back, so a selection can never end
+    // up empty.
+    private static List<ThemeStatic> Unvisited(List<ThemeStatic> eligible, IReadOnlyCollection<long>? visited)
+    {
+        if (visited is not { Count: > 0 }) return eligible;
+        var unvisited = eligible.Where(t => !visited.Contains(t.id)).ToList();
+        return unvisited.Count > 0 ? unvisited : eligible;
+    }
+
     // RecreateThemeFloorPool re-rolls the pool for selecting the NEXT floor (cn.f + 1). Unlike
     // the start-of-run pool (PickThemes returns 8 = 4 easy + 4 hard, idx = difficulty tier),
     // a re-roll returns exactly 4 themes for the upcoming floor, each idx = that floor's act
@@ -324,15 +412,36 @@ public static class MdMapGen
     // explicit selectableFloors; act>=2 conditions leave selectableFloors empty = any floor in
     // the act). Verified against all 19 captured RecreateThemeFloorPool records (floors 0-9):
     // count == 4, idx == act, and dungeonIdx-eligibility hold every time. tfid/egs/upegs are
-    // RNG (masked in replay) - only count and idx are byte-verified.
-    public static List<Tfps> RecreateThemes(long selectionFloor)
+    // RNG (masked in replay) - only count and idx are byte-verified. This is the hard-run pool; a
+    // normal run's floors use PickThemes (see MapGenerator.NextFloorPools).
+    // visited: packs this run already played - see Unvisited.
+    public static List<Tfps> RecreateThemes(long selectionFloor, IReadOnlyCollection<long>? visited = null)
     {
-        var act = selectionFloor / 5 + 1;
+        // Conventions (settled against the capture + the client's own table):
+        //   * the wire idx IS the price-1 act: floor / 5 + 1 (1-based) - byte-verified;
+        //   * the data's dungeonIdx is the SAME value, NOT a 0-based act: the pool prepared at
+        //     floor 4 for floor 5 is 1023/1404/1408/1414 (all d2[]) and the one prepared at floor 9
+        //     for floor 10 is 1501/1508/1518/1112 (all d3[]) - comparing against floor/5 pulled the
+        //     previous act's tier, so the 11-15 floor packs never showed up;
+        //   * selectableFloors is the 0-based offset inside that act (floor 1 -> d1[1]: 1005 and
+        //     1204 are d1[0,1], 1303 is d1[1]; empty = any floor of the act).
+        // Tier 0 exists only for the run-start "easy" group (PickThemes) - those packs carry a d1
+        // condition too, so they stay reachable once the run is under way.
+        var offset = selectionFloor % 5;    // selectableFloors
         var themePool = new MdThemePool();
-        var eligible = themePool.pools.Values
+        // A floor past the table's last act (dungeonIdx 3, the extreme floors) keeps drawing from
+        // that last act instead of an empty tier.
+        var lastAct = themePool.pools.Values
+            .SelectMany(t => t.exceptionConditions)
+            .Select(c => c.dungeonIdx)
+            .DefaultIfEmpty(0)
+            .Max();
+        var act = Math.Min(selectionFloor / 5 + 1, lastAct);   // wire idx AND dungeonIdx
+        var eligible = Unvisited(themePool.pools.Values
             .Where(t => t.exceptionConditions.Any(c => c.dungeonIdx == act
-                && (c.selectableFloors.Count == 0 || c.selectableFloors.Contains(selectionFloor))))
-            .ToList();
+                && (c.selectableFloors.Count == 0 || c.selectableFloors.Contains(offset))))
+            .ToList(), visited);
+
         return ChooseMultiple(eligible, 4)
             .Select(theme => new Tfps
             {

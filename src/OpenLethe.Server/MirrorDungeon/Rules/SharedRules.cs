@@ -14,6 +14,9 @@ public static class SharedRules
     // Port of map/mod.rs theme_pack_id (MirrorDungeonMap.cs:36).
     public static long ThemePackId(Run run) => run.ThemeFloors.Count > 0 ? run.ThemeFloors[^1].Tfid : 1001;
 
+    // Every gift id the run holds - what a shop must never offer or sell.
+    public static HashSet<long> OwnedGiftIds(Run run) => run.Gifts.Items.Select(g => g.Id).ToHashSet();
+
     // Port of map/mod.rs is_super_shop (MirrorDungeonMap.cs:39-44).
     public static bool? IsSuperShop(Run run)
     {
@@ -22,11 +25,13 @@ public static class SharedRules
         return node.Eid != 0;
     }
 
-    // Port of map/mod.rs shop_gift_count (MirrorDungeonMap.cs:50-55).
+    // Port of map/mod.rs shop_gift_count (MirrorDungeonMap.cs:50-55), but the counts come from
+    // the retail table now (shopInfoByType.egoGiftSlotNum: 4 regular / 7 super) instead of the
+    // reference server's hardcoded 5/10.
     public static long ShopGiftCount(Run run) => IsSuperShop(run) switch
     {
-        true => 10,
-        false => 5,
+        true => MdShopTable.GiftSlots(true),
+        false => MdShopTable.GiftSlots(false),
         null => 0,
     };
 

@@ -17,6 +17,7 @@ public static class MirrorDungeonRewardsEndpoints
         var exitId = global::PacketRouting.ResolvePacketId<global::ResPacket_ExitMirrorDungeon>();
         var enemyBufId = global::PacketRouting.ResolvePacketId<global::ResPacket_AcquireRewardEgoGiftsWithEnemyBufMirrorDungeon>();
         var battleRewardId = global::PacketRouting.ResolvePacketId<global::ResPacket_AcquireMirrorDungeonBattleReward>();
+        var rejectEnemyBufId = global::PacketRouting.ResolvePacketId<global::ResPacket_RejectRewardEgoGiftWithEnemyBufsMirrorDungeon>();
 
         app.MapPost("/api/CombineEgoGiftMirrorDungeon", async (HttpContext ctx) =>
         {
@@ -28,7 +29,7 @@ public static class MirrorDungeonRewardsEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
-            FusionRules.Combine(run, p.materialEgoGiftIds, p.keyword, p.isOrigin);
+            FusionRules.Combine(run, p.materialEgoGiftIds, p.keyword, p.isOrigin, await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             var save = WireMapper.ToWire(run);
             // FusionRules.Combine always appends the fused result last.
             var resultWire = save.currentInfo.egs[^1];
@@ -58,7 +59,9 @@ public static class MirrorDungeonRewardsEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
-            ShopRules.RefreshShop(run);
+            // The request's keyword now reaches the shop rules (a plain refresh sends ""/"None";
+            // a keyword refresh sends the real keyword and pays the extra adder).
+            ShopRules.RefreshShop(run, p.keyword, await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             var save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = AccountFields.Set(save);
@@ -147,6 +150,33 @@ public static class MirrorDungeonRewardsEndpoints
             return Results.Json(global::ResponsePacket<AcquireRewardEgoGiftsWithEnemyBufResult>.Ok(body, enemyBufId), global::PacketJson.Options);
         });
 
+        app.MapPost("/api/RejectRewardEgoGiftWithEnemyBufsMirrorDungeon", async (HttpContext ctx) =>
+        {
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md);
+            if (account is null) return Results.Unauthorized();
+            var loaded = AccountFields.Get<MirrorOriginSaveInfo>(account.MdSaveInfo);
+            if (loaded is null) return Results.StatusCode(500);
+            // The request carries no parameters - read+discard just to 400 on an unparseable body.
+            var p = await HandlerContext.ReadParamsAsync<object>(ctx);
+            if (p is null) return Results.BadRequest();
+
+            var run = WireMapper.ToDomain(loaded);
+            RewardResolution.RejectWithEnemyBuf(run);
+            var save = WireMapper.ToWire(run);
+
+            account.MdSaveInfo = AccountFields.Set(save);
+            await HandlerContext.SaveAsync(ctx);
+
+            var body = new RejectRewardEgoGiftWithEnemyBufsResult
+            {
+                egoGifts = save.currentInfo.egs,
+                levelAdders = save.currentInfo.leveladders,
+                remainRewardEvent = save.currentInfo.rre,
+                saveinfo = save,
+            };
+            return Results.Json(global::ResponsePacket<RejectRewardEgoGiftWithEnemyBufsResult>.Ok(body, rejectEnemyBufId), global::PacketJson.Options);
+        });
+
         app.MapPost("/api/AcquireMirrorDungeonBattleReward", async (HttpContext ctx) =>
         {
             var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md);
@@ -157,7 +187,7 @@ public static class MirrorDungeonRewardsEndpoints
             if (p is null) return Results.BadRequest();
 
             var run = WireMapper.ToDomain(loaded);
-            RewardResolution.AcquireBattleReward(run, p.selectIndexList);
+            RewardResolution.AcquireBattleReward(run, p.selectIndexList, await HandlerContext.ReadCustomThemesAsync(ctx, account.Id));
             var save = WireMapper.ToWire(run);
 
             account.MdSaveInfo = AccountFields.Set(save);

@@ -82,6 +82,20 @@ internal static class HandlerContext
         return account;
     }
 
+    /// The account's uploaded custom MD packs (Account.CustomTheme), read as a plain scalar query
+    /// next to a scoped resolve so it never touches the tracked stub (whose other columns stay
+    /// null and unwritable). Empty when nothing was uploaded.
+    public static async Task<List<ThemeStatic>> ReadCustomThemesAsync(HttpContext ctx, Guid accountId)
+    {
+        var db = ctx.RequestServices.GetRequiredService<AppDbContext>();
+        var json = await db.Accounts
+            .AsNoTracking()
+            .Where(a => a.Id == accountId)
+            .Select(a => a.CustomTheme)
+            .SingleOrDefaultAsync();
+        return AccountFields.Get<List<ThemeStatic>>(json) ?? new List<ThemeStatic>();
+    }
+
     /// Deserialize the envelope and return its `parameters`.
     public static async Task<TReq?> ReadParamsAsync<TReq>(HttpContext ctx)
     {

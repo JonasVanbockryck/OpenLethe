@@ -5,13 +5,22 @@ public sealed class MdThemePool
 {
     public readonly Dictionary<long, ThemeStatic> pools;
 
-    // ponytail: vanilla static themes only. POST /custom/upload/mirrordungeon-theme-floor
-    // fills Account.CustomTheme, but Rust's per-user overlay (ThemePool::load_from_db_or_default)
-    // would mean threading the account through all eight construction sites, most of them deep
-    // in the rules layer. Add it when a custom theme actually needs to affect map gen.
+    // Vanilla static themes only. POST /custom/upload/mirrordungeon-theme-floor fills
+    // Account.CustomTheme; the overload below lays those packs over the static ones (Rust's
+    // ThemePool::load_from_db_or_default). Every rule that reads the CURRENT floor's pack -
+    // floor generation, starlight detection, the shop and its refresh, fusion, battle drops,
+    // reward cards - takes the account's packs from its handler and must use that overload, or a
+    // custom pack's floor finds no pack and every gift list comes back empty.
     public MdThemePool()
     {
         pools = MdThemeData.AllThemes().ToDictionary(t => t.id, t => t);
+    }
+
+    // The account's uploaded custom packs laid over the static ones (an uploaded id wins).
+    public MdThemePool(IEnumerable<ThemeStatic>? customThemes) : this()
+    {
+        foreach (var t in customThemes ?? Enumerable.Empty<ThemeStatic>())
+            if (t is not null && t.id != 0) pools[t.id] = t;
     }
 
     public static List<long> GetCombinedEgoGiftPool(ThemeStatic t)
@@ -28,18 +37,20 @@ public sealed class MdThemePool
         _ => new[] { .42, .26, .18, .13, .01 },
     };
 
-    public static List<long> EgoGiftWeighted(long floor, long egoId)
+    // weightMultiplier is the shop-keyword boost (shopKeywordRefreshWeightMultiplier, 12.5): an
+    // on-keyword gift weighs that much more than its tier share alone would give it.
+    public static List<long> EgoGiftWeighted(long floor, long egoId, double weightMultiplier = 1.0)
     {
         var tier = (MdEgoData.DetermineEgoTier(egoId) ?? 1) - 1;
         var weights = GetEgoGiftWeights(floor);
         var prob = tier >= 0 && tier < weights.Length ? weights[tier] : 0;
-        var weight = (int)(100 * prob);
+        var weight = (int)(100 * prob * weightMultiplier);
         return Enumerable.Repeat(egoId, weight).ToList();
     }
 
-    public static long? SelectRandomEgoFromPool(List<long> pool, long floor, Func<long, bool> filter)
+    public static long? SelectRandomEgoFromPool(List<long> pool, long floor, Func<long, bool> filter, double weightMultiplier = 1.0)
     {
-        var weighted = pool.Where(filter).SelectMany(id => EgoGiftWeighted(floor, id)).ToList();
+        var weighted = pool.Where(filter).SelectMany(id => EgoGiftWeighted(floor, id, weightMultiplier)).ToList();
         return weighted.Count == 0 ? null : weighted[Random.Shared.Next(weighted.Count)];
     }
 
@@ -59,12 +70,23 @@ public sealed class MdThemePool
         return chosen;
     }
 
+    // The current season's drop pool (the newest dungeonId).
+    private static DungeonEgoGiftDropPool? SeasonDropPool() =>
+        MdThemeData.DropPools().OrderByDescending(p => p.dungeonId).FirstOrDefault();
+
+    // What the pack itself hands out: its egoGiftPool plus its exclusive (specific) gifts, minus
+    // the gifts the season's drop pool excludes - the fusion-only ones (9156, 9160, ...) that
+    // nearly every built-in pack lists but nothing may drop. Empty for an unknown pack.
+    public List<long> ThemeDropPool(long themeId)
+    {
+        if (!pools.TryGetValue(themeId, out var theme)) return new List<long>();
+        var excluded = new HashSet<long>(SeasonDropPool()?.excludeEgoGifts ?? new List<long>());
+        return GetCombinedEgoGiftPool(theme).Where(id => !excluded.Contains(id)).Distinct().ToList();
+    }
+
     public List<long> ShopEgoGiftsPool(long themeId)
     {
-        var dropPools = MdThemeData.DropPools();
-        if (dropPools.Count == 0) return new List<long>();
-        var maxDungeonId = dropPools.Max(p => p.dungeonId);
-        var dropPool = dropPools.FirstOrDefault(p => p.dungeonId == maxDungeonId);
+        var dropPool = SeasonDropPool();
         if (dropPool is null) return new List<long>();
 
         var giftPool = new HashSet<long>(dropPool.egoGifts);
@@ -79,22 +101,38 @@ public sealed class MdThemePool
         foreach (var id in theme.specificEgoGiftPool)
             giftPool.Add(id);
 
+        // The pack's own gifts are always on sale on its floor. For every built-in pack this adds
+        // nothing (its ThemeDropPool already sits inside the season pool plus its specific gifts);
+        // a custom pack's egoGiftPool is how its gifts reach the shop at all.
+        giftPool.UnionWith(ThemeDropPool(themeId));
+
         // Rust removes every fixed-recipe OUTPUT from the shop pool (those are craft-only).
         giftPool.ExceptWith(MdEgoFusion.EgoRecipeMapping.Values);
 
         return giftPool.ToList();
     }
 
-    public List<long> SelectRandomShopEgos(long themeId, int count, long floor, string? keyword)
+    // owned: gifts the run already has. A shop never offers those, so they leave the pool up front
+    // (rather than being filtered out of the result) and every slot still fills with one the run lacks.
+    public List<long> SelectRandomShopEgos(long themeId, int count, long floor, string? keyword,
+        IReadOnlyCollection<long>? owned = null)
     {
         var giftPool = ShopEgoGiftsPool(themeId);
+        if (owned is { Count: > 0 }) giftPool.RemoveAll(owned.Contains);
         var chosen = new List<long>();
+
+        // A real keyword (anything but empty / the literal "None" a plain refresh sends) weights
+        // on-keyword gifts by the retail table's shopKeywordRefreshWeightMultiplier on top of
+        // their tier weight.
+        var keywordBoost = string.IsNullOrEmpty(keyword) || keyword == "None"
+            ? 1.0
+            : MdCommonTable.KeywordRefreshWeightMultiplier;
 
         var matchingCount = (count + 1) / 2; // div_ceil(2)
         for (var i = 0; i < matchingCount; i++)
         {
             var picked = SelectRandomEgoFromPool(giftPool, floor, id =>
-                !chosen.Contains(id) && MdEgoData.GetById(id) is { } g && g.keyword == keyword);
+                !chosen.Contains(id) && MdEgoData.GetById(id) is { } g && g.keyword == keyword, keywordBoost);
             if (picked is { } id2) chosen.Add(id2);
         }
 

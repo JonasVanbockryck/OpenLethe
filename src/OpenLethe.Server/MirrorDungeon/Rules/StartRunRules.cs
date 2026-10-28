@@ -12,10 +12,33 @@ namespace OpenLethe.Server.MirrorDungeon.Rules;
 // See the handler-migration Task 3/4 briefs.
 public static class StartRunRules
 {
-    // The MD7 start buffs that grant personality level-cap offsets, read from static data.
-    // Verbatim port of MirrorDungeonMap.cs LevelOffsets (:30) - both captured runs enable
-    // exactly these two level-granting buffs, so the offset VALUES are the same for both.
-    private static readonly MdLevelOffsets LevelOffsets = MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
+    /// <summary>
+    /// The current season's Mirror Dungeon id. All four entries of the client's mirrordungeon
+    /// static table (typeIndex 0..3) are id 8; the entrance's "DUNGEON NN" reads this value, and
+    /// anything else (0, or last season's 7) misses the static data - the plate shows 00 and the
+    /// banner falls back to the theme-floor table's Korean desc.
+    /// </summary>
+    public const long CurrentDungeonId = 8;
+
+    /// Normalizes a dungeonId from any source to the current season (Enter: every new run is one).
+    public static long NormalizeDungeonIdValue(long dungeonId) =>
+        dungeonId == CurrentDungeonId ? dungeonId : CurrentDungeonId;
+
+    /// ReEnter: moves a stored run of an older season onto the current one. A save with no run
+    /// (dungeonId <= 0, the -1 "no dungeon" marker) is left alone - reporting it as dungeon 8 made
+    /// the client believe a run was still open after a forfeit had already ended it.
+    public static void NormalizeDungeonId(MirrorOriginSaveInfo save)
+    {
+        if (save is not null && save.dungeonId > 0) save.dungeonId = NormalizeDungeonIdValue(save.dungeonId);
+    }
+
+    // The level-cap offsets now come from the buffs THIS run enabled (Run.StartBuffIds, persisted
+    // by EnableStartBuff). The old fixed {106,102} set was a replay-only crutch: both captured
+    // runs enable exactly those two, so the golden stayed green while any other pick did nothing.
+    // Fallback for a run that never stored its picks.
+    private static MdLevelOffsets LevelOffsetsOf(Run run) => run.StartBuffIds.Count > 0
+        ? MdStartBuffs.LevelOffsets(run.StartBuffIds)
+        : MdStartBuffs.LevelOffsets(new long[] { 106, 102 });
 
     // Verbatim port of Handlers/MirrorDungeon.cs BuildFreshSave (:193-246), built directly as a
     // Run instead of the wire MirrorOriginSaveInfo. Fields left unset take Run's own defaults,
@@ -69,19 +92,98 @@ public static class StartRunRules
 
     // The run's mode-enter counter, shared by EnterExtremeMode/EnterInfiniteMode
     // (EnterMD=0, first SelectThemeFloor=1, InfiniteMode=2, ExtremeMode=3).
-    public static void EnterMode(Run run) => run.Idx += 1;
+    // The client drives its mode off this counter's VALUE, not off a delta: EnterMD=0, first
+    // SelectThemeFloor=1, InfiniteMode=2, ExtremeMode=3 (see the EnterInfiniteMode/EnterExtremeMode
+    // handler notes). Forcing the exact value matters at an act boundary: the client calls
+    // EnterInfiniteMode mid-run (floor 5, 10, ...) and a drifting +1 made it treat the run as
+    // finished and settle on the spot.
+    public static void EnterMode(Run run, long mode) => run.Idx = mode;
 
-    // Port of the AcquireMirrorDungeonConstraints handler body (Handlers/MirrorDungeon.cs
-    // :172-177): consume the GetConstraints reward event, append a ConstraintSelection for the
-    // floor about to start.
+    // /api/AcquireMirrorDungeonConstraints: the Adversity pick for the floor about to start
+    // (cn.f + 1 - the client posts while still on the boss node it just cleared). selectIdxList
+    // holds positions in the offered list, not constraint ids. Retail (md-extreme-run seq298,
+    // run-2 seq332/375/404/432, all empty picks) consumes the GetConstraints popup and appends one
+    // scinfos entry; cfs is NOT touched here (the floor-clear writes it).
+    // Each picked id is also granted as an ego gift: 995xxx are hidden CONSTRAINT gifts
+    // (hidden-ego-gift-mirrordungeon), the same way the 992xxx HARDSHIP enemy buffs land in egs
+    // at AcquireRewardEgoGiftsWithEnemyBuf. The client applies an Adversity's effect from the gift
+    // it owns, so a pick recorded only in scinfos did nothing in game.
+    // The client can post the same pick more than once. The popup is gone after the first call,
+    // so a repeat resolves its indices against the floor's list rebuilt from the table, and it
+    // replaces this floor's pick instead of appending an empty one over it.
     public static void AcquireConstraints(Run run, List<long> selectIdxList)
     {
+        var floor = run.Floor.Current.F + 1;
         var ev = run.RewardEvents.FirstOrDefault(e => e.Rt == "GetConstraints");
         if (ev is not null) run.RewardEvents.Remove(ev);
-        // ponytail: non-empty selectIdxList is unexercised by the capture - derive ids from the
-        // consumed GetConstraints pool by index, same shape the client sends selections in.
-        var ids = ev is not null ? selectIdxList.Select(i => ev.Pool[(int)i]).ToList() : new List<long>();
-        run.ConstraintSelections.Add(new ConstraintSelection { Flooridx = run.Floor.Current.F + 1, Ids = ids });
+
+        // Undo an earlier pick for this floor before applying this one.
+        var earlier = run.ConstraintSelections.Where(s => s.Flooridx == floor).SelectMany(s => s.Ids).ToHashSet();
+        run.ConstraintSelections.RemoveAll(s => s.Flooridx == floor);
+        var keptElsewhere = run.ConstraintSelections.SelectMany(s => s.Ids).ToHashSet();
+        run.Gifts.Items.RemoveAll(g => earlier.Contains(g.Id) && !keptElsewhere.Contains(g.Id));
+
+        var pool = ev?.Pool ?? OpenLethe.Server.MdConstraints.ForFloor(floor, keptElsewhere);
+        // Out-of-range indices are dropped instead of throwing, so a bogus index cannot 500 the
+        // endpoint (same defensive stance AcquireBattleReward takes).
+        var ids = selectIdxList
+            .Where(i => i >= 0 && i < pool.Count)
+            .Select(i => pool[(int)i])
+            .Distinct()
+            .ToList();
+        run.ConstraintSelections.Add(new ConstraintSelection { Flooridx = floor, Ids = ids });
+
+        foreach (var id in ids)
+            if (!run.Gifts.Items.Any(g => g.Id == id))
+                run.Gifts.Items.Add(new EgoGift { Id = id });
+    }
+
+    // /api/DetectMirrorDungeonThemeFloorByStarlight: swap the offered pack originThemeFloorId for
+    // detectThemeFloorId in place (Idx and position kept, so the pool stays at four), paid with
+    // detectThemeFloorDefaultPoint (20) starlight out of the run's banked tally (scc, the same one
+    // EnableStartBuff feeds and AcquireExitReward settles into pslp). If origin is not in the pool
+    // (not sent, or already swapped) the pack is appended instead so the button never no-ops.
+    // The swap is never refused for lack of points - a deliberate deviation from vanilla's
+    // affordability check, since the capture never exercises the refused branch.
+    // customThemes: the account's uploaded custom packs (Account.CustomTheme). The client offers
+    // those as detection targets too; without them the lookup below missed every custom pack and
+    // the detect silently did nothing.
+    public static long DetectThemeFloor(Run run, long originThemeFloorId, long detectThemeFloorId,
+        IReadOnlyList<ThemeStatic>? customThemes = null)
+    {
+        if (detectThemeFloorId == 0) return 0;
+        if (run.ThemePools.Any(t => t.Tfid == detectThemeFloorId)) return 0;
+
+        var themePool = new MdThemePool(customThemes); // namespace OpenLethe.Server.MirrorDungeon.Data (using above)
+        if (!themePool.pools.ContainsKey(detectThemeFloorId)) return 0;
+
+        // The floor being selected == the number of floors the run has built so far.
+        var floor = run.ThemeFloors.Count > 0 ? run.ThemeFloors.Count : run.Floor.Current.F + 1;
+        var slot = originThemeFloorId != 0
+            ? run.ThemePools.FirstOrDefault(t => t.Tfid == originThemeFloorId)
+            : null;
+
+        if (slot is not null)
+        {
+            slot.Tfid = detectThemeFloorId;
+            slot.Egs = themePool.SelectRandomEgosFromPool(detectThemeFloorId, 4, floor);
+            slot.Upegs = new List<long> { 9051, 9048, 9001, 9066 };
+        }
+        else
+        {
+            run.ThemePools.Add(new ThemePool
+            {
+                // Same difficulty tier as the pool it joins (MapGenerator.NextFloorPools).
+                Idx = MapGenerator.IsNormalMode(run) ? 0 : floor / 5 + 1,
+                Tfid = detectThemeFloorId,
+                Egs = themePool.SelectRandomEgosFromPool(detectThemeFloorId, 4, floor),
+                Upegs = new List<long> { 9051, 9048, 9001, 9066 },
+            });
+        }
+
+        var paid = Math.Min(20, run.Starlight.Scc);
+        run.Starlight.Scc -= paid;
+        return paid;
     }
 
     // Port of the EnableStartBuffMirrorDungeon handler body (Handlers/MirrorDungeon.cs :99-140).
@@ -91,16 +193,22 @@ public static class StartRunRules
     // beyond returning the unchanged cost, same as the handler it replaces.
     public static long EnableStartBuff(Run run, List<long> buffids, bool enableConvertedCost)
     {
+        // Persist the picks on the run: the later steps (level-cap offsets at AcquireStart, per new
+        // theme and on battle win; ADDITIONAL_START_COST) derive from them instead of the capture's
+        // hardcoded pair. Stored before the point math so every branch keeps them.
+        run.StartBuffIds = buffids.Distinct().OrderBy(id => id).ToList();
+
         var cost = run.Cost;
         if (enableConvertedCost)
         {
             // Capture-verified (the run's only branch): the SelectFormation bonus points
             // (startBufPoint minus the buffs' raw point cost) convert - the raw remainder into
             // starlight (scc) and its *multiplier into the cost budget - and startBufPoint
-            // zeroes out.
+            // zeroes out. An overspend (negative remainder) still comes out of starlight, but
+            // never out of the cost budget: the conversion only ever adds cost.
             var remaining = run.StartBuffPoint - MdStartBuffs.RawSpend(buffids);
             run.Starlight.Scc += remaining;
-            cost += remaining * MdStartBuffs.PointToCostMultiplier;
+            cost += Math.Max(0, remaining) * MdStartBuffs.PointToCostMultiplier;
             run.Cost = cost;
             run.StartBuffPoint = 0;
         }
@@ -143,16 +251,27 @@ public static class StartRunRules
         run.Starlight.Pfb = OpenLethe.Server.MdEgoData.DetectThemeFloorDefaultPoint;
     }
 
-    // Port of the PurchaseFormationMirrorDungeon handler body (Handlers/MirrorDungeonShop.cs
-    // :453-466): a flat 100-cost swap of matched units' personality/ego ids, unmatched units left
-    // untouched.
-    public static void PurchaseFormation(Run run, List<Formation> formation)
+    // PurchaseFormationMirrorDungeon: a swap of matched units' personality/ego ids (unmatched
+    // units left untouched) for shop.changeFormation.price (100) per use. How many uses are
+    // allowed is table-driven too: 3 on the pre-run formation screen
+    // (shop.changeFormation.changeableCount) and shopInfoByType.changeFormationCount (1) inside a
+    // shop visit. Uses are counted in the shop's `cf`, which MapNodeRules clears with the rest of
+    // the shop state on every shop entry. Returns false when the allowance is used up - the
+    // caller then answers with the unchanged save.
+    public static bool PurchaseFormation(Run run, List<Formation> formation)
     {
-        const long usedCost = 100;
+        var superShop = SharedRules.IsSuperShop(run);
+        var cap = superShop is { } super
+            ? MdShopTable.ShopChangeFormationCount(super)
+            : MdShopTable.ChangeFormationCount;
+        if (run.Shop.Cf >= cap) return false;
+
+        var usedCost = Effects.ApplyRaisedMarketPrice(run, MdShopTable.ChangeFormationPrice);
         var replaceMap = new Dictionary<long, Formation>();
         foreach (var f in formation) replaceMap[f.pervPersonalityId] = f; // last wins, matches Rust HashMap collect
 
         run.Cost -= usedCost;
+        run.Shop.Cf += 1;
         foreach (var unit in run.Party)
         {
             if (!replaceMap.TryGetValue(unit.PersonalityId, out var replacement)) continue;
@@ -162,6 +281,8 @@ public static class StartRunRules
             foreach (var ego in unit.EgoSkills)
                 if (egoMap.TryGetValue(ego.Id, out var newId)) ego.Id = newId;
         }
+
+        return true;
     }
 
     // Port of the AcquireStartEgoGiftsAndCreateThemePoolMirrorDungeon handler body
@@ -176,7 +297,12 @@ public static class StartRunRules
         // ADDITIONAL_START_COST from the enabled start buffs lands on the run's `cost` budget
         // here - the buffs aren't persisted, but the count of extra ego-gift selections reveals
         // them (buff103: +1 select => +400).
-        run.Cost += MdStartBuffs.AdditionalStartCost(selectedEgoGiftIds.Count - 1);
+        // The enabled buffs' own ADDITIONAL_START_COST (buff 103's +400). The persisted picks are
+        // authoritative; the extra-select count is only the replay fallback for a run that never
+        // stored them (both captured runs' golden depends on that reconstruction).
+        run.Cost += run.StartBuffIds.Count > 0
+            ? MdStartBuffs.StartCostOf(run.StartBuffIds)
+            : MdStartBuffs.AdditionalStartCost(selectedEgoGiftIds.Count - 1);
         run.ThemePools = OpenLethe.Server.MdMapGen.PickThemes(SharedRules.CurrentFloor(run))
             .Select(t => new ThemePool { Idx = t.idx, Tfid = t.tfid, Egs = t.egs, Upegs = t.upegs })
             .ToList();
@@ -188,7 +314,7 @@ public static class StartRunRules
         run.SepsCreated += 1;
         run.Starlight.Ieedt = detectToggle ? 1 : 0;
         // Floor-1 personality level cap = the enabled start buffs' ENTER_1ST_FLOOR offset.
-        run.LevelOffsets.Sbmlos = LevelOffsets.EnterFirstFloor;
+        run.LevelOffsets.Sbmlos = LevelOffsetsOf(run).EnterFirstFloor;
         var startLevelCap = run.LevelOffsets.Sbmlos + run.LevelOffsets.Egmlos;
         foreach (var u in run.Party) u.Mlos = startLevelCap;
     }

@@ -16,7 +16,9 @@ public static class FusionRules
     // Verbatim port of CombineEgoGiftMirrorDungeon (Handlers/MirrorDungeonRewards.cs :35-74).
     // `isOrigin` mirrors the request DTO 1:1 - unused here, same as the handler it replaces
     // (Rust never reads it either).
-    public static EgoGift Combine(Run run, System.Collections.Generic.List<long> materialEgoGiftIds, string keyword, long isOrigin)
+    // customThemes: the account's uploaded packs, so fusing on a custom pack's floor draws from it.
+    public static EgoGift Combine(Run run, System.Collections.Generic.List<long> materialEgoGiftIds, string keyword, long isOrigin,
+        IReadOnlyList<ThemeStatic>? customThemes = null)
     {
         // Remove the component egos - first match each, misses are ignored.
         foreach (var materialId in materialEgoGiftIds)
@@ -37,7 +39,7 @@ public static class FusionRules
         }
         else
         {
-            var themePool = new MdThemePool();
+            var themePool = new MdThemePool(customThemes);
             var candidates = themePool
                 .ShopEgoGiftsPool(SharedRules.ThemePackId(run))
                 .Where(g => OpenLethe.Server.MdEgoData.DetermineEgoTier(g) == fused.Tier && !owned.Contains(g))
@@ -67,7 +69,12 @@ public static class FusionRules
     // to Results.StatusCode(500). Charged tells the caller whether to echo the cumulative
     // run.UsedCost or the handler's old "usedCost stays 0" no-charge case (egoInfo has no
     // upgradeDataList - a valid, chargeless success).
-    public static (EgoGift? Gift, bool Charged) UpgradeGift(Run run, long egoGiftId)
+    //
+    // `to` is the request's target level. Client 1.117 sends a double upgrade as ONE request
+    // (from 0, to 2); the captured 1.110 client only ever sent single steps. Each level on the
+    // way costs its own TierUpgradeCost entry, as the captured single steps do (9005: 0->1 60,
+    // 1->2 120). A `to` at or below the current level means one step, as before.
+    public static (EgoGift? Gift, bool Charged) UpgradeGift(Run run, long egoGiftId, long to = 0)
     {
         var egoInfo = OpenLethe.Server.MdEgoData.GetById(egoGiftId);
         if (egoInfo is null) return (null, false);
@@ -76,13 +83,17 @@ public static class FusionRules
 
         if (egoInfo.upgradeDataList is not null)
         {
-            var desiredUl = ego.Ul + 1;
-            if (desiredUl < 0 || desiredUl >= egoInfo.upgradeDataList.Count) return (null, false);
-            var price = Effects.ApplyShopDiscount(run, ShopDiscountUpgradeGift,
-                OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, desiredUl));
-            run.Cost -= price;
-            run.UsedCost += price; // cumulative shop-spend this floor.
-            ego.Ul = desiredUl;
+            var targetUl = to > ego.Ul ? to : ego.Ul + 1;
+            if (targetUl < 0 || targetUl >= egoInfo.upgradeDataList.Count) return (null, false);
+            for (var ul = ego.Ul + 1; ul <= targetUl; ul++)
+            {
+                // 9800 "Wealth" fixes enhancement cost to 1 as well (see ShopRules.WealthFix).
+                var price = ShopRules.WealthFix(run, Effects.ApplyShopDiscount(run, ShopDiscountUpgradeGift,
+                    Effects.ApplyRaisedMarketPrice(run, OpenLethe.Server.MdEgoData.TierUpgradeCost(egoGiftId, ul))));
+                run.Cost -= price;
+                run.UsedCost += price; // cumulative shop-spend this floor.
+            }
+            ego.Ul = targetUl;
             return (ego, true);
         }
 

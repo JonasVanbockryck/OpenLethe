@@ -20,10 +20,10 @@ public class MdRulesStartRunTests
     }
 
     [Fact]
-    public void EnterMode_IncrementsIdx()
+    public void EnterMode_SetsIdxToMode()
     {
         var run = new Run { Idx = 2 };
-        StartRunRules.EnterMode(run);
+        StartRunRules.EnterMode(run, 3);
         Assert.Equal(3, run.Idx);
     }
 
@@ -58,6 +58,57 @@ public class MdRulesStartRunTests
     }
 
     [Fact]
+    public void AcquireConstraints_WithSelection_GrantsHiddenGiftsAndLeavesCfsAlone()
+    {
+        var run = new Run();
+        run.Floor.Current.F = 9;
+        run.ConstraintScores.Add(new ConstraintScore { Floor = 9, Difficulty = 2 });
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetConstraints", Pool = OpenLethe.Server.MdConstraints.ForFloor(10, new List<long>()) });
+
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1, 2, 3, 4, 5 });
+
+        var all = new long[] { 995011, 995012, 995013, 995014, 995015, 995036 };
+        Assert.Equal(all, Assert.Single(run.ConstraintSelections).Ids);
+        Assert.Equal(all, run.Gifts.Items.Select(g => g.Id));
+        // Retail never writes cfs at pick time - the floor-clear does.
+        Assert.Equal(9, Assert.Single(run.ConstraintScores).Floor);
+    }
+
+    [Fact]
+    public void AcquireConstraints_RepeatedCall_KeepsThePickInsteadOfWipingIt()
+    {
+        var run = new Run();
+        run.Floor.Current.F = 9;
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetConstraints", Pool = OpenLethe.Server.MdConstraints.ForFloor(10, new List<long>()) });
+
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1, 2, 3, 4, 5 });
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1, 2, 3, 4, 5 });
+
+        var sel = Assert.Single(run.ConstraintSelections);
+        Assert.Equal(10, sel.Flooridx);
+        Assert.Equal(6, sel.Ids.Count);
+        Assert.Equal(6, run.Gifts.Items.Count);
+    }
+
+    [Fact]
+    public void AcquireConstraints_RepeatedCall_ReplacesThisFloorOnly()
+    {
+        var run = new Run();
+        run.ConstraintSelections.Add(new ConstraintSelection { Flooridx = 10, Ids = new() { 995011 } });
+        run.Gifts.Items.Add(new EgoGift { Id = 995011 });
+        run.Floor.Current.F = 10;
+        // Floor 11 with 995015 not owned: the replacement rule shows 995015 in 995016's place.
+        run.RewardEvents.Add(new RewardEvent { Rt = "GetConstraints", Pool = OpenLethe.Server.MdConstraints.ForFloor(11, new List<long> { 995011 }) });
+
+        StartRunRules.AcquireConstraints(run, new List<long> { 0, 1 });
+        StartRunRules.AcquireConstraints(run, new List<long> { 1 });
+
+        Assert.Equal(new long[] { 995011, 995017 }, run.Gifts.Items.Select(g => g.Id));
+        Assert.Equal(new long[] { 995017 }, run.ConstraintSelections.Single(s => s.Flooridx == 11).Ids);
+        Assert.Equal(new long[] { 995011 }, run.ConstraintSelections.Single(s => s.Flooridx == 10).Ids);
+    }
+
+    [Fact]
     public void AcquireConstraints_NoEventPresent_AppendsEmptySelectionWithoutThrowing()
     {
         var run = new Run();
@@ -80,6 +131,21 @@ public class MdRulesStartRunTests
         Assert.Equal(300, cost);
         Assert.Equal(300, run.Cost);
         Assert.Equal(20, run.Starlight.Scc);
+        Assert.Equal(0, run.StartBuffPoint);
+    }
+
+    [Fact]
+    public void EnableStartBuff_ConvertedCost_OverspendTakesStarlightButNeverCost()
+    {
+        // Spending past startBufPoint leaves a negative remainder: it comes out of starlight,
+        // but the conversion only ever adds to the cost budget.
+        var run = new Run { Cost = 200, StartBuffPoint = 0 };
+
+        var cost = StartRunRules.EnableStartBuff(run, new List<long> { 106, 102 }, enableConvertedCost: true);
+
+        Assert.Equal(200, cost);
+        Assert.Equal(200, run.Cost);
+        Assert.True(run.Starlight.Scc < 0);
         Assert.Equal(0, run.StartBuffPoint);
     }
 
@@ -183,5 +249,35 @@ public class MdRulesStartRunTests
         Assert.Equal(3, run.LevelOffsets.Sbmlos); // buffs [106,102] ENTER_1ST_FLOOR - capture-verified 3
         Assert.All(run.Party, u => Assert.Equal(run.LevelOffsets.Sbmlos + run.LevelOffsets.Egmlos, u.Mlos));
         Assert.Equal(8, run.ThemePools.Count); // RNG-masked contents; only the count is guaranteed
+    }
+
+    [Fact]
+    public void DetectThemeFloor_CustomPack_SwapsItIntoThePool()
+    {
+        // A pack the account uploaded (/custom/upload/mirrordungeon-theme-floor) - not in the static
+        // tables. Detecting it used to be a silent no-op.
+        var custom = new OpenLethe.Server.ThemeStatic { id = 900001, egoGiftPool = new() { 9001, 9002, 9003, 9004 } };
+        var run = new Run();
+        run.Starlight.Scc = 50;
+        run.ThemePools.Add(new ThemePool { Idx = 1, Tfid = 1001 });
+
+        StartRunRules.DetectThemeFloor(run, 1001, 900001, new List<OpenLethe.Server.ThemeStatic> { custom });
+
+        var slot = Assert.Single(run.ThemePools);
+        Assert.Equal(900001, slot.Tfid);
+        Assert.All(slot.Egs, id => Assert.Contains(id, custom.egoGiftPool));
+        Assert.Equal(30, run.Starlight.Scc); // paid detectThemeFloorDefaultPoint (20)
+    }
+
+    [Fact]
+    public void NormalizeDungeonId_LeavesTheNoRunMarkerAlone()
+    {
+        var none = new MirrorOriginSaveInfo { dungeonId = -1 };
+        StartRunRules.NormalizeDungeonId(none);
+        Assert.Equal(-1, none.dungeonId);
+
+        var old = new MirrorOriginSaveInfo { dungeonId = 7 };
+        StartRunRules.NormalizeDungeonId(old);
+        Assert.Equal(8, old.dungeonId);
     }
 }
