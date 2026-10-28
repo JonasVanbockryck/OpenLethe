@@ -40,8 +40,9 @@ builder.Services.AddRequestTimeouts(o => o.DefaultPolicy = new RequestTimeoutPol
 var connString = builder.Configuration.GetConnectionString("Postgres");
 
 // Npgsql's default pool ceiling is 100 connections. Every one is a Postgres backend
-// holding its own memory, and on the 512MB DB VM a login burst that opens dozens of
-// them is what got Postgres OOM-killed. Past the cap, requests queue for a connection
+// holding its own memory, and on the old 512MB DB VM a login burst that opened dozens of
+// them is what got Postgres OOM-killed. 60 is three times the busiest load seen in the
+// logs (21 active) and fits the 1GB VM. Past the cap, requests queue for a connection
 // instead. An explicit "Maximum Pool Size" in the connection string still wins.
 if (!string.IsNullOrWhiteSpace(connString))
 {
@@ -49,7 +50,7 @@ if (!string.IsNullOrWhiteSpace(connString))
     if (!connString.Contains("Pool Size", StringComparison.OrdinalIgnoreCase)
         && !connString.Contains("MaxPoolSize", StringComparison.OrdinalIgnoreCase))
     {
-        csb.MaxPoolSize = builder.Configuration.GetValue("Postgres:MaxPoolSize", 20);
+        csb.MaxPoolSize = builder.Configuration.GetValue("Postgres:MaxPoolSize", 60);
     }
     connString = csb.ConnectionString;
 }
