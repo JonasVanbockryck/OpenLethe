@@ -7,6 +7,12 @@ public sealed class AccountStore(AppDbContext ctx)
     public Task<Account?> FindByUsernameAsync(string username, CancellationToken ct = default) =>
         ctx.Accounts.SingleOrDefaultAsync(a => a.Username == username, ct);
 
+    /// Just the IngameId, for callers that only need to know the account exists and who
+    /// it is. Loading the entity instead would detoast all fifteen jsonb documents.
+    public Task<int?> FindIngameIdAsync(string username, CancellationToken ct = default) =>
+        ctx.Accounts.Where(a => a.Username == username)
+            .Select(a => (int?)a.IngameId).SingleOrDefaultAsync(ct);
+
     public Task<Account?> FindByDiscordIdAsync(string discordId, CancellationToken ct = default) =>
         ctx.Accounts.SingleOrDefaultAsync(a => a.DiscordId == discordId, ct);
 

@@ -11,7 +11,7 @@ public static class StageAndStoryEndpoints
         var packetId = global::PacketRouting.ResolvePacketId<global::ResPacket_ExitStageBattle>();
         app.MapPost("/api/ExitStageBattle", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Chapter);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_ExitStageBattle>(ctx);
             if (p is null) return Results.BadRequest();
@@ -41,7 +41,7 @@ public static class StageAndStoryEndpoints
         var packetId = global::PacketRouting.ResolvePacketId<global::ResPacket_ExitStory>();
         app.MapPost("/api/ExitStory", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Chapter);
             if (account is null) return Results.Unauthorized();
             var p = await HandlerContext.ReadParamsAsync<global::ReqPacket_ExitStory>(ctx);
             if (p is null) return Results.BadRequest();

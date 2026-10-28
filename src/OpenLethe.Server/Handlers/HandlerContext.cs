@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text.Json;
@@ -6,8 +7,12 @@ using OpenLethe.Data;
 
 namespace OpenLethe.Server.Handlers;
 
-/// The one jsonb document a scoped handler reads and writes. See ResolveAsync(ctx, column).
-internal enum SaveColumn { Md, StoryMd, Railway, Story, Chapter, Chapter10Rpg }
+/// The jsonb documents a scoped handler reads and writes. See ResolveAsync(ctx, columns).
+internal enum SaveColumn
+{
+    Md, StoryMd, Railway, Story, Chapter, Chapter10Rpg,
+    BossRaid, Formations, Announcers, UserInfo, Egos, Personalities, CustomIdentities, CustomTheme,
+}
 
 /// Shared boilerplate for stateful handlers: resolve the authed account, read the
 /// request parameters, and persist. Mirrors the pattern in LoadUserDataAll.
@@ -18,20 +23,43 @@ internal static class HandlerContext
 
     private const string ScopeItemKey = "account.scope";
 
-    /// Narrow SELECTs for the packet-storm routes. `accounts` carries fifteen jsonb
-    /// documents; an MD or Railway handler reads exactly one of them, so the unscoped
-    /// ResolveAsync below makes Postgres detoast and ship the other fourteen on every
-    /// single packet of a run. Each entry names its column twice - once for the
-    /// projection EF turns into `SELECT "Id", "<col>"`, once for SaveAsync's guard.
-    private static readonly Dictionary<SaveColumn, (string Name, Expression<Func<Account, Account>> Project)> Scopes = new()
+    /// Narrow SELECTs. `accounts` carries fifteen jsonb documents; most handlers read one
+    /// or two, so the unscoped ResolveAsync below makes Postgres detoast and ship the rest
+    /// on every packet - and a burst of those detoasts is what runs the DB VM out of memory.
+    private static readonly Dictionary<SaveColumn, string> ColumnNames = new()
     {
-        [SaveColumn.Md] = (nameof(Account.MdSaveInfo), a => new Account { Id = a.Id, MdSaveInfo = a.MdSaveInfo }),
-        [SaveColumn.StoryMd] = (nameof(Account.StoryMdSaveInfo), a => new Account { Id = a.Id, StoryMdSaveInfo = a.StoryMdSaveInfo }),
-        [SaveColumn.Railway] = (nameof(Account.RailwaySaveInfo), a => new Account { Id = a.Id, RailwaySaveInfo = a.RailwaySaveInfo }),
-        [SaveColumn.Story] = (nameof(Account.StorySaveInfo), a => new Account { Id = a.Id, StorySaveInfo = a.StorySaveInfo }),
-        [SaveColumn.Chapter] = (nameof(Account.ChapterState), a => new Account { Id = a.Id, ChapterState = a.ChapterState }),
-        [SaveColumn.Chapter10Rpg] = (nameof(Account.Chapter10RpgSaveInfo), a => new Account { Id = a.Id, Chapter10RpgSaveInfo = a.Chapter10RpgSaveInfo }),
+        [SaveColumn.Md] = nameof(Account.MdSaveInfo),
+        [SaveColumn.StoryMd] = nameof(Account.StoryMdSaveInfo),
+        [SaveColumn.Railway] = nameof(Account.RailwaySaveInfo),
+        [SaveColumn.Story] = nameof(Account.StorySaveInfo),
+        [SaveColumn.Chapter] = nameof(Account.ChapterState),
+        [SaveColumn.Chapter10Rpg] = nameof(Account.Chapter10RpgSaveInfo),
+        [SaveColumn.BossRaid] = nameof(Account.BossRaidSaveInfo),
+        [SaveColumn.Formations] = nameof(Account.Formations),
+        [SaveColumn.Announcers] = nameof(Account.Announcers),
+        [SaveColumn.UserInfo] = nameof(Account.UserInfo),
+        [SaveColumn.Egos] = nameof(Account.Egos),
+        [SaveColumn.Personalities] = nameof(Account.Personalities),
+        [SaveColumn.CustomIdentities] = nameof(Account.CustomIdentities),
+        [SaveColumn.CustomTheme] = nameof(Account.CustomTheme),
     };
+
+    /// `a => new Account { Id = a.Id, <col> = a.<col>, ... }`, which EF turns into
+    /// `SELECT "Id", "<col>", ...`. Built once per distinct column set.
+    private static readonly ConcurrentDictionary<string, Expression<Func<Account, Account>>> Projections = new();
+
+    private static Expression<Func<Account, Account>> Projection(string[] names) =>
+        Projections.GetOrAdd(string.Join(',', names), _ =>
+        {
+            var a = Expression.Parameter(typeof(Account), "a");
+            var binds = names.Prepend(nameof(Account.Id)).Select(n =>
+            {
+                var p = typeof(Account).GetProperty(n)!;
+                return (MemberBinding)Expression.Bind(p, Expression.Property(a, p));
+            });
+            return Expression.Lambda<Func<Account, Account>>(
+                Expression.MemberInit(Expression.New(typeof(Account)), binds), a);
+        });
 
     /// Account's writable string columns. See the blanking loop in ResolveAsync.
     private static readonly PropertyInfo[] StringColumns = typeof(Account)
@@ -44,25 +72,32 @@ internal static class HandlerContext
         return await ctx.RequestServices.GetRequiredService<AccountStore>().FindByUsernameAsync(sub);
     }
 
-    /// Same, but reads ONLY Id + the named column. Every other property on the returned
+    /// True when the middleware-attached subject has an account. For routes that only
+    /// authenticate and never read the row.
+    public static Task<bool> ExistsAsync(HttpContext ctx) =>
+        ctx.Items["sub"] is string sub
+            ? ctx.RequestServices.GetRequiredService<AppDbContext>().Accounts.AnyAsync(a => a.Username == sub)
+            : Task.FromResult(false);
+
+    /// Same, but reads ONLY Id + the named columns. Every other property on the returned
     /// Account reads as null, NOT as the stored value, and SaveAsync throws on a write to
-    /// one - so a handler needing a second column uses the unscoped overload above
-    /// (SelectFormationMirrorDungeon does; it reads CustomIdentities and Personalities).
+    /// one - so name every column the handler (and the helpers it calls) touches.
+    /// AccountDefaults.DerivePersonalities reads Personalities and CustomIdentities.
     ///
     /// Resolve ONCE per request. The stub this tracks stands in for the whole row, so a
     /// second resolve in the same request - scoped or via AccountStore - gets the stub
     /// back from EF's identity resolution rather than a fresh row, and every unloaded
     /// column reads as null.
-    public static async Task<Account?> ResolveAsync(HttpContext ctx, SaveColumn column)
+    public static async Task<Account?> ResolveAsync(HttpContext ctx, params SaveColumn[] columns)
     {
         if (ctx.Items["sub"] is not string sub) return null;
 
-        var (name, project) = Scopes[column];
+        var names = columns.Select(c => ColumnNames[c]).Distinct().ToArray();
         var db = ctx.RequestServices.GetRequiredService<AppDbContext>();
         var account = await db.Accounts
             .AsNoTracking()
             .Where(a => a.Username == sub)
-            .Select(project)
+            .Select(Projection(names))
             .SingleOrDefaultAsync();
         if (account is null) return null;
 
@@ -72,13 +107,13 @@ internal static class HandlerContext
         // codebase's idiom for clearing a save - would leave IsModified false, and the
         // guard in SaveAsync would wave through a write that EF then silently drops.
         // Against a null snapshot any assignment at all registers.
-        foreach (var p in StringColumns) if (p.Name != name) p.SetValue(account, null);
+        foreach (var p in StringColumns) if (!names.Contains(p.Name)) p.SetValue(account, null);
 
-        // Attach so change tracking still drives the write: the scoped column carries a
-        // real original value, so EF marks it modified iff the handler actually changed
-        // it and the UPDATE names that column alone.
+        // Attach so change tracking still drives the write: the scoped columns carry
+        // real original values, so EF marks one modified iff the handler actually changed
+        // it and the UPDATE names only those.
         db.Attach(account);
-        ctx.Items[ScopeItemKey] = name;
+        ctx.Items[ScopeItemKey] = names;
         return account;
     }
 
@@ -117,17 +152,17 @@ internal static class HandlerContext
     {
         var db = ctx.RequestServices.GetRequiredService<AppDbContext>();
 
-        // A scoped account never loaded the other fourteen columns, so writing one would
-        // persist nothing while looking like it worked. Fail loudly instead. This catches
-        // writes only - a scoped handler READING an unloaded column just sees null, which
-        // no guard here can see. (Entries<T>() runs DetectChanges for us.)
-        if (ctx.Items[ScopeItemKey] is string scoped
+        // A scoped account never loaded the other columns, so writing one would persist
+        // nothing while looking like it worked. Fail loudly instead. This catches writes
+        // only - a scoped handler READING an unloaded column just sees null, which no
+        // guard here can see. (Entries<T>() runs DetectChanges for us.)
+        if (ctx.Items[ScopeItemKey] is string[] scoped
             && db.ChangeTracker.Entries<Account>().SelectMany(e => e.Properties)
-                .FirstOrDefault(p => p.IsModified && p.Metadata.Name != scoped)?.Metadata.Name is string stray)
+                .FirstOrDefault(p => p.IsModified && !scoped.Contains(p.Metadata.Name))?.Metadata.Name is string stray)
         {
             throw new InvalidOperationException(
-                $"Handler wrote Account.{stray} but resolved the account scoped to {scoped}; that " +
-                "column was never loaded, so the write would be dropped - use ResolveAsync(ctx).");
+                $"Handler wrote Account.{stray} but resolved the account scoped to {string.Join(", ", scoped)}; " +
+                "that column was never loaded, so the write would be dropped - add it to the scope.");
         }
 
         return db.SaveChangesAsync();

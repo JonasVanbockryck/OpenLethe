@@ -29,7 +29,7 @@ public static class SignInAsSteamEndpoint
             // account, and hand back a token WE signed so later /api/ calls (which
             // the middleware verifies for real) keep working. Off by default.
             string sub;
-            OpenLethe.Data.Account? account;
+            int ingameId;
             string authCode;
             if (cfg.GetValue("Auth:DevAcceptAnyToken", false))
             {
@@ -40,9 +40,10 @@ public static class SignInAsSteamEndpoint
                 // minted by our own OAuth carries the snowflake as its subject,
                 // which is exactly that row's Username. Without the lookup first,
                 // every account that has logged in through Discord gets a 400.
-                account = await store.FindByUsernameAsync(sub, ct)
+                var account = await store.FindByUsernameAsync(sub, ct)
                     ?? await store.GetOrCreateByUsernameAsync(sub, ct);
                 if (account is null) return Results.BadRequest();
+                ingameId = account.IngameId;
                 authCode = jwt.Mint(sub);
             }
             else
@@ -54,8 +55,10 @@ public static class SignInAsSteamEndpoint
                     return Results.BadRequest();
                 }
                 sub = claims.Sub;
-                account = await store.FindByUsernameAsync(sub, ct);
-                if (account is null) return Results.BadRequest();
+                // Every client reconnects through here at once after an outage, so read
+                // the one int this needs rather than the whole row.
+                if (await store.FindIngameIdAsync(sub, ct) is not int id) return Results.BadRequest();
+                ingameId = id;
                 authCode = token;
             }
 
@@ -63,15 +66,15 @@ public static class SignInAsSteamEndpoint
             {
                 userAuth = new global::UserAuthFormat
                 {
-                    uid = account.IngameId,
-                    public_id = account.IngameId,
+                    uid = ingameId,
+                    public_id = ingameId,
                     db_id = 0,
                     auth_code = authCode,
                     last_login_date = "2025-03-31T15:10:00.000Z",
                     last_update_date = "2025-03-31T15:10:00.000Z",
                     data_version = 16,
                 },
-                accountInfo = new global::AccountInfoFormat { uid = (ulong)account.IngameId },
+                accountInfo = new global::AccountInfoFormat { uid = (ulong)ingameId },
                 walletCurrency = "USD",
             };
 

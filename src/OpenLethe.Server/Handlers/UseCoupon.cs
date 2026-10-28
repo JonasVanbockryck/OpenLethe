@@ -9,7 +9,7 @@ public static class UseCouponEndpoints
         var packetId = global::PacketRouting.ResolvePacketId<global::ResPacket_UseCoupon>();
         app.MapPost("/api/UseCoupon", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.UserInfo, SaveColumn.Personalities, SaveColumn.CustomIdentities);
             if (account is null) return Results.Unauthorized();
 
             var userInfo = AccountFields.Get<UserInfo>(account.UserInfo) ?? AccountDefaults.DefaultUserInfo();

@@ -12,12 +12,12 @@ public static class CustomUploadEndpoints
 {
     public static IEndpointRouteBuilder MapCustomUpload(this IEndpointRouteBuilder app)
     {
-        Upload<ThemeStatic>(app, "/custom/upload/mirrordungeon-theme-floor",
+        Upload<ThemeStatic>(app, "/custom/upload/mirrordungeon-theme-floor", SaveColumn.CustomTheme,
             (a, v) => a.CustomTheme = v, "Successfully updated theme floors");
 
         // Rust answers "Successfully updated theme floors" from this handler too
         // (copy-paste in custom/mod.rs) - kept verbatim.
-        Upload<CustomIdentity>(app, "/custom/upload/personality",
+        Upload<CustomIdentity>(app, "/custom/upload/personality", SaveColumn.CustomIdentities,
             (a, v) => a.CustomIdentities = v, "Successfully updated theme floors");
 
         // The client mod posts about a dozen more kinds at startup (skin, lobby-bgm,
@@ -29,7 +29,7 @@ public static class CustomUploadEndpoints
         // Literal routes above win over this parameterized one.
         app.MapPost("/custom/upload/{kind}", async (HttpContext ctx, string kind) =>
         {
-            if (await HandlerContext.ResolveAsync(ctx) is null) return Results.Unauthorized();
+            if (!await HandlerContext.ExistsAsync(ctx)) return Results.Unauthorized();
             return Results.Json(new { message = $"Successfully updated {kind}" }, global::PacketJson.Options);
         });
 
@@ -39,10 +39,10 @@ public static class CustomUploadEndpoints
     /// parameters is a list OF lists (one inner list per uploaded file); Rust
     /// concatenates them into one flat column value, replacing what was there.
     private static void Upload<T>(
-        IEndpointRouteBuilder app, string path, Action<Account, string> write, string message) =>
+        IEndpointRouteBuilder app, string path, SaveColumn column, Action<Account, string> write, string message) =>
         app.MapPost(path, async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, column);
             if (account is null) return Results.Unauthorized();
 
             var p = await HandlerContext.ReadParamsAsync<ValList<ValList<T>>>(ctx);

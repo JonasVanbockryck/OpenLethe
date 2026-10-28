@@ -16,15 +16,14 @@ public static class DungeonSaveInfoEndpoints
         var rentalHistoryId = global::PacketRouting.ResolvePacketId<global::ResPacket_GetMirrorDungeonRentalFormationHistory>();
         app.MapPost("/api/GetMirrorDungeonRentalFormationHistory", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
-            if (account is null) return Results.Unauthorized();
+            if (!await HandlerContext.ExistsAsync(ctx)) return Results.Unauthorized();
             var payload = new global::ResPacket_GetMirrorDungeonRentalFormationHistory();
             FillSentinels(payload, 0);
             return Results.Json(global::ResponsePacket<global::ResPacket_GetMirrorDungeonRentalFormationHistory>.Ok(payload, rentalHistoryId), global::PacketJson.Options);
         });
         app.MapPost("/api/GetDungeonSaveInfoAll", async (HttpContext ctx) =>
         {
-            var account = await HandlerContext.ResolveAsync(ctx);
+            var account = await HandlerContext.ResolveAsync(ctx, SaveColumn.Md, SaveColumn.StoryMd, SaveColumn.Story);
             if (account is null) return Results.Unauthorized();
 
             // ponytail: Rust used `!x.dungeonMap.ns.is_empty()` to detect a populated save;
