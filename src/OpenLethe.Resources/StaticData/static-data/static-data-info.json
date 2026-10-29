@@ -513,9 +513,9 @@
         "gacha-9",
         "gacha-10",
         "gacha-11",
-        "gacha-300",
-        "gacha-301",
-        "gacha-302"
+        "gacha-303",
+        "gacha-304",
+        "gacha-305"
       ]
     },
     {
@@ -547,12 +547,14 @@
         "item-1200-season-optionalpackage-a1c7",
         "item-piece-a1c7",
         "item-9000-eventConsumable",
+
         "item-100-gacha-a1c8",
         "item-1100-season-randompackage-a1c8",
         "item-1200-season-optionalpackage-a1c8",
         "item-piece-a1c8",
         "item-piece-growth-s6-a1c8",
         "item-30000-mirrordungeon",
+
         "item-100-gacha-a1c9",
         "item-1100-season-randompackage-a1c9",
         "item-1200-season-optionalpackage-a1c9",
@@ -562,8 +564,11 @@
         "item-700-optionalPersonality-limbus3rdAnniversary",
         "item-700-optionalAnnouncer",
         "item-9900-skin-currency",
+        
         "item-9000-eventConsumable-x1p1c1",
+
         "item-200-ticket-egoFifth",
+
         "item-1100-season-randompackage-a1c10",
         "item-1200-season-optionalpackage-a1c10",
         "item-piece-a1c10",
@@ -1029,6 +1034,7 @@
         "stagenodereward91-14",
         "stagenodereward91-15",
         "stagenodereward91-16",
+
         "stagenodereward-a1c8p1",
         "stagenodereward-a1c8p2",
         "stagenodereward-a1c8p3",
@@ -1372,8 +1378,8 @@
       ]
     },
     {
-      "dataClass": "mirrordungeon-battle-reward-case-group",
-      "fileList": [
+      "dataClass":"mirrordungeon-battle-reward-case-group",
+      "fileList":[
         "mirrordungeon-battle-reward-case-group-A",
         "mirrordungeon-battle-reward-case-group-B",
         "mirrordungeon-battle-reward-case-group-C",
@@ -1674,12 +1680,6 @@
       ]
     },
     {
-      "dataClass": "dungeon-common",
-      "fileList": [
-        "dungeon-common-data"
-      ]
-    },
-    {
       "dataClass": "attendance-rewards",
       "fileList": [
         "attendance-rewards"
@@ -1814,7 +1814,9 @@
       "fileList": [
         "returninguser-event",
         "newuser-event",
-        "boss-raid-permanent-shop-event"
+        "boss-raid-permanent-shop-event",
+        "mirrordungeon8-mission-event",
+        "mirrordungeon8-additional-reward-event"
       ]
     },
     {
@@ -1886,7 +1888,9 @@
     },
     {
       "dataClass": "event-mission",
-      "fileList": []
+      "fileList": [
+        "event-mirrordungeon8-mission"
+      ]
     },
     {
       "dataClass": "mission",
@@ -1894,7 +1898,10 @@
         "boss-raid-01-mission",
         "boss-raid-02-mission",
         "boss-raid-03-mission",
-        "boss-raid-04-mission"
+        "boss-raid-04-mission",
+        "mirrordungeon8-mission-clear",
+        "mirrordungeon8-mission-collection",
+        "mirrordungeon8-mission-extreme"
       ]
     },
     {
@@ -1903,7 +1910,10 @@
         "boss-raid-01-mission-condition",
         "boss-raid-02-mission-condition",
         "boss-raid-03-mission-condition",
-        "boss-raid-04-mission-condition"
+        "boss-raid-04-mission-condition",
+        "mirrordungeon8-mission-condition-clear",
+        "mirrordungeon8-mission-condition-collection",
+        "mirrordungeon8-mission-condition-extreme"
       ]
     },
     {
@@ -2210,6 +2220,12 @@
       "dataClass": "manual",
       "fileList": [
         "manual"
+      ]
+    },
+    {
+      "dataClass": "event-verification",
+      "fileList": [
+        "event-verification"
       ]
     }
   ]

@@ -3240,6 +3240,40 @@
           "closeUp": 0.28
         }
       ]
+    },
+    {
+      "id": 10617,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": -0.08,
+          "offsetY": 0.2,
+          "closeUp": 0.4
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": -0.12,
+          "offsetY": 0.18,
+          "closeUp": 0.4
+        }
+      ]
+    },
+    {
+      "id": 10717,
+      "pivotList": [
+        {
+          "cutsceneType": "GACKSUNG_BEFORE",
+          "offsetX": 0,
+          "offsetY": 0.14,
+          "closeUp": 0.5
+        },
+        {
+          "cutsceneType": "GACKSUNG_AFTER",
+          "offsetX": -0.22,
+          "offsetY": 0.16,
+          "closeUp": 0.4
+        }
+      ]
     }
   ]
 }

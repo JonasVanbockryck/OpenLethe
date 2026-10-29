@@ -2861,6 +2861,47 @@
       ]
     },
     {
+      "key": "C-1193E",
+      "repeatable": true,
+      "showUnboundNpcs": true,
+      "hideUnboundParty": false,
+      "noLetterbox": true,
+      "bindings": [
+        {
+          "actorName": "player",
+          "kind": "Player",
+          "actorKey": ""
+        },
+        {
+          "actorName": "chef",
+          "kind": "Npc",
+          "actorKey": "N201003C"
+        }
+      ],
+      "commands": [
+        {
+          "type": "TeleportCharacter",
+          "param": "player, -35, -55"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "MoveCharacter",
+          "param": "chef, -37, -59"
+        },
+        {
+          "type": "FaceCharacterToward",
+          "param": "chef, player"
+        },
+        {
+          "type": "Dialogue",
+          "param": "D-1391"
+        }
+      ]
+    },
+    {
       "key": "C-1194",
       "showUnboundNpcs": true,
       "hideUnboundParty": false,

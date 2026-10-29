@@ -89,6 +89,10 @@
     {
       "targetId": 10416,
       "targetIntegers": [ 10416, 2 ]
+    },
+    {
+      "targetId": 10717,
+      "targetIntegers": [ 10717, 1, 2 ]
     }
   ],
   "isSendblog": true,
@@ -338,7 +342,7 @@
   "battleDialogRenew": true,
   "leapUpTicketOptimization": true,
   "mainLobbyAutoScrollStartLineCount": 6,
-  "isUseMirrorDungeonEnterEffect": true,
+  "isUseMirrorDungeonEnterEffect": false,
   "ab1355SpeedBoost": false,
   "isUseSpecialStorySkip": true,
   "IsUseRetryOnWalpuStage" : true,

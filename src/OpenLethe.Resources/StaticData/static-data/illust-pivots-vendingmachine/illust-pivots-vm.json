@@ -1275,6 +1275,20 @@
             "rotateZ": 0.0
         },
         {
+            "id": "10617_gacksung",
+            "offsetX": 43.099998474121097,
+            "offsetY": -16.700000762939454,
+            "scaleFactor": 1.0,
+            "rotateZ": 0.0
+        },
+        {
+            "id": "10617_normal",
+            "offsetX": 40.20000076293945,
+            "offsetY": -49.0,
+            "scaleFactor": 1.2000000476837159,
+            "rotateZ": 0.0
+        },
+        {
             "id": "10701_normal",
             "offsetX": 18.0,
             "offsetY": -18.0,
@@ -1488,6 +1502,20 @@
             "id": "10716_normal",
             "offsetX": 37.0,
             "offsetY": -43.0,
+            "scaleFactor": 1.0,
+            "rotateZ": 0.0
+        },
+        {
+            "id": "10717_gacksung",
+            "offsetX": 99.0,
+            "offsetY": 2.0,
+            "scaleFactor": 1.0,
+            "rotateZ": 0.0
+        },
+        {
+            "id": "10717_normal",
+            "offsetX": -12.699999809265137,
+            "offsetY": -18.600000381469728,
             "scaleFactor": 1.0,
             "rotateZ": 0.0
         },

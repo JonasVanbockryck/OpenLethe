@@ -1,4 +1,16 @@
 {
   "list": [
+    {
+      "keyword": "NoirBindArmorAlly",
+      "address": "Assets/Prefab/Effect/PC/8_Honglu/LaNoir/Fx_PC_Honglu_LaNoir_Buff_NoirBindArmorAlly.prefab"
+    },
+    {
+      "keyword": "ReadyToListenHonglu",
+      "address": "Assets/Prefab/Effect/PC/8_Honglu/LaNoir/Fx_PC_Honglu_LaNoir_Buff_ReadyToListenHonglu.prefab"
+    },
+    {
+      "keyword": "WarinessHonglu",
+      "address": "Assets/Prefab/Effect/PC/8_Honglu/LaNoir/Fx_PC_Honglu_LaNoir_Buff_WarinessHonglu.prefab"
+    }
   ]
 }

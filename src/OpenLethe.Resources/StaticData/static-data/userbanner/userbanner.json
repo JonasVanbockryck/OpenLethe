@@ -464,6 +464,15 @@
     {
       "id": 93,
       "effectId": 30
+    },
+    {
+      "id": 94,
+      "valueAssetName": "MD8_Achievement",
+      "masterBannerData":
+      {
+        "id": 7
+      },
+      "useValueText": true
     }
   ]
 }

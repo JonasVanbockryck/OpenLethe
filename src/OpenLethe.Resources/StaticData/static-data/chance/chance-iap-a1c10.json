@@ -78,6 +78,16 @@
       "id": 1511,
       "max": 1,
       "resetTimeType": "PERMANENT"
+    },
+    {
+      "id": 1512,
+      "max": 1,
+      "resetTimeType": "PERMANENT"
+    },
+    {
+      "id": 1513,
+      "max": 2,
+      "resetTimeType": "PERMANENT"
     }
   ]
 }

@@ -82,6 +82,11 @@
       "max": 3,
       "resetTimeType": "WEEKLY"
     },
+    {
+      "id": 10021,
+      "max": 1000,
+      "resetTimeType": "WEEKLY"
+    },
 
 
     {

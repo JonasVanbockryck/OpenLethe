@@ -1,0 +1,317 @@
+{
+  "list": [
+    {
+      "id": 201001001,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001002,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Combustion" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001003,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Laceration" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001004,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Vibration" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001005,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Burst" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001006,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Sinking" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001007,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Breath" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001008,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Charge" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001009,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Slash" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001010,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Penetrate" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001011,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "keyword", "names": [ "Hit" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001012,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "tier", "ids": [ 4 ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c1.tier", "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001013,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "tier", "ids": [ 5 ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c1.tier", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001014,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "tier", "ids": [ 4 ] }, { "key": "combine", "names": [ "ANY" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c1.tier", "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001015,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "filters": [ { "key": "keyword", "names": [ "Combustion" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001016,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "filters": [ { "key": "keyword", "names": [ "Laceration" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001017,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "filters": [ { "key": "keyword", "names": [ "Vibration" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001018,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "filters": [ { "key": "keyword", "names": [ "Burst" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001019,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "filters": [ { "key": "keyword", "names": [ "Sinking" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001020,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "filters": [ { "key": "keyword", "names": [ "Breath" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001021,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "filters": [ { "key": "keyword", "names": [ "Charge" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001022,
+      "type": "MIRROR_DUNGEON_EGOGIFT_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "EGOGIFT_COLLECTION", "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001023,
+      "type": "MIRROR_DUNGEON_THEME_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "THEME_COLLECTION", "filters": [ { "key": "dungeonIdx", "ids": [ 0 ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001024,
+      "type": "MIRROR_DUNGEON_THEME_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "THEME_COLLECTION", "filters": [ { "key": "dungeonIdx", "ids": [ 1 ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201001025,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "combine", "names": [ "SPECIFIC" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001026,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 5 },
+        { "target": "EGOGIFT", "filters": [ { "key": "tier", "ids": [ 5 ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value", "c0.min" ]
+      }
+    },
+    {
+      "id": 201001027,
+      "type": "MIRROR_DUNGEON_THEME_COLLECTION",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "THEME_COLLECTION", "filters": [ { "key": "dungeonIdx", "ids": [ 3 ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    }
+  ]
+}

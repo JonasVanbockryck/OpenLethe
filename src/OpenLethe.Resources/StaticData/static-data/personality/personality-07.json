@@ -1721,6 +1721,131 @@
           "number": 0
         }
       ]
+    },
+    {
+      "id": 10717,
+      "characterId": 7,
+      "updatedDate": 20261029,
+      "appearance": "10717_Heathcliff_Needle_KingAppearance",
+      "unitScriptID": "10717",
+      "associationList": [
+        "LE_ROUGE",
+        "SISYPHE"
+      ],
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "skillKeywordList": [
+        "Laceration",
+        "Charge"
+      ],
+      "rank": 3,
+      "season": 8,
+      "uniqueAttribute": "SCARLET",
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "hp": {
+        "defaultStat": 72,
+        "incrementByLevel": 3.2
+      },
+      "defCorrection": 0,
+      "minSpeedList": [
+        2,
+        3,
+        3,
+        3
+      ],
+      "maxSpeedList": [
+        6,
+        6,
+        7,
+        7
+      ],
+      "panicType": 9999,
+      "panicSkillOnErosion": 1000104,
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          50,
+          30
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 2
+          },
+          {
+            "type": "PENETRATE",
+            "value": 0.5
+          },
+          {
+            "type": "HIT",
+            "value": 1
+          }
+        ]
+      },
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "ChargeRougeAlly",
+              "stack": 1
+            }
+          ]
+        }
+      ],
+      "defenseSkillIDList": [
+        1071704
+      ],
+      "attributeList": [
+        {
+          "skillId": 1071701,
+          "number": 3
+        },
+        {
+          "skillId": 1071702,
+          "number": 2
+        },
+        {
+          "skillId": 1071703,
+          "number": 1
+        },
+        {
+          "skillId": 1071705,
+          "number": 0
+        }
+      ]
     }
   ]
 }

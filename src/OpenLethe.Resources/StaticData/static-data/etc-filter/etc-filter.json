@@ -31,7 +31,10 @@
 		{ "id": 29, "keyword": "SPIDER_HOUSE", "localizeKey": "formation_name_filter_Etc_SPIDER_HOUSE" },
 		{ "id": 30, "keyword": "LIMBUS_COMPANY_LCE", "localizeKey": "formation_name_filter_Etc_LIMBUS_COMPANY_LCE" },
 		{ "id": 31, "keyword": "EGO_EQUIPMENT", "localizeKey": "formation_name_filter_Etc_EGO_EQUIPMENT" },
-        { "id": 32, "keyword": "BULLET", "localizeKey": "formation_name_filter_Etc_BULLET" },
-        { "id": 33, "keyword": "DISCARD_SKILL", "localizeKey": "formation_name_filter_Etc_DISCARD_SKILL" }
+    { "id": 32, "keyword": "BULLET", "localizeKey": "formation_name_filter_Etc_BULLET" },
+    { "id": 33, "keyword": "DISCARD_SKILL", "localizeKey": "formation_name_filter_Etc_DISCARD_SKILL" },
+    { "id": 34, "keyword": "SISYPHE", "localizeKey": "formation_name_filter_Etc_SISYPHE" },
+    { "id": 35, "keyword": "LE_ROUGE", "localizeKey": "formation_name_filter_Etc_LE_ROUGE" },
+    { "id": 36, "keyword": "LE_NOIR", "localizeKey": "formation_name_filter_Etc_LE_NOIR" }
 	]
 }

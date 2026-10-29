@@ -10301,6 +10301,16 @@
             },
             {
               "scriptName": "GiveChargeTurnOnUseToSelfAndLeastChargeLeNoirAlly1031501_2"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -10375,6 +10385,16 @@
             },
             {
               "scriptName": "GiveChargeTurnOnUseToSelfAndLeastChargeLeNoirAlly1031501_3"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -10488,6 +10508,16 @@
             },
             {
               "scriptName": "GiveChargeTurnOnUseToSelfAndLeastChargeLeNoirAlly1031501_4"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -10593,6 +10623,16 @@
                 "turn": 0,
                 "value": 0.2
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -10668,6 +10708,16 @@
                 "turn": 0,
                 "value": 0.4
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -10736,6 +10786,16 @@
                 "stack": 3,
                 "turn": 0,
                 "value": 1
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
               }
             }
           ],
@@ -10836,6 +10896,16 @@
             },
             {
               "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -10999,6 +11069,16 @@
             },
             {
               "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -11140,6 +11220,16 @@
             },
             {
               "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -11278,6 +11368,16 @@
             },
             {
               "scriptName": "LastCoinResultAdderOnBAViaMaxResonanceToLimit1031502_1_4"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -11433,6 +11533,16 @@
                 "buffKeyword": "NoirShieldUpDonQuixote",
                 "target": "Self"
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -11579,6 +11689,16 @@
               "buffData": {
                 "buffKeyword": "NoirShieldUpDonQuixote",
                 "target": "Self"
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
               }
             }
           ],
@@ -11747,6 +11867,16 @@
                 "turn": 0,
                 "value": 1
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -11883,6 +12013,16 @@
                 "turn": 0,
                 "value": 0.1
               }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
             }
           ],
           "coinList": [
@@ -12018,6 +12158,16 @@
                 "stack": 3,
                 "turn": 0,
                 "value": 0.2
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
               }
             }
           ],

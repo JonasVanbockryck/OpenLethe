@@ -1,4 +1,20 @@
 {
   "list": [
+    {
+      "keyword": "NeedlekinAlly",
+      "address": "Assets/Prefab/Effect/PC/6_Heathcliff/Heathchliff_Needleking/Fx_PC_Heathcliff_Needle_King_Pin.prefab"
+    },
+    {
+      "keyword": "NeedlekinPierceEffect",
+      "address": "Assets/Prefab/Effect/PC/6_Heathcliff/Heathchliff_Needleking/Fx_PC_Heathcliff_Needle_King_Buff_Pin_Atk.prefab"
+    },
+    {
+      "keyword": "HowlingCocoonTwoAlly",
+      "address": "Assets/Prefab/Effect/PC/6_Heathcliff/Heathchliff_Needleking/Fx_PC_Heathcliff_NeedleKing_Buff_Cocoon.prefab"
+    },
+    {
+      "keyword": "NiddlePinnedAlly",
+      "address": "Assets/Prefab/Effect/PC/6_Heathcliff/Heathchliff_Needleking/Fx_PC_Heathcliff_NeedleKing_Buff_Taxidermy.prefab"
+    }
   ]
 }

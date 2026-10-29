@@ -297,6 +297,12 @@
       "actionValue1": "C-1193B"
     },
     {
+      "key": "EC-1193E",
+      "canRepeat": true,
+      "action1": "PlayCutscene",
+      "actionValue1": "C-1193E"
+    },
+    {
       "key": "E-FCCAM",
       "canRepeat": true,
       "action1": "CameraPeek",

@@ -54,7 +54,8 @@
         "levelColor": "#812414",
         "titleTextColor": "#EBCAA2",
         "title": "mainui_exp_dungeon_16_title",
-        "openDesc": "mainui_exp_dungeon_16_open_day"
+        "openDesc": "mainui_exp_dungeon_16_open_day",
+        "unlockHintTextKey": "exp_dungeon_10_open_condition"
       }
     },
     {
@@ -108,7 +109,8 @@
       "uiConfig": {
         "tabLabel": "WED\nTHU",
         "title": "mainui_exp_dungeon_17_title",
-        "openDesc": "mainui_exp_dungeon_17_open_day"
+        "openDesc": "mainui_exp_dungeon_17_open_day",
+        "unlockHintTextKey": "exp_dungeon_10_open_condition"
       }
     },
     {
@@ -165,7 +167,8 @@
         "levelColor": "#221e1b",
         "titleTextColor": "#EBCAA2",
         "title": "mainui_exp_dungeon_18_title",
-        "openDesc": "mainui_exp_dungeon_18_open_day"
+        "openDesc": "mainui_exp_dungeon_18_open_day",
+        "unlockHintTextKey": "exp_dungeon_10_open_condition"
       }
     }
   ]

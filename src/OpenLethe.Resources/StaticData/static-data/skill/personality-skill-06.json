@@ -12203,6 +12203,1655 @@
           "iconID": "1061604_4"
         }
       ]
+    },
+    {
+      "id": 1061701,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "AZURE",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 2,
+          "defaultValue": 3,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S1",
+          "range" : 6,
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 3,
+                "value": 1,
+                "limit": 2
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpByRatioViaBuffCheckDevideByStackWithLimit10",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 0.05
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 3,
+                "value": 1,
+                "limit": 2
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndTurnIfSelfBuffTurnLess",
+              "value": 10,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 3,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061702,
+      "skillType": "SKILL",
+      "skillTier": 2,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 2,
+          "defaultValue": 4,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S2",
+          "range" : 99,
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 3
+                },
+                {
+                  "scriptName": "GiveBuffOnSAIfRerolled",
+                  "turnLimit": 1,
+                  "buffData": {
+                    "buffKeyword": "AmberResistDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 3,
+                "value": 1,
+                "limit": 2
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 3
+                },
+                {
+                  "scriptName": "GiveBuffOnSAIfRerolled",
+                  "turnLimit": 1,
+                  "buffData": {
+                    "buffKeyword": "AmberResistDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 5,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 3
+                },
+                {
+                  "scriptName": "GiveBuffOnSAIfRerolled",
+                  "turnLimit": 1,
+                  "buffData": {
+                    "buffKeyword": "AmberResistDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpByRatioViaBuffCheckDevideByStackWithLimit20",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 0.1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 3,
+                "value": 1,
+                "limit": 2
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 5,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 6,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 3
+                },
+                {
+                  "scriptName": "GiveBuffThisAndNextTurnOnSAIfRerolled1061702",
+                  "turnLimit": 1,
+                  "buffData": {
+                    "buffKeyword": "AmberResistDown",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061703,
+      "skillType": "SKILL",
+      "skillTier": 3,
+      "requireIDList": [
+        "CheckAwakenLevel3"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 3,
+          "attributeType": "AMBER",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 3,
+          "defaultValue": 4,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S3",
+          "specialDuelIndex": 0,
+          "range" : 8,
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpByRatioViaBuffCheckDevideByStackWithLimit30",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 0.1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUsePerBuffStack_Charge1_Limit10",
+              "buffData": {
+                "buffKeyword": "NoirBindArmorAlly",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 5,
+                "value": 1,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttackIfNotHas_TimeToListenHonglu",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "ReadyToListenHonglu",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 5
+                },
+                {
+                  "scriptName": "GiveAmberDmgByRatioOnSAIfRerolled1061703",
+                  "value": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpByRatioViaBuffCheckDevideByStackWithLimit30",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 0.1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUsePerBuffStack_Charge1_Limit15",
+              "buffData": {
+                "buffKeyword": "NoirBindArmorAlly",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 5,
+                "value": 1,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttackIfNotHas_TimeToListenHonglu",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "ReadyToListenHonglu",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOSAIfBuffCheckAndLoseTargetVibrationTurn1",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "Self",
+                    "stack": 2,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 5
+                },
+                {
+                  "scriptName": "GiveAmberDmgByRatioOnSAIfRerolled1061703",
+                  "value": 0.3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061704,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "AMBER",
+          "atkType": "HIT",
+          "defType": "COUNTER",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 4,
+          "defaultValue": 4,
+          "canTeamKill": false,
+          "canDuel": true,
+          "specialDuelIndex": 0,
+          "canChangeTarget": true,
+          "skillMotion": "S5",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffOnBattleStartIfNotHas_SupportProtect",
+              "buffData": {
+                "buffKeyword": "SupportProtect",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUsePerBuffStack_Charge1_Limit5",
+              "buffData": {
+                "buffKeyword": "NoirBindArmorAlly",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "AttackDmgUpByRatioViaBuffCheckDevideByStackWithLimit75",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 0.25
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStartIfNotHas_SupportProtect",
+              "buffData": {
+                "buffKeyword": "SupportProtect",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "ChangeSkillOnBeforeDefenseOncePerListen1061704",
+              "value": 1061706,
+              "buffData": {
+                "buffKeyword": "TimeToListenHonglu",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0
+              }
+            },
+            {
+              "scriptName": "CommonSkillSlotEffectOncePerListen1061704",
+              "buffData": {
+                "buffKeyword": "TimeToListenHonglu",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUsePerBuffStack_Charge1_Limit15",
+              "buffData": {
+                "buffKeyword": "NoirBindArmorAlly",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 4,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061705,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "NEUTRAL",
+          "atkType": "NONE",
+          "defType": "GUARD",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 4,
+          "defaultValue": 4,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "Default",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "SupportiveDefense"
+            },
+            {
+              "scriptName": "GiveBuffOnUseIfUsingBuffTurn_Charge6",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "SupportProtect",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUseIfNotHas_TimeToListenHonglu",
+              "buffData": {
+                "buffKeyword": "ReadyToListenHonglu",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnWinDuel",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 2,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "VibrationExplosionOnWinDuelAndLoseTargetVibrationTurn1"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 8,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "attributeType": "AMBER",
+          "iconID": "1061705_4",
+          "defaultValue": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "SupportiveDefense"
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit3",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUseIfUsingBuffTurn_Charge6",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "SupportProtect",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUseIfNotHas_TimeToListenHonglu",
+              "buffData": {
+                "buffKeyword": "ReadyToListenHonglu",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnWinDuel",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "stack": 0,
+                "turn": 4,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "VibrationExplosionOnWinDuelAndLoseTargetVibrationTurn1"
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 10,
+              "grade": 2,
+              "color": "GREY",
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1061706,
+      "skillType": "SKILL",
+      "skillTier": 3,
+      "isHiddenForUI": true,
+      "textID": 1061703,
+      "requireIDList": [
+        "CheckAwakenLevel3"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 3,
+          "iconID": 1061703,
+          "actionScript": "1061703",
+          "attributeType": "AMBER",
+          "atkType": "HIT",
+          "defType": "COUNTER",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 3,
+          "defaultValue": 4,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S3",
+          "specialDuelIndex": 0,
+          "range" : 8,
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "HiddenSkill"
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioViaBuffCheckDevideByStackWithLimit30",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 0.1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUsePerBuffStack_Charge1_Limit10",
+              "buffData": {
+                "buffKeyword": "NoirBindArmorAlly",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 5,
+                "value": 1,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttackIfNotHas_TimeToListenHonglu",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "ReadyToListenHonglu",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 5
+                },
+                {
+                  "scriptName": "GiveAmberDmgByRatioOnSAIfRerolled1061703",
+                  "value": 0.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "HiddenSkill"
+            },
+            {
+              "scriptName": "AttackDmgUpByRatioViaBuffCheckDevideByStackWithLimit30",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 0.1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnUsePerBuffStack_Charge1_Limit15",
+              "buffData": {
+                "buffKeyword": "NoirBindArmorAlly",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 3,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnUseViaUsingBuffAmount",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "turn": 5,
+                "value": 1,
+                "limit": 3
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnEndAttackIfNotHas_TimeToListenHonglu",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "ReadyToListenHonglu",
+                "target": "Self",
+                "buffOwner": "Self",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeNoirAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Vibration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOnSucceedAttackAndLoseTargetVibrationTurn1"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "RerollViaBuffCheckUpto1",
+                  "buffData": {
+                    "buffKeyword": "TimeToListenHonglu",
+                    "buffOwner": "Self",
+                    "stack": 1,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "VibrationExplosionOSAIfBuffCheckAndLoseTargetVibrationTurn1",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "buffOwner": "Self",
+                    "stack": 2,
+                    "turn": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "WarinessHonglu",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveMpDmgOnSAIfRerolled1061702",
+                  "value": 5
+                },
+                {
+                  "scriptName": "GiveAmberDmgByRatioOnSAIfRerolled1061703",
+                  "value": 0.3
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -24,6 +24,18 @@
 						},
 						{
 							"type": "PERSONALITY",
+							"id": 10617,
+							"vendingAvailableDate": "2026-11-05T03:00:00.000Z",
+							"price": 400
+						},
+						{
+							"type": "PERSONALITY",
+							"id": 10717,
+							"vendingAvailableDate": "2026-11-05T03:00:00.000Z",
+							"price": 400
+						},
+						{
+							"type": "PERSONALITY",
 							"id": 10816,
 							"vendingAvailableDate": "2026-09-24T03:00:00.000Z",
 							"price": 400

@@ -1,0 +1,169 @@
+{
+  "list": [
+    {
+      "id": 201906001,
+      "type": "MIRROR_DUNGEON_ACQUIRE_SPECIFIC_EGOGIFT",
+      "valueType": "PEAK",
+      "setFlag": true,
+      "conditions": [
+        { "target": "EGOGIFT_ACQUIRED", "ids": [ 9083 ] }
+      ]
+    },
+    {
+      "id": 201006001,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995011, 995016, 995021, 995026, 995031 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006002,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995012, 995017, 995022, 995027, 995032 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006003,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995013, 995030 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006004,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995014, 995024 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006005,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995015, 995025 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006006,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995018, 995033 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006007,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995019, 995034 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006008,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995020, 995035 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006009,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995023 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006010,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995028 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006011,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT", "ids": [ 995029 ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    },
+    {
+      "id": 201006012,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 11 },
+        { "target": "CONSTRAINT_SCORE", "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201006013,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "min": 15 },
+        { "target": "FLAG", "max": 0, "ids": [ 201906001 ] }
+      ],
+      "uiConfig": {
+        "textTags": [ "c0.min" ]
+      }
+    }
+  ]
+}

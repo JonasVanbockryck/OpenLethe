@@ -8339,6 +8339,324 @@
       "categoryKeywordList": [ ]
     },
     {
+      "id": "NoirBindArmorAlly",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": true,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 15,
+      "list": [
+        {
+          "ability": "AtkAdderPerStack",
+          "value": 5
+        },
+        {
+          "ability": "DefAdderPerStack",
+          "value": 5
+        },
+        {
+          "ability": "GiveBuffOnTakeAttackDamageIfHasShieldHonglu",
+          "value": 5,
+          "buffData": {
+            "buffKeyword": "NoirBindArmorAlly",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "NoirBindArmorAlly",
+          "value": 5
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "ReadyToListenHonglu",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 2,
+      "stackLimitPerTurn": 1,
+      "list": [
+        {
+          "ability": "GiveBuffOnRoundEnd",
+          "value": 1,
+          "buffData": {
+            "buffKeyword": "Protection",
+            "target": "Self",
+            "stack": -1,
+            "turn": 0,
+            "activeRound": 1
+          }
+        },
+        {
+          "ability": "ReadyToListenHonglu",
+          "value": 2,
+          "buffData": {
+            "buffKeyword": "TimeToListenHonglu",
+            "target": "Self",
+            "stack": 2,
+            "turn": 0,
+            "activeRound": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "TimeToListenHonglu",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 2,
+      "list": [
+        {
+          "ability": "DefaultSkillPowerAdder",
+          "value": 1
+        },
+        {
+          "ability": "ChangeMpTimeToListenHonglu",
+          "value": 4
+        },
+        {
+          "ability": "GiveBuffTimeToListenHonglu",
+          "value": 40,
+          "buffData": {
+            "buffKeyword": "AmberDamageUp",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "CantGetBuff",
+          "buffData": {
+            "buffKeyword": "ReadyToListenHonglu"
+          }
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "WarinessHonglu",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "canBeDespelled": true,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "maxStack": 2,
+      "list": [
+        {
+          "ability": "AtkAdderPerStack",
+          "value": -1
+        },
+        {
+          "ability": "TakeAtkDmgMultiplierWarinessHonglu",
+          "value": 0.1
+        },
+        {
+          "ability": "LoseStackOnRoundEndWarinessHonglu",
+          "value": 1
+        },
+        {
+          "ability": "DestroyOnGiverDieWarinessHonglu"
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "NiddlePinGather",
+      "iconId": "NiddleExpected",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "maxStack": 30,
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": []
+    },
+    {
+      "id": "NiddlePinAlly",
+      "iconId": "NiddlePin",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "maxStack": 10,
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "NiddlePinAllyGivebuff",
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "NiddlePinAllyGiveDmg",
+          "attribute": "SCARLET",
+          "value": 3
+        },
+        {
+          "ability": "NiddlePinAllyRoundEndActionFor11016",
+          "buffData": {
+            "buffKeyword": "BoneNailSinclair",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 0
+          }
+        },
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ],
+      "categoryKeywordList": [
+        "LACERATION"
+      ]
+    },
+    {
+      "id": "NiddlePinnedAlly",
+      "iconId": "NiddlePinned",
+      "buffClass": "VolatileBuff",
+      "buffType": "Negative",
+      "maxStack": 1,
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "SkillPowerResultAdder",
+          "value": -1
+        },
+        {
+          "ability": "NiddlePinnedAllyActiveLaceration"
+        },
+        {
+          "ability": "GiveBuffOnRoundEnd",
+          "buffData": {
+            "buffKeyword": "Laceration",
+            "target": "Self",
+            "stack": 0,
+            "turn": 2,
+            "activeRound": 1
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundEnd",
+          "buffData": {
+            "buffKeyword": "ResultReduction",
+            "target": "Self",
+            "stack": 1,
+            "turn": 0,
+            "activeRound": 1
+          }
+        },
+        {
+          "ability": "GiveBuffOnRoundEnd",
+          "buffData": {
+            "buffKeyword": "Binding",
+            "target": "Self",
+            "stack": 2,
+            "turn": 0,
+            "activeRound": 1
+          }
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "NeedlekinAlly",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 3,
+      "canBeDespelled": false,
+      "destroyableOnDie": true,
+      "destroyableOnRetreat": true,
+      "list": [
+        {
+          "ability": "AtkAdderByStack",
+          "value": 1
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
+      "id": "HowlingCocoonAlly",
+      "iconId": "HowlingCocoon",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 5,
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "list": [
+        {
+          "ability": "DefaultSkillPowerResultAdder",
+          "value": 1
+        },
+        {
+          "ability": "RecoverSelfHpByMaxHpOnSAWithDefaultSkill",
+          "value": 0.03,
+          "buffData": {
+            "limit": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "HowlingCocoonTwoAlly",
+      "iconId": "HowlingCocoonTwo",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 1,
+      "canBeDespelled": false,
+      "destroyableOnDie": false,
+      "destroyableOnRetreat": false,
+      "list": [
+        {
+          "ability": "DefaultSkillPowerResultAdder",
+          "value": 1
+        },
+        {
+          "ability": "DefaultSkillAtkDamageMultiplier",
+          "value": 0.1
+        },
+        {
+          "ability": "RecoverSelfHpByMaxHpOnSAWithDefaultSkill",
+          "value": 0.06,
+          "buffData": {
+            "limit": 5
+          }
+        },
+        {
+          "ability": "ActivateBuffEffect"
+        }
+      ]
+    },
+    {
       "id": "RougeFamilySinclair",
       "buffClass": "OverlappingBuff",
       "buffType": "Positive",

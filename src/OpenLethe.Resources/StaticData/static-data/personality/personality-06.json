@@ -1731,6 +1731,129 @@
           "number": 1
         }
       ]
+    },
+    {
+      "id": 10617,
+      "updatedDate": 20261029,
+      "appearance": "10617_Honglu_3F_FloorManagerAppearance",
+      "unitKeywordList": [
+        "SMALL"
+      ],
+      "unitScriptID": "10617",
+      "associationList": [
+        "LE_NOIR",
+        "SISYPHE"
+      ],
+      "skillKeywordList": [
+        "Charge",
+        "Vibration"
+      ],
+      "characterId": 6,
+      "panicType": 9999,
+      "season": 8,
+      "defenseSkillIDList": [
+        1061704,
+        1061705,
+        1061706
+      ],
+      "initBuffList": [
+        {
+          "level": 1,
+          "list": [
+            {
+              "buff": "ChargeNoirAlly",
+              "stack": 1,
+              "turn": 0
+            }
+          ]
+        }
+      ],
+      "panicSkillOnErosion": 1000104,
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "hp": {
+        "defaultStat": 95,
+        "incrementByLevel": 3.4
+      },
+      "defCorrection": 4,
+      "minSpeedList": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "maxSpeedList": [
+        5,
+        6,
+        6,
+        6
+      ],
+      "uniqueAttribute": "AZURE",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnDieAllyAsLevelRatio10"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          45
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 1
+          },
+          {
+            "type": "PENETRATE",
+            "value": 2
+          },
+          {
+            "type": "HIT",
+            "value": 0.5
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 1061701,
+          "number": 3
+        },
+        {
+          "skillId": 1061702,
+          "number": 2
+        },
+        {
+          "skillId": 1061703,
+          "number": 1
+        }
+      ]
     }
   ]
 }

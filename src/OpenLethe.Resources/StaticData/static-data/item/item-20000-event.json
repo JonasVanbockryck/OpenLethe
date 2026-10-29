@@ -317,6 +317,11 @@
     {
       "id": 20049,
       "ignoreExcess": true
+    },
+    {
+      "id": 20050,
+      "ignoreExcess": true,
+      "spriteStr": "md8_achievement_exp_item"
     }
   ]
 }

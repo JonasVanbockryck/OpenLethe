@@ -368,6 +368,52 @@
       "endDate": "2026-10-29T01:00:00.000Z",
       "priorityForUI": 990,
       "ar":true
+    },
+    {
+      "id": 512,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha305_extraction_package_1st",
+      "priceTier": 22,
+      "chanceId": 1512,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 102,
+          "num": 4
+        }
+      ],
+      "endDate": "2026-11-12T01:00:00.000Z",
+      "priorityForUI": 992,
+      "ar":true
+    },
+    {
+      "id": 513,
+      "category": "PACKAGE",
+      "returnpolicytype": "PACKAGE_C",
+      "productId": "gacha305_growth_package_1st",
+      "priceTier": 22,
+      "chanceId": 1513,
+      "defaultElements": [
+        {
+          "type": "ITEM",
+          "id": 232,
+          "num": 1
+        },
+        {
+          "type": "ITEM",
+          "id": 214,
+          "num": 90
+        },
+        {
+          "type": "ITEM",
+          "id": 213,
+          "num": 40
+        }
+      ],
+      "endDate": "2026-11-12T01:00:00.000Z",
+      "priorityForUI": 990,
+      "ar":true
     }
   ]
 }

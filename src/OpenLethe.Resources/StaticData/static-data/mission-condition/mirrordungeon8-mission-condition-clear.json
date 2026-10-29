@@ -1,0 +1,73 @@
+{
+  "list": [
+    {
+      "id": 201002001,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "ACCUMULATED",
+      "conditions": [
+        { "target": "DIFFICULTY", "ids": [ 0, 1, 2, 3 ] },
+        { "target": "FLOOR", "min": 5 }
+      ],
+      "uiConfig": {
+        "textTags": [ "c1.min", "value" ]
+      }
+    },
+    {
+      "id": 201002002,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "ACCUMULATED",
+      "conditions": [
+        { "target": "DIFFICULTY", "ids": [ 1, 2, 3 ] },
+        { "target": "FLOOR", "min": 5 }
+      ],
+      "uiConfig": {
+        "textTags": [ "c1.min", "value" ]
+      }
+    },
+    {
+      "id": 201002003,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "FLOOR", "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201002004,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "ACCUMULATED",
+      "conditions": [
+        { "target": "DIFFICULTY", "ids": [ 1, 2, 3 ] },
+        { "target": "FLOOR", "min": 10 }
+      ],
+      "uiConfig": {
+        "textTags": [ "c1.min", "value" ]
+      }
+    },
+    {
+      "id": 201002005,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "CLEARED_THEME", "filters": [ { "key": "themeType", "names": [ "RAILWAY" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    },
+    {
+      "id": 201002006,
+      "type": "MIRROR_DUNGEON_CLEAR",
+      "valueType": "PEAK",
+      "conditions": [
+        { "target": "CLEARED_THEME", "filters": [ { "key": "themeType", "names": [ "STORY" ] } ], "progress": true }
+      ],
+      "uiConfig": {
+        "textTags": [ "value" ]
+      }
+    }
+  ]
+}

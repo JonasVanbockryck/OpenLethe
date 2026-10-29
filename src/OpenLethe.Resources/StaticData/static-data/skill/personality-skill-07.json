@@ -12545,6 +12545,1318 @@
           ]
         }
       ]
+    },
+    {
+      "id": 1071701,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "VIOLET",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 2,
+          "defaultValue": 2,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S1",
+          "range": 8,
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "FillBuffTurnWithMaxHpCostOnUse",
+              "value": 0.02,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0,
+                "value": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": []
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "FillBuffTurnWithMaxHpCostOnUse",
+              "value": 0.02,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0,
+                "value": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSAAddStackByBuffStackDivide_NeedlekinAlly1",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "Self",
+                    "stack": 0,
+                    "turn": 0,
+                    "activeRound": 0,
+                    "value": 1
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 4,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSAAddStackByBuffStackDivide_NeedlekinAlly1",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "Self",
+                    "stack": 0,
+                    "turn": 0,
+                    "activeRound": 0,
+                    "value": 1
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "FillBuffTurnWithMaxHpCostOnUse",
+              "value": 0.02,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 0,
+                "value": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071702,
+      "skillType": "SKILL",
+      "skillTier": 2,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "SCARLET",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 3,
+          "defaultValue": 2,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S2",
+          "range": 8,
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "FillBuffTurnWithMaxHpCostOnUse",
+              "value": 0.02,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 10,
+                "activeRound": 0,
+                "value": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaOnUseBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 7,
+                "activeRound": 0,
+                "value" : 2
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "FillBuffTurnWithMaxHpCostOnUse",
+              "value": 0.02,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 10,
+                "activeRound": 0,
+                "value": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaOnUseBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 7,
+                "activeRound": 0,
+                "value" : 2
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSAAddStackByBuffStackDivide_NeedlekinAlly1",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "Self",
+                    "stack": 0,
+                    "turn": 0,
+                    "activeRound": 0,
+                    "value": 1
+                  }
+                },
+                {
+                  "scriptName": "GivePenetrateDmgByNeedlekinRatio1071701",
+                  "value": 0.01
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 3,
+          "defaultValue": 3
+        },
+        {
+          "gaksungLevel": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "FillBuffTurnWithMaxHpCostOnUse",
+              "value": 0.02,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 10,
+                "activeRound": 0,
+                "value": 0
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaOnUseBuffCheckAndUse",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 0,
+                "turn": 7,
+                "activeRound": 0,
+                "value" : 2
+              }
+            },
+            {
+              "scriptName": "CoinScaleAdderOnStartTurnViaBuffCheck",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "buffOwner": "Target",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071703,
+      "skillType": "SKILL",
+      "skillTier": 3,
+      "requireIDList": [
+        "CheckAwakenLevel3"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 3,
+          "attributeType": "CRIMSON",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 4,
+          "defaultValue": 4,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S3",
+          "range": 99,
+          "arearange": 5,
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "TagetNumAdderOnUsePerViaBuffCheckWithLimit1_2",
+              "buffData": {
+                "buffKeyword": "NiddlePinGather",
+                "buffOwner": "Self",
+                "stack": 15,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "AttackDmgMultiplierOnUseDivideByLessThenTargetNum_1",
+              "value": 0.3
+            },
+            {
+              "scriptName": "UseAllChargeAndDinnerTurnOnUse1071703_7_2_0_2_40",
+              "buffData": {
+                "buffKeyword": "Charge"
+              }
+            },
+            {
+              "scriptName": "UseBuffOnEAViaTargetNumAdder1101503",
+              "buffData": {
+                "buffKeyword": "NiddlePinGather",
+                "target": "Self",
+                "stack": 15,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSAOnce1071703",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0,
+                    "limit": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSAOnce1071703",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0,
+                    "limit": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSAViaSpecialLacerationSum1071703_5",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinnedAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "TagetNumAdderOnUsePerViaBuffCheckWithLimit1_2",
+              "buffData": {
+                "buffKeyword": "NiddlePinGather",
+                "buffOwner": "Self",
+                "stack": 15,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "AttackDmgMultiplierOnUseDivideByLessThenTargetNum_1",
+              "value": 0.3
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "UseAllChargeAndDinnerTurnOnUse1071703_7_2_0_2_40",
+              "buffData": {
+                "buffKeyword": "Charge"
+              }
+            },
+            {
+              "scriptName": "UseBuffOnEAViaTargetNumAdder1101503",
+              "buffData": {
+                "buffKeyword": "NiddlePinGather",
+                "target": "Self",
+                "stack": 15,
+                "turn": 0,
+                "activeRound": 0
+              }
+            }          
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSAOnce1071703",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0,
+                    "limit": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSAOnce1071703",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 3,
+                    "activeRound": 0,
+                    "limit": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 3,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "PenetrateTakeDamageUp",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSAViaSpecialLacerationSum1071703_5",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinnedAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071704,
+      "skillType": "SKILL",
+      "skillTier": 1,
+      "requireIDList": [],
+      "skillData": [
+        {
+          "gaksungLevel": 1,
+          "attributeType": "SCARLET",
+          "atkType": "PENETRATE",
+          "defType": "COUNTER",
+          "skillTargetType": "FRONT",
+          "targetNum": 1,
+          "mpUsage": 0,
+          "skillLevelCorrection": 4,
+          "defaultValue": 6,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S5",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "GiveBuffWithMaxHpCostOnBattleStart1071704_20_0",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "Enhancement",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 7,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "gaksungLevel": 4,
+          "defaultValue": 7,
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "GiveBuffWithMaxHpCostOnBattleStart1071704_20_0",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "Enhancement",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 2,
+                "turn": 0,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "GiveBuffOnBattleStart",
+              "turnLimit": 1,
+              "buffData": {
+                "buffKeyword": "Charge",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 0,
+                "turn": 5,
+                "activeRound": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Charge",
+                "buffOwner": "Self",
+                "stack": 2,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 8,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1071705,
+      "skillType": "SKILL",
+      "skillTier": 3,
+      "requireIDList": [
+        "CheckAwakenLevel2"
+      ],
+      "skillData": [
+        {
+          "gaksungLevel": 2,
+          "attributeType": "SCARLET",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "skillTargetType": "RANDOM",
+          "targetNum": 3,
+          "mpUsage": 0,
+          "skillLevelCorrection": 5,
+          "defaultValue": 12,
+          "arearange": 3,
+          "isRandomAreaAttack": true,
+          "range": 6,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "skillMotion": "S4",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "abilityScriptList": [
+            {
+              "scriptName": "KeywordForUI",
+              "buffData": {
+                "buffKeyword": "ChargeRougeAlly",
+                "target": "Self",
+                "stack": 0,
+                "turn": 0,
+                "activeRound": 0
+              }
+            },
+            {
+              "scriptName": "DealRandomTargetAmongTargetsMTFirst"
+            },
+            {
+              "scriptName": "HealHpOnSucceedAttackSelfByMaxHpRatio",
+              "value": 0.08
+            },
+            {
+              "scriptName": "UseAllNeedlekinAndGiveBuffToAlliesOnUse1071705",
+              "value": 2,
+              "buffData": {
+                "buffKeyword": "PenetrateDamageUp",
+                "target": "Self",
+                "buffOwner": "",
+                "stack": 1,
+                "turn": 0,
+                "activeRound": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 3,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Charge",
+                    "target": "Self",
+                    "buffOwner": "",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "NiddlePinAlly",
+                    "target": "Target",
+                    "buffOwner": "",
+                    "stack": 2,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

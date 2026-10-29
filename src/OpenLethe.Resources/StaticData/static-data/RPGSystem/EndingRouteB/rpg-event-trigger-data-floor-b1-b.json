@@ -202,7 +202,9 @@
       "activeCondition": "CompleteCutscene",
       "activeConditionValue": "C-1194",
       "passiveCondition1": "EventCompleted",
-      "passiveConditionValue1": "EQ-3000"
+      "passiveConditionValue1": "EQ-3000",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EG-1092"
     },
     {
       "id": 210100125,
@@ -216,7 +218,9 @@
       "activeCondition": "WinBattle",
       "activeConditionValue": "11033",
       "passiveCondition1": "EventCompleted",
-      "passiveConditionValue1": "EQ-3000"
+      "passiveConditionValue1": "EQ-3000",
+      "passiveCondition2": "EventNotCompleted",
+      "passiveConditionValue2": "EG-1092"
     },
     {
       "id": 210100126,
@@ -392,6 +396,28 @@
       "activeConditionValue": "C-1193B",
       "passiveCondition1": "QuestNotCompleted",
       "passiveConditionValue1": "Q-3011"
+    },
+    {
+      "id": 210100182,
+      "eventKey": "EC-1193E",
+      "activeCondition": "CompleteDialogue",
+      "activeConditionValue": "D-1288",
+      "passiveCondition1": "QuestCompleted",
+      "passiveConditionValue1": "Q-3011",
+      "passiveCondition2": "QuestNotCompleted",
+      "passiveConditionValue2": "Q-3011T"
+    },
+    {
+      "id": 210100183,
+      "eventKey": "EL-1193S",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1193E"
+    },
+    {
+      "id": 210100184,
+      "eventKey": "E-1193W",
+      "activeCondition": "CompleteCutscene",
+      "activeConditionValue": "C-1193E"
     },
     {
       "id": 210100042,
