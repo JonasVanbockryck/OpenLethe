@@ -43,6 +43,10 @@ public static class DashboardEndpoints
         MapColumn<StoryMirrorSaveInfo>(app, "/dashboard/storymirrordungeon/get", "/dashboard/storymirrordungeon/update", "data", wrap: false,
             a => a.StoryMdSaveInfo, (a, v) => a.StoryMdSaveInfo = v);
 
+        // Refraction Railway: the whole dungeonId -> RailwayRun map, same shape Railway.cs stores.
+        MapColumn<Dictionary<long, RailwayRun>>(app, "/dashboard/railway/get", "/dashboard/railway/update", "data", wrap: false,
+            a => a.RailwaySaveInfo, (a, v) => a.RailwaySaveInfo = v);
+
         // IngameId is an int identity column, not a JSON document.
         app.MapPost("/dashboard/ingameid", Route((account, _, _) =>
             Task.FromResult(Json(new IngameIdResponse { ingameId = account.IngameId }))));
